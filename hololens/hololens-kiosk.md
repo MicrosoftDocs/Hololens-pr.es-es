@@ -17,12 +17,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829615"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858004"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -99,7 +98,8 @@ Si usa un sistema de administración de dispositivos móviles (MDM) o un paquete
 |Calendario |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. windowslive. Calendar |
 |Cámara <sup> 1,2</sup> |HoloCamera \ _cw5n1h2txyewy \! HoloCamera |
 |Cortana <sup> 3</sup> |Microsoft. 549981C3F5F10 \ _8wekyb3d8bbwe \! Aplicación |
-|Selector de dispositivos |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
+|Selector de dispositivos en HoloLens (1ª generación) |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
+|Selector de dispositivos en HoloLens 2 |Microsoft. Windows. DevicesFlowHost \ _cw5n1h2txyewy \! Microsoft. Windows. DevicesFlowHost |
 |Dynamics 365 Guides |Microsoft. Dynamics365. Guides \ _8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Centro de opiniones &nbsp; |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! Aplicación |
@@ -358,7 +358,7 @@ Para habilitar la cuenta de **invitado** , agregue el siguiente fragmento de có
 
 #### <a id="start-layout-for-hololens"></a>Diseño de inicio de marcador de posición para HoloLens
 
-Si usa un [paquete de aprovisionamiento](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) para configurar un quiosco de varias aplicaciones, el procedimiento requiere un diseño de inicio. Iniciar la personalización del diseño no se admite en Windows Holographic para empresas. Por lo tanto, tendrá que usar un diseño de inicio de marcador de posición.
+Si usa un [paquete de aprovisionamiento](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) para configurar un quiosco de varias aplicaciones, el procedimiento requiere un diseño de inicio. Iniciar la personalización del diseño no se admite en Windows Holographic para empresas. Por lo tanto, tendrá que usar un diseño de inicio de marcador de posición.
 
 > [!NOTE]  
 > Dado que un quiosco de una sola aplicación inicia la aplicación de quiosco cuando inicia sesión, no usa el menú Inicio y no es necesario que tenga un diseño de inicio.
