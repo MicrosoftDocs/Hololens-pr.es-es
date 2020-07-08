@@ -14,17 +14,14 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 5da7f954454b5713823c5aa94742f9c9c0033ca2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2c7fa9b8c86900c89bbced1a10f3e9e2bc69bcd0
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828596"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857768"
 ---
-# Reseteo y recuperación para el HoloLens 2
+# Reiniciar, restablecer o recuperar HoloLens
 
 ## Cargando el dispositivo
 
@@ -60,7 +57,7 @@ En determinadas circunstancias, el cliente puede verse obligado a reiniciar manu
 
 4. Conecte el dispositivo al equipo host, abra el Administrador de dispositivos (para Windows 10 pulse la tecla **"Windows"** y luego la tecla **"x"** y haga clic en "Administrador de dispositivos") y asegúrese de que el dispositivo se enumera correctamente como HoloLente de Microsoft como se muestra en las siguientes imágenes:
 
-![Recuperación de HoloLens de Windows para HoloLens 2 ](images/MicrosoftHoloLensRecovery.png)
+![Recuperación de HoloLens de Windows para HoloLens 2 ](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Procedimiento para hacer un restablecimiento completo
 
