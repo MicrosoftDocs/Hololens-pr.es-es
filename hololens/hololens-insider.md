@@ -16,11 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
+ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858014"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860610"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -28,7 +29,7 @@ Te agradecemos las compilaciones más recientes de Insider Preview para HoloLens
 
 Windows Insider se está moviendo a los canales. El timbre **rápido** se convertirá en el **canal de desarrollo**, el anillo **lento** se convertirá en el canal de la **versión beta**y el anillo de **versión preliminar** se convertirá en el **canal de versión preliminar**de la versión. Este es el aspecto de la asignación:
 
-![Más detalladas de canales de Windows Insider](images/WindowsInsiderChannels.png)
+![Explicación de Windows Insider Channels](images/WindowsInsiderChannels.png)
 
 Para obtener más información: [entrada de blog de Windows](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
 
@@ -58,7 +59,6 @@ Para no participar en las compilaciones de Insider:
 1. Siga las instrucciones para cancelar el dispositivo.
 
 
-
 ## Proporcionar comentarios e informar de problemas
 
 Usa [la aplicación centro de opiniones](hololens-feedback.md) de tu HoloLens para proporcionar comentarios e informar de problemas. El uso del centro de opiniones asegura que se incluya toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver el problema rápidamente.  Los problemas con la versión China y japonesa de HoloLens se deben notificar de la misma manera.
@@ -73,9 +73,10 @@ Te recomendamos que intentes desarrollar tus aplicaciones con las compilaciones 
 
 ## Notas de la versión de Windows Insider
 
-Si busca una característica que se menciona anteriormente aquí y no la ve, debe leer las notas de la [versión](hololens-release-notes.md) para ver todas las características que están disponibles por el público general (). Asegúrate de [actualizar tu HoloLens](hololens-update-hololens.md) para obtener todas las características más recientes.  
+A partir de la versión de [actualización de Windows Holographic 2020](hololens-release-notes.md) , ahora están disponibles todas las características de la versión preliminar. Asegúrate de [actualizar tu HoloLens](hololens-update-hololens.md) para obtener todas las características más recientes.
 
-Actualizaremos esta página de nuevo con nuevas características a medida que las liberaremos para compilaciones de Windows Insider. 
+Volveremos a actualizar esta página con nuevas características a medida que las liberaremos para compilaciones de Windows Insider.
+
 
 ### Soporte de posición de ojos automático
 
@@ -101,6 +102,6 @@ Para las experiencias que requieren datos de ojo ocular o un holograma muy preci
 Para probar con un FFU firmado de vuelo, primero debe desbloquear el dispositivo antes de hacer parpadear la FFU con firma de vuelo.
 1. En PC
     1. Descarga FFU en tu PC desde:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
-    1. Instale ARC (Asistente para recuperación avanzada) en Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 
+    1. Instale ARC (Asistente para recuperación avanzada) en Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 1. En HoloLens-desbloqueo de vuelo: abrir **configuración**  >  **Actualizar & seguridad**  >  **Windows Insider** , después registrarse, reiniciar el dispositivo
-1. Flash FFU: ahora puedes Flash el vuelo con firma de FFU con arco 
+1. Flash FFU: ahora puedes Flash el vuelo con firma de FFU con arco
