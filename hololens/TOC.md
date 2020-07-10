@@ -71,7 +71,7 @@
 
 # Mantener
 ## [Administrar actualizaciones de HoloLens](hololens-updates.md)
-## Corrección de problemas de HoloLens
+## Corregir problemas de HoloLens
 ### [Solución de problemas](hololens-troubleshooting.md)
 ### [Reiniciar, restablecer o recuperar HoloLens 2](hololens-recovery.md)
 ### [Reiniciar, restablecer o recuperar HoloLens (1.ª generación) ](hololens1-recovery.md)
