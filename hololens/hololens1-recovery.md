@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 36192315e234db16c7747457e69d6d6281c31bfe
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
+ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857738"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "10861165"
 ---
 # Reiniciar, restablecer o recuperar HoloLens (1.ª generación)
 
@@ -123,7 +123,7 @@ En el caso de que su dispositivo no sea detectado, por favor utilice el siguient
 
 1. Desconecte el dispositivo de todas las fuentes de energía.
 1. Si el dispositivo está encendido, por favor mantenga pulsado el botón de encendido hasta que esté completamente apagado.
-1. Mantenga presionado el botón de**Subir volumen**, y toque brevemente el **Botón de encendido**. 
+1. Mantenga presionado el botón de **Subir volumen** y pulse el **botón de Inicio/Apagado**. 
 1. El dispositivo debería iniciar y luego mostrar sólo la luz LED del medio.
 1. Enchufe el dispositivo en su PC.
 1. Ejecute Windows Device Recovery Tool.
