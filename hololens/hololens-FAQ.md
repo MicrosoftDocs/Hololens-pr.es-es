@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: cb9234556d0b5c654747e0f404d1d10d8a2cd539
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828836"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865579"
 ---
 # Preguntas frecuentes sobre los dispositivos HoloLens y los hologramas
 
@@ -281,7 +281,8 @@ El registro se limita a los rastros que pueden ser capturados en los escenarios 
 
 ## Preguntas sobre la seguridad de los dispositivos HoloLens
 
-Consulte las[ preguntas frecuentes sobre la seguridad de los dispositivos HoloLens](hololens-faq-security.md). 
+Consulta [nuestra información de seguridad de HoloLens 2](security-overview.md).
+Para los dispositivos HoloLens de la primera generación, consulta [esta pregunta frecuente](hololens1-faq-security.md).
 
 [Volver a la lista](#list)
 

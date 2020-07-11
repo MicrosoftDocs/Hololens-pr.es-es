@@ -10,18 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
-ms.openlocfilehash: 8aa8e0f679ad18a2e47f34c5f1233435a502dc0c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: e53e6575ef688e01ce2d1f6124f3214b18b05c95
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830134"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865569"
 ---
 # Implementar HoloLens en un entorno comercial
 
 Puedes implementar y configurar HoloLens a escala en una configuración comercial. En este artículo se proporcionan instrucciones para implementar dispositivos HoloLens en un entorno comercial. En esta guía se presupone la familiaridad básica con HoloLens. Sigue la [Guía](hololens1-setup.md) introducción para configurar HoloLens por primera vez.
 
-En este documento también se supone que los equipos de seguridad han evaluado la función HoloLens como segura para usarse en la red corporativa. Las preguntas más frecuentes de seguridad se pueden encontrar [aquí](hololens-faq-security.md)
+En este documento también se supone que los equipos de seguridad han evaluado la función HoloLens como segura para usarse en la red corporativa.  
+> [!Tip]
+> Más información sobre la [seguridad de HoloLens](security-overview.md).
+> Para obtener la seguridad de HoloLens (1ª generación), consulta [esta pregunta frecuente](hololens1-faq-security.md).
 
 ## Información general sobre los pasos de implementación
 
@@ -32,11 +35,11 @@ En este documento también se supone que los equipos de seguridad han evaluado l
 1. Faculta [Configurar HoloLens con un paquete de aprovisionamiento](hololens-provisioning.md)
 1. [Dispositivo de inscripción](hololens-enroll-mdm.md)
 1. [Configurar actualizaciones de HoloLens basadas en anillos](hololens-updates.md)
-1. [Habilitar el cifrado de dispositivo de Bitlocker para HoloLens](hololens-encryption.md)
+1. [Habilitar el cifrado de dispositivo de Bitlocker para HoloLens](security-encryption-data-protection.md)
 
 ## Paso 1. Determinar lo que necesita
 
-Antes de implementar HoloLens en el entorno, es importante determinar primero qué características, aplicaciones y tipo de identidades son necesarias. También es importante asegurarse de que el equipo de seguridad haya aprobado el uso de HoloLens en la red de la empresa. Consulta las [preguntas más frecuentes](hololens-faq-security.md) sobre seguridad para obtener información de seguridad adicional.
+Antes de implementar HoloLens en el entorno, es importante determinar primero qué características, aplicaciones y tipo de identidades son necesarias. También es importante asegurarse de que el equipo de seguridad haya aprobado el uso de HoloLens en la red de la empresa. Para obtener más información sobre seguridad, consulta [HoloLens2 seguridad](security-overview.md) .
 
 ### Tipo de identidad
 
