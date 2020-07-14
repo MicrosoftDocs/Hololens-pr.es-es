@@ -16,12 +16,12 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ca4256fc38253f6f1618da73f804ab3d4c0e66df
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 977f6b86e545e834bc9f7d5060b55755243531ac
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827525"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865549"
 ---
 # Microsoft HoloLens
 
@@ -56,7 +56,7 @@ ms.locfileid: "10827525"
 | [Administración de actualizaciones de HoloLens](hololens-updates.md) | Use las directivas de administración de dispositivos móviles (MDM) para configurar las opciones de las actualizaciones. |
 | [Administración de usuarios de HoloLens](hololens-multiple-users.md) | Varios usuarios pueden compartir un dispositivo HoloLens mediante sus cuentas de Azure Active Directory. |
 | [Administración de acceso a la aplicación de HoloLens](hololens-kiosk.md) | Administrar el acceso a la aplicación para distintos grupos de usuarios.  |
-| [Recuperar y solucionar problemas de HoloLens](https://support.microsoft.com/products/hololens) |  Obtenga información sobre cómo recopilar registros de HoloLens, recuperar un dispositivo que no responda o restablecer HoloLens cuando sea necesario. |
+| [Recuperar y solucionar problemas de HoloLens](hololens-recovery.md) |  Obtenga información acerca de cómo reiniciar un dispositivo que no se puede deshacer o restablecer HoloLens 2 cuando sea necesario. |
 | [Contactar con el soporte técnico](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) | Cree una nueva solicitud de soporte para el equipo de soporte técnico de la empresa. | 
 | [Más opciones de soporte técnico](https://support.microsoft.com/products/hololens) | Conectarse con los recursos de soporte técnico de Microsoft para HoloLens en la empresa. |
 
