@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d4c5441c1df198ae1c85be5d8f4fe38f10f0be4b
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828715"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881250"
 ---
 # Conectarse a dispositivos Bluetooth y USB-C
 
@@ -29,6 +29,9 @@ El HoloLens 2 soporta las siguientes clases de dispositivos Bluetooth:
 - Mouse
 - Teclado
 - Dispositivos de salida de audio Bluetooth (A2DP)
+
+> [!NOTE]
+> No se pueden usar Micrófonos externos. HoloLens 2 usa su de [matriz de micrófonos integrada](hololens2-hardware.md#audio-and-speech).
 
 El HoloLens (1ª generación) soporta las siguientes clases de dispositivos Bluetooth:
 
@@ -44,7 +47,9 @@ El HoloLens (1ª generación) soporta las siguientes clases de dispositivos Blue
 1. Encienda el teclado o el ratón y póngalo visible. Para aprender cómo hacer que el dispositivo sea visible, busque información sobre el dispositivo (o su documentación) o visite el sitio web del fabricante.
 
 1. Utilice el gesto de eclosión (HoloLens (1era generación)) o el gesto de inicio (HoloLens 2) para ir a ** Inicio**, y luego selecciona **Ajustes**.
+
 1. Seleccione **Dispositivos**, y asegúrese de que el Bluetooth esté activado.  
+
 1. Cuando vea el nombre del dispositivo, seleccione **Emparejar**, y luego sigue las instrucciones.
 
 ### HoloLens (1era generación): emparejar el mando
@@ -74,7 +79,7 @@ El HoloLens 2 soporta las siguientes clases de dispositivos USB-C:
 - Combinación de concentradores de DP (USB A + carga de DP)
 
 > [!NOTE]
-> Algunos dispositivos móviles con conexiones USB-C se presentan al HoloLens como adaptadores de ethernet, y por lo tanto podrían ser utilizados en una configuración de atadura, comenzando con el Windows Holographic, versión 2004. No se admiten los módems USB LTE que requieren un controlador separado, y/o la aplicación instalada para la configuración
+> Algunos dispositivos móviles con conexiones USB-C se presentan al HoloLens como adaptadores de ethernet, y por lo tanto podrían ser utilizados en una configuración de atadura, comenzando con el Windows Holographic, versión 2004. No se admiten los módems USB LTE que requieran un controlador diferente, o bien la aplicación instalada para la configuración.
 
 ## Conéctese a Miracast
 
@@ -86,6 +91,7 @@ Para utilizar Miracast, siga estos pasos:
    - Diga "Conectar" mientras mira el menú de**Inicio**.  
 
 1. En la lista de dispositivos que aparece, seleccione un dispositivo disponible.
+
 1. Complete el apareamiento para empezar a proyectar.
 
 ## Desactivar Bluetooth
@@ -93,4 +99,5 @@ Para utilizar Miracast, siga estos pasos:
 Este procedimiento desactiva los componentes de radiofrecuencia de la radio Bluetooth y desactiva todas las funciones de Bluetooth en el HoloLens de Microsoft.
 
 1. Utilice el gesto de eclosión (HoloLens (1era generación)) o el gesto de inicio (HoloLens 2) para ir a **Inicio**, y luego selecciona **Configuración** > **Dispositivos**.
+
 1. Deslice el interruptor de activación de **Bluetooth** a la posición **Desconectado**.
