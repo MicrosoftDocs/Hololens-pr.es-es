@@ -15,18 +15,37 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 25a1bc21638090cc5d22bc4482299f3931641dea
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: cb4296413fdf31376ff0d11f1fa807c190af81f4
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829045"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881240"
 ---
 # Notas de la versión de HoloLens 2
 
-Para asegurarte de tener una experiencia productiva con tus dispositivos HoloLens, continuamos publicando características, errores y actualizaciones de seguridad. En esta página, puedes obtener información sobre las novedades de HoloLens cada mes. Si deseas descargar la última versión de HoloLens 2 FFU para Flash el dispositivo a través del [Asistente de recuperación avanzada](hololens-recovery.md#clean-reflash-the-device) , puedes descargarlo desde [aquí](https://aka.ms/hololens2download). Esto se mantiene actualizado y coincidirá con la última versión disponible general. 
+Para asegurarte de tener una experiencia productiva con tus dispositivos HoloLens, continuamos publicando características, errores y actualizaciones de seguridad. En esta página, puedes obtener información sobre las novedades de HoloLens cada mes. Si deseas descargar la última versión de HoloLens 2 FFU para Flash el dispositivo a través del [Asistente de recuperación avanzada](hololens-recovery.md#clean-reflash-the-device) , puedes descargarlo desde [aquí](https://aka.ms/hololens2download). Esto se mantiene actualizado y coincidirá con la última construcción generalmente disponible. 
 
 Las notas de la versión del emulador de HoloLens se pueden encontrar [aquí](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows Holographic, versión 2004, actualización de julio de 2020
+- Compilación 19041,1109
+
+Mejoras y correcciones de la actualización:
+
+- Los desarrolladores pueden elegir entre habilitar o deshabilitar Device portal que requiere una conexión segura.
+- Mejoras de confiabilidad para los lanzamientos de aplicaciones después de las actualizaciones del sistema operativo.
+- Cambie el brillo predeterminado de la bandeja de entrada a 100%.
+- Se solucionó un problema relacionado con el reenvío de HTTPS para Windows Device portal en HoloLens 2.
+
+## Windows Holographic, versión 1903, actualización de julio de 2020
+- Compilación 18362,1071
+
+Mejoras y correcciones de la actualización:
+
+- Corrige un problema que podría provocar que los hologramas desaparezcan en las aplicaciones de Unity al perder o recuperar el seguimiento.
+- Se ha corregido un problema que causaba que las aplicaciones de Hololens exclusivas se bloquearan en el shell al usar el emulador Hololens con aceleración de hardware en determinados dispositivos.
+- Se solucionó un problema relacionado con el reenvío de HTTPS para Windows Device portal en HoloLens 2.
 
 ## Windows Holographic, versión 2004-actualización 2020 de junio
 - Compilación 19041,1106
