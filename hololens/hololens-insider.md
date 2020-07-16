@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
-ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
+ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860610"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882432"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -51,11 +51,13 @@ Si ya no desea recibir compilaciones de Insider de Windows Holographic, puede de
 Para comprobar que HoloLens está ejecutando una compilación de producción:
 
 1. Vaya a **configuración > sistema >** y busque el número de compilación.
-1. [Consulte las notas de la versión de los números de compilación de producción.](hololens-release-notes.md)
+
+1. [Consulte las notas de la versión de los números de compilación de producción](hololens-release-notes.md).
 
 Para no participar en las compilaciones de Insider:
 
 1. En un HoloLens que ejecute una compilación de producción, vaya a **configuración > actualizar & seguridad > programa Windows Insider**y seleccione **detener compilaciones de Insider**.
+
 1. Siga las instrucciones para cancelar el dispositivo.
 
 
@@ -73,10 +75,15 @@ Te recomendamos que intentes desarrollar tus aplicaciones con las compilaciones 
 
 ## Notas de la versión de Windows Insider
 
-A partir de la versión de [actualización de Windows Holographic 2020](hololens-release-notes.md) , ahora están disponibles todas las características de la versión preliminar. Asegúrate de [actualizar tu HoloLens](hololens-update-hololens.md) para obtener todas las características más recientes.
+Si busca una característica que ya no aparece aquí, ahora está disponible para el público. Revise las notas de la [versión](hololens-release-notes.md) para ver qué compilación tiene las características que está emocionando. Asegúrate de [actualizar tu HoloLens](hololens-update-hololens.md) para obtener todas las características más recientes.
 
-Volveremos a actualizar esta página con nuevas características a medida que las liberaremos para compilaciones de Windows Insider.
+Actualizaremos esta página con nuevas características, ya que las liberaremos para compilaciones de Windows Insider.
 
+| Característica                               | Descripción                                                                                   | Disponible en compilaciones de Insider |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Soporte de posición de ojos automático             | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
+| Acceso asignado globalmente                | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1346 +                 |
+| Iniciar automáticamente una aplicación en quiosco de varias aplicaciones | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
 
 ### Soporte de posición de ojos automático
 
@@ -96,12 +103,29 @@ Hay algunos cambios en el comportamiento del sistema con la característica posi
 Para las experiencias que requieren datos de ojo ocular o un holograma muy preciso, recomendamos que los usuarios no calibrados ejecuten la calibración del seguimiento ocular desde la solicitud de calibración de seguimiento ocular o iniciando la aplicación configuración desde el menú Inicio y seleccionando **> calibración del sistema > calibración de ojos > ejecutar**la calibración de ojos.
 
 **Problemas conocidos**
-1.  Estamos investigando un problema por el que el proceso de hospedaje del controlador del seguimiento ocular podría bloquearse al ejecutarse en una carga pesada de la memoria. El proceso de hospedaje del controlador de seguimiento ocular debe recuperarse automáticamente.
+ - Estamos investigando un problema por el que el proceso de hospedaje del controlador del seguimiento ocular podría bloquearse al ejecutarse en una carga pesada de la memoria. El proceso de hospedaje del controlador de seguimiento ocular debe recuperarse automáticamente.
+
+### Acceso asignado global: modo de pantalla completa
+Esta nueva característica permite que un administrador de ti configure un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. [Aquí encontrará](hololens-global-assigned-access-kiosk.md)información sobre esta nueva característica.
+
+### Inicio automático de una aplicación en el modo de pantalla completa de varias aplicaciones 
+Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para iniciar automáticamente con el atributo resaltado a continuación en la configuración de acceso asignada. 
+
+La aplicación se inicia automáticamente cuando el usuario inicia sesión. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU de descarga y de Flash
 Para probar con un FFU firmado de vuelo, primero debe desbloquear el dispositivo antes de hacer parpadear la FFU con firma de vuelo.
-1. En PC
-    1. Descarga FFU en tu PC desde:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
+1. En PC:
+
+    1. Descarga FFU en tu PC desde [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
+    
     1. Instale ARC (Asistente para recuperación avanzada) en Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
-1. En HoloLens-desbloqueo de vuelo: abrir **configuración**  >  **Actualizar & seguridad**  >  **Windows Insider** , después registrarse, reiniciar el dispositivo
-1. Flash FFU: ahora puedes Flash el vuelo con firma de FFU con arco
+    
+1. En HoloLens-desbloqueo de vuelo: abrir **configuración**  >  **Actualizar & seguridad**  >  **Windows Insider** después, Regístrese, reiniciar el dispositivo.
+
+1. Flash FFU: ahora puedes hacer parpadear el vuelo con la firma de FFU con arco.
