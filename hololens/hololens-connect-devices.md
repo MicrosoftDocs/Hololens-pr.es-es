@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881250"
+ms.locfileid: "10881343"
 ---
 # Conectarse a dispositivos Bluetooth y USB-C
 
@@ -80,6 +80,8 @@ El HoloLens 2 soporta las siguientes clases de dispositivos USB-C:
 
 > [!NOTE]
 > Algunos dispositivos móviles con conexiones USB-C se presentan al HoloLens como adaptadores de ethernet, y por lo tanto podrían ser utilizados en una configuración de atadura, comenzando con el Windows Holographic, versión 2004. No se admiten los módems USB LTE que requieran un controlador diferente, o bien la aplicación instalada para la configuración.
+
+En respuesta a los comentarios de los clientes, hemos habilitado la compatibilidad limitada para la conectividad de telefonía móvil anclada directamente a HoloLens mediante USB-C.  La conectividad anclada solo funciona para dispositivos que sean compatibles con la implementación del controlador [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) genérico de Microsoft y que no requieran la instalación de controladores o aplicaciones adicionales.  Este dispositivo, cuando esté conectado, aparecerá automáticamente como una nueva conexión Ethernet en la interfaz de usuario de configuración de red de HoloLens 2. Consulte con el fabricante del dispositivo para obtener más información sobre si admite el controlador RNDIS genérico de Microsoft.
 
 ## Conéctese a Miracast
 
