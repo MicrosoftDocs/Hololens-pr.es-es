@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28898c5c0cbc2a4f66cea13665e5ef63447db382
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
+ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828756"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10882990"
 ---
 # Características comerciales
 
@@ -75,11 +75,11 @@ HoloLens (1.ª generación) se incluía con dos opciones de licencia, la licenci
 
 ## Habilitar características comerciales
 
-El administrador de TI de su organización puede configurar características comerciales como Microsoft Store para Empresas, la pantalla completa y el acceso de Wi-Fi empresarial. La documentación de [Microsoft HoloLens](index.md) proporciona instrucciones paso a paso para inscribir dispositivos e instalar aplicaciones desde Microsoft Store para Empresas.
+El administrador de TI de su organización puede configurar características comerciales como Microsoft Store para Empresas, la pantalla completa y el acceso de Wi-Fi empresarial. La documentación de [Microsoft HoloLens](index.yml) proporciona instrucciones paso a paso para inscribir dispositivos e instalar aplicaciones desde Microsoft Store para Empresas.
 
 ## Puedes ver también
 
-- [Microsoft HoloLens](index.md)
+- [Microsoft HoloLens](index.yml)
 - [Pantalla completa](hololens-kiosk.md)
 - [CSP admitidos en dispositivos HoloLens](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [Microsoft Store para Empresas y aplicaciones de línea de negocio](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
