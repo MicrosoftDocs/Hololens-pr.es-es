@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c88a9af7369a6a9d6fb115fb820c0a4da13eafdc
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 147401331cb6da732a6fe37e57964d61a10dce99
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865899"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883144"
 ---
 # Seguridad de red
 
@@ -26,8 +26,6 @@ ms.locfileid: "10865899"
 El antiguo NetBIOS (Sistema básico de entrada y salida de red) era ampliamente usado en escenarios de LAN, generalmente para ofrecer resolución de nombres para un equipo y carpetas compartidas. Sin embargo, con el tiempo, se demostró que NetBIOS es susceptible de sufrir múltiples ataques y su relevancia se ha reducido para favorecer a otros protocolos más seguros. Para quitar este problema de vulnerabilidad, HoloLens 2 ha eliminado el código relacionado con NetBIOS del sistema operativo.
 
 Los protocolos de seguridad de la capa de transporte (TLS) están evolucionando constantemente. Para estar al día con las distintas vulneraciones de seguridad que se han descubierto en esta área, el sector informático se ha graduado a versiones más nuevas y efectivas. Dado que el tiempo necesario para que todas las implementaciones de servidor adopten las nuevas versiones del protocolo TLS, se puede implementar un mecanismo de reserva que permite que el cliente y los servidores con distintas versiones de protocolo predeterminadas aún puedan comunicarse durante el período de transición.
-
-Sin embargo, estos mecanismos de reserva aumentan los riesgos de seguridad. Para comprender este problema, en HoloLens 2 se ha deshabilitado la reserva de TLS 1.2 a TLS 1.1 o 1.0, y no hay ninguna interfaz de usuario que la habilite. Además, durante el protocolo de enlace TLS, el cliente solicitará el servidor TLS 1.2, y no permitirá al servidor cambiar a una versión anterior.
 
 ## Conectividad segura 
 
