@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6ce55630c6ec20b83ca24006acedbe5f949997
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
+ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828995"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888559"
 ---
 # Preguntas más frecuentes acerca de la limpieza de HoloLens 2
 
@@ -74,7 +74,7 @@ Para limpiar el Bloc de notas, límpielo con un paño que se haya humedecido usa
 
 ## ¿Puedo usar la luz ultravioleta (UV) para sanear el dispositivo?
 
-La irradiación Germicidal no ha sido probada en HoloLens 2.
+UVC Irradiance con LED UVC, que opera a 265nm a nivel de intensidad de 0,5-0,6 mW/cm <sup> 2 </sup> , y no emite ozono, puede usarse para sanear HoloLens2. Sigue las especificaciones del fabricante sobre el tiempo de manipulación y exposición.
 
 > [!CAUTION]  
 > Los niveles altos de exposición a UV-A y UV-B pueden degradar la calidad de visualización del dispositivo y dañar el revestimiento del visor. La radiación sobreexpuesta a la radiación UV-A y UV-B tiene los siguientes efectos, por orden de duración e intensidad de exposición:
@@ -82,7 +82,7 @@ La irradiación Germicidal no ha sido probada en HoloLens 2.
 > 1. El Bloc de notas y los cierres del dispositivo se decoloran.
 > 1. Aparecen defectos en el recubrimiento antireflectante (AR) del visor y en las ventanas de los sensores.
 > 1. Aparecen defectos en los materiales base del visor y en las ventanas del sensor.
-> 1. El rendimiento de SRG se degrada.
+> 1. Se degrada el rendimiento de la pantalla.
 
 ## ¿Se reemplaza el panel trasero?
 
