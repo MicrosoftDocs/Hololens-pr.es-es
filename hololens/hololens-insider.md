@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
-ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
+ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
+ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "10883379"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10894073"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -31,47 +31,7 @@ Windows Insider se está moviendo a los canales. El timbre **rápido** se conver
 
 ![Explicación de Windows Insider Channels](images/WindowsInsiderChannels.png)
 
-Para obtener más información: [entrada de blog de Windows](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
-
-## Empezar a recibir compilaciones de Insider
-
-En un dispositivo HoloLens 2, vaya a **configuración**  ->  **Update & seguridad**de  ->  **Windows Insider** y seleccione **Introducción**. Vincule la cuenta que usó para registrarse como Windows Insider.
-
-Después, selecciona **desarrollo activo de Windows**, elige si deseas recibir las compilaciones de **canal** de **desarrollo** o beta, y revisa las condiciones del programa.
-
-Seleccione **confirmar, > reiniciar ahora** para finalizar. Después de reiniciar el dispositivo, vaya a **configuración-> actualización & seguridad: > comprobar si hay actualizaciones** para obtener la compilación más reciente.
-
-## Dejar de recibir compilaciones de Insider
-
-Si ya no desea recibir compilaciones de Insider de Windows Holographic, puede deshabilitarlas cuando HoloLens esté ejecutando una compilación de producción, o puede [recuperar el dispositivo](hololens-recovery.md) con el Asistente de recuperación avanzada para recuperar el dispositivo a una versión no Insider de Windows Holographic.
-
-> [!CAUTION]
-> Hay un problema conocido por el que los usuarios que cancelan la inscripción de las compilaciones de Insider Preview después de volver a instalar manualmente una versión preliminar nueva se vería una pantalla azul. Después, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se vería afectado o no, consulte más información sobre este [problema conocido](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build).
-
-Para comprobar que HoloLens está ejecutando una compilación de producción:
-
-1. Vaya a **configuración > sistema >** y busque el número de compilación.
-
-1. [Consulte las notas de la versión de los números de compilación de producción](hololens-release-notes.md).
-
-Para no participar en las compilaciones de Insider:
-
-1. En un HoloLens que ejecute una compilación de producción, vaya a **configuración > actualizar & seguridad > programa Windows Insider**y seleccione **detener compilaciones de Insider**.
-
-1. Siga las instrucciones para cancelar el dispositivo.
-
-
-## Proporcionar comentarios e informar de problemas
-
-Usa [la aplicación centro de opiniones](hololens-feedback.md) de tu HoloLens para proporcionar comentarios e informar de problemas. El uso del centro de opiniones asegura que se incluya toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver el problema rápidamente.  Los problemas con la versión China y japonesa de HoloLens se deben notificar de la misma manera.
-
-> [!NOTE]
-> Asegúrese de aceptar el mensaje que le pregunta si desea que el centro de comentarios acceda a su carpeta de documentos (seleccione **sí** cuando se le solicite).
-
-## Nota para los desarrolladores
-
-Te recomendamos que intentes desarrollar tus aplicaciones con las compilaciones de Insider de HoloLens.  Consulta la [documentación para desarrolladores de HoloLens](https://developer.microsoft.com/windows/mixed-reality/development) para comenzar. Las mismas instrucciones funcionan con las compilaciones de Insider de HoloLens.  Puedes usar las mismas compilaciones de Unity y Visual Studio que ya usas para el desarrollo de HoloLens.
-
+Para obtener más información, vea Introducción a los [canales de Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) en blogs de Windows.
 
 ## Notas de la versión de Windows Insider
 
@@ -79,13 +39,16 @@ Si busca una característica que ya no aparece aquí, ahora está disponible par
 
 Actualizaremos esta página con nuevas características, ya que las liberaremos para compilaciones de Windows Insider.
 
-| Característica                               | Descripción                                                                                   | Disponible en compilaciones de Insider |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Soporte de posición de ojos automático             | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
-| Acceso asignado global                | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1346 +                 |
-| Iniciar automáticamente una aplicación en quiosco de varias aplicaciones | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
-| Nuevas directivas de energía para Hololens 2     | Directivas que se han admitido recientemente para la configuración del tiempo de espera.                                          | 19041.1349 +                 |
-| Visor de certificados                    | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                        | 19041.1346 +                 |
+| Característica                                         | Descripción                                                                                   | Disponible en compilaciones de Insider |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Soporte de posición de ojos automático                       | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
+| Acceso asignado global                          | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1346 +                 |
+| Iniciar automáticamente una aplicación en quiosco de varias aplicaciones           | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
+| Nuevas directivas de energía para Hololens 2               | Directivas que se han admitido recientemente para la configuración del tiempo de espera.                                          | 19041.1349 +                 |
+| Visor de certificados                              | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                        | 19041.1346 +                 |
+| Nuevas directivas de restricción de dispositivo para HoloLens 2  | Directivas de administración de dispositivos habilitadas recientemente para HoloLens 2.                              | 19041.1349 +                 |
+| Visibilidad de la página de configuración habilitada para HoloLens 2 | Directiva para elegir qué páginas se ven en la aplicación configuración.                                          | 19041.1349 +                 |
+| Directivas de HoloLens                               | Nuevas directivas para dispositivos de realidad mixta.                                                       | 19041.1349 +                 |
 
 ### Soporte de posición de ojos automático
 
@@ -147,6 +110,38 @@ Para ver los certificados, vaya a **configuración > actualizar & certificados >
 
 ![Visor de certificados de la aplicación configuración](images/hololens-certificate-viewer.png)
 
+### Nuevas directivas de restricción de dispositivo para HoloLens 2
+Directivas habilitadas recientemente que permiten más opciones de administración de los dispositivos HoloLens 2. 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Visibilidad de la página de configuración habilitada para HoloLens 2
+Hemos habilitado una directiva que permite a los administradores de ti evitar que determinadas páginas de la aplicación configuración del sistema sean visibles o accesibles, o para hacerlo en todas las páginas excepto en las especificadas. Para obtener información sobre cómo personalizar completamente esta característica, haz clic en el vínculo a continuación.
+ 
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+ 
+![Captura de pantalla de horas activas que se están modificando en la aplicación configuración](images/hololens-page-visibility-list.jpg)
+
+### Directivas de HoloLens
+Se han creado nuevas directivas de realidad mixta para dispositivos HoloLens 2 en compilaciones 19041.1349 +. La configuración controlable nueva incluye: configurar el brillo, configurar el volumen, deshabilitar la grabación de audio en capturas de realidad mixta, establecer cuándo se pueden recopilar los diagnósticos.  
+
+|     Nueva política de HoloLens                   |     Descripción                                                                            |     Notas                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|     MixedReality\BrightnessButtonDisabled |     Permite que los botones de brillo estén deshabilitados y, al presionarlos, no cambie el brillo.    |     1 sí, 0 no (valor predeterminado)                                                |
+|     MixedReality\VolumeButtonDisabled     |     Permite que los botones de volumen estén deshabilitados para que, al presionarlos, no cambie el volumen.            |     1 sí, 0 no (valor predeterminado)                                                |
+|     MixedReality\MicrophoneDisabled       |     Desactiva el micrófono para que no se pueda grabar audio en HoloLens 2.                   |     1 sí, 0 no (valor predeterminado)                                                |
+|     MixedReality\FallbackDiagnostics      |     Controla el comportamiento del momento en que se pueden recopilar los registros de diagnóstico.                            |     0 deshabilitado, 1 habilitado para propietarios de dispositivos, 2 habilitado para todos (predeterminado) |
+|     MixedReality\HeadTrackingMode         |     Reservado para uso futuro.                                                               |                                                                          |
+
+## Empezar a recibir compilaciones de Insider
+
+En un dispositivo HoloLens 2, vaya a **configuración**  >  **Update & seguridad**de  >  **Windows Insider** y seleccione **Introducción**. Vincule la cuenta que usó para registrarse como Windows Insider.
+
+Después, selecciona **desarrollo activo de Windows**, elige si deseas recibir las compilaciones de **canal** de **desarrollo** o beta, y revisa las condiciones del programa.
+
+Seleccione **confirmar > reiniciar ahora** para finalizar. Después de reiniciar el dispositivo, vaya a **configuración > actualizar & seguridad > buscar actualizaciones** para obtener la compilación más reciente.
+
 ## FFU de descarga y de Flash
 Para probar con un FFU firmado de vuelo, primero debe desbloquear el dispositivo antes de hacer parpadear la FFU con firma de vuelo.
 1. En PC:
@@ -158,3 +153,33 @@ Para probar con un FFU firmado de vuelo, primero debe desbloquear el dispositivo
 1. En HoloLens-desbloqueo de vuelo: abrir **configuración**  >  **Actualizar & seguridad**  >  **Windows Insider** después, Regístrese, reiniciar el dispositivo.
 
 1. Flash FFU: ahora puedes hacer parpadear el vuelo con la firma de FFU con arco.
+
+## Proporcionar comentarios e informar de problemas
+
+Usa [la aplicación centro de opiniones](hololens-feedback.md) de tu HoloLens para proporcionar comentarios e informar de problemas. El uso del centro de opiniones asegura que se incluya toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver el problema rápidamente.  Los problemas con la versión China y japonesa de HoloLens se deben notificar de la misma manera.
+
+> [!NOTE]
+> Asegúrese de aceptar el mensaje que le pregunta si desea que el centro de comentarios acceda a su carpeta de documentos (seleccione **sí** cuando se le solicite).
+
+## Nota para los desarrolladores
+
+Te recomendamos que intentes desarrollar tus aplicaciones con las compilaciones de Insider de HoloLens.  Consulta la [documentación para desarrolladores de HoloLens](https://developer.microsoft.com/windows/mixed-reality/development) para comenzar. Las mismas instrucciones funcionan con las compilaciones de Insider de HoloLens.  Puedes usar las mismas compilaciones de Unity y Visual Studio que ya usas para el desarrollo de HoloLens.
+
+## Dejar de recibir compilaciones de Insider
+
+Si ya no desea recibir compilaciones de Insider de Windows Holographic, puede deshabilitarlas cuando HoloLens esté ejecutando una compilación de producción, o puede [recuperar el dispositivo](hololens-recovery.md) con el Asistente de recuperación avanzada para recuperar el dispositivo a una versión no Insider de Windows Holographic.
+
+> [!CAUTION]
+> Hay un problema conocido por el que los usuarios que cancelan la inscripción de las compilaciones de Insider Preview después de volver a instalar manualmente una versión preliminar nueva se vería una pantalla azul. Después, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se vería afectado o no, consulte más información sobre este [problema conocido](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build).
+
+Para comprobar que HoloLens está ejecutando una compilación de producción:
+
+1. Vaya a **configuración > sistema >** y busque el número de compilación.
+
+1. [Consulte las notas de la versión de los números de compilación de producción](hololens-release-notes.md).
+
+Para no participar en las compilaciones de Insider:
+
+1. En un HoloLens que ejecute una compilación de producción, vaya a **configuración > actualizar & seguridad > programa Windows Insider**y seleccione **detener compilaciones de Insider**.
+
+1. Siga las instrucciones para cancelar el dispositivo.
