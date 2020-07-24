@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
+ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894073"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894609"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -39,8 +39,8 @@ Si busca una característica que ya no aparece aquí, ahora está disponible par
 
 Actualizaremos esta página con nuevas características, ya que las liberaremos para compilaciones de Windows Insider.
 
-| Característica                                         | Descripción                                                                                   | Disponible en compilaciones de Insider |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+|                     Característica                     |                                          Descripción                                          | Disponible en compilaciones de Insider |
+|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | Soporte de posición de ojos automático                       | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
 | Acceso asignado global                          | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1346 +                 |
 | Iniciar automáticamente una aplicación en quiosco de varias aplicaciones           | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
@@ -49,6 +49,7 @@ Actualizaremos esta página con nuevas características, ya que las liberaremos 
 | Nuevas directivas de restricción de dispositivo para HoloLens 2  | Directivas de administración de dispositivos habilitadas recientemente para HoloLens 2.                              | 19041.1349 +                 |
 | Visibilidad de la página de configuración habilitada para HoloLens 2 | Directiva para elegir qué páginas se ven en la aplicación configuración.                                          | 19041.1349 +                 |
 | Directivas de HoloLens                               | Nuevas directivas para dispositivos de realidad mixta.                                                       | 19041.1349 +                 |
+| Actualizar directivas                                 | Directivas habilitadas recientemente que permiten controlar las actualizaciones.                                           | 19041.1352 +                 |
 
 ### Soporte de posición de ojos automático
 
@@ -133,6 +134,12 @@ Se han creado nuevas directivas de realidad mixta para dispositivos HoloLens 2 e
 |     MixedReality\MicrophoneDisabled       |     Desactiva el micrófono para que no se pueda grabar audio en HoloLens 2.                   |     1 sí, 0 no (valor predeterminado)                                                |
 |     MixedReality\FallbackDiagnostics      |     Controla el comportamiento del momento en que se pueden recopilar los registros de diagnóstico.                            |     0 deshabilitado, 1 habilitado para propietarios de dispositivos, 2 habilitado para todos (predeterminado) |
 |     MixedReality\HeadTrackingMode         |     Reservado para uso futuro.                                                               |                                                                          |
+### Nuevas directivas de actualización habilitadas para HoloLens
+Estas directivas de actualización ahora están habilitadas en los dispositivos HoloLens 2:
+-   [Actualizar/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Actualizar/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Actualizar/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Actualizar/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ## Empezar a recibir compilaciones de Insider
 
