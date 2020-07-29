@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829603"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899173"
 ---
 # Recopilar y usar información de diagnóstico de dispositivos HoloLens
 
@@ -43,6 +43,7 @@ En la siguiente tabla se comparan los tres métodos de colección. Los nombres d
 |[Centro de opiniones](#feedback-hub) |Conexión a Internet y a la red<br /><br />Aplicación del centro de opiniones<br /><br />Permiso para cargar archivos en la nube de Microsoft |Microsoft Cloud<br /><br />Dispositivo HoloLens (opcional) |El usuario solicita asistencia, acepta las condiciones de uso y carga los datos<br /><br />Los empleados de Microsoft ven los datos de acuerdo con las condiciones de uso |Los datos de la nube se conservan para el período definido por la siguiente generación de privacidad (NGP). A continuación, los datos se eliminan automáticamente.<br /><br />Los datos en el dispositivo se pueden eliminar en cualquier momento por un usuario que tenga permisos de **Administrador** o **propietario del dispositivo** . |
 |[Solucionador de problemas de configuración](#settings-troubleshooter) |Aplicación Configuración |Dispositivo HoloLens<br /><br />Equipo conectado (opcional) |El usuario almacena los datos y solo el usuario tiene acceso a los datos (a menos que el usuario comparta específicamente los datos con otro usuario). |Los datos se conservan hasta que el usuario lo elimina. * |
 |[DiagnosticLog CSP](#diagnosticlog-csp) |Conexión de red<br /><br />Entorno MDM que admite el CSP DiagnosticLog |El administrador configura las ubicaciones de almacenamiento |En el entorno administrado, el usuario reenvía implícitamente a los datos el acceso de administrador.<br /><br />El administrador configura los roles y permisos de Access. | El administrador configura la Directiva de retención. |
+|[Diagnóstico sin conexión](#offline-diagnostics) |Configuración del dispositivo:<ul><li>Encendido y conectado al equipo</li><li>Botones de encendido y de volumen en funcionamiento</li></ul> |Dispositivo HoloLens<br /><br />Equipo conectado |El usuario almacena los datos y solo el usuario tiene acceso a los datos (a menos que el usuario comparta específicamente los datos con otro usuario). |Los datos se conservan hasta que el usuario lo elimina. | 
 
 
 -   El usuario final es responsable de compartir los registros de forma responsable con otra persona. Estos archivos son útiles principalmente para ponerse en contacto con el servicio de asistencia al cliente.  
@@ -116,4 +117,22 @@ El administrador de ti usa el CSP DiagnosticLog para configurar el almacenamient
 - El período de retención de la información de diagnóstico.
 - Permisos que controlan el acceso a la información de diagnóstico.
 
+## Diagnóstico sin conexión
+En situaciones en las que el dispositivo no puede recopilar diagnósticos mediante el centro de opiniones o el solucionador de problemas de configuración, puede recopilar los diagnósticos de forma manual. Un escenario en el que es necesario esto es cuando el dispositivo no puede conectarse a una red Wi-Fi. Los diagnósticos recopilan volcados y registros del dispositivo que ayudan al ingeniero de soporte técnico de Microsoft a aislar problemas.
+
+Esto funciona cuando el dispositivo se muestra en el explorador de archivos después de conectarlo a un PC a través de un cable USB. 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+Siga estos pasos para recopilar diagnósticos:
+1.  Conecta el dispositivo con un cable USB a tu PC.
+2.  En el explorador de archivos de su equipo, vaya a **' este PC \<hololens-device> \Internal almacenamiento '**.
+3.  Si la carpeta **almacenamiento interno** no aparece, significa que el dispositivo está esperando a que el usuario inicie sesión. Para iniciar sesión o para encender o apagar el dispositivo, mantén presionado el botón de encendido durante 10 segundos.
+4.  Presione e inmediatamente suelte los botones de **encendido + bajar de volumen** .
+5.  Espere un minuto para que el dispositivo Prepare los archivos zip.
+6.  Actualice el explorador de archivos y vaya a la carpeta **' \Documents '** .
+7.  Copie los archivos ZIP de diagnóstico y compartirlos con el equipo de soporte técnico de Microsoft.
+
+Tenga en cuenta que algunos archivos ZIP de diagnósticos pueden contener información de identificación personal.
 
