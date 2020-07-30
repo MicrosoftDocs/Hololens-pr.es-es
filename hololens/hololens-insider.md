@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
-ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
+ms.openlocfilehash: 11915bd6b2293be4491af2a7231b258b12d7b314
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894609"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902322"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -39,17 +39,19 @@ Si busca una característica que ya no aparece aquí, ahora está disponible par
 
 Actualizaremos esta página con nuevas características, ya que las liberaremos para compilaciones de Windows Insider.
 
-|                     Característica                     |                                          Descripción                                          | Disponible en compilaciones de Insider |
-|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
-| Soporte de posición de ojos automático                       | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
-| Acceso asignado global                          | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1346 +                 |
-| Iniciar automáticamente una aplicación en quiosco de varias aplicaciones           | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
-| Nuevas directivas de energía para Hololens 2               | Directivas que se han admitido recientemente para la configuración del tiempo de espera.                                          | 19041.1349 +                 |
-| Visor de certificados                              | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                        | 19041.1346 +                 |
-| Nuevas directivas de restricción de dispositivo para HoloLens 2  | Directivas de administración de dispositivos habilitadas recientemente para HoloLens 2.                              | 19041.1349 +                 |
-| Visibilidad de la página de configuración habilitada para HoloLens 2 | Directiva para elegir qué páginas se ven en la aplicación configuración.                                          | 19041.1349 +                 |
-| Directivas de HoloLens                               | Nuevas directivas para dispositivos de realidad mixta.                                                       | 19041.1349 +                 |
-| Actualizar directivas                                 | Directivas habilitadas recientemente que permiten controlar las actualizaciones.                                           | 19041.1352 +                 |
+| Característica                                              | Descripción                                                                                   | Disponible en compilaciones de Insider |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Soporte de posición de ojos automático                            | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
+| Visor de certificados                                   | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                        | 19041.1346 +                 |
+| Directivas de HoloLens                                    | Nuevas directivas para dispositivos de realidad mixta.                                                       | 19041.1349 +                 |
+| Caché de pertenencia a grupo AAD para el quiosco desconectado         | Directiva sobre cuántos días se permite que la caché de pertenencia a grupos de AAD se use para el modo de pantalla completa.     | 19041.1356 +                 |
+| Nuevas directivas de restricción de dispositivo para HoloLens 2       | Directivas de administración de dispositivos habilitadas recientemente para HoloLens 2.                              | 19041.1349 +                 |
+| Nuevas directivas de energía para HoloLens 2                    | Directivas que se han admitido recientemente para la configuración del tiempo de espera.                                          | 19041.1349 +                 |
+| Actualizar directivas                                      | Directivas habilitadas recientemente que permiten controlar las actualizaciones.                                           | 19041.1352 +                 |
+| Visibilidad de la página de configuración habilitada para HoloLens 2      | Directiva para elegir qué páginas se ven en la aplicación configuración.                                          | 19041.1349 +                 |
+| Acceso asignado global                               | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1356 +                 |
+| Iniciar automáticamente una aplicación en quiosco de varias aplicaciones                | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
+| Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores | Los cambios en la forma en que se maneja el error de modo quiosco.                                             | 19041.1356 +                 |
 
 ### Soporte de posición de ojos automático
 
@@ -71,31 +73,6 @@ Para las experiencias que requieren datos de ojo ocular o un holograma muy preci
 **Problemas conocidos**
  - Estamos investigando un problema por el que el proceso de hospedaje del controlador del seguimiento ocular podría bloquearse al ejecutarse en una carga pesada de la memoria. El proceso de hospedaje del controlador de seguimiento ocular debe recuperarse automáticamente.
 
-### Acceso asignado global: modo de pantalla completa
-Esta nueva característica permite que un administrador de ti configure un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. [Aquí encontrará](hololens-global-assigned-access-kiosk.md)información sobre esta nueva característica.
-
-### Inicio automático de una aplicación en el modo de pantalla completa de varias aplicaciones 
-Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para iniciar automáticamente con el atributo resaltado a continuación en la configuración de acceso asignada. 
-
-La aplicación se inicia automáticamente cuando el usuario inicia sesión. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Nuevas directivas de energía para Hololens 2
-Estas directivas recién agregadas permiten a los administradores controlar Estados de energía, como el tiempo de espera de inactividad. Para obtener más información sobre cada directiva individual, haga clic en el vínculo de esa Directiva.
-
-|     Vínculo de documentación de Directiva                |     Notas                                                                                                                                       |
-|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir, 100                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir, 100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
-
 ### Visor de certificados
 
 En Windows Insider Build 19041.1346 + estamos agregando un visor de certificados en la aplicación de configuración de HoloLens 2. Esta característica proporciona una forma fácil y sencilla de comprobar los certificados de tu dispositivo. Para encontrar un certificado específico rápidamente, hay opciones para ordenar por nombre, almacén o fecha de expiración. Los usuarios también pueden buscar un certificado directamente. Con el nuevo visor de certificados, los administradores y los usuarios han mejorado las herramientas de auditoría, diagnóstico y validación para asegurarse de que los dispositivos siguen siendo seguros y cumplen con las normas.  Para obtener más información sobre un certificado individual, seleccione el certificado y haga clic en información.
@@ -111,11 +88,62 @@ Para ver los certificados, vaya a **configuración > actualizar & certificados >
 
 ![Visor de certificados de la aplicación configuración](images/hololens-certificate-viewer.png)
 
+### Directivas de HoloLens
+Se han creado nuevas directivas de realidad mixta para dispositivos HoloLens 2 en compilaciones 19041.1349 +. La nueva configuración controlable incluye: configuración del brillo, configuración del volumen, desactivación de la grabación de audio en capturas de realidad mixta, configuración de los diagnósticos y caché de pertenencia a grupos de AAD.  
+
+| Nueva política de HoloLens                                | Descripción                                                                               | Notas                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | Permite que los botones de brillo estén deshabilitados y, al presionarlos, no cambie el brillo.       | 1 sí, 0 no (valor predeterminado)                                                |
+| MixedReality\VolumeButtonDisabled                  | Permite que los botones de volumen estén deshabilitados para que, al presionarlos, no cambie el volumen.               | 1 sí, 0 no (valor predeterminado)                                                |
+| MixedReality\MicrophoneDisabled                    | Desactiva el micrófono para que no se pueda grabar audio en HoloLens 2.                      | 1 sí, 0 no (valor predeterminado)                                                |
+| MixedReality\FallbackDiagnostics                   | Controla el comportamiento del momento en que se pueden recopilar los registros de diagnóstico.                               | 0 deshabilitado, 1 habilitado para propietarios de dispositivos, 2 habilitado para todos (predeterminado) |
+| MixedReality\HeadTrackingMode                      | Reservado para uso futuro.                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Controla la cantidad de días en que se usa la caché de pertenencia a grupos de AAD para quioscos segmentados. | Consulta a continuación.                                                           |
+
+### Caché de pertenencia a grupo AAD para el quiosco desconectado
+
+Esta directiva controla cuántos días se permite que la caché de pertenencia a grupos de AAD se use para configuraciones de acceso asignadas dirigidas a grupos de AAD para el usuario que ha iniciado sesión. Una vez que este valor de Directiva se establece en un valor mayor que 0, de lo contrario se usa cache.  
+
+AADGroupMembershipCacheValidityInDays 
+
+Min-0 días  
+Máximo: 60 días 
+
+Pasos para usar esta directiva correctamente: 
+1. Cree un perfil de configuración de dispositivo para quiosco dirigido a grupos de AAD y asígnelo a dispositivos HoloLens. 
+1. Crear un URI de OMA personalizado configuración de dispositivo que establezca este valor de directiva en cantidad deseada de días (> 0) y asignarlo a dispositivos HoloLens. 
+1. Inscriba dispositivos HoloLens y verifique que ambas configuraciones se apliquen al dispositivo. 
+1. Deje que el inicio de sesión de AAD para el usuario 1 cuando esté disponible Internet, una vez que el usuario inicie sesión y la pertenencia a grupos de AAD se haya confirmado correctamente, se creará la memoria caché. 
+1. Ahora, el usuario 1 de AAD puede hacer que HoloLens esté desconectado y usarlo para el modo de pantalla completa, siempre y cuando el valor de la Directiva permita un número de días por X. 
+1. Los pasos 4 y 5 se pueden repetir para cualquier otro usuario de AAD. punto clave aquí es que cualquier usuario de AAD debe iniciar sesión en el dispositivo con Internet, por lo menos una vez, podemos determinar que son miembros del grupo de AAD al que se dirige la configuración de quiosco. 
+ 
+> [!NOTE]
+> Hasta que se realice el paso 4 para un usuario de AAD experimentará un comportamiento de error que se menciona a continuación en entornos "desconectados". 
+
 ### Nuevas directivas de restricción de dispositivo para HoloLens 2
 Directivas habilitadas recientemente que permiten más opciones de administración de los dispositivos HoloLens 2. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Nuevas directivas de energía para Hololens 2
+Estas directivas recién agregadas permiten a los administradores controlar Estados de energía, como el tiempo de espera de inactividad. Para obtener más información sobre cada directiva individual, haga clic en el vínculo de esa Directiva.
+
+|     Vínculo de documentación de Directiva                |     Notas                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir, 100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir, 100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Valor de ejemplo para usar en el diseñador de configuración de Windows, es decir,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### Nuevas directivas de actualización habilitadas para HoloLens
+Estas directivas de actualización ahora están habilitadas en los dispositivos HoloLens 2:
+-   [Actualizar/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Actualizar/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Actualizar/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Actualizar/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ### Visibilidad de la página de configuración habilitada para HoloLens 2
 Hemos habilitado una directiva que permite a los administradores de ti evitar que determinadas páginas de la aplicación configuración del sistema sean visibles o accesibles, o para hacerlo en todas las páginas excepto en las especificadas. Para obtener información sobre cómo personalizar completamente esta característica, haz clic en el vínculo a continuación.
@@ -124,22 +152,24 @@ Hemos habilitado una directiva que permite a los administradores de ti evitar qu
  
 ![Captura de pantalla de horas activas que se están modificando en la aplicación configuración](images/hololens-page-visibility-list.jpg)
 
-### Directivas de HoloLens
-Se han creado nuevas directivas de realidad mixta para dispositivos HoloLens 2 en compilaciones 19041.1349 +. La configuración controlable nueva incluye: configurar el brillo, configurar el volumen, deshabilitar la grabación de audio en capturas de realidad mixta, establecer cuándo se pueden recopilar los diagnósticos.  
+### Acceso asignado global: modo de pantalla completa
+Esta nueva característica permite que un administrador de ti configure un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. [Aquí encontrará](hololens-global-assigned-access-kiosk.md)información sobre esta nueva característica.
 
-|     Nueva política de HoloLens                   |     Descripción                                                                            |     Notas                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-|     MixedReality\BrightnessButtonDisabled |     Permite que los botones de brillo estén deshabilitados y, al presionarlos, no cambie el brillo.    |     1 sí, 0 no (valor predeterminado)                                                |
-|     MixedReality\VolumeButtonDisabled     |     Permite que los botones de volumen estén deshabilitados para que, al presionarlos, no cambie el volumen.            |     1 sí, 0 no (valor predeterminado)                                                |
-|     MixedReality\MicrophoneDisabled       |     Desactiva el micrófono para que no se pueda grabar audio en HoloLens 2.                   |     1 sí, 0 no (valor predeterminado)                                                |
-|     MixedReality\FallbackDiagnostics      |     Controla el comportamiento del momento en que se pueden recopilar los registros de diagnóstico.                            |     0 deshabilitado, 1 habilitado para propietarios de dispositivos, 2 habilitado para todos (predeterminado) |
-|     MixedReality\HeadTrackingMode         |     Reservado para uso futuro.                                                               |                                                                          |
-### Nuevas directivas de actualización habilitadas para HoloLens
-Estas directivas de actualización ahora están habilitadas en los dispositivos HoloLens 2:
--   [Actualizar/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Actualizar/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Actualizar/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [Actualizar/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### Inicio automático de una aplicación en el modo de pantalla completa de varias aplicaciones 
+Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para iniciar automáticamente con el atributo resaltado a continuación en la configuración de acceso asignada. 
+
+La aplicación se inicia automáticamente cuando el usuario inicia sesión. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores
+
+Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se usó para mostrar todas las aplicaciones en el menú Inicio. A partir de esta compilación de Windows Insider, en caso de errores, no se mostrará ninguna aplicación en el menú Inicio como en el siguiente ejemplo: 
+
+![Imagen del modo de quiosco que se muestra ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
 
 ## Empezar a recibir compilaciones de Insider
 
