@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 8f62c09fd569e6c5dbeb961ae023c6f3cefff879
-ms.sourcegitcommit: 72be5b64e90dde339323012997440dfaca182027
+ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10895794"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899112"
 ---
 # Windows Autopilot para HoloLens 2
 
@@ -68,7 +68,7 @@ Sigue los pasos que se indican a continuación para configurar el entorno para l
 
 - Debes instalar manualmente el sistema operativo más reciente (Windows Holographic versión 2004, compilación 19041.1103 o posteriores) con el [Asistente de recuperación avanzada (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). Puedes encontrar instrucciones [aquí](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
 - Tus dispositivos deben estar registrados en Windows Autopilot Para obtener información sobre cómo registrar dispositivos, consulta [4. Registrar dispositivos en Windows Autopilot](#4-register-devices-in-windows-autopilot). 
-- En la versión actual, los dispositivos deben estar conectados a Internet antes de activar HoloLens e iniciar el proceso de aprovisionamiento de Autopilot. Conecta tu dispositivo a Ethernet con adaptadores de USB C a Ethernet para la conexión a Internet con cable o adaptadores USB C a Wifi para la conexión inalámbrica a Internet. 
+- En la versión actual, los dispositivos deben estar conectados a Internet antes de activar HoloLens e iniciar el proceso de aprovisionamiento de Autopilot. Conecte su dispositivo a Ethernet usando un adaptador "USB-C a Ethernet" para una conectividad de Internet por cable. 
 - Los dispositivos aún no son miembros de Azure AD y no se han inscrito en Intune (u otro sistema MDM). El proceso de implementación automática de Autopilot completa estos pasos. Para asegurarte de que toda la información relacionada con los dispositivos se ha eliminado, activa la casilla de verificación **Dispositivos** en las páginas de los portales de Azure AD e Intune.
 - Para configurar y administrar los perfiles del modo de implementación automática de Autopilot, asegúrate de que tienes acceso al [centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
