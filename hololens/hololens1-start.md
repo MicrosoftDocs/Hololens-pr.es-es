@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 042856de2b89395fa0168d90515a7700298087f1
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829647"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903236"
 ---
 # Configurar HoloLens (1.ª generación)
 
@@ -48,12 +48,12 @@ La primera vez que inicias tu HoloLens, la primera tarea es configurar Windows H
 1. Conéctate a Internet (HoloLens te guía para seleccionar una red Wi-Fi).
 
 1. Inicia sesión con tu cuenta de usuario. Elige entre **Pertenece a mi trabajo o escuela** y **Es mía**.
-    - Cuando eliges **Pertenece a mi trabajo o escuela**, inicia sesión con una cuenta de Azure AD. Si tu organización usa Azure AD Premium y ha configurado la inscripción automática de MDM, HoloLens se inscribe automáticamente en MDM. Si tu organización no usa Azure AD Premium, la inscripción automática de MDM no está disponible, por lo que tendrás que [inscribir HoloLens manualmente en la administración de dispositivos](hololens-enroll-mdm.md#enroll-through-settings-app). Para iniciar sesión en el dispositivo la primera vez con una cuenta profesional o educativa, sigue estos pasos:
+    - Cuando eliges **Pertenece a mi trabajo o escuela**, inicia sesión con una cuenta de Azure AD. Si tu organización usa Azure AD Premium y ha configurado la inscripción automática de MDM, HoloLens se inscribe automáticamente en MDM. Si tu organización no usa Azure AD Premium, la inscripción automática de MDM no está disponible, por lo que tendrás que [inscribir HoloLens manualmente en la administración de dispositivos](hololens-enroll-mdm.md#different-ways-to-enroll). Para iniciar sesión en el dispositivo la primera vez con una cuenta profesional o educativa, sigue estos pasos:
         1. Escribe la información de la cuenta de la organización.
         1. Acepta la declaración de privacidad.
         1. Inicia sesión con tus credenciales de Azure AD. Esto puede redirigirte a la página de inicio de sesión de tu organización.
         1. Continúa configurando el dispositivo.
-    - Cuando eliges **Es mía**, inicias sesión con una cuenta de Microsoft. Una vez completada la configuración, puedes [inscribir HoloLens manualmente en la administración de dispositivos](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - Cuando eliges **Es mía**, inicias sesión con una cuenta de Microsoft. Una vez completada la configuración, puedes [inscribir HoloLens manualmente en la administración de dispositivos](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Escribe la información de tu cuenta de Microsoft.
         1. Escribe tu contraseña. Si tu cuenta de Microsoft requiere una [comprobación de dos pasos (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/) (vínculo en inglés), completa el proceso de comprobación.
 

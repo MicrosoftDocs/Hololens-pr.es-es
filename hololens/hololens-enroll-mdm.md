@@ -1,5 +1,5 @@
 ---
-title: Inscribir HoloLens en MDM
+title: Inscripción de HoloLens en la MDM
 description: Inscribe HoloLens en la administración de dispositivos móviles (MDM) para facilitar la administración de varios dispositivos.
 ms.prod: hololens
 ms.sitesec: library
@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 054c4ded7496957671c055e3161a1297de7abc1a
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 1dd6c2e6cde980b86ac810f82d27b3b88f20f336
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828695"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903226"
 ---
 # Inscripción de HoloLens en la MDM
 
@@ -31,6 +31,21 @@ Puede administrar varios dispositivos de Microsoft HoloLens a la vez mediante so
 ## Requisitos
 
  Para administrar dispositivos HoloLens, tu organización debe tener configurada la configuración de la administración de dispositivos móviles (MDM). El proveedor de MDM puede ser Microsoft InTune o un proveedor externo que use las API de MDM de Microsoft.
+ 
+## Diferentes formas de inscribirse
+
+Según el tipo de identidad elegido durante la OOBE o el inicio de sesión de post, existen diferentes métodos de inscripción. Para obtener más información sobre cada tipo de identidad en HoloLens, visita [esta página](hololens-identity.md).
+
+- Si Identity es AAD, entonces durante el acceso a la **aplicación de configuración**de Oobe o del  ->  botón**trabajo de la escuela**  ->  **Connect** .
+    - Para AAD, la inscripción automática de MDM solo se produce si AAD se ha configurado con direcciones URL de inscripción.
+- Si Identity es AAD y el dispositivo se ha preregistrado con el servidor MDM de Intune y tiene asignado un perfil de configuración específico, entonces AAD: unirse e inscripción se producirá automáticamente durante OOBE.
+    - También se denomina [flujo piloto automático](hololens2-autopilot.md) disponible en las [compilaciones de 19041.1103 +](hololens-release-notes.md#windows-holographic-version-2004).
+- Si Identity es MSA, use **Settings**  ->  **Access App Connect Work o**el botón School  ->  **Connect** .
+    - También se conoce como agregar flujo de trabajo (AWA).
+- Si se trata de una identidad de usuario local, use la configuración de la **aplicación**  ->  **Access o la escuela**  ->  **inscribirse solo en el vínculo administración de dispositivos** .
+    - También se denomina flujo de inscripción de MDM puro.
+
+Una vez que el dispositivo se haya inscrito en el servidor MDM, la aplicación configuración reflejará ahora que el dispositivo se ha inscrito en la administración de dispositivos.
 
 ## Inscripción automática en la MDM
 
@@ -38,16 +53,6 @@ Si la organización usa Azure Active Directory (Azure AD) y una solución de MDM
 
 Cuando se habilita la inscripción automática, no es necesaria ninguna inscripción manual adicional. Si el usuario inicia sesión con una cuenta de Azure AD, el dispositivo se inscribe en la MDM después de completar la primera ejecución.
 
-## Inscripción mediante la aplicación Configuración
-
- Si el dispositivo no se inscribe en la MDM durante la primera ejecución, el usuario puede inscribirlo manualmente en el servidor de MDM de la organización mediante la aplicación Configuración.
-
-1. Dirígete a **Configuración** > **Cuentas** > **Obtener acceso al trabajo**.
-1. Selecciona **Inscribirse en la administración de dispositivos** y especifica la cuenta de la organización. Se te redirigirá a la página de inicio de sesión de la organización.
-1. Una vez que te hayas autenticado debidamente en el servidor de MDM, se mostrará un mensaje de confirmación.
-
-El dispositivo ya estará inscrito en el servidor de MDM. Ahora la aplicación Configuración reflejará que el dispositivo está inscrito en la administración de dispositivos.
-
 ## Anular inscripción de HoloLens de Intune
 
-No es posible [anular la inscripción](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) de HoloLens de Intune de manera remota. Si el administrador anula la inscripción del dispositivo con MDM, el dispositivo expirará y luego se eliminará del panel de Intune.
+Para obtener más información acerca de cómo anular la inscripción a un dispositivo, visita [esta página](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 
