@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894056"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903335"
 ---
 # Hardware de HoloLens 2
 
@@ -142,8 +142,25 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 * [Instrucciones y advertencias de seguridad del producto](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * Seguridad ocular: HoloLens 2 ha sido probado y cumple con los requisitos de protección de impacto básico de ANSI Z87.1, CSA Z94.3 y EN 166.
 
-### Información normativa
+### Información de reglamentación
 [Normativas de HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): contiene información sobre la temperatura, la eliminación, las interferencias de radio y televisión, y mucho más.
+
+## Dimensiones del paquete
+
+|      Medida               |      Unidades métrica     |      Unidades Imperial     |
+|--------------------------------|-----------------------|-------------------------|
+|     Longitud de unidad                |     378,97 mm          |     14,920 pulgadas       |
+|     Ancho de unidad                 |     247,90 mm          |     9,760 pulgadas        |
+|     Profundidad de la unidad                 |     163,07 mm          |     6,420 pulgadas        |
+|     Peso unitario                |     2,878 kg           |     6,344 lbs           |
+|     Longitud del embalaje exterior    |     446,00 mm          |     17,559 pulgadas       |
+|     Ancho del embalaje exterior     |     257,99 mm          |     10,157 pulgadas       |
+|     Profundidad del embalaje exterior     |     172,01 mm          |     6,772 pulgadas        |
+|     Peso del embalaje exterior    |     3,284 kg           |     7,240 lbs           |
+
+Notas:
+- Unidad: La caja negra, estilo minorista, en la cual se vende el HoloLens 2.
+- Embalaje exterior: un embalaje de la protección en torno a la unidad.
 
 ## Paso siguiente
 
