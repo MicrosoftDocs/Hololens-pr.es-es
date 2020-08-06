@@ -1,7 +1,7 @@
 ---
 title: Preparar un nuevo HoloLens 2
 description: Esta guía explica la configuración por primera vez y la guía de hardware.
-keywords: hololens
+keywords: hololens, lights, fit, comfort, parts, luces, comodidad, partes, ajuste
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b8803183382e3235c540c3bc175277ffdc7d04f2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
+ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829591"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905627"
 ---
 # Obtener tu HoloLens 2 listo para usar
 
@@ -119,6 +119,8 @@ Usa tu HoloLens en un espacio seguro que no tenga obstrucciones y que no present
 ### Mantente cómodo
 
 Mantén breves tus primeras sesiones con HoloLens y asegúrate de tomar descansos. Si te sientes incómodo, detenlo y descansa hasta que te sientas mejor. Esto puede incluir molestias temporales, como náuseas, mareo, confusión, desorientación, dolor de cabeza, fatiga, cansancio visual o sequedad visual.
+
+Consulta [Instrucciones y advertencias de seguridad del producto](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
 > [Iniciar y configurar tu HoloLens 2](hololens2-start.md)
