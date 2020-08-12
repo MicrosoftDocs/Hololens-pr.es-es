@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fa2c4b5562c27e8d80b765c4acce0191de54a545
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915970"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924262"
 ---
 # Notas de la versión de HoloLens 2
 
@@ -28,6 +28,20 @@ Para asegurarte de tener una experiencia productiva con tus dispositivos HoloLen
 
 >[!NOTE]
 > Para leer las notas de la versión del emulador de HoloLens, [visita el archivo](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows Holographic, versión 2004, actualización de 2020 de agosto
+- Compilación 19041,1113
+
+Mejoras y correcciones de la actualización:
+
+- La aplicación de configuración ya no seguirá al usuario en la inscripción de iris o en la calibración de seguimiento de ojos.
+- Se ha corregido un error en el que se aplicaba un paquete de aprovisionamiento durante la ejecución de OOBE que cambia el nombre del dispositivo y realiza otras acciones (como conectarse a una red) no realizará las demás acciones después de que se reinicie el dispositivo, debido a un cambio de nombre.
+- Combinación de colores modificada de los flujos de configuración de dispositivos iniciales para mejorar la calidad visual.
+
+## Windows Holographic, versión 1903, actualización de 2020 de agosto
+- Compilación 18362,1074
+
+Esta actualización mensual de calidad no contiene ningún cambio importante, le recomendamos que pruebe nuestras compilaciones más recientes para Windows Holographic, versión 2004.
 
 ## Windows Holographic, versión 2004, actualización de julio de 2020
 - Compilación 19041,1109
