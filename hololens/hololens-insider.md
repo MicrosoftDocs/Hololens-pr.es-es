@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
+ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924252"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926605"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -179,6 +179,13 @@ Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se 
 
 ## Empezar a recibir compilaciones de Insider
 
+> [!NOTE]
+> Si aún no lo ha actualizado, reinicie el dispositivo para actualizar el estado y obtenga la compilación más reciente.
+> - El comando de voz "dispositivo de reinicio" funciona bien. 
+> - También puede elegir el botón reiniciar en configuración/programa de Windows Insider.
+>
+> Tuvimos un error en el back-end que pudiera haber encontrado y esto le volveremos a la pista.
+
 En un dispositivo HoloLens 2, vaya a **configuración**  >  **Update & seguridad**de  >  **Windows Insider** y seleccione **Introducción**. Vincule la cuenta que usó para registrarse como Windows Insider.
 
 Después, selecciona **desarrollo activo de Windows**, elige si deseas recibir las compilaciones de **canal** de **desarrollo** o beta, y revisa las condiciones del programa.
@@ -191,7 +198,7 @@ Para probar con un FFU firmado de vuelo, primero debe desbloquear el dispositivo
 
     1. Descarga FFU en tu PC desde [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
-    1. Instale ARC (Asistente para recuperación avanzada) en Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Instale ARC (Asistente para recuperación avanzada) en Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
 1. En HoloLens-desbloqueo de vuelo: abrir **configuración**  >  **Actualizar & seguridad**  >  **Windows Insider** después, Regístrese, reiniciar el dispositivo.
 
