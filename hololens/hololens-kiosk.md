@@ -17,11 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858004"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929856"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -251,7 +252,7 @@ Los pasos siguientes varían según el tipo de quiosco que desee. Para obtener m
 
 Para obtener más información sobre cómo crear un perfil de configuración de quiosco, consulte [configuración de dispositivos de Windows 10 y Windows Holographic para la empresa para que se ejecute como un quiosco dedicado con Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
-### <a id="mdmconfigsingle"></a>MDM, paso 3 (aplicación única) &ndash; configurar la configuración de una pantalla de una sola aplicación
+### <a id="mdmconfigsingle"></a>MDM, paso 3 (aplicación única) &ndash;  configurar la configuración de una pantalla de una sola aplicación
 
 En esta sección se resume la configuración que necesita una quiosco de una sola aplicación. Para obtener más información, vea los artículos siguientes:
 
@@ -445,7 +446,7 @@ El artículo "configurar HoloLens usando un paquete de aprovisionamiento" propor
 
 - Inicialmente, puedes [aplicar un paquete de aprovisionamiento a HoloLens durante la instalación](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- También puede [aplicar un paquete de aprovisionamiento a HoloLens después de la instalación](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
+- También puede [aplicar un paquete de aprovisionamiento a HoloLens después de la instalación](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup).
 
 ## Usar Windows Device portal para configurar una pantalla completa de una aplicación
 

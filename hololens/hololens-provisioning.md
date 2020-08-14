@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2b34cc642aa08adf5bb875588c9e4458df0034e1
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830164"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929866"
 ---
 # Configurar HoloLens con un paquete de aprovisionamiento
 
@@ -152,7 +152,9 @@ Cuando haya terminado, seleccione **crear**. El proceso solo tarda unos pocos se
 
 ## Aplicar un paquete de aprovisionamiento a HoloLens durante la instalación
 
-1. Use el cable USB para conectar el dispositivo a un PC y, a continuación, inicie el dispositivo. No continúe más allá de la primera página de un momento que se pueda **interactuar** de Oobe.   
+Los dispositivos HoloLens 2 en la compilación [19041,1103](hololens-release-notes.md#windows-holographic-version-2004) o posteriores pueden usar una unidad USB para aplicar un paquete de aprovisionamiento. Simplemente copia el archivo. ppkg en la raíz de la unidad USB. Los paquetes de aprovisionamiento solo se aplicarán si se encuentran en la raíz de la unidad USB. Se aplicará un paquete de aprovisionamiento múltiple secuencialmente.
+
+1. Use el cable USB para conectar el dispositivo a un PC (o unidad USB para HoloLens 2 como se mencionó anteriormente) y, a continuación, inicie el dispositivo. No continúe más allá de la primera página de un momento que se pueda **interactuar** de Oobe.   
     - En HoloLens (1ª generación), esta página contiene un cuadro azul. 
     - En HoloLens 2, esta página contiene el complemento Hummingbird.
 
@@ -162,7 +164,7 @@ Cuando haya terminado, seleccione **crear**. El proceso solo tarda unos pocos se
 
 4. En el Explorador de archivos, arrastra y coloca el paquete de aprovisionamiento (.ppkg) en el almacenamiento del dispositivo.
 
-5. En la página de **ajuste**, presiona otra vez brevemente los botones **Bajar el volumen** e **Inicio/Apagado** a la vez y suéltalos.
+5. Pulsa y suelta **brevemente los botones** de **encendido** y de apagado de forma simultánea mientras se encontraba en la primera página de un momento que se pueda **interactuar** de Oobe.
 
 6. El dispositivo te pregunta si confías en el paquete y deseas aplicarlo. Confirma que el paquete es de confianza.
 
@@ -171,7 +173,7 @@ Cuando haya terminado, seleccione **crear**. El proceso solo tarda unos pocos se
 > [!NOTE]
 > Si el dispositivo se compró antes del 2016 de agosto, tendrá que iniciar sesión en el dispositivo con una cuenta de Microsoft, obtener la actualización más reciente del sistema operativo y, a continuación, restablecer el sistema operativo para aplicar el paquete de aprovisionamiento.
 
-### 4. aplicar un paquete de aprovisionamiento a HoloLens después de la instalación
+### Aplicar un paquete de aprovisionamiento a HoloLens después de la instalación
 
 > [!NOTE]
 > Estos pasos solo se aplican a la versión 1809 de toWindows 10.

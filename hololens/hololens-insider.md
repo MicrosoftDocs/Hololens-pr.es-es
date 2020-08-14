@@ -16,22 +16,16 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
-ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
+ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926605"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929885"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
-Te agradecemos las compilaciones más recientes de Insider Preview para HoloLens.  Es fácil comenzar y proporciona comentarios valiosos para nuestra próxima actualización importante del sistema operativo para HoloLens.
-
-Windows Insider se está moviendo a los canales. El timbre **rápido** se convertirá en el **canal de desarrollo**, el anillo **lento** se convertirá en el canal de la **versión beta**y el anillo de **versión preliminar** se convertirá en el **canal de versión preliminar**de la versión. Este es el aspecto de la asignación:
-
-![Explicación de Windows Insider Channels](images/WindowsInsiderChannels.png)
-
-Para obtener más información, vea Introducción a los [canales de Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) en blogs de Windows.
+Te agradecemos las compilaciones más recientes de Insider Preview para HoloLens. Es fácil [comenzar](hololens-insider.md#start-receiving-insider-builds) y proporciona comentarios valiosos para nuestra próxima actualización importante del sistema operativo para HoloLens.
 
 ## Notas de la versión de Windows Insider
 
@@ -43,6 +37,9 @@ Actualizaremos esta página con nuevas características, ya que las liberaremos 
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Soporte de posición de ojos automático                            | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
 | Visor de certificados                                   | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                        | 19041.1346 +                 |
+| Instalar y quitar certificados                      | Los usuarios pueden instalar y quitar certificados con el visor de certificados.                       | 19041.1361 +                 |
+| Inicio automático de aprovisionamiento de USB                    | OOBE detecta automáticamente los paquetes de aprovisionamiento en unidades USB.                                 | 19041.1361 +                 |
+| Confirmar automáticamente paquetes de aprovisionamiento en OOBE           | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                            | 19041.1361 +                 |
 | Conexión Wi-Fi y uso de AutoPilot                 | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                            | 19041.1364 +                 |
 | Directivas de HoloLens                                    | Nuevas directivas para dispositivos de realidad mixta.                                                       | 19041.1349 +                 |
 | Caché de pertenencia a grupo AAD para el quiosco desconectado         | Directiva sobre cuántos días se permite que la caché de pertenencia a grupos de AAD se use para el modo de pantalla completa.     | 19041.1356 +                 |
@@ -52,7 +49,9 @@ Actualizaremos esta página con nuevas características, ya que las liberaremos 
 | Visibilidad de la página de configuración habilitada para HoloLens 2      | Directiva para elegir qué páginas se ven en la aplicación configuración.                                          | 19041.1349 +                 |
 | Acceso asignado global                               | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1356 +                 |
 | Iniciar automáticamente una aplicación en quiosco de varias aplicaciones                | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
+| Inicio de sesión automático de los visitantes en quioscos                        | Permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa.                        | 19041.1361 +                 |
 | Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores | Los cambios en la forma en que se maneja el error de modo quiosco.                                             | 19041.1356 +                 |
+| Mejoras y correcciones de la actualización                 | Correcciones adicionales de la actualización.                                                               | 19041.1361 +                 |
 
 ### Soporte de posición de ojos automático
 
@@ -76,10 +75,7 @@ Para las experiencias que requieren datos de ojo ocular o un holograma muy preci
 
 ### Visor de certificados
 
-En Windows Insider Build 19041.1346 + estamos agregando un visor de certificados en la aplicación de configuración de HoloLens 2. Esta característica proporciona una forma fácil y sencilla de comprobar los certificados de tu dispositivo. Para encontrar un certificado específico rápidamente, hay opciones para ordenar por nombre, almacén o fecha de expiración. Los usuarios también pueden buscar un certificado directamente. Con el nuevo visor de certificados, los administradores y los usuarios han mejorado las herramientas de auditoría, diagnóstico y validación para asegurarse de que los dispositivos siguen siendo seguros y cumplen con las normas.  Para obtener más información sobre un certificado individual, seleccione el certificado y haga clic en información.
-
-> [!NOTE]
-> Existe una limitación conocida en la localización de un idioma que no es de Estados Unidos y estamos trabajando para resolver en versiones posteriores de Windows Insider.
+En Windows Insider Build 19041.1346 + estamos agregando un visor de certificados en la aplicación de configuración de HoloLens 2. La instalación de certificados admite actualmente archivos. cer y. CRT. Los propietarios de dispositivos pueden instalar certificados en la máquina local y en el usuario actual;  el resto de los usuarios solo pueden instalarse en el usuario actual. Los usuarios solo pueden quitar certificados instalados directamente desde la interfaz de usuario de configuración. Si se ha instalado un certificado por otros medios, también debe ser eliminado por el mismo mecanismo.
 
 -   **Auditoría:** Posibilidad de validar que un certificado se ha implementado correctamente o para confirmar que se ha eliminado correctamente. 
 -   **Diagnóstico:** Cuando surjan problemas, validar que los certificados adecuados existen en el dispositivo ahorra tiempo y ayuda con la solución de problemas. 
@@ -88,6 +84,56 @@ En Windows Insider Build 19041.1346 + estamos agregando un visor de certificados
 Para ver los certificados, vaya a **configuración > actualizar & certificados > de seguridad**.
 
 ![Visor de certificados de la aplicación configuración](images/hololens-certificate-viewer.png)
+
+### Instalar y quitar certificados
+A partir de la versión 19041.1361 de Windows Insider, puede instalar y quitar certificados directamente en HoloLens 2, a través de la aplicación configuración. La instalación de certificados admite actualmente archivos. cer y. CRT. Los propietarios de dispositivos pueden instalar certificados en la máquina local y en el usuario actual;  el resto de los usuarios solo pueden instalarse en el usuario actual. Los usuarios solo pueden quitar certificados instalados directamente desde la interfaz de usuario de configuración. Si se ha instalado un certificado por otros medios, también debe ser eliminado por el mismo mecanismo.
+
+#### Para instalar un certificado con el visor de certificados: 
+1. Vaya a **configuración**  ->  **actualización de la aplicación y**  ->  **certificados**de seguridad y seleccione **instalar un certificado**. 
+1. Seleccione un archivo. cer de la experiencia del selector de archivos.
+1. Seleccione equipo local (o donde tenga su certificado).
+1. Seleccione **raíz** como almacén de certificados (o la tienda a la que quiere colocar su certificado). 
+1. Haz clic en **Instalar**.
+
+El certificado debe instalarse ahora en el dispositivo.
+
+#### Para quitar un certificado mediante el visor de certificados: 
+1. Vaya a **configuración**  ->  **actualización de la aplicación y certificados de seguridad**  ->  **Certificates**.
+1. Busque el certificado por el nombre en el cuadro de búsqueda.
+1. Seleccione el certificado.
+1. Haga clic en **quitar**
+1. Seleccione Sí cuando se le solicite y cuando se le pida confirmación.
+
+![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/hololens-install-certificate.jpg)
+
+#### Problemas conocidos 
+Estamos investigando un problema en el que durante el flujo de instalación, después de seleccionar un certificado del selector de archivos, la interfaz de usuario del cuadro de diálogo de instalación no muestra el archivo de certificado seleccionado, aunque se haya seleccionado. Una vez que haya seleccionado el archivo, puede continuar con la instalación incluso si no ve el archivo en el cuadro de diálogo. 
+
+### Iniciar automáticamente el aprovisionamiento desde USB
+Antes de que los usuarios de la compilación tuvieran que iniciar la pantalla de aprovisionamiento de forma manual durante OOBE para aprovisionar mediante una combinación de botones. Ahora los usuarios pueden omitir la combinación de botones con un paquete de aprovisionamiento en una unidad de almacenamiento USB. 
+
+1. Conecta la unidad USB con el paquete de aprovisionamiento durante el primer momento de interactuación de OOBE
+1. Cuando el dispositivo esté listo para su aprovisionamiento, se abrirá automáticamente el mensaje con la página de aprovisionamiento. 
+
+Nota: si se deja de conectar una unidad USB mientras se está iniciando el dispositivo, OOBE enumerará el dispositivo de almacenamiento USB existente, así como la posibilidad de que se conecten otros adicionales.
+
+Para obtener más información sobre cómo aplicar paquetes de aprovisionamiento durante OOBE, siga leyendo [aquí](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+### Confirmar automáticamente paquetes de aprovisionamiento en OOBE
+Cuando se enciende la pantalla principal de aprovisionamiento, OOBE contará hasta 10 segundos antes de comenzar a aplicar automáticamente todos los paquetes de aprovisionamiento. Los usuarios pueden confirmar o cancelar dentro de estos 10 segundos después de verificar los paquetes que esperaban.
+
+### Aprovisionamiento automático sin usar la interfaz de usuario
+Al combinar el inicio automático de la provisión de dispositivos USB y la confirmación automática de paquetes de aprovisionamiento, un usuario puede aprovisionar dispositivos HoloLens 2 automáticamente sin usar la interfaz de usuario del dispositivo ni siquiera con el dispositivo. Puede seguir usando la misma unidad USB y el mismo paquete de aprovisionamiento para varios dispositivos. Esto es útil para implementar varios dispositivos a la vez en la misma área. 
+
+1. [Crear un paquete de aprovisionamiento](hololens-provisioning.md) con el [Diseñador de configuración de Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
+1. Copie el paquete en una unidad de almacenamiento USB.
+1. [Flashe tu HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) a [19041,1361 o una compilación más reciente](https://aka.ms/hololens2previewdownload). 
+1. Cuando el [Asistente de recuperación avanzada](https://www.microsoft.com/store/productId/9P74Z35SFRS8) ha completado el parpadeo del dispositivo, desconecte el cable USB-C. 
+1. Conecta tu unidad USB al dispositivo.
+1. Cuando el dispositivo HoloLens 2 se inicie en OOBE, detectará automáticamente el paquete de aprovisionamiento en la unidad USB e iniciará la página de aprovisionamiento.
+1. Después de 10 segundos, el dispositivo aplicará automáticamente el paquete de aprovisionamiento. 
+
+El dispositivo ya está configurado y mostrará la pantalla de aprovisionamiento correcto.
 
 ### Conexión Wi-Fi y uso de AutoPilot
 Ahora, durante la OOBE, una vez que conecte HoloLens 2 con WiFi, OOBE buscará un perfil de AutoPilot para el dispositivo. Si se encuentra alguno, se usará para completar el resto de la Unión de AAD y el flujo de inscripción. En otras palabras, el uso de Ethernet a USB C o WiFi a USB C no es un requisito, aunque seguirá funcionando si se proporciona al principio de OOBE. Más información sobre el [autopiloto para dispositivos HoloLens 2](hololens2-autopilot.md).
@@ -130,7 +176,8 @@ Pasos para usar esta directiva correctamente:
 Directivas habilitadas recientemente que permiten más opciones de administración de los dispositivos HoloLens 2. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 ### Nuevas directivas de energía para Hololens 2
 Estas directivas recién agregadas permiten a los administradores controlar Estados de energía, como el tiempo de espera de inactividad. Para obtener más información sobre cada directiva individual, haga clic en el vínculo de esa Directiva.
@@ -171,11 +218,29 @@ La aplicación se inicia automáticamente cuando el usuario inicia sesión.
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
+### Inicio de sesión automático de los visitantes en quioscos
+Esta nueva característica permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa. 
+
+Para una configuración no de AAD, para configurar un dispositivo para el inicio de sesión automático de los visitantes:
+1.  Crear un paquete de aprovisionamiento que:
+    1.  Configura la **configuración de tiempo de ejecución/AssignedAccess** para permitir cuentas de visitante.
+    1.  De manera opcional, el dispositivo se puede inscribir en MDM **(configuración de tiempo de ejecución/área de trabajo/inscripciones)** para que pueda administrarse más adelante.
+    1.  No crear una cuenta local
+1.  [Aplicar el paquete de aprovisionamiento](hololens-provisioning.md).
+
+En el caso de una configuración de AAD, los usuarios pueden lograr algo similar a este día sin realizar este cambio. Los dispositivos Unidos a AAD configurados para el modo de quiosco pueden iniciar sesión en una cuenta de visitante con un solo toque de botón en la pantalla de inicio de sesión. Una vez que haya iniciado sesión en la cuenta de visitante, el dispositivo no volverá a solicitar que se inicie sesión de nuevo hasta que el visitante se haya cerrado de forma explícita desde el menú Inicio o se reinicie el dispositivo.
+
 ### Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores
 
 Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se usó para mostrar todas las aplicaciones en el menú Inicio. A partir de esta compilación de Windows Insider, en caso de errores, no se mostrará ninguna aplicación en el menú Inicio como en el siguiente ejemplo: 
 
 ![Imagen del modo de quiosco que se muestra ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
+
+### Mejoras y correcciones de la actualización:
+- Directiva actualizada para deshabilitar la enumeración de las funciones USB a través de MDM para NCM para AllowUsbConnection.
+- Más pantallas de OOBE ahora están en modo oscuro.
+- Más información debería apuntar a la última declaración de privacidad en línea.
+- Se ha solucionado y se trata de un problema en el que los usuarios no podían aprovisionar perfiles de VPN mediante paquetes de aprovisionamiento.
 
 ## Empezar a recibir compilaciones de Insider
 
@@ -187,6 +252,12 @@ Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se 
 > Tuvimos un error en el back-end que pudiera haber encontrado y esto le volveremos a la pista.
 
 En un dispositivo HoloLens 2, vaya a **configuración**  >  **Update & seguridad**de  >  **Windows Insider** y seleccione **Introducción**. Vincule la cuenta que usó para registrarse como Windows Insider.
+
+Windows Insider se está moviendo a los canales. El timbre **rápido** se convertirá en el **canal de desarrollo**, el anillo **lento** se convertirá en el canal de la **versión beta**y el anillo de **versión preliminar** se convertirá en el **canal de versión preliminar**de la versión. Este es el aspecto de la asignación:
+
+![Explicación de Windows Insider Channels](images/WindowsInsiderChannels.png)
+
+Para obtener más información, vea Introducción a los [canales de Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) en blogs de Windows.
 
 Después, selecciona **desarrollo activo de Windows**, elige si deseas recibir las compilaciones de **canal** de **desarrollo** o beta, y revisa las condiciones del programa.
 
