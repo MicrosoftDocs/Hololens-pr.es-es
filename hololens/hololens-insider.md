@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
+ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929885"
+ms.locfileid: "10930867"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -33,25 +33,25 @@ Si busca una característica que ya no aparece aquí, ahora está disponible par
 
 Actualizaremos esta página con nuevas características, ya que las liberaremos para compilaciones de Windows Insider.
 
-| Característica                                              | Descripción                                                                                   | Disponible en compilaciones de Insider |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Soporte de posición de ojos automático                            | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                       | 19041.1339 +                 |
-| Visor de certificados                                   | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                        | 19041.1346 +                 |
-| Instalar y quitar certificados                      | Los usuarios pueden instalar y quitar certificados con el visor de certificados.                       | 19041.1361 +                 |
-| Inicio automático de aprovisionamiento de USB                    | OOBE detecta automáticamente los paquetes de aprovisionamiento en unidades USB.                                 | 19041.1361 +                 |
-| Confirmar automáticamente paquetes de aprovisionamiento en OOBE           | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                            | 19041.1361 +                 |
-| Conexión Wi-Fi y uso de AutoPilot                 | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                            | 19041.1364 +                 |
-| Directivas de HoloLens                                    | Nuevas directivas para dispositivos de realidad mixta.                                                       | 19041.1349 +                 |
-| Caché de pertenencia a grupo AAD para el quiosco desconectado         | Directiva sobre cuántos días se permite que la caché de pertenencia a grupos de AAD se use para el modo de pantalla completa.     | 19041.1356 +                 |
-| Nuevas directivas de restricción de dispositivo para HoloLens 2       | Directivas de administración de dispositivos habilitadas recientemente para HoloLens 2.                              | 19041.1349 +                 |
-| Nuevas directivas de energía para HoloLens 2                    | Directivas que se han admitido recientemente para la configuración del tiempo de espera.                                          | 19041.1349 +                 |
-| Actualizar directivas                                      | Directivas habilitadas recientemente que permiten controlar las actualizaciones.                                           | 19041.1352 +                 |
-| Visibilidad de la página de configuración habilitada para HoloLens 2      | Directiva para elegir qué páginas se ven en la aplicación configuración.                                          | 19041.1349 +                 |
-| Acceso asignado global                               | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema.  | 19041.1356 +                 |
-| Iniciar automáticamente una aplicación en quiosco de varias aplicaciones                | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones. | 19041.1346 +                 |
-| Inicio de sesión automático de los visitantes en quioscos                        | Permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa.                        | 19041.1361 +                 |
-| Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores | Los cambios en la forma en que se maneja el error de modo quiosco.                                             | 19041.1356 +                 |
-| Mejoras y correcciones de la actualización                 | Correcciones adicionales de la actualización.                                                               | 19041.1361 +                 |
+| Característica                                                | Descripción                                                                                    | Disponible en compilaciones de Insider |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [Soporte de posición de ojos automático](hololens-insider.md#auto-eye-position-support)                              | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                        | 19041.1339 +                 |
+| [Visor de certificados](hololens-insider.md#certificate-viewer)                                     | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                         | 19041.1346 +                 |
+| [Instalar y quitar certificados](hololens-insider.md#install-and-remove-certificates)                        | Los usuarios pueden instalar y quitar certificados con el visor de certificados.                        | 19041.1361 +                 |
+| [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
+| [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
+| [Usar el piloto automático con conexión Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
+| [Acceso asignado global](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema. | 19041.1356 +                 |
+| [Iniciar automáticamente una aplicación en la pantalla completa de varias aplicaciones](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones.     | 19041.1346 +                 |
+| [Inicio de sesión automático de los visitantes para quioscos](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa.                         | 19041.1361 +                 |
+| [Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Los cambios en la forma en que se maneja el error de modo quiosco.                                              | 19041.1356 +                 |
+| [Directivas de HoloLens](hololens-insider.md#hololens-policies)                                      | Nuevas directivas para dispositivos de realidad mixta.                                                        | 19041.1349 +                 |
+| [Caché de pertenencia a grupo AAD para el quiosco desconectado](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Directiva sobre cuántos días se permite que la caché de pertenencia a grupos de AAD se use para el modo de pantalla completa.    | 19041.1356 +                 |
+| [Nuevas directivas de restricción de dispositivo para HoloLens 2](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | Directivas de administración de dispositivos habilitadas recientemente para HoloLens 2.                               | 19041.1349 +                 |
+| [Nuevas directivas de energía para HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Directivas que se han admitido recientemente para la configuración del tiempo de espera.                                           | 19041.1349 +                 |
+| [Actualizar directivas](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Directivas habilitadas recientemente que permiten controlar las actualizaciones.                                            | 19041.1352 +                 |
+| [Visibilidad de la página de configuración habilitada para HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Directiva para elegir qué páginas se ven en la aplicación configuración.                                           | 19041.1349 +                 |
+| [Mejoras y correcciones de la actualización](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Correcciones adicionales de la actualización.                                                                | 19041.1361 +                 |
 
 ### Soporte de posición de ojos automático
 
@@ -135,8 +135,39 @@ Al combinar el inicio automático de la provisión de dispositivos USB y la conf
 
 El dispositivo ya está configurado y mostrará la pantalla de aprovisionamiento correcto.
 
-### Conexión Wi-Fi y uso de AutoPilot
+### Usar el piloto automático con conexión Wi-Fi
 Ahora, durante la OOBE, una vez que conecte HoloLens 2 con WiFi, OOBE buscará un perfil de AutoPilot para el dispositivo. Si se encuentra alguno, se usará para completar el resto de la Unión de AAD y el flujo de inscripción. En otras palabras, el uso de Ethernet a USB C o WiFi a USB C no es un requisito, aunque seguirá funcionando si se proporciona al principio de OOBE. Más información sobre el [autopiloto para dispositivos HoloLens 2](hololens2-autopilot.md).
+
+### Acceso asignado global: modo de pantalla completa
+Esta nueva característica permite que un administrador de ti configure un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. [Aquí encontrará](hololens-global-assigned-access-kiosk.md)información sobre esta nueva característica.
+
+### Inicio automático de una aplicación en el modo de pantalla completa de varias aplicaciones 
+Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para iniciar automáticamente con el atributo resaltado a continuación en la configuración de acceso asignada. 
+
+La aplicación se inicia automáticamente cuando el usuario inicia sesión. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Inicio de sesión automático de los visitantes en quioscos
+Esta nueva característica permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa. 
+
+Para una configuración no de AAD, para configurar un dispositivo para el inicio de sesión automático de los visitantes:
+1.  Crear un paquete de aprovisionamiento que:
+    1.  Configura la **configuración de tiempo de ejecución/AssignedAccess** para permitir cuentas de visitante.
+    1.  De manera opcional, el dispositivo se puede inscribir en MDM **(configuración de tiempo de ejecución/área de trabajo/inscripciones)** para que pueda administrarse más adelante.
+    1.  No crear una cuenta local
+1.  [Aplicar el paquete de aprovisionamiento](hololens-provisioning.md).
+
+En el caso de una configuración de AAD, los usuarios pueden lograr algo similar a este día sin realizar este cambio. Los dispositivos Unidos a AAD configurados para el modo de quiosco pueden iniciar sesión en una cuenta de visitante con un solo toque de botón en la pantalla de inicio de sesión. Una vez que haya iniciado sesión en la cuenta de visitante, el dispositivo no volverá a solicitar que se inicie sesión de nuevo hasta que el visitante se haya cerrado de forma explícita desde el menú Inicio o se reinicie el dispositivo.
+
+### Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores
+
+Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se usó para mostrar todas las aplicaciones en el menú Inicio. A partir de esta compilación de Windows Insider, en caso de errores, no se mostrará ninguna aplicación en el menú Inicio como en el siguiente ejemplo: 
+
+![Imagen del modo de quiosco que se muestra ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
 
 ### Directivas de HoloLens
 Se han creado nuevas directivas de realidad mixta para dispositivos HoloLens 2 en compilaciones 19041.1349 +. La nueva configuración controlable incluye: configuración del brillo, configuración del volumen, desactivación de la grabación de audio en capturas de realidad mixta, configuración de los diagnósticos y caché de pertenencia a grupos de AAD.  
@@ -204,37 +235,6 @@ Hemos habilitado una directiva que permite a los administradores de ti evitar qu
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
 ![Captura de pantalla de horas activas que se están modificando en la aplicación configuración](images/hololens-page-visibility-list.jpg)
-
-### Acceso asignado global: modo de pantalla completa
-Esta nueva característica permite que un administrador de ti configure un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. [Aquí encontrará](hololens-global-assigned-access-kiosk.md)información sobre esta nueva característica.
-
-### Inicio automático de una aplicación en el modo de pantalla completa de varias aplicaciones 
-Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para iniciar automáticamente con el atributo resaltado a continuación en la configuración de acceso asignada. 
-
-La aplicación se inicia automáticamente cuando el usuario inicia sesión. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Inicio de sesión automático de los visitantes en quioscos
-Esta nueva característica permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa. 
-
-Para una configuración no de AAD, para configurar un dispositivo para el inicio de sesión automático de los visitantes:
-1.  Crear un paquete de aprovisionamiento que:
-    1.  Configura la **configuración de tiempo de ejecución/AssignedAccess** para permitir cuentas de visitante.
-    1.  De manera opcional, el dispositivo se puede inscribir en MDM **(configuración de tiempo de ejecución/área de trabajo/inscripciones)** para que pueda administrarse más adelante.
-    1.  No crear una cuenta local
-1.  [Aplicar el paquete de aprovisionamiento](hololens-provisioning.md).
-
-En el caso de una configuración de AAD, los usuarios pueden lograr algo similar a este día sin realizar este cambio. Los dispositivos Unidos a AAD configurados para el modo de quiosco pueden iniciar sesión en una cuenta de visitante con un solo toque de botón en la pantalla de inicio de sesión. Una vez que haya iniciado sesión en la cuenta de visitante, el dispositivo no volverá a solicitar que se inicie sesión de nuevo hasta que el visitante se haya cerrado de forma explícita desde el menú Inicio o se reinicie el dispositivo.
-
-### Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores
-
-Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se usó para mostrar todas las aplicaciones en el menú Inicio. A partir de esta compilación de Windows Insider, en caso de errores, no se mostrará ninguna aplicación en el menú Inicio como en el siguiente ejemplo: 
-
-![Imagen del modo de quiosco que se muestra ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
 
 ### Mejoras y correcciones de la actualización:
 - Directiva actualizada para deshabilitar la enumeración de las funciones USB a través de MDM para NCM para AllowUsbConnection.
