@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829636"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929846"
 ---
 # Preguntas más frecuentes sobre comodidad y ajuste de HoloLens 2
 
@@ -50,12 +50,7 @@ Intenta ajustar la posición del visor del dispositivo para que el marco hologr�
 
 ## El color o el brillo de la imagen del holograma no se ven correctamente
 
-Para HoloLens 2, sigue los pasos a continuación para asegurarte de que se muestre la calidad visual más alta de los hologramas presentados:
-
-- **Aumenta el brillo de la pantalla.** Los hologramas se ven mejor cuando la pantalla está en su nivel de mayor brillo.
-- **Acerca el visor a tus ojos.** Gira el visor hacia abajo hasta la posición más cercana a tus ojos.
-- **Baja el visor.** Intenta mover la almohadilla de la frente hacia abajo, lo que hará que el visor se acerque a tu nariz.
-- **Ejecuta la calibración ocular.** La pantalla usa la distancia interpupilar (IPD) y tu mirada para optimizar las imágenes de la pantalla. Si no ejecutas la calibración ocular, es posible que la calidad de la imagen empeore.
+Consulte los [pasos de solución de problemas de la pantalla](hololens2-display.md) de HoloLens 2
 
 ## El dispositivo se baja cuando lo uso o tengo que apretar demasiado fuerte la banda de la cabeza para que se mantenga fija.
 
