@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0f293fac531045e50bee9a9dd153eb9dd2b377
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929925"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940210"
 ---
 # Pantalla de HoloLens 2
 
@@ -30,7 +30,7 @@ Para HoloLens 2, sigue los pasos a continuación para asegurarte de que se muest
 * **Aumenta el brillo de la pantalla.** Los hologramas se ven mejor cuando la pantalla está en su nivel de mayor brillo.
 * **Acerca el visor a tus ojos.** Gira el visor hacia abajo hasta la posición más cercana a tus ojos.
 * **Baja el visor.** Intenta mover la almohadilla de la frente hacia abajo, lo que hará que el visor se acerque a tu nariz.
-* **Ejecuta la calibración ocular.** La pantalla usa tu distancia interpupilar (IPD) y tu mirada para optimizar las imágenes en la pantalla. Si no ejecutas la calibración ocular, es posible que la calidad de la imagen empeore. Para ejecutar la calibración ocular, vaya a **Configuración** ➔ **Sistema** ➔ **Calibración** ➔ **Ejecutar calibración ocular**.
+* **Ejecuta la calibración ocular.** La pantalla usa tu distancia interpupilar (IPD) y tu mirada para optimizar las imágenes en la pantalla. Si no ejecutas la calibración ocular, es posible que la calidad de la imagen empeore. Para ejecutar la calibración de ojo, vaya a **Configuración de** > **Sistema de** > **Calibración** > **Ejecutar calibración de la vista**.
 
 ## Preguntas más frecuentes
 
@@ -77,11 +77,14 @@ Las actualizaciones del sistema operativo se entregan automáticamente. También
 
 ### ¿Qué instrucciones están disponibles para que los desarrolladores apliquen los principios de diseño en modo oscuro?
 
-Microsoft está preparando instrucciones para desarrolladores sobre los principios de diseño en modo oscuro. Las instrucciones estarán disponibles próximamente en la [documentación para desarrolladores](https://docs.microsoft.com/windows/mixed-reality/). Un resumen de los consejos:
+Los usuarios tendrán la mejor experiencia cuando se eviten los fondos de blancos. El modo oscuro es un principio de diseño usado por las aplicaciones para usar fondos de color negro u oscuro. La configuración del sistema tiene como predeterminado la modalidad oscura y puede ajustarse en **Configuración** > **Sistema** > **Color**.
 
-* Usar colores oscuros para el fondo de la interfaz de usuario
-* Usar espesores de fuente negrita o seminegrita.
-* Usar el material HolographicBackplate del kit de herramientas de realidad mixta
+Se recomienda a los desarrolladores seguir la guía de diseño del modo oscuro:
+
+* [Instrucciones de diseño para desarrolladores para pantallas de HoloLens](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [Tamaños de fuente recomendados](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+
+Cuando un holograma requiere un fondo blanco, mantenga el tamaño del holograma más pequeño que el campo de vista completo de la pantalla. Este tamaño permite a los usuarios colocar el holograma en el centro de la pantalla.
 
 ### ¿Cómo se limpia la pantalla de HoloLens 2?
 
