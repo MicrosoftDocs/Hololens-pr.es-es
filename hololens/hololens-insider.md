@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
-ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
+ms.openlocfilehash: 1e6b8fcfad1dab49823f38c722de33654b361f58
+ms.sourcegitcommit: 16d61083a1da8007278aed7e11eb6d44f7a90952
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10930867"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941707"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -29,9 +29,7 @@ Te agradecemos las compilaciones más recientes de Insider Preview para HoloLens
 
 ## Notas de la versión de Windows Insider
 
-Si busca una característica que ya no aparece aquí, ahora está disponible para el público. Revise las notas de la [versión](hololens-release-notes.md) para ver qué compilación tiene las características que está emocionando. Asegúrate de [actualizar tu HoloLens](hololens-update-hololens.md) para obtener todas las características más recientes.
-
-Actualizaremos esta página con nuevas características, ya que las liberaremos para compilaciones de Windows Insider.
+A continuación encontrará una lista de las próximas características que puede probar hoy en nuestra compilación de Windows Insider.
 
 | Característica                                                | Descripción                                                                                    | Disponible en compilaciones de Insider |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
@@ -41,6 +39,7 @@ Actualizaremos esta página con nuevas características, ya que las liberaremos 
 | [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
 | [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
 | [Usar el piloto automático con conexión Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
+|[Tenantlockdown CSP y AutoPilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Después de la inscripción al espacio empresarial y se aplica la policiy, el dispositivo solo se puede inscribir en ese inquilino siempre que el dispositivo se restablezca o se vuelva a parpadear. | 19041.1366 +|
 | [Acceso asignado global](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema. | 19041.1356 +                 |
 | [Iniciar automáticamente una aplicación en la pantalla completa de varias aplicaciones](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones.     | 19041.1346 +                 |
 | [Inicio de sesión automático de los visitantes para quioscos](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa.                         | 19041.1361 +                 |
@@ -83,7 +82,7 @@ En Windows Insider Build 19041.1346 + estamos agregando un visor de certificados
 
 Para ver los certificados, vaya a **configuración > actualizar & certificados > de seguridad**.
 
-![Visor de certificados de la aplicación configuración](images/hololens-certificate-viewer.png)
+![Visor de certificados de la aplicación configuración](images/certificate-viewer-device.jpg)
 
 ### Instalar y quitar certificados
 A partir de la versión 19041.1361 de Windows Insider, puede instalar y quitar certificados directamente en HoloLens 2, a través de la aplicación configuración. La instalación de certificados admite actualmente archivos. cer y. CRT. Los propietarios de dispositivos pueden instalar certificados en la máquina local y en el usuario actual;  el resto de los usuarios solo pueden instalarse en el usuario actual. Los usuarios solo pueden quitar certificados instalados directamente desde la interfaz de usuario de configuración. Si se ha instalado un certificado por otros medios, también debe ser eliminado por el mismo mecanismo.
@@ -104,7 +103,7 @@ El certificado debe instalarse ahora en el dispositivo.
 1. Haga clic en **quitar**
 1. Seleccione Sí cuando se le solicite y cuando se le pida confirmación.
 
-![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/hololens-install-certificate.jpg)
+![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/certificate-device-install.jpg)
 
 #### Problemas conocidos 
 Estamos investigando un problema en el que durante el flujo de instalación, después de seleccionar un certificado del selector de archivos, la interfaz de usuario del cuadro de diálogo de instalación no muestra el archivo de certificado seleccionado, aunque se haya seleccionado. Una vez que haya seleccionado el archivo, puede continuar con la instalación incluso si no ve el archivo en el cuadro de diálogo. 
@@ -137,6 +136,39 @@ El dispositivo ya está configurado y mostrará la pantalla de aprovisionamiento
 
 ### Usar el piloto automático con conexión Wi-Fi
 Ahora, durante la OOBE, una vez que conecte HoloLens 2 con WiFi, OOBE buscará un perfil de AutoPilot para el dispositivo. Si se encuentra alguno, se usará para completar el resto de la Unión de AAD y el flujo de inscripción. En otras palabras, el uso de Ethernet a USB C o WiFi a USB C no es un requisito, aunque seguirá funcionando si se proporciona al principio de OOBE. Más información sobre el [autopiloto para dispositivos HoloLens 2](hololens2-autopilot.md).
+
+### Tenantlockdown CSP y AutoPilot
+Los dispositivos HoloLens 2 ahora son compatibles con TenantLockdown CSP a partir de la compilación de Windows Insider 19041.1366 +. 
+
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP permite que HoloLens 2 se desvinculará a la inscripción de MDM solo con AutoPilot. Una vez que el nodo RequireNetworkInOOBE de TenantLockdown CSP se establece en verdadero o falso (establecido inicialmente) el valor en HoloLens 2, ese valor permanece en el dispositivo a pesar de que se vuelvan a parpadear, las actualizaciones del sistema operativo, etc. 
+
+Una vez que el nodo RequireNetworkInOOBE TenantLockdown de CSP se establezca en verdadero en HoloLens 2, OOBE espera indefinidamente que el perfil de autopiloto se descargue y se aplique correctamente, después de la conectividad de red. 
+
+Una vez que el nodo RequireNetworkInOOBE TenantLockdown de CSP se establece en true en HoloLens 2, no se permiten las siguientes operaciones en OOBE: 
+- Crear usuarios locales mediante aprovisionamiento en tiempo de ejecución 
+- Realizando operación de unión de AAD mediante aprovisionamiento en tiempo de ejecución 
+- Selección de quién es el propietario del dispositivo en la experiencia de OOBE 
+
+#### ¿Cómo se establece esta configuración con Intune? 
+1. Cree un perfil de configuración de dispositivo URI OMA personalizado y especifique verdadero para el nodo RequireNetworkInOOBE como se muestra a continuación.
+El valor OMA-URI debe ser. ![ configuración de/Vendor/msft/TenantLockdown/RequireNetworkInOOBE inquilinos bloqueo por OMA-URI](images/hololens-tenant-lockdown.png)
+1. Crear un grupo y asignar el perfil de configuración del dispositivo a ese grupo de dispositivos. 
+1. Haga que el miembro del dispositivo HoloLens 2 del grupo creado en el paso anterior y desencadene la sincronización.  
+
+Compruebe en el portal de Intune que la configuración del dispositivo se aplicó correctamente. Una vez que la configuración del dispositivo se aplique correctamente en el dispositivo Hololens 2, los efectos de TenantLockdown estarán activos.
+
+#### ¿Cómo anular la RequireNetworkInOOBE de TenantLockdown en HoloLens 2 con Intune? 
+1. Quita la HoloLens 2 del grupo de dispositivos en el que se asignó previamente la configuración de dispositivo creada anteriormente. 
+1. Cree un perfil de configuración de dispositivo basado en URI de OMA personalizado y especifique falso para RequireNetworkInOOBE como se muestra a continuación. El valor OMA-URI debe ser./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE ![ captura de pantalla de la configuración de RequireNetworkInOOBE a falso a través del URI de OMA en Intune](images/hololens-tenant-lockdown-false.png)
+1. Crear un grupo y asignar el perfil de configuración del dispositivo a ese grupo de dispositivos. 
+1. Haga que el miembro del dispositivo HoloLens 2 del grupo creado en el paso anterior y desencadene la sincronización.
+
+Compruebe en el portal de Intune que la configuración del dispositivo se aplicó correctamente. Una vez que la configuración del dispositivo se aplique correctamente en el dispositivo Hololens 2, los efectos de TenantLockdown estarán inactivos. 
+
+#### ¿Qué sucedería durante la OOBE? si el perfil de autopiloto no está asignado a HoloLens después de que TenantLockdown se hubiera establecido en true? 
+OOBE esperará indefinidamente que se descargue el perfil de AutoPilot y el siguiente cuadro de diálogo. Para quitar los efectos de TenantLockdown, el dispositivo debe estar inscrito primero con su inquilino original solo con el piloto automático y RequireNetworkInOOBE debe ser no establecido como se describe en el paso anterior antes de que se quiten las restricciones introducidas por TenantLockdown CSP. 
+
+![Vista en el dispositivo para cuando se aplica la Directiva en el dispositivo.](images/hololens-autopilot-lockdown.png)
 
 ### Acceso asignado global: modo de pantalla completa
 Esta nueva característica permite que un administrador de ti configure un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. [Aquí encontrará](hololens-global-assigned-access-kiosk.md)información sobre esta nueva característica.
