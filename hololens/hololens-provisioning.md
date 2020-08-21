@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929866"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955462"
 ---
 # Configurar HoloLens con un paquete de aprovisionamiento
 
@@ -173,7 +173,7 @@ Los dispositivos HoloLens 2 en la compilación [19041,1103](hololens-release-not
 > [!NOTE]
 > Si el dispositivo se compró antes del 2016 de agosto, tendrá que iniciar sesión en el dispositivo con una cuenta de Microsoft, obtener la actualización más reciente del sistema operativo y, a continuación, restablecer el sistema operativo para aplicar el paquete de aprovisionamiento.
 
-### Aplicar un paquete de aprovisionamiento a HoloLens después de la instalación
+## Aplicar un paquete de aprovisionamiento a HoloLens después de la instalación
 
 > [!NOTE]
 > Estos pasos solo se aplican a la versión 1809 de toWindows 10.
