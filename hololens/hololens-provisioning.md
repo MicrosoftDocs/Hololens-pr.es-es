@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929866"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955462"
 ---
 # <span data-ttu-id="2b122-103">Configurar HoloLens con un paquete de aprovisionamiento</span><span class="sxs-lookup"><span data-stu-id="2b122-103">Configure HoloLens by using a provisioning package</span></span>
 
@@ -173,7 +173,7 @@ ms.locfileid: "10929866"
 > [!NOTE]
 > <span data-ttu-id="2b122-224">Si el dispositivo se compró antes del 2016 de agosto, tendrá que iniciar sesión en el dispositivo con una cuenta de Microsoft, obtener la actualización más reciente del sistema operativo y, a continuación, restablecer el sistema operativo para aplicar el paquete de aprovisionamiento.</span><span class="sxs-lookup"><span data-stu-id="2b122-224">If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.</span></span>
 
-### <span data-ttu-id="2b122-225">Aplicar un paquete de aprovisionamiento a HoloLens después de la instalación</span><span class="sxs-lookup"><span data-stu-id="2b122-225">Apply a provisioning package to HoloLens after setup</span></span>
+## <span data-ttu-id="2b122-225">Aplicar un paquete de aprovisionamiento a HoloLens después de la instalación</span><span class="sxs-lookup"><span data-stu-id="2b122-225">Apply a provisioning package to HoloLens after setup</span></span>
 
 > [!NOTE]
 > <span data-ttu-id="2b122-226">Estos pasos solo se aplican a la versión 1809 de toWindows 10.</span><span class="sxs-lookup"><span data-stu-id="2b122-226">These steps apply only toWindows 10, version 1809.</span></span>
