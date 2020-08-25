@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1e6b8fcfad1dab49823f38c722de33654b361f58
-ms.sourcegitcommit: 16d61083a1da8007278aed7e11eb6d44f7a90952
+ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10941707"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956776"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -34,8 +34,7 @@ A continuación encontrará una lista de las próximas características que pued
 | Característica                                                | Descripción                                                                                    | Disponible en compilaciones de Insider |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Soporte de posición de ojos automático](hololens-insider.md#auto-eye-position-support)                              | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                        | 19041.1339 +                 |
-| [Visor de certificados](hololens-insider.md#certificate-viewer)                                     | Ver certificados de usuarios y dispositivos en la aplicación configuración.                                         | 19041.1346 +                 |
-| [Instalar y quitar certificados](hololens-insider.md#install-and-remove-certificates)                        | Los usuarios pueden instalar y quitar certificados con el visor de certificados.                        | 19041.1361 +                 |
+| [Administrador de certificados](hololens-insider.md#certificate-manager)                                     | Los usuarios pueden ver, instalar y quitar certificados certificados de usuario y de máquina local actuales en la aplicación configuración.                                         | 19041.1361 +                 |
 | [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
 | [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
 | [Usar el piloto automático con conexión Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
@@ -72,41 +71,40 @@ Para las experiencias que requieren datos de ojo ocular o un holograma muy preci
 **Problemas conocidos**
  - Estamos investigando un problema por el que el proceso de hospedaje del controlador del seguimiento ocular podría bloquearse al ejecutarse en una carga pesada de la memoria. El proceso de hospedaje del controlador de seguimiento ocular debe recuperarse automáticamente.
 
-### Visor de certificados
+### Administrador de certificados
 
-En Windows Insider Build 19041.1346 + estamos agregando un visor de certificados en la aplicación de configuración de HoloLens 2. La instalación de certificados admite actualmente archivos. cer y. CRT. Los propietarios de dispositivos pueden instalar certificados en la máquina local y en el usuario actual;  el resto de los usuarios solo pueden instalarse en el usuario actual. Los usuarios solo pueden quitar certificados instalados directamente desde la interfaz de usuario de configuración. Si se ha instalado un certificado por otros medios, también debe ser eliminado por el mismo mecanismo.
+En Windows Insider Build 19041.1361 + estamos agregando un administrador de certificados en la aplicación de configuración de HoloLens 2. Vaya a **configuración > actualizar & certificados > de seguridad**. Esta característica proporciona una forma sencilla y fácil de usar para ver, instalar y quitar certificados en el dispositivo. Con el nuevo administrador de certificados, los administradores y los usuarios han mejorado las herramientas de auditoría, diagnóstico y validación para asegurarse de que los dispositivos siguen siendo seguros y cumplen con las normas. 
 
 -   **Auditoría:** Posibilidad de validar que un certificado se ha implementado correctamente o para confirmar que se ha eliminado correctamente. 
 -   **Diagnóstico:** Cuando surjan problemas, validar que los certificados adecuados existen en el dispositivo ahorra tiempo y ayuda con la solución de problemas. 
--   **Validación:** Comprobar que el certificado sirve para el propósito pretendido y es funcional, puede ahorrar mucho tiempo, especialmente en entornos comerciales antes de implementar certificados a mayor escala.
+-   **Validación:** Comprobar que un certificado tiene el propósito pretendido y es funcional, puede ahorrar mucho tiempo, especialmente en entornos comerciales antes de implementar certificados a mayor escala.
 
-Para ver los certificados, vaya a **configuración > actualizar & certificados > de seguridad**.
+Para buscar rápidamente un certificado específico en la lista, hay opciones para ordenar por nombre, almacén o fecha de expiración. Los usuarios también pueden buscar un certificado directamente. Para ver las propiedades de certificado individuales, seleccione el certificado y haga clic en **información**. 
 
-![Visor de certificados de la aplicación configuración](images/certificate-viewer-device.jpg)
+La instalación de certificados admite actualmente archivos. cer y. CRT. Los propietarios de dispositivos pueden instalar certificados en la máquina local y en el usuario actual;  el resto de los usuarios solo pueden instalarse en el usuario actual. Los usuarios solo pueden quitar certificados instalados directamente desde la interfaz de usuario de configuración. Si se ha instalado un certificado por otros medios, también debe ser eliminado por el mismo mecanismo.
 
-### Instalar y quitar certificados
-A partir de la versión 19041.1361 de Windows Insider, puede instalar y quitar certificados directamente en HoloLens 2, a través de la aplicación configuración. La instalación de certificados admite actualmente archivos. cer y. CRT. Los propietarios de dispositivos pueden instalar certificados en la máquina local y en el usuario actual;  el resto de los usuarios solo pueden instalarse en el usuario actual. Los usuarios solo pueden quitar certificados instalados directamente desde la interfaz de usuario de configuración. Si se ha instalado un certificado por otros medios, también debe ser eliminado por el mismo mecanismo.
+#### Para instalar un certificado: 
 
-#### Para instalar un certificado con el visor de certificados: 
-1. Vaya a **configuración**  ->  **actualización de la aplicación y**  ->  **certificados**de seguridad y seleccione **instalar un certificado**. 
-1. Seleccione un archivo. cer de la experiencia del selector de archivos.
-1. Seleccione equipo local (o donde tenga su certificado).
-1. Seleccione **raíz** como almacén de certificados (o la tienda a la que quiere colocar su certificado). 
-1. Haz clic en **Instalar**.
+1.  Conecta tu HoloLens 2 a un equipo PC.
+1.  Coloca el archivo de certificado que deseas instalar en una ubicación de tu HoloLens 2.
+1.  Vaya a **configuración de la aplicación > actualizar & certificados > de seguridad**y seleccione instalar un certificado.
+1.  Haga clic en **Importar archivo** y vaya a la ubicación donde guardó el certificado.
+1.  Seleccione **Ubicación**de la tienda.
+1.  Seleccione **almacén de certificados**.
+1.  Haz clic en **Instalar**.
 
 El certificado debe instalarse ahora en el dispositivo.
 
-#### Para quitar un certificado mediante el visor de certificados: 
-1. Vaya a **configuración**  ->  **actualización de la aplicación y certificados de seguridad**  ->  **Certificates**.
+#### Para quitar un certificado: 
+1. Vaya a **configuración > la actualización y los certificados de > de seguridad**.
 1. Busque el certificado por el nombre en el cuadro de búsqueda.
 1. Seleccione el certificado.
 1. Haga clic en **quitar**
-1. Seleccione Sí cuando se le solicite y cuando se le pida confirmación.
+1. Seleccione **sí** cuando se le solicite confirmación.
+
+![Visor de certificados de la aplicación configuración](images/certificate-viewer-device.jpg)
 
 ![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/certificate-device-install.jpg)
-
-#### Problemas conocidos 
-Estamos investigando un problema en el que durante el flujo de instalación, después de seleccionar un certificado del selector de archivos, la interfaz de usuario del cuadro de diálogo de instalación no muestra el archivo de certificado seleccionado, aunque se haya seleccionado. Una vez que haya seleccionado el archivo, puede continuar con la instalación incluso si no ve el archivo en el cuadro de diálogo. 
 
 ### Iniciar automáticamente el aprovisionamiento desde USB
 Antes de que los usuarios de la compilación tuvieran que iniciar la pantalla de aprovisionamiento de forma manual durante OOBE para aprovisionar mediante una combinación de botones. Ahora los usuarios pueden omitir la combinación de botones con un paquete de aprovisionamiento en una unidad de almacenamiento USB. 
