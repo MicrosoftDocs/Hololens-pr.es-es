@@ -98,5 +98,6 @@
 ## [Notas de la versión de HoloLens 2](hololens-release-notes.md)
 ## [Versión preliminar de Insider para Microsoft HoloLens](hololens-insider.md)
 ### [Acceso asignado global: Quiosco](hololens-global-assigned-access-kiosk.md)
+### [URIs de configuración de página para HoloLens](settings-uri-list.md)
 ## [Notas de la versión de HoloLens (1ª gen.)](hololens1-release-notes.md)
 # [Facilítanos tus comentarios](hololens-feedback.md)
