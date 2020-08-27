@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18a583f407b19c5b86870a49b8182d45f46a45f5
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857808"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956766"
 ---
 # Requisitos de licencia
 
@@ -31,9 +31,9 @@ Si tiene previsto usar Intune como MDM, [aquí](https://docs.microsoft.com/intun
 
 ## Identificar las licencias necesarias para su escenario y productos
 
-### Requisitos de licencias de HoloLens
+### Requisitos de licencias de HoloLens (1.ª gen.)
 
-Puede que necesite actualizar su dispositivo HoloLens de 1ª generación a Windows Holographic para Business. (vea las [características comerciales de HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions) para decidir si necesita actualizar).
+Puede que necesite actualizar su dispositivo HoloLens de 1.ª generación a Windows Holographic for Business. (vea las [características comerciales de HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions) para decidir si necesita actualizar).
 
  Si es así, tendrá que hacer lo siguiente:
 
@@ -45,6 +45,7 @@ Puede que necesite actualizar su dispositivo HoloLens de 1ª generación a Windo
 Asegúrese de que tiene la licencia y el dispositivo necesarios. Puede encontrar los requisitos de licencia y de producto actualizados [aquí](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
 
 1. [Licencia de asistencia remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
+    1. O use una [Prueba de asistencia remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
 1. [Licencia de Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 
