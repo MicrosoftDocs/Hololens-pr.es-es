@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 7/17/2020
+ms.date: 8/21/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 843e0ecf393a922be80d4a0c9d9c8be84bd8c553
-ms.sourcegitcommit: 98d6c4e63636c5d8707011d0044014fbc4b84495
+ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
+ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "10965078"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985866"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -149,16 +149,27 @@ Una vez que el nodo RequireNetworkInOOBE TenantLockdown de CSP se establece en t
 
 #### ¿Cómo se establece esta configuración con Intune? 
 1. Cree un perfil de configuración de dispositivo URI OMA personalizado y especifique verdadero para el nodo RequireNetworkInOOBE como se muestra a continuación.
-El valor OMA-URI debe ser. ![ configuración de/Vendor/msft/TenantLockdown/RequireNetworkInOOBE inquilinos bloqueo por OMA-URI](images/hololens-tenant-lockdown.png)
+El valor OMA-URI debe ser./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Configuración del bloqueo de inquilinos a través de OMA-URI](images/hololens-tenant-lockdown.png)
+
 1. Crear un grupo y asignar el perfil de configuración del dispositivo a ese grupo de dispositivos. 
+
 1. Haga que el miembro del dispositivo HoloLens 2 del grupo creado en el paso anterior y desencadene la sincronización.  
 
 Compruebe en el portal de Intune que la configuración del dispositivo se aplicó correctamente. Una vez que la configuración del dispositivo se aplique correctamente en el dispositivo Hololens 2, los efectos de TenantLockdown estarán activos.
 
 #### ¿Cómo anular la RequireNetworkInOOBE de TenantLockdown en HoloLens 2 con Intune? 
 1. Quita la HoloLens 2 del grupo de dispositivos en el que se asignó previamente la configuración de dispositivo creada anteriormente. 
-1. Cree un perfil de configuración de dispositivo basado en URI de OMA personalizado y especifique falso para RequireNetworkInOOBE como se muestra a continuación. El valor OMA-URI debe ser./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE ![ captura de pantalla de la configuración de RequireNetworkInOOBE a falso a través del URI de OMA en Intune](images/hololens-tenant-lockdown-false.png)
+
+1. Cree un perfil de configuración de dispositivo basado en URI de OMA personalizado y especifique falso para RequireNetworkInOOBE como se muestra a continuación. El valor OMA-URI debe ser./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![Captura de pantalla de la configuración de RequireNetworkInOOBE en falso a través del URI de OMA en Intune](images/hololens-tenant-lockdown-false.png)
+
 1. Crear un grupo y asignar el perfil de configuración del dispositivo a ese grupo de dispositivos. 
+
 1. Haga que el miembro del dispositivo HoloLens 2 del grupo creado en el paso anterior y desencadene la sincronización.
 
 Compruebe en el portal de Intune que la configuración del dispositivo se aplicó correctamente. Una vez que la configuración del dispositivo se aplique correctamente en el dispositivo Hololens 2, los efectos de TenantLockdown estarán inactivos. 

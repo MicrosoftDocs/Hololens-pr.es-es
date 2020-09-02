@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
-ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
+ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
+ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "10955462"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10990906"
 ---
 # Configurar HoloLens con un paquete de aprovisionamiento
 
@@ -176,7 +176,7 @@ Los dispositivos HoloLens 2 en la compilación [19041,1103](hololens-release-not
 ## Aplicar un paquete de aprovisionamiento a HoloLens después de la instalación
 
 > [!NOTE]
-> Estos pasos solo se aplican a la versión 1809 de toWindows 10.
+> Estos pasos solo se aplican a Windows 10, versión 1809.
 
 En su equipo, siga estos pasos:
 1. Cree un paquete de aprovisionamiento como se describe en [crear un paquete de aprovisionamiento para HoloLens con el Asistente de hololens](hololens-provisioning.md).
@@ -205,5 +205,9 @@ En Diseñador de configuraciones de Windows, cuando se crea un paquete de aprovi
 | **EditionUpgrade** | [Actualiza a Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Directivas** | Permite o impide el Modo de desarrollador en HoloLens. [Directivas compatibles con Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
 
+## Instalación de aplicaciones mediante el paquete de aprovisionamiento
+
+Las aplicaciones se pueden instalar mediante paquetes de aprovisionamiento en dispositivos HoloLens 2. Esto permite un paquete fácilmente reutilizable que puede usar para ayudarle a distribuir las aplicaciones. Lea las instrucciones completas para [implementar aplicaciones a través de paquetes de aprovisionamiento](app-deploy-provisioning-package.md).  
+
 > [!NOTE]
-> Por el momento, HoloLens no admite la instalación de aplicaciones (**UniversalAppInstall**) mediante un paquete de aprovisionamiento.
+> HoloLens (1ª generación) no admite la instalación de aplicaciones (**UniversalAppInstall**) mediante un paquete de aprovisionamiento.
