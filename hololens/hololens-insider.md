@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
+ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985866"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10994433"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -38,7 +38,7 @@ A continuación encontrará una lista de las próximas características que pued
 | [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
 | [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
 | [Usar el piloto automático con conexión Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
-|[Tenantlockdown CSP y AutoPilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Después de la inscripción al espacio empresarial y se aplica la policiy, el dispositivo solo se puede inscribir en ese inquilino siempre que el dispositivo se restablezca o se vuelva a parpadear. | 19041.1366 +|
+|[Tenantlockdown CSP y AutoPilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Después de que se aplique la inscripción a inquilinos y la Directiva, el dispositivo solo se puede inscribir en ese inquilino en cualquier momento en que el dispositivo se restablezca o vuelva a parpadear. | 19041.1366 +|
 | [Acceso asignado global](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema. | 19041.1356 +                 |
 | [Iniciar automáticamente una aplicación en la pantalla completa de varias aplicaciones](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones.     | 19041.1346 +                 |
 | [Inicio de sesión automático de los visitantes para quioscos](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa.                         | 19041.1361 +                 |
