@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927844"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993650"
 ---
 # Consideraciones de entorno de HoloLens
 
@@ -117,8 +117,17 @@ Para acceder a la aplicación Calibración, ve a **Configuración** > **Sistema*
 
 Si otra persona va a usar tu HoloLens, debe ejecutar primero la aplicación Calibración para que el dispositivo se configure correctamente.
 
-### Información de temperatura y reglamentación
-[Normativas de HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): contiene información sobre la temperatura, la eliminación, las interferencias de radio y televisión, y mucho más.
+## Información de temperatura y reglamentación
+
+[Información normativas de HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): contiene información sobre el intervalo de temperaturas, la eliminación, las interferencias de radio y televisión y mucho más.
+
+Estas son algunas directrices que debe seguir al usar el dispositivo:
+
+1. Almacene el dispositivo en un entorno en el intervalo de temperaturas (tanto en estado de suspensión como apagado) durante una hora antes de usar el dispositivo.
+1. Use el dispositivo en un entorno dentro del intervalo de temperaturas.
+1. Use el dispositivo en interiores.
+1. Use el dispositivo a la sombra; incluso en interiores, evite la luz solar directa a través de ventanas o claraboyas.
+1. Si sigue las directrices anteriores pero experimenta problemas de recalentamiento inesperados, asegúrese de que la telemetría completa está habilitada antes de enviar [comentarios](hololens-feedback.md).
 
 ## Consulte también
 
