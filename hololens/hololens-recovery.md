@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915974"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996418"
 ---
 # Reiniciar, restablecer o recuperar HoloLens 2
 
 ## Cargar el dispositivo
 
-Antes de iniciar un procedimiento de resolución de problemas, asegúrese de que la carga de la batería de su dispositivo se sitúe entre el 20 y 40% de capacidad, si es posible. Utilice el cargador y los cables USB tipo C que vienen con el dispositivo HoloLens2. Si dichos accesorios no están disponibles, asegúrese de que el cargador disponible admita al menos 15 vatios de energía.
+Antes de iniciar un procedimiento de resolución de problemas, asegúrese de que la carga de la batería de su dispositivo se sitúe entre el 20 y 40% de capacidad, si es posible. Utilice el cargador y los cables USB tipo C que vienen con el dispositivo HoloLens 2. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18W de potencia (9V a 2A). Si dichos accesorios no están disponibles, asegúrese de que el cargador disponible admita al menos 15 vatios de potencia.
 
 > [!NOTE]
 > Si es posible, evite usar un PC para cargar el dispositivo por USB, pues implica una carga lenta.
@@ -34,15 +34,19 @@ Si el dispositivo se enciende y funciona correctamente, hay tres formas de compr
 
 - Desde el menú principal de la interfaz de usuario del dispositivo HoloLens.
 - Observe el LED cerca del botón de encendido (si la carga de la batería está al 40%, debería ver al menos dos LED fijos).
-- En su equipo host, abra el Explorador de archivos y busque su dispositivo HoloLens 2 en el lado izquierdo bajo **Este PC**. Haga clic con el botón secundario en el dispositivo y seleccione **Propiedades**. Un cuadro de diálogo mostrará el nivel de carga de la batería.
+    - Cuando se cargue el dispositivo, se iluminará el indicador de la batería para señalar el nivel de carga actual.  La última luz aparecerá y desaparecerá gradualmente para indicar la carga activa.
+    - Cuando HoloLens está activado, el indicador de la batería muestra el nivel de la batería en cinco incrementos.
+    - Cuando solo está encendida una de las cinco luces, significa que el nivel de batería se encuentra por debajo del 20 por ciento.
+    - Si el nivel de la batería es críticamente bajo e intentas activar el dispositivo, una luz parpadeará brevemente y después se apagará.
+- En su equipo host, abra el **Explorador de archivos** y busque su dispositivo HoloLens 2 en el lado izquierdo bajo **Este equipo**. Haga clic con el botón secundario en el dispositivo y seleccione **Propiedades**. Un cuadro de diálogo mostrará el nivel de carga de la batería.
 
    ![La pantalla de propiedades de HoloLens 2 muestra el nivel de cambio en la carga de batería](images/ResetRecovery2.png)
 
-Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia del LED y la enumeración de dispositivos en el equipo host. A continuación, siga la [guía de solución de problemas](https://docs.microsoft.com/hololens/hololens-troubleshooting). Si el estado del dispositivo no coincide con ninguno de los estados enumerados en la guía de solución de problemas, realice el *procedimiento de restablecimiento completo* con el dispositivo conectado a la fuente de alimentación, en lugar de al equipo host. Espere al menos una hora para que el dispositivo se cargue.
+Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia del LED y la enumeración de dispositivos en el equipo host. A continuación, siga la [guía de solución de problemas](https://docs.microsoft.com/hololens/hololens-troubleshooting). Si el estado del dispositivo no coincide con ninguno de los estados enumerados en la guía de solución de problemas, realice el [procedimiento de restablecimiento completo](hololens-recovery.md#hard-reset-procedure) con el dispositivo conectado a la fuente de alimentación, en lugar de al equipo host. Espere al menos una hora para que el dispositivo se cargue.
 
 ## Restablecer el dispositivo
 
-En determinadas circunstancias, puede que tenga que reiniciar manualmente el dispositivo sin utilizar el SW UI.
+En determinadas circunstancias, puede que tenga que reiniciar manualmente el dispositivo sin utilizar la UI del software.
 
 ### Procedimiento estándar
 1. Desenchufe el cable de tipo C para desconectar el dispositivo de la fuente de alimentación o del equipo host.
@@ -70,7 +74,14 @@ Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimi
 
 ## Reprogramar el dispositivo
 
-En situaciones extraordinarias, puede que tenga que reprogramar el dispositivo HoloLens 2. Hay dos formas de reprogramar el dispositivo. En ambos casos, en primer lugar debe instalar [Advanced Recovery Companion desde la Tienda Windows](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+En situaciones extraordinarias, puede que tenga que reprogramar el dispositivo HoloLens 2. Tenga en cuenta que no se espera que restablecer el dispositivo afecte a los siguientes problemas:
+- [Mostrar uniformidad de color](hololens2-display.md)
+- Arranque con sonido pero sin salida de pantalla
+- [Patrón LED 1-3-5](hololens2-setup.md#lights-to-indicate-problems)
+- [Sobrecalentamiento](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- Bloqueos del sistema operativo (que son distintos de los bloqueos de la aplicación)
+
+Hay dos formas de reprogramar el dispositivo. En ambos casos, en primer lugar debe instalar [Advanced Recovery Companion desde la Tienda Windows](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Si reprograma el dispositivo, se eliminarán todos los datos personales, las aplicaciones y la configuración, incluida la información para restablecer el TPM.
