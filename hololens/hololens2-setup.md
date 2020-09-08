@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905627"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996408"
 ---
 # Obtener tu HoloLens 2 listo para usar
 
@@ -33,6 +33,8 @@ La velocidad y la tasa de carga pueden variar en función del entorno en el que 
 - Cuando HoloLens está activado, el indicador de la batería muestra el nivel de la batería en incrementos.
 - Cuando solo está encendida una de las cinco luces, significa que el nivel de batería se encuentra por debajo del 20 por ciento.
 - Si el nivel de la batería es críticamente bajo e intentas activar el dispositivo, una luz parpadeará brevemente y después se apagará.
+
+Si necesita más información, [aquí se encuentran todos los detalles sobre la carga de dispositivos](hololens-recovery.md#charge-the-device). 
 
 ## Realizar ajuste
 
@@ -108,7 +110,7 @@ Para encender HoloLens 2, presiona el botón de encendido.  Las luces LED situad
 | - | - | - |
 | Presiona el botón de encendido. | Una luz parpadea cinco veces y, a continuación, se apaga. | La batería de HoloLens es muy baja. Carga tu HoloLens. |
 | Presiona el botón de encendido. | Las cinco luces parpadean cinco veces y luego se apagan. |  HoloLens no puede iniciarse correctamente y se encuentra en un estado de error. [Reinstala el sistema operativo](hololens-recovery.md) para recuperar el dispositivo. |
-| Presiona el botón de encendido. | Las luces 1.ª, 3.ª y 5.ª parpadean juntas de manera continua. |  Es posible que se haya producido un error de hardware en HoloLens. Para estar seguro, [vuelve a instalar el sistema operativo](hololens-recovery.md) y vuelva a intentarlo. Después de volver a instalar el sistema operativo, si el patrón luz parpadeante continúa, ponte en contacto con [soporte](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
+| Presiona el botón de encendido. | Las luces 1.ª, 3.ª y 5.ª parpadean juntas de manera continua. |  Es posible que se haya producido un error de hardware en HoloLens. Contactar con el [soporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## Seguridad y comodidad
 
