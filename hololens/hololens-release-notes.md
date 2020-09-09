@@ -1,6 +1,6 @@
 ---
 title: Notas de la versión de HoloLens 2
-description: Obtén más información sobre las actualizaciones en cada nueva versión de HoloLens.
+description: Obtén más información sobre las actualizaciones en cada nueva versión de HoloLens 2.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
-ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
+ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
+ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926333"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "10997221"
 ---
 # Notas de la versión de HoloLens 2
 
@@ -28,6 +28,25 @@ Para asegurarte de tener una experiencia productiva con tus dispositivos HoloLen
 
 >[!NOTE]
 > Para leer las notas de la versión del emulador de HoloLens, [visita el archivo](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows Holographic, versión 2004-actualización 2020 de septiembre
+- Compilación 19041,1117
+
+Mejoras y correcciones de la actualización:
+
+- Corrige un problema que impedía que Visual Studio depure una aplicación cuando SupportsMultipleInstances = "true" está presente en el appxmanifest.
+- Esta versión incluye la corrección de detección de proxy de NCSI para resolver errores de detección de Internet por proxy de red. NCSI puede usar un proxy de máquina y un proxy por perfil para la detección de conectividad a Internet. Un proxy por usuario será admitido por NCSI en una versión futura.
+- En la mayoría de los dispositivos Windows Mixed Reality, el vector de dirección hacia adelante es paralelo al suelo cuando la cabeza del usuario se encuentra en una posición neutra mirando hacia adelante. Sin embargo, las versiones anteriores de HoloLens 2 alinearon el vector para que sea perpendicular a los paneles de visualización, que se inclina hacia abajo unos cuantos grados con relación a la orientación ideal. Las versiones más recientes de HoloLens 2 han corregido esto para garantizar la coherencia semántica en los factores de forma.
+- Mejoras de la solidez del seguimiento de la mano que darán menos pérdidas de seguimiento en escenarios específicos.
+- Esta versión contiene una corrección para mejorar la calidad de la marca de hora de audio que puede haber contribuido a problemas de captura de video.
+
+## Windows Holographic, versión 1903-actualización 2020 de septiembre
+- Compilación 18362,1079
+
+Mejoras y correcciones de la actualización:
+
+- En la mayoría de los dispositivos Windows Mixed Reality, el vector de dirección hacia adelante es paralelo al suelo cuando la cabeza del usuario se encuentra en una posición neutra mirando hacia adelante. Sin embargo, las versiones anteriores de HoloLens 2 alinearon el vector para que sea perpendicular a los paneles de visualización, que se inclina hacia abajo unos cuantos grados con relación a la orientación ideal. Las versiones más recientes de HoloLens 2 han corregido esto para garantizar la coherencia semántica en los factores de forma.
+- Mejoras de la solidez del seguimiento de la mano que darán menos pérdidas de seguimiento en escenarios específicos.
 
 ## Windows Holographic, versión 2004, actualización de 2020 de agosto
 - Compilación 19041,1113
