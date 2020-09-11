@@ -2,7 +2,9 @@
 title: Intune y portal de la empresa
 description: Intune, administración de aplicaciones, aplicación, portal de la empresa, portal
 keywords: Intune, administración de aplicaciones, aplicación, portal de la empresa, portal, hololens
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.custom:
@@ -12,17 +14,18 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6a79224d02b4251a76f97f0463d4a11f6496670
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 5fc369caa2e5e26c91c07f9270c3984177507dbd
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857940"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009468"
 ---
-# Portal de empresa de Intune &
+# Portal de empresa e Intune
 
 Con la administración de dispositivos móviles (MDM), puedes usar tus propias aplicaciones personalizadas a través de [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) para implementarlo directamente en tus dispositivos HoloLens. Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Intune está incluido en el[conjunto de programas de seguridad y movilidad empresarial](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)de Microsoft y permite que los usuarios sean productivos mientras mantienen protegidos los datos de su organización. Para obtener más información sobre Intune, lea [lo que es Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
 

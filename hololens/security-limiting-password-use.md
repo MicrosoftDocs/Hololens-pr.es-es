@@ -1,24 +1,25 @@
 ---
 title: Limitar el uso de contraseñas
 description: Limitar el uso de contraseñas en holoLens
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: seguridad, hololens, limitar el uso de la contraseña, contraseña, contraseña de hololens, información de inicio de sesión, iniciar sesión, Windows Hello, Hello, administrador de cuentas de Windows, inicio de sesión en FIDO2, FIDO 2, WEBAUTHN, cuenta local, seguridad de hololens
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 61330e77bc3aca5b0b21b58f18d087f7d5c06f3b
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865898"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009518"
 ---
 # Limitar el uso de contraseñas
 

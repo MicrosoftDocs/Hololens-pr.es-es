@@ -1,23 +1,24 @@
 ---
 title: Atestación de tiempo de ejecución e integridad respaldada por hardware
-description: Limitar el uso de contraseñas en holoLens
-author: jbennett
+description: Atestación de tiempo de ejecución e integridad respaldada por hardware
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: seguridad, hololens, integridad respaldada por hardware, atestación de tiempo de ejecución, UEFI, arranque seguro UEFI, arranque seguro, TPM, protección contra amenazas, garantía antipersistencia de Windows, integridad de código, protección de código,
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d1a3fe02b64ce1566806119e5309fd262667b181
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865801"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009478"
 ---
 # Atestación de tiempo de ejecución e integridad respaldada por hardware
 

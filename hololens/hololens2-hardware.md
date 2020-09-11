@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
-ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
+ms.openlocfilehash: d5d875b17e69705591c6730349c8e23bc9692db1
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903335"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009438"
 ---
 # Hardware de HoloLens 2
 
@@ -126,13 +126,21 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 ## Software preinstalado
 
 - Sistema operativo Windows Holographic
-- Microsoft Edge
-- Dynamics 365 Remote Assist
-- Dynamics 365 Guides
 - Visor 3D
-- OneDrive para la Empresa
-- Recomendaciones de HoloLens
+- Calendario
 - Cortana
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- Centro de opiniones
+- Explorador de archivos
+- Correo
+- Microsoft Edge
+- Microsoft Store
+- Películas y TV
+- OneDrive
+- Fotos
+- Configuración
+- Sugerencias
 
 ## Certificaciones de dispositivos
 

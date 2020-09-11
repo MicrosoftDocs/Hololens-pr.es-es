@@ -2,22 +2,25 @@
 title: 'Información general: administración de aplicaciones'
 description: App, administración, administración de aplicaciones
 keywords: HoloLens, usuario, cuenta, aplicación, administración de aplicaciones
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: eeed478970d08eff8789a9decd084f1863c6d7f9
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e73a56e5a2fcef14e85f5f552e264dd8d796cc8f
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857958"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009458"
 ---
 # Administración de aplicaciones: información general
 

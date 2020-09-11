@@ -2,7 +2,8 @@
 title: Paquete de aprovisionamiento
 description: aplicación, implementación de aplicaciones, aplicación empresarial demployment, aprovisionamiento
 keywords: aplicación, implementación de aplicaciones, aplicación empresarial demployment, aprovisionamiento
-author: v-jodben
+author: evmill
+ms.author: v-evmill
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.sitesec: library
@@ -13,11 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7417f9e8cf1921d9fdb57dbd96fff094e21c44f9
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857949"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009508"
 ---
 # Paquete de aprovisionamiento
 
