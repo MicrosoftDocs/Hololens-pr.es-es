@@ -72,6 +72,7 @@
 
 ## Directivas
 ### [Configurar HoloLens mediante paquetes de aprovisionamiento](hololens-provisioning.md)
+### [Usar MDM para administrar dispositivos HoloLens](hololens-mdm-configure.md)
 ### [Configurar HoloLens como un quiosco multimedia](hololens-kiosk.md)
 # Implementar
 ## Inscripción
