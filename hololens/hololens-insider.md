@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
-ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
+ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
+ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10994433"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016301"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -49,7 +49,9 @@ A continuación encontrará una lista de las próximas características que pued
 | [Nuevas directivas de energía para HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Directivas que se han admitido recientemente para la configuración del tiempo de espera.                                           | 19041.1349 +                 |
 | [Actualizar directivas](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Directivas habilitadas recientemente que permiten controlar las actualizaciones.                                            | 19041.1352 +                 |
 | [Visibilidad de la página de configuración habilitada para HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Directiva para elegir qué páginas se ven en la aplicación configuración.                                           | 19041.1349 +                 |
+|  [Modo de investigación](hololens-insider.md#research-mode) | Usar el modo de referencia en HoloLens 2 | 19041.1375 + |
 | [Mejoras y correcciones de la actualización](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Correcciones adicionales de la actualización.                                                                | 19041.1361 +                 |
+
 
 ### Soporte de posición de ojos automático
 
@@ -278,6 +280,15 @@ Hemos habilitado una directiva que permite a los administradores de ti evitar qu
 Para saber qué configuración de página puede personalizar en HoloLens 2, visite nuestra [Página de URI de configuración](settings-uri-list.md). 
  
 ![Captura de pantalla de horas activas que se están modificando en la aplicación configuración](images/hololens-page-visibility-list.jpg)
+
+### Modo de investigación
+Mientras se encuentre en el modo de investigación, HoloLens 2 es una herramienta potente para la investigación de la visión del equipo. Comparado con las ediciones anteriores, el modo de estudio para HoloLens 2 tiene las siguientes ventajas:
+-   Además de los sensores expuestos en el modo de investigación de HoloLens (1. ª gen), ahora ofrecemos el acceso a un sensor de IMU, entre ellos, el acelerómetro, el Gyroscope y el magnetómetro.
+-   HoloLens 2 proporciona nuevas funciones que se pueden usar conjuntamente con el modo de investigación. En concreto, accede a las API de seguimiento manual y seguimiento de ojos articulados que pueden ofrecer un conjunto de experimentos más rico.
+
+Ahora, los investigadores tienen la opción de habilitar el modo de referencia en sus dispositivos HoloLens para acceder a todas estas secuencias de sensores de imágenes RAW orientadas externamente. El modo de investigación para HoloLens 2 también proporciona acceso a las lecturas de acelerómetro, Gyroscope y magnetómetro. Para proteger la privacidad de los usuarios, las imágenes de cámara con seguimiento sin formato no están disponibles en el modo referencia, pero la dirección de ojo está disponible a través de API existentes.
+
+Consulte la [documentación del modo de investigación](https://docs.microsoft.com/windows/mixed-reality/research-mode) para obtener más información técnica.
 
 ### Mejoras y correcciones de la actualización:
 - Directiva actualizada para deshabilitar la enumeración de las funciones USB a través de MDM para NCM para AllowUsbConnection.

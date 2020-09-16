@@ -1,6 +1,6 @@
 ---
-title: URIs de configuración
-description: Lista de URIs compatibles con HoloLens para PageVisibilityList
+title: URI de configuración
+description: Lista de URI compatibles con HoloLens para PageVisibilityList
 author: evmill
 ms.author: v-evmill
 ms.date: 8/1/2020
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2020
 ms.locfileid: "10963724"
 ---
-# URIs de configuración
+# URI de configuración
 
 Una de las características que se puede administrar para los dispositivos HoloLens usa la Directiva [Settings/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) para restringir las páginas que se muestran en la aplicación Configuración. Los dispositivos HoloLens y Windows 10 tienen una selección de páginas diferente en la aplicación Configuración. En esta página, solo encontrará la configuración que existe en HoloLens. 
 
@@ -89,7 +89,7 @@ Una de las características que se puede administrar para los dispositivos HoloL
 |---------------------------------------|-------------------------------------------|
 | Programa Windows Insider               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
 | Windows Update                        | ms-settings:windowsupdate<br> ms-settings:windowsupdate-activehours  <br> ms-settings:windowsupdate-history <br> ms-settings:windowsupdate-optionalupdates <br><sup>1</sup>ms-settings:windowsupdate-options<br><sup>1</sup>ms-settings:windowsupdate-restartoptions |
-| Windows Update: comprobar si hay actualizaciones. | ms-settings:windowsupdate-action          |
+| Windows Update: comprueba si hay actualizaciones. | ms-settings:windowsupdate-action          |
 | Opciones avanzadas                    | ms-settings:windowsupdate-options         |
 
 > [!NOTE]
