@@ -1,11 +1,11 @@
 ---
 title: sistema operativo sin administrador de seguridad
 description: seguridad del sistema operativo y hololens que no sean administradores
+ms.prod: hololens
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
-ms.prod: hololens
 ms.topic: article
 keywords: seguridad, hololens, un administrador sin administradores, sin administradores, sistema operativo, sistema operativo sin administradores, administrador, so, so sin administradores, hololens 2, seguridad de hololens2
 ms.localizationpriority: high
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e8a10a32d30206877eb79d53c90e59307b3990ab
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009568"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016644"
 ---
 # <span data-ttu-id="29bb0-104">Sistema operativo sin administrador</span><span class="sxs-lookup"><span data-stu-id="29bb0-104">Admin-less operating system</span></span>
 
