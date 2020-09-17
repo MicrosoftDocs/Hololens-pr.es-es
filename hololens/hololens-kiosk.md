@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929856"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016694"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -31,7 +31,9 @@ Puede configurar un dispositivo HoloLens para que funcione como un dispositivo d
 Este artículo proporciona información sobre aspectos de la configuración de quiosco específicos para dispositivos HoloLens. Para obtener información general sobre los distintos tipos de quioscos basados en Windows y cómo configurarlos, vea [configurar quioscos y señales digitales en las ediciones de escritorio de Windows](https://docs.microsoft.com/windows/configuration/kiosk-methods).  
 
 > [!IMPORTANT]  
-> El modo de pantalla completa determina qué aplicaciones estarán disponibles cuando un usuario inicie sesión en el dispositivo. Sin embargo, el modo de pantalla completa no es un método de seguridad. No impide que una aplicación "permitida" abra otra aplicación que no está permitida. Para bloquear la apertura de aplicaciones o procesos, use el [CSP control de aplicaciones de Windows Defender (WDAC)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) para crear las directivas apropiadas.  
+> El modo de pantalla completa determina qué aplicaciones estarán disponibles cuando un usuario inicie sesión en el dispositivo. Sin embargo, el modo de pantalla completa no es un método de seguridad. No impide que una aplicación "permitida" abra otra aplicación que no está permitida. Para bloquear la apertura de aplicaciones o procesos, use el [CSP control de aplicaciones de Windows Defender (WDAC)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) para crear las directivas apropiadas.
+>
+> Obtenga más información sobre los servicios de Microsoft para ofrecer a los usuarios un nivel avanzado de seguridad que usa HoloLens 2, más información sobre las [protecciones de aislamiento de estado y de separación](security-state-separation-isolation.md#defender-protections). U obtenga información sobre cómo [usar WDAC y Windows PowerShell para permitir o bloquear aplicaciones en dispositivos HoloLens 2 con Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
 Puede usar el modo de pantalla completa en una sola aplicación o en una configuración de varias aplicaciones, y puede usar uno de los tres procesos para configurar e implementar la configuración de quiosco.
 
