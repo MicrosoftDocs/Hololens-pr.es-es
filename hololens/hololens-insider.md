@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
-ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
+ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
+ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11027451"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -35,6 +35,8 @@ A continuación encontrará una lista de las próximas características que pued
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Soporte de posición de ojos automático](hololens-insider.md#auto-eye-position-support)                              | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                        | 19041.1339 +                 |
 | [Administrador de certificados](hololens-insider.md#certificate-manager)                                     | Los usuarios pueden ver, instalar y quitar certificados certificados de usuario y de máquina local actuales en la aplicación configuración.                                         | 19041.1361 +                 |
+| [Instalador de aplicación](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | En la interfaz de usuario del dispositivo para instalar aplicaciones desde archivos appx. | 19041.1377 + |
+| [Instalar aplicaciones desde una página web](hololens-insider.md#installing-apps-from-a-web-page) | Configure las aplicaciones que se descargarán e instalarán desde el explorador. | 19041.1366 + | 
 | [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
 | [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
 | [Usar el piloto automático con conexión Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
@@ -108,13 +110,30 @@ El certificado debe instalarse ahora en el dispositivo.
 
 ![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/certificate-device-install.jpg)
 
+### Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
+Ahora los usuarios pueden instalar aplicaciones a través de paquetes de appx, sin necesidad de habilitar el modo de desarrollador ni usar Device portal. Esta experiencia es sencilla para instalar aplicaciones en dispositivos locales o para compartir una aplicación con otra persona que no está familiarizada con otros métodos de instalación de aplicaciones en HoloLens.
+
+Este es un método simple para distribuir una aplicación completamente integrada. Independientemente de si simplemente deseas demostrar tu aplicación a otro usuario con HoloLens o si deseas implementar la aplicación a escala, este método funcionará para ambos.
+
+Obtén más información sobre el proceso completo de [instalar aplicaciones en HoloLens 2 con el instalador de la aplicación](app-deploy-app-installer.md).  
+
+![Instalación de MRTK ejemplos mediante el instalador de aplicaciones](images/hololens-app-installer-picture.jpg)
+
+### Instalar aplicaciones desde una página web
+Ahora en Windows Insider compilaciones 19041.1366 + los usuarios pueden instalar una aplicación directamente desde un servidor Web. 
+
+Los paquetes appx ahora creados se pueden hospedar en una página web. Cuando se combina con la implementación de certificados, este método de distribución de aplicaciones puede resultar muy útil para la implementación de aplicaciones.
+
+Obtener información sobre el proceso completo de [instalación de aplicaciones en HoloLens 2 desde una página web](app-deploy-web-installer.md)
+
 ### Iniciar automáticamente el aprovisionamiento desde USB
 Antes de que los usuarios de la compilación tuvieran que iniciar la pantalla de aprovisionamiento de forma manual durante OOBE para aprovisionar mediante una combinación de botones. Ahora los usuarios pueden omitir la combinación de botones con un paquete de aprovisionamiento en una unidad de almacenamiento USB. 
 
 1. Conecta la unidad USB con el paquete de aprovisionamiento durante el primer momento de interactuación de OOBE
 1. Cuando el dispositivo esté listo para su aprovisionamiento, se abrirá automáticamente el mensaje con la página de aprovisionamiento. 
 
-Nota: si se deja de conectar una unidad USB mientras se está iniciando el dispositivo, OOBE enumerará el dispositivo de almacenamiento USB existente, así como la posibilidad de que se conecten otros adicionales.
+> [!NOTE]
+> Si se deja de conectar una unidad USB mientras se está iniciando el dispositivo, OOBE enumerará el dispositivo de almacenamiento USB existente, así como los otros complementos que se están conectando.
 
 Para obtener más información sobre cómo aplicar paquetes de aprovisionamiento durante OOBE, siga leyendo [aquí](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
@@ -211,6 +230,9 @@ En el caso de una configuración de AAD, los usuarios pueden lograr algo similar
 Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se usó para mostrar todas las aplicaciones en el menú Inicio. A partir de esta compilación de Windows Insider, en caso de errores, no se mostrará ninguna aplicación en el menú Inicio como en el siguiente ejemplo: 
 
 ![Imagen del modo de quiosco que se muestra ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
+
+#### Actualizaciones
+También se pueden configurar las actualizaciones para este método, así que aunque el usuario no se instale a través de la tienda de Microsoft, aún podrá recibir actualizaciones. Las actualizaciones se pueden configurar para basarse en la aplicación lanzamiento o programada. Para obtener más información sobre cómo configurar esta [página, visita esta página](https://docs.microsoft.com/windows/msix/app-installer/update-settings). 
 
 ### Directivas de HoloLens
 Se han creado nuevas directivas de realidad mixta para dispositivos HoloLens 2 en compilaciones 19041.1349 +. La nueva configuración controlable incluye: configuración del brillo, configuración del volumen, desactivación de la grabación de audio en capturas de realidad mixta, configuración de los diagnósticos y caché de pertenencia a grupos de AAD.  
