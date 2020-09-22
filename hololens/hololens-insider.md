@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027451"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052639"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -43,7 +43,6 @@ A continuación encontrará una lista de las próximas características que pued
 |[Tenantlockdown CSP y AutoPilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Después de que se aplique la inscripción a inquilinos y la Directiva, el dispositivo solo se puede inscribir en ese inquilino en cualquier momento en que el dispositivo se restablezca o vuelva a parpadear. | 19041.1366 +|
 | [Acceso asignado global](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema. | 19041.1356 +                 |
 | [Iniciar automáticamente una aplicación en la pantalla completa de varias aplicaciones](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones.     | 19041.1346 +                 |
-| [Inicio de sesión automático de los visitantes para quioscos](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa.                         | 19041.1361 +                 |
 | [Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Los cambios en la forma en que se maneja el error de modo quiosco.                                              | 19041.1356 +                 |
 | [Directivas de HoloLens](hololens-insider.md#hololens-policies)                                      | Nuevas directivas para dispositivos de realidad mixta.                                                        | 19041.1349 +                 |
 | [Caché de pertenencia a grupo AAD para el quiosco desconectado](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Directiva sobre cuántos días se permite que la caché de pertenencia a grupos de AAD se use para el modo de pantalla completa.    | 19041.1356 +                 |
@@ -213,18 +212,6 @@ La aplicación se inicia automáticamente cuando el usuario inicia sesión.
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-### Inicio de sesión automático de los visitantes en quioscos
-Esta nueva característica permite que el inicio de sesión automático en las cuentas de visitante se use para los modos de pantalla completa. 
-
-Para una configuración no de AAD, para configurar un dispositivo para el inicio de sesión automático de los visitantes:
-1.  Crear un paquete de aprovisionamiento que:
-    1.  Configura la **configuración de tiempo de ejecución/AssignedAccess** para permitir cuentas de visitante.
-    1.  De manera opcional, el dispositivo se puede inscribir en MDM **(configuración de tiempo de ejecución/área de trabajo/inscripciones)** para que pueda administrarse más adelante.
-    1.  No crear una cuenta local
-1.  [Aplicar el paquete de aprovisionamiento](hololens-provisioning.md).
-
-En el caso de una configuración de AAD, los usuarios pueden lograr algo similar a este día sin realizar este cambio. Los dispositivos Unidos a AAD configurados para el modo de quiosco pueden iniciar sesión en una cuenta de visitante con un solo toque de botón en la pantalla de inicio de sesión. Una vez que haya iniciado sesión en la cuenta de visitante, el dispositivo no volverá a solicitar que se inicie sesión de nuevo hasta que el visitante se haya cerrado de forma explícita desde el menú Inicio o se reinicie el dispositivo.
-
 ### Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores
 
 Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se usó para mostrar todas las aplicaciones en el menú Inicio. A partir de esta compilación de Windows Insider, en caso de errores, no se mostrará ninguna aplicación en el menú Inicio como en el siguiente ejemplo: 
@@ -301,7 +288,7 @@ Hemos habilitado una directiva que permite a los administradores de ti evitar qu
 
 Para saber qué configuración de página puede personalizar en HoloLens 2, visite nuestra [Página de URI de configuración](settings-uri-list.md). 
  
-![Captura de pantalla de horas activas que se están modificando en la aplicación configuración](images/hololens-page-visibility-list.jpg)
+![Captura de pantalla de la modificación de las horas activas en la aplicación Configuración](images/hololens-page-visibility-list.jpg)
 
 ### Modo de investigación
 Mientras se encuentre en el modo de investigación, HoloLens 2 es una herramienta potente para la investigación de la visión del equipo. Comparado con las ediciones anteriores, el modo de estudio para HoloLens 2 tiene las siguientes ventajas:

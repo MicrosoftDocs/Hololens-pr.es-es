@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 0803b5f1b77ac7f123d534d101cd24903b87094c
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009508"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052587"
 ---
 # Paquete de aprovisionamiento
 
@@ -32,6 +32,9 @@ Los paquetes de aprovisionamiento se pueden usar para preparar y configurar disp
 
 > [!NOTE] 
 > Para obtener información sobre los conceptos básicos de la creación de un paquete de aprovisionamiento para dispositivos HoloLens, visite la [configuración de hololens](https://docs.microsoft.com/hololens/hololens-provisioning). Para implementar una aplicación, debe empezar con el aprovisionamiento avanzado. 
+
+> [!NOTE] 
+> HoloLens (1º gen) tiene un soporte limitado para instalar aplicaciones (**UniversalAppInstall**) mediante un paquete de aprovisionamiento. Los dispositivos HoloLens (1. ª gen) solo admiten la instalación de una aplicación a través de PPKG solo durante OOBE y solo con instalaciones de contexto de usuario.
 
 ## Programa de instalación
 
