@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 1ef464e03bfc17d15e2b776768223b3889cdb4e9
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829015"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072787"
 ---
 # Hardware de HoloLens (1.ª generación)
 
@@ -154,6 +154,7 @@ Usar lo siguiente para comprender el entorno:
 ### Seguridad
 
 HoloLens ha sido probado y cumple con los requisitos de protección de impacto básico de ANSI Z 87.1, CSA Z 94.3 y EN 166.
+- [Información de SAR](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## Cuidado y limpieza
 

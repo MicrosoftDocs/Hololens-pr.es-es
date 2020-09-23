@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016694"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072797"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -477,6 +477,9 @@ Para configurar el modo de pantalla completa mediante Windows Device portal, sig
 
     ![Pantalla completa](images/kiosk.png)
 1. Reinicie HoloLens. Si todavía tiene la página de portal de dispositivos abierta, puede seleccionar **reiniciar** en la parte superior de la página.
+
+> [!NOTE]
+> El modo de pantalla completa se puede establecer a través de la API de REST de Device portal mediante una publicación en/API/Holographic/kioskmode/Settings con un parámetro de cadena de consulta obligatorio ("kioskModeEnabled" con un valor de "true" o "false") y un parámetro opcional ("startupApp" con un valor de un nombre de paquete). Ten en cuenta que el portal de dispositivos está pensado solo para desarrolladores y no debe habilitarse en dispositivos ajenos a la programación para desarrolladores. La API de REST está sujeta a cambios en actualizaciones y versiones futuras.
 
 ## Más información
 
