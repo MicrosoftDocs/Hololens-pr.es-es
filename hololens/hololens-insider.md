@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 8/21/2020
+ms.date: 9/23/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052639"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077697"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -35,8 +35,6 @@ A continuación encontrará una lista de las próximas características que pued
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Soporte de posición de ojos automático](hololens-insider.md#auto-eye-position-support)                              | Encuentra de forma activa posiciones de la vista y permite un posicionamiento preciso del holograma.                        | 19041.1339 +                 |
 | [Administrador de certificados](hololens-insider.md#certificate-manager)                                     | Los usuarios pueden ver, instalar y quitar certificados certificados de usuario y de máquina local actuales en la aplicación configuración.                                         | 19041.1361 +                 |
-| [Instalador de aplicación](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | En la interfaz de usuario del dispositivo para instalar aplicaciones desde archivos appx. | 19041.1377 + |
-| [Instalar aplicaciones desde una página web](hololens-insider.md#installing-apps-from-a-web-page) | Configure las aplicaciones que se descargarán e instalarán desde el explorador. | 19041.1366 + | 
 | [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
 | [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
 | [Usar el piloto automático con conexión Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
@@ -108,22 +106,6 @@ El certificado debe instalarse ahora en el dispositivo.
 ![Visor de certificados de la aplicación configuración](images/certificate-viewer-device.jpg)
 
 ![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/certificate-device-install.jpg)
-
-### Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
-Ahora los usuarios pueden instalar aplicaciones a través de paquetes de appx, sin necesidad de habilitar el modo de desarrollador ni usar Device portal. Esta experiencia es sencilla para instalar aplicaciones en dispositivos locales o para compartir una aplicación con otra persona que no está familiarizada con otros métodos de instalación de aplicaciones en HoloLens.
-
-Este es un método simple para distribuir una aplicación completamente integrada. Independientemente de si simplemente deseas demostrar tu aplicación a otro usuario con HoloLens o si deseas implementar la aplicación a escala, este método funcionará para ambos.
-
-Obtén más información sobre el proceso completo de [instalar aplicaciones en HoloLens 2 con el instalador de la aplicación](app-deploy-app-installer.md).  
-
-![Instalación de MRTK ejemplos mediante el instalador de aplicaciones](images/hololens-app-installer-picture.jpg)
-
-### Instalar aplicaciones desde una página web
-Ahora en Windows Insider compilaciones 19041.1366 + los usuarios pueden instalar una aplicación directamente desde un servidor Web. 
-
-Los paquetes appx ahora creados se pueden hospedar en una página web. Cuando se combina con la implementación de certificados, este método de distribución de aplicaciones puede resultar muy útil para la implementación de aplicaciones.
-
-Obtener información sobre el proceso completo de [instalación de aplicaciones en HoloLens 2 desde una página web](app-deploy-web-installer.md)
 
 ### Iniciar automáticamente el aprovisionamiento desde USB
 Antes de que los usuarios de la compilación tuvieran que iniciar la pantalla de aprovisionamiento de forma manual durante OOBE para aprovisionar mediante una combinación de botones. Ahora los usuarios pueden omitir la combinación de botones con un paquete de aprovisionamiento en una unidad de almacenamiento USB. 
@@ -260,7 +242,10 @@ Directivas habilitadas recientemente que permiten más opciones de administraci�
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) *
+
+>[!NOTE]
+> En lo que respecta a [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp), HoloLens solo admitirá la configuración de./Vendor/msft/RemoteLock/Lock. No se admiten las configuraciones relacionadas con PIN, como restablecer y recuperar.
 
 ### Nuevas directivas de energía para Hololens 2
 Estas directivas recién agregadas permiten a los administradores controlar Estados de energía, como el tiempo de espera de inactividad. Para obtener más información sobre cada directiva individual, haga clic en el vínculo de esa Directiva.

@@ -15,14 +15,17 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: a3761fc383b991743c20c09ce430e8988af789fb
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f610de413c9990bd3f8bc4df63fa8c7ed821e32b
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828565"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077677"
 ---
 # Notas de la versión de HoloLens 1 (gen)
+
+## Servicio a largo plazo de HoloLens (1ª generación)
+HoloLens (1. ª gen) ha introducido el estado de servicio a largo plazo (LTS). Las actualizaciones futuras se centrarán en las correcciones de problemas y seguridad, a la vez que se mantiene la paridad de la característica Windows 10 Holographic, versión 1809 para HoloLens (1 ª generación).
 
 ### Windows 10 Holographic, versión 1809
 
