@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 544582762cb950d319f96647fc41a75507389059
-  ms.sourcegitcommit: e17e3449d22e770ce45e9e7b9ad55396a1c7360c
+  ms.openlocfilehash: 7afce81a15745b6ece3707972e6f8b5d82ba17ff
+  ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/28/2020
-  ms.locfileid: "10978637"
+  ms.lasthandoff: 09/25/2020
+  ms.locfileid: "11078378"
 landingContent:
 - title: Introducción a HoloLens
   linkLists:
@@ -74,7 +74,7 @@ landingContent:
       url: hololens2-autopilot.md
     - text: Introducción a la administración de aplicación
       url: app-deploy-overview.md
-    - text: Microsoft Store para Business
+    - text: Portal de empresa e Intune
       url: app-deploy-intune.md
     - text: Microsoft Store para Business
       url: app-deploy-store-business.md
@@ -131,4 +131,4 @@ landingContent:
     - text: Introducción al desarrollo de la realidad mixta
       url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
     - text: Contactar con el soporte técnico
-      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
+      url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
