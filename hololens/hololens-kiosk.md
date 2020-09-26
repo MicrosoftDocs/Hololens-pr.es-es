@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072797"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080449"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -90,8 +90,10 @@ Si usas Windows Device portal para configurar un quiosco de una sola aplicación
 
 Si usa un sistema de administración de dispositivos móviles (MDM) o un paquete de aprovisionamiento para configurar el modo de pantalla completa, use el [proveedor de servicios de configuración de AssignedAccess (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) para especificar las aplicaciones. El CSP usa [identificadores de modelo de usuario de la aplicación (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) para identificar las aplicaciones. En la siguiente tabla se enumeran las AUMIDs de algunas aplicaciones en el cuadro que puede usar en una pantalla de varias aplicaciones.
 
-> [!CAUTION]
-> No puede seleccionar la aplicación de shell como una aplicación de quiosco. Además, le recomendamos que **no** seleccione Microsoft Edge, Microsoft Store o el explorador de archivos como una aplicación de quiosco.  
+> [!IMPORTANT]
+> El modo de pantalla completa determina qué aplicaciones estarán disponibles cuando un usuario inicie sesión en el dispositivo. Sin embargo, el modo de pantalla completa no es un método de seguridad. No impide que una aplicación "permitida" abra otra aplicación que no está permitida. Dado que no limitamos este comportamiento, las aplicaciones pueden iniciarse desde Edge, el explorador de archivos y las aplicaciones de Microsoft Store. Si hay aplicaciones específicas que no desea iniciar desde una exposición, use el [CSP control de aplicaciones de Windows Defender (WDAC)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) para crear las directivas apropiadas. 
+> 
+> Además, la casa de realidad mixta no se puede configurar como una aplicación de quiosco.
 
 <a id="aumids"></a>
 
