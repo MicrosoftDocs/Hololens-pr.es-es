@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
+ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052629"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "11093940"
 ---
 # Acceso asignado global: quiosco
 
@@ -32,7 +32,12 @@ Esta característica configura el dispositivo Hololens 2 para varias aplicacione
 > [!NOTE]
 > Tenga en cuenta las áreas marcadas con "<!-". Estas áreas requieren que realice modificaciones en función de sus preferencias. 
 
-1.  Cree un perfil de configuración de dispositivo OMA URI personalizado como se indica a continuación y aplíquelo al grupo de dispositivos HoloLens: ![OMA-URI de acceso asignado global en Intune](images/global-assigned-access-omauri.png)
+1.  Cree un perfil de configuración de dispositivo OMA URI personalizado como se indica a continuación y aplíquelo al grupo de dispositivos HoloLens: 
+
+    Valor URI: .Dispositivo/Vendor/MSFT/AssignedAccess/Configuration
+   
+    > [!div class="mx-imgBorder"]
+    > ![Acceso asignado global OMA-URI en Intune](images/global-assigned-access-omauri.png)
 
 2.  Para obtener un valor, actualice y pegue el siguiente contenido: 
 
@@ -49,7 +54,7 @@ Esta característica configura el dispositivo Hololens 2 para varias aplicacione
 Sí, consulte a continuación el blob XML de ejemplo. El perfil de acceso asignado global se aplica en Hololens cuando no se encuentra uno específico para el usuario que ha iniciado sesión, por lo que es la configuración predeterminada del modo de pantalla completa para el usuario que ha iniciado sesión. Este es un ejemplo de blob XML que se usará: 
 
 > [!NOTE]
-> Tenga en cuenta las áreas resaltadas con <!-. Estas áreas requieren que realice modificaciones en función de sus preferencias. 
+> Tenga en cuenta las áreas resaltadas marcadas con `<!-`. Estas áreas requieren que realice modificaciones en función de sus preferencias. 
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
