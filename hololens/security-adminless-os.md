@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016644"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102319"
 ---
 # Sistema operativo sin administrador
 
@@ -29,6 +29,8 @@ Estas funciones de la aplicación siguen teniendo el modelo de clasificación de
   * Windows
 
 Los componentes de Windows también pueden usar el espacio aislado de AppContainer mediante el sistema UWPs. Para obtener más información sobre aplicaciones de la Plataforma universal de Windows (UWP), vea la [documentación UWP](https://docs.microsoft.com/windows/uwp/). Además, los componentes de Windows que tienen mayores necesidades de restricción de privilegios (por ejemplo, las páginas de contenido de los navegadores, los analizadores) usan la caja de arena de AppContainer con menos privilegios (LPAC) la cual corta el acceso al conjunto de recursos accesibles a todos los AppContainers
+
+## Propietario del dispositivo
 
 Por último, la ejecución de operaciones específicas para todo el dispositivo, como unirse al dispositivo a un inquilino o a la administración de usuarios, solo se permite para "propietarios de dispositivos". Este grupo lo rellenan los usuarios del dispositivo mediante uno de los siguientes pasos:
   * El primer usuario del dispositivo siempre se designa como propietario. 

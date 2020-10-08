@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899112"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102349"
 ---
 # Windows Autopilot para HoloLens 2
 
@@ -199,6 +199,9 @@ La página de estado de inscripción (ESP) muestra el estado de todo el proceso 
 ## Experiencia de usuario de Windows AutoPilot para HoloLens 2
 
 Una vez que completes las instrucciones anteriores, tus usuarios de HoloLens 2 tendrán acceso a la siguiente experiencia para aprovisionar sus dispositivos HoloLens:  
+
+> [!NOTE]
+> El uso de Autopilot afectará al [propietario del dispositivo](security-adminless-os.md#device-owner).
 
 1. Como hemos mencionado, en la versión actual, los dispositivos deben estar conectados a Internet antes de activar HoloLens e iniciar el proceso de aprovisionamiento de Autopilot. Conecta tu dispositivo a Ethernet con adaptadores de USB C a Ethernet para la conexión a Internet con cable o adaptadores USB C a Wifi para la conexión inalámbrica a Internet.
    
