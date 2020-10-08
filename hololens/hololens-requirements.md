@@ -1,6 +1,6 @@
 ---
-title: Set up HoloLens in a commercial environment
-description: Learn more about deploying and managing HoloLens in enterprise environments.
+title: Configurar HoloLens en un entorno comercial
+description: Más información sobre cómo implementar y administrar HoloLens en entornos empresariales.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -18,173 +18,173 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/06/2020
 ms.locfileid: "11099809"
 ---
-# HoloLens 2 enterprise deployment and management
+# Administración y implementación empresarial de HoloLens 2
 
-This overview is intended to help IT professionals understand considerations for deploying and managing Microsoft HoloLens 2 devices within the enterprise.
+Esta información general pretende ayudar a los profesionales de ti a comprender las consideraciones para implementar y administrar dispositivos de Microsoft HoloLens 2 dentro de la empresa.
 
-HoloLens 2 runs on Windows 10 Holographic which provides organizations with robust, flexible, built-in mobile device and app management technologies. Windows 10 Holographic supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. The HoloLens 2 can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance and retirement using a comprehensive mobile device management solution.
+HoloLens 2 se ejecuta en Windows 10 Holographic, que ofrece a las organizaciones aplicaciones de administración de aplicaciones y dispositivos móviles integradas y flexibles. Windows 10 Holographic admite la administración del ciclo de vida de un dispositivo completo para ofrecer a las empresas el control de sus dispositivos, datos y aplicaciones. HoloLens 2 se puede incorporar fácilmente a prácticas estándar del ciclo de vida, desde la inscripción de dispositivos, la configuración y la administración de aplicaciones hasta el mantenimiento y la jubilación con una solución completa de administración de dispositivos móviles.
 
-## Prepare
+## Preparar
 
-As you prepare to deploy HoloLens 2 to your corporate enterprise environment, there are several considerations that should be reviewed and understood as you begin to plan for scale deployments of HoloLens 2.
+Mientras preparas para implementar HoloLens 2 en tu entorno empresarial corporativo, hay varias consideraciones que debes revisar y comprender a medida que comienzas a planear implementaciones a escala de HoloLens 2.
 
-### Infrastructure Essentials
+### Conceptos básicos de la infraestructura
 
-For HoloLens 2 in a corporate enterprise deployment scenario, there are certain essential infrastructure services required to support the full set of capabilities. HoloLens 2 was built with [Modern Mobile Device Management](https://www.microsoft.com/itshowcase/managing-windows-10-devices-with-microsoft-intune) in mind for deployment and management. With Azure AD Join + MDM as the primary means of achieving that in an ever-increasing mobile workforce. The below topics provide a brief overview of each infrastructure component that should be considered in your deployment planning for HoloLens 2.
+Para HoloLens 2 en un escenario de implementación empresarial corporativa, hay ciertos servicios de infraestructura esenciales necesarios para admitir el conjunto completo de capacidades. HoloLens 2 se creó teniendo en cuenta la [Administración moderna de los dispositivos móviles](https://www.microsoft.com/itshowcase/managing-windows-10-devices-with-microsoft-intune) para su implementación y administración. Con Azure AD join + MDM como el medio principal para lograr eso en un personal móvil en constante aumento. Los temas siguientes proporcionan una breve descripción general de cada componente de la infraestructura que debe considerarse en su plan de implementación para HoloLens 2.
 
 ### Azure Active Directory
-Azure AD is a cloud-based directory service that provides identity and access management. You can integrate it with existing on-premises directories to create a hybrid identity solution. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free, Premium P1, and Premium P2 (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/)). All editions support Azure AD device registration, but Premium P1 is required to enable MDM auto-enrollment. HoloLens 2 requires Azure Active Directory Join to enable most enterprise level features and functionality.
+Azure AD es un servicio de directorio en la nube que proporciona administración de identidades y acceso. Puedes integrarlo con directorios locales existentes para crear una solución de identidad híbrida. Las organizaciones que usan Microsoft Office 365 o Intune ya usan Azure AD, que tiene tres ediciones: gratis, Premium P1 y Premium P2 (vea [Azure Active Directory Editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/)). Todas las ediciones son compatibles con el registro de dispositivos de Azure AD, pero se necesita la Premium P1 para habilitar la inscripción automática de MDM. HoloLens 2 requiere la combinación de Azure Active Directory para habilitar la mayoría de las características y funcionalidades de nivel empresarial.
 
 > [!NOTE]
-> On premises Active Directory Join is not supported on HoloLens 2.
+> La Unión local de Active Directory no es compatible con HoloLens 2.
 
-### Mobile Device Management
-HoloLens 2 is designed specifically to be managed by Mobile Device Management (MDM) systems in an enterprise environment. Microsoft [Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices in the enterprise. Like Office 365, Intune uses Azure AD for identity management, so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM systems can also manage application deployments and updates for the HoloLens 2 as well. Other MDM providers that support HoloLens 2 currently include: AirWatch, MobileIron, and others. All MDM system vendors have equal access to Windows 10 device management configuration service providers (CSP)s, giving IT organizations the freedom to select whichever system best fits their management requirements, whether Microsoft Intune or a third-party MDM product.
-
-> [!NOTE]
-> Traditional on premises PC management systems like System Center Configuration Manager are not supported on HoloLens 2.
-
-### Windows Update for Business
-Microsoft diseñó Windows Update para empresas con el fin de proporcionar a los administradores de TI capacidades adicionales de administración centradas en Windows Update, tal como la posibilidad de implementar actualizaciones en grupos de dispositivos y definir ventanas de mantenimiento para la instalación de actualizaciones. Details for managing HoloLens 2 updates can be found [here](https://docs.microsoft.com/hololens/hololens-updates).
-
-### Certificates
-HoloLens 2 supports deployment of certificates through MDM if your environment requires certificates for Corp Wi-Fi network authentication or access to other resources. Some MDM infrastructure configurations may be required to enable certificate deployments to HoloLens 2. Read about how to [prepare certificates and network profiles for HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Intune details can be found [here](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-
-## Configure
-
-MDM administrators can define and implement policy settings on any corporate device enrolled in an MDM system. What configuration settings you use will differ based on the deployment scenario. In Windows 10, Configuration Service Providers (CSP)s are an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. For more information about Windows 10 device management CSPs for HoloLens 2, see the full list of [CSPs supported in HoloLens devices](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
-
-HoloLens 2 also supports setting a limited set of CSP configurations through custom Provisioning Packages. Provisioning Packages are typically leveraged for non-MDM managed devices and require to be manually applied to each device. More information in building custom Provisioning Packages can be found [here](https://docs.microsoft.com/hololens/hololens-provisioning).
+### Administración de dispositivos móviles
+HoloLens 2 se ha diseñado específicamente para que lo administren los sistemas de administración de dispositivos móviles (MDM) en un entorno empresarial. Microsoft [Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune), parte de la seguridad y movilidad empresarial, es un sistema MDM basado en la nube que administra dispositivos de la empresa. Al igual que Office 365, Intune usa Azure AD para la administración de identidades, por lo que los empleados usan las mismas credenciales para inscribir dispositivos en Intune que usan para iniciar sesión en Office 365. Muchos sistemas MDM admiten Windows10, y la mayoría también admiten los escenarios de implementación de dispositivos personales y corporativos. Los sistemas MDM también pueden administrar implementaciones y actualizaciones de aplicaciones para HoloLens 2. Otros proveedores de MDM que son compatibles con HoloLens 2 son: electrowatch, MobileIron y otros. Todos los proveedores de sistemas de MDM tienen el mismo acceso a proveedores de servicios de configuración de administración de dispositivos (CSP) de Windows 10, lo que ofrece a las organizaciones la libertad de seleccionar cualquier sistema que se adapte mejor a sus requisitos de administración, ya sea Microsoft Intune o un producto MDM de terceros.
 
 > [!NOTE]
-> HoloLens 2 supports [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot), providing an easy and simple process for managing your corporate Windows 10 device configurations.
+> Los sistemas de administración de PC locales en local como System Center Configuration Manager no son compatibles con HoloLens 2.
 
-### Identity Management
+### Windows Update para empresas
+Microsoft diseñó Windows Update para empresas con el fin de proporcionar a los administradores de TI capacidades adicionales de administración centradas en Windows Update, tal como la posibilidad de implementar actualizaciones en grupos de dispositivos y definir ventanas de mantenimiento para la instalación de actualizaciones. Puedes encontrar más información sobre cómo administrar las actualizaciones de HoloLens 2 [aquí](https://docs.microsoft.com/hololens/hololens-updates).
 
-Employees can use only one account to initialize a device so it&#39;s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities. HoloLens 2 supports 3 account types: Local User account, personal Microsoft Account, and Azure Active Directory Accounts. It is highly recommended to leverage Azure Active Directory for your enterprise identity management solution, as it will enable the full capabilities on your HoloLens 2 devices. More details regarding Identities on HoloLens 2 can be found [here](https://docs.microsoft.com/hololens/hololens-identity).
+### Certificados
+HoloLens 2 admite la implementación de certificados a través de MDM si su entorno requiere certificados para la autenticación de redes de la red Wi-Fi o el acceso a otros recursos. Es posible que se requieran algunas configuraciones de infraestructura de MDM para habilitar las implementaciones de certificados en HoloLens 2. Obtenga información sobre cómo [preparar certificados y perfiles de red para HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Puede encontrar los detalles de Intune [aquí](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
-### Network and Connectivity
+## Configurar
 
-As HoloLens 2 is a cloud first device, network access to online resources is required for full functionality and capabilities to be made available. If you are deploying HoloLens 2 devices with connectivity to your corporate intranet network, you may be required to update your proxy/firewall rules to allow access to HoloLens 2 cloud services. A list of common endpoints needed for the HoloLens 2 operating system can be found [here](https://docs.microsoft.com/hololens/hololens-offline). Access to additional endpoints may be required for applications or other cloud services to run on HoloLens 2 successfully.
+Los administradores de MDM pueden definir e implementar la configuración de la Directiva en cualquier dispositivo corporativo inscrito en un sistema MDM. La configuración que use será diferente en función del escenario de implementación. En Windows 10, los proveedores de servicios de configuración (CSP) s son una interfaz para leer, establecer, modificar o eliminar la configuración en el dispositivo. Estas opciones de configuración se asignan a claves del Registro o archivos. Para obtener más información sobre los CSP de administración de dispositivos de Windows 10 para HoloLens 2, consulte la lista completa de [CSP admitidos en los dispositivos HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
-Some common HoloLens 2 services requiring additional endpoint access are as follows:
+HoloLens 2 también admite la configuración de un conjunto limitado de configuraciones de CSP mediante paquetes de aprovisionamiento personalizados. Los paquetes de aprovisionamiento generalmente se aprovechan para dispositivos no administrados con MDM y requieren que se apliquen de forma manual a cada dispositivo. Puede encontrar más información sobre cómo crear paquetes de aprovisionamiento personalizados [aquí](https://docs.microsoft.com/hololens/hololens-provisioning).
+
+> [!NOTE]
+> HoloLens 2 es compatible con [Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot), lo que proporciona un proceso sencillo y simple para administrar las configuraciones de dispositivos empresariales de Windows 10.
+
+### Administración de identidades
+
+Los empleados solo pueden usar una cuenta para inicializar un dispositivo, por lo que&#39;s es imprescindible que la organización controle qué cuenta está habilitada en primer lugar. La cuenta elegida determinará quién controla el dispositivo e influirá en las funcionalidades de administración. HoloLens 2 admite tres tipos de cuenta: cuenta de usuario local, cuenta personal de Microsoft y cuentas de Azure Active Directory. Se recomienda enfáticamente aprovechar Azure Active Directory para su solución de administración de identidades empresarial, ya que permitirá las capacidades completas en sus dispositivos HoloLens 2. Puedes encontrar más información sobre las identidades en HoloLens 2 [aquí](https://docs.microsoft.com/hololens/hololens-identity).
+
+### Red y conectividad
+
+Como HoloLens 2 es un dispositivo en la nube, el acceso a los recursos en línea es necesario para que toda la funcionalidad y las funciones estén disponibles. Si implementas dispositivos HoloLens 2 con conectividad a tu red de intranet corporativa, es posible que tengas que actualizar las reglas de proxy o firewall para permitir el acceso a los servicios en la nube de HoloLens 2. [Aquí](https://docs.microsoft.com/hololens/hololens-offline)puedes encontrar una lista de puntos de conexión comunes necesarios para el sistema operativo HoloLens 2. Es posible que se requiera el acceso a puntos de conexión adicionales para que las aplicaciones u otros servicios en la nube se ejecuten correctamente en HoloLens 2.
+
+Algunos de los servicios comunes de HoloLens 2 que requieren acceso de extremo adicionales son los siguientes:
 
 - [Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
-- [D365 Guides](https://support.microsoft.com/en-us/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
-- [D365 Remote Assist (O365 Teams Infrastructure)](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
+- [Guías de D365](https://support.microsoft.com/en-us/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
+- [Asistencia remota de D365 (infraestructura de O365 Teams)](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
-### Certificate Deployment
+### Implementación de certificados
 
-If certificates are required for access to corporate Wi-Fi networks or other services within your organization, HoloLens 2 supports user and device certificate deployment through MDM. Note: Your MDM solution may require additional infrastructure configuration to deploy certificates to Windows 10 devices.
+Si se necesitan certificados para acceder a redes Wi-Fi corporativas o a otros servicios de su organización, HoloLens 2 admite la implementación de certificados de usuario y dispositivo a través de MDM. Nota: la solución MDM puede requerir una configuración de infraestructura adicional para implementar certificados en dispositivos Windows 10.
 
-### Security Review
+### Revisión de seguridad
 
-Most enterprise IT departments will require assessment and review of new devices being deployed to a corporate enterprise network. If your organization is requiring a security review of HoloLens 2, you can [find more details here to assist with obtaining security approvals](https://docs.microsoft.com/hololens/security-overview).
+La mayoría de los departamentos de TI empresariales necesitarán la evaluación y revisión de nuevos dispositivos que se implementarán en una red empresarial corporativa. Si su organización necesita una revisión de seguridad de HoloLens 2, puede [encontrar más detalles aquí para ayudarle a obtener aprobaciones de seguridad](https://docs.microsoft.com/hololens/security-overview).
 
-### Common HoloLens 2 Device Settings
+### Configuración de dispositivo común de HoloLens 2
 
-When deploying HoloLens 2 devices to a corporate enterprise environment, there are a number of common device configurations that may be considered when planning out your deployment of HoloLens 2. This list highlights configurations and settings that are found to be quite common, and does not comprise of a full list of available options:
+Al implementar dispositivos HoloLens 2 en un entorno empresarial corporativo, hay varias configuraciones de dispositivos comunes que pueden considerarse al planear la implementación de HoloLens 2. En esta lista se resaltan las configuraciones y la configuración que se considera bastante común, y no se incluye una lista completa de las opciones disponibles:
 
-| Device Setting | Brief description.                                                                              |
+| Configuración del dispositivo | Descripción breve.                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
-| [Hardware restrictions](hololens-requirements.md#hardware-restrictions)               | Hardware restrictions reduce connectivity and assist in data protection.                        |
-| [Wi-Fi profiles](hololens-requirements.md#wi-fi-profiles)               | Configure Wi-Fi profiles without user intervention or interaction.                              |
-| [Certificates](hololens-requirements.md#certificates-1)               | Provide account and/or Wi-Fi authentication, VPN encryption, and SSL encryption of web content. |
-| [Proxy](hololens-requirements.md#proxy)              | Manage internal traffic.                                                                        |
-|  [VPN](hololens-requirements.md#vpn)              | Control access to apps and resources on their company's intranet.                               |
-| [Kiosk Mode](hololens-requirements.md#kiosk-mode) | Limits the applications that are presented to users via UI. |
+| [Restricciones de hardware](hololens-requirements.md#hardware-restrictions)               | Las restricciones de hardware reducen la conectividad y ayudan en la protección de datos.                        |
+| [Perfiles Wi-Fi](hololens-requirements.md#wi-fi-profiles)               | Configurar perfiles Wi-Fi sin intervención del usuario ni interacción.                              |
+| [Certificados](hololens-requirements.md#certificates-1)               | Proporcionar autenticación de cuenta o Wi-Fi, cifrado de VPN y cifrado SSL de contenido Web. |
+| [Proxy](hololens-requirements.md#proxy)              | Administrar el tráfico interno.                                                                        |
+|  [VPN](hololens-requirements.md#vpn)              | Controlar el acceso a las aplicaciones y recursos de la intranet de su empresa.                               |
+| [Pantalla completa](hololens-requirements.md#kiosk-mode) | Limita las aplicaciones que se presentan a los usuarios a través de la interfaz de usuario. |
 
-#### Hardware restrictions
+#### Restricciones de hardware
 
-HoloLens 2 uses state-of-the-art technology that includes popular hardware features such as cameras, microphones, speakers, USB interfaces, Bluetooth interfaces, and Wi-Fi. You can use hardware restrictions to control the availability of these features.
+HoloLens 2 usa tecnología de vanguardia que incluye características de hardware populares, como cámaras, micrófonos, altavoces, interfaces USB, interfaces Bluetooth y Wi-Fi. Puedes usar restricciones de hardware para controlar la disponibilidad de estas funciones.
 
-The following lists the most commonly used MDM settings that HoloLens 2 supports to configure hardware restrictions. Some of these hardware restrictions provide connectivity and assist in data protection.
+En la siguiente lista se enumeran las opciones de configuración de MDM que son compatibles con HoloLens 2 para configurar restricciones de hardware. Algunas de estas restricciones de hardware proporcionan conectividad y ayudan en la protección de datos.
 
-- [**Allow WiFi:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) Whether users can enable and use the Wi-Fi radio on their devices
-- [**Allow USB Connection:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) Whether the USB connection is enabled (doesn&#39;t affect USB charging)
-- [**Allow Bluetooth:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) Whether users can enable and use the Bluetooth radio on their devices
+- [**Permitir WiFi:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) Si los usuarios pueden habilitar y usar la radio Wi-Fi en sus dispositivos
+- [**Permitir conexión USB:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) Si la conexión USB está habilitada (hace&#39;t afecta a la carga de USB)
+- [**Permitir Bluetooth:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) Si los usuarios pueden habilitar y usar la radio Bluetooth en sus dispositivos
 
-Read more about other [common device restrictions.](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)
+Más información sobre otras [restricciones de dispositivos comunes.](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)
 
-#### Wi-Fi profiles
+#### Perfiles Wi-Fi
 
-Most corporate Wi-Fi networks require certificates and other complex information to restrict and secure user access. This advanced Wi-Fi information is difficult for typical users to configure, but MDM systems can fully configure these Wi-Fi profiles without user intervention. You can create multiple Wi-Fi profiles in your MDM system.
+La mayoría de las redes Wi-Fi corporativas requiere certificados y otra información compleja para restringir y proteger el acceso de usuario. Esta información de Wi-Fi avanzada es difícil para los usuarios típicos de configurar, pero MDM puede configurar por completo estos perfiles de Wi-Fi sin la intervención del usuario. Es posible crear varios perfiles Wi-Fi en el sistema MDM.
 
-For more details on Wi-Fi settings for Windows 10, see [Enterprise Profile WiFi settings](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
+Para obtener más información sobre la configuración de Wi-Fi para Windows 10, consulta [configuración del perfil de empresa WiFi](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
 
-#### Certificates
+#### Certificados
 
-Certificates help improve security by providing account authentication, Wi-Fi authentication, VPN encryption, and SSL encryption of web content. Although administrators can manage certificates on devices manually through provisioning packages, it&#39;s a best practice to use your MDM system to manage those certificates throughout their entire lifecycle – from enrollment through renewal and revocation. Your MDM system can automatically deploy these certificates to the devices&#39; certificate stores after you enroll the device (as long as the MDM system supports the Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standards #12 (PKCS#12)). MDM can also query and delete enrolled client certificates or trigger a new enrollment request before the current certificate is expired.
+Los certificados ayudan a mejorar la seguridad proporcionando autenticación de cuenta, autenticación Wi-Fi, cifrado de VPN y cifrado SSL de contenido Web. A pesar de que los administradores pueden administrar certificados en dispositivos de forma manual mediante paquetes de aprovisionamiento,&#39;s es un procedimiento recomendado para usar su sistema MDM para administrar esos certificados durante todo su ciclo de vida, desde la inscripción a través de la renovación y la revocación. El sistema MDM puede implementar automáticamente estos certificados en los dispositivos&#39; los almacenes de certificados después de inscribir el dispositivo (siempre y cuando el sistema MDM admita el protocolo de inscripción de certificados simple (SCEP) o los estándares de criptografía de clave pública #12 (PKCS # 12)). MDM también puede consultar y eliminar certificados de cliente inscritos o desencadenar una nueva solicitud de inscripción antes de que venza el certificado actual.
 
-Read more about how to [prepare certificates and network profiles for HoloLens 2.](https://docs.microsoft.com/hololens/hololens-certificates-network)
+Más información sobre cómo [preparar certificados y perfiles de red para HoloLens 2.](https://docs.microsoft.com/hololens/hololens-certificates-network)
 
 #### Proxy
 
-Most corporate intranet networks leverage a proxy to manage internal traffic. With HoloLens 2 you can configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections.
+La mayoría de las redes de intranet corporativas aprovechan un proxy para administrar el tráfico interno. Con HoloLens 2 puedes configurar un servidor proxy para conexiones Ethernet y Wi-Fi. Esta configuración no se aplica a las conexiones VPN.
 
-For more details on proxy settings for Windows 10, see [NetworkProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp).
+Para obtener más información sobre la configuración de proxy para Windows 10, consulte [CSP NetworkProxy](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp).
 
 #### VPN
 
-Organizations often use a VPN to control access to apps and resources on their company&#39;s intranet. HoloLens 2 supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice.
+Las organizaciones suelen usar una VPN para controlar el acceso a las aplicaciones y los recursos de la intranet de su empresa&#39;s. HoloLens 2 es compatible con las conexiones SSL VPN, que requieren un complemento que se pueda descargar de la tienda de Microsoft y que sean específicas del proveedor de VPN que elija.
 
-For more details about VPN profiles, see the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx)
+Para obtener más información acerca de los perfiles de VPN, consulta [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx) (CSP de VPNv2).
 
-#### Kiosk Mode
+#### Pantalla completa
 
-You can configure a HoloLens 2 device to function as a fixed-purpose device, also called a kiosk, by configuring the device to run in kiosk mode. Kiosk mode limits the applications (or users) that are available on the device. Kiosk mode is a convenient feature that you can use to dedicate a HoloLens 2 device to business apps, or to use the HoloLens 2 device in an app demo.
+Puede configurar un dispositivo HoloLens 2 para que funcione como un dispositivo de propósito fijo, también denominado quiosco, configurando el dispositivo para que se ejecute en el modo de pantalla completa. En el modo de pantalla completa, se limitan las aplicaciones (o usuarios) que están disponibles en el dispositivo. El modo de pantalla completa es una característica muy útil que puedes usar para dedicar un dispositivo HoloLens 2 a aplicaciones empresariales o para usar el dispositivo HoloLens 2 en una demostración de la aplicación.
 
-For more details about configuring a HoloLens 2 in Kiosk Mode, see [Setup HoloLens as a Kiosk](https://docs.microsoft.com/hololens/hololens-kiosk)
+Para obtener más información sobre cómo configurar HoloLens 2 en modo de pantalla completa, consulta [configurar hololens como exposición](https://docs.microsoft.com/hololens/hololens-kiosk)
 
-## Deploy
+## Implementar
 
-### MDM Device Enrollment
+### Inscripción de dispositivo MDM
 
-For enterprise deployments, it is recommended to [enroll devices](https://docs.microsoft.com/hololens/hololens-enroll-mdm) into MDM as corporate devices only with Azure AD join and automatic MDM enrollment (AAD+MDM). This requires Azure AD Premium and supports automatic enrollment to several MDM providers including Intune.
+Para las implementaciones empresariales, se recomienda [inscribir dispositivos](https://docs.microsoft.com/hololens/hololens-enroll-mdm) en MDM como dispositivos empresariales solo con la inscripción automática de Azure ad y la inscripción automática de MDM (AAD + MDM). Esto requiere Azure AD Premium y admite la inscripción automática a varios proveedores de MDM, incluido Intune.
 
-Learn more about the self-deploying enrollment method [Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot).
+Obtenga más información sobre el método de inscripción autoimplementado [AutoPilot](https://docs.microsoft.com/hololens/hololens2-autopilot).
 
-### Application Deployment
+### Implementación de aplicaciones
 
-User productivity on mobile devices is often driven by apps.
+A menudo, la productividad del usuario en los dispositivos móviles está condicionada por las aplicaciones.
 
-Windows 10 makes it possible to develop apps that work seamlessly across multiple devices using the Universal Windows Platform (UWP) for Windows apps.
+Windows10 hace posible desarrollar aplicaciones que funcionen de manera óptima en varios dispositivos con la Plataforma universal de Windows (UWP) para aplicaciones de Windows.
 
-There are multiple ways to deploy applications to HoloLens 2 devices. Apps can be deployed directly through MDM, the Microsoft Store for Business, or sideloaded through a Provisioning Package. More [details regarding app deployment can be found here](https://docs.microsoft.com/hololens/app-deploy-overview).
+Hay varias maneras de implementar aplicaciones en dispositivos HoloLens 2. Las aplicaciones se pueden implementar directamente a través de MDM, Microsoft Store para empresas o transferidas a través de un paquete de aprovisionamiento. [Puede encontrar más información sobre la implementación de aplicaciones aquí](https://docs.microsoft.com/hololens/app-deploy-overview).
 
 > [!NOTE]
-> HoloLens 2 supports running of UWP ARM64 apps only.
+> HoloLens 2 solo admite el funcionamiento de aplicaciones de ARM64 de UWP.
 
-## Maintain
+## Mantener
 
-En los entornos de TI empresariales, la necesidad de administración y el control de costes se debe equilibrar con el deseo de ofrecer a los usuarios las tecnologías más recientes. Since cyberattacks have become an everyday occurrence, it is important to properly maintain the state of your Windows 10 devices. IT needs to control configuration settings, keeping them from drifting out of compliance, as well as enforce which devices can access internal applications. HoloLens 2 delivers the mobile operations management capabilities necessary to ensure that devices are in compliance with corporate policy.
+En los entornos de TI empresariales, la necesidad de administración y el control de costes se debe equilibrar con el deseo de ofrecer a los usuarios las tecnologías más recientes. Dado que cyberattacks se ha convertido en una incidencia diaria, es importante mantener correctamente el estado de los dispositivos con Windows 10. El departamento de TI debe controlar las opciones de configuración, impidiendo que incumplan los requisitos, así como hacer cumplir qué dispositivos pueden acceder a las aplicaciones internas. HoloLens 2 ofrece las funciones de administración de operaciones móviles necesarias para garantizar que los dispositivos cumplan con las directivas corporativas.
 
-### OS Servicing options
+### Opciones de mantenimiento del sistema operativo
 
-**A streamlined update process**
+**Un proceso de actualización optimizado**
 
-Microsoft ha optimizado el ciclo de ingeniería y lanzamiento de productos Windows para que las nuevas características, experiencias y funcionalidades que demanda el mercado se puedan ofrecer de forma más rápida que nunca. Microsoft plans to deliver two Feature Updates per year (12-month period). **Feature Updates** establish a Current Branch or CB, and have an associated version.
+Microsoft ha optimizado el ciclo de ingeniería y lanzamiento de productos Windows para que las nuevas características, experiencias y funcionalidades que demanda el mercado se puedan ofrecer de forma más rápida que nunca. Microsoft tiene planeado entregar 2 actualizaciones de características al año (en un período de 12 meses). **Las actualizaciones de características** establecen una rama o CB actual, y tienen una versión asociada.
 
-Microsoft will also deliver and install updates for security and stability directly to HoloLens 2 devices. These **Quality Updates** , released under Microsoft control via Windows Update, are available monthly. HoloLens 2 consumes Feature Updates and Quality Updates as part of the same standard update process.
+Microsoft también proporcionará e instalará actualizaciones de seguridad y estabilidad directamente en dispositivos HoloLens 2. Estas **actualizaciones de calidad** , publicadas bajo control de Microsoft a través de Windows Update, están disponibles mensualmente. HoloLens 2 consume actualizaciones de características y de calidad como parte del mismo proceso de actualización estándar.
 
-Enterprise customers can manage the update experience and process on HoloLens 2s using an MDM system. In most cases, policies to manage the update process will apply to both feature and quality updates. More details in [configuring MDM for HoloLens updates](https://docs.microsoft.com/hololens/hololens-updates).
+Los clientes empresariales pueden administrar la experiencia de actualización y el proceso en HoloLens 2s con un sistema MDM. En la mayoría de los casos, se aplicarán directivas para administrar el proceso de actualización tanto en el caso de actualizaciones de características como de calidad. Más detalles en la [configuración de MDM para las actualizaciones de HoloLens](https://docs.microsoft.com/hololens/hololens-updates).
 
-### Managing Applications 
+### Administración de aplicaciones 
 
-IT administrators can control which apps are allowed to be installed on the HoloLens 2 and how they should be kept up-to-date.
+Los administradores de TI pueden controlar qué aplicaciones están autorizadas a instalarse en HoloLens 2 y cómo se deben mantener actualizadas.
 
-HoloLens 2 supports [Windows Defender Application Control (WDAC)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac), which enables administrators to create, allow, or disallow lists of apps from the Microsoft Store. This capability extends to built-in apps, as well. The ability to allow or deny apps helps to ensure that people use their devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store.
+HoloLens 2 es compatible con el [control de aplicaciones de Windows Defender (WDAC)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac), que permite a los administradores crear, permitir o impedir listas de aplicaciones de Microsoft Store. Esta funcionalidad se extiende también a las aplicaciones integradas. La capacidad de permitir o denegar aplicaciones ayuda a garantizar que las personas usen sus dispositivos para sus fines previstos. Sin embargo, no siempre resulta sencillo encontrar un equilibrio entre lo que los empleados necesitan o solicitan y los problemas de seguridad. La creación de listas de aplicaciones permitidas y no permitidas también requiere mantenerse al día del cambiante mundo de las aplicaciones de Microsoft Store.
 
-For more details, see [Application Control CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp).
+Para obtener más información, consulta [CSP de control de aplicaciones](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp).
 
-### Retire
+### Retirar
 
-Device retirement is the last phase of the device lifecycle. It&#39;s important that devices being replaced with newer models are securely retired since you don&#39;t want any company data to remain on discarded devices that could compromise the confidentiality of your data. IT also needs a way to adequately support users who need to wipe devices that are lost or stolen.
+La retirada del dispositivo es la última fase del ciclo de vida del dispositivo. &#39;s es importante que los dispositivos que se reemplazan con nuevos modelos estén retirados de forma segura, ya que no&#39;desea que los datos de la compañía permanezcan en dispositivos descartados que podrían poner en peligro la confidencialidad de los datos. El departamento de TI también necesita una forma de dar soporte de forma adecuada a los usuarios que necesiten borrar los dispositivos perdidos o robados.
 
-HoloLens 2 supports 3 methods of wiping the device
+HoloLens 2 es compatible con 3 métodos para borrar el dispositivo
 
-**MDM Factory Wipe:** Resets the HoloLens 2 back to the factory image via administrator-initiated MDM command. Erases all stored data on the device.
+**Borrado de fábrica de MDM:** Restablece HoloLens 2 a la imagen de fábrica a través de un comando MDM Iniciado por un administrador. Borra todos los datos almacenados en el dispositivo.
 
-**Device Reset from within Settings:** End users can manually reset the HoloLens 2 within the Settings app on the device. Erases all stored data on the device.
+**Restablecimiento del dispositivo desde la configuración:** Los usuarios finales pueden restablecer de forma manual HoloLens 2 en la aplicación configuración del dispositivo. Borra todos los datos almacenados en el dispositivo.
 
-**Advanced Recovery Companion (ARC):** From a PC running the ARC tool, a user or admin can flash a HoloLens 2 connected to the PC via USB cable. Erases all stored data on the device.
+**Asistente de recuperación avanzada (ARC):** Desde un equipo con la herramienta ARC, un usuario o administrador puede hacer parpadear a HoloLens 2 conectado al equipo a través del cable USB. Borra todos los datos almacenados en el dispositivo.
