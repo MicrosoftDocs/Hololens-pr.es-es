@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
-ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
+ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
+ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997221"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117775"
 ---
 # Notas de la versión de HoloLens 2
 
@@ -28,6 +28,18 @@ Para asegurarte de tener una experiencia productiva con tus dispositivos HoloLen
 
 >[!NOTE]
 > Para leer las notas de la versión del emulador de HoloLens, [visita el archivo](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows Holographic, versión 2004, actualización de octubre de 2020
+- Compilación 19041,1124
+ 
+Mejoras y correcciones de la actualización:
+
+- Se ha quitado una comprobación innecesaria que causó un error de sistema en tiempo de ejecución.
+
+## Windows Holographic, versión 1903, actualización de octubre de 2020
+- Compilación 18362,1081
+
+Esta actualización mensual de calidad no contiene ningún cambio importante, le recomendamos que pruebe nuestras compilaciones más recientes para Windows Holographic, versión 2004.
 
 ## Windows Holographic, versión 2004-actualización 2020 de septiembre
 - Compilación 19041,1117
@@ -97,7 +109,7 @@ Mejoras y correcciones de la actualización:
 - Mejor estabilidad de los hologramas en vídeos grabados.
 - Se ha resuelto un problema por el que la captura de realidad mixta no pudo grabar video después de que el dispositivo se quedó en estado de modo de espera durante varios días.
 - La API HolographicSpace. UserPresence generalmente está deshabilitada para las aplicaciones de Unity. Este comportamiento evita un problema que provocaba que algunas aplicaciones se pausan cuando el parasol se ha volteado, incluso si estaba habilitada la opción "ejecutar en segundo plano". La API ahora está habilitada para las versiones de Unity 2018.4.18 y versiones posteriores, y 2019.3.4 y posteriores.
-- Cuando accede al portal de dispositivos a través de una conexión WiFi, es posible que un explorador Web impida el acceso a un certificado no válido. El explorador puede notificar un error como "ERR_SSL_PROTOCOL_ERROR", incluso si el certificado de dispositivo era de confianza. En este caso, no puede progresar a Device portal, ya que no hay ninguna opción para ignorar las advertencias de seguridad. Esta actualización resolvió el problema. Si el certificado de dispositivo se ha descargado anteriormente y se confía en un equipo PC para quitar las advertencias de seguridad del explorador y se produce el error de SSL, el nuevo certificado debe descargarse y confiarse en las advertencias de seguridad del explorador de direcciones.
+- Al acceder a Device portal a través de una conexión Wi-Fi, es posible que un explorador Web impida el acceso a un certificado no válido. El explorador puede notificar un error como "ERR_SSL_PROTOCOL_ERROR", incluso si el certificado de dispositivo era de confianza. En este caso, no puede progresar a Device portal, ya que no hay ninguna opción para ignorar las advertencias de seguridad. Esta actualización resolvió el problema. Si el certificado de dispositivo se ha descargado anteriormente y se confía en un equipo PC para quitar las advertencias de seguridad del explorador y se produce el error de SSL, el nuevo certificado debe descargarse y confiarse en las advertencias de seguridad del explorador de direcciones.
 - Permitió la creación de un paquete de aprovisionamiento en tiempo de ejecución que pueda instalar una aplicación con paquetes MSIX.
 - Se ha agregado una **Settings**configuración en los  >  hologramas**del sistema**de configuración  >  **Holograms** que permite a los usuarios quitar automáticamente todos los hologramas de la Página principal de la realidad mixta cuando se cierra el dispositivo.
 - Se ha corregido un problema que causaba que las aplicaciones de HoloLens cambiaran el formato de píxel para representar negro en el emulador de HoloLens.
@@ -208,7 +220,7 @@ El proveedor de servicios de configuración de NetworkQoSPolicy crea directivas 
 
 ### Compatibilidad ampliada con Ethernet USB para dispositivos de tethering 5G/LTE
 
-Se agregó compatibilidad para habilitar determinados dispositivos de banda ancha móvil, como teléfonos 5G/LTE y Wi-Fi hotpots, cuando están tethering a HoloLens 2 a través de USB. Estos dispositivos ahora se muestran en **configuración de red** como otra conexión Ethernet. (Los dispositivos de banda ancha móvil que requieren un controlador externo no son compatibles). Esta funcionalidad habilita las conexiones de ancho de banda alto cuando la Wi-Fi no está disponible y el tethering Wi-Fi no es lo suficientemente adecuado. Para obtener más información sobre los dispositivos USB compatibles, vea [conectarse a dispositivos Bluetooth y USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).  
+Se agregó compatibilidad para habilitar determinados dispositivos de banda ancha móvil, como teléfonos 5G/LTE y Wi-Fi hotpots, cuando están tethering a HoloLens 2 a través de USB. Estos dispositivos ahora se muestran en **configuración de red** como otra conexión Ethernet. (Los dispositivos de banda ancha móvil que requieren un controlador externo no son compatibles). Esta funcionalidad habilita conexiones de ancho de banda alto cuando Wi-Fi no está disponible y Wi-Fi el tethering no es lo suficientemente adecuado. Para obtener más información sobre los dispositivos USB compatibles, vea [conectarse a dispositivos Bluetooth y USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
 ### Mejoras en el seguimiento de manos
 
@@ -245,13 +257,13 @@ Ahora puede usar los comandos de voz con cualquier aplicación del dispositivo. 
 
 ### Actualizaciones de Cortana
 
-La aplicación actualizada se integra con Microsoft 365 para ayudarte a sacar más partido de tus dispositivos (actualmente solo en Inglés de Estados Unidos). En HoloLens 2, Cortana ya no es compatible con determinados comandos específicos del dispositivo, como, por ejemplo, ajustar el volumen o reiniciarlo. Estas opciones ahora son compatibles con los nuevos comandos de voz del sistema. Más información sobre la nueva aplicación de Cortana en nuestro [blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
+La aplicación actualizada se integra con Microsoft 365 para ayudarte a sacar más partido de tus dispositivos (actualmente solo en US-English). En HoloLens 2, Cortana ya no es compatible con determinados comandos específicos del dispositivo, como, por ejemplo, ajustar el volumen o reiniciarlo. Estas opciones ahora son compatibles con los nuevos comandos de voz del sistema. Más información sobre la nueva aplicación de Cortana en nuestro [blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
 ### Mejoras y mejoras en la calidad
 
 Mejoras y correcciones también en la actualización:  
 - Introdujo un sistema de calibración de pantalla activa. Esta característica mejora la estabilidad y la alineación de los hologramas. Ahora permanecen en su lugar cuando mueves tu cabeza de un lado a otro.
-- Se ha corregido un error que provocaba que la transmisión por secuencias de Wi-Fi a HoloLens se interrumpa periódicamente. Si una aplicación indica que necesita transmisión de baja latencia, implementa la corrección llamando a la [función SetSocketMediaStreamingMode](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
+- Se ha corregido un error en el que Wi-Fi la transmisión a HoloLens se interrumpió periódicamente. Si una aplicación indica que necesita transmisión de baja latencia, implementa la corrección llamando a la [función SetSocketMediaStreamingMode](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
 - Se ha corregido un bloqueo de dispositivo que se produjo durante la transmisión por secuencias en el modo de investigación.
 - Se ha corregido un error en el que, en algunos casos, el usuario no se mostraba en la pantalla de inicio de sesión al reanudar una sesión.
 - Se ha corregido un problema por el que los usuarios no pueden exportar registros de MDM mediante la **configuración**.
