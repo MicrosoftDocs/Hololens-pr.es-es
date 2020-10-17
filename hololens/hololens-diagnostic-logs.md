@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
-ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
+ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
+ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "11119950"
+ms.locfileid: "11120151"
 ---
 # Recopilar y usar información de diagnóstico de dispositivos HoloLens
 
@@ -124,8 +124,8 @@ Esto funciona cuando el dispositivo se muestra en el explorador de archivos desp
 
 > [!NOTE]
 > El diagnóstico sin conexión solo está habilitado cuando el usuario está pasando por OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) valor de directiva está establecido en completo (básico es el valor predeterminado en Hololens). 
->
-> Para deshabilitar el diagnóstico sin conexión, vaya a configuración de la **aplicación > página privacidad** y seleccione **básica** en **datos de diagnóstico**.
+
+Si el dispositivo está bloqueado, no se mostrarán los registros. Para deshabilitar el diagnóstico sin conexión, vaya a configuración de la **aplicación > página privacidad** y seleccione **básica** en **datos de diagnóstico**. En las compilaciones en las que el diagnóstico desconectado depende de la configuración de telemetría, solo afecta a si se recopilan registros o no. No afecta a los archivos que se recopilan.
 
 Vea este vídeo para obtener más información. 
 
