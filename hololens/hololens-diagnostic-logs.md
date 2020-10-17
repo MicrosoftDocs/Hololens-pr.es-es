@@ -1,9 +1,9 @@
 ---
 title: Recopilar y usar información de diagnóstico de dispositivos HoloLens
-description: ''
+description: Recopilar y usar información de diagnóstico de dispositivos HoloLens
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 03/23/2020
+ms.date: 10/15/2020
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b3071c2c66bf1e9c07ba2481b3e22a0d5125bc6d
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
+ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919141"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11119950"
 ---
 # Recopilar y usar información de diagnóstico de dispositivos HoloLens
 
@@ -122,6 +122,12 @@ En situaciones en las que el dispositivo no puede recopilar diagnósticos median
 
 Esto funciona cuando el dispositivo se muestra en el explorador de archivos después de conectarlo a un PC a través de un cable USB. 
 
+> [!NOTE]
+> El diagnóstico sin conexión solo está habilitado cuando el usuario está pasando por OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) valor de directiva está establecido en completo (básico es el valor predeterminado en Hololens). 
+>
+> Para deshabilitar el diagnóstico sin conexión, vaya a configuración de la **aplicación > página privacidad** y seleccione **básica** en **datos de diagnóstico**.
+
+Vea este vídeo para obtener más información. 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
@@ -134,5 +140,8 @@ Siga estos pasos para recopilar diagnósticos:
 6.  Actualice el explorador de archivos y vaya a la carpeta **' \Documents '** .
 7.  Copie los archivos ZIP de diagnóstico y compartirlos con el equipo de soporte técnico de Microsoft.
 
-Tenga en cuenta que algunos archivos ZIP de diagnósticos pueden contener información de identificación personal.
+> [!NOTE]
+> Algunos de los archivos ZIP de diagnóstico pueden contener información de identificación personal.
+
+
 

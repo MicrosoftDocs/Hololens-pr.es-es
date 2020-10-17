@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 9/23/2020
+ms.date: 10/15/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
-ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
+ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
+ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088614"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119303"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -37,7 +37,7 @@ A continuación encontrará una lista de las próximas características que pued
 | [Administrador de certificados](hololens-insider.md#certificate-manager)                                     | Los usuarios pueden ver, instalar y quitar certificados certificados de usuario y de máquina local actuales en la aplicación configuración.                                         | 19041.1361 +                 |
 | [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
 | [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
-| [Usar el piloto automático con conexión Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa el autopiloto de la Wi-Fi del dispositivo sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
+| [Usar el piloto automático con conexión de Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa AutoPilot desde Wi-Fi de dispositivos sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
 |[Tenantlockdown CSP y AutoPilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Después de que se aplique la inscripción a inquilinos y la Directiva, el dispositivo solo se puede inscribir en ese inquilino en cualquier momento en que el dispositivo se restablezca o vuelva a parpadear. | 19041.1366 +|
 | [Acceso asignado global](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configure el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema. | 19041.1356 +                 |
 | [Iniciar automáticamente una aplicación en la pantalla completa de varias aplicaciones](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Configura una aplicación para que se inicie automáticamente al iniciar sesión en un modo quiosco de varias aplicaciones.     | 19041.1346 +                 |
@@ -49,6 +49,7 @@ A continuación encontrará una lista de las próximas características que pued
 | [Actualizar directivas](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Directivas habilitadas recientemente que permiten controlar las actualizaciones.                                            | 19041.1352 +                 |
 | [Visibilidad de la página de configuración habilitada para HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Directiva para elegir qué páginas se ven en la aplicación configuración.                                           | 19041.1349 +                 |
 |  [Modo de investigación](hololens-insider.md#research-mode) | Usar el modo de referencia en HoloLens 2 | 19041.1375 + |
+| [Aumento de la longitud de grabación](hololens-insider.md#recording-length-increased) | Las grabaciones de MRC ya no se limitan a 5 minutos. | 19041.1387 + |
 | [Mejoras y correcciones de la actualización](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Correcciones adicionales de la actualización.                                                                | 19041.1361 +                 |
 
 
@@ -131,7 +132,7 @@ Al combinar el inicio automático de la provisión de dispositivos USB y la conf
 
 El dispositivo ya está configurado y mostrará la pantalla de aprovisionamiento correcto.
 
-### Usar el piloto automático con conexión Wi-Fi
+### Usar el piloto automático con conexión de Wi-Fi
 Ahora, durante la OOBE, una vez que conecte HoloLens 2 con WiFi, OOBE buscará un perfil de AutoPilot para el dispositivo. Si se encuentra alguno, se usará para completar el resto de la Unión de AAD y el flujo de inscripción. En otras palabras, el uso de Ethernet a USB C o WiFi a USB C no es un requisito, aunque seguirá funcionando si se proporciona al principio de OOBE. Más información sobre el [autopiloto para dispositivos HoloLens 2](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP y AutoPilot
@@ -283,6 +284,15 @@ Mientras se encuentre en el modo de investigación, HoloLens 2 es una herramient
 Ahora, los investigadores tienen la opción de habilitar el modo de referencia en sus dispositivos HoloLens para acceder a todas estas secuencias de sensores de imágenes RAW orientadas externamente. El modo de investigación para HoloLens 2 también proporciona acceso a las lecturas de acelerómetro, Gyroscope y magnetómetro. Para proteger la privacidad de los usuarios, las imágenes de cámara con seguimiento sin formato no están disponibles en el modo referencia, pero la dirección de ojo está disponible a través de API existentes.
 
 Consulte la [documentación del modo de investigación](https://docs.microsoft.com/windows/mixed-reality/research-mode) para obtener más información técnica.
+
+### Aumento de la longitud de grabación
+Debido a los comentarios de los clientes, hemos aumentado la duración de la grabación de [capturas de realidad mixta](holographic-photos-and-videos.md). De forma predeterminada, las capturas de realidad mixta ya no se limitarán a 5 minutos, sino que calcularán la longitud máxima de grabación en función del espacio disponible en el disco. El dispositivo calculará la duración de la grabación de video máxima en función del espacio disponible en disco hasta el 80% del espacio total en el disco.
+
+> [!NOTE]
+> HoloLens usará la duración de grabación de video predeterminada (5 minutos) si se produce una de las siguientes situaciones:
+> - La duración estimada de grabación máxima es inferior a los 5 minutos predeterminados.
+> - El espacio en disco disponible es menor del 20% del espacio total en el disco.
+
 
 ### Mejoras y correcciones de la actualización:
 - Directiva actualizada para deshabilitar la enumeración de las funciones USB a través de MDM para NCM para AllowUsbConnection.
