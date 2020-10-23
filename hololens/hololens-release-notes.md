@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
-ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
+ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
+ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117775"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134429"
 ---
 # Notas de la versión de HoloLens 2
 
@@ -155,7 +155,7 @@ Mejoras y correcciones de la actualización:
 
 ### Compatibilidad con Windows AutoPilot
 
-El piloto automático de Windows para HoloLens 2 permite que el canal de ventas de dispositivos inscriba HoloLens en tu inquilino de Intune. Cuando los dispositivos llegan, están listos para su implementación automática como dispositivos compartidos en su espacio empresarial. Para aprovechar las ventajas de la implementación automática, el dispositivo debe conectarse a una red durante la primera pantalla de la instalación con un adaptador USB-C-to-Ethernet o USB-C-to-LTE.
+El piloto automático de Windows para HoloLens 2 permite que el canal de ventas de dispositivos inscriba HoloLens en tu inquilino de Intune. Cuando los dispositivos llegan, están listos para su implementación automática como dispositivos compartidos en su espacio empresarial. Para aprovechar las ventajas de la implementación automática, el dispositivo debe conectarse a una red durante la primera pantalla de la instalación mediante USB-C-to-Ethernet.
 
 Después de que un usuario inicia el proceso de Autoimplementación automática, el proceso completa los siguientes pasos:
 
