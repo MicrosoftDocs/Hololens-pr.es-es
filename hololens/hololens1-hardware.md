@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072787"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134686"
 ---
 # Hardware de HoloLens (1.ª generación)
 
@@ -167,6 +167,22 @@ Para limpiar el parasol, quite el polvo usando un pincel de lente Camel o un ven
 Para limpiar el resto del dispositivo, incluidos el cabeza y los brazos del dispositivo, use un paño sin pelusas humedecido con jabón y agua leves. Deja que tu HoloLens se seque completamente antes de volver a usarlo.
 
 ![Imagen que muestra cómo limpiar el visor](images/hololens-cleaning-visor.png)
+
+## Buscar el número de serie
+
+El número de serie para los dispositivos de HoloLens (1. ª gen) se imprime debajo de la lente de la derecha.
+1. Mantén el dispositivo delante de ti como si estuvieras cansado de él.
+1. Con la lente aún hacia adelante, voltee la Deivce boca abajo para que vea la parte inferior.
+1. Ahora, la lente derecha estará a la izquierda, impresa debajo de la lente de la banda es el número de serie. 
+
+El número de serie también puede encontrarse a través de un equipo conectado:
+
+1. Conectar el dispositivo
+1. Ir a **este equipo en el** explorador de archivos
+1. Haz clic con el botón secundario del ratón y selecciona **propiedades** del dispositivo HoloLens
+1. Se mostrará el número de serie del dispositivo. Como esta captura de pantalla a continuación.
+
+<img src="images/hl1-serial-number.png" width="400" height="600" />
 
 > [!div class="nextstepaction"]
 > [Configura e inicia tu HoloLens (1ª generación)](hololens1-setup.md)
