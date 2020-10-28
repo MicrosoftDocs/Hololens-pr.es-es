@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
-ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
+ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
+ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119303"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11135561"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -35,6 +35,7 @@ A continuación encontrará una lista de las próximas características que pued
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Soporte de posición de ojos automático](hololens-insider.md#auto-eye-position-support)                              | Calcula de forma activa las posiciones de los ojos y permite un posicionamiento preciso del holograma.                        | 19041.1339 +                 |
 | [Administrador de certificados](hololens-insider.md#certificate-manager)                                     | Los usuarios pueden ver, instalar y quitar certificados certificados de usuario y de máquina local actuales en la aplicación configuración.                                         | 19041.1361 +                 |
+| [Instalador de aplicación](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | En la interfaz de usuario del dispositivo para instalar aplicaciones desde archivos appx. | 19041.1377 + |
 | [Iniciar automáticamente el aprovisionamiento desde USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE detecta automáticamente paquetes de aprovisionamiento en unidades USB.                                | 19041.1361 +                 |
 | [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Aplicar automáticamente paquetes de aprovisionamiento en OOBE.                                             | 19041.1361 +                 |
 | [Usar el piloto automático con conexión de Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usa AutoPilot desde Wi-Fi de dispositivos sin necesidad de un adaptador Ethernet.                             | 19041.1364 +                 |
@@ -104,6 +105,26 @@ El certificado debe instalarse ahora en el dispositivo.
 ![Visor de certificados de la aplicación configuración](images/certificate-viewer-device.jpg)
 
 ![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/certificate-device-install.jpg)
+
+### Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
+En nuestra versión Windows Insider, **agregamos una nueva función (instalador de aplicaciones) que te permite instalar aplicaciones de forma más fluida** en tus dispositivos HoloLens 2.  Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación. Nota: tiene control total para deshabilitar esta nueva ruta de instalación de la aplicación desactivando el instalador de la aplicación con el [control de aplicaciones de Windows Defender (CSP de WDAC](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), bloqueo de Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+
+**Instrucciones de instalación de la aplicación.**
+
+1.  Asegúrate de que tu dispositivo HoloLens 2 esté encendido y conectado a tu PC.
+2.  Asegúrate de haber iniciado sesión en el dispositivo HoloLens 2
+3.  En su equipo, navegue hasta la aplicación personalizada y copie SUAPLICACIÓN. appxbundle a yourdevicename\Internal Storage\Downloads.   Una vez que haya terminado de copiar el archivo, puede desconectar el dispositivo
+4.  Desde tu dispositivo HoloLens 2 abre el menú Inicio, selecciona todas las aplicaciones e inicia la aplicación explorador de archivos.
+5.  Vaya a la carpeta descargas. Es posible que tenga que estar en el panel izquierdo de la aplicación, seleccione este dispositivo en primer lugar y, a continuación, vaya a descargas.
+6.  Seleccione el archivo SUAPLICACIÓN. appxbundle.
+7.  Se iniciará el instalador de la aplicación. Seleccione el botón instalar para instalar la aplicación.
+La aplicación instalada se iniciará automáticamente al finalizar la instalación.
+
+Puede encontrar aplicaciones de ejemplo en [Windows universal samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) para probar este flujo.
+
+Obtén más información sobre el proceso completo de [instalar aplicaciones en HoloLens 2 con el instalador de la aplicación](app-deploy-app-installer.md).  
+
+![Instalación de MRTK ejemplos mediante el instalador de aplicaciones](images/hololens-app-installer-picture.jpg)
 
 ### Iniciar automáticamente el aprovisionamiento desde USB
 Antes de que los usuarios de la compilación tuvieran que iniciar la pantalla de aprovisionamiento de forma manual durante OOBE para aprovisionar mediante una combinación de botones. Ahora los usuarios pueden omitir la combinación de botones con un paquete de aprovisionamiento en una unidad de almacenamiento USB. 

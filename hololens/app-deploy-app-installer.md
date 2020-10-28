@@ -5,7 +5,7 @@ keywords: App Management, App, hololens, instalador de aplicaciones
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 9/17/2020
+ms.date: 10/26/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,22 +14,51 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2387c0eb65efc312db4eea7118f3cca44ce6d4b6
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 4e2256f1086c92cdf0e788ba9dddf5b74a733116
+ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027490"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11135531"
 ---
 # Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
 
-Ahora los usuarios pueden instalar aplicaciones a través de paquetes de appx, sin necesidad de habilitar el modo de desarrollador ni usar Device portal. Esta experiencia es sencilla para instalar aplicaciones en dispositivos locales o para compartir una aplicación con otra persona que no está familiarizada con otros métodos de instalación de aplicaciones en HoloLens. 
+En nuestra versión Windows Insider, **agregamos una nueva función (instalador de aplicaciones) que te permite instalar aplicaciones de forma más fluida** en tus dispositivos HoloLens 2.  Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación.   
+
+Esta actualización se alinea con el escritorio en el que la [transferencia local está habilitada de forma predeterminada](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/)
 
 > [!IMPORTANT]
 > Actualmente, esta característica solo avalible en Windows Insider compila 19041.1377 +. [Obtenga más información sobre cómo inscribirse en compilaciones de Windows Insider](hololens-insider.md).
 
 > [!NOTE]
-> La configuración de la solución de la aplicación debe ser **Master** o **Release** , ya que el instalador de la aplicación usará las dependencias de la tienda. Más información sobre cómo [crear paquetes de aplicaciones](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
+> Para los administradores de ti que deseen deshabilitar esta característica, use el siguiente nombre de familia de paquete como parte de su [Directiva de WDAC](windows-defender-application-control-wdac.md). Esto solo bloqueará la aplicación de instalación de aplicaciones y no las aplicaciones instaladas desde otros orígenes, como Microsoft Store o la solución MDM.
+```
+Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
+> [!NOTE]
+> Se recomienda usar la [Directiva de WDAC](windows-defender-application-control-wdac.md) para controlar las aplicaciones; sin embargo, si solo desea permitir las aplicaciones de Microsoft Store, los dispositivos configurados para establecer la directiva [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) explícitamente en "no permitir" solo permitirá que las aplicaciones se instalen desde Microsoft Store. 
+
+## Requisitos
+
+### Para los dispositivos: 
+> [!NOTE]
+> Actualmente, esta característica solo avalible en Windows Insider compila 19041.1377 +. [Obtenga más información sobre cómo inscribirse en compilaciones de Windows Insider](hololens-insider.md).
+
+### Para sus aplicaciones: 
+La configuración de la solución de la aplicación debe ser **Master** o **Release** , ya que el instalador de la aplicación usará las dependencias de la tienda. Más información sobre cómo [crear paquetes de aplicaciones](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
+
+Las aplicaciones que se instalen a través de este método deben estar firmadas digitalmente. Tendrás que usar un certificado para firmar la aplicación. Puede obtener un certificado desde la lista de [CA de confianza de MS](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), en cuyo caso no tendrá que realizar ninguna acción adicional. También puede firmar su propio certificado, sin embargo, el certificado deberá insertarse en el dispositivo. 
+- Cómo firmar aplicaciones [con la herramienta firmar.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
+
+**Opciones de certificado:** 
+- [Lista de CA de confianza de MS](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
+
+**Elija un método de implementación de certificados.** 
+- Los [paquetes de aprovisionamiento](hololens-provisioning.md) pueden aplicarse a dispositivos locales.
+- MDM se puede usar para [aplicar certificados con configuraciones de dispositivos](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+- Use el en el [Administrador de certificados](hololens-insider.md#certificate-manager)de dispositivo. 
+
+## Método de instalación
 
 1.  Asegúrate de que tu dispositivo HoloLens 2 esté encendido y de que hayas iniciado sesión.
 1.  En su equipo, navegue hasta la aplicación personalizada y copie SUAPLICACIÓN. appxbundle a yourdevicename\Internal Storage\Downloads. 
@@ -43,7 +72,35 @@ La aplicación instalada se iniciará automáticamente al finalizar la instalaci
 
 ![Instalación de MRTK ejemplos mediante el instalador de aplicaciones](images/hololens-app-installer-picture.jpg)
 
+### Solución de problemas de instalación
 Si la aplicación no se instaló correctamente, compruebe lo siguiente:
 -   Tu aplicación es una compilación de lanzamiento o maestra.
+- El dispositivo se actualizará a una compilación en la que está disponible esta característica. 
 -   Estás [conectado a Internet](hololens-network.md).
 -   Los [puntos de conexión de Microsoft Store](hololens-offline.md) están correctamente configurados.  
+
+## Instalador Web
+
+Los usuarios pueden instalar una aplicación directamente desde un servidor Web. Esto usa el instalador de aplicaciones combinado con un método de distribución de instalación fácil de descargar e instalar. 
+
+### Cómo configurar la instalación en Internet:
+1.  Asegúrate de que la aplicación esté correctamente configurada para instalarse.
+1.  Siga estos [pasos para habilitar esta opción en una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage). 
+
+### Experiencia de usuario final:
+1. El usuario recibe e instala el certificado en el dispositivo con un método previamente seleccionado. 
+1. El usuario visita la dirección URL creada a partir del paso anterior.
+
+La aplicación se instalará en el dispositivo. Para buscar la aplicación, abre el **menú Inicio** y selecciona el botón **todas las aplicaciones** para encontrar tu aplicación. 
+
+-   Para obtener ayuda con la solución de problemas de este método de instalación, visite [solucionar problemas del instalador](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)de la aplicación. 
+
+> [!NOTE]
+> No se admite la interfaz de usuario durante el proceso de actualización. Por lo tanto, no se admite la opción ShowPrompt de [esta página](https://docs.microsoft.com/windows/msix/app-installer/update-settings) ni las opciones relacionadas.
+
+## Aplicaciones de ejemplo
+
+Si deseas probar esto con algunas aplicaciones de ejemplo, consulta algunas de las muestras disponibles:
+- [Hub de ejemplos de MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
+- [Surge](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
+- [Aplicaciones de muestra para UWP que se pueden usar para pruebas](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
