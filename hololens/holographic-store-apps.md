@@ -3,7 +3,7 @@ title: Buscar, instalar y desinstalar aplicaciones
 description: La Microsoft Store es su fuente de aplicaciones y juegos que funcionan con HoloLens.  Aprenda más sobre cómo encontrar, instalar y desinstalar aplicaciones holográficas.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: hololens, tienda, uwp, aplicación, instalación
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985854"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145641"
 ---
 # Encontrar, instalar y desinstalar aplicaciones de Microsoft Store
 
@@ -35,6 +35,15 @@ Para aprender más acerca de la instalación y ejecución de aplicaciones person
 ## Buscar aplicaciones
 
 Abra el Microsoft Store desde el menú **Inicio**. Entonces busque aplicaciones y juegos. Puede usar [comandos de voz](hololens-cortana.md) para buscar diciendo "Buscar", una vez que se abre la ventana de búsqueda, diga "Iniciar dictado" y, a continuación, cuando se le solicite, empiece por indicar los términos de búsqueda.
+
+> [!NOTE]
+> El 12 de enero de 2021, las siguientes aplicaciones dejarán de recibir soporte técnico para los dispositivos HoloLens. Te recomendamos que uses el vínculo siguiente en el dispositivo para usar la versión Web de la aplicación.
+
+| Aplicación        | Vínculo                                          |
+|------------|-----------------------------------------------|
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## Instalar aplicaciones
 
