@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: d054628ec53fdc00560d628299058ce4c8d56185
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135561"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150961"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -107,17 +107,25 @@ El certificado debe instalarse ahora en el dispositivo.
 ![Imagen que muestra cómo usar la interfaz de usuario de certificados para instalar un certificado](images/certificate-device-install.jpg)
 
 ### Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
-En nuestra versión Windows Insider, **agregamos una nueva función (instalador de aplicaciones) que te permite instalar aplicaciones de forma más fluida** en tus dispositivos HoloLens 2.  Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación. Nota: tiene control total para deshabilitar esta nueva ruta de instalación de la aplicación desactivando el instalador de la aplicación con el [control de aplicaciones de Windows Defender (CSP de WDAC](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), bloqueo de Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+Pronto se enviará la función de instalador de aplicaciones después de la siguiente actualización de características. Estamos **agregando una nueva función (instalador de aplicaciones) para que pueda instalar aplicaciones más fácilmente** en sus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
+
+Un dispositivo se considera "administrado" si se cumple **alguna** de las condiciones siguientes:
+- MDM [inscrito](hololens-enroll-mdm.md)
+- Configurado con el [paquete de aprovisionamiento](hololens-provisioning.md)
+- La [identidad](hololens-identity.md) del usuario es AAD
+
+Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación.
 
 **Instrucciones de instalación de la aplicación.**
 
+1.  Asegurarse de que el dispositivo no se considere administrado
 1.  Asegúrate de que tu dispositivo HoloLens 2 esté encendido y conectado a tu PC.
-2.  Asegúrate de haber iniciado sesión en el dispositivo HoloLens 2
-3.  En su equipo, navegue hasta la aplicación personalizada y copie SUAPLICACIÓN. appxbundle a yourdevicename\Internal Storage\Downloads.   Una vez que haya terminado de copiar el archivo, puede desconectar el dispositivo
-4.  Desde tu dispositivo HoloLens 2 abre el menú Inicio, selecciona todas las aplicaciones e inicia la aplicación explorador de archivos.
-5.  Vaya a la carpeta descargas. Es posible que tenga que estar en el panel izquierdo de la aplicación, seleccione este dispositivo en primer lugar y, a continuación, vaya a descargas.
-6.  Seleccione el archivo SUAPLICACIÓN. appxbundle.
-7.  Se iniciará el instalador de la aplicación. Seleccione el botón instalar para instalar la aplicación.
+1.  Asegúrate de haber iniciado sesión en el dispositivo HoloLens 2
+1.  En su equipo, navegue hasta la aplicación personalizada y copie SUAPLICACIÓN. appxbundle a yourdevicename\Internal Storage\Downloads.   Una vez que haya terminado de copiar el archivo, puede desconectar el dispositivo
+1.  Desde tu dispositivo HoloLens 2 abre el menú Inicio, selecciona todas las aplicaciones e inicia la aplicación explorador de archivos.
+1.  Vaya a la carpeta descargas. Es posible que tenga que estar en el panel izquierdo de la aplicación, seleccione este dispositivo en primer lugar y, a continuación, vaya a descargas.
+1.  Seleccione el archivo SUAPLICACIÓN. appxbundle.
+1.  Se iniciará el instalador de la aplicación. Seleccione el botón instalar para instalar la aplicación.
 La aplicación instalada se iniciará automáticamente al finalizar la instalación.
 
 Puede encontrar aplicaciones de ejemplo en [Windows universal samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) para probar este flujo.

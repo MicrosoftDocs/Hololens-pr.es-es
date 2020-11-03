@@ -14,29 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4e2256f1086c92cdf0e788ba9dddf5b74a733116
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135531"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150921"
 ---
 # Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
-
-En nuestra versión Windows Insider, **agregamos una nueva función (instalador de aplicaciones) que te permite instalar aplicaciones de forma más fluida** en tus dispositivos HoloLens 2.  Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación.   
-
-Esta actualización se alinea con el escritorio en el que la [transferencia local está habilitada de forma predeterminada](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/)
 
 > [!IMPORTANT]
 > Actualmente, esta característica solo avalible en Windows Insider compila 19041.1377 +. [Obtenga más información sobre cómo inscribirse en compilaciones de Windows Insider](hololens-insider.md).
 
-> [!NOTE]
-> Para los administradores de ti que deseen deshabilitar esta característica, use el siguiente nombre de familia de paquete como parte de su [Directiva de WDAC](windows-defender-application-control-wdac.md). Esto solo bloqueará la aplicación de instalación de aplicaciones y no las aplicaciones instaladas desde otros orígenes, como Microsoft Store o la solución MDM.
-```
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-```
-> [!NOTE]
-> Se recomienda usar la [Directiva de WDAC](windows-defender-application-control-wdac.md) para controlar las aplicaciones; sin embargo, si solo desea permitir las aplicaciones de Microsoft Store, los dispositivos configurados para establecer la directiva [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) explícitamente en "no permitir" solo permitirá que las aplicaciones se instalen desde Microsoft Store. 
+En nuestra versión Windows Insider, **agregamos una nueva función (instalador de aplicaciones) que te permite instalar aplicaciones de forma más fluida** en tus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
+
+Un dispositivo se considera "administrado" si se cumple **alguna** de las condiciones siguientes:
+- MDM [inscrito](hololens-enroll-mdm.md)
+- Configurado con el [paquete de aprovisionamiento](hololens-provisioning.md)
+- La [identidad](hololens-identity.md) del usuario es AAD
+
+Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación.   
 
 ## Requisitos
 
@@ -60,6 +57,7 @@ Las aplicaciones que se instalen a través de este método deben estar firmadas 
 
 ## Método de instalación
 
+1.  Asegúrese de que el dispositivo no se considere administrado.
 1.  Asegúrate de que tu dispositivo HoloLens 2 esté encendido y de que hayas iniciado sesión.
 1.  En su equipo, navegue hasta la aplicación personalizada y copie SUAPLICACIÓN. appxbundle a yourdevicename\Internal Storage\Downloads. 
     Una vez que haya terminado de copiar el archivo, puede desconectar el dispositivo y finalizar la instalación más tarde.
