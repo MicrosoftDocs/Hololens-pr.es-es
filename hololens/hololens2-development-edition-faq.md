@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327e2411f497ff01723b42e9c2d00d26f8c89c7a
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 7d9568e6498c9b73fdee7110248a51253540a7eb
+ms.sourcegitcommit: ef25b0470ad789fbf41591be64d737ff7ea43d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146183"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11151122"
 ---
 # Preguntas más frecuentes sobre HoloLens Development Edition
 
@@ -41,6 +41,10 @@ Sí. Cualquier edición de HoloLens 2 se puede usar para desarrollar aplicacione
 
 El crédito de descuento o el acceso de prueba se enviará al correo electrónico usado en la compra en un plazo de 2 días hábiles.
 
+### ¿Puedo "actualizar" mi dispositivo HoloLens 2 (solo dispositivo) a HoloLens 2 Development Edition para obtener los créditos de la versión de prueba?
+
+No, no ofrecemos planes de transferencia de dispositivos. No es posible transferir desde ninguna edición a ninguna otra edición. 
+
 ### ¿Qué es Unity Pro? 
 
 Unity Pro es una plataforma 3D en tiempo real para PYMES y estudios de tamaño mediano. Está diseñado para equipos con una combinación de habilidades técnicas y no técnicas. [Obtén más información](https://store.unity.com/products/unity-pro)
@@ -61,13 +65,17 @@ Si tienes preguntas relacionadas con los derechos, comunícate con el especialis
 
 Este dispositivo es para desarrolladores que crean soluciones de realidad mixta. Limitamos una compra por transacción de cliente. Si tu empresa desea comprar varios dispositivos de desarrollo, necesitará transacciones independientes para comprar dispositivos de la edición de HoloLens 2 en nombre de la empresa. 
 
+### ¿Puedo mostrar mi dispositivo HoloLens 2 Development Edition a mis clientes? 
+
+Sí, este dispositivo está pensado para usarse en prototipos y pruebas de soluciones de realidad mixta.
+
 ### ¿Dónde puedo comprar la versión de desarrollo de HoloLens 2? 
 
 HoloLens 2 Development Edition se vende exclusivamente en Microsoft Store.  
 
 ### ¿Puedo devolver mi edición de desarrollo de HoloLens 2?  
 
-No.
+Todas las ventas son definitivas y no hay reembolsos disponibles en HoloLens 2 Development Edition.
 
 ### ¿La edición para desarrolladores tiene requisitos de hardware diferentes que diferentes de HoloLens?
 
