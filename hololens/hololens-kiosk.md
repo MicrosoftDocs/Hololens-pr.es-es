@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/27/2020
+ms.date: 10/27/2020
 ms.custom:
 - CI 115262
 - CI 111456
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
-ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
+ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "11080449"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154186"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -41,6 +41,13 @@ Puede usar el modo de pantalla completa en una sola aplicación o en una configu
 > Al eliminar la configuración de varias aplicaciones, se eliminan los perfiles de bloqueo de usuario creados por la característica de acceso asignado. Sin embargo, no revierte todos los cambios de la Directiva. Para revertir estas directivas, debe restablecer el dispositivo a la configuración de fábrica.
 
 ## Planear la implementación de quiosco
+
+Cuando diseñes tu exposición, necesitarás poder contestar las siguientes preguntas. A continuación se indican algunas decisiones sobre cómo leer esta página y algunas consideraciones para estas preguntas.
+1. **¿Quién va a usar su quiosco y qué [tipo de cuenta van a](hololens-identity.md) usar?** Esta es una decisión que probablemente ya haya hecho y que no debe ajustarse con el fin de su exposición, pero afectará a la forma en que se asigna más tarde.
+1. **¿Necesita tener quioscos diferentes por usuario/grupo o un quiosco no habilitado para algunos?** Si es así, desearás crear tu quiosco a través de XML. 
+1. **¿Cuántas aplicaciones estarán en tu quiosco?** Si tienes más de 1 aplicación, necesitarás un quiosco de varias aplicaciones. 
+1. **¿Qué aplicaciones estarán en tu quiosco?** Use nuestra lista de AUMIDs a continuación para agregar las aplicaciones In-Box además de las suyas propias.
+1. **¿Cómo se puede planear la implementación de su quiosco?** Si estás inscribiendo un dispositivo en MDM, te sugerimos que uses MDM para implementar tu quiosco. Si no usa MDM, está disponible la implementación con el paquete de aprovisionamiento.  
 
 ### Requisitos del modo de pantalla completa
 
@@ -62,7 +69,7 @@ En la tabla siguiente se enumeran las funciones de las características de los d
 | &nbsp; |Menú Inicio |Menú acciones rápidas |Cámara y vídeo |Miracast |Cortana |Comandos de voz integrados |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |Quiosco de una sola aplicación |Deshabilitada |Deshabilitada   |Deshabilitada |Deshabilitada   |Deshabilitada |Habilitado <sup> 1</sup> |
-|Quiosco de varias aplicaciones |Habilitado |Habilitado <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2, 3</sup>  |Habilitado <sup> 1</sup> |
+|Pantalla completa de varias aplicaciones |Habilitado |Habilitado <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2</sup> |Disponible <sup> 2, 3</sup>  |Habilitado <sup> 1</sup> |
 
 > <sup>1 los </sup> comandos de voz relacionados con características deshabilitadas no funcionan.  
 > <sup>2 </sup> para obtener más información sobre cómo configurar estas características, vea [seleccionar aplicaciones de quiosco](#plan-kiosk-apps).  
@@ -73,7 +80,7 @@ En la siguiente tabla se enumeran las características de compatibilidad con usu
 | &nbsp; |Tipos de usuarios admitidos | Inicio de sesión automático | Varios niveles de acceso |
 | --- | --- | --- | --- |
 |Quiosco de una sola aplicación |Cuenta de servicio administrada (MSA) en Azure Active Directory (AAD) o cuenta local |Sí |No |
-|Quiosco de varias aplicaciones |Cuenta de AAD |No |Sí |
+|Pantalla completa de varias aplicaciones |Cuenta de AAD |No |Sí |
 
 Para obtener ejemplos de cómo usar estas funciones, consulte la tabla siguiente.
 
@@ -109,7 +116,7 @@ Si usa un sistema de administración de dispositivos móviles (MDM) o un paquete
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Centro de opiniones &nbsp; |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! Aplicación |
 |Explorador de archivos |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Correo |Microsoft. windowscommunicationsapps_8wekyb3d8bbwe! Microsoft. windowslive. mail |
+|Correo |microsoft.windowscommunicationsapps_8wekyb3d8bbwe! Microsoft. windowslive. mail |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |Películas y TV |Microsoft. ZuneVideo \ _8wekyb3d8bbwe \! Microsoft. ZuneVideo |
@@ -126,71 +133,24 @@ Si usa un sistema de administración de dispositivos móviles (MDM) o un paquete
 > <sup>3 </sup> incluso si no habilita Cortana como aplicación de quiosco, los comandos de voz integrados están habilitados. Sin embargo, los comandos relacionados con características deshabilitadas no tienen ningún efecto.  
 > <sup>4 </sup> no puede habilitar Miracast directamente. Para habilitar Miracast como una aplicación de quiosco, habilita la aplicación cámara y la aplicación selector de dispositivos.
 
-### Planear grupos de usuarios y dispositivos
+### Planear perfiles de quiosco para usuarios o grupos
 
-En un entorno MDM, se usan grupos para administrar las configuraciones de dispositivos y el acceso de los usuarios. 
+Cuando cree el archivo XML o use la interfaz de usuario de Intune para configurar un quiosco, tendrá que considerar quién será el usuario de la exposición. Una configuración de quiosco puede limitarse a una cuenta individual o a grupos de Azure AD. 
 
-El perfil de configuración de quiosco incluye la configuración de **tipo de inicio de sesión de usuario** . El **tipo de inicio de sesión de usuario** identifica el usuario (o grupo que contiene los usuarios) que puede usar la aplicación o aplicaciones que agregue. Si un usuario inicia sesión con una cuenta que no está incluida en el perfil de configuración, ese usuario no puede usar las aplicaciones en la pantalla.  
+Normalmente, los quioscos se habilitan para un usuario o un grupo de usuarios. Sin embargo, si tiene pensado escribir su propio quiosco XML, es posible que desee considerar el acceso asignado globalmente, en el que el quiosco se aplica en el nivel de dispositivo independientemente de la identidad. Si esta apelación le interesa, [Lea más información sobre los quioscos de acceso asignados global.](hololens-global-assigned-access-kiosk.md)
 
-> [!NOTE]  
-> El **tipo de inicio de sesión de usuario** de una pantalla de una sola aplicación especifica una sola cuenta de usuario. Este es el contexto de usuario en el que se ejecuta el quiosco. El **tipo de inicio de sesión de usuario** de una pantalla completa de varias aplicaciones puede especificar una o más cuentas de usuario o grupos que pueden usar el quiosco.
+#### Si va a crear un archivo XML:
+-   Puede crear varios perfiles de quiosco y asignarlos a cada uno de los usuarios o grupos. Como un quiosco para el grupo de AAD que tiene muchas aplicaciones y un visitante que tiene un quiosco de varias aplicaciones con una aplicación singular.
+-   La configuración de su quiosco se denominará **ID de perfil** y tendrá un GUID.
+-   Asignará ese perfil en la sección de configuraciones especificando el tipo de usuario y usando el mismo GUID para el **identificador de DefaultProfile**.
+- Se puede crear un archivo XML pero aún se puede aplicar a un dispositivo a través de MDM creando un perfil de configuración de dispositivo URI de OMA personalizado y aplicándolos a grupo de dispositivos HoloLens con el valor de URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
 
-Para poder implementar la configuración de quiosco en un dispositivo, tiene que *asignar* el perfil de configuración de quiosco a un grupo que contenga el dispositivo o un usuario que pueda iniciar sesión en el dispositivo. Esta configuración produce un comportamiento como el siguiente.
-
-- Si el dispositivo es miembro del grupo asignado, la configuración de quiosco se implementará en el dispositivo la primera vez que cualquier usuario inicie sesión en el dispositivo.  
-- Si el dispositivo no es miembro del grupo asignado pero un usuario que es miembro de ese grupo inicia sesión, la configuración de quiosco se implementa en el dispositivo en ese momento.
-
-Para obtener una explicación completa de los efectos de asignar perfiles de configuración en Intune, consulte [asignar perfiles de usuario y dispositivo en Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
-
-> [!NOTE]  
-> En los siguientes ejemplos se describen quioscos con varias aplicaciones. Los quioscos de una sola aplicación se comportan de manera similar, pero solo una cuenta de usuario obtiene la experiencia del quiosco.
-
-**Ejemplo 1**
-
-Usted usa un solo grupo (Grupo 1) para los dispositivos y los usuarios. Un dispositivo y los usuarios A, B y C son miembros de este grupo. Configure el perfil de configuración de quiosco de la siguiente manera:  
-
-- **Tipo de inicio de sesión de usuario**: Grupo 1
-- **Grupo asignado**: Grupo 1
-
-Independientemente del usuario que inicie sesión en el dispositivo en primer lugar (y pase por la configuración rápida, o OOBE), la configuración de quiosco se implementa en el dispositivo. Los usuarios A, B y C pueden iniciar sesión en el dispositivo y obtener la experiencia de quiosco.
-
-**Ejemplo 2**
-
-Puede contratar dispositivos a dos proveedores diferentes que necesiten una experiencia de quiosco diferente. Ambos proveedores tienen usuarios y usted quiere que todos los usuarios tengan acceso a quioscos de su propio proveedor y del otro proveedor. Los grupos se configuran de la siguiente manera:
-
-- Grupo de dispositivos 1:
-  - Dispositivo 1 (proveedor 1)
-  - Dispositivo 2 (proveedor 1)
-
-- Grupo de dispositivos 2:
-  - Dispositivo 3 (proveedor 2)
-  - Dispositivo 4 (proveedor 2)
-
-- Grupo de usuarios:
-  - Usuario A (proveedor 1)
-  - Usuario B (proveedor 2)
-
-Cree dos perfiles de configuración de quiosco que tengan la configuración siguiente:
-
-- Perfil de quiosco 1:
-   - **Tipo de inicio de sesión de usuario**: Grupo de usuarios
-   - **Grupo asignado**: Grupo de dispositivos 1
-
-- Perfil de quiosco 2:
-   - **Tipo de inicio de sesión de usuario**: Grupo de usuarios
-   - **Grupo asignado**: Grupo de dispositivos 2
-
-Estas configuraciones producen los siguientes resultados:
-
-- Cuando cualquier usuario inicia sesión en el dispositivo 1 o el dispositivo 2, Intune implementa el perfil de quiosco 1 en ese dispositivo.
-- Cuando cualquier usuario inicia sesión en el dispositivo 3 o en el dispositivo 4, Intune implementa el perfil de quiosco 2 en ese dispositivo.
-- El usuario A y el usuario B pueden iniciar sesión en cualquiera de los cuatro dispositivos. Si inician sesión en el dispositivo 1 o en el dispositivo 2, verán la experiencia del proveedor 1 de quiosco. Si inician sesión en el dispositivo 3 o el dispositivo 4, verán el proveedor 2 de la experiencia de quiosco.
-
-#### Conflictos de perfil
-
-Si dos o más perfiles de configuración de quiosco se dirigen al mismo dispositivo, entran en conflicto. En el caso de dispositivos administrados por Intune, Intune no aplica ninguno de los perfiles en conflicto.
-
-Otros tipos de perfiles y directivas, como las restricciones de dispositivo que no están relacionados con el perfil de configuración de quiosco, no entran en conflicto con el perfil de configuración de quiosco.
+#### Si está creando una exposición en Intune.
+-   Cada dispositivo solo puede recibir un perfil de quiosco, de lo contrario creará un conflicto y no recibirá ninguna configuración de quiosco. 
+    -   Otros tipos de perfiles y directivas, como las restricciones de dispositivo que no están relacionados con el perfil de configuración de quiosco, no entran en conflicto con el perfil de configuración de quiosco.
+-   El quiosco se habilitará para todos los usuarios que formen parte del tipo de inicio de sesión de usuario, que se establecerá con un usuario o un grupo de AAD. 
+-   Después de establecer la configuración de quiosco y de seleccionar el **tipo de inicio de sesión de usuario** (usuarios que pueden iniciar sesión en el quiosco) y las aplicaciones, la configuración del dispositivo se debe asignar a un grupo. El grupo o los grupos asignados determinan los dispositivos que reciben la configuración del dispositivo de quiosco, pero no interactúan con si el quiosco está habilitado o no. 
+    - Para obtener una explicación completa de los efectos de asignar perfiles de configuración en Intune, consulte [asignar perfiles de usuario y dispositivo en Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
 ### Seleccionar un método de implementación
 
@@ -215,8 +175,8 @@ En la tabla siguiente se enumeran las capacidades y las ventajas de cada uno de 
 |Implementar mediante el modo de programador |Obligatorio       | No obligatorio            | No obligatorio   |
 |Implementación mediante Azure Active Directory (AAD)  | No obligatorio            | No obligatorio                   | Obligatorio  |
 |Implementar automáticamente      | No            | No                   | Sí  |
-|Velocidad de implementación            | Más rápida       | Fast                 | Nivel lento |
-|Implementar a escala | No recomendado    | No recomendado        | Recomendaciones |
+|Velocidad de implementación            | Fast       | Fast                 | Nivel lento |
+|Implementar a escala | No recomendado    | Recomendaciones        | Recomendaciones |
 
 ## Usar Microsoft Intune u otro MDM para configurar un quiosco de aplicación única o de varias aplicaciones
 
@@ -252,7 +212,7 @@ Para obtener más información sobre cómo inscribir los dispositivos, consulte 
 Los pasos siguientes varían según el tipo de quiosco que desee. Para obtener más información, seleccione una de las siguientes opciones:  
 
 - [Quiosco de una sola aplicación](#mdmconfigsingle)
-- [Quiosco de varias aplicaciones](#mdmconfigmulti)
+- [Pantalla completa de varias aplicaciones](#mdmconfigmulti)
 
 Para obtener más información sobre cómo crear un perfil de configuración de quiosco, consulte [configuración de dispositivos de Windows 10 y Windows Holographic para la empresa para que se ejecute como un quiosco dedicado con Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
@@ -487,3 +447,19 @@ Para configurar el modo de pantalla completa mediante Windows Device portal, sig
 
 Vea cómo configurar un quiosco con un paquete de aprovisionamiento.  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+## Muestras de código de quiosco XML para HoloLens
+
+### Modo de pantalla múltiple de la aplicación objetivo de un grupo de AAD. 
+Este quiosco implementa un quiosco para los usuarios del grupo de AAD, tendrán una exposición habilitada que incluye las 3 aplicaciones: configuración, asistencia remota y centro de opiniones. Para modificar esta muestra para usarla inmediatamente, asegúrese de cambiar la GUID resaltada a continuación para que coincida con un grupo de AAD. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
+
+
+### El modo de pantalla completa de varias aplicaciones está dirigido a la cuenta de AAD.
+Este quiosco implementa un quiosco para un solo usuario, tiene una exposición habilitada que incluye las 3 aplicaciones: configuración, asistencia remota y centro de opiniones. Para modificar esta muestra para usarla inmediatamente, asegúrese de cambiar la cuenta resaltada a continuación para que coincida con una cuenta de AAD suya. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
+
