@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094978"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154201"
 ---
 # Acceso asignado global: quiosco
 
@@ -64,3 +64,14 @@ Esta característica permite que los usuarios considerados como "[Propietario de
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## Ejemplos adicionales de Acceso global asignado
+
+Este es un quiosco de Acceso global asignado en el que, cuando un usuario inicie sesión, tendrá un quiosco de varias aplicaciones con la aplicación Configuración, el Centro de opiniones y Edge.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+Este es un quiosco de Acceso global asignado que excluye al propietario del dispositivo. Cuando cualquier otro usuario de AAD inicie sesión, tendrá un quiosco de varias aplicaciones con la aplicación Configuración, el Centro de opiniones y Edge. Este quiosco también incluye la configuración de un quiosco secundario para una Cuenta de visitante, a la cual se puede acceder desde la pantalla de bloqueo. Cuando un usuario inicia sesión en la Cuenta de visitante, tendrá un quiosco de varias aplicaciones que solo tendrá la aplicación del Centro de opiniones.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
