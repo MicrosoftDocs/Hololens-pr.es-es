@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
-ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
+ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154186"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162976"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -445,8 +445,59 @@ Para configurar el modo de pantalla completa mediante Windows Device portal, sig
 
 ## Más información
 
-Vea cómo configurar un quiosco con un paquete de aprovisionamiento.  
+### Vea cómo configurar un quiosco con un paquete de aprovisionamiento.  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+### Acceso asignado global: modo de pantalla completa
+- Se redujo la administración de identidades de quiosco al habilitar el nuevo método quiosco que aplica el modo de pantalla completa en el nivel del sistema.
+
+Esta nueva característica permite que un administrador de ti configure un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. [Aquí encontrará](hololens-global-assigned-access-kiosk.md)información sobre esta nueva característica.
+
+### Inicio automático de una aplicación en el modo de pantalla completa de varias aplicaciones 
+- Experiencia focalizada con el inicio automático de aplicaciones, el aumento de las selecciones de la interfaz de usuario y aplicaciones elegidas para las experiencias en modo de pantalla completa.
+
+Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para iniciar automáticamente con el atributo resaltado a continuación en la configuración de acceso asignada. 
+
+La aplicación se inicia automáticamente cuando el usuario inicia sesión. 
+
+```xml
+<AllowedApps>                     
+      <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+</AllowedApps>
+```
+
+
+### Cambios en el comportamiento del modo de pantalla completa para el tratamiento de errores
+- Modo de pantalla completa más seguro eliminando las aplicaciones disponibles en errores de modo quiosco. 
+
+Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se usó para mostrar todas las aplicaciones en el menú Inicio. Ahora, en Windows Holographic versión 20H2, en caso de errores, no se mostrará ninguna aplicación en el menú Inicio como se indica a continuación: 
+
+![Imagen del modo de quiosco que se muestra ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
+
+### Caché de pertenencia a grupo AAD para el quiosco desconectado
+- Se habilitaron quioscos sin conexión para usarlos con grupos de AAD durante un máximo de 60 días.
+
+Esta directiva controla cuántos días se permite que la caché de pertenencia a grupos de AAD se use para configuraciones de acceso asignadas dirigidas a grupos de AAD para el usuario que ha iniciado sesión. Una vez que este valor de Directiva se establece en un valor mayor que 0, de lo contrario se usa cache.  
+
+Name: AADGroupMembershipCacheValidityInDays URI Value:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+Min-0 días  
+Máximo: 60 días 
+
+Pasos para usar esta directiva correctamente: 
+1. Cree un perfil de configuración de dispositivo para quiosco dirigido a grupos de AAD y asígnelo a dispositivos HoloLens. 
+1. Crear un URI de OMA personalizado configuración de dispositivo que establezca este valor de directiva en cantidad deseada de días (> 0) y asignarlo a dispositivos HoloLens. 
+    1. El valor del URI debe especificarse en el cuadro de texto OMA-URI como./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. El valor puede estar entre Min/Max permitidos.
+1. Inscriba dispositivos HoloLens y verifique que ambas configuraciones se apliquen al dispositivo. 
+1. Deje que el inicio de sesión de AAD para el usuario 1 cuando esté disponible Internet, una vez que el usuario inicie sesión y la pertenencia a grupos de AAD se haya confirmado correctamente, se creará la memoria caché. 
+1. Ahora, el usuario 1 de AAD puede hacer que HoloLens esté desconectado y usarlo para el modo de pantalla completa, siempre y cuando el valor de la Directiva permita un número de días por X. 
+1. Los pasos 4 y 5 se pueden repetir para cualquier otro usuario de AAD. punto clave aquí es que cualquier usuario de AAD debe iniciar sesión en el dispositivo con Internet, por lo menos una vez, podemos determinar que son miembros del grupo de AAD al que se dirige la configuración de quiosco. 
+ 
+> [!NOTE]
+> Hasta que se realice el paso 4 para un usuario de AAD experimentará un comportamiento de error mencionado en entornos "desconectados". 
+
 
 ## Muestras de código de quiosco XML para HoloLens
 

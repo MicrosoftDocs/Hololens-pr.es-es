@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
-ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
+ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120151"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162947"
 ---
 # Recopilar y usar información de diagnóstico de dispositivos HoloLens
 
@@ -123,9 +123,17 @@ En situaciones en las que el dispositivo no puede recopilar diagnósticos median
 Esto funciona cuando el dispositivo se muestra en el explorador de archivos después de conectarlo a un PC a través de un cable USB. 
 
 > [!NOTE]
-> El diagnóstico sin conexión solo está habilitado cuando el usuario está pasando por OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) valor de directiva está establecido en completo (básico es el valor predeterminado en Hololens). 
+> La generación y administración de diagnósticos sin conexión se controlan de forma diferente según la versión del sistema operativo. Anteriormente fue controlado por la configuración de telemetría, pero ahora se controla directamente a través de la Directiva. 
 
-Si el dispositivo está bloqueado, no se mostrarán los registros. Para deshabilitar el diagnóstico sin conexión, vaya a configuración de la **aplicación > página privacidad** y seleccione **básica** en **datos de diagnóstico**. En las compilaciones en las que el diagnóstico desconectado depende de la configuración de telemetría, solo afecta a si se recopilan registros o no. No afecta a los archivos que se recopilan.
+Comportamiento anterior a [Windows Holographic, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+ - El diagnóstico sin conexión solo está habilitado cuando el usuario está pasando por OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) valor de directiva está establecido en completo (básico es el valor predeterminado en HoloLens). 
+- Para deshabilitar el diagnóstico sin conexión, vaya a configuración de la **aplicación > página privacidad** y seleccione **básica** en **datos de diagnóstico**. En las compilaciones en las que el diagnóstico desconectado depende de la configuración de telemetría, solo afecta a si se recopilan registros o no. No afecta a los archivos que se recopilan.
+- Si el dispositivo está bloqueado, no se mostrarán los registros.
+
+En compilaciones [Windows Holographic, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) y en adelante:
+- Cuando el diagnóstico de reserva está habilitado, será controlado por una directiva de MDM específica con la configuración correspondiente [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+- Si el dispositivo está bloqueado, no se mostrarán los registros.
+
 
 Vea este vídeo para obtener más información. 
 

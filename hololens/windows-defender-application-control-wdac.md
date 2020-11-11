@@ -12,16 +12,18 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc1deb2b159d3d41b1a1f73c33f1cd44731f8e4d
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: b12079142049cce28ec00803ad0a1f8dc92333e1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135580"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163126"
 ---
 # Control de aplicaciones de Windows Defender (WDAC)
 
 WDAC permite que un administrador de ti Configure sus dispositivos para bloquear el inicio de aplicaciones en dispositivos. Esto es diferente a los métodos de restricción de dispositivo, como el modo de pantalla completa, en los que se muestra al usuario una interfaz de usuario que oculta las aplicaciones en el dispositivo, pero que aún se pueden iniciar. Aunque se implementa WDAC, las aplicaciones siguen estando visibles en la lista de todas las aplicaciones, pero WDAC evita que el usuario del dispositivo pueda iniciar dichas aplicaciones y procesos.
+
+Es posible que se asigne más de una directiva de WDAC a un dispositivo. Si se establecen varias directivas de WDAC en un sistema, las más restrictivas se aplican. 
 
 > [!NOTE]
 > Cuando los usuarios finales intentan iniciar una aplicación que está bloqueada por WDAC, en HoloLens no recibirán una notificación acerca de que no se puede iniciar esa aplicación.
@@ -74,29 +76,11 @@ Esta es una lista de aplicaciones de uso frecuente y In-Box para dispositivos Ho
 Si una aplicación no se encuentra en esta lista, es posible que un usuario Use Device portal, conectado a HoloLens 2 que ha instalado la aplicación que se ha bloqueado, para determinar el PackageRelativeID y desde allí obtener el PackageFamilyName.
 
 1. Instala la aplicación en tu dispositivo HoloLens 2. 
-1. Abra configuración-> actualizaciones & securtiy-> para desarrolladores y habilitar el **modo de desarrollador** y, a continuación, **Device portal**. 
+1. Abrir configuración: > actualizaciones & seguridad: > para los desarrolladores y habilitar el **modo de desarrollador** y el portal de **dispositivos**. 
     1. Más instrucciones para obtener más información sobre la [configuración y el uso de Device portal aquí](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 1. Una vez conectado el portal de dispositivos, vaya a **vistas** y después a **aplicaciones**. 
 1. En el panel aplicaciones instaladas, use la lista desplegable para seleccionar la aplicación instalada. 
 1. Busque el PackageRelativeID. 
 1. Copia los caracteres de la aplicación antes de la!, será tu PackageFamilyName.
 
-## Ejemplo de instalador de la aplicación de bloqueo
 
-Como ejemplo, es posible que desee bloquear la aplicación de [instalación de aplicaciones](app-deploy-app-installer.md) . Hemos incluido código de ejemplo para este ejemplo. Descarga estas [muestras de código para este ejemplo](https://aka.ms/HoloLensDocs-Sample-WDAC-App-Installer). En el archivo zip, encontrarás lo siguiente:
-
-| Archivo | Usar |
-|-|-|
-| compiledPolicy. bin | [Creado en el paso 9, que se usó en el paso final 10.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
-| mergedPolicy.xml | [Creado en el paso 6.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
-| WDAC_Set. SyncML | No se usa en WDAC, pero puede usarse para el [CSP EnterpriseModernAppManagement](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) |
-
-Si desea intentar bloquear inmediatamente una aplicación, en este caso la aplicación de instalación de aplicaciones, use el archivo compiledPolicy. bin y vaya al paso 10 del vínculo anterior. Esto le permitirá probar la directiva personalizada y asegurarse de que las asignaciones de grupo y la configuración de directivas sean correctas. 
-
-Si desea combinar la Directiva de WDAC para bloquear el instalador de la aplicación con otras aplicaciones de la lista anterior o cualquier otra aplicación, puede usar el mergedPolicy.xml archivo y continuar con la combinación de nuevas directivas. Como se indica anteriormente, las directivas de WDAC son aditivas, por lo que no es necesario. 
-
-Puesto que la aplicación de instalación de aplicaciones se inicia mediante el intento de abrir un archivo, se le presentará una pregunta. Tal como se indicó anteriormente, las aplicaciones bloqueadas por WDAC no presentan un aviso de que están bloqueadas, sin embargo, dado que el usuario está intentando abrir un archivo en su dispositivo, se le presenta un error para abrir el archivo. 
-
-![Instalación de aplicaciones bloqueada de WDAC](images\wdac-app-installer-no-launch.jpg)
-
-Si no desea usar WDAC, puede usar como alternativa [ENTERPRISEMODERNAPPMANAGEMENT CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) para quitar la experiencia del instalador de aplicaciones, que es una aplicación después de todo. El resultado es que la aplicación de instalación de aplicaciones se desinstalará del dispositivo. . appx,. msix,. msixbundle y otras extensiones de archivo, así como el protocolo para el inicio de web a aplicaciones, la aplicación de instalación de aplicaciones dejará de administrarlos. El usuario recibirá un mensaje para buscar un controlador para la extensión de archivo/protocolo en la tienda y no encontrará la aplicación porque no está en la lista.

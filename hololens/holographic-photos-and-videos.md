@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100275"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163110"
 ---
 # Crear fotos y vídeos de realidad mixta
 
@@ -155,8 +155,18 @@ También puedes compartir fotos y videos de realidad mixta desde OneDrive, carga
 ## Limitaciones de la captura de realidad mixta
 
 - Al usar una captura de realidad mixta, la velocidad de fotogramas de HoloLens será de una mitad de 30 Hz.
-- Los vídeos tienen una duración máxima de cinco minutos.
 - La resolución de las fotos y los vídeos puede reducirse si otra aplicación ya está usando la foto o la cámara de vídeo, mientras se transmite por secuencias en vivo o cuando los recursos del sistema son bajos.
+
+### Longitud máxima de grabación
+
+En los dispositivos HoloLens 2 antes de los vídeos de la versión 20H2 de Windows Holographic grabados en el dispositivo estaban limitados a una longitud máxima de cinco minutos.
+
+Debido a los comentarios de los clientes, hemos aumentado la duración de la grabación de [capturas de realidad mixta](holographic-photos-and-videos.md). De forma predeterminada, las capturas de realidad mixta ya no se limitarán a 5 minutos, sino que calcularán la longitud máxima de grabación en función del espacio disponible en el disco. El dispositivo calculará la duración de la grabación de video máxima en función del espacio disponible en disco hasta el 80% del espacio total en el disco.
+
+> [!NOTE]
+> HoloLens usará la duración de grabación de video predeterminada (5 minutos) si se produce una de las siguientes situaciones:
+> - La duración estimada de grabación máxima es inferior a los 5 minutos predeterminados.
+> - El espacio en disco disponible es menor del 20% del espacio total en el disco.
 
 ## Formato de archivo predeterminado y resolución
 
