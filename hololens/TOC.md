@@ -71,7 +71,9 @@
 ### [Usar MDM para administrar dispositivos HoloLens](hololens-mdm-configure.md)
 ### [Restricciones comunes de dispositivos](hololens-common-device-restrictions.md)
 ### [Configurar HoloLens como un quiosco multimedia](hololens-kiosk.md)
-### [Control de aplicaciones de Windows Defender (WDAC)](windows-defender-application-control-wdac.md)
+### [Acceso asignado global: quiosco](hololens-global-assigned-access-kiosk.md)
+### [Control de aplicaciones de Windows Defender: WDAC](windows-defender-application-control-wdac.md)
+### [Configuraciones de página CSP y URI para HoloLens](settings-uri-list.md)
 ## Identidad
 ### [Administrar la identidad e inicio de sesión del usuario para HoloLens](hololens-identity.md)
 ### [Compartir HoloLens con varias personas](hololens-multiple-users.md)
@@ -81,7 +83,7 @@
 ### [Preparar certificados y perfiles de red para HoloLens 2](hololens-certificates-network.md)
 ### [Administrar los puntos de conexión para HoloLens](hololens-offline.md)
 ### [Conectarse a dispositivos Bluetooth y USB-C](hololens-connect-devices.md)
-
+## [Administrador de certificados](certificate-manager.md)
 
 # Implementar
 ## Inscripción
@@ -108,9 +110,7 @@
 # Notas de la versión de HoloLens
 ## [Notas de la versión de HoloLens 2](hololens-release-notes.md)
 ## [Versión preliminar de Insider para Microsoft HoloLens](hololens-insider.md)
-### [Acceso asignado global: Quiosco](hololens-global-assigned-access-kiosk.md)
-### [URIs de configuración de página para HoloLens](settings-uri-list.md)
-### [Instalador de aplicación](app-deploy-app-installer.md)
-
+### [Instalador de la aplicación](app-deploy-app-installer.md)
 ## [Notas de la versión de HoloLens (1ª gen.)](hololens1-release-notes.md)
+
 # [Facilítanos tus comentarios](hololens-feedback.md)

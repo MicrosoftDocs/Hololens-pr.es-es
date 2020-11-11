@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015531"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162983"
 ---
 # Preparación de certificados y perfiles de red para HoloLens 2
 
@@ -45,18 +45,20 @@ Para implementar estos certificados y perfiles siga estos pasos:
 1.  Cree un perfil para cada uno de los certificados raíz e intermedios (consulte [Creación de perfiles de certificado de confianza](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en el formato DD/MM/AAAA. **No se implementará ningún perfil de certificado digital sin una fecha de expiración.**
 1.  Cree un perfil para cada uno de los certificados SCEP o PKCS (consulte [Crear perfiles de certificado SCEP o Crear perfiles de certificado PKCS](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en el formato DD/MM/AAAA. **No se implementará ningún perfil de certificado digital sin una fecha de expiración.**
 
-> [!NOTE]
-> Como muchos consideran que HoloLens 2 es un dispositivo compartido, con varios usuarios por dispositivo, se recomienda implementar certificados de dispositivo, en lugar de certificados de usuario para la autentificación de la red Wi-Fi, siempre que sea posible.
+    > [!NOTE]
+    > Como muchos consideran que HoloLens 2 es un dispositivo compartido, con varios usuarios por dispositivo, se recomienda implementar certificados de dispositivo, en lugar de certificados de usuario para la autentificación de la red Wi-Fi, siempre que sea posible.
 
 3.  Cree un perfil para cada red corporativa Wi-Fi (consulte [Configuración de Wi-Fi para dispositivos Windows 10 y versiones posteriores](https://docs.microsoft.com/intune/wi-fi-settings-windows)). 
-> [!NOTE]
-> Se recomienda que el perfil de Wi-Fi se [asigne](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) a grupos de dispositivo, en lugar de a grupos de usuario, siempre que sea posible. 
+    > [!NOTE]
+    > Se recomienda que el perfil de Wi-Fi se [asigne](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) a grupos de dispositivo, en lugar de a grupos de usuario, siempre que sea posible. 
 
-> [!TIP]
-> También puede exportar un perfil Wi-Fi de trabajo desde un equipo con Windows 10 en su red corporativa. Esta exportación crea un archivo XML con toda la configuración. Luego, importe este archivo en Intune y úselo como perfil de Wi-Fi para sus dispositivos HoloLens 2. Consulte [Exportación e importación de la configuración de Wi-Fi para dispositivos Windows.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
+    > [!TIP]
+    > También puede exportar un perfil Wi-Fi de trabajo desde un equipo con Windows 10 en su red corporativa. Esta exportación crea un archivo XML con toda la configuración. Luego, importe este archivo en Intune y úselo como perfil de Wi-Fi para sus dispositivos HoloLens 2. Consulte [Exportación e importación de la configuración de Wi-Fi para dispositivos Windows.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
 
 4.  Cree un perfil para cada VPN corporativo (consulte [Configuración de dispositivos con Windows 10 y Windows Holographic para agregar conexiones VPN mediante Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
 
+## Solución de problemas de certificados
 
+En el caso de que necesite validar que un certificado se ha implementado correctamente, use el [Administrador de certificados](certificate-manager.md) del dispositivo para comprobar que el certificado está presente.  
 
 
