@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134686"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165019"
 ---
 # Hardware de HoloLens (1.ª generación)
 
@@ -125,7 +125,7 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 | Ajuste de tamaño | Tamaño único con banda ajustable. Encaja en gafas |
 | Grosor | 579 gramos |
 
-## Funcionalidades del dispositivo
+## Funcionalidades de dispositivo
 
 Usar lo siguiente para comprender las acciones del usuario:
 
@@ -139,7 +139,7 @@ Usar lo siguiente para comprender el entorno:
 
 ## Software preinstalado
 
-- Windows 10
+- Windows10
 - TiendaWindows
 - Hologramas
 - Microsoft Edge
@@ -171,16 +171,16 @@ Para limpiar el resto del dispositivo, incluidos el cabeza y los brazos del disp
 ## Buscar el número de serie
 
 El número de serie para los dispositivos de HoloLens (1. ª gen) se imprime debajo de la lente de la derecha.
-1. Mantén el dispositivo delante de ti como si estuvieras cansado de él.
+1. Mantén el dispositivo delante de ti como si estuvieras gastado sobre tu cabeza. Con el dispositivo hacia adelante y hacia arriba.
 1. Con la lente aún hacia adelante, voltee la Deivce boca abajo para que vea la parte inferior.
 1. Ahora, la lente derecha estará a la izquierda, impresa debajo de la lente de la banda es el número de serie. 
 
-El número de serie también puede encontrarse a través de un equipo conectado:
+El número de serie también se puede encontrar a través de un PC conectado:
 
-1. Conectar el dispositivo
-1. Ir a **este equipo en el** explorador de archivos
-1. Haz clic con el botón secundario del ratón y selecciona **propiedades** del dispositivo HoloLens
-1. Se mostrará el número de serie del dispositivo. Como esta captura de pantalla a continuación.
+1. Conecte el dispositivo
+1. Vaya a **Este equipo** en el explorador de archivos
+1. Haga clic con el botón derecho del ratón y seleccione **Propiedades** del dispositivo HoloLens
+1. Esto mostrará el número de serie del dispositivo. Se puede ver un ejemplo en la siguiente captura de pantalla.
 
 <img src="images/hl1-serial-number.png" width="400" height="600" />
 
