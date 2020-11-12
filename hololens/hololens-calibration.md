@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 627631ee7070af6cb6c60e91890f05472ce0f6be
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919161"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163049"
 ---
 # Mejorar la calidad visual y la comodidad
 
@@ -40,19 +40,19 @@ HoloLens 2 pide a un usuario que calibre el dispositivo en las siguientes circun
 - El dispositivo se quita y se vuelve a poner y cualquiera de las circunstancias anteriores se aplican 
 
 
-![Aviso de calibración](./images/07-et-adjust-for-your-eyes.png)
+![Solicitud de calibración para ajustar a los ojos.](./images/07-et-adjust-for-your-eyes.png)
 
 Durante este proceso, veremos un conjunto de objetivos (gemas). Está bien si parpadea durante la calibración, pero trate de mantenerse enfocado en las gemas en lugar de otros objetos en la habitación.  Esto permite a HoloLens memorizar la posición de tu ojo para representar tu mundo holográfico.
 
-![Aviso de calibración](./images/07-et-hold-head-still.png)
+![Indicador de calibración que pide al usuario que no mueva la cabeza y siga los puntos con la mirada.](./images/07-et-hold-head-still.png)
 
-![Aviso de calibración](./images/08-et-gems.png)
+![Indicador de calibración con gemas.](./images/08-et-gems.png)
 
-![Aviso de calibración](./images/09-et-adjusting.png)
+![Indicador de calibración en el proceso de ajuste.](./images/09-et-adjusting.png)
 
 Si la calibración se realizó correctamente, verás una pantalla de operación correcta.  De lo contrario, lee más información sobre cómo diagnosticar errores de calibración [aquí](#troubleshooting-hololens-2-calibration).
 
-![Aviso de calibración](./images/10-et-success.png)
+![Indicador de calibración correcto.](./images/10-et-success.png)
 
 ### Calibración al compartir un dispositivo o una sesión
 
@@ -65,6 +65,28 @@ Varios usuarios pueden compartir un dispositivo HoloLens 2, sin necesidad de que
 1. Selecciona **Configuración**y, a continuación, **Sistema** > **Calibración** > **Calibración ocular** > **Ejecutar calibración ocular**.
 
    ![La aplicación Configuración, que muestra la opción Ejecutar calibración ocular](./images/C-Settings.Calibration.png)
+
+### Compatibilidad con Posición ocular automática
+- Ahora ofrecemos una mayor precisión para el posicionamiento de hologramas gracias a la función de Posición ocular automática. Esta dará al usuario una comodidad de visualización elevada y una mejor calidad de presentación. 
+
+En HoloLens 2, las posiciones oculares permiten un posicionamiento preciso del holograma, una experiencia de visualización cómoda y una mejor calidad de visualización. Las posiciones oculares se calculan como parte del resultado del seguimiento ocular. Sin embargo, esto requiere que cada usuario realice la calibración del seguimiento ocular, incluso cuando la experiencia no requiere una entrada ocular.
+
+La **Posición ocular automática (AEP)** permite que estos escenarios tengan una forma sin interacción que calcule las posiciones de la vista para el usuario.  La Posición ocular automática comienza a funcionar en segundo plano automáticamente desde el momento en el que el usuario se coloca el dispositivo. Si el usuario no ha calibrado su seguimiento ocular anteriormente, la Posición ocular automática comenzará a proporcionar las posiciones de ojo del usuario al sistema de visualización después de un breve tiempo de procesamiento. Este tiempo de procesamiento suele estar entre 20-60 segundos. Los datos de usuario no se conservan en el dispositivo y, por lo tanto, este proceso se repite si el usuario desconecta y vuelve a ponerse el dispositivo o si el dispositivo se reinicia o se reactiva tras haberse suspendido.  
+
+Cuando un usuario no calibrado se coloca el dispositivo, la opción Posición ocular automática provoca algunos cambios en la conducta del sistema. Un usuario no calibrado es alguien que no ha pasado por el proceso de calibración de seguimiento ocular en el dispositivo anteriormente.
+
+|     Aplicación activa                           |     Comportamiento antiguo                                   |     Comportamiento para Windows HWindows Holographic, versión 20H2 en adelante                                                     |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     Aplicación no habilitada para la mirada o shell holográfica    |     Se muestra el aviso de calibración del seguimiento ocular.    |     No se muestra ningún mensaje.                                                                                |
+|     Aplicación con la mirada activada.                             |     Se muestra el aviso de calibración del seguimiento ocular.    |     El aviso de calibración de seguimiento ocular se muestra solo cuando la aplicación accede a la secuencia de mirada.     |
+
+ Si el usuario pasa de una aplicación con la opción de no mirada habilitada a otra que tiene acceso a los datos de mirada, se mostrará el aviso de calibración. No se cambiará al flujo de la experiencia listo para usar. 
+ 
+Para las experiencias que requieren datos de mirada o un posicionamiento de holograma muy preciso, recomendamos que los usuarios no calibrados ejecuten la calibración del seguimiento ocular desde el aviso de calibración de seguimiento ocular o iniciando la aplicación Configuración desde el menú Inicio y seleccionando **Sistema > Calibración > Calibración ocular > Ejecutar la calibración ocular**.
+
+**Problemas conocidos**
+ - Estamos investigando un problema por el que el proceso de hospedaje del controlador del seguimiento ocular podría bloquearse al ejecutarse en una carga pesada de la memoria. El proceso de hospedaje del controlador de seguimiento ocular debe recuperarse automáticamente.
+
 
 ### Solución de problemas de calibración de HoloLens 2
 
