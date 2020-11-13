@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163049"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165041"
 ---
 # Mejorar la calidad visual y la comodidad
 
@@ -44,11 +44,11 @@ HoloLens 2 pide a un usuario que calibre el dispositivo en las siguientes circun
 
 Durante este proceso, veremos un conjunto de objetivos (gemas). Está bien si parpadea durante la calibración, pero trate de mantenerse enfocado en las gemas en lugar de otros objetos en la habitación.  Esto permite a HoloLens memorizar la posición de tu ojo para representar tu mundo holográfico.
 
-![Indicador de calibración que pide al usuario que no mueva la cabeza y siga los puntos con la mirada.](./images/07-et-hold-head-still.png)
+![Indicador de calibración que indica al usuario que mantenga la cabeza quieta y siga los puntos con los ojos.](./images/07-et-hold-head-still.png)
 
 ![Indicador de calibración con gemas.](./images/08-et-gems.png)
 
-![Indicador de calibración en el proceso de ajuste.](./images/09-et-adjusting.png)
+![Indicador de calibración que se ajusta.](./images/09-et-adjusting.png)
 
 Si la calibración se realizó correctamente, verás una pantalla de operación correcta.  De lo contrario, lee más información sobre cómo diagnosticar errores de calibración [aquí](#troubleshooting-hololens-2-calibration).
 
@@ -66,29 +66,35 @@ Varios usuarios pueden compartir un dispositivo HoloLens 2, sin necesidad de que
 
    ![La aplicación Configuración, que muestra la opción Ejecutar calibración ocular](./images/C-Settings.Calibration.png)
 
-### Compatibilidad con Posición ocular automática
-- Ahora ofrecemos una mayor precisión para el posicionamiento de hologramas gracias a la función de Posición ocular automática. Esta dará al usuario una comodidad de visualización elevada y una mejor calidad de presentación. 
+### Compatibilidad con posición ocular automática
 
-En HoloLens 2, las posiciones oculares permiten un posicionamiento preciso del holograma, una experiencia de visualización cómoda y una mejor calidad de visualización. Las posiciones oculares se calculan como parte del resultado del seguimiento ocular. Sin embargo, esto requiere que cada usuario realice la calibración del seguimiento ocular, incluso cuando la experiencia no requiere una entrada ocular.
+En HoloLens 2, las posiciones oculares permiten un posicionamiento preciso del holograma, una experiencia de visualización cómoda y una mejor calidad de visualización. Las posiciones oculares se calculan internamente como parte del análisis del seguimiento ocular. Sin embargo, esto requiere que cada usuario realice la calibración del seguimiento ocular, incluso cuando la experiencia no requiera una entrada ocular.
 
-La **Posición ocular automática (AEP)** permite que estos escenarios tengan una forma sin interacción que calcule las posiciones de la vista para el usuario.  La Posición ocular automática comienza a funcionar en segundo plano automáticamente desde el momento en el que el usuario se coloca el dispositivo. Si el usuario no ha calibrado su seguimiento ocular anteriormente, la Posición ocular automática comenzará a proporcionar las posiciones de ojo del usuario al sistema de visualización después de un breve tiempo de procesamiento. Este tiempo de procesamiento suele estar entre 20-60 segundos. Los datos de usuario no se conservan en el dispositivo y, por lo tanto, este proceso se repite si el usuario desconecta y vuelve a ponerse el dispositivo o si el dispositivo se reinicia o se reactiva tras haberse suspendido.  
+La **Posición ocular automática (AEP)** permite que estos escenarios tengan una forma sin interacción que calcule las posiciones de la vista para el usuario. La Posición ocular automática comienza a funcionar en segundo plano automáticamente desde el momento en el que el usuario se coloca el dispositivo. Si el usuario no ha calibrado su seguimiento ocular anteriormente, la Posición ocular automática comenzará a proporcionar las posiciones de ojo del usuario al sistema de visualización después de un tiempo de procesamiento de 20-30 segundos. Los datos de usuario no se conservan en el dispositivo y, por lo tanto, este proceso se repite si el usuario desconecta y vuelve a ponerse el dispositivo o si el dispositivo se reinicia o se reactiva tras haberse suspendido.
 
-Cuando un usuario no calibrado se coloca el dispositivo, la opción Posición ocular automática provoca algunos cambios en la conducta del sistema. Un usuario no calibrado es alguien que no ha pasado por el proceso de calibración de seguimiento ocular en el dispositivo anteriormente.
+Cuando un usuario no calibrado se coloca el dispositivo, la opción Posición ocular automática provoca algunos cambios en la conducta del sistema. En este contexto, un usuario no calibrado es alguien que no ha pasado por el proceso de calibración de seguimiento ocular en el dispositivo anteriormente.
 
-|     Aplicación activa                           |     Comportamiento antiguo                                   |     Comportamiento para Windows HWindows Holographic, versión 20H2 en adelante                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     Aplicación no habilitada para la mirada o shell holográfica    |     Se muestra el aviso de calibración del seguimiento ocular.    |     No se muestra ningún mensaje.                                                                                |
-|     Aplicación con la mirada activada.                             |     Se muestra el aviso de calibración del seguimiento ocular.    |     El aviso de calibración de seguimiento ocular se muestra solo cuando la aplicación accede a la secuencia de mirada.     |
+| Aplicación activa | Comportamiento anterior | Comportamiento de Windows Holographic, versión 20H2 Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| Aplicación no habilitada para la mirada o shell holográfica |Se muestra el cuadro de diálogo de solicitud de calibración de seguimiento ocular. | No se muestra ningún mensaje. |
+| Aplicación habilitada para la mirada | Se muestra el cuadro de diálogo de solicitud de calibración de seguimiento ocular. | El aviso de calibración de seguimiento ocular se muestra solo cuando la aplicación accede a la secuencia de mirada. |
 
- Si el usuario pasa de una aplicación con la opción de no mirada habilitada a otra que tiene acceso a los datos de mirada, se mostrará el aviso de calibración. No se cambiará al flujo de la experiencia listo para usar. 
- 
-Para las experiencias que requieren datos de mirada o un posicionamiento de holograma muy preciso, recomendamos que los usuarios no calibrados ejecuten la calibración del seguimiento ocular desde el aviso de calibración de seguimiento ocular o iniciando la aplicación Configuración desde el menú Inicio y seleccionando **Sistema > Calibración > Calibración ocular > Ejecutar la calibración ocular**.
+Si el usuario pasa de una aplicación con la opción de mirada no habilitada a otra que tiene acceso a los datos de mirada, se mostrará el aviso de calibración. 
 
-**Problemas conocidos**
- - Estamos investigando un problema por el que el proceso de hospedaje del controlador del seguimiento ocular podría bloquearse al ejecutarse en una carga pesada de la memoria. El proceso de hospedaje del controlador de seguimiento ocular debe recuperarse automáticamente.
+El resto del comportamiento del sistema será similar a cuando el usuario actual no tiene una calibración de seguimiento ocular activa. Por ejemplo, el gesto Inicio de una sola mano no estará habilitado. No se cambiará la experiencia de configuración rápida para la configuración inicial.
 
+Para las experiencias que requieran datos oculares o posicionamiento muy preciso de holograma, recomendamos a los usuarios no calibrados que realicen la calibración de seguimiento de ocular. Es accesible desde la solicitud de calibración de seguimiento ocular. También se puede iniciar la aplicación Configuración desde el menú Inicio y, a continuación, se selecciona **Sistema > Calibración > Calibración ocular > Ejecutar calibración ocular**.
 
-### Solución de problemas de calibración de HoloLens 2
+#### Solicitud de calibración diferida
+
+Con la Posición ocular automática, el cuadro de diálogo de solicitud de calibración del seguimiento ocular se aplaza hasta que una aplicación solicite datos de mirada. Esto garantiza que no aparezca una solicitud al usuario cuando la aplicación activa no requiera la mirada. Si la aplicación necesita datos mirada y el usuario actual no ha realizado la calibración, se mostrará al usuario una solicitud de calibración. Este comportamiento podría usarse para mostrar la solicitud de calibración del seguimiento ocular en un momento adecuado para la experiencia. Este método se recomienda por los siguientes motivos:
+
+1.  El cuadro de diálogo de solicitud de calibración del seguimiento ocular proporciona al usuario los motivos por los que es necesario el seguimiento ocular.
+2.  Muestra al usuario una manera de rechazar la calibración ocular.
+
+Si el usuario elige iniciar la calibración del seguimiento ocular, el foco debería volver a la aplicación original tras completar la calibración. 
+
+### Solución de problemas relacionados con la calibración de HoloLens 2
 
 La calibración debería funcionar para la mayoría de los usuarios, pero hay casos en los que se produce un error en la calibración.
   
