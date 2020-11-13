@@ -3,7 +3,7 @@ title: Visibilidad de la configuración de página
 description: Lista de URI compatibles con HoloLens para PageVisibilityList y Guía
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: hololens, hololens 2, acceso asignado, quiosco, página de configuración
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026943"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163141"
 ---
 # Visibilidad de la configuración de página
 
 Una de las características que se puede administrar para los dispositivos HoloLens usa la Directiva [Settings/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) para restringir las páginas que se muestran en la aplicación Configuración. PageVisibilityList es una directiva mediante la cual los administradores de TI pueden evitar que páginas específicas de la aplicación Configuración del sistema sean visibles o accesibles, o bien pueden hacer lo sean en todas las páginas excepto en aquellas especificadas. 
 
-> [!IMPORTANT]
-> Actualmente, esta característica solo está disponible en las [compilaciones de Windows Insider](hololens-insider.md). Asegúrese de que los dispositivos con los que vaya a usar esta directiva estén en la compilación 19041.1349+.
+> [!NOTE]
+> Esta característica está disponible solo en [Windows Holographic, versión 20H2](hololens-release-notes.md#windows-holographic-version-20h2) para dispositivos HoloLens 2. Asegúrese de que los dispositivos para los que deseas usar esta versión estén actualizados.
 
 En el ejemplo siguiente, se muestra una directiva que permitiría el acceso solo a las páginas Acerca de y de Bluetooth, que tienen el URI "ms-settings:network-wifi" y "ms-settings:bluetooth", respectivamente:
 - showonly:network-wifi;network-proxy;bluetooth

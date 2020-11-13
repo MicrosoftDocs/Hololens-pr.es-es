@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 07/09/2020
+ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 384d33e72effd298e1874e5723e9c418061c3287
-ms.sourcegitcommit: 0d4e67d8e21d34885e0eaee08646e28426c4f641
+ms.openlocfilehash: 3a2246296c5ab8aa86dfaa419ed02aa5a961dbfc
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "10861913"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163136"
 ---
 # Administrar actualizaciones de HoloLens
 
@@ -76,6 +76,21 @@ Para configurar cómo y cuándo se aplican las actualizaciones, use las siguient
   - Valores: entre 0–23 (0 = medianoche, 23 = 11 p. m.)
   - Valor predeterminado: 3 p. m.
 
+#### Configurar las horas activas
+A partir de la [versión 20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2), un administrador de TI puede especificar el rango de horas activas de los dispositivos HoloLens 2.
+
+Las horas activas identifican el período en el que se prevé que el dispositivo estará en uso. Los reinicios automáticos después de una actualización se producirán fuera de las horas activas. El intervalo especificado se contará desde la hora de inicio de las horas activas. Puede usar MDM, como se describe en [Configurar las horas activas con MDM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM usa las opciones Update/ActiveHoursStart y Update/ActiveHoursEnd y Update/ActiveHoursMaxRange en la directiva de CSP para configurar las horas activas.
+
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) : este valor define la hora de finalización. Hay un máximo de 12 horas desde la hora de inicio.
+    -   Los valores admitidos son de 0 a 23, donde 0 es 12 a. m., 1 es 1 a. m., etc.
+    -   El valor predeterminado es 17 (5 p. m.).
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange): este valor establece el número máximo de horas activas a partir de la hora de inicio.
+    -   Los valores admitidos son de 8 a 18.
+    -   El valor predeterminado es 18 (horas).
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) : este valor establece la hora de inicio. Hay un máximo de 12 horas desde la hora de finalización.
+    -   Los valores admitidos son de 0 a 23, donde 0 es 12 a. m., 1 es 1 a. m., etc.
+    -   El valor predeterminado es 8 (8 a. m.).
+
 #### Solo para dispositivos que ejecutan Windows 10, versión 1607
 
 Puede usar las siguientes directivas de actualización para configurar dispositivos para recibir actualizaciones de Windows Server Update Services (WSUS), en lugar de Windows Update:
@@ -116,6 +131,15 @@ Puede configurar diferentes fraccionamientos para actualizaciones de caracterís
 | --- | --- | --- |
 |Actualizaciones de características |DeferFeatureUpdatesPeriodInDays |365 días |
 |Actualizaciones de calidad |DeferQualityUpdatesPeriodInDays |30 días |
+
+#### Pausar actualizaciones a través del dispositivo
+
+Si un usuario no tiene acceso a MDM puede pausar manualmente las actualizaciones durante un máximo de 35 días en un dispositivo HoloLens 2 en la versión [Windows Holographic, versión 2004](hololens-release-notes.md#windows-holographic-version-2004) o posterior. Los usuarios pueden acceder a esta configuración navegando a **Configuración -> Actualización y seguridad -> Opciones avanzadas** y desplazándose hacia abajo hasta **Pausar las actualizaciones** y seleccione la fecha en la que se detendrán las actualizaciones. Una vez que el usuario ha alcanzado el límite de la pausa, el dispositivo necesita obtener nuevas actualizaciones porque puede volver a pausar. 
+
+A partir de [Windows Holographic, versión 20H2](hololens-release-notes.md#windows-holographic-version-20h2), esta función de pausa se puede administrar desde los dispositivos HoloLens 2. 
+- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
+    - 0 (valor predeterminado): habilitado
+    - 1: deshabilitado
 
 #### Funciones de administración de actualizaciones de Intune compatibles con HoloLens
 
