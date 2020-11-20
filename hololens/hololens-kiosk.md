@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
+ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162976"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182011"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -53,7 +53,10 @@ Cuando diseñes tu exposición, necesitarás poder contestar las siguientes preg
 
 Puede configurar cualquier dispositivo HoloLens 2 para usar el modo de pantalla completa.
 
-Para configurar un dispositivo HoloLens (1. gen) para usar el modo de pantalla completa, primero debe asegurarse de que el dispositivo ejecute Windows 10, versión 1803 o una versión posterior. Si ha usado la herramienta de recuperación de dispositivos de Windows para recuperar su dispositivo HoloLens (1 ª generación) a su compilación predeterminada o si ha instalado las actualizaciones más recientes, el dispositivo estará listo para configurar.
+> [!IMPORTANT]
+> El modo de pantalla completa solo está disponible si el dispositivo tiene Windows Holographic para empresas. Todos los dispositivos HoloLens 2 se distribuyen con Windows Holographic para empresas y no hay otras ediciones. Cada dispositivo HoloLens 2 puede ejecutar el modo de pantalla completa fuera de la caja.
+>
+> Los dispositivos HoloLens (1. ª gen) deben actualizarse tanto en cuanto a la compilación de OS y OS Edition. Aquí encontrarás más información sobre cómo actualizar una HoloLens (1ª generación) a [Windows Holographic para empresas](hololens1-upgrade-enterprise.md) . Para actualizar un dispositivo HoloLens (1. gen) para usar el modo de pantalla completa, primero debe asegurarse de que el dispositivo ejecute Windows 10, versión 1803 o una versión posterior. Si ha usado la herramienta de recuperación de dispositivos de Windows para recuperar su dispositivo HoloLens (1 ª generación) a su compilación predeterminada o si ha instalado las actualizaciones más recientes, el dispositivo estará listo para configurar.
 
 > [!IMPORTANT]  
 > Para ayudar a proteger los dispositivos que se ejecutan en el modo de pantalla completa, considere la posibilidad de agregar directivas de administración de dispositivos que desactiven características, como la conectividad USB. Además, Compruebe la configuración de Update ring para asegurarse de que las actualizaciones automáticas no se realizan durante el horario laboral.
@@ -415,9 +418,6 @@ El artículo "configurar HoloLens usando un paquete de aprovisionamiento" propor
 ## Usar Windows Device portal para configurar una pantalla completa de una aplicación
 
 Para configurar el modo de pantalla completa mediante Windows Device portal, siga estos pasos.
-
-> [!IMPORTANT]
-> El modo de pantalla completa solo está disponible si el dispositivo tiene instalado [Windows Holographic para empresas](hololens1-upgrade-enterprise.md) .
 
 1. [Configura el dispositivo HoloLens para usar Windows Device portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). Device Portal es un servidor web en el dispositivo HoloLens al que puedes conectarte desde un navegador web del equipo.
 
