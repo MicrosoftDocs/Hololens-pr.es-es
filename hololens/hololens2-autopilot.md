@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168555"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176902"
 ---
 # Windows Autopilot para HoloLens 2
 
@@ -325,8 +325,8 @@ La configuración rápida esperará indefinidamente a que se descargue el perfil
 
 ## Problemas conocidos
 
-- La instalación de aplicaciones basadas en el contexto del dispositivo configurada en Intune aún no funciona.
-- Al configurar Autopilot a través de Wi-Fi, es posible que haya una instancia en la que no se descargue el perfil de Autopilot cuando se establezca primero la conexión a Internet y se presente el contrato de licencia para el usuario final (CLUF) y éste tenga la opción de continuar con las experiencias de configuración sin Autopilot. Para volver a intentar la configuración con Autopilot, pon el dispositivo en suspensión y después enciéndelo, o bien reinícialo y vuelve a intentarlo.
+- La instalación de aplicaciones basadas en el contexto del dispositivo configurada en Intune aún no funciona. [Más información sobre el contexto del dispositivo y las instalaciones de contexto del usuario.](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   Al configurar Autopilot a través de Wi-Fi, es posible que haya una instancia en la que no se descargue el perfil de Autopilot cuando se establezca primero la conexión a Internet. En este caso, se presenta el contrato de licencia de usuario final (CLUF) y el usuario tiene la opción de continuar con la experiencia de configuración que no es Autopilot. Para volver a intentar la configuración con Autopilot, pon el dispositivo en suspensión y después enciéndelo, o bien reinícialo y vuelve a intentarlo.
 
 ### Solución de problemas
 

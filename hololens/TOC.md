@@ -11,11 +11,11 @@
 ### [Pantalla de HoloLens 2](hololens2-display.md)
 ### [Preguntas más frecuentes acerca de la limpieza de HoloLens 2](hololens2-maintenance.md)
 ### [Idiomas admitidos para HoloLens 2](hololens2-language-support.md)
-### [Desplazamiento por HoloLens 2](hololens2-basic-usage.md)
-### [Preguntas más frecuentes sobre HoloLens Development Edition](hololens2-development-edition-faq.md)
+### [Familiarizarse con HoloLens 2](hololens2-basic-usage.md)
+### [Preguntas frecuentes sobre HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 
 
-## Introducción a HoloLens (1.ª generación)
+## Introducción a HoloLens (1ª generación)
 ### [Hardware de HoloLens (1.ª generación)](hololens1-hardware.md)
 ### [Preparar HoloLens (1.ª generación) para usarlo](hololens1-setup.md)
 ### [Configurar HoloLens (1.ª generación)](hololens1-start.md)
