@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 5090a433b3d06e92cd36bdadbfbae3758432bb41
-ms.sourcegitcommit: 8656379a4871e118b9e06e72eab1dbcc8eb3cd42
+ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
+ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182451"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "11192450"
 ---
 # Windows Autopilot para HoloLens 2
 
@@ -223,11 +223,8 @@ Una vez que completes las instrucciones anteriores, tus usuarios de HoloLens 2 t
     
     - Conecta el dispositivo con adaptadores de "USB-C a WiFi" para establecer una conexión inalámbrica a Internet y deja que HoloLens 2 complete de manera automática la experiencia de Autopilot.
 
-       > [!NOTE]
-       > El uso de Autopilot afectará al [propietario del dispositivo](security-adminless-os.md#device-owner).
-   
-       > [!IMPORTANT]  
-       > Los dispositivos que intenten usar las redes Wi-Fi en la configuración rápida para el Autopilot deben disponer de [la versión 20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2).
+        > [!IMPORTANT]  
+       > Los dispositivos que intenten usar las redes Wi-Fi en la configuración rápida para el Autopilot deben disponer de la [versión 20H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-20h2).
        >
        > Para los dispositivos que usan adaptadores Ethernet, debes conectar el dispositivo a la red antes de que se inicie la experiencia de configuración rápida. El dispositivo determina si se aprovisiona como dispositivo Autopilot mientras se encuentra en la primera pantalla de la configuración rápida. Si el dispositivo no se puede conectar a la red, o si eliges no aprovisionar el dispositivo como dispositivo Autopilot, no podrás cambiarlo posteriormente al aprovisionamiento de Autopilot. En su lugar, tendrías que iniciar este procedimiento para poder aprovisionar el dispositivo como dispositivo Autopilot.
 
