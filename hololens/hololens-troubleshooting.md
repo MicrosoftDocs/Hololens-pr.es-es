@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
+ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915963"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195286"
 ---
 # Solución de problemas
 
@@ -45,6 +45,17 @@ Si los hologramas son inestables, saltan o no tienen el aspecto correcto, pruebe
 - Aumento de la luz de su habitación.
 - Caminar y mirando tu entorno para que HoloLens pueda explorarlos de forma más completa.
 - Calibra tu HoloLens para tus ojos. Vaya a **configuración**  >  **utilidades del sistema**  >  **Utilities**. En **Calibración**, seleccione **Abrir calibración**.
+ 
+### Informes de problemas en los que los hologramas son inestables o no tienen el aspecto correcto
+ 
+1. Graba y un [video de captura de realidad mixta](holographic-photos-and-videos.md#capture-a-mixed-reality-video) del problema. Este vídeo se puede cargar posteriormente mediante el centro de opiniones como archivo adjunto.  
+1. Habilitar la telemetría completa mediante la aplicación **configuración** : > el diagnóstico de **privacidad**  ->  **& comentarios** y en los **datos de diagnóstico opcionales** , asegúrese de que el botón de alternancia está **activado**
+1. Obtenga la última escala de hologramas y correcciones de estabilidad al actualizar al [sistema operativo Windows Holographic más reciente (20H2 o superior)](hololens-release-notes.md#windows-holographic-version-20h2). Después de la actualización, realice lo siguiente:
+    1. Quitar todos los hologramas a través de la aplicación **configuración** : > hologramas **del sistema**  ->  **Holograms** : >, a continuación, seleccione **quitar todos los hologramas** y empezar con un mapa nuevo.
+    1. Crea un nuevo mapa de tu espacio al usar HoloLens y caminar por el salón y mirar todas las áreas y superficies del espacio. Haga esto por 2-3 minutos.
+    1. Realizar calibración de IPD. Vaya a **configuración**  >  **utilidades del sistema**  >  **Utilities**. En **Calibración**, seleccione **Abrir calibración**.
+    1. Vuelva a probar el escenario y compruebe si aún continúa.
+1. Si la actualización no soluciona el problema, archiva un problema con el [centro de opiniones](hololens-feedback.md). Después de haber rellenado los comentarios, puedes usar el botón **compartir** para crear un vínculo fácil de compartir que pueda enviarse al ponerse en contacto con el soporte técnico.
 
 ## HoloLens no responde a la entrada de la mano
 
@@ -67,7 +78,7 @@ Si Cortana no responde a tus comandos de voz, asegúrate de que Cortana esté ac
 Si HoloLens no puede asignar ni cargar tu espacio, entra en el modo limitado y no podrás colocar hologramas ni ver hologramas que haya colocado. Puedes intentar lo siguiente:
 
 - Asegúrate de que haya suficiente luz en tu entorno para que HoloLens pueda ver y asignar el espacio.
-- Asegúrate de estar conectado a una red Wi-Fi. Si no estás conectado a una red Wi-Fi, HoloLens no puede identificar ni cargar un espacio conocido.
+- Asegúrese de que está conectado a una red Wi-Fi. Si no estás conectado a una red Wi-Fi, HoloLens no puede identificar ni cargar un espacio conocido.
 - Si necesita crear un nuevo espacio, conéctese a una red Wi-Fi y, a continuación, reinicie HoloLens.
 - Para ver si el espacio correcto está activo o para cargar manualmente un espacio, vaya a **configuración**  >  **espacios del sistema**  >  **Spaces**.
 - Si se carga el espacio correcto y sigues teniendo problemas, el espacio puede estar dañado. Para solucionar este problema, seleccione el espacio y, después, haga clic en **quitar**. Después de quitar el espacio, HoloLens comienza a asignar el entorno y a crear un nuevo espacio.
@@ -76,7 +87,7 @@ Si HoloLens no puede asignar ni cargar tu espacio, entra en el modo limitado y n
 
 Si HoloLens no puede identificar ni cargar el espacio en el que se encuentra automáticamente, compruebe los siguientes factores:
 
-- Asegúrate de estar conectado a una red Wi-Fi
+- Asegúrate de estar conectado a Wi-Fi
 - Asegúrese de que hay mucha luz en el salón
 - Asegúrese de que no haya ningún cambio importante en el entorno.
 
