@@ -10,13 +10,13 @@ ms.reviewer: aboeger
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/30/2020
-ms.openlocfilehash: b7523b8ab38cfc37795ea6c99f9b22953baffe47
-ms.sourcegitcommit: 30e910348f5d5b68e914219c8eadb34d93770eab
+ms.date: 11/04/2020
+ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11099809"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195593"
 ---
 # Administración y implementación empresarial de HoloLens 2
 
@@ -48,7 +48,7 @@ HoloLens 2 se ha diseñado específicamente para que lo administren los sistemas
 Microsoft diseñó Windows Update para empresas con el fin de proporcionar a los administradores de TI capacidades adicionales de administración centradas en Windows Update, tal como la posibilidad de implementar actualizaciones en grupos de dispositivos y definir ventanas de mantenimiento para la instalación de actualizaciones. Puedes encontrar más información sobre cómo administrar las actualizaciones de HoloLens 2 [aquí](https://docs.microsoft.com/hololens/hololens-updates).
 
 ### Certificados
-HoloLens 2 admite la implementación de certificados a través de MDM si su entorno requiere certificados para la autenticación de redes de la red Wi-Fi o el acceso a otros recursos. Es posible que se requieran algunas configuraciones de infraestructura de MDM para habilitar las implementaciones de certificados en HoloLens 2. Obtenga información sobre cómo [preparar certificados y perfiles de red para HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Puede encontrar los detalles de Intune [aquí](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+HoloLens 2 admite la implementación de certificados a través de MDM si su entorno requiere certificados para Corp Wi-Fi la autenticación de red o el acceso a otros recursos. Es posible que se requieran algunas configuraciones de infraestructura de MDM para habilitar las implementaciones de certificados en HoloLens 2. Obtenga información sobre cómo [preparar certificados y perfiles de red para HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Puede encontrar los detalles de Intune [aquí](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## Configurar
 
@@ -88,8 +88,8 @@ Al implementar dispositivos HoloLens 2 en un entorno empresarial corporativo, ha
 | Configuración del dispositivo | Descripción breve.                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
 | [Restricciones de hardware](hololens-requirements.md#hardware-restrictions)               | Las restricciones de hardware reducen la conectividad y ayudan en la protección de datos.                        |
-| [Perfiles Wi-Fi](hololens-requirements.md#wi-fi-profiles)               | Configurar perfiles Wi-Fi sin intervención del usuario ni interacción.                              |
-| [Certificados](hololens-requirements.md#certificates-1)               | Proporcionar autenticación de cuenta o Wi-Fi, cifrado de VPN y cifrado SSL de contenido Web. |
+| [Perfiles Wi-Fi](hololens-requirements.md#wi-fi-profiles)               | Configure Wi-Fi perfiles sin intervención del usuario ni interacción.                              |
+| [Certificados](hololens-requirements.md#certificates-1)               | Proporcionar autenticación de cuentas y/o Wi-Fi, cifrado de VPN y cifrado SSL de contenido Web. |
 | [Proxy](hololens-requirements.md#proxy)              | Administrar el tráfico interno.                                                                        |
 |  [VPN](hololens-requirements.md#vpn)              | Controlar el acceso a las aplicaciones y recursos de la intranet de su empresa.                               |
 | [Pantalla completa](hololens-requirements.md#kiosk-mode) | Limita las aplicaciones que se presentan a los usuarios a través de la interfaz de usuario. |
@@ -100,7 +100,7 @@ HoloLens 2 usa tecnología de vanguardia que incluye características de hardwar
 
 En la siguiente lista se enumeran las opciones de configuración de MDM que son compatibles con HoloLens 2 para configurar restricciones de hardware. Algunas de estas restricciones de hardware proporcionan conectividad y ayudan en la protección de datos.
 
-- [**Permitir WiFi:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) Si los usuarios pueden habilitar y usar la radio Wi-Fi en sus dispositivos
+- [**Permitir WiFi:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) Si los usuarios pueden habilitar y usar la Wi-Fi radio en sus dispositivos
 - [**Permitir conexión USB:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) Si la conexión USB está habilitada (hace&#39;t afecta a la carga de USB)
 - [**Permitir Bluetooth:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) Si los usuarios pueden habilitar y usar la radio Bluetooth en sus dispositivos
 
@@ -108,13 +108,13 @@ Más información sobre otras [restricciones de dispositivos comunes.](https://d
 
 #### Perfiles Wi-Fi
 
-La mayoría de las redes Wi-Fi corporativas requiere certificados y otra información compleja para restringir y proteger el acceso de usuario. Esta información de Wi-Fi avanzada es difícil para los usuarios típicos de configurar, pero MDM puede configurar por completo estos perfiles de Wi-Fi sin la intervención del usuario. Es posible crear varios perfiles Wi-Fi en el sistema MDM.
+La mayoría de las redes Wi-Fi corporativas requiere certificados y otra información compleja para restringir y proteger el acceso de usuario. Esta información de Wi-Fi avanzada es difícil para los usuarios típicos de configuración, pero MDM puede configurar por completo estos Wi-Fi perfiles sin la intervención del usuario. Es posible crear varios perfiles Wi-Fi en el sistema MDM.
 
 Para obtener más información sobre la configuración de Wi-Fi para Windows 10, consulta [configuración del perfil de empresa WiFi](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
 
 #### Certificados
 
-Los certificados ayudan a mejorar la seguridad proporcionando autenticación de cuenta, autenticación Wi-Fi, cifrado de VPN y cifrado SSL de contenido Web. A pesar de que los administradores pueden administrar certificados en dispositivos de forma manual mediante paquetes de aprovisionamiento,&#39;s es un procedimiento recomendado para usar su sistema MDM para administrar esos certificados durante todo su ciclo de vida, desde la inscripción a través de la renovación y la revocación. El sistema MDM puede implementar automáticamente estos certificados en los dispositivos&#39; los almacenes de certificados después de inscribir el dispositivo (siempre y cuando el sistema MDM admita el protocolo de inscripción de certificados simple (SCEP) o los estándares de criptografía de clave pública #12 (PKCS # 12)). MDM también puede consultar y eliminar certificados de cliente inscritos o desencadenar una nueva solicitud de inscripción antes de que venza el certificado actual.
+Los certificados ayudan a mejorar la seguridad proporcionando autenticación de cuenta, autenticación de Wi-Fi, cifrado de VPN y cifrado SSL de contenido Web. A pesar de que los administradores pueden administrar certificados en dispositivos de forma manual mediante paquetes de aprovisionamiento,&#39;s es un procedimiento recomendado para usar su sistema MDM para administrar esos certificados durante todo su ciclo de vida, desde la inscripción a través de la renovación y la revocación. El sistema MDM puede implementar automáticamente estos certificados en los dispositivos&#39; los almacenes de certificados después de inscribir el dispositivo (siempre y cuando el sistema MDM admita el protocolo de inscripción de certificados simple (SCEP) o los estándares de criptografía de clave pública #12 (PKCS # 12)). MDM también puede consultar y eliminar certificados de cliente inscritos o desencadenar una nueva solicitud de inscripción antes de que venza el certificado actual.
 
 Más información sobre cómo [preparar certificados y perfiles de red para HoloLens 2.](https://docs.microsoft.com/hololens/hololens-certificates-network)
 
@@ -169,7 +169,7 @@ Microsoft también proporcionará e instalará actualizaciones de seguridad y es
 
 Los clientes empresariales pueden administrar la experiencia de actualización y el proceso en HoloLens 2s con un sistema MDM. En la mayoría de los casos, se aplicarán directivas para administrar el proceso de actualización tanto en el caso de actualizaciones de características como de calidad. Más detalles en la [configuración de MDM para las actualizaciones de HoloLens](https://docs.microsoft.com/hololens/hololens-updates).
 
-### Administración de aplicaciones 
+### Administración de aplicaciones
 
 Los administradores de TI pueden controlar qué aplicaciones están autorizadas a instalarse en HoloLens 2 y cómo se deben mantener actualizadas.
 
@@ -188,3 +188,6 @@ HoloLens 2 es compatible con 3 métodos para borrar el dispositivo
 **Restablecimiento del dispositivo desde la configuración:** Los usuarios finales pueden restablecer de forma manual HoloLens 2 en la aplicación configuración del dispositivo. Borra todos los datos almacenados en el dispositivo.
 
 **Asistente de recuperación avanzada (ARC):** Desde un equipo con la herramienta ARC, un usuario o administrador puede hacer parpadear a HoloLens 2 conectado al equipo a través del cable USB. Borra todos los datos almacenados en el dispositivo.
+
+> [!div class="nextstepaction"]
+> [Escenarios de implementación comunes](common-scenarios.md)
