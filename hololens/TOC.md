@@ -39,10 +39,15 @@
 ## [Cómo actualizar HoloLens](hololens-update-hololens.md)
 
 # Preparar
-## Planificación para la implementación de HoloLens 2 empresa
-### [Implementar HoloLens en un entorno comercial](hololens-requirements.md)
-### [Escenarios habituales de implementación de infraestructura](common-scenarios.md)
-## Escenarios habituales
+## [Implementar HoloLens en un entorno comercial](hololens-requirements.md)
+## Escenarios de implementación comunes
+### [Escenarios de implementación de infraestructura](common-scenarios.md)
+### Implementación de HoloLens 2 conectado a la nube con asistencia remota
+#### [Conectado a la nube: Información general sobre la implementación](hololens2-cloud-connected-overview.md)
+#### [Conectado a la nube: Preparación](hololens2-cloud-connected-prepare.md)
+#### [Conectado a la nube: Configuración](hololens2-cloud-connected-configure.md)
+#### [Conectado a la nube: Implementación](hololens2-cloud-connected-deploy.md)
+#### [Conectado a la nube: Mantenimiento](hololens2-cloud-connected-maintain.md)
 ### [Seguro para usarse sin conexión](hololens-common-scenarios-offline-secure.md)
 ## Seguridad
 ### [Visión general de la seguridad](security-overview.md)
