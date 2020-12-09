@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996418"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195603"
 ---
 # Reiniciar, restablecer o recuperar HoloLens 2
 
@@ -57,7 +57,7 @@ En determinadas circunstancias, puede que tenga que reiniciar manualmente el dis
 
 4. Conecte el dispositivo al equipo host y, después, abra el Administrador de dispositivos. (Para Windows 10, pulse la tecla **Windows**, luego la tecla**X** y, a continuación, seleccione **Administrador de dispositivos**.) Asegúrese de que el dispositivo se enumera correctamente como *Microsoft HoloLens*, tal y como se muestra en la imagen siguiente:
 
-   ![Recuperación de HoloLens de Windows para HoloLens 2 ](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Administrador de dispositivos HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Procedimiento para hacer un restablecimiento completo
 
@@ -70,7 +70,7 @@ Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimi
 4. Conecte el dispositivo al equipo host.
 5. Abra el Administrador de dispositivos (para Windows 10, presione la tecla de **Windows** y, a continuación, la clave **X** y después seleccione **Administrador de dispositivos**). Asegúrese de que el dispositivo se muestre correctamente como *Microsoft HoloLens*, tal y como se muestra en la imagen siguiente:
 
-   ![Recuperación de HoloLens de Windows para HoloLens 2 ](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Administrador de dispositivos 2 HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Reprogramar el dispositivo
 
@@ -81,12 +81,12 @@ En situaciones extraordinarias, puede que tenga que reprogramar el dispositivo H
 - [Sobrecalentamiento](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - Bloqueos del sistema operativo (que son distintos de los bloqueos de la aplicación)
 
-Hay dos formas de reprogramar el dispositivo. En ambos casos, en primer lugar debe instalar [Advanced Recovery Companion desde la Tienda Windows](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+Hay dos formas de reprogramar el dispositivo. En ambos casos, primero debe [instalar el complemento de recuperación avanzada desde la Tienda Windows](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Si reprograma el dispositivo, se eliminarán todos los datos personales, las aplicaciones y la configuración, incluida la información para restablecer el TPM.
 
-De forma predeterminada, Advanced Recovery Companion está configurado en estos momentos para descargar la compilación del lanzamiento de características para [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004). Para obtener el paquete más reciente de Full Flash Update (FFU) de HoloLens 2 para reprogramar el dispositivo mediante Advanced Recovery Companion, [descárguelo aquí](https://aka.ms/hololens2download). Esta versión es la compilación más reciente de la que se dispone de manera general.
+De forma predeterminada, el Asistente de recuperación avanzada está configurado para descargar la compilación de la versión de características más reciente, consulte aquí para leer nuestras [Notas de la versión](hololens-release-notes.md#) y obtener información sobre la última versión de características. Para obtener el paquete de actualización completa de Flash (FFU) más reciente de HoloLens 2 para formatear el dispositivo a través del Asistente de recuperación avanzada, [haga clic aquí para descargar la última imagen mensual de HoloLens 2](https://aka.ms/hololens2download). Esta versión es la compilación más reciente de la que se dispone de manera general.
 
 Antes de iniciar el procedimiento de reprogramación, asegúrese de que la aplicación esté instalada y en ejecución en su PC con Windows 10 y de que esté lista para detectar el dispositivo.
 
@@ -134,8 +134,8 @@ Siga estos pasos para habilitar la ruta de acceso de implementación:
 1. Vaya a la [Microsoft Store para Empresas](https://businessstore.microsoft.com) e inicie sesión con una identidad de Azure Active Directory.
 
 1. Vaya a **Administrar – Configuración**. Active **Mostrar las aplicaciones sin conexión** en la **Experiencia de compra**. 
-1. Vaya a **comprar para mi grupo** y busque [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
-1. Cambie el **Tipo de licencia** a ***sin conexión*** y seleccione **Administrar**.
+1. Vaya a **tienda para mi grupo** y busque el [**_Asistente de recuperación avanzada_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+1. Cambie el _*Tipo de licencia** a **_sin conexión_*_ y seleccione _*Administrar**.
 1. En **Descargar el paquete para uso sin conexión**, seleccione el segundo botón azul de **Descargar**. Asegúrese de que la extensión del archivo sea *.appxbundle*.
 
     - En esta etapa, si el PC de escritorio tiene acceso a Internet, haga doble clic en el paquete para instalar la aplicación.
