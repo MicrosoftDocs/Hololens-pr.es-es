@@ -14,22 +14,22 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 53937881d6569e6aaa17d7e60083381b13502b87
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162890"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201374"
 ---
 # Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
 
 
-Pronto se enviará la función de instalador de aplicaciones después de la actualización de Windows Holographic, versión 20H2. Estamos **agregando una nueva función (instalador de aplicaciones) para que pueda instalar aplicaciones más fácilmente** en sus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
+Estamos **agregando una nueva función (instalador de aplicaciones) para que pueda instalar aplicaciones más fácilmente** en sus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
 
-> [!IMPORTANT]
-> Actualmente, esta característica solo está disponible en las compilaciones de Windows Insider. [Obtenga más información sobre cómo inscribirse en compilaciones de Windows Insider](hololens-insider.md).
+> [!NOTE]
+> Esta característica está disponible en [Windows Holographic, versión 20H2: diciembre de 2020](hololens-release-notes.md). Asegúrese de que el dispositivo está [actualizado](hololens-update-hololens.md) para usar esta característica.
 
-En nuestra versión Windows Insider, **agregamos una nueva función (instalador de aplicaciones) que te permite instalar aplicaciones de forma más fluida** en tus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
+Hemos **agregado una nueva función (instalador de aplicaciones) que te permite instalar aplicaciones de forma más fluida** en tus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
 
 Un dispositivo se considera "administrado" si se cumple **alguna** de las condiciones siguientes:
 - MDM [inscrito](hololens-enroll-mdm.md)

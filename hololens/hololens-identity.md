@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5963e71bd6fdd084ca442995b02d99fc40da9d43
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102339"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201364"
 ---
 # Administrar la identidad e inicio de sesión del usuario para HoloLens
 
@@ -36,11 +36,14 @@ HoloLens admite varios tipos de identidades de usuario. Puede usar una o varias 
 
 | Tipo de identidad | Cuentas por dispositivo | Opciones de autenticación |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Proveedor de credenciales Web de Azure</li><li>Aplicación Azure Authenticator</li><li>Sólo para la biometría (IRI) de &ndash; HoloLens 2</li><li>PIN &ndash; opcional para hololens (1ª generación), necesario para hololens 2</li><li>Contraseña</li></ul> |
+| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Proveedor de credenciales Web de Azure</li><li>Aplicación Azure Authenticator</li><li>Sólo para la biométrica (IRI) &ndash; HoloLens 2 <sup> 1</sup> </li><li>PIN &ndash; opcional para hololens (1ª generación), necesario para hololens 2</li><li>Contraseña</li></ul> |
 | [Cuenta de Microsoft (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | uno | <ul><li>Sólo para la biometría (IRI) de &ndash; HoloLens 2</li><li>PIN &ndash; opcional para hololens (1ª generación), necesario para hololens 2</li><li>Contraseña</li></ul> |
 | [Cuenta local](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | uno | Contraseña |
 
 Las cuentas conectadas a la nube (AAD y MSA) ofrecen más características porque pueden usar los servicios de Azure.  
+
+> [!NOTE]
+> 1-aunque un dispositivo HoloLens 2 puede admitir hasta 64 cuentas de Azure AD, solo 10 de esas cuentas pueden inscribirse en la autenticación de iris. Esto se alinea con otras opciones de autenticación biométricas de Windows Hello para empresas. [Más información aquí.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## Configurar usuarios
 

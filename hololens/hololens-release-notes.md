@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176912"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201384"
 ---
 # Notas de la versión de HoloLens 2
 
@@ -28,6 +28,52 @@ Para asegurarte de tener una experiencia productiva con tus dispositivos HoloLen
 
 >[!NOTE]
 > Para leer las notas de la versión del emulador de HoloLens, [visita el archivo](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+
+## Windows Holographic, versión 20H2: actualización 2020 de diciembre
+- Compilación 19041,1131
+
+### Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
+
+Estamos **agregando una nueva función (instalador de aplicaciones) para que pueda instalar aplicaciones más fácilmente** en sus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
+
+Un dispositivo se considera "administrado" si se cumple **alguna** de las condiciones siguientes:
+- MDM [inscrito](hololens-enroll-mdm.md)
+- Configurado con el [paquete de aprovisionamiento](hololens-provisioning.md)
+- La [identidad](hololens-identity.md) del usuario es Azure ad
+
+Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación.
+
+**Instrucciones de instalación de la aplicación.**
+
+1.  Asegurarse de que el dispositivo no se considere administrado
+1.  Asegúrate de que tu dispositivo HoloLens 2 esté encendido y conectado a tu PC.
+1.  Asegúrate de haber iniciado sesión en el dispositivo HoloLens 2
+1.  En su equipo, navegue hasta la aplicación personalizada y copie SUAPLICACIÓN. appxbundle a yourdevicename\Internal Storage\Downloads.   Una vez que haya terminado de copiar el archivo, puede desconectar el dispositivo
+1.  Desde tu dispositivo HoloLens 2 abre el menú Inicio, selecciona todas las aplicaciones e inicia la aplicación explorador de archivos.
+1.  Vaya a la carpeta descargas. Es posible que tenga que estar en el panel izquierdo de la aplicación, seleccione este dispositivo en primer lugar y, a continuación, vaya a descargas.
+1.  Seleccione el archivo SUAPLICACIÓN. appxbundle.
+1.  Se iniciará el instalador de la aplicación. Seleccione el botón instalar para instalar la aplicación.
+La aplicación instalada se iniciará automáticamente al finalizar la instalación.
+
+Puede encontrar aplicaciones de ejemplo en [Windows universal samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) para probar este flujo.
+
+Obtén más información sobre el proceso completo de [instalar aplicaciones en HoloLens 2 con el instalador de la aplicación](app-deploy-app-installer.md).  
+
+![Instalación de MRTK ejemplos mediante el instalador de aplicaciones](images/hololens-app-installer-picture.jpg)
+
+### Mejoras y correcciones de la actualización:
+
+- El seguimiento manual ahora mantiene el seguimiento en muchos casos nuevos donde anteriormente se habría perdido la mano.  En algunos de estos nuevos casos, solo la posición de la palma de la mano continúa actualizándose en función de la mano del usuario, mientras que las demás uniones se deducen basándose en una pose anterior.  Este cambio ayuda a mejorar la coherencia de los cambios en los movimientos, como Slapping, lanzamiento, primicia y el.  También ayuda en casos en los que la mano está cerca de una superficie o manteniendo un objeto.  Cuando se infieren las uniones de mano, el valor de [precisión por Unión](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) se establecerá en "aproximado" en lugar de "alto".
+- Se ha corregido un problema por el que el restablecimiento del PIN de las cuentas de Azure AD mostraría un error "se ha producido un problema.
+- Los usuarios deben ver bloqueos de OOBE con un inicio mucho menor al iniciar ET, iris de la aplicación de configuración, nuevo usuario o notificación del sistema.
+- Los usuarios deben tener la zona horaria correcta que sale de OOBE.
+
+## Windows Holographic, versión 1903, actualización de diciembre de 2020
+- Compilación 18362,1088
+
+Esta actualización mensual de calidad no contiene ningún cambio importante, le recomendamos que pruebe la última actualización de Windows Holographic, versión 20H2: diciembre de 2020 y la nueva característica del instalador de aplicaciones agregada en la compilación.
+
 
 ## Windows Holographic, versión 20H2
 - Compilación 19041,1128

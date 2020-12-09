@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb8ac3b6b74fd6998cde4d32df12dcbd84556597
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 260b195a18ecb7fe05d819fcd3e86d56fc2022bf
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162957"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201344"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -29,33 +29,7 @@ Te agradecemos las compilaciones más recientes de Insider Preview para HoloLens
 
 ## Notas de la versión de Windows Insider
 
-### Instalar aplicaciones en HoloLens 2 a través del instalador de la aplicación
-Pronto se enviará la función de instalador de aplicaciones después de la actualización de Windows Holographic, versión 20H2. Estamos **agregando una nueva función (instalador de aplicaciones) para que pueda instalar aplicaciones más fácilmente** en sus dispositivos HoloLens 2. La característica estará **activada de forma predeterminada en los dispositivos no administrados**. Para evitar interrupciones en las empresas, el instalador **de aplicaciones no estará disponible para los dispositivos administrados** en este momento.  
-
-Un dispositivo se considera "administrado" si se cumple **alguna** de las condiciones siguientes:
-- MDM [inscrito](hololens-enroll-mdm.md)
-- Configurado con el [paquete de aprovisionamiento](hololens-provisioning.md)
-- La [identidad](hololens-identity.md) del usuario es AAD
-
-Ahora puede instalar aplicaciones sin necesidad de habilitar el modo de desarrollador ni el uso de Device portal.  Solo tienes que descargar (a través de USB o a través del borde) el paquete appx en el dispositivo y navegar hasta el paquete appx en el explorador de archivos para que se le solicite que inicie la instalación.  También puede [iniciar una instalación desde una página web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Al igual que las aplicaciones que se instalan desde Microsoft Store o mediante la instalación de prueba con la aplicación LOB de MDM, las aplicaciones tienen que estar firmadas digitalmente con la [herramienta firmar](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) y el [certificado usado para firmar debe ser de confianza para](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) el dispositivo HoloLens antes de que se pueda implementar la aplicación.
-
-**Instrucciones de instalación de la aplicación.**
-
-1.  Asegurarse de que el dispositivo no se considere administrado
-1.  Asegúrate de que tu dispositivo HoloLens 2 esté encendido y conectado a tu PC.
-1.  Asegúrate de haber iniciado sesión en el dispositivo HoloLens 2
-1.  En su equipo, navegue hasta la aplicación personalizada y copie SUAPLICACIÓN. appxbundle a yourdevicename\Internal Storage\Downloads.   Una vez que haya terminado de copiar el archivo, puede desconectar el dispositivo
-1.  Desde tu dispositivo HoloLens 2 abre el menú Inicio, selecciona todas las aplicaciones e inicia la aplicación explorador de archivos.
-1.  Vaya a la carpeta descargas. Es posible que tenga que estar en el panel izquierdo de la aplicación, seleccione este dispositivo en primer lugar y, a continuación, vaya a descargas.
-1.  Seleccione el archivo SUAPLICACIÓN. appxbundle.
-1.  Se iniciará el instalador de la aplicación. Seleccione el botón instalar para instalar la aplicación.
-La aplicación instalada se iniciará automáticamente al finalizar la instalación.
-
-Puede encontrar aplicaciones de ejemplo en [Windows universal samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) para probar este flujo.
-
-Obtén más información sobre el proceso completo de [instalar aplicaciones en HoloLens 2 con el instalador de la aplicación](app-deploy-app-installer.md).  
-
-![Instalación de MRTK ejemplos mediante el instalador de aplicaciones](images/hololens-app-installer-picture.jpg)
+Recientemente hemos publicado todas las características de Windows Insider. Puesto que todas estas características están ahora disponibles, te recomendamos que leas nuestras notas de la [versión](hololens-release-notes.md) para ver todas nuestras características más recientes. Mantente al tanto de volver a consultar para ver cuándo empezamos a probar las nuevas características interesantes.
 
 ## Empezar a recibir compilaciones de Insider
 
