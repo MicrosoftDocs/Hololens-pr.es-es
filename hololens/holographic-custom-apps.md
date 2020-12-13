@@ -2,7 +2,7 @@
 title: Administrar aplicaciones personalizadas para HoloLens
 description: Carga de las aplicaciones personalizadas de la cara en HoloLens. Más información sobre la instalación y desinstalación de aplicaciones holográficas.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
-ms.date: 07/01/2019
+ms.date: 12/10/2020
 manager: v-miegge
 keywords: hololens, transferencia de archivos, carga de caras, carga de cara, almacén, UWP, aplicación, instalar
 ms.prod: hololens
@@ -16,19 +16,25 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 12c5eedfab580be8acea48c1fc19b56c1ead08ac
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 67a857eb35126435f5642ee60168128300401394
+ms.sourcegitcommit: cd2071c12eaabe46c829b53c22d13e21b8af5b53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "11218637"
 ---
 # Administrar aplicaciones personalizadas para HoloLens
 
-HoloLens admite muchas aplicaciones existentes de Microsoft Store, así como nuevas aplicaciones creadas específicamente para HoloLens. Este artículo se centra en las aplicaciones holográficas personalizadas.  
+HoloLens soporta muchas aplicaciones existentes de Microsoft Store, así como nuevas aplicaciones construidas específicamente para HoloLens. Este artículo se centra en las aplicaciones holográficas personalizadas.  
 
 Para obtener más información sobre las aplicaciones de la tienda, consulte [Administrar aplicaciones con la tienda](holographic-store-apps.md).
+
+> [!IMPORTANT]
+> La siguiente información se creó para HoloLens (1ª generación), también llamada la edición para desarrolladores de HoloLens en ese momento. Ya que estas aplicaciones de instalación de prueba a través del portal de dispositivos y la instalación de aplicaciones a través de Visual Studio eran comunes. Para las implementaciones empresariales, no se recomienda habilitar el modo de desarrollador, que usan ambos métodos. Si estás interesado en un método seguro de implementación de aplicaciones, consulta la [información general sobre la administración de aplicaciones:](app-deploy-overview.md)
+>
+> Si busca el método de desarrollador de instalación de aplicaciones para dispositivos HoloLens 2, consulte:
+> - [Portal de dispositivos: instalación de una aplicación](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+> - [Usar Visual Studio para implementar y depurar aplicaciones](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 ## Instalar aplicaciones personalizadas
 
@@ -51,7 +57,7 @@ Puedes instalar tus propias aplicaciones en HoloLens a través del portal de dis
 1. Abra las **propiedades**del proyecto.
 1. Seleccione la siguiente configuración de compilación: **principal/x86/máquina remota**.
 1. Cuando seleccione **equipo remoto**:
-   - Asegúrese de que la dirección apunta a la dirección IP de Wi-Fi de su HoloLens.
+   - Asegúrese de que la dirección apunta a la dirección IP Wi-Fi de su HoloLens.
    - Configurar la autenticación a **universal (protocolo sin cifrar)**.
 1. Cree su solución.
 1. Para implementar la aplicación desde el equipo de desarrollo en HoloLens, seleccione **equipo remoto**. Si ya tiene una compilación existente en HoloLens, seleccione **sí** para instalar esta versión más reciente.  
