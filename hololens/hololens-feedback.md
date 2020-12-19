@@ -4,7 +4,7 @@ description: Crea comentarios accionables para los desarrolladores de HoloLens y
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
-ms.date: 05/14/2020
+ms.date: 12/17/2020
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -17,24 +17,24 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f922104658378239c6f94a20d22913f11a56c347
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
+ms.sourcegitcommit: e44f1f1ab708e5bd6c4c5b85ec449db2bc798be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828566"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237280"
 ---
 # Comentarios para HoloLens
 
 Use el centro de opiniones para contarnos qué características le encanta, qué características podría hacer sin él y cómo puede mejorar algo. El equipo de ingeniería usa el mismo mecanismo internamente para realizar un seguimiento de los errores y corregirlos, por lo que debes usar el centro de opiniones para informar de los errores que veas. ¡ Estamos escuchando!
 
-El centro de opiniones es una excelente manera de alertar al equipo de ingeniería de errores y de asegurarte de que las actualizaciones futuras sean más sanas y siempre libre de errores. Sin embargo, el centro de opiniones no proporciona una respuesta. Si necesitas ayuda inmediata, escribe los comentarios, ten en cuenta el resumen que proporcionaste para tus comentarios y, después, haz un seguimiento de la [compatibilidad con HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
+El centro de opiniones es una excelente manera de alertar al equipo de ingeniería de errores y de asegurarte de que las actualizaciones futuras sean más sanas y siempre libre de errores. Sin embargo, el centro de opiniones no proporciona una respuesta. Si necesitas ayuda inmediata, envíanos comentarios, ten en cuenta el resumen que proporcionaste para tus comentarios y, después, haz un seguimiento de la [compatibilidad con HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) : usa la característica **compartir** en el centro de opiniones para compartir un vínculo directo a la dirección URL. El centro de opiniones obtiene muchos datos diariamente, la dirección URL nos ayuda a identificar tus comentarios rápidamente.
 
 > [!NOTE]  
 >  
 > - Asegúrese de que tiene la versión actual del centro de opiniones. Para ello, seleccione **iniciar**  >  **Microsoft Store**y, a continuación, seleccione los puntos suspensivos (**...**). Después, seleccione **descargas y actualizaciones**  >  **obtener actualizaciones**.  
 >  
-> - Para proporcionar los mejores datos posibles para solucionar problemas, recomendamos encarecidamente que configure la telemetría de dispositivos en **completa**. Puedes establecer este valor durante la experiencia de configuración rápida (OOBE) o mediante la aplicación configuración. Para hacerlo usando la configuración, seleccione **iniciar**  >  **configuración**  >  **privacidad**  >  **diagnóstico de la aplicación**  >  **en**.
+> - Para proporcionar los mejores datos posibles para solucionar problemas, recomendamos encarecidamente que configure la telemetría de dispositivos en **opcional**. Puedes establecer este valor durante la experiencia de configuración rápida (OOBE) o mediante la aplicación configuración. Para hacerlo usando la configuración, seleccione **iniciar**  >  **configuración**  >  **privacidad**  >  **diagnóstico de la aplicación**  >  **en**.
 
 ## Usar el centro de opiniones
 
@@ -87,3 +87,5 @@ El centro de opiniones es una excelente manera de alertar al equipo de ingenier�
      1. Seleccione **Detener grabación**. Después de la grabación, puede ver los datos adjuntos a sus comentarios para el equipo de ingeniería.
 
 1. Asegúrate de tener una conexión a Internet activa para poder recibir tus comentarios. Seleccione **Enviar**y listo.
+
+1. Use el botón **compartir** para compartir la dirección URL abreviada con el soporte técnico de Microsoft o sus colegas.
