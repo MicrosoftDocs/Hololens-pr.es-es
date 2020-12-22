@@ -17,16 +17,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 55e2b15808e52bb80e8114e215bc0cef52358842
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
+ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016674"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "11247222"
 ---
 # Portal de empresa e Intune
 
-Con la administración de dispositivos móviles (MDM), puedes usar tus propias aplicaciones personalizadas a través de [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) para implementarlo directamente en tus dispositivos HoloLens. Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Intune está incluido en el[conjunto de programas de seguridad y movilidad empresarial](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)de Microsoft y permite que los usuarios sean productivos mientras mantienen protegidos los datos de su organización. Para obtener más información sobre Intune, lea [lo que es Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
+Con la administración de dispositivos móviles (MDM), puedes usar tus propias aplicaciones personalizadas a través de [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) para implementarlo directamente en tus dispositivos HoloLens. Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Intune está incluido en el [conjunto de programas de seguridad y movilidad empresarial](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)de Microsoft y permite que los usuarios sean productivos mientras mantienen protegidos los datos de su organización. Para obtener más información sobre Intune, lea [Qué es Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
 
 ## Programa de instalación
 
