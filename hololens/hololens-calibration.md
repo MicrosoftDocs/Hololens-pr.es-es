@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165041"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252530"
 ---
 # Mejorar la calidad visual y la comodidad
 
@@ -42,7 +42,7 @@ HoloLens 2 pide a un usuario que calibre el dispositivo en las siguientes circun
 
 ![Solicitud de calibración para ajustar a los ojos.](./images/07-et-adjust-for-your-eyes.png)
 
-Durante este proceso, veremos un conjunto de objetivos (gemas). Está bien si parpadea durante la calibración, pero trate de mantenerse enfocado en las gemas en lugar de otros objetos en la habitación.  Esto permite a HoloLens memorizar la posición de tu ojo para representar tu mundo holográfico.
+Durante este proceso, veremos un conjunto de objetivos (gemas). Está bien si parpadea durante la calibración, pero trate de mantenerse enfocado en las gemas en lugar de otros objetos en la habitación.  Centrarse en las gemas permite a HoloLens memorizar la posición de tu ojo para representar tu mundo holográfico.
 
 ![Indicador de calibración que indica al usuario que mantenga la cabeza quieta y siga los puntos con los ojos.](./images/07-et-hold-head-still.png)
 
