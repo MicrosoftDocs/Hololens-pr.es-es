@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: beee64159415c0635812463f81c0b5565e44e4a8
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196378"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252701"
 ---
 # Mantener-guía conectada a la nube
 
@@ -29,11 +29,11 @@ Microsoft diseñó Windows Update para empresas con el fin de proporcionar a los
 
 Más información sobre cómo [administrar las actualizaciones de HoloLens](https://docs.microsoft.com/hololens/hololens-updates) , incluidos días programados, tiempo programado y la configuración de horas activas en el dispositivo para que se actualice fuera del horario laboral.
 
-Asistencia remota es una aplicación de In-Box y puede actualizarse a través de la aplicación Microsoft Store. Para todas las aplicaciones que se descargan a través de Microsoft Store, se pueden [actualizar mediante la aplicación de Microsoft Store en](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) forma manual.
+Asistencia remota es una aplicación In-Box y puede actualizarse a través de la aplicación Microsoft Store. Para todas las aplicaciones que se descargan a través de Microsoft Store, se pueden [actualizar mediante la aplicación de Microsoft Store en](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) forma manual.
 
 ## Plan de soporte técnico
 
-Un plan de soporte técnico es un aspecto excelente para hacerlo. Es útil tener a una persona, o a un grupo con formación para solucionar el proceso de inscripción en dispositivos HoloLens, además del uso general del dispositivo HoloLens dentro de su organización. Para que los usuarios puedan tener la resolución más rápida de sus problemas, sugerimos que el proceso de escalado se trate de forma similar a lo siguiente:
+Un plan de soporte técnico es un aspecto excelente para hacerlo. Es útil tener a una persona, o a un grupo con formación para solucionar el proceso de inscripción en dispositivos HoloLens, además del uso general del dispositivo HoloLens dentro de su organización. Para que los usuarios puedan tener la resolución más rápida de sus problemas, sugerimos que el proceso de escalado se gestione de forma similar a la siguiente orden:
 
 1. Tu servicio de asistencia al cliente.
 2. Tu equipo de expertos de HoloLens
@@ -52,7 +52,7 @@ Si aún no ha&#39;creado su propia aplicación de LOB o aún está en proceso de
 
 Aunque en esta guía se ha comentado la configuración de la administración de dispositivos móviles (MDM), no se empleó para aplicar restricciones de dispositivo o directivas que se aplicaron a los dispositivos. La administración de dispositivos se puede usar para permitir el acceso mediante la inserción de certificados o para restringir el acceso con una variedad de restricciones de dispositivos. 
 
-En muchos casos, los dispositivos pueden tener restricciones de conectividad, como Bluetooth, VPN, USB o incluso desactivar el acceso a la cámara o al micrófono. Si te interesa cualquiera de estos intereses, te recomendamos que leas la [Página de restricciones de dispositivos comunes](hololens-common-device-restrictions.md).
+En muchos casos, los dispositivos pueden tener restricciones de conectividad, como Bluetooth, VPN, USB o incluso desactivar el acceso a la cámara o al micrófono. Si tienes alguno de estos intereses, te recomendamos que leas la [Página de restricciones de dispositivos comunes](hololens-common-device-restrictions.md).
 
 Puedes usar otras restricciones de dispositivos más complejas. Como:
 
@@ -60,7 +60,7 @@ Puedes usar otras restricciones de dispositivos más complejas. Como:
 - Use el [modo de pantalla completa](hololens-kiosk.md) para limitar la interfaz de usuario que se presenta a los usuarios en un dispositivo. Puede configurar quioscos para que muestren una sola aplicación o varias aplicaciones con una página de inicio personalizada. Los quioscos también pueden presentar distintas experiencias a diferentes usuarios.  
 - [Control de aplicaciones de Windows (WDAC)](windows-defender-application-control-wdac.md) para evitar que determinadas aplicaciones o procesos se inicien por completo.
 
-Si desea obtener más información sobre métodos de administración de dispositivos o restricciones de dispositivos, siga el paso siguiente y lea nuestra descripción general de la administración de dispositivos.
+Si desea obtener más información sobre métodos de administración de dispositivos o restricciones de dispositivos, siga el siguiente paso y lea nuestra descripción general de la administración de dispositivos.
 
 ## Paso siguiente
 

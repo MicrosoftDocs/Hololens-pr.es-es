@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
-ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
+ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182011"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253037"
 ---
 # Configurar HoloLens como un quiosco multimedia
 
@@ -82,8 +82,8 @@ En la siguiente tabla se enumeran las características de compatibilidad con usu
 
 | &nbsp; |Tipos de usuarios admitidos | Inicio de sesión automático | Varios niveles de acceso |
 | --- | --- | --- | --- |
-|Quiosco de una sola aplicación |Cuenta de servicio administrada (MSA) en Azure Active Directory (AAD) o cuenta local |Sí |No |
-|Pantalla completa de varias aplicaciones |Cuenta de AAD |No |Sí |
+|Quiosco de una sola aplicación |Cuenta de servicio administrada (MSA) en Azure Active Directory (Azure AD) o cuenta local |Sí |No |
+|Pantalla completa de varias aplicaciones |Cuenta de Azure AD |No |Sí |
 
 Para obtener ejemplos de cómo usar estas funciones, consulte la tabla siguiente.
 
@@ -143,7 +143,7 @@ Cuando cree el archivo XML o use la interfaz de usuario de Intune para configura
 Normalmente, los quioscos se habilitan para un usuario o un grupo de usuarios. Sin embargo, si tiene pensado escribir su propio quiosco XML, es posible que desee considerar el acceso asignado globalmente, en el que el quiosco se aplica en el nivel de dispositivo independientemente de la identidad. Si esta apelación le interesa, [Lea más información sobre los quioscos de acceso asignados global.](hololens-global-assigned-access-kiosk.md)
 
 #### Si va a crear un archivo XML:
--   Puede crear varios perfiles de quiosco y asignarlos a cada uno de los usuarios o grupos. Como un quiosco para el grupo de AAD que tiene muchas aplicaciones y un visitante que tiene un quiosco de varias aplicaciones con una aplicación singular.
+-   Puede crear varios perfiles de quiosco y asignarlos a cada uno de los usuarios o grupos. Como un quiosco para el grupo de Azure AD que tiene muchas aplicaciones y un visitante que tiene un quiosco de varias aplicaciones con una aplicación singular.
 -   La configuración de su quiosco se denominará **ID de perfil** y tendrá un GUID.
 -   Asignará ese perfil en la sección de configuraciones especificando el tipo de usuario y usando el mismo GUID para el **identificador de DefaultProfile**.
 - Se puede crear un archivo XML pero aún se puede aplicar a un dispositivo a través de MDM creando un perfil de configuración de dispositivo URI de OMA personalizado y aplicándolos a grupo de dispositivos HoloLens con el valor de URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
@@ -151,7 +151,7 @@ Normalmente, los quioscos se habilitan para un usuario o un grupo de usuarios. S
 #### Si está creando una exposición en Intune.
 -   Cada dispositivo solo puede recibir un perfil de quiosco, de lo contrario creará un conflicto y no recibirá ninguna configuración de quiosco. 
     -   Otros tipos de perfiles y directivas, como las restricciones de dispositivo que no están relacionados con el perfil de configuración de quiosco, no entran en conflicto con el perfil de configuración de quiosco.
--   El quiosco se habilitará para todos los usuarios que formen parte del tipo de inicio de sesión de usuario, que se establecerá con un usuario o un grupo de AAD. 
+-   El quiosco se habilitará para todos los usuarios que formen parte del tipo de inicio de sesión de usuario, que se establecerá con un usuario o un grupo de Azure AD. 
 -   Después de establecer la configuración de quiosco y de seleccionar el **tipo de inicio de sesión de usuario** (usuarios que pueden iniciar sesión en el quiosco) y las aplicaciones, la configuración del dispositivo se debe asignar a un grupo. El grupo o los grupos asignados determinan los dispositivos que reciben la configuración del dispositivo de quiosco, pero no interactúan con si el quiosco está habilitado o no. 
     - Para obtener una explicación completa de los efectos de asignar perfiles de configuración en Intune, consulte [asignar perfiles de usuario y dispositivo en Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
@@ -176,7 +176,7 @@ En la tabla siguiente se enumeran las capacidades y las ventajas de cada uno de 
 |Implementar quioscos de varias aplicaciones    | No            | Sí                  | Sí  |
 |Implementar solo en dispositivos locales | Sí           | Sí                  | No   |
 |Implementar mediante el modo de programador |Obligatorio       | No obligatorio            | No obligatorio   |
-|Implementación mediante Azure Active Directory (AAD)  | No obligatorio            | No obligatorio                   | Obligatorio  |
+|Implementación mediante Azure Active Directory (Azure AD)  | No obligatorio            | No obligatorio                   | Obligatorio  |
 |Implementar automáticamente      | No            | No                   | Sí  |
 |Velocidad de implementación            | Fast       | Fast                 | Nivel lento |
 |Implementar a escala | No recomendado    | Recomendaciones        | Recomendaciones |
@@ -204,12 +204,12 @@ Para obtener más información sobre cómo inscribir los dispositivos, consulte 
 ### <a id="mdmprofile"></a>MDM, paso 2 &ndash; crear un perfil de configuración de quiosco
 
 1. Abra el portal de [Azure](https://portal.azure.com/) y inicie sesión en su cuenta de administrador de Intune.
-1. Seleccione **Microsoft Intune**  >  **configuración de dispositivo de**Microsoft Intune:  >  **crear perfil**para perfiles.
+1. Seleccione ****  >  **configuración de dispositivo de**Microsoft Intune:  >  **crear perfil**para perfiles.
 1. Escriba un nombre de perfil.
-1. Seleccione **Platform**  >  **Windows 10 y versiones posteriores**y, a continuación, seleccione restricciones de dispositivo de **tipo de perfil**  > **Device restrictions**.
+1. Seleccione **Platform**  >  **Windows 10 y versiones posteriores**y, a continuación, seleccione restricciones de dispositivo de **tipo de perfil**  > ****.
 1. Seleccione **configurar**  >  **quiosco**y, a continuación, seleccione una de las opciones siguientes:
-   - Para crear una pantalla completa de una sola aplicación **Kiosk Mode**, seleccione  >  **pantalla completa de una sola aplicación**en modo de pantalla completa.
-   - Para crear una pantalla completa de varias aplicaciones, seleccione pantalla completa de la aplicación en el **modo de pantalla**completa  >  **Multi-app kiosk**.
+   - Para crear una pantalla completa de una sola aplicación ****, seleccione  >  **pantalla completa de una sola aplicación**en modo de pantalla completa.
+   - Para crear una pantalla completa de varias aplicaciones, seleccione pantalla completa de la aplicación en el **modo de pantalla**completa  >  ****.
 1. Para empezar a configurar el quiosco, seleccione **Agregar**.
 
 Los pasos siguientes varían según el tipo de quiosco que desee. Para obtener más información, seleccione una de las siguientes opciones:  
@@ -230,7 +230,7 @@ En esta sección se resume la configuración que necesita una quiosco de una sol
 1. Seleccione **Inicio de sesión de usuario**  >  , escriba la**cuenta de usuario local**y, a continuación, escriba el nombre de usuario de la cuenta local (dispositivo) o de la cuenta de Microsoft (MSA) que puede iniciar sesión en el quiosco.
    > [!NOTE]  
    > Los tipos de cuenta de usuario de **Inicio automático** no se admiten en Windows Holographic para empresas.
-1. Seleccione **Application type**aplicación  >  de la**tienda**de tipos y, a continuación, seleccione una aplicación de la lista.
+1. Seleccione **** aplicación  >  de la**tienda**de tipos y, a continuación, seleccione una aplicación de la lista.
 
 El siguiente paso es [asignar](#mdmassign) el perfil a un grupo.
 
@@ -243,7 +243,7 @@ En esta sección se resume la configuración que necesita una pantalla completa 
 - Para ver otros servicios de MDM, consulte la documentación de su proveedor para obtener las instrucciones. Si necesita usar una configuración XML personalizada para configurar un quiosco en el servicio MDM, [cree un archivo XML que defina la configuración de quiosco](#ppkioskconfig). Si usa un archivo XML, asegúrese de incluir el diseño de [Inicio](#start-layout-for-hololens).  
 - De forma opcional, puede usar un diseño de inicio personalizado con Intune u otros servicios de MDM. Para obtener más información, vea [iniciar el archivo de diseño para MDM (Intune y otros)](#start-layout-file-for-mdm-intune-and-others).
 
-1. Seleccione **destino en Windows 10 en dispositivos de modo S**  >  **No**.  
+1. Seleccione **destino en Windows 10 en dispositivos de modo S**  >  ****.  
    >[!NOTE]  
    > No se admite el modo S en Windows Holographic para empresas.
 1. Seleccione **Inicio de sesión de usuario**  >  , usuario o grupo o **usuario de inicio de sesión**de**Azure ad**  >  , visitante de**HoloLens**y, a continuación, agregue uno o más grupos de usuarios o cuentas.  
@@ -297,7 +297,7 @@ Si en este momento no ve la configuración de su quiosco, [Compruebe el estado d
 
 Para configurar el modo de pantalla completa con un paquete de aprovisionamiento, siga estos pasos.
 
-1. [Cree un archivo XML que defina la configuración de quiosco.](#ppkioskconfig) [Start layout](#start-layout-for-hololens)
+1. [Cree un archivo XML que defina la configuración de quiosco.](#ppkioskconfig) [](#start-layout-for-hololens)
 2. [Agregue el archivo XML a un paquete de aprovisionamiento.](#ppconfigadd)
 3. [Aplicar el paquete de aprovisionamiento a HoloLens.](#ppapply)
 
@@ -393,8 +393,8 @@ Guarde el ejemplo siguiente como un archivo XML. Puede usar este archivo al conf
 1. **Opcional**. (Si desea aplicar el paquete de aprovisionamiento después de la configuración inicial del dispositivo y ya hay un usuario administrador disponible en el dispositivo quiosco, omita este paso). Seleccione **configuración de tiempo de ejecución** &gt; **cuentas** &gt; **usuarios**y, a continuación, cree una cuenta de usuario. Proporcione un nombre de usuario y una contraseña y, a continuación, seleccione **usergroup**  >  **Administrators**.  
   
      Al usar esta cuenta, puede ver el estado de aprovisionamiento y los registros.  
-1. **Opcional**. (Si ya tiene una cuenta que no es de administrador en el dispositivo de quiosco, omita este paso). Seleccione **configuración de tiempo de ejecución** &gt; **cuentas** &gt; **usuarios**y, a continuación, cree una cuenta de usuario local. Asegúrese de que el nombre de usuario es el mismo que el de la cuenta que especifique en el XML de configuración. Seleccione **UserGroup**  >  **los usuarios estándar**de usergroup.
-1. Seleccione **File**  >  **Guardar**archivo.
+1. **Opcional**. (Si ya tiene una cuenta que no es de administrador en el dispositivo de quiosco, omita este paso). Seleccione **configuración de tiempo de ejecución** &gt; **cuentas** &gt; **usuarios**y, a continuación, cree una cuenta de usuario local. Asegúrese de que el nombre de usuario es el mismo que el de la cuenta que especifique en el XML de configuración. Seleccione ****  >  **los usuarios estándar**de usergroup.
+1. Seleccione ****  >  **Guardar**archivo.
 1. Seleccione **exportar**  >  **paquete de aprovisionamiento**y, a continuación, seleccione **propietario**  >  **it admin**. Esto establece la prioridad de este paquete de aprovisionamiento más alta que los paquetes de aprovisionamiento que se aplican a este dispositivo desde otros orígenes.
 1. Selecciona **Siguiente**.
 1. En la página **seguridad del paquete de aprovisionamiento** , seleccione una opción de seguridad.
@@ -475,10 +475,10 @@ Antes de encontrar errores al aplicar el modo de pantalla completa, HoloLens se 
 
 ![Imagen del modo de quiosco que se muestra ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
 
-### Caché de pertenencia a grupo AAD para el quiosco desconectado
-- Se habilitaron quioscos sin conexión para usarlos con grupos de AAD durante un máximo de 60 días.
+### Almacenar en caché la pertenencia a grupos de Azure AD para quiosco desconectado
+- Se habilitaron quioscos sin conexión para usarlos con grupos de Azure AD durante un máximo de 60 días.
 
-Esta directiva controla cuántos días se permite que la caché de pertenencia a grupos de AAD se use para configuraciones de acceso asignadas dirigidas a grupos de AAD para el usuario que ha iniciado sesión. Una vez que este valor de Directiva se establece en un valor mayor que 0, de lo contrario se usa cache.  
+Esta directiva controla el número de días que se permite usar la caché de pertenencia a grupos de Azure AD para las configuraciones de acceso asignadas para los grupos de Azure AD para el usuario que ha iniciado sesión. Una vez que este valor de Directiva se establece en un valor mayor que 0, de lo contrario se usa cache.  
 
 Name: AADGroupMembershipCacheValidityInDays URI Value:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -486,30 +486,30 @@ Min-0 días
 Máximo: 60 días 
 
 Pasos para usar esta directiva correctamente: 
-1. Cree un perfil de configuración de dispositivo para quiosco dirigido a grupos de AAD y asígnelo a dispositivos HoloLens. 
+1. Crear un perfil de configuración de dispositivo para quiosco de destino de grupos de Azure AD y asignarlo a dispositivos HoloLens. 
 1. Crear un URI de OMA personalizado configuración de dispositivo que establezca este valor de directiva en cantidad deseada de días (> 0) y asignarlo a dispositivos HoloLens. 
     1. El valor del URI debe especificarse en el cuadro de texto OMA-URI como./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. El valor puede estar entre Min/Max permitidos.
 1. Inscriba dispositivos HoloLens y verifique que ambas configuraciones se apliquen al dispositivo. 
-1. Deje que el inicio de sesión de AAD para el usuario 1 cuando esté disponible Internet, una vez que el usuario inicie sesión y la pertenencia a grupos de AAD se haya confirmado correctamente, se creará la memoria caché. 
-1. Ahora, el usuario 1 de AAD puede hacer que HoloLens esté desconectado y usarlo para el modo de pantalla completa, siempre y cuando el valor de la Directiva permita un número de días por X. 
-1. Los pasos 4 y 5 se pueden repetir para cualquier otro usuario de AAD. punto clave aquí es que cualquier usuario de AAD debe iniciar sesión en el dispositivo con Internet, por lo menos una vez, podemos determinar que son miembros del grupo de AAD al que se dirige la configuración de quiosco. 
+1. Deje que el inicio de sesión de usuario de Azure AD 1 esté disponible cuando esté disponible Internet, una vez que el usuario inicie sesión y la pertenencia a grupos de Azure AD se confirmen correctamente, se creará la memoria caché. 
+1. Ahora, el usuario 1 de Azure AD puede hacer que HoloLens esté desconectado y usarlo para el modo de pantalla completa, siempre y cuando el valor de la Directiva permita un número de días por X. 
+1. Los pasos 4 y 5 se pueden repetir para cualquier otro usuario de Azure AD N. punto clave aquí es que cualquier usuario de Azure AD debe iniciar sesión en el dispositivo a través de Internet, por lo menos una vez podemos determinar que son miembros del grupo de Azure AD a la que se destina la configuración de quiosco. 
  
 > [!NOTE]
-> Hasta que se realice el paso 4 para un usuario de AAD experimentará un comportamiento de error mencionado en entornos "desconectados". 
+> Hasta que se realice el paso 4 para un usuario de Azure AD experimentará comportamientos de error mencionados en entornos "desconectados". 
 
 
 ## Muestras de código de quiosco XML para HoloLens
 
-### Modo de pantalla múltiple de la aplicación objetivo de un grupo de AAD. 
-Este quiosco implementa un quiosco para los usuarios del grupo de AAD, tendrán una exposición habilitada que incluye las 3 aplicaciones: configuración, asistencia remota y centro de opiniones. Para modificar esta muestra para usarla inmediatamente, asegúrese de cambiar la GUID resaltada a continuación para que coincida con un grupo de AAD. 
+### Modo de pantalla múltiple de pantalla completa de destino de un grupo de Azure AD. 
+Este quiosco implementa un quiosco para los usuarios del grupo de Azure AD, tendrán una exposición habilitada que incluye las 3 aplicaciones: configuración, asistencia remota y centro de comentarios. Para modificar esta muestra para usarla inmediatamente, asegúrese de cambiar la GUID resaltada a continuación para que coincida con un grupo propio de Azure AD. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### El modo de pantalla completa de varias aplicaciones está dirigido a la cuenta de AAD.
-Este quiosco implementa un quiosco para un solo usuario, tiene una exposición habilitada que incluye las 3 aplicaciones: configuración, asistencia remota y centro de opiniones. Para modificar esta muestra para usarla inmediatamente, asegúrese de cambiar la cuenta resaltada a continuación para que coincida con una cuenta de AAD suya. 
+### Modo de pantalla múltiple de la aplicación objetivo de la cuenta de Azure AD.
+Este quiosco implementa un quiosco para un solo usuario, tiene una exposición habilitada que incluye las 3 aplicaciones: configuración, asistencia remota y centro de opiniones. Para modificar esta muestra para usarla inmediatamente, asegúrese de cambiar la cuenta resaltada a continuación para que coincidan con una cuenta de Azure AD. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

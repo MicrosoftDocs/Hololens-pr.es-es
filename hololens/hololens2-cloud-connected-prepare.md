@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0e9222df2c387fab8f61a585d3a7f3966b9ecd31
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196382"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253057"
 ---
 # Preparación: Guía de conexión a la nube
 
-Al final de este artículo, tendrá que configurar AAD, MDM y obtener más información sobre el uso de las cuentas y los requisitos de red de AAD. Esta sección de la guía le ayudará a usted y a su organización a prepararse para implementar HoloLens 2 en la nube y usar el asistente remoto de Dynamics 365. Repasaremos la importancia de cada parte de la infraestructura y también proporcionarle vínculos a las guías para ayudarle a configurar esas piezas según sea necesario.
+Al final de este artículo, habrás configurado Azure AD, MDM, y podrás comprender mejor el uso de las cuentas y los requisitos de red de Azure AD. Esta sección de la guía le ayudará a usted y a su organización a prepararse para implementar HoloLens 2 en la nube y usar el asistente remoto de Dynamics 365. Repasaremos la importancia de cada parte de la infraestructura y también proporcionarle vínculos a las guías para ayudarle a configurar esas piezas según sea necesario.
 
 ## Conceptos básicos de la infraestructura
 
@@ -40,11 +40,11 @@ Azure AD es un servicio de directorio en la nube que proporciona administración
 
 Los empleados solo pueden usar una cuenta para inicializar un dispositivo, por lo que&#39;s es imprescindible que la organización controle qué cuenta está habilitada en primer lugar. La cuenta elegida determinará quién controla el dispositivo e influirá en las funcionalidades de administración.
 
-En esta guía, elegimos que para la [identidad](https://docs.microsoft.com/hololens/hololens-identity) usada, usaremos cuentas de AAD o cuentas de Azure Active Directory. Hay varias ventajas para las cuentas de AAD que queremos usar, como:
+En esta guía, elegimos que para la [identidad](https://docs.microsoft.com/hololens/hololens-identity) usada usamos cuentas de Azure ad o cuentas de Azure Active Directory. Hay varias ventajas para las cuentas de Azure AD que queremos usar, como por ejemplo:
 
-- Los empleados usan su cuenta de Azure AD para registrar el dispositivo en Azure AD e inscribirse automáticamente con la solución MDM&#39;s de la organización (AAD + MDM; requiere Azure AD Premium).
-- Las cuentas de AAD admiten [Inicio de sesión único](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Cuando un usuario inicia sesión en asistencia remota, se reconoce su identidad del usuario de AAD firmado y el usuario inicia sesión en la aplicación para obtener una experiencia optimizada.
-- Las cuentas de AAD tienen [Opciones de autenticación](https://docs.microsoft.com/hololens/hololens-identity) adicionales a través [de Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Además de los usuarios con el inicio de sesión de iris, los usuarios pueden iniciar sesión desde otro dispositivo o usar claves de seguridad de FIDO.
+- Los empleados usan su cuenta de Azure AD para registrar el dispositivo en Azure AD e inscribirse automáticamente con la solución MDM&#39;s de la organización (Azure AD + MDM: requiere Azure AD Premium).
+- Las cuentas de Azure AD son compatibles con [un inicio de sesión único](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Cuando un usuario inicia sesión en asistencia remota, su identidad del usuario de Azure AD firmado se reconocerá y el usuario iniciará sesión en la aplicación para una experiencia optimizada.
+- Las cuentas de Azure AD tienen [Opciones de autenticación](https://docs.microsoft.com/hololens/hololens-identity) adicionales a través [de Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Además de los usuarios con el inicio de sesión de iris, los usuarios pueden iniciar sesión desde otro dispositivo o usar claves de seguridad de FIDO.
 
 ### Administración de dispositivos móviles
 

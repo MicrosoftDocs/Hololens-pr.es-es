@@ -14,34 +14,34 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ba3f826360f999a72e671166af7a19d19ce9c567
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196384"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253187"
 ---
 # Guía de implementación: HoloLens conectado a la nube con asistencia remota (información general)
 
 Esta guía ayuda a los profesionales de ti a planear e implementar dispositivos Microsoft HoloLens 2 a su organización con el objetivo general de tener esos dispositivos conectados en la nube a la organización con el asistente remoto de Dynamics 365 listo para usar. Tenga en cuenta que este es un modelo para las implementaciones de prueba de concepto para su organización en una variedad de casos de uso de HoloLens 2.
 
-Durante la guía, explicaremos cómo inscribir sus dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y comprobar que los usuarios finales pueden usar inmediatamente asistencia remota al configurar el dispositivo. Para hacerlo, repasaremos las importantes partes de infraestructura necesarias para configurar y ejecutar: Cómo lograr la implementación a escala con HoloLens 2.
+Durante la guía, describiremos cómo inscribir sus dispositivos en la administración del dispositivo, aplicar licencias según sea necesario y comprobar que los usuarios finales pueden usar inmediatamente asistencia remota al configurar el dispositivo. Para hacerlo, repasaremos las importantes partes de infraestructura necesarias para configurar y ejecutar: Cómo lograr la implementación a escala con HoloLens 2.
 
 ## En esta guía
 
-Esta guía tiene el objetivo específico de configurar asistencia remota en tu organización en tus dispositivos HoloLens. Cubriremos las Necessities necesarias para alcanzar ese objetivo. Para mantener el foco en este objetivo, se preseleccionarán determinados preparativos y configuraciones a fin de optimizar esta implementación o reducir los elementos necesarios para configurar. Se le informará de estas elecciones y podrá personalizar su implementación según las necesidades de su empresa.
+Esta guía tiene el objetivo específico de configurar asistencia remota en tu organización en tus dispositivos HoloLens. Cubriremos las Necessities necesarias para alcanzar ese objetivo. Para mantener el foco en este objetivo, se preseleccionarán ciertas opciones de preparación y configuración para poder optimizar esta implementación o reducir los elementos necesarios para configurar. Se le informará de estas elecciones y podrá personalizar su implementación según las necesidades de su empresa.
 
-Se trata de una configuración similar a la del [escenario a: implementar en dispositivos de conexión en la nube](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), que es una buena opción para una prueba de implementaciones de concepto que incluirá:
+Se trata de una configuración similar a la del [escenario a: implementar en dispositivos de conexión en la nube](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), que es una buena opción para una prueba de implementaciones de concepto, que incluirá:
 
 - Las redes Wi-Fi suelen estar totalmente abiertas con los servicios de Internet y de la nube
 - Unirse a Azure AD con inscripción automática de MDM: MDM (Intune) administrado
-- Los usuarios inician sesión con su propia cuenta corporativa (AAD)
+- Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
   - Compatible con uno o varios usuarios por dispositivo
 - Se aplican diversos niveles de configuración de bloqueo de dispositivo en función de casos de uso específicos, desde el quiosco de la aplicación totalmente abierta a la única.
 
 ![Escenario de conexión a la nube](./images/cloud-connected-deployment-chart.png)
 
-En esta guía no se aplicarán restricciones ni configuraciones de dispositivo adicionales, pero le recomendamos que explore dichas opciones después de finalizar.
+En esta guía no se aplicarán otras restricciones ni configuraciones de dispositivo, pero le recomendamos que explore dichas opciones después de finalizar.
 
 ## Obtener más información sobre asistencia remota
 
@@ -55,8 +55,8 @@ Preparar
 
 > [!div class="checklist"]
 > - [Más información sobre los conceptos básicos de infraestructura para dispositivos HoloLens 2.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Obtenga más información sobre AAD y configure uno si no&#39;lo tiene.](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [Obtenga información sobre la administración de identidades y sobre cómo configurar mejor las cuentas de AAD.](hololens2-cloud-connected-prepare.md#identity-management)
+> - [Obtenga más información sobre Azure AD y configure uno si no&#39;lo tiene.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Obtén más información sobre la administración de identidades y sobre cómo configurar mejor las cuentas de Azure AD.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [Obtenga más información sobre MDM y configúrelo con Intune si no&#39;ya hay una lista.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Obtenga más información sobre los requisitos de red de asistencia remota.](hololens2-cloud-connected-prepare.md#network)
 > - [Opcionalmente: VPN para conectarse a los recursos de la organización](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
@@ -65,7 +65,7 @@ Volver
 
 > [!div class="checklist"]
 > - [Cómo crear usuarios y grupos.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [Cómo configurar la inscripción automática en AAD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [Cómo configurar la inscripción automática en Azure AD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
 > - [Cómo asignar las licencias de la aplicación.](hololens2-cloud-connected-configure.md#application-licenses)
 
 Implement

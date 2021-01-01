@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195593"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253217"
 ---
 # Administración y implementación empresarial de HoloLens 2
 
@@ -140,7 +140,7 @@ Para obtener más información sobre cómo configurar HoloLens 2 en modo de pant
 
 ### Inscripción de dispositivo MDM
 
-Para las implementaciones empresariales, se recomienda [inscribir dispositivos](https://docs.microsoft.com/hololens/hololens-enroll-mdm) en MDM como dispositivos empresariales solo con la inscripción automática de Azure ad y la inscripción automática de MDM (AAD + MDM). Esto requiere Azure AD Premium y admite la inscripción automática a varios proveedores de MDM, incluido Intune.
+Para las implementaciones empresariales, se recomienda [inscribir dispositivos](https://docs.microsoft.com/hololens/hololens-enroll-mdm) en MDM como dispositivos empresariales solo con la inscripción automática de Azure ad y la inscripción automática de MDM (Azure ad + MDM). Esto requiere Azure AD Premium y admite la inscripción automática a varios proveedores de MDM, incluido Intune.
 
 Obtenga más información sobre el método de inscripción autoimplementado [AutoPilot](https://docs.microsoft.com/hololens/hololens2-autopilot).
 

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7ef5fd06f4d77f541047a934056cffd863962c73
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176872"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252791"
 ---
 # Preguntas frecuentes sobre HoloLens 2 Development Edition
 
@@ -29,7 +29,7 @@ ms.locfileid: "11176872"
 
 La edición de HoloLens 2 Development incluye una HoloLens 2, $500 en crédito de Azure, una prueba de 3 meses de Unity Pro y una prueba de tres meses para el complemento de Pixyz.
 
-### ¿Cuál es la diferencia entre la edición de HoloLens 2 y HoloLens 2? 
+### ¿Cuál es la diferencia entre la edición de HoloLens 2 y HoloLens 2?
 
 Solo puedes usar la edición de desarrollo de HoloLens 2 para compilaciones internas de las aplicaciones empresariales para usarlas en relación con HoloLens 2 (edición comercial) en una configuración de producción. Como parte de la compra de la edición de desarrollo, Microsoft puede, a su exclusivo criterio, ofrecerle ciertos derechos identificados durante el proceso de pago, como el derecho de canjear determinados créditos por descuento o el acceso de prueba a determinados servicios o herramientas de Microsoft o de terceros por un período limitado. [Obtén más información](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
 
@@ -43,13 +43,13 @@ El crédito de descuento o el acceso de prueba se enviará al correo electrónic
 
 ### ¿Puedo "actualizar" mi dispositivo HoloLens 2 (solo dispositivo) a HoloLens 2 Development Edition para obtener los créditos de la versión de prueba?
 
-No, no ofrecemos planes de transferencia de dispositivos. No es posible transferir desde ninguna edición a ninguna otra edición. 
+No, no ofrecemos planes de transferencia de dispositivos. No es posible transferir desde ninguna edición a ninguna otra edición.
 
-### ¿Qué es Unity Pro? 
+### ¿Qué es Unity Pro?
 
 Unity Pro es una plataforma 3D en tiempo real para PYMES y estudios de tamaño mediano. Está diseñado para equipos con una combinación de habilidades técnicas y no técnicas. [Obtén más información](https://store.unity.com/products/unity-pro)
 
-### ¿Qué es el complemento de Pixyz? 
+### ¿Qué es el complemento de Pixyz?
 
 El complemento de Pixyz Lee y convierte casi cualquier formato, optimiza y coloca en Unity, y le permite proporcionar activos listos para usar para aplicaciones en tiempo real. [Obtén más información](https://unity.com/products/pixyz)
 
@@ -59,7 +59,7 @@ La financiación para HoloLens 2 Development Edition estará disponible a princi
 
 ### ¿Con quién debo comunicarme con preguntas sobre mis derechos de uso de HoloLens 2 Development Edition?
 
-Si tienes preguntas relacionadas con los derechos, comunícate con el especialista de ventas en 866-425-4709, de lunes a viernes, de 6:00 a 18:00, PST.
+Con las preguntas relacionadas con los derechos, póngase en contacto con su especialista de ventas en 866-425-4709, de lunes a viernes, de 6:00 a 18:00, PST.
 
 ### ¿Mi empresa puede comprar varios dispositivos de HoloLens 2 Development Edition? 
 
@@ -117,7 +117,7 @@ Obtén asistencia [aquí.](https://support.serviceshub.microsoft.com/supportforb
 
 ### ¿Qué se incluye con mi versión de prueba de Unity?
 
-Una prueba de 3 meses por mes para Unity Pro permite acceder a la solución completa de Unity&#39;s para que los profesionales puedan crear, operar y monetizar. La prueba de Unity Pro relacionada no tiene fecha límite para canjear.
+Un período de prueba de tres meses para el mes en el calendario permite obtener acceso a la solución completa de los profesionales de Unity&#39;s para crear, operar y monetizar. La prueba de Unity Pro relacionada no tiene fecha límite para canjear.
 
 Esta oferta es para los nuevos usuarios y no se aplica a las suscripciones de Unity Pro establecidas. La prueba de Unity Pro puede estar sujeta a condiciones adicionales que estarán disponibles en el canje. Revise [ &amp; las condiciones de las](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) condiciones vigentes y la [política de privacidad](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
@@ -127,8 +127,8 @@ Instrucciones para canjear
 
 1. Visita id.unity.com
 2. Inicia sesión con tu identificador de Unity o crea una cuenta.
-3. Haga clic en &#39;canjear un código de producto&#39;
-4. Escriba el código de producto y haga clic en &#39;canjear un código de producto&#39;
+3. Seleccione &#39;canjear un código de producto&#39;
+4. Escriba el código de producto y seleccione &#39;canjear un código de producto&#39;
 
 Para obtener [más información](https://docs.microsoft.com/hololens/hololens2-options?tabs=device) , visita la documentación de HoloLens 2 Development Edition
 
@@ -138,13 +138,13 @@ Sí, puedes crear aplicaciones con todas las versiones compatibles de Unity.
 
 ### ¿Cómo puedo ponerme en contacto con el soporte de Unity?
 
-Para obtener ayuda con las preguntas sobre el identificador, la cuenta, la organización y el plan (s) de Unity, visite support.unity3d.com.
+Para obtener ayuda con las preguntas sobre el identificador, la cuenta, la organización (s) y las suscripciones de Unity, visite support.unity3d.com.
 
 ## Pixyz
 
 ### ¿Qué se incluye con la prueba de mi complemento de Pixyz?
 
-Una prueba de 3 meses por Pixyz de complementos de 3 calendarios que permite acceder a Pixyz para crear activos listos para usar con mallas teseladas perfectas, recuento de polígonos limitados y UV automático. La prueba del complemento de Pixyz relacionado no tiene una fecha límite para canjear.
+Una prueba de tres meses por Pixyz de un complemento de tres calendarios que permite acceder a Pixyz para crear activos listos para usar con mallas teseladas perfectas, recuento de polígonos limitados y UV automático. La prueba del complemento de Pixyz relacionado no tiene una fecha límite para canjear.
 
 Esta oferta es para usuarios nuevos y no se puede apilar en planes de Pixyz establecidos. El complemento Pixyz puede estar sujeto a condiciones adicionales que se harán al canje. Revise [ &amp; las condiciones de las](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) condiciones vigentes y la [política de privacidad](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
