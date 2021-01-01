@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b0ed266389ccc5a21117a604a6eb0abd214d4d1
-ms.sourcegitcommit: 1793f53f9e1cc63ac40edc09e65bb4beb80a4575
+ms.openlocfilehash: 3e06540dd7dca8892cd69abaf9a318d46ca0f3f2
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093252"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253147"
 ---
 # Inscripción para la empresa de dispositivos HoloLens en un entorno Wi-Fi restringido de direcciones MAC
 
@@ -41,13 +41,13 @@ Los principales desafíos son:
 
 ## Soluciones
 
-Hay varias formas de mejorar esta situación, en función de la infraestructura disponible en el entorno.
+Existen muchas maneras de mejorar esta situación, en función de la infraestructura disponible en el entorno.
 
 | Solución | Ventajas | Requisitos |
 | --- | --- | --- |
 | Paquete de aprovisionamiento con adaptador Ethernet | Mejora la experiencia de OOBE y permite obtener una experiencia más rápida en lo técnico. | Las HubTechnician USB compatibles con HoloLens aún deberán interactuar con el dispositivo para la captura del MAC y la finalización del OOBE. |
-| Piloto automático con registro de Intune por Ethernet | La conexión y el registro del dispositivo en el entorno del cliente en un solo paso puede completarse sin interactuar con el dispositivo. | Intune habilitado para el adaptador de red compatible con TenantHoloLens USB-C compatible con el cliente AAD |
-| Información automatizada de las direcciones MAC | Una vez que los dispositivos hayan sido registrados en el espacio empresarial de Intune, escriba el reporte de la dirección MAC al técnico. | Intune PowerShell Commandlets |
+| Piloto automático con registro de Intune por Ethernet | La conexión y el registro del dispositivo en el entorno del cliente en un solo paso puede completarse sin interactuar con el dispositivo. | Intune habilitado para el adaptador de red compatible con TenantHoloLens USB-C compatible con el cliente Azure AD |
+| Información automatizada de las direcciones MAC | Una vez que los dispositivos hayan sido registrados en el espacio empresarial de Intune, escriba el reporte de la dirección MAC al técnico. | Intune PowerShell Commandlet |
 
 ## Paquete de aprovisionamiento con adaptador Ethernet
 
@@ -60,7 +60,7 @@ Hay varias formas de mejorar esta situación, en función de la infraestructura 
 - Contenedor USB-C compatible con HoloLens que contiene un adaptador Ethernet: cualquier concentrador que no &#39; requiera que se instalen controladores adicionales o instalaciones de aplicaciones debe ser apropiado.
 - Paquete de aprovisionamiento que contiene lo siguiente:
   - Contiene información de red inalámbrica y un certificado
-  - , opcionalmente, contiene información de inscripción para la organización, &#39; Azure AD
+  - Puede contener información de inscripción para la Azure AD de la organización.
   - Contiene otras opciones de configuración de aprovisionamiento necesarias
 
 ### Proceso
@@ -89,7 +89,7 @@ Si el dispositivo tiene una compilación de sistema operativo antes de la [Actua
 
 De esta forma, con un &quot;simple toque &quot;del dispositivo, se puede aplicar el paquete de aprovisionamiento correcto y recoger la dirección MAC del dispositivo. [Los paquetes de aprovisionamiento se pueden ser creados siguiendo las instrucciones aquí.](https://docs.microsoft.com/hololens/hololens-provisioning)
 
-## Piloto automático con inscripción en Intune
+## Autopiloto con inscripción de Intune
 
 ### Requisitos
 
@@ -125,14 +125,14 @@ Los requisitos previos adicionales serán necesarios como se indica a continuaci
 
 ### Ventajas
 
-Esto permitirá una experiencia de implementación &quot;sin contacto&quot; para el técnico, con el dispositivo siendo capaz de ir de la caja a inscribirse en AAD e Intune sin que el técnico tenga que llevar el dispositivo o interactuar manualmente con el entorno del HoloLens.
+Esto permitirá una experiencia de implementación &quot;sin contacto&quot; para el técnico, en la que el dispositivo pueda ir de la caja a inscribirse en Azure AD e Intune sin que el técnico tenga que llevar el dispositivo o interactuar manualmente con el entorno del HoloLens.
 
 ## Informar de las direcciones MAC al técnico
 
 ### Requisitos
 
-- Autorización de &quot;Intune Graph Powershell&quot; contra el cliente Inquilino
-- Instalación de Intune Graph PowerShell en el equipo de técnicos.
+- Autorización del &quot;gráfico de Intune PowerShell&quot; para el espacio empresarial del cliente
+- Instalación de la PowerShell Graph de Intune en el equipo de técnicos.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Acceso de lectura a los &quot;de dispositivos administrados&quot;de elementos de Intune. (Operador de asistencia o superior o un rol personalizado)
 

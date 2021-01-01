@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009518"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252977"
 ---
 # Limitar el uso de contraseñas
 
@@ -52,7 +52,7 @@ Cuando se genera una credencial de Windows Hello, se establece una relación de 
 
 Para obtener más información, consulte los temas siguientes:
 
-  ![Información de inicio de sesión en Winows Hello](images/security-hello-sign-in.png)
+  ![Inicio de sesión en Windows Hello](images/security-hello-sign-in.png)
   
 En el gráfico presentado más arriba, tenga en cuenta que nonce significa "número una vez" y es un número aleatorio o semialeatorio. Una vez configuradas las credenciales biométricas o el PIN de Windows Hello, nunca dejan el dispositivo en el que se aprovisionaron. Aunque al usuario le roben el PIN de Windows Hello, por ejemplo, a través de un ataque de suplantación de identidad (phishing), [será inútil sin el dispositivo físico del usuario](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password). 
 
@@ -62,17 +62,17 @@ Si la autenticación con el iris produce un error, se utiliza el PIN. Para confi
 
 ## Inicio de sesión único con el administrador de cuentas web 
 
-El inicio de sesión único (SSO) permite que los usuarios sin contraseña inicien sesión en el dispositivo, usando la cuenta personal del usuario o su cuenta profesional o educativa. Con el SSO el usuario recibe autorización automáticamente en todas las aplicaciones y servicios integrados a través de las [API del administrador de cuentas web](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041).
+El inicio de sesión único (SSO) permite que los usuarios sin contraseña inicien sesión en el dispositivo, usando la cuenta personal del usuario o su cuenta profesional o educativa. Con el SSO el usuario recibe autorización automáticamente en todas las aplicaciones y servicios integrados a través de las [API del administrador de cuentas web](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 Una vez que se ha agregado una identidad a través de una aplicación, puede, con el consentimiento del usuario, estar disponible para todas las aplicaciones y servicios mediante la integración a nivel de sistema. Esto reduce significativamente la carga de inicio de sesión de la aplicación y proporciona a los usuarios una experiencia de identidad ininterrumpida.
 
 Para obtener más información sobre cómo implementar las API del administrador de cuentas web, vaya a [Implementar las API del administrador de cuentas web](https://docs.microsoft.com/windows/uwp/security/web-account-manager).
 
-  ![Información de inicio de sesión en Winows Hello](images/security-api-img.png)
+  ![API de seguridad](images/security-api-img.png)
   
 Para los conjuntos de aplicaciones con requisitos de autenticación especializados, el marco del administrador de cuentas web (WAM) se puede ampliar a los proveedores de identidades personalizadas. Los usuarios pueden descargar el proveedor de identidades personalizadas como una aplicación para la Plataforma universal de Windows (UWP) en la tienda de Microsoft para habilitar el SSO en otras aplicaciones integradas con ese proveedor de identidades. 
 
-Para obtener más información sobre cómo implementar proveedores de identidades de WAM personalizadas, vea la [Referencia de API de identidades WAM personalizadas](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041).
+Para obtener más información sobre cómo implementar proveedores de identidades de WAM personalizadas, vea la [Referencia de API de identidades WAM personalizadas](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 ## Inicio de sesión en Windows Hello y FIDO2 con WebAuthn
 
@@ -83,7 +83,7 @@ Con HoloLens 2 es posible usar credenciales de usuario sin contraseña (como las
 
 Al igual que con Windows Hello, cuando el usuario crea y registra credenciales de FIDO2, el dispositivo (HoloLens 2 o la clave de seguridad de FIDO2) genera una clave pública y privada en el dispositivo. La clave privada se almacena de forma segura en el dispositivo y solo se puede usar después de que se desbloquee con un gesto local, como una credencial biométrica o un PIN. Cuando se almacena la clave privada, la clave pública se envía al sistema de la cuenta de Microsoft en la nube y se registra con la cuenta de usuario asociada.
 
-Después de iniciar sesión con una cuenta MSA y AAD, el sistema envía una variable de datos o número generado al dispositivo HoloLens 2 o FIDO2. El dispositivo o HoloLens 2 usa la clave privada para firmar la identificación. La identificación firmada y los metadatos se envían al sistema de la cuenta de Microsoft y se contrastan con la clave pública.
+Después de iniciar sesión con una cuenta de MSA y Azure AD, el sistema envía un número generado o variable de datos al dispositivo HoloLens 2 o FIDO2. El dispositivo o HoloLens 2 usa la clave privada para firmar la identificación. La identificación firmada y los metadatos se envían al sistema de la cuenta de Microsoft y se contrastan con la clave pública.
 
 Los dispositivos de Windows Hello y FIDO2 implementan credenciales basadas en el dispositivo HoloLens, específicamente el enclave seguro del Módulo de plataforma segura integrado. El enclave TPM almacena la clave privada y necesita una credencial biométrica o un PIN para desbloquearla. De forma similar, una clave de seguridad de FIDO2 es un pequeño dispositivo externo con un enclave seguro integrado que almacena la clave privada y requiere una credencial biométrica o un PIN para desbloquearla.
 
@@ -91,7 +91,7 @@ Ambas opciones ofrecen autenticación en dos fases en un único paso y requieren
 
   ![FIDO img](images/security-fido2-whfb.png)
 
-MSA y AAD se encuentran entre los primeros servicios de confianza que admiten la autenticación sin contraseña a través de la implementación de WebAuthn. 
+MSA y Azure AD están entre los primeros miembros de confianza en admitir una autenticación sin contraseña por medio de WebAuthn. 
 
 Para obtener más información sobre el uso de WebAuthn con aplicaciones o SDK, vaya a [API de WebAuthn para la autenticación sin contraseña en Windows 10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
 

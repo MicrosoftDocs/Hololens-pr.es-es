@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
-ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
+ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10882990"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253177"
 ---
 # Características comerciales
 
@@ -64,7 +64,7 @@ HoloLens (1.ª generación) se incluía con dos opciones de licencia, la licenci
 |Microsoft Store (consumidor) |Consumidor |Filtrar mediante MDM |Filtrar mediante MDM |
 |[Portal de la Store para empresas](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**Seguridad e identidad** | | | |
-|Iniciar sesión con la cuenta de Azure Active Directory (AAD) |✔️ |✔️ |✔️ |
+|Iniciar sesión con la cuenta de Azure Active Directory (Azure AD) |✔️ |✔️ |✔️ |
 |Iniciar sesión con una cuenta de Microsoft (MSA) |✔️ |✔️ |✔️ |
 |Credenciales de próxima generación con desbloqueo de PIN |✔️ |✔️ |✔️ |
 |[Arranque seguro](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |

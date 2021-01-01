@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
-ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
+ms.openlocfilehash: 23a850022a686389669e96e987274cc6481b936e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "11205772"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253247"
 ---
 # Windows Autopilot para HoloLens 2
 
@@ -255,7 +255,7 @@ Una vez que el nodo RequireNetworkInOOBE de TenantLockdown CSP se active o desac
 
 Una vez que el nodo RequireNetworkInOOBE de TenantLockdown de CSP se active o desactive en HoloLens 2, no se permitirán las siguientes operaciones en la configuración rápida: 
 - Crear usuarios locales mediante aprovisionamiento en el tiempo de ejecución 
-- Realizar una operación de replica de AAD mediante aprovisionamiento en el tiempo de ejecución 
+- Realizar una operación de replica de Azure AD mediante aprovisionamiento en el tiempo de ejecución 
 - Seleccionar quién es el propietario del dispositivo en la experiencia de la configuración rápida 
 
 #### ¿Cómo configurarlo con Intune? 

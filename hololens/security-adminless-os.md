@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102319"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253087"
 ---
 # Sistema operativo sin administrador
 
@@ -34,9 +34,9 @@ Los componentes de Windows también pueden usar el espacio aislado de AppContain
 
 Por último, la ejecución de operaciones específicas para todo el dispositivo, como unirse al dispositivo a un inquilino o a la administración de usuarios, solo se permite para "propietarios de dispositivos". Este grupo lo rellenan los usuarios del dispositivo mediante uno de los siguientes pasos:
   * El primer usuario del dispositivo siempre se designa como propietario. 
-    * La única excepción a esta regla es que si el dispositivo se une a la AAD, el usuario que realiza la unión se convierte en el propietario del dispositivo. Esto es aplicable, por ejemplo, si un dispositivo se une a la AAD con un piloto automático, en cuyo caso el primer usuario que se registre en el dispositivo no se unirá a la AAD y, por lo tanto, no se convertirá en propietario del dispositivo. Para comprender mejor a quién se hace propietario de un dispositivo en un dispositivo unido a la AAD, véase [ la documentación "Asignar administrador local" ](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)(pero lea "administrador local" como "propietario del dispositivo", ya que el administrador no existe en el HoloLens).
-  * Cuando un usuario se promueve para ser un propietario de la UX de configuración por otro propietario en el dispositivo.
-  * Si el propietario del dispositivo no se encuentra disponible (por ejemplo, se retira de la empresa) y el dispositivo se une a la AAD, el administrador del inquilino puede cambiar el propietario del dispositivo a un nuevo usuario en el Portal Azure.
-En el dispositivo, los administradores globales de un inquilino de Azure AD se registran implícitamente como propietarios sin requerir ninguno de los pasos anteriores. 
+    * La única excepción a esta regla es que si el dispositivo se une a Azure AD, el usuario que realiza la unión se convierte en el propietario del dispositivo. Esto es aplicable, por ejemplo, si un dispositivo se une a la Azure AD con un piloto automático, en cuyo caso el primer usuario que se registre en el dispositivo no se unirá a la Azure AD y, por lo tanto, no se convertirá en propietario del dispositivo. Para comprender mejor a quién se hace propietario de un dispositivo en un dispositivo unido a Azure AD, véase [ la documentación "Asignar administrador local" ](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)(pero lea "administrador local" como "propietario del dispositivo", ya que el administrador no existe en el HoloLens).
+  * Cuando un usuario se convierte en propietario de la UX de configuración por obra de otro propietario en el dispositivo.
+  * Si el propietario del dispositivo no se encuentra disponible (por ejemplo, se retira de la empresa) y el dispositivo se une a Azure AD, el administrador del espacio empresarial puede cambiar el propietario del dispositivo a un nuevo usuario en el Portal Azure.
+En el dispositivo, los administradores globales de un espacio empresarial de Azure AD se registran implícitamente como propietarios sin requerir ninguno de los pasos anteriores. 
 
 Los administradores de TI podrán gestionar el acceso a las aplicaciones a través de las [Directivas](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) de privacidad 
