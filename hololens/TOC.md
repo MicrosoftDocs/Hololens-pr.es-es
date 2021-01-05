@@ -118,4 +118,6 @@
 ## [Versión preliminar de Insider para Microsoft HoloLens](hololens-insider.md)
 ## [Notas de la versión de HoloLens (1ª gen.)](hololens1-release-notes.md)
 
-# [Facilítanos tus comentarios](hololens-feedback.md)
+# [Facilítanos tus comentarios]
+## [Enviar comentarios mediante el Centro de opiniones](hololens-feedback.md)
+## [Guía de colaboración en documentos de HoloLens](contributing.md)
