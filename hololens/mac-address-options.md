@@ -26,7 +26,7 @@ Este documento describirá un escenario común que hemos identificado dentro de 
 
 ## Ejemplo de escenario
 
-Un gran número de clientes en entornos seguros tienen restricciones en sus redes inalámbricas o alámbricas que solo permitirán que los dispositivos aprobados (basados en direcciones MAC) sean conectados con éxito (ya sea con filtrado de direcciones MAC en un punto de acceso inalámbrico o en un servidor DHCP). Además, algunas redes inalámbricas se pueden proteger con PEAP, lo que requiere que se aplique un certificado al dispositivo antes de poder autenticar correctamente la red inalámbrica.
+Un gran número de clientes en entornos seguros tienen restricciones en sus redes inalámbricas o alámbricas que solo permitirán que los dispositivos aprobados (basados en direcciones MAC) se conecten correctamente (ya sea con filtrado de direcciones MAC en un punto de acceso inalámbrico o en un servidor DHCP). Además, algunas redes inalámbricas se pueden proteger con PEAP, lo que requiere que se aplique un certificado al dispositivo antes de poder autenticar correctamente la red inalámbrica.
 
 Para los dispositivos HoloLens pueden surgir dos problemas clave, que pueden ocasionar retrasos y trabajo manual al unirse de los dispositivos HoloLens a la red.
 
@@ -47,7 +47,7 @@ Existen muchas maneras de mejorar esta situación, en función de la infraestruc
 | --- | --- | --- |
 | Paquete de aprovisionamiento con adaptador Ethernet | Mejora la experiencia de OOBE y permite obtener una experiencia más rápida en lo técnico. | Las HubTechnician USB compatibles con HoloLens aún deberán interactuar con el dispositivo para la captura del MAC y la finalización del OOBE. |
 | Piloto automático con registro de Intune por Ethernet | La conexión y el registro del dispositivo en el entorno del cliente en un solo paso puede completarse sin interactuar con el dispositivo. | Intune habilitado para el adaptador de red compatible con TenantHoloLens USB-C compatible con el cliente Azure AD |
-| Información automatizada de las direcciones MAC | Una vez que los dispositivos hayan sido registrados en el espacio empresarial de Intune, escriba el reporte de la dirección MAC al técnico. | Intune PowerShell Commandlet |
+| Información automatizada de las direcciones MAC | Una vez que los dispositivos hayan sido registrados en el espacio empresarial de Intune, escriba el reporte de la dirección MAC al técnico. | Commandlets de Intune PowerShell |
 
 ## Paquete de aprovisionamiento con adaptador Ethernet
 
@@ -60,7 +60,7 @@ Existen muchas maneras de mejorar esta situación, en función de la infraestruc
 - Contenedor USB-C compatible con HoloLens que contiene un adaptador Ethernet: cualquier concentrador que no &#39; requiera que se instalen controladores adicionales o instalaciones de aplicaciones debe ser apropiado.
 - Paquete de aprovisionamiento que contiene lo siguiente:
   - Contiene información de red inalámbrica y un certificado
-  - Puede contener información de inscripción para la Azure AD de la organización.
+  - Puede contener información de inscripción para Azure AD de la organización.
   - Contiene otras opciones de configuración de aprovisionamiento necesarias
 
 ### Proceso
@@ -125,14 +125,14 @@ Los requisitos previos adicionales serán necesarios como se indica a continuaci
 
 ### Ventajas
 
-Esto permitirá una experiencia de implementación &quot;sin contacto&quot; para el técnico, en la que el dispositivo pueda ir de la caja a inscribirse en Azure AD e Intune sin que el técnico tenga que llevar el dispositivo o interactuar manualmente con el entorno del HoloLens.
+Esto permitirá una experiencia de implementación &quot;sin contacto&quot; para el técnico, en la que el dispositivo pueda inscribirse directamente en Azure AD e Intune sin que el técnico tenga que llevar el dispositivo o interactuar manualmente con el entorno del HoloLens.
 
 ## Informar de las direcciones MAC al técnico
 
 ### Requisitos
 
-- Autorización del &quot;gráfico de Intune PowerShell&quot; para el espacio empresarial del cliente
-- Instalación de la PowerShell Graph de Intune en el equipo de técnicos.
+- Autorización de &quot;Intune Graph Powershell&quot; en el espacio empresarial del cliente
+- Instalación de Intune Graph Powershell en el equipo del técnico.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Acceso de lectura a los &quot;de dispositivos administrados&quot;de elementos de Intune. (Operador de asistencia o superior o un rol personalizado)
 

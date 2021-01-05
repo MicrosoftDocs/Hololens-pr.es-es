@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195603"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253586"
 ---
 # Reiniciar, restablecer o recuperar HoloLens 2
 
 ## Cargar el dispositivo
 
-Antes de iniciar un procedimiento de resolución de problemas, asegúrese de que la carga de la batería de su dispositivo se sitúe entre el 20 y 40% de capacidad, si es posible. Utilice el cargador y los cables USB tipo C que vienen con el dispositivo HoloLens 2. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18W de potencia (9V a 2A). Si dichos accesorios no están disponibles, asegúrese de que el cargador disponible admita al menos 15 vatios de potencia.
+Antes de iniciar un procedimiento de resolución de problemas, asegúrese de que la carga de la batería de su dispositivo se sitúe entre el 20 y 40% de capacidad, si es posible. Utilice el cargador y los cables USB tipo C que vienen con el dispositivo HoloLens 2. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18W de potencia (9V a 2A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera. Si dichos accesorios no están disponibles, asegúrate de que el cargador disponible admita al menos 15 vatios de potencia.
 
 > [!NOTE]
 > Si es posible, evite usar un PC para cargar el dispositivo por USB, pues implica una carga lenta.
@@ -138,11 +138,11 @@ Siga estos pasos para habilitar la ruta de acceso de implementación:
 1. Cambie el _*Tipo de licencia** a **_sin conexión_*_ y seleccione _*Administrar**.
 1. En **Descargar el paquete para uso sin conexión**, seleccione el segundo botón azul de **Descargar**. Asegúrese de que la extensión del archivo sea *.appxbundle*.
 
-    - En esta etapa, si el PC de escritorio tiene acceso a Internet, haga doble clic en el paquete para instalar la aplicación.
+    - En esta etapa, si el PC de escritorio tiene acceso a Internet, haz doble clic en el paquete para instalar la aplicación.
 
 
-    - Si el PC de destino no tiene conectividad a Internet, siga estos pasos: 
-       1. Seleccione la licencia sin codificar y, a continuación, seleccione **Generar licencia**.
+    - Si el PC de destino no tiene conectividad a Internet, sigue estos pasos: 
+       1. Selecciona la licencia sin codificar y, a continuación, selecciona **Generar licencia**.
        2. En **Marcos necesarios**, seleccione **Descargar**.
        3. Use DISM para aplicar el paquete con la dependencia y la licencia. Desde un símbolo del sistema de administrador, ejecute el siguiente comando:
 
