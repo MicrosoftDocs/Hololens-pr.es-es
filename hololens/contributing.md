@@ -5,12 +5,13 @@ author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
-ms.openlocfilehash: d17d9e30ca3699a7bd6c69b75043c6974a2bde1f
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.prod: hololens
+ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
+ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253695"
+ms.locfileid: "11253868"
 ---
 # Contribución a la documentación de HoloLens
 
@@ -51,19 +52,26 @@ El sistema de publicación está vinculado a GitHub, por lo que estos pasos son 
 Use el siguiente flujo de trabajo para hacer actualizaciones en un *artículo existente* a través de github en un explorador Web:
 
 1. Vaya al artículo que desea editar en la carpeta "realidad mixta" docs ".
+
 2. En la parte superior derecha, haga clic en el botón Editar (icono de lápiz) para bifurcar automáticamente una rama descartable fuera de la rama "patrón".
 
    ![Editar un artículo.](images/editpage.png)
+   
 3. Edite el contenido del artículo según las ["nociones básicas de Markdown"](#markdown-basics).
+
 4. Actualizar metadatos en la parte superior de cada artículo:
+
    * **título**: título de página que aparece en la pestaña del explorador cuando se está viendo el artículo. Los títulos de página se usan para SEO e indización, así que no cambie el título a menos que sea necesario (aunque es menos importante antes de que la documentación sea pública).
    * **Descripción**: escriba una breve descripción del contenido del artículo, que mejora la SEO y la detección.
    * **autor**: si es el propietario principal de la página, agregue aquí su alias de github.
    * **MS. Author**: si es el propietario principal de la página, agregue su alias de Microsoft aquí (no necesita @microsoft. com, solo el alias).
    * **MS. fecha**: actualice la fecha Si va a agregar contenido principal a la página, pero no para soluciones como aclaración, formato, gramática o ortografía.
    * **palabras clave**: ayuda de palabras clave en SEO (optimización del motor de búsqueda). Agregue palabras clave, separadas por una coma y un espacio, que sean específicas de su artículo, pero sin signos de puntuación después de la última palabra clave de la lista. No es necesario agregar palabras clave globales que se apliquen a todos los artículos, puesto que se administran en otro lugar. 
+   
 5. Cuando haya completado las ediciones de los artículos, desplácese hacia abajo y seleccione **proponer cambio de archivo**.
+
 6. En la página siguiente, seleccione **crear solicitud de incorporación de inserción** para fusionar la rama creada automáticamente en ' maestra '.
+
 7. Repita los pasos anteriores para el siguiente artículo que desea editar.
 
 ## Cambiar el nombre o eliminar un artículo existente
@@ -83,7 +91,9 @@ Para agregar un redireccionamiento a .openpublishing.redirection.js, agregue una
 ```
 
 - `source_path`Es la ruta de acceso relativa al repositorio del artículo antiguo que va a quitar. Asegúrese de que la ruta comienza por `mixed-reality-docs` y termina en `.md` .
+
 - `redirect_url`Es la dirección URL relativa pública del artículo anterior al nuevo artículo. Asegúrese de que esta dirección URL **no** contiene `mixed-reality-docs` o `.md` , como hace referencia a la dirección URL pública y no a la ruta del repositorio. Se permite la vinculación a una sección en el nuevo artículo mediante `#section` . También puede usar una ruta de acceso absoluta a otro sitio, si es necesario.
+
 - `redirect_document_id` indica si desea mantener el identificador de documento del archivo anterior. El valor predeterminado es `false` . Use `true` esta si desea conservar el `ms.documentid` valor de atributo del artículo redirigido. Si conserva el identificador de documento, los datos, como las vistas de página y las clasificaciones, se transferirán al artículo de destino. Haga esto si el redireccionamiento es principalmente un cambio de nombre y no un puntero a un artículo diferente que solo cubre parte del mismo contenido.
 
 Si agrega un redireccionamiento, asegúrese de eliminar también el archivo antiguo.
@@ -95,10 +105,12 @@ Use el siguiente flujo de trabajo para *crear artículos nuevos* en el repositor
 1. Crea una bifurcación fuera de la rama de MicrosoftDocs/"patrón" de realidad mixta (con el botón de la **horquilla** en la parte superior derecha).
 
    ![Bifurcar la rama principal.](images/forkbranch.png)
+   
 2. En la carpeta "realidad mixta" docs ", seleccione **crear nuevo archivo** en la parte superior derecha.
+
 3. Crear un nombre de página para el artículo (use guiones en lugar de espacios y no use signos de puntuación o apóstrofos) y anexe ". MD"
 
-   ![Asigne un nombre a la página nueva.](images/newpagetitle.PNG)
+   ![Asigne un nombre a la página nueva.](images/newpagetitle.png)
    
    >[!IMPORTANT]
    >Asegúrese de crear el nuevo artículo desde la carpeta "realidad mixta-documentos". Para confirmarlo, busque "/Mixed-Reality-docs/" en la nueva línea nombre de archivo.
@@ -118,19 +130,22 @@ Use el siguiente flujo de trabajo para *crear artículos nuevos* en el repositor
    ```
 
 5. Rellene los campos de metadatos pertinentes según las instrucciones de la [sección anterior](#editing-an-existing-article).
+
 6. Escribir contenido de artículos con [conceptos básicos de Markdown](#markdown-basics).
+
 7. Agregue una `## See also` sección en la parte inferior del artículo con vínculos a otros artículos relevantes.
+
 8. Cuando haya terminado, seleccione **confirmar nuevo archivo**.
+
 9. Selecciona **New pull request** y combina la rama ' Master ' de la horquilla en MicrosoftDocs/mixed-reality ' Master ' (asegúrate de que la flecha apunte de la manera correcta).
 
-   ![Crear una solicitud de incorporación de extracción desde la horquilla en MicrosoftDocs/Mixed-Reality](images/pr_to_master.PNG)
+   ![Crear una solicitud de incorporación de extracción desde la horquilla en MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
 ## Conceptos básicos de Markdown
 
 Los recursos siguientes le ayudarán a obtener información sobre cómo editar la documentación con el idioma de Markdown:
 
 - [Conceptos básicos de Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Póster de referencia de Markdown a un vistazo](images/MarkdownPoster.pdf)
 - [Recursos adicionales para escribir Markdown para docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### Agregar tablas
@@ -200,26 +215,32 @@ Use el siguiente flujo de trabajo para realizar cambios en la documentación con
 >Todas las instrucciones para [Editar](#editing-an-existing-article) y [crear](#creating-a-new-article) artículos, y los [conceptos básicos de la edición de Markdown](#markdown-basics), de arriba, se aplican también al usar código de Visual Studio.
 
 1. Asegúrese de que la horquilla clonada está actualizada con el repositorio oficial.
+
    1. En un explorador Web, cree una solicitud de incorporación de cambios para sincronizar los cambios recientes de otros colaboradores en MicrosoftDocs/mixed-reality ' patrón ' a la horquilla (Asegúrese de que la flecha esté apuntando de la manera correcta).
       
-      ![Sincronizar los cambios de MicrosoftDocs/Mixed-Reality con la horquilla](images/sync_repos.PNG)
+      ![Sincronizar los cambios de MicrosoftDocs/Mixed-Reality con la horquilla](images/sync-repos.png)
+      
    2. En Visual Studio Code, seleccione el botón sincronizar para sincronizar la bifurcación recién actualizada con el clon local.
       
-      ![Haga clic en la imagen del botón sincronizar](images/sync_clone.png)
+      ![Haga clic en la imagen del botón sincronizar](images/sync-clone.png)
+      
 2. Cree o edite artículos en el repositorio clonado con código de Visual Studio.
+
    1. Editar uno o varios artículos (agregar imágenes a la carpeta "imágenes" si es necesario).
+   
    2. **Guarde** los cambios en el **Explorador**.
       
-      ![Elija "guardar todo" en el explorador](images/explorer_save.png)
+      ![Elija "guardar todo" en el explorador](images/explorer-save.png)
+      
    3. **Confirmar todos** los cambios en el **control de código fuente** (escriba un mensaje de confirmación cuando se le solicite).
       
-      ![Elija "confirmar todo" en el control de código fuente](images/source_control_commit.png)
    4. Seleccione el botón **sincronizar** para sincronizar los cambios de nuevo con el origen (su bifurcación en GitHub).
       
-      ![Haga clic en el botón sincronizar](images/sync_back.png)
+      ![Haga clic en el botón sincronizar](images/sync-back.png)
+      
 3. En un explorador Web, cree una solicitud de incorporación de cambios para sincronizar nuevos cambios en la horquilla de nuevo a MicrosoftDocs/mixed-reality ' maestro ' (Asegúrese de que la flecha apunta correctamente).
 
-   ![Crear una solicitud de incorporación de extracción desde la horquilla en MicrosoftDocs/Mixed-Reality](images/pr_to_master.PNG)
+   ![Crear una solicitud de incorporación de extracción desde la horquilla en MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
 ### Extensiones útiles
 
