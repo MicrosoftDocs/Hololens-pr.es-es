@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253586"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254837"
 ---
 # Reiniciar, restablecer o recuperar HoloLens 2
 
@@ -49,6 +49,7 @@ Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia
 En determinadas circunstancias, puede que tenga que reiniciar manualmente el dispositivo sin utilizar la UI del software.
 
 ### Procedimiento estándar
+
 1. Desenchufe el cable de tipo C para desconectar el dispositivo de la fuente de alimentación o del equipo host.
 
 2. Mantenga pulsado el botón **de encendido** durante 15 segundos. Todos los LEDs deberían estar apagados.
@@ -88,7 +89,7 @@ Hay dos formas de reprogramar el dispositivo. En ambos casos, primero debe [inst
 
 De forma predeterminada, el Asistente de recuperación avanzada está configurado para descargar la compilación de la versión de características más reciente, consulte aquí para leer nuestras [Notas de la versión](hololens-release-notes.md#) y obtener información sobre la última versión de características. Para obtener el paquete de actualización completa de Flash (FFU) más reciente de HoloLens 2 para formatear el dispositivo a través del Asistente de recuperación avanzada, [haga clic aquí para descargar la última imagen mensual de HoloLens 2](https://aka.ms/hololens2download). Esta versión es la compilación más reciente de la que se dispone de manera general.
 
-Antes de iniciar el procedimiento de reprogramación, asegúrese de que la aplicación esté instalada y en ejecución en su PC con Windows 10 y de que esté lista para detectar el dispositivo.
+Antes de iniciar el procedimiento de reprogramación, asegúrese de que la aplicación esté instalada y en ejecución en su PC con Windows 10 y de que esté lista para detectar el dispositivo. Asegúrate también de que tu HoloLens se cargue al 40 % como mínimo.
 
 ![Captura de pantalla de la reprogramación de HoloLens 2](images/ARC1.png)
 
@@ -126,22 +127,21 @@ Si el dispositivo HoloLens 2 no se inicia correctamente, puede que tenga que pon
 
 Si el entorno de TI impide el uso de la aplicación de la Tienda Windows o limita el acceso a la tienda comercial, el administrador de TI puede hacer que esta aplicación esté disponible a través de una ruta de acceso de implementación "sin conexión".
 
- >[!NOTE] 
+ >[!NOTE]
  > - Los administradores de TI también pueden distribuir esta aplicación a través de System Center Configuration Manager (SCCM) o Intune.
  > - Esta guía se centra en Advanced Recovery Companion, pero el proceso se puede utilizar también para otras aplicaciones sin conexión.
 
 Siga estos pasos para habilitar la ruta de acceso de implementación:
 1. Vaya a la [Microsoft Store para Empresas](https://businessstore.microsoft.com) e inicie sesión con una identidad de Azure Active Directory.
 
-1. Vaya a **Administrar – Configuración**. Active **Mostrar las aplicaciones sin conexión** en la **Experiencia de compra**. 
+1. Vaya a **Administrar – Configuración**. Active **Mostrar las aplicaciones sin conexión** en la **Experiencia de compra**.
 1. Vaya a **tienda para mi grupo** y busque el [**_Asistente de recuperación avanzada_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 1. Cambie el _*Tipo de licencia** a **_sin conexión_*_ y seleccione _*Administrar**.
 1. En **Descargar el paquete para uso sin conexión**, seleccione el segundo botón azul de **Descargar**. Asegúrese de que la extensión del archivo sea *.appxbundle*.
 
     - En esta etapa, si el PC de escritorio tiene acceso a Internet, haz doble clic en el paquete para instalar la aplicación.
 
-
-    - Si el PC de destino no tiene conectividad a Internet, sigue estos pasos: 
+    - Si el PC de destino no tiene conectividad a Internet, sigue estos pasos:
        1. Selecciona la licencia sin codificar y, a continuación, selecciona **Generar licencia**.
        2. En **Marcos necesarios**, seleccione **Descargar**.
        3. Use DISM para aplicar el paquete con la dependencia y la licencia. Desde un símbolo del sistema de administrador, ejecute el siguiente comando:
@@ -153,7 +153,7 @@ Siga estos pasos para habilitar la ruta de acceso de implementación:
             > El número de versión en este ejemplo de código puede no coincidir con la versión disponible actualmente. También puede que haya elegido una ubicación de descarga diferente a la del ejemplo. Realice los cambios necesarios en el comando.
 
 > [!TIP]
-> Cuando planee usar Advanced Recovery Companion para instalar una FFU sin conexión, puede que resulte útil descargar la imagen flash. [**Descargar la imagen actual para HoloLens 2**](https://aka.ms/hololens2download). 
+> Cuando planee usar Advanced Recovery Companion para instalar una FFU sin conexión, puede que resulte útil descargar la imagen flash. [**Descargar la imagen actual para HoloLens 2**](https://aka.ms/hololens2download).
 
 Otros recursos:
 - [Distribuir aplicaciones sin conexión](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
