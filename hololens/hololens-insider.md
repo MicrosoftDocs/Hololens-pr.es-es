@@ -1,6 +1,6 @@
 ---
 title: Versión preliminar de Insider para Microsoft HoloLens
-description: Es fácil comenzar con las compilaciones de Insider y proporcionar comentarios valiosos para nuestra próxima actualización importante del sistema operativo para HoloLens.
+description: Es fácil empezar con las compilaciones de Insider y proporcionar comentarios valiosos para nuestra próxima actualización principal del sistema operativo para HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -11,85 +11,207 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 11/10/2020
+ms.date: 1/13/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 260b195a18ecb7fe05d819fcd3e86d56fc2022bf
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: 06c3faf573adabe158a72a66fc4b8a45afec48fb
+ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201344"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269401"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
-Te agradecemos las compilaciones más recientes de Insider Preview para HoloLens. Es fácil [comenzar](hololens-insider.md#start-receiving-insider-builds) y proporciona comentarios valiosos para nuestra próxima actualización importante del sistema operativo para HoloLens.
+Te damos la bienvenida a las compilaciones más recientes de Insider Preview para HoloLens. Es fácil empezar y [proporcionar](hololens-insider.md#start-receiving-insider-builds) comentarios valiosos para nuestra próxima actualización principal del sistema operativo para HoloLens.
 
 ## Notas de la versión de Windows Insider
 
-Recientemente hemos publicado todas las características de Windows Insider. Puesto que todas estas características están ahora disponibles, te recomendamos que leas nuestras notas de la [versión](hololens-release-notes.md) para ver todas nuestras características más recientes. Mantente al tanto de volver a consultar para ver cuándo empezamos a probar las nuevas características interesantes.
+Estamos encantados de empezar a usar nuevas características para los usuarios de Windows Insider de nuevo. We will be flighting to the Dev Channel for the latest updates. Seguiremos actualizando esta página a medida que agreguemos más características y actualizaciones a nuestras compilaciones de Windows Insider.  Prepárate y listo para mezclar estas actualizaciones en tu realidad. 
+
+| Nombre de la característica                                              | Descripción corta                                                                      | Disponible en la compilación |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
+| [Nuevo Microsoft Edge](#introducing-the-new-microsoft-edge) | El nuevo Microsoft Edge basado en Chromium ya está disponible para HoloLens 2                         | 20279.1006 |
+| [Aplicación Nueva configuración](#new-settings-app)                     | La aplicación Configuración heredada se está reemplazando por una versión actualizada con nuevas características y configuración | 20279.1006 |
+| [Selector de aplicaciones predeterminado](#default-app-picker)                 | Elegir qué aplicación debe iniciarse para cada tipo de archivo o vínculo                                      | 20279.1006 |
+| [Aplicación web de Office](#office-web-app)                         | Ahora se muestra un acceso directo a la aplicación web de Office en "Todas las aplicaciones"                                   | 20279.1006 |
+| [Deslizar el dedo para escribir](#swipe-to-type)                           | Usar la punta del dedo para "deslizar rápidamente" palabras en el teclado holográfico                        | 20279.1006 |
+
+### Presentación del nuevo Microsoft Edge
+
+![Animación del logotipo heredado de Microsoft Edge al nuevo logotipo de Microsoft Edge](images/new-edge.gif)
+
+El nuevo Microsoft Edge adopta el proyecto de código [abierto chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) para crear una mejor compatibilidad para los clientes y una menor fragmentación de la web para desarrolladores web. 
+
+Con esta versión preliminar de Insider, el nuevo Microsoft Edge está disponible para los clientes de HoloLens 2 por primera vez. Aunque el nuevo Microsoft Edge reemplazará finalmente a Microsoft Edge heredado en HoloLens 2, ambos exploradores están disponibles actualmente para los usuarios de Insider. Comparta comentarios y errores con nuestro equipo a través de la característica Enviar **comentarios** en el nuevo Microsoft Edge o a través del Centro [de opiniones.](hololens-feedback.md)
+
+![Nueva captura de pantalla de Microsoft Edge](images/new-edge-ui.png)
+
+#### Iniciar el nuevo Microsoft Edge
+
+Hay dos versiones de Microsoft Edge disponibles para los usuarios de Insider: el nuevo icono de Microsoft Edge (representado por un icono de remolino azul y verde) y el microsoft edge heredado (representado por el icono ![ ](images/new_edge_logo.png) blanco "e"). El nuevo Microsoft Edge se ancla al menú Inicio y se iniciará automáticamente al activar un vínculo web. Si quieres volver a usar Microsoft Edge heredado como explorador web predeterminado, consulta las instrucciones siguientes para restablecer [las aplicaciones predeterminadas.](#default-app-picker)
+
+> [!NOTE]
+> Cuando inicies por primera vez el nuevo Microsoft Edge en HoloLens 2, la configuración y los datos se importarán desde Microsoft Edge heredado. Si sigue usando Microsoft Edge heredado después de iniciar el nuevo Microsoft Edge, los nuevos datos no se sincronizarán de Microsoft Edge heredado al nuevo Microsoft Edge.
+
+#### Configuración de opciones de directiva para el nuevo Microsoft Edge
+
+El nuevo Microsoft Edge ofrece a los profesionales de IT un conjunto mucho más amplio de directivas de explorador en HoloLens 2 que antes estaban disponibles con Microsoft Edge heredado. 
+
+Estos son algunos recursos útiles para obtener más información sobre cómo administrar la configuración de directivas para el nuevo Microsoft Edge:
+- [Configurar la directiva de Microsoft Edge con Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
+- [Asignación de directiva de Microsoft Edge (versión anterior) a Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Asignación de directivas de Google Chrome a Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- Documentación [completa de Microsoft Edge Enterprise](https://docs.microsoft.com/deployedge/)
+
+> [!IMPORTANT]
+> Debido al volumen de directivas de explorador admitidas por el nuevo Microsoft Edge, nuestro equipo no puede garantizar que cada nueva directiva funcione en HoloLens 2. Sin embargo, hemos probado y confirmado que el nuevo equivalente de Microsoft Edge de cada directiva heredada de Microsoft Edge anteriormente compatible con HoloLens 2 funciona según lo esperado. Consulta [la asignación](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) de directivas heredadas de Microsoft Edge a Microsoft Edge para encontrar el nuevo equivalente de Microsoft Edge de cada directiva de explorador de Microsoft Edge heredada que usaste con HoloLens 2.
+>
+> Hay al menos dos nuevas directivas de Microsoft Edge que sabemos *que no funcionarán* con HoloLens 2:
+> - EnterpriseModeSiteList
+> - EnterpriseSiteListServiceURL
+
+#### Qué esperar del nuevo Microsoft Edge en HoloLens 2
+
+Dado que el nuevo Microsoft Edge es una aplicación nativa de Win32 con una nueva capa de adaptador para UWP que permite ejecutarse en dispositivos solo para UWP como HoloLens 2, es posible que algunas características no estén disponibles inmediatamente. We'll be supporting new scenarios and features over the coming months, so please check this space for up-to-date information.
+
+**Escenarios y características que se espera que funcionen:**
+- Experiencia de primera ejecución, inicio de sesión en el perfil y sincronización
+- Los sitios web deben representarse y comportarse según lo esperado
+- La mayoría de las funciones del explorador (Favoritos, Historial, etc.) deberían funcionar según lo esperado
+- Modo oscuro
+- Instalación de aplicaciones web en el dispositivo
+- Instalación de extensiones (háganos saber si usa extensiones que no funcionan correctamente en HoloLens 2)
+- Ver y marcar un PDF
+- Sonido espacial desde una sola ventana del explorador
+- Actualización automática y manual del explorador
+- Guardar un PDF desde el menú Imprimir (con la opción "Guardar en PDF")
+
+**Próximamente, se ofrece información sobre escenarios y características:**
+- Extensión WebXR y visor 360
+- Restauración de contenido para corregir la ventana al examinar varias ventanas colocadas en el entorno
+- Sonido espacial para varias ventanas con secuencias de audio simultáneas
+- Unirse a una llamada de Microsoft Teams a través del explorador con vídeo, captura de realidad mixta o pantalla compartida (unirse a llamadas con audio funciona bien)
+- "Véalo, digalo"
+- Impresión
+
+**Principales problemas conocidos del explorador:**
+- Restablecer el dispositivo quitará el nuevo Microsoft Edge
+- La vista previa de lupa en el teclado holográfico muestra contenido incorrecto
+
+### Aplicación Nueva configuración
+
+Con esta versión, presentamos una nueva versión de la aplicación Configuración. La nueva aplicación Configuración incluye nuevas características y opciones de configuración expandidas para HoloLens 2 en las siguientes áreas: dispositivos de audio de entrada y salida, volumen de aplicaciones individuales, energía y suspensión, adaptador Ethernet, Facilidad de acceso, modo avión y aplicaciones predeterminadas.
+
+> [!NOTE]
+> Dado que la nueva aplicación Configuración es distinta de la aplicación Configuración heredada, las ventanas de configuración que colocaste anteriormente en el entorno se quitarán al actualizarse.
+
+![Página principal de la aplicación Nueva configuración](images/new-settings-app.png)
+
+**Nuevas características y configuración**
+- Búsqueda de configuración: buscar la configuración de la página principal de configuración con palabras clave o el nombre de la configuración
+- Sonido:
+  - Dispositivos de audio de entrada y salida: elige de forma independiente los dispositivos de audio de entrada y salida (por ejemplo, escucha audio a través de auriculares Bluetooth o usa un micrófono USB-C para la entrada de audio). Nota: Bluetooth holoLens 2 no admite los micrófonos.
+  - Volumen de la aplicación: ajustar independientemente el volumen de cada aplicación
+- Ahorro de batería: habilite manualmente el modo de ahorro de batería o establezca un umbral de batería en el que el modo de ahorro de batería se active automáticamente
+- Suspensión & energía: elige cuándo debe ir a suspensión el dispositivo después de un período de inactividad
+- USB: puedes deshabilitar las conexiones USB de forma predeterminada
+- Red & Internet:
+  - Los adaptadores Ethernet USB-C ahora aparecerán en Red & Internet
+  - La configuración del adaptador Ethernet USB-C ya está disponible, incluida su dirección IP
+  - Ahora puedes habilitar el modo avión en HoloLens 2
+- Aplicaciones: puedes restablecer las aplicaciones predeterminadas usadas para los tipos de archivos y vínculos. Consulta [El selector de aplicaciones predeterminado](#default-app-picker) para obtener más información.
+- Facilidad de acceso: cambiar el tamaño del texto y algunos efectos visuales
+
+**Problemas conocidos**
+- Se quitarán las ventanas de configuración colocadas anteriormente (consulta la nota anterior)
+- Visitar la página Notificaciones puede bloquear la aplicación Configuración (investigando)
+- La página Ethernet no aparece actualmente (se solucionará próximamente)
+- Es posible que el uso de la batería para el nuevo Microsoft Edge no sea preciso, debido a su naturaleza como una aplicación de escritorio Win32 compatible con una capa de adaptador para UWP (no se prevé ninguna corrección pronto).
+
+### Selector de aplicaciones predeterminado
+
+Cuando activas un hipervínculo o abres un tipo de archivo con más de una aplicación instalada que lo admite, verás una nueva ventana abierta en la que se te pedirá que selecciones qué aplicación instalada debe controlar el tipo de archivo o vínculo. En esta ventana también puedes elegir que la aplicación seleccionada controle el tipo de archivo o vínculo "Una vez" o "Siempre". 
+
+![Ventana del selector de aplicaciones](images/default-app-picker.png)
+
+Si eliges "Siempre" pero más adelante quieres cambiar qué aplicación controla un tipo de archivo o vínculo determinado, puedes restablecer los valores predeterminados guardados en Configuración **> Aplicaciones.** Desplácese hasta la parte inferior **** de la página y seleccione el botón Borrar en "Aplicaciones predeterminadas para tipos de archivo" o "Aplicaciones predeterminadas para tipos de vínculos". A diferencia de la configuración similar en equipos de escritorio, no puedes restablecer valores predeterminados de tipos de archivo individuales.
+
+### Aplicación web de Office
+
+La aplicación web de Office se ha agregado a la lista "Todas las aplicaciones" en el menú Inicio. Esta aplicación web también se puede anclar a Inicio o desinstalarse. Dado que se trata de una aplicación web, su funcionalidad coincide exactamente con lo que experimentarías visitando https://www.office.com . La funcionalidad de la aplicación web de Office solo está disponible cuando holoLens 2 tiene una conexión a Internet activa.
+
+### Deslizar el dedo para escribir
+
+A algunos clientes les resulta más rápido "escribir" en teclados virtuales deslizando el dedo por la forma de la palabra que pretenden escribir y estamos haciendo una vista previa de esta característica para el teclado holográfico. Puedes deslizar el dedo una palabra a la vez pasando la punta del dedo a través del plano del teclado holográfico, deslizando el dedo por la forma de la palabra y, a continuación, retirando la punta del dedo del plano del teclado. Puedes deslizar rápidamente las palabras de seguimiento sin necesidad de presionar la barra espaciadora quitando el dedo del teclado entre palabras. Sabrás que la característica funciona si ves una pista de deslizar el dedo después del movimiento del dedo en el teclado.
+
+Ten en cuenta que esta característica puede ser difícil de usar y usar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
+
+
+
+
 
 ## Empezar a recibir compilaciones de Insider
 
 > [!NOTE]
-> Si aún no lo ha actualizado, reinicie el dispositivo para actualizar el estado y obtenga la compilación más reciente.
-> - El comando de voz "dispositivo de reinicio" funciona bien. 
-> - También puede elegir el botón reiniciar en configuración/programa de Windows Insider.
+> Si no has actualizado recientemente, reinicia el dispositivo para actualizar el estado y obtener la compilación más reciente.
+> - El comando de voz "Reiniciar dispositivo" funciona bien. 
+> - También puedes elegir el botón reiniciar en Configuración/Programa Windows Insider.
 >
-> Tuvimos un error en el back-end que pudiera haber encontrado y esto le volveremos a la pista.
+> Hemos detectado un error en el back-end que puede que haya encontrado y esto le permitirá volver a realizar el seguimiento.
 
-En un dispositivo HoloLens 2, vaya a **configuración**  >  **Update & seguridad**de  >  **Windows Insider** y seleccione **Introducción**. Vincule la cuenta que usó para registrarse como Windows Insider.
+En un dispositivo HoloLens **** 2, ve a Actualización de configuración & Seguridad del  >  ****  >  **Programa Windows Insider** y selecciona **Introducción.** Vincula la cuenta que usó para registrarte como Windows Insider.
 
-Windows Insider se está moviendo a los canales. El timbre **rápido** se convertirá en el **canal de desarrollo**, el anillo **lento** se convertirá en el canal de la **versión beta**y el anillo de **versión preliminar** se convertirá en el **canal de versión preliminar**de la versión. Este es el aspecto de la asignación:
+Windows Insider ahora se está trasladando a Canales. El **anillo** rápido se convertirá en **** el Canal **de desarrollo,** **** el anillo lento se convertirá en el canal **beta**y el anillo de vista previa de versión se convertirá en el canal de vista previa **de versión.** Este es el aspecto de esa asignación:
 
-![Explicación de Windows Insider Channels](images/WindowsInsiderChannels.png)
+![Explicación de Los canales de Windows Insider](images/WindowsInsiderChannels.png)
 
-Para obtener más información, vea Introducción a los [canales de Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) en blogs de Windows.
+Para obtener más información, consulta [Introducción a los canales de Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) en blogs de Windows.
 
-Después, selecciona **desarrollo activo de Windows**, elige si deseas recibir las compilaciones de **canal** de **desarrollo** o beta, y revisa las condiciones del programa.
+A continuación, selecciona Desarrollo activo de **Windows,** elige si quieres recibir compilaciones del Canal **de desarrollo** o **canal beta** y revisa los términos del programa.
 
-Seleccione **confirmar > reiniciar ahora** para finalizar. Después de reiniciar el dispositivo, vaya a **configuración > actualizar & seguridad > buscar actualizaciones** para obtener la compilación más reciente.
+Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, ve a Configuración > Actualización & Seguridad > **Buscar** actualizaciones para obtener la compilación más reciente.
 
-## FFU de descarga y de Flash
-Para probar con un FFU firmado de vuelo, primero debe desbloquear el dispositivo antes de hacer parpadear la FFU con firma de vuelo.
-1. En PC:
+## Instrucciones de descarga e flash FFU
+Para probar con un ffu firmado de piloto, primero tienes que desbloquear el dispositivo antes de parpadear el ffu firmado del piloto.
+1. En pc:
 
-    1. Descarga FFU en tu PC desde [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
+    1. Descargar ffu en el equipo desde [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
-    1. Instale ARC (Asistente para recuperación avanzada) en Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Instala ARC (Advanced Recovery Companion) desde Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
-1. En HoloLens-desbloqueo de vuelo: abrir **configuración**  >  **Actualizar & seguridad**  >  **Windows Insider** después, Regístrese, reiniciar el dispositivo.
+1. En HoloLens - Desbloqueo **** piloto: Abre la actualización de configuración  >  **& Seguridad del**Programa  >  **Windows Insider** y, a continuación, regístrate y reinicia el dispositivo.
 
-1. Flash FFU: ahora puedes hacer parpadear el vuelo con la firma de FFU con arco.
+1. Flash FFU: ahora puedes flashear la FFU firmada del piloto con ARC.
 
-## Proporcionar comentarios e informar de problemas
+## Enviar comentarios e informar sobre problemas
 
-Usa [la aplicación centro de opiniones](hololens-feedback.md) de tu HoloLens para proporcionar comentarios e informar de problemas. El uso del centro de opiniones asegura que se incluya toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver el problema rápidamente.  Los problemas con la versión China y japonesa de HoloLens se deben notificar de la misma manera.
+Use la [aplicación Centro de opiniones](hololens-feedback.md) en su HoloLens para proporcionar comentarios y notificar problemas. El uso del Centro de opiniones garantiza que se incluya toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver el problema rápidamente.  Los problemas con la versión en chino y japonés de HoloLens deben informarse del mismo modo.
 
 > [!NOTE]
-> Asegúrese de aceptar el mensaje que le pregunta si desea que el centro de comentarios acceda a su carpeta de documentos (seleccione **sí** cuando se le solicite).
+> Asegúrate de aceptar el mensaje que te pregunta si quieres que el Centro de opiniones tenga acceso a la carpeta Documentos **(selecciona** Sí cuando se te solicite).
 
-## Nota para los desarrolladores
+## Nota para desarrolladores
 
-Te recomendamos que intentes desarrollar tus aplicaciones con las compilaciones de Insider de HoloLens.  Consulta la [documentación para desarrolladores de HoloLens](https://developer.microsoft.com/windows/mixed-reality/development) para comenzar. Las mismas instrucciones funcionan con las compilaciones de Insider de HoloLens.  Puedes usar las mismas compilaciones de Unity y Visual Studio que ya usas para el desarrollo de HoloLens.
+Le damos la bienvenida y le animamos a que pruebe a desarrollar sus aplicaciones con compilaciones de Insider de HoloLens.  Consulte la documentación [para desarrolladores de HoloLens](https://developer.microsoft.com/windows/mixed-reality/development) para empezar. Esas mismas instrucciones funcionan con compilaciones de Insider de HoloLens.  Puedes usar las mismas compilaciones de Unity Visual Studio que ya estás usando para el desarrollo de HoloLens.
 
 ## Dejar de recibir compilaciones de Insider
 
-Si ya no desea recibir compilaciones de Insider de Windows Holographic, puede deshabilitarlas cuando HoloLens esté ejecutando una compilación de producción, o puede [recuperar el dispositivo](hololens-recovery.md) con el Asistente de recuperación avanzada para recuperar el dispositivo a una versión no Insider de Windows Holographic.
+Si ya no quieres recibir compilaciones de Insider de Windows Holographic, puedes optar por no [](hololens-recovery.md) participar cuando HoloLens ejecute una compilación de producción o puedes recuperar el dispositivo con advanced Recovery Companion para recuperar el dispositivo en una versión que no sea insider de Windows Holographic.
 
 > [!CAUTION]
-> Hay un problema conocido por el que los usuarios que cancelan la inscripción de las compilaciones de Insider Preview después de volver a instalar manualmente una versión preliminar nueva se vería una pantalla azul. Después, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se vería afectado o no, consulte más información sobre este [problema conocido](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build).
+> Hay un problema conocido en el que los usuarios que desconscriban las compilaciones de Insider Preview después de reinstalar manualmente una nueva compilación de vista previa experimentarían una pantalla azul. Posteriormente, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se verían afectados o no, vea más información sobre [este problema conocido.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
-Para comprobar que HoloLens está ejecutando una compilación de producción:
+Para comprobar que HoloLens ejecuta una compilación de producción:
 
-1. Vaya a **configuración > sistema >** y busque el número de compilación.
+1. Ve a **Configuración > del > acerca de**y busca el número de compilación.
 
-1. [Consulte las notas de la versión de los números de compilación de producción](hololens-release-notes.md).
+1. [Vea las notas de la versión de los números de compilación de producción.](hololens-release-notes.md)
 
-Para no participar en las compilaciones de Insider:
+Para optar por no participar en las compilaciones de Insider:
 
-1. En un HoloLens que ejecute una compilación de producción, vaya a **configuración > actualizar & seguridad > programa Windows Insider**y seleccione **detener compilaciones de Insider**.
+1. En un HoloLens que ejecuta una compilación de producción, ve a Configuración **> Actualizar & Seguridad > Programa Windows Insider**y selecciona Detener **compilaciones de Insider.**
 
-1. Siga las instrucciones para cancelar el dispositivo.
+1. Sigue las instrucciones para desactivar el dispositivo.

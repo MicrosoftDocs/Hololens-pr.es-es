@@ -1,26 +1,26 @@
 ---
-title: Guía de implementación
-description: Guía de implementación de HoloLens 2 (con asistencia remota como ejemplo)
+title: Guía de implementación de clientes externos
+description: Guía de implementación de HoloLens 2 para clientes externos (con asistencia remota como ejemplo)
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/7/2021
+ms.date: 1/12/2021
 ms.custom: ''
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0cd75fdbe5f6a4e6da87770768ce9f22bce491c0
-ms.sourcegitcommit: 58bffba63ed581351d80d13b1437aca74d7ed64a
+ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
+ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "11266383"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "11268006"
 ---
-# Implementación de HoloLens 2 en clientes externos con asistencia remota
+# Implementar HoloLens 2 en clientes externos con asistencia remota
 
 Este documento ayuda a las profesiones de TI a planear e implementar dispositivos HoloLens 2 centrados en el asistente remoto. [Obtenga más información sobre asistencia remota.](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
 
