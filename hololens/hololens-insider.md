@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 06c3faf573adabe158a72a66fc4b8a45afec48fb
-ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
+ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
+ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269401"
+ms.locfileid: "11269485"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -103,7 +103,7 @@ Dado que el nuevo Microsoft Edge es una aplicación nativa de Win32 con una nuev
 
 ### Aplicación Nueva configuración
 
-Con esta versión, presentamos una nueva versión de la aplicación Configuración. La nueva aplicación Configuración incluye nuevas características y opciones de configuración expandidas para HoloLens 2 en las siguientes áreas: dispositivos de audio de entrada y salida, volumen de aplicaciones individuales, energía y suspensión, adaptador Ethernet, Facilidad de acceso, modo avión y aplicaciones predeterminadas.
+Con esta versión, presentamos una nueva versión de la aplicación Configuración. La nueva aplicación Configuración incluye nuevas características y opciones de configuración expandidas para HoloLens 2 en las siguientes áreas: Sonido, Suspensión de Power &, Red & Internet, Aplicaciones, Cuentas, Facilidad de acceso y mucho más.
 
 > [!NOTE]
 > Dado que la nueva aplicación Configuración es distinta de la aplicación Configuración heredada, las ventanas de configuración que colocaste anteriormente en el entorno se quitarán al actualizarse.
@@ -112,17 +112,18 @@ Con esta versión, presentamos una nueva versión de la aplicación Configuraci�
 
 **Nuevas características y configuración**
 - Búsqueda de configuración: buscar la configuración de la página principal de configuración con palabras clave o el nombre de la configuración
-- Sonido:
+- Sonido > sistema:
   - Dispositivos de audio de entrada y salida: elige de forma independiente los dispositivos de audio de entrada y salida (por ejemplo, escucha audio a través de auriculares Bluetooth o usa un micrófono USB-C para la entrada de audio). Nota: Bluetooth holoLens 2 no admite los micrófonos.
   - Volumen de la aplicación: ajustar independientemente el volumen de cada aplicación
-- Ahorro de batería: habilite manualmente el modo de ahorro de batería o establezca un umbral de batería en el que el modo de ahorro de batería se active automáticamente
-- Suspensión & energía: elige cuándo debe ir a suspensión el dispositivo después de un período de inactividad
-- USB: puedes deshabilitar las conexiones USB de forma predeterminada
+- Sistema > power & suspensión: elegir cuándo debe ir el dispositivo a suspensión después de un período de inactividad
+- Sistema > batería: habilite manualmente el modo de ahorro de batería o establezca un umbral de batería en el que el modo de ahorro de batería se active automáticamente
+- Dispositivos > USB: puedes deshabilitar las conexiones USB de forma predeterminada
 - Red & Internet:
   - Los adaptadores Ethernet USB-C ahora aparecerán en Red & Internet
   - La configuración del adaptador Ethernet USB-C ya está disponible, incluida su dirección IP
   - Ahora puedes habilitar el modo avión en HoloLens 2
 - Aplicaciones: puedes restablecer las aplicaciones predeterminadas usadas para los tipos de archivos y vínculos. Consulta [El selector de aplicaciones predeterminado](#default-app-picker) para obtener más información.
+- Cuentas > otros usuarios: los propietarios de dispositivos pueden agregar usuarios, actualizar usuarios estándar a propietarios de dispositivos, degradar los propietarios de dispositivos a usuarios estándar y quitar usuarios.
 - Facilidad de acceso: cambiar el tamaño del texto y algunos efectos visuales
 
 **Problemas conocidos**
