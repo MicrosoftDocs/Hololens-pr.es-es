@@ -13,20 +13,28 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
-ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
+ms.openlocfilehash: 7658ace4879fef401accabb95ca22e307e5f80a8
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "11268006"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271664"
 ---
 # Implementar HoloLens 2 en clientes externos con asistencia remota
 
-Este documento ayuda a las profesiones de TI a planear e implementar dispositivos HoloLens 2 centrados en el asistente remoto. [Obtenga más información sobre asistencia remota.](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
+Esta guía ayuda a los profesionales de IT con los siguientes objetivos a implementar dispositivos De Microsoft HoloLens 2 en su organización:
+
+1. Dispositivos HoloLens 2 de conexión en la nube
+1. Prestar dispositivos HoloLens 2 a clientes externos para su uso
+1. Proteger dispositivos cedido
+
+Esta guía proporcionará recomendaciones generales de implementación de [HoloLens 2](#general-deployment-recommendations-and-instructions) que se [](#common-concerns) aplican a la mayoría de los escenarios de implementación de HoloLens 2 y preocupaciones comunes que tienen los clientes al implementar asistencia remota para uso externo.
 
 ## Descripción del escenario
 
 Para este documento, Contoso Company desea enviar un dispositivo HoloLens 2 a la planta de un cliente externo para su uso a corto o largo plazo. Cuando el cliente necesita asistencia para el mantenimiento, el cliente inicia sesión en el dispositivo HoloLens 2 con las credenciales proporcionadas por contoso Company y usa asistencia remota para ponerse en contacto con los expertos de Contoso Company.
+
+Obtenga más información sobre asistencia [remota aquí.](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
 
 ### Requisitos para este escenario
 
@@ -112,7 +120,7 @@ Te recomendamos lo siguiente para los pasos de implementación de HoloLens 2:
 1. Usa [WDAC](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) para permitir o aplicaciones en negro en el dispositivo HoloLens 2.
 1. Actualice remote Assist a la versión más reciente como parte de la configuración. Hay dos opciones para hacerlo:
     1. Para ello, vaya a Windows **Microsoft Store --> Remote Assist --> y Update App.**
-    1. Otro método es dejar HoloLens 2 conectado durante la noche para la actualización automática.
+    1. Habilita las actualizaciones automáticas con el CSP [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) y mantén el dispositivo conectado para recibir actualizaciones.
 1. [Deshabilite todas las](https://docs.microsoft.com/hololens/settings-uri-list) páginas de configuración excepto la configuración de red para permitir que los usuarios se conecten a redes invitadas en sitios cliente.
 1. [Administrar actualizaciones de HoloLens](https://docs.microsoft.com/hololens/hololens-updates)
     1. Opción para [controlar las actualizaciones del sistema operativo](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) o permitir el flujo libremente.
