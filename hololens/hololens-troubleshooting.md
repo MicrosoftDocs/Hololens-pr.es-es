@@ -1,6 +1,6 @@
 ---
 title: Solución de problemas
-description: Soluciones para problemas comunes de HoloLens.
+description: Manténgase al día sobre las soluciones más comunes para problemas de dispositivos HoloLens y técnicas de solución de problemas.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
@@ -8,104 +8,104 @@ ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-keywords: problemas, error, solución de problemas, corrección, ayuda, soporte técnico, HoloLens
 manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
-ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
+keywords: problemas, error, solucionar problemas, corregir, ayuda, soporte técnico, HoloLens
+ms.openlocfilehash: f57aea52337f7ca7e15bda1363f73a3a7265a025
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11195286"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283051"
 ---
 # Solución de problemas
 
 En este artículo se describe cómo resolver varios problemas comunes de HoloLens.
 
-## Mi HoloLens no responde o no se inicia
+## My HoloLens is unresponsive or won't start
 
-Si HoloLens no se inicia:
+Si holoLens no se inicia:
 
-- Si los LEDs junto al botón de encendido no se encienden o si solo parpadean unos LED, es posible que debas [cobrarte por tu HoloLens.](hololens-recovery.md#charge-the-device)
-- Si los LEDs se encienden al presionar el botón de encendido pero no puede ver nada en las pantallas, [preform un reinicio rígido del dispositivo](hololens-recovery.md#hard-reset-procedure).
+- Si los LED situados junto al botón de encendido no se encienden o solo un LED parpadea brevemente, es posible que deba cargar [su HoloLens.](hololens-recovery.md#charge-the-device)
+- Si los LEDs se encienden al presionar el botón de encendido, pero no se puede ver nada en las pantallas, [preformar](hololens-recovery.md#hard-reset-procedure)un restablecimiento completo del dispositivo.
 
-Si HoloLens se inmoviliza o no responde:
+Si holoLens se inmoviliza o deja de responder:
 
-- Para desactivar HoloLens, pulsa el botón de encendido hasta que los cinco LEDs se desactiven o durante 15 segundos si los LEDs no responden. Para iniciar HoloLens, vuelve a pulsar el botón de encendido.
+- Apaga HoloLens presionando el botón de encendido hasta que los cinco LEDs se apaguen a sí mismos o durante 15 segundos si los LEDs no responden. Para iniciar HoloLens, vuelva a presionar el botón de encendido.
 
-Si estos pasos no funcionan, puede intentar [recuperar el dispositivo hololens 2](hololens-recovery.md) o [hololens (1. ª gen).](hololens1-recovery.md)
+Si estos pasos no funcionan, puedes intentar recuperar el dispositivo [HoloLens 2](hololens-recovery.md) o el dispositivo [HoloLens (1.ª generación).](hololens1-recovery.md)
 
-## Los hologramas no parecen buenos
+## Los hologramas no se ven bien
 
-Si los hologramas son inestables, saltan o no tienen el aspecto correcto, pruebe lo siguiente:
+Si los hologramas son inestables, saltando o no se ven bien, pruebe:
 
-- Limpia el visor del dispositivo y la barra de la parte frontal de tu HoloLens.
-- Aumento de la luz de su habitación.
-- Caminar y mirando tu entorno para que HoloLens pueda explorarlos de forma más completa.
-- Calibra tu HoloLens para tus ojos. Vaya a **configuración**  >  **utilidades del sistema**  >  **Utilities**. En **Calibración**, seleccione **Abrir calibración**.
+- Limpiar el visor del dispositivo y la barra del sensor en la parte frontal de HoloLens.
+- Aumentar la luz de la sala.
+- Paseando y mirando a su entorno para que HoloLens pueda examinarlos más completamente.
+- Calibrar HoloLens para tus ojos. Vaya a **Utilidades**  >  **del sistema de**  >  **configuración.** En **Calibración**, seleccione **Abrir calibración**.
  
-### Informes de problemas en los que los hologramas son inestables o no tienen el aspecto correcto
+### Notificar problemas en los que los hologramas son inestables o no son correctos
  
-1. Graba y un [video de captura de realidad mixta](holographic-photos-and-videos.md#capture-a-mixed-reality-video) del problema. Este vídeo se puede cargar posteriormente mediante el centro de opiniones como archivo adjunto.  
-1. Habilitar la telemetría completa mediante la aplicación **configuración** : > el diagnóstico de **privacidad**  ->  **& comentarios** y en los **datos de diagnóstico opcionales** , asegúrese de que el botón de alternancia está **activado**
-1. Obtenga la última escala de hologramas y correcciones de estabilidad al actualizar al [sistema operativo Windows Holographic más reciente (20H2 o superior)](hololens-release-notes.md#windows-holographic-version-20h2). Después de la actualización, realice lo siguiente:
-    1. Quitar todos los hologramas a través de la aplicación **configuración** : > hologramas **del sistema**  ->  **Holograms** : >, a continuación, seleccione **quitar todos los hologramas** y empezar con un mapa nuevo.
-    1. Crea un nuevo mapa de tu espacio al usar HoloLens y caminar por el salón y mirar todas las áreas y superficies del espacio. Haga esto por 2-3 minutos.
-    1. Realizar calibración de IPD. Vaya a **configuración**  >  **utilidades del sistema**  >  **Utilities**. En **Calibración**, seleccione **Abrir calibración**.
-    1. Vuelva a probar el escenario y compruebe si aún continúa.
-1. Si la actualización no soluciona el problema, archiva un problema con el [centro de opiniones](hololens-feedback.md). Después de haber rellenado los comentarios, puedes usar el botón **compartir** para crear un vínculo fácil de compartir que pueda enviarse al ponerse en contacto con el soporte técnico.
+1. Grabe y un [vídeo de captura](holographic-photos-and-videos.md#capture-a-mixed-reality-video) de realidad mixta del problema. Este vídeo se puede cargar más adelante a través del Centro de opiniones como un archivo adjunto.  
+1. Habilitar telemetría completa **** a través de la aplicación Configuración -> **Comentarios**de diagnóstico de privacidad & y, en Datos de diagnóstico opcionales, garantizar que el botón de alternancia  ->  **** esté establecido en **Activar** ****
+1. Obtenga las correcciones más recientes de escala y estabilidad de hologramas mediante la actualización a la versión más reciente del sistema operativo [Windows Holographic (20H2 o superior).](hololens-release-notes.md#windows-holographic-version-20h2) Después de actualizar, realice lo siguiente:
+    1. Quita todos los **** hologramas a través de la aplicación Configuración -> **Hologramas**del sistema -> luego selecciona Quitar todos los hologramas y empieza  ->  **** con un mapa nuevo. ****
+    1. Crea un nuevo mapa de tu espacio usando holoLens y paseando por la sala y mirando todas las áreas y superficies del espacio. Haga esto durante 2-3 minutos.
+    1. Realiza la calibración de IPD. Vaya a **Utilidades**  >  **del sistema de**  >  **configuración.** En **Calibración**, seleccione **Abrir calibración**.
+    1. Vuelva a probar el escenario y vea si aún persiste.
+1. Si la actualización no soluciona el problema, envíe un problema [del Centro de opiniones.](hololens-feedback.md) Después de rellenar los comentarios, **** puede usar el botón Compartir para crear un vínculo fácil de compartir que se puede enviar al ponerse en contacto con el soporte técnico.
 
-## HoloLens no responde a la entrada de la mano
+## HoloLens no responde a la entrada de mano
 
-Para asegurarte de que HoloLens pueda ver tus manos, debes mantenerlos en el marco de gestos.  La Página principal de la realidad mixta proporciona comentarios que te permiten saber cuándo se realiza el seguimiento de las manos.  Los comentarios son diferentes en diferentes versiones de HoloLens:
-- En HoloLens (1ª generación), el cursor de fijamente cambia de un punto a un anillo
-- En HoloLens 2, el cursor de la mano aparece cuando la mano está cerca de un Slate, y se muestra un rayo de mano cuando se alejan las tabletas.
+Para asegurarte de que HoloLens pueda ver tus manos, debes mantenerlas en el marco de gestos.  La página principal de realidad mixta proporciona comentarios que te permiten saber cuándo se realiza un seguimiento de las manos.  Los comentarios son diferentes en diferentes versiones de HoloLens:
+- En HoloLens (1.ª generación), el cursor de mirada cambia de un punto a un anillo
+- En HoloLens 2, aparece un cursor de dedo cuando la mano está cerca de una pizarra y aparece un rayo de mano cuando las pizarras están más lejos
 
-Muchas aplicaciones envolventes siguen patrones de entrada que son similares a la Página principal de la realidad mixta.  Obtén más información sobre cómo usar la entrada de la mano en [HoloLens (1. ª gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) y [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+Muchas aplicaciones envolventes siguen patrones de entrada similares a Mixed Reality Home.  Obtenga más información sobre cómo usar la entrada de mano [en HoloLens (1.ª generación)](hololens1-basic-usage.md#use-hololens-with-your-hands) y [HoloLens 2.](hololens2-basic-usage.md#the-hand-tracking-frame)
 
-Si está usando guantes, tenga en cuenta que algunos tipos de guantes no funcionan con el seguimiento manual.  Un ejemplo común son guantes de goma negro, que tienden a absorber la luz infrarroja y que la cámara de profundidad no recoge.  Si su trabajo incluye guantes de goma, le recomendamos que pruebe un color más claro, como azul o gris.  Otro ejemplo es una gran cantidad de guantes de baggy, que tiende a oscurecer la forma de la mano. Para obtener los mejores resultados, le recomendamos que use guantes que se ajusten como sea posible.
+Si vas a llevar el uniforme, ten en cuenta que algunos tipos de clase no funcionan con el seguimiento de manos.  Un ejemplo común es la insondencia negra, que tiende a absorber la luz infrarroja y no la toma la cámara de profundidad.  Si tu trabajo implica una insondación, te recomendamos probar un color más claro, como azul o gris.  Otro ejemplo es una bolsa grande, que tiende a oscurecer la forma de la mano. Se recomienda usar unas prácticas que sean lo más apropiadas posible para obtener los mejores resultados.
 
-Si tu visor tiene huellas o manchas, usa el paño de limpieza microfiber que venía con HoloLens para limpiar el visor suavemente.
+Si el visor tiene huellas digitales o manchas, usa el trapeador de limpieza de microfibras que viene con HoloLens para limpiar el visor con su mente.
 
 ## HoloLens no responde a mis comandos de voz
 
-Si Cortana no responde a tus comandos de voz, asegúrate de que Cortana esté activada. En la lista todas las aplicaciones, seleccione Configuración del Bloc de notas del menú **Cortana**  >  **Menu**  >  **Notebook**  >  **Settings** para realizar cambios. Para saber más sobre lo que puede decir, consulte [Use su voz con el HoloLens](hololens-cortana.md).
+Si Cortana no responde a los comandos de voz, asegúrate de que Cortana esté activada. En la lista Todas las aplicaciones, selecciona Configuración del bloc de notas de menú de **Cortana**  >  ****  >  ****  >  **** para realizar cambios. Para saber más sobre lo que puede decir, consulte [Use su voz con el HoloLens](hololens-cortana.md).
 
-## No puedo colocar hologramas o ver hologramas que he colocado anteriormente
+## No puedo colocar hologramas ni ver hologramas que he colocado anteriormente
 
-Si HoloLens no puede asignar ni cargar tu espacio, entra en el modo limitado y no podrás colocar hologramas ni ver hologramas que haya colocado. Puedes intentar lo siguiente:
+Si HoloLens no puede asignar o cargar el espacio, entra en modo Limitado y no podrás colocar hologramas ni ver hologramas que hayas colocado. Puedes intentar lo siguiente:
 
-- Asegúrate de que haya suficiente luz en tu entorno para que HoloLens pueda ver y asignar el espacio.
-- Asegúrese de que está conectado a una red Wi-Fi. Si no estás conectado a una red Wi-Fi, HoloLens no puede identificar ni cargar un espacio conocido.
-- Si necesita crear un nuevo espacio, conéctese a una red Wi-Fi y, a continuación, reinicie HoloLens.
-- Para ver si el espacio correcto está activo o para cargar manualmente un espacio, vaya a **configuración**  >  **espacios del sistema**  >  **Spaces**.
-- Si se carga el espacio correcto y sigues teniendo problemas, el espacio puede estar dañado. Para solucionar este problema, seleccione el espacio y, después, haga clic en **quitar**. Después de quitar el espacio, HoloLens comienza a asignar el entorno y a crear un nuevo espacio.
+- Asegúrate de que tu entorno tiene suficiente luz para que HoloLens pueda ver y asignar el espacio.
+- Asegúrese de que está conectado a una Wi-Fi web. Si no estás conectado a la red Wi-Fi, HoloLens no puede identificar ni cargar un espacio conocido.
+- Si necesitas crear un espacio nuevo, conéctate a La Wi-Fi y reinicia HoloLens.
+- Para ver si el espacio correcto está activo o para cargar manualmente un espacio, vaya a **Configuración**de espacios  >  **del**  >  **sistema.**
+- Si se carga el espacio correcto y sigue teniendo problemas, es posible que el espacio esté dañado. Para solucionar este problema, seleccione el espacio y, a continuación, **seleccione Quitar**. Después de quitar el espacio, HoloLens comienza a asignar su entorno y a crear un nuevo espacio.
 
-## Mi HoloLens no puede saber qué espacio estoy en
+## My HoloLens can't tell what space I'm in
 
-Si HoloLens no puede identificar ni cargar el espacio en el que se encuentra automáticamente, compruebe los siguientes factores:
+Si holoLens no puede identificar y cargar automáticamente el espacio en el que se encuentra, compruebe los siguientes factores:
 
-- Asegúrate de estar conectado a Wi-Fi
-- Asegúrese de que hay mucha luz en el salón
-- Asegúrese de que no haya ningún cambio importante en el entorno.
+- Asegúrese de que está conectado a Wi-Fi
+- Asegúrese de que hay mucha luz en la sala
+- Asegúrate de que no se hayan realizado cambios importantes en el entorno.
 
-También puedes cargar un espacio manualmente o administrar tus espacios yendo a **configuración**  >  **espacios del sistema**  >  **Spaces**.
+También puede cargar un espacio manualmente o administrar los espacios yendo a **Configuración**  >  **de espacios del**  >  **sistema.**
 
-## Obtengo un error de "poco espacio en el disco"
+## Aparece un error de "poco espacio en disco"
 
-Tendrás que liberar algo de espacio de almacenamiento mediante uno o varios de los siguientes procedimientos:
+Deberá liberar espacio de almacenamiento realizando una o varias de las siguientes acciones:
 
-- Elimine algunos espacios que no se hayan usado. Vaya a **configuración**  >  **espacios del sistema**  >  **Spaces**, seleccione un espacio que ya no necesite y, después, seleccione **quitar**.
-- Quite algunos hologramas que haya colocado.
-- Elimine algunas imágenes y vídeos de la aplicación fotos.
-- Desinstale algunas aplicaciones de su HoloLens. En la lista **todas las aplicaciones** , pulse y mantenga presionada la aplicación que quiera desinstalar y, después, seleccione **desinstalar**.
+- Elimine algunos espacios sin usar. Vaya a **Espacios**  >  **del sistema**de configuración, seleccione un espacio que ya no necesite  >  **** y, a continuación, **seleccione Quitar**.
+- Quita algunos de los hologramas que has colocado.
+- Elimina algunas imágenes y vídeos de la Fotos aplicación.
+- Desinstale algunas aplicaciones de su HoloLens. En la **lista Todas las** aplicaciones, pulse y mantenga presionada la aplicación que desea desinstalar y, a continuación, seleccione **Desinstalar**.
 
-## Mi HoloLens no puede crear un nuevo espacio
+## Mi HoloLens no puede crear un espacio nuevo
 
-Lo más probable es que se esté agotando el espacio de almacenamiento. Pruebe una de las [sugerencias anteriores](#im-getting-a-low-disk-space-error) para liberar espacio en disco.
+El problema más probable es que se está quedando sin espacio de almacenamiento. Pruebe una de las [sugerencias anteriores](#im-getting-a-low-disk-space-error) para liberar espacio en disco.
 
 ## El emulador de HoloLens no funciona
 
-La información sobre el emulador de HoloLens se encuentra en nuestra documentación para desarrolladores.  Más información sobre cómo [solucionar problemas del emulador de HoloLens](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
+La información sobre el emulador de HoloLens se encuentra en nuestra documentación para desarrolladores.  Obtenga más información [sobre cómo solucionar problemas del emulador de HoloLens.](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting)

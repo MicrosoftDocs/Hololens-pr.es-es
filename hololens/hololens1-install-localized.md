@@ -1,6 +1,6 @@
 ---
 title: Instalar versiones localizadas de HoloLens
-description: Más información sobre cómo instalar las versiones en chino o japonés de HoloLens
+description: Aprende a instalar las versiones localizadas de HoloLens (1.ª generación), incluidas las versiones en chino y japonés.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9ccee2e11650926a5570967f1de5f6b341a17ae6
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: af79e42477a3a317dde03a795c442fa31241600d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829665"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282981"
 ---
 # Instalar versiones localizadas de HoloLens (1.ª generación)
 
