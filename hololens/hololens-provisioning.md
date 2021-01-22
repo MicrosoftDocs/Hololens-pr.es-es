@@ -1,5 +1,5 @@
 ---
-title: Configurar HoloLens con un paquete de aprovisionamiento (HoloLens)
+title: Configurar HoloLens mediante un paquete de aprovisionamiento (HoloLens)
 description: El aprovisionamiento de Windows permite a los administradores de TI configurar fácilmente los dispositivos para el usuario final sin necesidad de crear imágenes.
 ms.prod: hololens
 ms.sitesec: library
@@ -16,71 +16,71 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: b22baa62488bbdf6d2a8a43b6487bbe5ec3277cb
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162996"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284161"
 ---
-# Configurar HoloLens con un paquete de aprovisionamiento
+# Configurar HoloLens mediante un paquete de aprovisionamiento
 
-El [aprovisionamiento de Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) facilita que los administradores de ti configuren dispositivos de usuario final sin imágenes. El diseñador de configuración de Windows es una herramienta para configurar las imágenes y la configuración del tiempo de ejecución, que se integran en paquetes de aprovisionamiento.
+[El aprovisionamiento de Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) facilita a los administradores de TI configurar dispositivos de usuario final sin crear imágenes. El Diseñador de configuraciones de Windows es una herramienta para configurar imágenes y opciones de tiempo de ejecución que, a continuación, se integran en paquetes de aprovisionamiento.
 
-Algunas de las configuraciones de HoloLens que puede aplicar en un paquete de aprovisionamiento son las siguientes:
+Algunas de las configuraciones de HoloLens que puedes aplicar en un paquete de aprovisionamiento incluyen lo siguiente:
 
-- Actualizar a Windows Holographic para empresas [aquí](hololens1-upgrade-enterprise.md)
+- Actualizar a [Windows Holographic for Business](hololens1-upgrade-enterprise.md)
 - Configuración de una cuenta local
 - Configuración de una conexión Wi-Fi
 - Aplicar certificados al dispositivo
 - Habilitar el modo de desarrollador
-- Configurar el modo de pantalla completa ( [aquí](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)encontrará instrucciones detalladas para configurar el modo de pantalla completa.
+- Configure el modo de pantalla completa siguiendo [nuestras instrucciones detalladas.](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
-## Asistente para el paquete de aprovisionamiento de HoloLens
+## Asistente para HoloLens del paquete de aprovisionamiento
 
 El Asistente de HoloLens te ayuda a configurar las siguientes opciones en un paquete de aprovisionamiento:
 
-- Actualizar a la edición Enterprise
+- Actualizar a la edición enterprise
 
     > [!NOTE]
-    > Esto solo debe usarse para los dispositivos de la primera generación de HoloLens. La configuración de un paquete de aprovisionamiento solo se aplica si el paquete de aprovisionamiento incluye una licencia de actualización de edición a Windows Holographic para empresas o si [el dispositivo ya se ha actualizado a Windows Holographic para empresas](hololens1-upgrade-enterprise.md).
+    > Esto solo debe usarse para dispositivos HoloLens de 1.ª generación. La configuración de un paquete de aprovisionamiento solo se aplica si el paquete de aprovisionamiento incluye una licencia de actualización de edición a Windows Holographic for Business o si el dispositivo ya se ha actualizado a [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)
 
-- Configurar la primera experiencia (OOBE) de HoloLens
-- Configurar la red de Wi-Fi
+- Configurar la primera experiencia de HoloLens (OOBE)
+- Configurar la red Wi-Fi cliente
 - Inscribir el dispositivo en Azure Active Directory o crear una cuenta local
 - Agregar certificados
 - Habilitar el modo de desarrollador
-- Configurar el modo de pantalla completa. Puede [encontrar instrucciones](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)detalladas para configurar el modo de pantalla completa.
+- Configure el modo de pantalla completa siguiendo [instrucciones detalladas).](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
 > [!WARNING]
 > Debes ejecutar el Diseñador de configuraciones de Windows en Windows 10 para configurar la inscripción en Azure Active Directory a través de cualquiera de los asistentes.
 
-Los paquetes de aprovisionamiento pueden incluir instrucciones de administración y directivas, conexiones de red personalizadas y directivas, entre otras.
+Los paquetes de aprovisionamiento pueden incluir instrucciones y directivas de administración, directivas y conexiones de red personalizadas, etc.
 
 > [!TIP]
 > Usa el asistente para escritorio para crear un paquete con la configuración común y después usa el editor avanzado para agregar otras configuraciones, aplicaciones, directivas, etc.
 
 ## Pasos para crear paquetes de aprovisionamiento
 
-1. **Opción 1:** [desde Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). Esto incluye las capacidades de HoloLens 2.
-2. **Opción 2:** [de Windows Assessment and Deployment Kit (ADK) para Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Si instala el diseñador de configuración de Windows desde Windows ADK, seleccione **Diseñador de configuración** en el cuadro de diálogo **Seleccione las características que desea instalar** . Esta opción no incluye las funcionalidades de HoloLens 2.
+1. **Opción 1: Desde** [Microsoft Store.](https://www.microsoft.com/store/apps/9nblggh4tx22) Esto incluye las funcionalidades de HoloLens 2.
+2. **Opción 2:** Del Kit de implementación y [evaluación de Windows (ADK) para Windows 10.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) Si instala el Diseñador de configuraciones **** de Windows desde Windows ADK, seleccione Diseñador de configuraciones en el cuadro de diálogo Seleccionar las características **que desea** instalar. Esta opción no incluye las capacidades de HoloLens 2.
 
 > [!NOTE]
-> Si sabe que va a usar un equipo sin conexión que necesita acceso al diseñador de configuración de Windows, siga la instalación sin conexión de la aplicación aquí para el Asistente de recuperación avanzada, pero haciendo que Windows [le](https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) Confiugration en su lugar la selección. 
+> Si sabes que vas a usar un equipo sin conexión que necesita acceso al Diseñador de configuraciones de Windows, sigue las [instalación de la aplicación sin conexión( instrucciones para https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) Advanced Recovery Companion. Haz que el Diseñador de configuraciones de Windows sea tu selección. 
 
-### 2. crear el paquete de aprovisionamiento
+### 2. Crear el paquete de aprovisionamiento
 
 Usa la herramienta Diseñador de configuraciones de Windows para crear un paquete de aprovisionamiento.
 
 1. Abre el Diseñador de configuraciones de Windows (que se encuentra de forma predeterminada en %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Diseñador de imágenes y configuraciones\x86\ICD.exe).
 
-2. Seleccione **aprovisionar dispositivos HoloLens**.
+2. Seleccione **Aprovisionar dispositivos HoloLens.**
 
    ![Opciones de inicio de ICD](images/icd-create-options-1703.png)
 
 3. Asigne un nombre al proyecto y seleccione **Finalizar**.
 
-4. Lea las instrucciones de la página **Introducción** y seleccione **siguiente**. Las páginas de aprovisionamiento de escritorio le guiarán a través de los pasos siguientes.
+4. Lea las instrucciones de la **página Introducción** y seleccione **Siguiente.** Las páginas para el aprovisionamiento de escritorio le indican los pasos siguientes.
   
 > [!IMPORTANT]
 > Cuando compilas un paquete de aprovisionamiento, puedes incluir información confidencial en los archivos de proyecto y en el archivo del paquete de aprovisionamiento (.ppkg). Aunque tienes la posibilidad de cifrar el archivo .ppkg, los archivos de proyecto no se cifran. Debes almacenar los archivos de proyecto en una ubicación segura y eliminarlos cuando ya no sean necesarios.
@@ -88,146 +88,146 @@ Usa la herramienta Diseñador de configuraciones de Windows para crear un paquet
 ### Configurar opciones
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Busque y seleccione el archivo de licencia empresarial para actualizar la edición de HoloLens.</br></br>También puede activar o desactivar <strong> sí </strong> o <strong> no </strong> para ocultar partes de la primera experiencia.</br></br>Para configurar el dispositivo sin necesidad de conectarse a una red Wi-Fi, desactive <strong> omitir Wi-Fi configuración en </strong> <strong> activado </strong> .</br></br>Seleccione una región y una zona horaria en la que se usará el dispositivo. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>En esta sección, puede introducir los detalles de la red inalámbrica de Wi-Fi a la que el dispositivo debe conectarse automáticamente. Para ello, seleccione <strong> activado </strong> , escriba el SSID, el tipo de red ( <strong> abierto </strong> o <strong> WPA2-Personal </strong> ) y (si <strong> WPA2-Personal </strong> ) la contraseña de la red inalámbrica.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Puede inscribir el dispositivo en Azure Active Directory o crear una cuenta local en el dispositivo</br></br>Antes de usar un asistente del Diseñador de configuraciones de Windows para configurar la inscripción masiva en AzureAD, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">configura la unión a Azure AD en la organización</a>. La opción <strong>Número máximo de dispositivos por usuario</strong> del inquilino de Azure AD determina cuántas veces se puede usar el token masivo que se obtiene en el asistente. Para inscribir el dispositivo en Azure AD, selecciona esa opción y escribe un nombre descriptivo para el token masivo que obtendrás mediante el asistente. Establece una fecha de expiración del token (el máximo es de 30 días a partir de la fecha de obtención del token). Seleccione <strong> obtener token en masa </strong> . En la <strong> ventana ¿permitir que&#39;s inicie sesión? </strong> , escriba una cuenta que tenga permisos para unirse a un dispositivo a Azure ad y, a continuación, la contraseña. Seleccione <strong> Aceptar </strong> para dar al diseñador de configuración de Windows los permisos necesarios. </br></br>Para crear una cuenta local, seleccione esa opción y escriba un nombre de usuario y una contraseña. </br></br><strong>Importante:</strong> <br />(Solo para Windows 10, versión 1607) Si crea una cuenta local en el paquete de aprovisionamiento, debe cambiar la contraseña con la <strong> </strong> aplicación configuración cada 42 días. Si la contraseña no se cambia en ese período, es posible que se bloquee y no se pueda iniciar sesión.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Busca y selecciona el archivo de licencia de empresa para actualizar la edición holoLens.</br></br>También puede alternar <strong> Sí o No para ocultar partes de la primera </strong> <strong> </strong> experiencia.</br></br>Para configurar el dispositivo sin necesidad de conectarse a una red Wi-Fi, alterna Omitir Wi-Fi <strong> configuración </strong> a On <strong> </strong> .</br></br>Selecciona una región y una zona horaria en la que se usará el dispositivo. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>En esta sección, puedes escribir los detalles de la Wi-Fi inalámbrica a la que el dispositivo debe conectarse automáticamente. Para ello, selecciona Activar, escribe el SSID, el tipo de red ( Open o <strong> </strong> <strong> </strong> <strong> WPA2-Personal ) y </strong> (si <strong> WPA2-Personal) </strong> la contraseña de la red inalámbrica.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Puedes inscribir el dispositivo en Azure Active Directory o crear una cuenta local en el dispositivo.</br></br>Antes de usar un asistente del Diseñador de configuraciones de Windows para configurar la inscripción masiva en AzureAD, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">configura la unión a Azure AD en la organización</a>. La opción <strong>Número máximo de dispositivos por usuario</strong> del inquilino de Azure AD determina cuántas veces se puede usar el token masivo que se obtiene en el asistente. Para inscribir el dispositivo en Azure AD, selecciona esa opción y escribe un nombre descriptivo para el token masivo que obtendrás mediante el asistente. Establece una fecha de expiración del token (el máximo es de 30 días a partir de la fecha de obtención del token). Seleccione <strong> Obtener token </strong> masivo. En la ventana Permitir&#39;sesión, escriba una cuenta que tenga permisos para unir un dispositivo <strong> a Azure AD y, a continuación, </strong> la contraseña. Selecciona <strong> Aceptar para conceder al Diseñador de </strong> configuraciones de Windows los permisos necesarios. </br></br>Para crear una cuenta local, seleccione esa opción y escriba un nombre de usuario y una contraseña. </br></br><strong>Importante:</strong> <br />(Solo para Windows 10, versión 1607) Si creas una cuenta local en el paquete de aprovisionamiento, debes cambiar la contraseña con la aplicación Configuración <strong> </strong> cada 42 días. Si la contraseña no se cambia en ese período, es posible que se bloquee y no se pueda iniciar sesión.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Para aprovisionar el dispositivo con un certificado, haz clic en <strong>Agregar un certificado</strong>. Escribe un nombre de certificado y luego busca y selecciona el certificado que quieres usar.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br><strong> </strong> <strong> </strong> Para habilitar el modo de Desarrollador en HoloLens, activa sí o no. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Obtén más información acerca del modo de desarrollador.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>No establezca una contraseña para proteger el paquete de aprovisionamiento. Si el paquete de aprovisionamiento está protegido por contraseña, el aprovisionamiento del dispositivo HoloLens fallará.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Alterna <strong> Sí o No para habilitar el modo de desarrollador en </strong> <strong> </strong> HoloLens. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Obtén más información acerca del modo de desarrollador.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>No establezcas una contraseña para proteger el paquete de aprovisionamiento. Si el paquete de aprovisionamiento está protegido con una contraseña, se producirá un error al aprovisionar el dispositivo HoloLens.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
-Cuando haya terminado, seleccione **crear**. El proceso solo tarda unos pocos segundos. Cuando se genera el paquete, la ubicación donde se almacena el paquete se muestra como un hipervínculo en la parte inferior de la página.
+Cuando haya terminado, seleccione **Crear**. El proceso solo tarda unos pocos segundos. Cuando se genera el paquete, la ubicación donde se almacena el paquete se muestra como un hipervínculo en la parte inferior de la página.
 
-### 3. crear un paquete de aprovisionamiento para HoloLens con el aprovisionamiento avanzado
+### 3. Crear un paquete de aprovisionamiento para HoloLens mediante el aprovisionamiento avanzado
 
 > [!NOTE]
-> Un paquete de aprovisionamiento creado en el **aprovisionamiento avanzado** no necesita incluir una licencia de actualización de la edición para que Windows Holographic para empresas pueda aplicarse correctamente a HoloLens (1 ª generación). [Más información en Windows Holographic para la empresa para HoloLens (1ª generación)](hololens1-upgrade-enterprise.md).
+> Un paquete de aprovisionamiento que crees en el aprovisionamiento avanzado no necesita incluir una licencia de actualización de edición a Windows Holographic for Business para aplicar correctamente a HoloLens (1.ª generación). **** [Más información sobre Windows Holographic for Business para HoloLens (1.ª generación).](hololens1-upgrade-enterprise.md)
 
 1. En la página de inicio del Diseñador de configuraciones de Windows, selecciona **Aprovisionamiento avanzado**.
 2. En la ventana **Escribir los detalles del proyecto**, especifica un nombre y una ubicación para el proyecto. También tienes la opción de especificar una breve descripción del proyecto.
 
 3. Selecciona **Siguiente**.
 
-4. En la ventana **Elija los ajustes que desea ver y configurar** , seleccione **Windows 10 Holographic**y, a continuación, seleccione **siguiente**.
+4. En la **ventana Elegir qué opciones desea ver** y configurar, seleccione Windows **10 Holographic**y, a continuación, **seleccione Siguiente.**
 
 5. Seleccione **Finalizar**.
 
-6. Expanda la **configuración de tiempo de ejecución** y personalice el paquete con cualquiera de las opciones que [se describen más adelante en este artículo](#what-you-can-configure).
+6. Expande **la configuración de** tiempo de ejecución y personaliza el paquete mediante cualquiera de las opciones que se [describen más adelante en este artículo.](#what-you-can-configure)
 
     > [!IMPORTANT]
-    > (Solo para Windows 10, versión 1607) Si crea una cuenta local en el paquete de aprovisionamiento, debe cambiar la contraseña con la aplicación **configuración** cada 42 días. Si la contraseña no se cambia en ese período, es posible que la cuenta se bloquee y no se pueda iniciar sesión. Si la cuenta de usuario se bloquea, deberás [realizar una recuperación completa del dispositivo](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery) (vínculo en inglés).
+    > (Solo para Windows 10, versión 1607) Si creas una cuenta local en el paquete de **** aprovisionamiento, debes cambiar la contraseña con la aplicación Configuración cada 42 días. Si la contraseña no se cambia en ese período, es posible que la cuenta se bloquee y no se pueda iniciar sesión. Si la cuenta de usuario se bloquea, deberás [realizar una recuperación completa del dispositivo](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery) (vínculo en inglés).
 
-7. Seleccione **File**  >  **Guardar**archivo.
+7. Seleccione **Guardar**  >  **archivo.**
 
-8. Lea la advertencia de que los archivos de proyecto pueden contener información confidencial y seleccione **Aceptar**.
+8. Lea la advertencia de que los archivos de proyecto pueden contener información confidencial y seleccione **Aceptar.**
 
     > [!IMPORTANT]
     > Cuando compilas un paquete de aprovisionamiento, puedes incluir información confidencial en los archivos de proyecto y en el archivo del paquete de aprovisionamiento (.ppkg). Aunque tienes la posibilidad de cifrar el archivo .ppkg, los archivos de proyecto no se cifran. Debes almacenar los archivos del proyecto en una ubicación segura y eliminarlos cuando ya no sean necesarios.
     
-9. Seleccione **exportar**  >  **paquete de aprovisionamiento**.
+9. Seleccione **Exportar paquete**de  >  **aprovisionamiento.**
 
-10. Cambie el **propietario** a **Administrador de ti**. Esto establece la prioridad de este paquete de aprovisionamiento más alta que los paquetes de aprovisionamiento que se aplican a este dispositivo desde otros orígenes. Selecciona **Siguiente**.
+10. Cambiar **propietario a** administrador de **TI.** Esto establece la prioridad de este paquete de aprovisionamiento más alta que los paquetes de aprovisionamiento aplicados a este dispositivo desde otros orígenes. Selecciona **Siguiente**.
 
 11. Establece un valor para **Versión del paquete**.
 
     > [!TIP]
     > Puedes realizar cambios en los paquetes existentes y cambiar el número de versión para actualizar los paquetes aplicados anteriormente.
 
-12. En **seleccionar detalles de seguridad para el paquete de aprovisionamiento**, seleccione **siguiente**.
+12. En Seleccionar **detalles de seguridad para el paquete de aprovisionamiento,** seleccione **Siguiente.**
 
     > [!WARNING]
     > Si cifras el paquete de aprovisionamiento, se producirá un error al aprovisionar el dispositivo Hololens.  
 
-13. Seleccione **siguiente** para especificar la ubicación de salida donde quiere que aparezca el paquete de aprovisionamiento una vez que se ha creado. De forma predeterminada, el Diseñador de configuraciones de Windows usa la carpeta de proyecto como la ubicación de salida.
+13. Selecciona **Siguiente** para especificar la ubicación de salida donde quieres que vaya el paquete de aprovisionamiento una vez creado. De forma predeterminada, el Diseñador de configuraciones de Windows usa la carpeta de proyecto como la ubicación de salida.
 
-    De manera opcional, puede seleccionar **examinar** para cambiar la ubicación de salida predeterminada.
+    Opcionalmente, puede seleccionar Examinar **para** cambiar la ubicación de salida predeterminada.
 
 14. Selecciona **Siguiente**.
 
-15. Seleccione **compilación** para empezar a crear el paquete. La información del proyecto se muestra en la página de compilación y la barra de progreso indica el estado de compilación.
+15. Selecciona **Generar** para empezar a compilar el paquete. La información del proyecto se muestra en la página de compilación y la barra de progreso indica el estado de compilación.
 
-16. Una vez completada la compilación, seleccione **Finalizar**.
+16. Cuando se complete la compilación, seleccione **Finalizar**.
 
 <span id="apply" />
 
-## Aplicar un paquete de aprovisionamiento a HoloLens durante la instalación
+## Aplicar un paquete de aprovisionamiento a HoloLens durante la configuración
 
-Los dispositivos HoloLens 2 en Windows Holographic, versión 2004 o compilación [19041,1103](hololens-release-notes.md#windows-holographic-version-2004) o posteriores, pueden usar una unidad USB para aplicar un paquete de aprovisionamiento. Simplemente copia el archivo. ppkg en la raíz de la unidad USB. Los paquetes de aprovisionamiento solo se aplicarán si se encuentran en la raíz de la unidad USB. Se aplicará un paquete de aprovisionamiento múltiple secuencialmente.
+Los dispositivos HoloLens 2 en Windows Holographic, versión 2004 o compilación [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) o posterior, pueden usar una unidad USB para aplicar un paquete de aprovisionamiento. Simplemente copia el archivo .ppkg en la raíz de la unidad USB. Los paquetes de aprovisionamiento solo se aplicarán si están en la raíz de la unidad USB. Varios paquetes de aprovisionamiento presentes se aplicarán secuencialmente.
 
-Los dispositivos HoloLens 2 en [Windows Holographic versión 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o posterior tienen características más recientes para ayudar a simplificar y simplificar este proceso, lo que hace que sea automático. Revise las siguientes secciones:
+Los dispositivos HoloLens 2 en [Windows Holographic versión 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o posterior tienen características más recientes para ayudar a simplificar y simplificar este proceso para que sea automático. Revise las secciones siguientes:
 
-- [Iniciar automáticamente el aprovisionamiento desde USB](hololens-provisioning.md#auto-launch-provisioning-from-usb)
-- [Confirmar automáticamente paquetes de aprovisionamiento en OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+- [Aprovisionamiento de inicio automático desde USB](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+- [Confirmar automáticamente los paquetes de aprovisionamiento en la OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 - [Aprovisionamiento automático sin usar la interfaz de usuario](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
-1. Use el cable USB para conectar el dispositivo a un PC (o unidad USB para HoloLens 2 como se mencionó anteriormente) y, a continuación, inicie el dispositivo. No continúe más allá de la primera página de un momento que se pueda **interactuar** de Oobe.   
-    - En HoloLens (1ª generación), esta página contiene un cuadro azul. 
-    - En HoloLens 2, esta página contiene el complemento Hummingbird.
+1. Usa el cable USB para conectar el dispositivo a un equipo (o unidad USB para HoloLens 2 como se mencionó anteriormente) y, a continuación, inicia el dispositivo. No continúes más allá de la página primer momento **interactable** de la OOBE.   
+    - En HoloLens (1.ª generación), esta página contiene un cuadro azul. 
+    - En HoloLens 2, esta página contiene el colibrí.
 
 2. Presiona brevemente los botones **Bajar el volumen** e **Inicio/Apagado** a la vez y suéltalos. 
 
-3. HoloLens se muestra como un dispositivo en el explorador de archivos de su PC.
+3. HoloLens se muestra como un dispositivo en el Explorador de archivos en el equipo.
 
 4. En el Explorador de archivos, arrastra y coloca el paquete de aprovisionamiento (.ppkg) en el almacenamiento del dispositivo.
 
-5. Pulsa y suelta **brevemente los botones** de **encendido** y de apagado de forma simultánea mientras se encontraba en la primera página de un momento que se pueda **interactuar** de Oobe.
+5. Presiona brevemente y suelta los **** botones **Bajar** volumen y Encendido simultáneamente mientras se encuentra en la página Primer momento **interactable** de la OOBE.
 
-6. El dispositivo te pregunta si confías en el paquete y deseas aplicarlo. Confirma que el paquete es de confianza.
+6. El dispositivo te pregunta si confías en el paquete y quieres aplicarlo. Confirma que el paquete es de confianza.
 
 7. Verás si el paquete se ha aplicado correctamente o no. Si se ha producido un error, puedes arreglar el paquete y volver a intentarlo. Si se ha aplicado correctamente, continúa con la configuración rápida.
 
 > [!NOTE]
-> Si el dispositivo se compró antes del 2016 de agosto, tendrá que iniciar sesión en el dispositivo con una cuenta de Microsoft, obtener la actualización más reciente del sistema operativo y, a continuación, restablecer el sistema operativo para aplicar el paquete de aprovisionamiento.
+> Si el dispositivo se compró antes de agosto de 2016, deberás iniciar sesión en el dispositivo con una cuenta de Microsoft, obtener la última actualización del sistema operativo y, a continuación, restablecer el sistema operativo para aplicar el paquete de aprovisionamiento.
 
-### Iniciar automáticamente el aprovisionamiento desde USB
+### Aprovisionamiento de inicio automático desde USB
 
-- Procesos automatizados que permiten una interacción mínima con el usuario, cuando se usan unidades USB con paquetes de aprovisionamiento durante OOBE.
+- Procesos automatizados que permiten una menor interacción del usuario, cuando se usan unidades USB con paquetes de aprovisionamiento durante la OOBE.
 
-Antes de esta versión, los usuarios tuvieron que iniciar la pantalla de aprovisionamiento manualmente durante el uso de OOBE para aprovisionar con una combinación de botones. Ahora los usuarios pueden omitir la combinación de botones con un paquete de aprovisionamiento en una unidad de almacenamiento USB. 
+Antes de esta versión, los usuarios tenían que iniciar la pantalla de aprovisionamiento manualmente durante la OOBE para aprovisionar mediante una combinación de botones. Ahora los usuarios pueden omitir la combinación de botones mediante un paquete de aprovisionamiento en una unidad de almacenamiento USB. 
 
-1. Conecta la unidad USB con el paquete de aprovisionamiento durante el primer momento de interactuación de OOBE
-1. Cuando el dispositivo esté listo para su aprovisionamiento, se abrirá automáticamente el mensaje con la página de aprovisionamiento. 
+1. Conectar la unidad USB con el paquete de aprovisionamiento durante el primer momento interactuable de la OOBE
+1. Cuando el dispositivo esté listo para aprovisionarse, abrirá automáticamente el mensaje con la página de aprovisionamiento. 
 
-Nota: si se deja de conectar una unidad USB mientras se está iniciando el dispositivo, OOBE enumerará el dispositivo de almacenamiento USB existente, así como la posibilidad de que se conecten otros adicionales.
+Nota: Si una unidad USB se deja enchufada mientras el dispositivo se está arrancando, la OOBE enumerará el dispositivo de almacenamiento USB existente, así como observará si se están conectando otros.
 
-Para obtener más información sobre cómo aplicar paquetes de aprovisionamiento durante OOBE, siga leyendo [aquí](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+Obtenga información sobre cómo [aplicar paquetes de aprovisionamiento durante la OOBE.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
 
-### Confirmar automáticamente paquetes de aprovisionamiento en OOBE
-- Proceso automatizado que permite menos interacción del usuario, cuando se muestra la página del paquete de aprovisionamiento, se aplicarán automáticamente todos los paquetes que aparecen en la lista.
+### Confirmar automáticamente los paquetes de aprovisionamiento en la OOBE
+- Proceso automatizado que permite una menor interacción del usuario, cuando se muestra la página Paquete de aprovisionamiento, se aplicarán automáticamente todos los paquetes enumerados.
 
-Cuando se enciende la pantalla principal de aprovisionamiento, OOBE contará hasta 10 segundos antes de comenzar a aplicar automáticamente todos los paquetes de aprovisionamiento. Los usuarios pueden confirmar o cancelar dentro de estos 10 segundos después de verificar los paquetes que esperaban.
+Cuando aparece la pantalla principal de aprovisionamiento, la OOBE contará 10 segundos antes de empezar automáticamente a aplicar todos los paquetes de aprovisionamiento. Los usuarios aún pueden confirmar o cancelar en estos 10 segundos después de comprobar los paquetes que esperaban.
 
 ### Aprovisionamiento automático sin usar la interfaz de usuario
-- Procesos automáticos combinados para reducir las interacciones del dispositivo para el aprovisionamiento. 
+- Procesos automáticos combinados para interacciones de dispositivo reducidas para el aprovisionamiento. 
 
-Al combinar el inicio automático de la provisión de dispositivos USB y la confirmación automática de paquetes de aprovisionamiento, un usuario puede aprovisionar dispositivos HoloLens 2 automáticamente sin usar la interfaz de usuario del dispositivo ni siquiera con el dispositivo. Puede seguir usando la misma unidad USB y el mismo paquete de aprovisionamiento para varios dispositivos. Esto es útil para implementar varios dispositivos a la vez en la misma área. 
+Al combinar el inicio automático del aprovisionamiento desde dispositivos USB y la confirmación automática de paquetes de aprovisionamiento, un usuario puede aprovisionar dispositivos HoloLens 2 automáticamente sin usar la interfaz de usuario del dispositivo ni siquiera usar el dispositivo. Puedes seguir usando la misma unidad USB y el mismo paquete de aprovisionamiento para varios dispositivos. Esto es útil para implementar varios dispositivos a la vez en la misma área. 
 
-1. [Crear un paquete de aprovisionamiento](hololens-provisioning.md) con el [Diseñador de configuración de Windows](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
-1. Copie el paquete en una unidad de almacenamiento USB.
-1. [Flashe tu HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) a [19041,1361 o una compilación más reciente](https://aka.ms/hololens2previewdownload). 
-1. Cuando el [Asistente de recuperación avanzada](https://www.microsoft.com/store/productId/9P74Z35SFRS8) ha completado el parpadeo del dispositivo, desconecte el cable USB-C. 
-1. Conecta tu unidad USB al dispositivo.
-1. Cuando el dispositivo HoloLens 2 se inicie en OOBE, detectará automáticamente el paquete de aprovisionamiento en la unidad USB e iniciará la página de aprovisionamiento.
+1. [Crea un paquete de aprovisionamiento](hololens-provisioning.md) con el [Diseñador de configuraciones de Windows.](https://www.microsoft.com/store/productId/9NBLGGH4TX22) 
+1. Copia el paquete en una unidad de almacenamiento USB.
+1. [Flash your HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) to [19041.1361 or newer build](https://aka.ms/hololens2previewdownload). 
+1. Cuando [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) haya terminado de parpadear el dispositivo, desconecta el cable USB-C. 
+1. Conecta la unidad USB al dispositivo.
+1. Cuando el dispositivo HoloLens 2 se inicia en la OOBE, detectará automáticamente el paquete de aprovisionamiento en la unidad USB e iniciará la página de aprovisionamiento.
 1. Después de 10 segundos, el dispositivo aplicará automáticamente el paquete de aprovisionamiento. 
 
-El dispositivo ya está configurado y mostrará la pantalla de aprovisionamiento correcto.
+El dispositivo ya está configurado y mostrará la pantalla Aprovisionamiento correcto.
 
-## Aplicar un paquete de aprovisionamiento a HoloLens después de la instalación
+## Aplicar un paquete de aprovisionamiento a HoloLens después de la configuración
 
 > [!NOTE]
 > Estos pasos solo se aplican a Windows 10, versión 1809.
 
-En su equipo, siga estos pasos:
-1. Cree un paquete de aprovisionamiento como se describe en [crear un paquete de aprovisionamiento para HoloLens con el Asistente de hololens](hololens-provisioning.md).
-2. Conecta el dispositivo HoloLens a un equipo de PC con un cable USB. HoloLens se muestra como un dispositivo en el explorador de archivos de su PC.
-3. Arrastre y coloque el paquete de aprovisionamiento en la carpeta documentos de HoloLens.
+En el equipo, sigue estos pasos:
+1. Crea un paquete de aprovisionamiento como se describe en Crear un paquete [de aprovisionamiento para HoloLens con el asistente de HoloLens.](hololens-provisioning.md)
+2. Conecta el dispositivo HoloLens a un equipo mediante un cable USB. HoloLens se muestra como un dispositivo en el Explorador de archivos en el equipo.
+3. Arrastre y coloque el paquete de aprovisionamiento en la carpeta Documentos de HoloLens.
 
-En HoloLens, siga estos pasos:
-1. Vaya a **configuración**  >  **cuentas**de  >  **acceso profesional o educativa**. 
-2. En **configuración relacionada**, seleccione **Agregar o quitar un paquete de aprovisionamiento**.
-3. En la página siguiente, seleccione **Agregar un paquete** para iniciar el selector de archivos y seleccione el paquete de aprovisionamiento. Si la carpeta está vacía, asegúrese de seleccionar **este dispositivo** y de seleccionar **documentos**.
+En holoLens, siga estos pasos:
+1. Vaya a **Configuración cuentas**  >  **obtener acceso**a trabajo o  >  **escuela.** 
+2. En **Configuración relacionada,** seleccione **Agregar o quitar un paquete de aprovisionamiento.**
+3. En la página siguiente, selecciona **Agregar un paquete** para iniciar el selector de archivos y selecciona el paquete de aprovisionamiento. Si la carpeta está vacía, asegúrese de seleccionar **Este dispositivo** y de seleccionar **Documentos**.
 
-Después de que se haya aplicado el paquete, aparecerá en la lista de **paquetes instalados**. Para ver los detalles del paquete o para quitar el paquete del dispositivo, seleccione el paquete que aparece en la lista.
+Una vez aplicado el paquete, se muestra en la lista de **paquetes instalados.** Para ver los detalles del paquete o quitar el paquete del dispositivo, selecciona el paquete enumerado.
 
 ## Elementos que puedes configurar
 
@@ -244,9 +244,9 @@ En Diseñador de configuraciones de Windows, cuando se crea un paquete de aprovi
 | **EditionUpgrade** | [Actualiza a Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Directivas** | Permite o impide el Modo de desarrollador en HoloLens. [Directivas compatibles con Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
 
-## Instalación de aplicaciones mediante el paquete de aprovisionamiento
+## Instalación de la aplicación a través del paquete de aprovisionamiento
 
-Las aplicaciones se pueden instalar mediante paquetes de aprovisionamiento en dispositivos HoloLens 2. Esto permite un paquete fácilmente reutilizable que puede usar para ayudarle a distribuir las aplicaciones. Lea las instrucciones completas para [implementar aplicaciones a través de paquetes de aprovisionamiento](app-deploy-provisioning-package.md).  
+Las aplicaciones se pueden instalar a través de paquetes de aprovisionamiento en dispositivos HoloLens 2. Esto permite un paquete que se puede volver a usar fácilmente y que te ayudará a distribuir las aplicaciones. Lee las instrucciones completas para implementar [aplicaciones a través de paquetes de aprovisionamiento.](app-deploy-provisioning-package.md)  
 
 > [!NOTE]
-> HoloLens (1º gen) tiene un soporte limitado para instalar aplicaciones (**UniversalAppInstall**) mediante un paquete de aprovisionamiento. Los dispositivos HoloLens (1. ª gen) solo admiten la instalación de una aplicación a través de PPKG solo durante OOBE y solo con instalaciones de contexto de usuario.
+> HoloLens (1.ª generación) tiene compatibilidad limitada para instalar aplicaciones (**UniversalAppInstall**) mediante un paquete de aprovisionamiento. Los dispositivos HoloLens (1.ª generación) solo admiten la instalación de una aplicación a través de PPKG solo durante la OOBE y solo con las instalaciones de contexto de usuario.

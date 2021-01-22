@@ -1,6 +1,6 @@
 ---
 title: Escenarios habituales de implementación de infraestructura
-description: Algunos escenarios de implementación comunes basados en diferentes infraestructuras comunes
+description: Obtenga información sobre algunos de los escenarios de implementación más comunes basados en distintas implementaciones de infraestructura para realidad mixta.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 11/04/2020
 keywords: hololens
@@ -14,76 +14,76 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a7d847e2d2d335f2e2388535a5cf9d5246bb330b
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 6f398327ba82e15a15da21c2b3f90222178d257a
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253077"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283631"
 ---
-# Introducción a los escenarios de implementación de infraestructura comunes
+# Introducción a los escenarios comunes de implementación de infraestructura
 
-Esta información proporciona una descripción general de la arquitectura de alto nivel para tres escenarios comunes al implementar y administrar dispositivos de Microsoft HoloLens 2 dentro de la empresa. A menudo, la forma en que se administran los dispositivos y el acceso a los recursos de la organización vienen determinadas en gran medida por factores ya instalados. En función de la infraestructura existente, le invitamos a revisar el estilo de administración de dispositivos común en los siguientes escenarios, y probar nuestras guías para implementar en el escenario que se ajuste a sus necesidades.
+Esta siguiente información proporciona una introducción a la arquitectura de alto nivel para tres escenarios comunes al implementar y administrar dispositivos De Microsoft HoloLens 2 en la empresa. A menudo, la forma en que administras los dispositivos y cómo acceder a los recursos de la organización se determina en gran medida por factores ya establecidos. En función de la infraestructura existente, te invitamos a revisar el estilo común de administración de dispositivos en los siguientes escenarios y probar nuestras guías para la implementación en el escenario que se asememe a tus necesidades.
 
 ## Escenarios
 
-El diagrama siguiente representa tres escenarios típicos para las implementaciones de HoloLens 2.
+El siguiente diagrama representa tres escenarios típicos para implementaciones de HoloLens 2.
 ![Diagrama de escenarios](images/scenarios.jpg)
 
-### Escenario A: implementar en dispositivos de conexión en la nube
+### Escenario A: Implementar en dispositivos de conexión en la nube
 
-HoloLens 2 se implementa para su uso principalmente en entornos externos a una red corporativa. No se puede acceder a los recursos corporativos o pueden estar limitados a través de VPN. Esta implementación es similar a los dispositivos móviles administrados dentro de una empresa.
- * Configuraciones básicas comunes
-   * Las redes Wi-Fi suelen estar totalmente abiertas a Internet y a los servicios en la nube.
-   * Unirse a Azure AD con inscripción automática de MDM: MDM (Intune) administrado
+HoloLens 2 se implementa para su uso principalmente en entornos externos a una red corporativa. No se tiene acceso a los recursos corporativos o pueden estar limitados a través de VPN. Esta implementación es similar a los dispositivos móviles administrados de una empresa.
+ * Configuraciones comunes básicas
+   * Wi-Fi las redes están completamente abiertas a Internet y a los servicios en la nube.
+   * Unión a Azure AD con inscripción automática de administración de dispositivos móviles (MDM): MDM (Intune) administrado
    * Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
-     * Compatible con uno o varios usuarios por dispositivo
-   * Se aplican diversos niveles de configuración de bloqueo de dispositivo en función de casos de uso específicos, desde el quiosco de la aplicación totalmente abierto a la única.
+     * Se admiten uno o varios usuarios por dispositivo
+   * Los distintos niveles de configuraciones de bloqueo de dispositivos se aplican en función de casos de uso específicos, desde Totalmente abierto hasta Quiosco de aplicación única.
    * Una o más aplicaciones se implementan a través de MDM
 
 * Desafíos comunes
-   * Determinando las configuraciones de MDM que se aplicarán a HoloLens 2 en función de los requisitos del escenario.
+   * Determinar qué configuraciones de MDM se deben aplicar a HoloLens 2 en función de los requisitos del escenario.
 
-Para obtener una guía de implementación similar a la del escenario a, revise nuestra guía de [HoloLens 2 conectada en la nube con asistencia remota](hololens2-cloud-connected-overview.md).
+Para obtener una guía de implementación similar al escenario A, revise nuestra guía de [HoloLens 2](hololens2-cloud-connected-overview.md)conectado a la nube con asistencia remota.
 
 > [!div class="nextstepaction"]
 > [Guía de implementación: HoloLens 2 conectado en la nube con asistencia remota](hololens2-cloud-connected-overview.md)
 
-### Escenario B: implementar dentro de la red de su organización
+### Escenario B: Implementar dentro de la red de la organización
 
-HoloLens 2 se ha implementado para usarlo principalmente en la red corporativa con acceso a recursos internos de la empresa. Es posible que los servicios de Internet y de nube estén limitados. Esta implementación es una implementación típica de la mayoría de equipos con Windows 10.
+HoloLens 2 se implementa para su uso principalmente en la red corporativa con acceso a recursos corporativos internos. Es posible que los servicios de Internet y la nube sean limitados. Esta implementación es una implementación típica para la mayoría de los equipos con Windows 10.
 
- * Configuraciones básicas comunes
-   * Wi-Fi red es una red corporativa interna con acceso a recursos internos y acceso limitado a Internet o a los servicios en la nube.
-   * Unirse a Azure AD con inscripción automática de MDM
+ * Configuraciones comunes básicas
+   * Wi-Fi red es una red corporativa interna con acceso a recursos internos y acceso limitado a Internet o servicios en la nube.
+   * Unión a Azure AD con inscripción automática de MDM
    * MDM (Intune) administrado
    * Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
-     * Compatible con uno o varios usuarios por dispositivo
-   * Se aplican diversos niveles de configuración de bloqueo de dispositivo en función de casos de uso específicos, desde el quiosco de la aplicación totalmente abierto a la única.
+     * Se admiten uno o varios usuarios por dispositivo
+   * Los distintos niveles de configuración de bloqueo de dispositivos se aplican en función de casos de uso específicos, desde Totalmente abierto hasta Quiosco de aplicación única.
    * Una o más aplicaciones se implementan a través de MDM
 
  * Desafíos comunes
-   * HoloLens 2 no admite la Unión de AD local o SCCM. Solo unirse a Azure AD con MDM. Muchas empresas en la actualidad implementan equipos con Windows 10 en este escenario como locales de los dispositivos Unidos a AD, administrados por System Center Configuration Manager (SCCM) y es posible que no tengan la infraestructura implementada o configurada para administrar dispositivos internos de Windows 10 a través de soluciones MDM basadas en la nube.
-   * Como HoloLens 2 es un dispositivo en la nube, depende en gran medida de los servicios conectados a la nube y de Internet para la autenticación de usuarios, las actualizaciones del sistema operativo, la administración de MDM, etc. Al conectarse a una red corporativa, es probable que las reglas de proxy o firewall se ajusten para habilitar el acceso a HoloLens 2 y las aplicaciones que se ejecutan en él.
-   * La conectividad corporativa Wi-Fi generalmente requiere certificados para autenticar el dispositivo o el usuario en la red. La configuración o la infraestructura requerida para implementar certificados en dispositivos con Windows 10 a través de MDM puede ser difícil de configurar.
+   * HoloLens 2 no admite la unión local a AD o SCCM. Solo unirse a Azure AD con MDM. Actualmente, muchas empresas siguen implementando equipos con Windows 10 en este escenario como dispositivos unidos a AD local, administrados por System Center Configuration Manager (SCCM) y es posible que no tengan la infraestructura implementada o configurada para administrar dispositivos Windows 10 internos a través de soluciones MDM basadas en la nube.
+   * Como HoloLens 2 es un primer dispositivo en la nube, se basa en gran medida en los servicios conectados a Internet y en la nube para la autenticación de usuarios, las actualizaciones del sistema operativo, la administración de MDM, y así sucesivamente. Al conectarse a una red corporativa, es muy probable que las reglas de proxy o firewall deban ajustarse para habilitar el acceso para HoloLens 2 y las aplicaciones que se ejecutan en ella.
+   * La Wi-Fi corporativa suele requerir certificados para autenticar el dispositivo o el usuario en la red. La infraestructura o configuración necesaria para implementar certificados en dispositivos Windows 10 a través de MDM puede ser difícil de configurar.
 
-### Escenario C: implementar en un entorno seguro sin conexión
+### Escenario C: Implementar en un entorno sin conexión seguro
 
-HoloLens 2 se ha implementado para usarlo principalmente sin conexión y sin acceso a la red ni a Internet. Esta es una implementación típica para ubicaciones de alta seguridad o confidenciales.
- * Configuraciones básicas comunes
-   * La conectividad de Wi-Fi está deshabilitada. Es posible habilitar Ethernet por USB para conectividad de LAN si es necesario.
+HoloLens 2 se implementa para su uso principalmente sin conexión sin acceso a la red o a Internet. Se trata de una implementación típica para ubicaciones extremadamente seguras o confidenciales.
+ * Configuraciones comunes básicas
+   * Wi-Fi conectividad está deshabilitada. Ethernet a través de USB puede estar habilitado para la conectividad LAN si es necesario.
    * No administrado.
    * Cuenta de usuario local para el inicio de sesión del dispositivo.
      * HoloLens 2 solo admite una cuenta local.
-   * Se aplican diversos niveles de configuración de bloqueo de dispositivo mediante paquetes de aprovisionamiento basados en casos de uso específicos. Por lo general, estas configuraciones están muy restringidas a causa de requisitos de entorno seguro.
-   * Una o más aplicaciones se implementan mediante el paquete de aprovisionamiento
+   * Los distintos niveles de configuración de bloqueo de dispositivos se aplican a través de paquetes de aprovisionamiento en función de casos de uso específicos. Estas configuraciones suelen estar restringidas debido a los requisitos de entorno seguro.
+   * Una o más aplicaciones se implementan a través del paquete de aprovisionamiento
 
  * Desafíos comunes
    * Hay un conjunto limitado de configuraciones disponibles a través de paquetes de aprovisionamiento
-   * Los servicios en la nube no se pueden aprovechar y, por lo tanto, limitan las capacidades de HoloLens 2.
-   * Mayor overhead administrativo ya que estos dispositivos se deben configurar, configurar y actualizar de forma manual.
+   * Los servicios en la nube no se pueden usar, lo que limita las capacidades de HoloLens 2.
+   * Mayor sobrecarga administrativa, ya que estos dispositivos deben configurarse, configurarse y actualizarse manualmente.
 
-Para obtener una guía de implementación similar a este escenario, revise nuestra [Guía de implementación segura sin conexión](hololens-common-scenarios-offline-secure.md).
+Para obtener una guía de implementación similar a este escenario, consulte nuestra Guía de implementación segura [sin conexión.](hololens-common-scenarios-offline-secure.md)
 
 > [!div class="nextstepaction"]
-> [Guía de implementación: HoloLens con conexión segura 2](hololens-common-scenarios-offline-secure.md)
+> [Guía de implementación: HoloLens seguro sin conexión 2](hololens-common-scenarios-offline-secure.md)
