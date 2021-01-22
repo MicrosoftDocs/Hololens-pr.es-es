@@ -1,6 +1,6 @@
 ---
 title: Reinicie, restablezca o recupere el HoloLens 1
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Keep up to date on the basic and advanced instructions for rebooting or resetting your HoloLens mixed reality device.
 description: Cómo usar Windows Device Recovery Tool para flashear una imagen a HoloLens 1 era generación.
 keywords: procedimientos para, reiniciar, resetear, recuperar, restablecimiento completo, restablecimiento parcial, ciclo de energía, HoloLens, apagar, wdrt, Windows Device Recovery Tool
 ms.prod: hololens
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: cd3e7a14ea811f6f3f3086563e7ead3bcd0115ae
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915966"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283921"
 ---
 # Reiniciar, restablecer o recuperar HoloLens (1.ª generación)
 

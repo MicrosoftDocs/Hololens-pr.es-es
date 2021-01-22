@@ -1,7 +1,7 @@
 ---
-title: Intune y portal de la empresa
-description: Intune, administración de aplicaciones, aplicación, portal de la empresa, portal
-keywords: Intune, administración de aplicaciones, aplicación, portal de la empresa, portal, hololens
+title: Intune y portal de empresa
+description: Obtenga información sobre cómo configurar, asignar y crear una experiencia de usuario cómoda con Intune, la administración de dispositivos móviles y el portal de la empresa.
+keywords: intune, administración de aplicaciones, aplicación, portal de empresa, portal, hololens
 author: evmill
 ms.author: v-evmill
 ms.date: 6/22/2020
@@ -17,47 +17,47 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: f91f97b6cddf678b20d0bdb3f381e01809b10f3f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252661"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283721"
 ---
 # Portal de empresa e Intune
 
-Con la administración de dispositivos móviles (MDM), puedes usar tus propias aplicaciones personalizadas a través de [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) para implementarlo directamente en tus dispositivos HoloLens. Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Intune está incluido en el [conjunto de programas de seguridad y movilidad empresarial](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)de Microsoft y permite que los usuarios sean productivos mientras mantienen protegidos los datos de su organización. Para obtener más información sobre Intune, lea [Qué es Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
+Con administración de dispositivos móviles (MDM), puedes usar tus propias aplicaciones personalizadas a través de [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) para implementarla directamente en los dispositivos HoloLens. Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Intune se incluye en el conjunto de aplicaciones [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)de Microsoft y permite a los usuarios ser productivos mientras mantienen protegidos los datos de su organización. Para obtener más información sobre Intune, lea [¿Qué es Intune?](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
 
 ## Programa de instalación
 
-1. Cargue una aplicación a una línea de negocio o cargue una aplicación personalizada a su inquilino de Intune. Vea también: [Administración de aplicaciones empresariales](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management).
+1. Cargue una aplicación en una línea de negocio o cargue una aplicación personalizada en su inquilino de Intune. Consulta también: Administración [de aplicaciones empresariales.](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management)
 
-2. [Asignar la aplicación a un grupo](https://docs.microsoft.com/mem/intune/apps/apps-deploy). En función del tipo de asignación que elija, la aplicación se puede enviar de forma automática o disponible para extraerla inmediatamente si tiene una selección de aplicaciones.
+2. [Asignar la aplicación a un grupo.](https://docs.microsoft.com/mem/intune/apps/apps-deploy) En función del tipo de asignación que elijas, la aplicación se puede entregar automáticamente o disponible para que se pueda retirar fácilmente si tienes una selección de aplicaciones.
 
 > [!NOTE]
-> Al crear tu paquete appx, asegúrate de incluir la arquitectura de los dispositivos en los que estás implementando. HoloLens 2 es ARM64, y HoloLens (1º gen) es x86. Si tienes pensados en un entorno de dispositivos mixtos, puedes incluir ambos en un solo paquete appx.
+> Al compilar el paquete appx, asegúrate de incluir la arquitectura de los dispositivos en los que estás implementando. HoloLens 2 es ARM64 y HoloLens (1.ª generación) es x86. Puedes incluir ambos en un único paquete appx si tienes previsto tener un entorno de dispositivos mixtos.
 
 ## Tipos de asignación
 
-Para que la aplicación se instale automáticamente en el dispositivo después de la inscripción, debe seleccionar **obligatorio** para ese grupo (s).
-Para que la aplicación esté disponible para su descarga en los dispositivos inscritos a través del portal de la empresa, seleccione **disponible para dispositivos inscritos**.
+Para que la aplicación se instale automáticamente en el dispositivo después de la inscripción, debes seleccionar **Necesario** para ese grupo o grupos.
+Para que la aplicación esté disponible para su descarga en dispositivos inscritos a través del portal de la empresa, selecciona **Disponible para dispositivos inscritos.**
 
-## Experiencia End-User
+## End-User experiencia
 
-Una vez que haya configurado la configuración de Intune, estará listo para que los usuarios finales reciban las aplicaciones seleccionadas.
+Después de configurar la configuración en Intune, estará listo para que los usuarios finales reciban las aplicaciones seleccionadas.
 
-Siga estos pasos para obtener automáticamente las aplicaciones:
+Sigue estos pasos para obtener automáticamente las aplicaciones:
 
-1. Inscriba el dispositivo en el inquilino.
-2. Una vez que el dispositivo haya finalizado la inscripción, deberás recibir la aplicación en el dispositivo.
-3. Si no ve la aplicación inmediatamente, vaya a **configuración**  >  **cuentas**  >  **trabajo o escuela**  >  *la información de su cuenta* y desplácese hacia abajo para ver información sobre el estado de la aplicación instalada.
+1. Inscriba el dispositivo en el espacio empresarial.
+2. Una vez que el dispositivo haya completado la inscripción, debes recibir la aplicación en el dispositivo.
+3. Si no ves la aplicación **** inmediatamente, ve a Cuentas de configuración Trabajo o Escuela información de tu cuenta y desplázate hacia abajo para ver información sobre  >  ****  >  ****  >  ** el estado de la aplicación instalada.
 
-Cómo acceder a las aplicaciones a través del portal de la empresa:
+Cómo obtener acceso a las aplicaciones a través del Portal de empresa:
 
-1. Abra el **menú Inicio** y seleccione **Microsoft Store**.
-2. Busca el **portal** de la empresa y descarga la aplicación.
+1. Abre el **menú Inicio** y selecciona **Microsoft Store.**
+2. Busque el **Portal de empresa** y descargue la aplicación.
 3. Inicia sesión en tu cuenta.
-4. Seleccione la aplicación que desea recibir y descargarla.
+4. Selecciona la aplicación que quieras recibir y descargarla.
 
 > [!Tip]
-> Obtenga más información acerca de [la instalación automática del portal de la empresa](https://docs.microsoft.com/mem/intune/apps/company-portal-app) y [de la implementación y administración de aplicaciones en Intune](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business#deploy-and-manage-apps).
+> Obtenga más información [sobre la instalación automática del Portal](https://docs.microsoft.com/mem/intune/apps/company-portal-app) de empresa y la implementación y administración de aplicaciones en [Intune.](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business#deploy-and-manage-apps)
