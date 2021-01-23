@@ -1,11 +1,10 @@
 ---
 title: Mejorar la calidad visual y la comodidad
-description: La calibración de tu IPD (distancia interpupilar) puede mejorar la calidad de tu elementos visuales. Tanto HoloLens como los cascos envolventes con micrófono de Windows Mixed Reality ofrecen formas de personalizar la IPD.
+description: Aprende a calibrar la distancia interpupilar (IPD) para mejorar la calidad de tus elementos visuales en los dispositivos HoloLens.
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
 ms.topic: article
-keywords: calibración, comodidad, elementos visuales, calidad, ipd
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,12 +13,13 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
-ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
+keywords: calibración, comodidad, elementos visuales, calidad, ipd, HoloLens, Windows Mixed Reality, cascos VR
+ms.openlocfilehash: e975e2ccd978d4ec6b5331af0ae566af116711c5
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252530"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283551"
 ---
 # Mejorar la calidad visual y la comodidad
 
@@ -50,7 +50,7 @@ Durante este proceso, veremos un conjunto de objetivos (gemas). Está bien si pa
 
 ![Indicador de calibración que se ajusta.](./images/09-et-adjusting.png)
 
-Si la calibración se realizó correctamente, verás una pantalla de operación correcta.  De lo contrario, lee más información sobre cómo diagnosticar errores de calibración [aquí](#troubleshooting-hololens-2-calibration).
+Si la calibración se realizó correctamente, verás una pantalla de operación correcta.  De lo contrario, lee más información sobre [cómo diagnosticar errores de calibración](#troubleshooting-hololens-2-calibration).
 
 ![Indicador de calibración correcto.](./images/10-et-success.png)
 
@@ -70,7 +70,7 @@ Varios usuarios pueden compartir un dispositivo HoloLens 2, sin necesidad de que
 
 En HoloLens 2, las posiciones oculares permiten un posicionamiento preciso del holograma, una experiencia de visualización cómoda y una mejor calidad de visualización. Las posiciones oculares se calculan internamente como parte del análisis del seguimiento ocular. Sin embargo, esto requiere que cada usuario realice la calibración del seguimiento ocular, incluso cuando la experiencia no requiera una entrada ocular.
 
-La **Posición ocular automática (AEP)** permite que estos escenarios tengan una forma sin interacción que calcule las posiciones de la vista para el usuario. La Posición ocular automática comienza a funcionar en segundo plano automáticamente desde el momento en el que el usuario se coloca el dispositivo. Si el usuario no ha calibrado su seguimiento ocular anteriormente, la Posición ocular automática comenzará a proporcionar las posiciones de ojo del usuario al sistema de visualización después de un tiempo de procesamiento de 20-30 segundos. Los datos de usuario no se conservan en el dispositivo y, por lo tanto, este proceso se repite si el usuario desconecta y vuelve a ponerse el dispositivo o si el dispositivo se reinicia o se reactiva tras haberse suspendido.
+La **Posición ocular automática (AEP)** permite que estos escenarios tengan una forma sin interacción que calcule las posiciones de la vista para el usuario. La Posición ocular automática comienza a funcionar en segundo plano automáticamente desde el momento en el que el usuario se coloca el dispositivo. Si el usuario no ha calibrado el seguimiento ocular anteriormente, la Posición ocular automática comenzará a proporcionar las posiciones de ojo del usuario al sistema de visualización después de un tiempo de procesamiento de 20-30 segundos. Los datos de usuario no se conservan en el dispositivo y, por lo tanto, este proceso se repite si el usuario se desconecta y vuelve a ponerse el dispositivo o si el dispositivo se reinicia o se reactiva tras haberse suspendido.
 
 Cuando un usuario no calibrado se coloca el dispositivo, la opción Posición ocular automática provoca algunos cambios en la conducta del sistema. En este contexto, un usuario no calibrado es alguien que no ha pasado por el proceso de calibración de seguimiento ocular en el dispositivo anteriormente.
 
@@ -83,11 +83,11 @@ Si el usuario pasa de una aplicación con la opción de mirada no habilitada a o
 
 El resto del comportamiento del sistema será similar a cuando el usuario actual no tiene una calibración de seguimiento ocular activa. Por ejemplo, el gesto Inicio de una sola mano no estará habilitado. No se cambiará la experiencia de configuración rápida para la configuración inicial.
 
-Para las experiencias que requieran datos oculares o posicionamiento muy preciso de holograma, recomendamos a los usuarios no calibrados que realicen la calibración de seguimiento de ocular. Es accesible desde la solicitud de calibración de seguimiento ocular. También se puede iniciar la aplicación Configuración desde el menú Inicio y, a continuación, se selecciona **Sistema > Calibración > Calibración ocular > Ejecutar calibración ocular**.
+Para las experiencias que requieran datos oculares o un posicionamiento preciso de holograma, recomendamos a los usuarios no calibrados que realicen la calibración de seguimiento de ocular. Es accesible desde la solicitud de calibración de seguimiento ocular. También se puede iniciar la aplicación Configuración desde el menú Inicio y, a continuación, se selecciona **Sistema > Calibración > Calibración ocular > Ejecutar calibración ocular**.
 
 #### Solicitud de calibración diferida
 
-Con la Posición ocular automática, el cuadro de diálogo de solicitud de calibración del seguimiento ocular se aplaza hasta que una aplicación solicite datos de mirada. Esto garantiza que no aparezca una solicitud al usuario cuando la aplicación activa no requiera la mirada. Si la aplicación necesita datos mirada y el usuario actual no ha realizado la calibración, se mostrará al usuario una solicitud de calibración. Este comportamiento podría usarse para mostrar la solicitud de calibración del seguimiento ocular en un momento adecuado para la experiencia. Este método se recomienda por los siguientes motivos:
+Con la Posición ocular automática, el cuadro de diálogo de solicitud de calibración del seguimiento ocular se aplaza hasta que una aplicación solicite datos de mirada. Esto garantiza que no aparezca una solicitud al usuario cuando la aplicación activa no requiera la mirada. Si la aplicación necesita datos de mirada y el usuario actual no ha realizado la calibración, se mostrará al usuario una solicitud de calibración. Este comportamiento podría usarse para mostrar la solicitud de calibración del seguimiento ocular en un momento adecuado para la experiencia. Este método se recomienda por los siguientes motivos:
 
 1.  El cuadro de diálogo de solicitud de calibración del seguimiento ocular proporciona al usuario los motivos por los que es necesario el seguimiento ocular.
 2.  Muestra al usuario una manera de rechazar la calibración ocular.
@@ -116,11 +116,11 @@ Si la calibración no se ha realizado correctamente, prueba lo siguiente:
 - Quitar los objetos del visor (por ejemplo, el pelo)
 - Encender una luz de la habitación o sacarlo de la luz solar directa
 
-Si ha seguido todas las instrucciones y la calibración sigue fallando, puede desactivar el aviso de calibración en Ajustes. Por favor, también háganos saber enviando sus comentarios a el [Centro de comentarios](hololens-feedback.md).
+Si has seguido todas las instrucciones y la calibración sigue fallando, puedes desactivar el aviso de calibración en Ajustes. Por favor, también haznoslo saber enviando tus comentarios al [Centro de comentarios](hololens-feedback.md).
 
-Consulte también la información relacionada con [la resolución de problemas con el color o el brillo de imágenes.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
+Consulta también la información relacionada con [la resolución de problemas con el color o el brillo de imágenes.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-Tenga en cuenta que la configuración de IPD no es válida para Hololens 2, ya que el sistema calcula las posiciones del ojo. 
+El establecimiento de IPD no es aplicable para HoloLens 2, ya que el sistema calcula las posiciones del ojo. 
 
 ### Seguridad y datos de calibración
 
@@ -146,13 +146,13 @@ El dispositivo usa su tecnología de seguimiento ocular para mejorar la calidad 
 > [!NOTE]
 > El establecimiento de IPD no es aplicable para Hololens 2, ya que el sistema calcula las posiciones del ojo.
 
-Las aplicaciones de HoloLens usan seguimiento ocular para hacer un seguimiento de dónde miras en tiempo real. Esta es la capacidad principal que los desarrolladores pueden aprovechar para habilitar un nivel completamente nuevo de contexto, comprensión humana e interacciones dentro de la experiencia holográfica. Los desarrolladores no tienen que hacer nada para aprovechar esta funcionalidad.
+Las aplicaciones de HoloLens usan seguimiento ocular para hacer un seguimiento de dónde miras en tiempo real. Esta es la capacidad principal que los desarrolladores pueden aprovechar para habilitar un nivel completamente nuevo de contexto, comprensión humana e interacciones dentro de la experiencia holográfica. Los desarrolladores no tienen que hacer nada para usar esta funcionalidad.
 
 ## Calibración de tu HoloLens (1.ª generación)
 
 HoloLens (1.ª generación) ajusta la visualización de hologramas según la [distancia interpupilar](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Si la IPD no es precisa, los hologramas pueden aparecer inestables o a una distancia incorrecta. Para mejorar la calidad de los elementos visuales, calibra el dispositivo para la distancia interpupilar (IPD).
 
-Cuando configuras tu dispositivo Hololens (1.ª generación), te pide que calibres los elementos visuales después de que Cortana se presente. Se recomienda completar el paso de calibración durante esta fase de configuración. Sin embargo, puedes omitirlo esperando hasta que Cortana te pregunte y luego decir "Omitir".
+Cuando configuras tu dispositivo Hololens (1.ª generación), te pide que calibres los elementos visuales después de que Cortana se presenta. Se recomienda completar el paso de calibración durante esta fase de configuración. Sin embargo, puedes omitirlo esperando hasta que Cortana te pregunte y luego decir "Omitir".
 
 Durante el proceso de calibración, HoloLens te pide que alinees el dedo con una serie de seis objetivos por ojo. HoloLens usa este proceso para establecer la IPD correctamente para los ojos.
 
@@ -185,6 +185,6 @@ Para usar la aplicación Configuración para que ejecute la aplicación Calibrac
 
 Algunos cascos envolventes ofrecen la posibilidad de personalizar la configuración de IPD. Para cambiar la IPD para tu casco, abre la aplicación Configuración y selecciona **Realidad mixta** > **Visualización de los auriculares** y, a continuación, mueve el control deslizante. Verás los cambios en tiempo real en tu casco. Si conoces tu IPD, quizás de una visita al optometrista, también puedes introducirlo directamente.
 
-También puedes ajustar esta configuración en tu PC seleccionando **Configuración** > **Realidad mixta** > **Visualización de los auriculares**.
+También puedes ajustar esta configuración en tu PC seleccionando **Configuración** > **Realidad mixta** > **Visualización del casco**.
 
 Si tu casco no admite la personalización de IPD, esta configuración se deshabilitará.
