@@ -1,7 +1,6 @@
 ---
 title: Características comerciales
-description: Microsoft HoloLens Commercial Suite incluye características que facilitan a las empresas la administración de dispositivos HoloLens. Los dispositivos HoloLens 2 están equipados con características comerciales de forma predeterminada.
-keywords: HoloLens, comercial, características, MDM, administración de dispositivos móviles, pantalla completa
+description: Infórmate de las características de Microsoft HoloLens Commercial Suite que facilitan a las empresas la administración de dispositivos HoloLens.
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
@@ -18,12 +17,13 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+keywords: HoloLens, comercial, características, MDM, administración de dispositivos móviles, pantalla completa
+ms.openlocfilehash: 5aef764b1d7937832e162ab219131d8c3d768e68
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253177"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283451"
 ---
 # Características comerciales
 

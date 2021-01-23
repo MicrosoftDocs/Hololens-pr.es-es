@@ -1,6 +1,6 @@
 ---
 title: Configurar HoloLens (1.ª generación)
-description: Esta guía explica la configuración por primera vez.  Necesitarás una red Wi-Fi y una cuenta de Microsoft (MSA) o de Azure Active Directory (Azure AD).
+description: Aprende a configurar HoloLens (1.ª generación) por primera vez por una red Wi-Fi con una cuenta de Microsoft (MSA) o de Azure Active Directory (AAD).
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903236"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283931"
 ---
 # Configurar HoloLens (1.ª generación)
 
@@ -71,7 +71,7 @@ Durante la calibración, HoloLens te pide que alinees el dedo con una serie de s
 
 *Pantalla de alineación de dedos de IPD en el segundo paso*
 
-Enhorabuena. La configuración ha finalizado y puedes empezar a usar HoloLens.
+¡Enhorabuena! La configuración ha finalizado y puedes empezar a usar HoloLens.
 
 ## Pasos siguientes
 

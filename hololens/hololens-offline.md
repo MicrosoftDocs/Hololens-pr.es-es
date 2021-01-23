@@ -1,6 +1,6 @@
 ---
 title: Administrar los puntos de conexión para HoloLens
-description: Para configurar el HoloLens, necesitará conectarse a una red Wi-Fi
+description: Aprenda a configurar HoloLens con una Wi-Fi mientras administra y configura puntos de conexión.
 keywords: hololens, fuera de línea, OOBE
 audience: ITPro
 ms.date: 07/01/2019
@@ -18,12 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f40d5adec0a8c0dc4bde5583a080ceedc0950fdb
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2208291aea5bfa9cbedd09d40fbbb83b1faa627b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829592"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283951"
 ---
 # Administrar los puntos de conexión para HoloLens
 

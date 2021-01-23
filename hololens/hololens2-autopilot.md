@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot para HoloLens 2
-description: Cómo configurar Autopilot en dispositivos HoloLens 2.
+description: Aprende a configurar y solucionar problemas de Autopilot en dispositivos HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/13/2020
@@ -13,18 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 98f35c52091a2d477a2f0852f66ad706498ad026
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 23cb3612a633f6747c770d9fd52b137561492426
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253596"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284041"
 ---
 # Windows Autopilot para HoloLens 2
 
-A partir de la versión 2004 de Windows Holographic, HoloLens 2 es compatible con Windows Autopilot [Deployment](https://docs.microsoft.com/mem/autopilot/self-deploying). Los administradores pueden configurar la configuración rápida (OOBE) en Microsoft Endpoint Manager y permitir que los usuarios finales preparen dispositivos para su uso empresarial con una interacción escasa o nula. Esto reduce la sobrecarga de la administración de inventario, el costo de la preparación de dispositivos prácticos y las llamadas de soporte técnico de los empleados durante la experiencia de configuración. Para obtener más información sobre Windows AutoPilot, haz clic [aquí](https://docs.microsoft.com/mem/autopilot/windows-autopilot).
+A partir de la versión 2004 de Windows Holographic, HoloLens 2 es compatible con Windows Autopilot [Deployment](https://docs.microsoft.com/mem/autopilot/self-deploying). Los administradores pueden configurar la configuración rápida (OOBE) en Microsoft Endpoint Manager y permitir que los usuarios finales preparen dispositivos para su uso empresarial con una interacción escasa o nula. Esto reduce la sobrecarga de la administración de inventario, el costo de la preparación de dispositivos prácticos y las llamadas de soporte técnico de los empleados durante la experiencia de configuración. Obtén más información en la [documentación de Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/windows-autopilot)
 
-Al igual que en el caso de los dispositivos Surface, se recomienda que los clientes trabajen con su [proveedor de soluciones en la nube](https://partner.microsoft.com/cloud-solution-provider) de Microsoft (revendedor o distribuidor) para obtener dispositivos registrados con el servicio AutoPilot a través del Centro de partners. Se describen otros métodos para el registro de dispositivos [aquí](https://docs.microsoft.com/mem/autopilot/add-devices), aunque el aprovechamiento de los partners del canal de Microsoft garantiza la ruta de acceso más eficaz.
+Al igual que en el caso de los dispositivos Surface, se recomienda que los clientes trabajen con su [proveedor de soluciones en la nube](https://partner.microsoft.com/cloud-solution-provider) de Microsoft (revendedor o distribuidor) para obtener dispositivos registrados con el servicio AutoPilot a través del Centro de partners. En la documentación de [Agregar dispositivo](https://docs.microsoft.com/mem/autopilot/add-devices) se describen otros métodos para el registro de dispositivos. Si embargo, la ruta de acceso de un extremo a otro más eficaz es usar los partners de canales de Microsoft.
 
 > [!NOTE]
 > Por lo que respecta a la configuración de Autopilot del 20 de noviembre de 2020 para HoloLens en Microsoft Endpoint Manager, está en transición a la **Versión preliminar pública**. Los clientes ya no necesitan inscribirse en la versión preliminar privada y todos los servicios empresariales podrán configurar Autopilot desde el centro de administración de MEM.
@@ -73,7 +73,7 @@ Para obtener más información sobre cómo registrar dispositivos y configurar p
 
 #### Revisar los requisitos del sistema operativo HoloLens:
 
-- Los dispositivos deben estar en [Windows Holographic, versión 2004](hololens-release-notes.md#windows-holographic-version-2004) (compilación 19041.1103) o posterior. Para confirmar la versión de compilación en el dispositivo o volver a instalar la imagen más reciente del sistema operativo, puedes usar [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). Puedes encontrar instrucciones [aquí](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). Ten en cuenta que los dispositivos entregados hasta finales de septiembre de 2020 tienen la versión 1903 de Windows Holographic preinstalada. Comunícate con tu revendedor para asegurarte de que te envíen dispositivos preparados para Autopilot.
+- Los dispositivos deben estar en [Windows Holographic, versión 2004](hololens-release-notes.md#windows-holographic-version-2004) (compilación 19041.1103) o posterior. Para confirmar la versión de compilación del dispositivo o volver a abrir el SO más reciente, usa el [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) y nuestras [instrucciones para devolver el flash del dispositivo](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). Ten en cuenta que los dispositivos entregados hasta finales de septiembre de 2020 tienen la versión 1903 de Windows Holographic preinstalada. Comunícate con tu revendedor para asegurarte de que te envíen dispositivos preparados para Autopilot.
 
 - Windows Holographic, versión 2004 solo admite Autopilot a través de conexión Ethernet. Asegúrate de que HoloLens esté conectado a Ethernet mediante un adaptador "USB-C a Ethernet" **antes de activarlo**. Al arrancar el dispositivo no es necesaria ninguna interacción con el usuario. Si estás planeando la implantación de un piloto automático en muchos dispositivos HoloLens, te recomendamos que planees la infraestructura del adaptador. No recomendamos concentradores USB, ya que, a menudo, es necesario instalar controladores de terceros adicionales que no son compatibles con HoloLens.
 

@@ -1,6 +1,6 @@
 ---
 title: Requisitos de licencia
-description: ''
+description: Manténgase al día de todos los requisitos y directrices de licencia que necesita para la administración de dispositivos móviles, HoloLens y Asistencia remota.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,20 +14,20 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956766"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283971"
 ---
 # Requisitos de licencia
 
 ## Guía de licencias de la administración de dispositivos móviles (MDM)
 
 Si tiene previsto administrar sus dispositivos HoloLens, necesitará Azure AD y un MDM. El director activo (AD) no se puede usar para administrar dispositivos HoloLens.
-Si tiene previsto usar un MDM que no sea Intune, se necesita una [licencia de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
-Si tiene previsto usar Intune como MDM, [aquí](https://docs.microsoft.com/intune/fundamentals/licenses) puede ver una lista de conjuntos de aplicaciones que incluyen licencias de Intune. **Tenga en cuenta que Azure AD está incluido en la mayoría de estos conjuntos de aplicaciones.**
+Si tiene previsto usar un MDM que no sea Intune, necesitará una [licencia de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
+Si tiene previsto usar Intune como MDM, lea la [lista de conjuntos](https://docs.microsoft.com/intune/fundamentals/licenses) de aplicaciones que incluyen licencias de Intune. **Tenga en cuenta que Azure AD está incluido en la mayoría de estos conjuntos de aplicaciones.**
 
 ## Identificar las licencias necesarias para su escenario y productos
 
@@ -42,7 +42,7 @@ Puede que necesite actualizar su dispositivo HoloLens de 1.ª generación a Wind
 
 ### Requisitos de licencia de asistencia remota
 
-Asegúrese de que tiene la licencia y el dispositivo necesarios. Puede encontrar los requisitos de licencia y de producto actualizados [aquí](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
+Asegúrese de que tiene la licencia y el dispositivo necesarios. Puede comprobarlo en la documentación de [requisitos](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
 
 1. [Licencia de asistencia remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
     1. O use una [Prueba de asistencia remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
@@ -53,7 +53,7 @@ Si tiene previsto implementar **[este escenario entre espacios empresariales](ht
 
 ### Requisitos de licencia de guía
 
-Puede encontrar los requisitos de licencia y de dispositivo actualizados [aquí](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
+Consulte los [requisitos actualizados de licencias y dispositivos](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
 
 1. [Licencia de Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 1. [Power BI](https://powerbi.microsoft.com/desktop/)
