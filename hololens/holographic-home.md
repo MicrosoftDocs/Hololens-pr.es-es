@@ -1,6 +1,6 @@
 ---
 title: Usar el menú Inicio y ambiente principal
-description: Navega por la casa de realidad mixta en Windows Holographic.
+description: Aprenda a usar el menú Inicio, administrar y acceder a aplicaciones, y navegar por el ambiente principal en dispositivos HoloLens.
 ms.assetid: 742bc126-7996-4f3a-abb2-cf345dff730c
 ms.date: 08/07/2019
 keywords: hololens
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e48169c6110a21a572b625021bc76229f634454e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 26dc73b59f569496d732bcde068b3647b3857c55
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829582"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283521"
 ---
 # Usar el menú Inicio y ambiente principal
 

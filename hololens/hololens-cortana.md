@@ -1,6 +1,6 @@
 ---
 title: Usar tu voz para funcionar con HoloLens
-description: Cortana puede ayudarte a hacer todo tipo de cosas en tu HoloLens
+description: Descubre cómo Cortana puede ayudarte a hacer todo tipo de cosas en los dispositivos de realidad mixta de HoloLens, como dar comandos con tu voz, dictar e interactuar con hologramas.
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 03/10/2020
 keywords: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d6fc83e81ce6f02047cff8a5d1944156f769e056
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: dd99744dfe27f52bb4ec51ad9fa9af4bfd1f0e96
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829596"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283331"
 ---
 # Usar tu voz para funcionar con HoloLens
 

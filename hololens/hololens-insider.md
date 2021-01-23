@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/13/2021
+ms.date: 1/21/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
+ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283201"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297663"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -41,7 +41,7 @@ Estamos encantados de empezar a usar nuevas características para los usuarios d
 | [Compatibilidad con micrófono externo USB-C](#usb-c-external-microphone-support) | Usa micrófonos USB-C para aplicaciones y/o asistencia remota.| 20279.1006 |
 | [Nuevos AUMID para nuevas aplicaciones en modo de pantalla completa](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs para nuevas aplicaciones de Configuración y Edge | 20279.1006 |
 | [Entrega de errores en el modo de pantalla completa mejorada](#kiosk-mode-behavior-changes-for-handling-of-failures) | El modo de pantalla completa busca el acceso asignado global antes del menú inicio vacío. | 20279.1006 |
-| [Configurar diagnósticos de reserva](#configuring-fallback-diagnostics-via-settings-app) | Establecer el comportamiento de diagnóstico de reserva en la aplicación Configuración | 20279.1006 |
+| [Configurar diagnósticos de reserva](#configuring-fallback-diagnostics-via-settings-app) | Configuración del comportamiento de diagnóstico de reserva en la aplicación Configuración | 20279.1006 |
 
 ### Presentación del nuevo Microsoft Edge
 
@@ -114,8 +114,26 @@ El equipo de Microsoft Edge pone tres canales de vista previa a disposición de 
 
 Visita la [página principal de Microsoft Edge Insider](https://www.microsoftedgeinsider.com) para obtener más información sobre la comunidad de Edge Insider. Para obtener más información sobre los diferentes canales de Edge Insider y empezar a trabajar, visita la página de descarga [de Edge Insider.](https://www.microsoftedgeinsider.com/download)
 
+Hay un par de métodos disponibles para instalar los canales de Microsoft Edge Insider en HoloLens 2:
+
+**Instalación directa en el dispositivo (actualmente solo está disponible para dispositivos no administrados)**
+  1. En HoloLens 2, visita la página de descarga [de Edge Insider](https://www.microsoftedgeinsider.com/download)
+  1. Selecciona el **botón Descargar para HoloLens 2** para el canal Edge Insider que quieras instalar
+  1. Inicia el archivo .msix descargado desde la cola de descarga de Edge o desde la carpeta "Descargas" del dispositivo (mediante el Explorador de archivos)
+  1. [Se iniciará el instalador](app-deploy-app-installer.md) de la aplicación
+  1. Seleccionar el **botón** Instalar
+  1. Después de instalar correctamente, encontrarás Microsoft Edge Beta, Dev **** o Canary como una entrada independiente en la lista Todas las aplicaciones del menú Inicio.
+
+**Instalar a través del equipo con Windows Device Portal (requiere que [el modo de](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) desarrollador esté habilitado en HoloLens 2)**
+  1. En el equipo, visita la página [de descarga de Edge Insider](https://www.microsoftedgeinsider.com/download)
+  1. Selecciona el **botón de flecha** desplegable junto al botón "Descargar para Windows 10" para el canal de Edge Insider que quieras instalar
+  1. Seleccione **HoloLens 2** en el menú desplegable
+  1. Guarda el archivo .msix en la carpeta "Descargas" del equipo (u otra carpeta que puedas encontrar fácilmente)
+  1. Usar [Windows Device Portal en](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) el equipo para instalar el archivo .msix descargado en HoloLens 2
+  1. Después de instalar correctamente, encontrarás Microsoft Edge Beta, Dev **** o Canary como una entrada independiente en la lista Todas las aplicaciones del menú Inicio.
+
 > [!NOTE]
-> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para garantizar que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 estén obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se mantendrán por delante de la versión de Microsoft Edge en holoLens 2.
+> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para garantizar que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 estén obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se adelantarán a la versión de Microsoft Edge en holoLens 2.
 
 ### Aplicación Nueva configuración
 
@@ -131,7 +149,7 @@ Con esta versión, presentamos una nueva versión de la aplicación Configuraci�
 - Sonido > sistema:
   - Dispositivos de audio de entrada y salida: elige de forma independiente los dispositivos de audio de entrada y salida (por ejemplo, escucha audio a través de auriculares Bluetooth o usa un micrófono USB-C para la entrada de audio). Nota: Bluetooth holoLens 2 no admite los micrófonos.
   - Volumen de la aplicación: ajustar independientemente el volumen de cada aplicación
-- Sistema > power & suspensión: elige cuándo el dispositivo debe ir a suspensión después de un período de inactividad
+- Sistema > power & suspensión: elegir cuándo debe ir el dispositivo a suspensión después de un período de inactividad
 - Sistema > batería: habilite manualmente el modo de ahorro de batería o establezca un umbral de batería en el que el modo de ahorro de batería se active automáticamente
 - Dispositivos > USB: puedes deshabilitar las conexiones USB de forma predeterminada
 - Red & Internet:
@@ -164,7 +182,7 @@ La aplicación web de Office se ha agregado a la lista "Todas las aplicaciones" 
 
 A algunos clientes les resulta más rápido "escribir" en teclados virtuales deslizando el dedo por la forma de la palabra que pretenden escribir y estamos previsualizando esta característica para el teclado holográfico. Puedes deslizar el dedo una palabra a la vez pasando la punta del dedo a través del plano del teclado holográfico, deslizando el dedo por la forma de la palabra y, a continuación, retirando la punta del dedo del plano del teclado. Puedes deslizar rápidamente las palabras de seguimiento sin necesidad de presionar la barra espaciadora quitando el dedo del teclado entre palabras. Sabrás que la característica funciona si ves una pista de deslizar el dedo después del movimiento del dedo en el teclado.
 
-Ten en cuenta que esta característica puede ser difícil de usar y dominar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
+Ten en cuenta que esta característica puede ser difícil de usar y usar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
 
 ### Compatibilidad con micrófono externo USB-C
 
@@ -204,7 +222,7 @@ En **Configuración**del sonido del sistema, establezca explícitamente los alta
 
 ### Usar la nueva configuración y las aplicaciones perimetrales en los modos de pantalla completa
 
-Al incluir aplicaciones [](hololens-kiosk.md)en quioscos, un administrador de TI a menudo agrega la aplicación al quiosco, pero con su id. de modelo de usuario de aplicación (AUMID). Dado que tanto la aplicación Configuración como la aplicación de Microsoft Edge se consideran nuevas aplicaciones y son diferentes a las antiguas pantallas de pantalla completa que usan AUMIDs para esas aplicaciones, tendrán que actualizarse para usar el nuevo AUMID.
+Al incluir aplicaciones [](hololens-kiosk.md)en quioscos, un administrador de TI a menudo agrega la aplicación al quiosco, pero con su id. de modelo de usuario de aplicación (AUMID). Dado que tanto la aplicación Configuración como la aplicación de Microsoft Edge se consideran nuevas aplicaciones y son diferentes a las pantallas de pantalla completa de las aplicaciones anteriores que usan AUMIDs para esas aplicaciones, tendrán que actualizarse para usar el nuevo AUMID.
 
 Al modificar un quiosco para incluir las nuevas aplicaciones, te recomendamos agregar el nuevo AUMID, así como dejar el antiguo. Esto creará una transición sencilla cuando los usuarios actualicen el sistema operativo y no tendrán que recibir nuevas directivas para seguir usando el quiosco como se esperaba.
 
@@ -254,6 +272,17 @@ A continuación, selecciona Desarrollo activo de **Windows,** elige si quieres r
 
 Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, ve a Configuración > Actualización & **Seguridad > Buscar** actualizaciones para obtener la compilación más reciente.
 
+### Error de actualización 0x80070490 trabajo
+Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, pruebe el siguiente trabajo a corto plazo. Implica mover el canal de Insider, tomar la actualización y, a continuación, volver a mover el canal de Insider.
+
+#### Fase uno: versión preliminar
+1.  Configuración, Actualización & seguridad, Programa Windows Insider, selecciona **Liberar canal de vista previa.**
+2.  Configuración, Actualización & seguridad, Windows Update, **Buscar actualizaciones.** Después de la actualización, continúe con la fase dos.
+
+#### Fase dos: Canal de desarrollo
+1. Configuración, Actualizar & seguridad, Programa Windows Insider, selecciona **Canal de desarrollo.**
+2. Configuración, Actualización & seguridad, Windows Update, **Buscar actualizaciones.**
+
 ## Instrucciones de descarga e flash FFU
 Para probar con un ffu firmado de piloto, primero tienes que desbloquear el dispositivo en piloto antes de parpadear el ffu firmado del piloto.
 1. En el equipo:
@@ -286,7 +315,7 @@ Si ya no quieres recibir compilaciones de Insider de Windows Holographic, puedes
 
 Para comprobar que HoloLens ejecuta una compilación de producción:
 
-1. Ve a **Configuración > Información > sistema**y busca el número de compilación.
+1. Ve a **Configuración > del > acerca de**y busca el número de compilación.
 
 1. [Vea las notas de la versión de los números de compilación de producción.](hololens-release-notes.md)
 

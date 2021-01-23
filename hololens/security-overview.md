@@ -1,24 +1,24 @@
 ---
-title: Visión general de la seguridad de HoloLens
-description: Visión general de la seguridad
+title: Descripción general de la seguridad de HoloLens
+description: Comenzar con información general sobre la seguridad para los dispositivos de realidad mixtas de HoloLens.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
-keywords: seguridad, hololens, hololens 2, seguridad de hololens2, visón general de la seguridad
+keywords: seguridad, hololens, hololens 2, seguridad de hololens2, información general de seguridad
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd626d404831cdfb39acd5a2d8a4f6507a5c694b
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009448"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284151"
 ---
 # Visión general de la seguridad
 
