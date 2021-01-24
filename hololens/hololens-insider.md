@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
-ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
+ms.openlocfilehash: 7cc08396925368be5230a078de6fb4c7cd0a8b24
+ms.sourcegitcommit: 063aa10baa190429b7248f7f1384afba7975861e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297663"
+ms.locfileid: "11297770"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
@@ -41,7 +41,7 @@ Estamos encantados de empezar a usar nuevas características para los usuarios d
 | [Compatibilidad con micrófono externo USB-C](#usb-c-external-microphone-support) | Usa micrófonos USB-C para aplicaciones y/o asistencia remota.| 20279.1006 |
 | [Nuevos AUMID para nuevas aplicaciones en modo de pantalla completa](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs para nuevas aplicaciones de Configuración y Edge | 20279.1006 |
 | [Entrega de errores en el modo de pantalla completa mejorada](#kiosk-mode-behavior-changes-for-handling-of-failures) | El modo de pantalla completa busca el acceso asignado global antes del menú inicio vacío. | 20279.1006 |
-| [Configurar diagnósticos de reserva](#configuring-fallback-diagnostics-via-settings-app) | Configuración del comportamiento de diagnóstico de reserva en la aplicación Configuración | 20279.1006 |
+| [Configurar diagnósticos de reserva](#configuring-fallback-diagnostics-via-settings-app) | Establecer el comportamiento de diagnóstico de reserva en la aplicación Configuración | 20279.1006 |
 
 ### Presentación del nuevo Microsoft Edge
 
@@ -72,7 +72,7 @@ Estos son algunos recursos útiles para obtener más información sobre cómo ad
 - Documentación [completa de Microsoft Edge Enterprise](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
-> Debido al volumen de directivas de explorador admitidas por el nuevo Microsoft Edge, nuestro equipo no puede garantizar que cada nueva directiva funcione en HoloLens 2. Sin embargo, hemos probado y confirmado que el nuevo equivalente de Microsoft Edge de cada directiva heredada de Microsoft Edge anteriormente compatible con HoloLens 2 funciona según lo esperado. Consulta [la asignación](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) de directivas de Microsoft Edge heredado a Microsoft Edge para encontrar el nuevo equivalente de Microsoft Edge de cada directiva de explorador de Microsoft Edge heredada que usaste con HoloLens 2.
+> Debido al volumen de directivas de explorador admitidas por el nuevo Microsoft Edge, nuestro equipo no puede garantizar que cada nueva directiva funcione en HoloLens 2. Sin embargo, hemos probado y confirmado que el nuevo equivalente de Microsoft Edge de cada directiva heredada de Microsoft Edge anteriormente compatible con HoloLens 2 funciona según lo esperado. Consulta [la asignación](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) de directivas heredadas de Microsoft Edge a Microsoft Edge para encontrar el nuevo equivalente de Microsoft Edge de cada directiva de explorador de Microsoft Edge heredada que usaste con HoloLens 2.
 >
 > Hay al menos dos nuevas directivas de Microsoft Edge que sabemos *que no funcionarán* con HoloLens 2:
 > - EnterpriseModeSiteList
@@ -97,7 +97,6 @@ Dado que el nuevo Microsoft Edge es una aplicación nativa de Win32 con una nuev
 **Próximamente, se ofrece información sobre escenarios y características:**
 - Extensión WebXR y visor 360
 - Restauración de contenido para corregir la ventana al examinar varias ventanas colocadas en el entorno
-- Unirse a una llamada de Microsoft Teams a través del explorador con vídeo, captura de realidad mixta o pantalla compartida (unirse a llamadas con audio funciona bien)
 
 **No se espera que los escenarios y las características funcionen:**
 - Sonido espacial de varias ventanas con secuencias de audio simultáneas
@@ -133,7 +132,7 @@ Hay un par de métodos disponibles para instalar los canales de Microsoft Edge I
   1. Después de instalar correctamente, encontrarás Microsoft Edge Beta, Dev **** o Canary como una entrada independiente en la lista Todas las aplicaciones del menú Inicio.
 
 > [!NOTE]
-> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para garantizar que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 estén obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se adelantarán a la versión de Microsoft Edge en holoLens 2.
+> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para asegurarnos de que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 están obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se adelantarán a la versión de Microsoft Edge en holoLens 2.
 
 ### Aplicación Nueva configuración
 
@@ -157,13 +156,14 @@ Con esta versión, presentamos una nueva versión de la aplicación Configuraci�
   - La configuración del adaptador Ethernet USB-C ya está disponible, incluida su dirección IP
   - Ahora puedes habilitar el modo avión en HoloLens 2
 - Aplicaciones: puedes restablecer las aplicaciones predeterminadas usadas para los tipos de archivos y vínculos. Consulta [El selector de aplicaciones predeterminado](#default-app-picker) para obtener más información.
-- Cuentas > otros usuarios: los propietarios de dispositivos pueden agregar usuarios, actualizar usuarios estándar a propietarios de dispositivos, degradar propietarios de dispositivos a usuarios estándar y quitar usuarios.
+- Cuentas > otros usuarios: los propietarios de dispositivos pueden agregar usuarios, actualizar usuarios estándar a propietarios de dispositivos, degradar los propietarios de dispositivos a usuarios estándar y quitar usuarios.
 - Facilidad de acceso: cambiar el tamaño del texto y algunos efectos visuales
 
 **Problemas conocidos**
 - Se quitarán las ventanas de configuración colocadas anteriormente (consulta la nota anterior)
 - Visitar la página Notificaciones puede bloquear la aplicación Configuración (investigando)
 - La página Ethernet no aparece actualmente (se solucionará próximamente)
+- Ya no puedes cambiar el nombre de tu dispositivo con la aplicación Configuración (los administradores de TI pueden usar paquetes de aprovisionamiento o MDM para cambiar el nombre de los dispositivos)
 - Es posible que el uso de la batería para el nuevo Microsoft Edge no sea preciso, debido a su naturaleza como una aplicación de escritorio Win32 compatible con una capa de adaptador para UWP (no se prevé ninguna corrección pronto).
 
 ### Selector de aplicaciones predeterminado
@@ -172,7 +172,7 @@ Cuando activas un hipervínculo o abres un tipo de archivo con más de una aplic
 
 ![Ventana del selector de aplicaciones](images/default-app-picker.png)
 
-Si eliges "Siempre" pero más adelante quieres cambiar qué aplicación controla un tipo de archivo o vínculo determinado, puedes restablecer los valores predeterminados guardados en Configuración **> Aplicaciones.** Desplácese hasta la parte inferior **** de la página y seleccione el botón Borrar en "Aplicaciones predeterminadas para tipos de archivo" o "Aplicaciones predeterminadas para tipos de vínculo". A diferencia de la configuración similar en equipos de escritorio, no puedes restablecer valores predeterminados de tipos de archivo individuales.
+Si eliges "Siempre" pero más adelante quieres cambiar qué aplicación controla un tipo de archivo o vínculo determinado, puedes restablecer los valores predeterminados guardados en Configuración **> Aplicaciones.** Desplácese hasta la parte inferior **** de la página y seleccione el botón Borrar en "Aplicaciones predeterminadas para tipos de archivo" o "Aplicaciones predeterminadas para tipos de vínculos". A diferencia de la configuración similar en equipos de escritorio, no puedes restablecer valores predeterminados de tipos de archivo individuales.
 
 ### Aplicación web de Office
 
@@ -182,7 +182,7 @@ La aplicación web de Office se ha agregado a la lista "Todas las aplicaciones" 
 
 A algunos clientes les resulta más rápido "escribir" en teclados virtuales deslizando el dedo por la forma de la palabra que pretenden escribir y estamos previsualizando esta característica para el teclado holográfico. Puedes deslizar el dedo una palabra a la vez pasando la punta del dedo a través del plano del teclado holográfico, deslizando el dedo por la forma de la palabra y, a continuación, retirando la punta del dedo del plano del teclado. Puedes deslizar rápidamente las palabras de seguimiento sin necesidad de presionar la barra espaciadora quitando el dedo del teclado entre palabras. Sabrás que la característica funciona si ves una pista de deslizar el dedo después del movimiento del dedo en el teclado.
 
-Ten en cuenta que esta característica puede ser difícil de usar y usar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
+Ten en cuenta que esta característica puede ser difícil de usar y dominar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
 
 ### Compatibilidad con micrófono externo USB-C
 
@@ -200,7 +200,7 @@ Abra la **aplicación Configuración** y seleccione **Sonido del**  ->  **sistem
 >
 > A continuación, use la lista desplegable para establecer el micrófono externo como **Predeterminado** o **Predeterminado de comunicaciones.** Elegir Predeterminado **significa** que el micrófono externo se usará en todas partes.
 >
-> Elegir Communications **Default** significa que el micrófono externo se usará en asistencia remota y otras aplicaciones de comunicaciones, pero la matriz de micrófonos holoLens puede seguir usándose para otras tareas.
+> Elegir **El** valor predeterminado de comunicaciones significa que el micrófono externo se usará en asistencia remota y otras aplicaciones de comunicaciones, pero la matriz de micrófonos de HoloLens puede seguir usándose para otras tareas.
 
 ![Administrar dispositivos de sonido](images/usbc-mic-2.png)
 
@@ -208,7 +208,7 @@ Abra la **aplicación Configuración** y seleccione **Sonido del**  ->  **sistem
 
 ![Establecer el valor predeterminado del micrófono](images/usbc-mic-3.jpg)
 
-#### ¿Qué sucede Bluetooth compatibilidad con micrófonos?
+#### ¿Qué pasa Bluetooth compatibilidad con micrófonos?
 
 Desafortunadamente Bluetooth los micrófonos aún no se admiten actualmente en HoloLens 2.
 
@@ -262,9 +262,9 @@ Ahora, en la aplicación Configuración, un usuario puede configurar el comporta
 
 En un dispositivo HoloLens **** 2, ve a Actualización de configuración & Seguridad del  >  ****  >  **Programa Windows Insider** y selecciona **Introducción.** Vincula la cuenta que usó para registrarte como Windows Insider.
 
-Windows Insider ahora se está moviendo a Canales. El anillo rápido se convertirá en **** el Canal **de desarrollo,** **** el anillo lento se convertirá en el canal **beta**y el anillo **de** vista previa de versión se convertirá en el canal de vista previa **de versión.** Este es el aspecto de esa asignación:
+Windows Insider ahora se está trasladando a Canales. El **anillo** rápido se convertirá en **** el Canal **de desarrollo,** **** el anillo lento se convertirá en el canal **beta**y el anillo de vista previa de versión se convertirá en el canal de vista previa **de versión.** Este es el aspecto de esa asignación:
 
-![Explicación de los canales de Windows Insider](images/WindowsInsiderChannels.png)
+![Explicación de Los canales de Windows Insider](images/WindowsInsiderChannels.png)
 
 Para obtener más información, consulta [Introducción a los canales de Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) en blogs de Windows.
 
@@ -273,18 +273,18 @@ A continuación, selecciona Desarrollo activo de **Windows,** elige si quieres r
 Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, ve a Configuración > Actualización & **Seguridad > Buscar** actualizaciones para obtener la compilación más reciente.
 
 ### Error de actualización 0x80070490 trabajo
-Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, pruebe el siguiente trabajo a corto plazo. Implica mover el canal de Insider, tomar la actualización y, a continuación, volver a mover el canal de Insider.
+Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, pruebe el siguiente trabajo a corto plazo. Implica mover el canal de Insider, seleccionar la actualización y, a continuación, volver a mover el canal de Insider.
 
 #### Fase uno: versión preliminar
-1.  Configuración, Actualización & seguridad, Programa Windows Insider, selecciona **Liberar canal de vista previa.**
+1.  Configuración, Actualización & seguridad, Programa Windows Insider, seleccione **Liberar canal de vista previa.**
 2.  Configuración, Actualización & seguridad, Windows Update, **Buscar actualizaciones.** Después de la actualización, continúe con la fase dos.
 
 #### Fase dos: Canal de desarrollo
-1. Configuración, Actualizar & seguridad, Programa Windows Insider, selecciona **Canal de desarrollo.**
+1. Configuración, Actualización & seguridad, Programa Windows Insider, selecciona **Canal de desarrollo.**
 2. Configuración, Actualización & seguridad, Windows Update, **Buscar actualizaciones.**
 
 ## Instrucciones de descarga e flash FFU
-Para probar con un ffu firmado de piloto, primero tienes que desbloquear el dispositivo en piloto antes de parpadear el ffu firmado del piloto.
+Para probar con un ffu firmado de piloto, primero tienes que desbloquear el dispositivo antes de parpadear el ffu firmado del piloto.
 1. En el equipo:
 
     1. Descargar ffu en el equipo desde [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
@@ -295,12 +295,12 @@ Para probar con un ffu firmado de piloto, primero tienes que desbloquear el disp
 
 1. Flash FFU: ahora puedes flashear la FFU firmada del piloto con ARC.
 
-## Proporcionar comentarios e informar sobre problemas
+## Enviar comentarios e informar sobre problemas
 
 Use la [aplicación Centro de opiniones](hololens-feedback.md) en su HoloLens para proporcionar comentarios y notificar problemas. El uso del Centro de opiniones garantiza que se incluya toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver el problema rápidamente.  Los problemas con la versión en chino y japonés de HoloLens deben informarse del mismo modo.
 
 > [!NOTE]
-> Asegúrate de aceptar el mensaje que te pregunta si quieres que el Centro de opiniones tenga acceso a la carpeta Documentos (selecciona **Sí** cuando se te solicite).
+> Asegúrate de aceptar el mensaje que te pregunta si quieres que el Centro de opiniones tenga acceso a la carpeta Documentos **(selecciona** Sí cuando se te solicite).
 
 ## Nota para desarrolladores
 
