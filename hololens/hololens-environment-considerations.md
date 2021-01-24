@@ -1,7 +1,6 @@
 ---
 title: Consideraciones de entorno de HoloLens
-description: Consigue la mejor experiencia posible usando HoloLens al optimizar el dispositivo para los ojos y el entorno. Muchos factores de entorno diferentes se fusionan para habilitar el seguimiento, pero como desarrollador de realidad mixta, hay varios factores que puedes tener en cuenta para optimizar un espacio para lograr mejores hologramas.
-keywords: marco holográfico, campo de visión, fov, calibración, espacios, entorno, procedimientos
+description: Consigue la mejor experiencia posible usando HoloLens al optimizar el dispositivo para los ojos y el entorno.
 author: dorreneb
 ms.author: dobrown
 manager: jarrettr
@@ -10,22 +9,23 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
-ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
+keywords: marco holográfico, campo de visión, fov, calibración, espacios, entorno, procedimientos, HoloLens, realidad mixta, cascos de realidad mixta
+ms.openlocfilehash: ae5c039387d247d1a2c795bc65d7ea56867b3843
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993650"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283141"
 ---
 # Consideraciones de entorno de HoloLens
 
-HoloLens combina el mundo holográfico con el mundo "real", colocando hologramas en tu entorno. Una ventana de la aplicación holográfica "queda colgada" en la pared, una bailarina holográfica gira sobre la mesa, orejas de conejo aparecen encima de la cabeza de un amigo sin que él se dé cuenta. Si usas una aplicación o un juego inmersivo, el mundo holográfico se propagará para rellenar todo tu mundo, pero aún podrás ver el espacio y desplazarte por él.
+HoloLens combina el mundo holográfico con el mundo "real", colocando hologramas en tu entorno. Una ventana de la aplicación holográfica "queda colgada" en la pared, una bailarina holográfica gira sobre la mesa, orejas de conejo aparecen encima de la cabeza de un amigo sin que él se dé cuenta. Cuando usas una aplicación o un juego inmersivo, el mundo holográfico se propagará para rellenar tu entorno, pero aún podrás ver y desplazarte por el espacio.
 
 Los hologramas que coloques permanecerán donde los hayas colocado, incluso si desactivas el dispositivo.
 
 ## Configuración de un entorno
 
-Los dispositivos de HoloLens saben cómo colocar hologramas estables y precisos al *realizar un seguimiento* de los usuarios en un espacio. Sin un seguimiento adecuado, el dispositivo no comprende el entorno ni el usuario que se encuentra dentro, de modo que los hologramas pueden aparecer en los lugares equivocados, no aparecer en el mismo lugar cada vez o no aparecer en absoluto. Los datos que se usan para realizar un seguimiento de los usuarios se representan en el *mapa espacial*.  
+Los dispositivos de HoloLens saben cómo colocar hologramas estables y precisos al *realizar un seguimiento* de los usuarios en un espacio. Sin un seguimiento adecuado, el dispositivo no comprende el entorno ni el usuario que se encuentra dentro de él. Los hologramas pueden aparecer en los lugares equivocados, no aparecer en el mismo lugar cada vez o no aparecer en absoluto. Los datos que se usan para realizar un seguimiento de los usuarios se representan en el *mapa espacial*.  
 
 El seguimiento del rendimiento se ve muy influido por el entorno en el que se encuentra el usuario y la optimización de un entorno para inducir un seguimiento estable y coherente es un arte en lugar de una ciencia. Muchos factores de entorno diferentes se fusionan para habilitar el seguimiento, pero como desarrollador de realidad mixta, hay varios factores que puedes tener en cuenta para optimizar un espacio para lograr un mejor seguimiento.
 
@@ -41,9 +41,9 @@ Si dispones de un luxómetro, 500-1000 lux está bien para empezar.
 
 #### Tipos de iluminación
 
-Los diferentes tipos de luz en un espacio también pueden influir en el seguimiento. Las bombillas pulsan con la electricidad que pasa por ellas; si la frecuencia de CA es de 50Hz, la luz se pulsa a 50Hz. Un humano no puede ver este pulso. Sin embargo, la cámara de 30fps de HoloLens ve estos cambios: algunos fotogramas estarán bien iluminados, algunos estarán mal iluminados y otros estarán sobreexpuestos a medida que la cámara intente compensar los pulsos de luz.  
+Los diferentes tipos de luz en un espacio también pueden influir en el seguimiento. Las bombillas pulsan con la electricidad de CA que pasa por ellas; si la frecuencia de CA es de 50Hz, la luz se pulsa a 50Hz. Un humano no puede ver este pulso. Sin embargo, la cámara de 30FPS de HoloLens ve estos cambios: algunos fotogramas estarán bien iluminados, algunos estarán mal iluminados y otros estarán sobreexpuestos a medida que la cámara intente compensar los pulsos de luz.  
 
-En Estados Unidos, el estándar de frecuencia de electricidad es de 60Hz, de modo que los pulsos de las bombillas se armonizan con la frecuencia de fotograma de HoloLens: los pulsos de 60HZ se alinean con la frecuencia de fotograma de 30fps de HoloLens. Sin embargo, muchos países tienen un estándar de frecuencia de CA de 50Hz, lo que significa que algunos fotogramas de HoloLens se tomarán durante los pulsos y otros no. En particular, se sabe que la iluminación fluorescente en Europa causa problemas.  
+En Estados Unidos, el estándar de frecuencia de electricidad es de 60Hz, de modo que los pulsos de las bombillas se armonizan con la velocidad de fotogramas de HoloLens: los pulsos de 60Hz se alinean con la velocidad de fotogramas de 30FPS de HoloLens. Sin embargo, muchos países tienen un estándar de frecuencia de CA de 50Hz, lo que significa que algunos fotogramas de HoloLens se tomarán durante los pulsos y otros no. En particular, se sabe que la iluminación fluorescente en Europa causa problemas.  
 
 Puedes probar varias cosas para resolver problemas de parpadeo. La temperatura, la antigüedad de la bombilla y los ciclos de calentamiento son causas habituales de parpadeo fluorescente y la sustitución de las bombillas puede resultar de utilidad. Puede resultar de utilidad apretar las bombillas y asegurarse de que los consumos de energía sean constantes.  
 
@@ -61,13 +61,13 @@ Una buena pregunta que te debes hacer es: si solo has visto una pequeña cantida
 
 Si tienes dos áreas o regiones que tienen el mismo aspecto, es posible que el rastreador piense que son iguales. Esto hace que el dispositivo se confunda y piense que se encuentra en otro lugar. Llamamos a estos tipos de áreas repetitivas *agujeros de gusano*.  
 
-Para evitar agujeros de gusano, intenta evitar áreas idénticas en el mismo espacio. Las áreas idénticas pueden incluir a veces emisoras de fábrica, ventanas de un edificio, racks de servidor o estaciones de trabajo. Las áreas de etiquetado o la adición de características únicas a cada área de aspecto similar pueden ayudar a mitigar los agujeros de gusano.
+Para evitar agujeros de gusano, intenta evitar áreas idénticas en el mismo espacio. Las áreas idénticas pueden incluir a veces emisoras de fábrica, ventanas de un edificio, racks de servidor o estaciones de trabajo. El etiquetado de áreas o la adición de características únicas a cada área de aspecto similar puede ayudar a mitigar los agujeros de gusano.
 
 ### Movimiento en un espacio
 
 Si el entorno se desplaza y cambia constantemente, el dispositivo no tiene características estables con respecto a las que encontrarse.  
 
-Cuanto más objetos móviles haya en un espacio, incluidas personas, más sencillo será perder el seguimiento. Se sabe que las cintas transportadoras en movimiento, los elementos en diferentes estado de construcción y muchas personas en un espacio provocan problemas de seguimiento.
+Cuantos más objetos en movimiento hayan en un espacio, incluidas las personas, más fácil será perder el seguimiento. Se sabe que las cintas transportadoras en movimiento, los elementos en diferentes estado de construcción y muchas personas en un espacio provocan problemas de seguimiento.
 
 HoloLens puede adaptarse rápidamente a estos cambios, pero solo cuando esa área sea claramente visible para el dispositivo. Las áreas que no se ven con tanta frecuencia pueden ir por detrás de la realidad, lo que puede provocar errores en el mapa espacial. Por ejemplo, un usuario digitaliza a un amigo y luego se da la vuelta cuando sale de la habitación. Una representación "fantasma" del amigo permanecerá en los datos de mapa espaciales hasta que el usuario vuelva a examinar el espacio que está vacío ahora.
 
@@ -75,7 +75,7 @@ HoloLens puede adaptarse rápidamente a estos cambios, pero solo cuando esa áre
 
 De forma similar a cómo los seres humanos no pueden centrarse bien en los objetos cercanos a los ojos, HoloLens se esfuerza cuando los objetos están cerca de sus cámaras. Si un objeto se encuentra demasiado cerca para verse con ambas cámaras, o si un objeto bloquea una cámara, el dispositivo tendrá muchos más problemas con el seguimiento respecto al objeto.  
 
-Las cámaras no pueden verse más cerca de 15cm desde un objeto.
+Las cámaras no pueden ver más cerca de 15cm desde un objeto.
 
 ### Superficies en un espacio
 
@@ -87,7 +87,7 @@ Es más fácil realizar un seguimiento respecto a los objetos menos brillantes.
 
 Siempre que esté habilitada la conexión Wi-Fi, los datos de mapa estarán correlacionados con una huella digital de Wi-Fi, incluso cuando no estén conectados a un enrutador o una red de Wi-Fi. Sin la información de Wi-Fi, puede resultar más lento reconocer el espacio y los hologramas. Si las señales Wi-Fi cambian de forma significativa, es posible que el dispositivo piense que se encuentra en un espacio totalmente diferente.
 
-La identificación de la red (como SSID o dirección MAC) no se envía a Microsoft y todas las referencias de Wi-Fi se mantienen locales en el HoloLens.
+La identificación de la red (como SSID o dirección MAC) no se envía a Microsoft y todas las referencias de Wi-Fi se mantienen locales en HoloLens.
 
 ## Mapas de espacios nuevos
 
@@ -95,19 +95,19 @@ Cuando introduzcas un espacio nuevo (o cargues uno existente), verás un gráfic
 
 ## Administración del entorno
 
-Hay dos valores de configuración que permiten a los usuarios "limpiar" hologramas y hacer que HoloLens "olvide" un espacio. Existen en **Hologramas y entornos** en la aplicación de configuración y la segunda opción de configuración también aparecen en **Privacidad** en la aplicación de configuración.  
+Hay dos opciones de configuración que permiten a los usuarios "limpiar" hologramas y hacer que HoloLens "olvide" un espacio. Existen en **Hologramas y entornos** en la aplicación de configuración y la segunda opción de configuración también aparecen en **Privacidad** en la aplicación de configuración.  
 
 1. **Eliminar hologramas cercanos**. Si seleccionas esta configuración, HoloLens borrará todos los hologramas anclados y todos los datos de mapa almacenados para el "espacio actual" en el que se encuentra el dispositivo. Se creará una nueva sección de mapa y se almacenará en la base de datos de esa ubicación una vez que los hologramas se vuelvan a colocar en el mismo espacio.
 
-1. **Eliminar todos los hologramas**. Si seleccionas esta configuración, HoloLens borrará todos los datos de mapas y los hologramas anclados en todas las bases de datos de espacios. No se volverán a detectar hologramas y los hologramas tienen que haberse colocado recientemente para volver a almacenar secciones de mapas en la base de datos.
+1. **Eliminar todos los hologramas**. Al seleccionar esta configuración, HoloLens borrará TODOS los datos de mapa y los hologramas anclados en todas las bases de datos de espacios. No se volverán a detectar hologramas y los hologramas tienen que haberse colocado recientemente para volver a almacenar secciones de mapas en la base de datos.
 
 ## Calidad de holograma
 
 Los hologramas se pueden colocar en todo el entorno: alto, bajo y en cualquier lugar alrededor de ti, pero puedes verlos a través de un [marco holográfico](https://docs.microsoft.com/windows/mixed-reality/holographic-frame) que se encuentre delante de ti. Para obtener la mejor vista, asegúrate de ajustar el dispositivo para que puedas ver todo el marco. Y no dudes en recorrer tu entorno y explorarlo.
 
-Para que tus [hologramas](https://docs.microsoft.com/windows/mixed-reality/hologram) tengan un aspecto nítido, claro y estable, tu HoloLens debe estar calibrado solo para ti. La primera vez que configures tu HoloLens, se te guiará por este proceso. Más adelante, si los hologramas no tienen el aspecto adecuado o ves muchos errores, podrás realizar ajustes.
+Para que tus [hologramas](https://docs.microsoft.com/windows/mixed-reality/hologram) tengan un aspecto nítido, claro y estable, tu HoloLens debe estar calibrado solo para ti. La primera vez que configures tu HoloLens, se te guiará por este proceso. Más adelante, si los hologramas no tienen el aspecto adecuado o ves numerosos errores, podrás realizar ajustes.
 
-Si tienes problemas para realizar mapas de espacios, intenta eliminar los hologramas cercanos y volver a crear un mapa del espacio.
+Si tienes problemas para asignar espacios, intenta eliminar los hologramas cercanos y volver a asignar el espacio.
 
 ### Calibración
 
