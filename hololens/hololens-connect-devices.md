@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: afbcfd0762bea9e7a6bc217d5e4a2910eaab7359
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
+ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283351"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11302274"
 ---
 # Conectarse a dispositivos Bluetooth y USB-C
 
@@ -61,9 +61,9 @@ El HoloLens (1ª generación) soporta las siguientes clases de dispositivos Blue
 1. Use la punta de un bolígrafo para presionar y mantener el botón de emparejamiento del mando hasta que la luz de estado del mando parpadee en blanco. Asegúrese de mantener pulsado el botón hasta que la luz empiece a parpadear.  
 
    El botón de apareamiento está en la parte inferior del mando, junto al bucle del dedo.
-   
+
    ![El botón de apareamiento está al lado del bucle del dedo](images/use-hololens-clicker-1.png)
-   
+
 1. En la pantalla de apareamiento, seleccione**Comando** > **Emparejamiento**.
 
 ## Desactivar Bluetooth
@@ -90,6 +90,15 @@ El HoloLens 2 soporta las siguientes clases de dispositivos USB-C:
 > Algunos dispositivos móviles con conexiones USB-C se presentan al HoloLens como adaptadores de ethernet, y por lo tanto podrían ser utilizados en una configuración de atadura, comenzando con el Windows Holographic, versión 2004. No se admiten los módems USB LTE que requieran un controlador diferente, o bien la aplicación instalada para la configuración.
 
 En respuesta a los comentarios de los clientes, hemos habilitado la compatibilidad limitada para la conectividad de telefonía móvil anclada directamente a HoloLens mediante USB-C.  La conectividad anclada solo funciona para dispositivos que sean compatibles con la implementación del controlador [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) genérico de Microsoft y que no requieran la instalación de controladores o aplicaciones adicionales.  Este dispositivo, cuando esté conectado, aparecerá automáticamente como una nueva conexión Ethernet en la interfaz de usuario de configuración de red de HoloLens 2. Consulte con el fabricante del dispositivo para obtener más información sobre si admite el controlador RNDIS genérico de Microsoft.
+
+### Concentradores USB-C
+
+Es posible que algunos usuarios deban conectarse a varios dispositivos a la vez. Para los usuarios que deseen previsualizar una función de Insider y [usar un micrófono USB-C](hololens-insider.md#usb-c-external-microphone-support) al tiempo que otro dispositivo conectado, los concentradores USB-C pueden adaptarse a las necesidades del cliente. Microsoft no ha probado estos dispositivos ni recomienda ninguna marca específica.
+
+**Requisitos para concentradores USB-C y dispositivos conectados:**
+
+- Los dispositivos conectados no deben requerir la instalación de un controlador.
+- El consumo de potencia total de todos los dispositivos conectados debe ser inferior a 4,5 vatios.
 
 ## Conéctese a Miracast
 
