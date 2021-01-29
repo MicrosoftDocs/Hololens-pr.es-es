@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283041"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304973"
 ---
 # Hardware de HoloLens 2
 
@@ -29,8 +29,10 @@ Microsoft HoloLens 2 es un equipo holográfico sin ninguna restricción.  Perfec
 
 - **Visor**. Contiene las visualizaciones y los sensores de HoloLens. Puedes girar el visor hacia arriba mientras llevas puesto HoloLens.
 - **Banda de la cabeza**. Para ponerte tus HoloLens, usa la rueda de ajuste para expandir la banda de la cabeza. Con HoloLens colocado, aprieta la rueda de ajuste girando a la derecha, hasta que estés cómodo con la banda de la cabeza.
-- **Botones de brillo**. Cuando uses HoloLens, encontrarás los botones de brillo a la izquierda del dispositivo.
-- **Botones de volumen**. Cuando uses HoloLens, encontrarás los botones de volumen a la derecha del dispositivo.
+- **Botones de brillo**. Al llevar HoloLens, los botones de brillo están en el lado izquierdo del visor.
+- **Botones de volumen**. Al llevar HoloLens, los botones de volumen están en el lado derecho del visor.
+- **Botón de inicio/apagado**. Al levar HoloLens, el botón de encendido se encuentra en el lado derecho de la cubierta exterior trasera.
+- **Puerto USB-C**. Al llevar HoloLens, el puerto USB-C se encuentra en el lado derecho de la cubierta exterior trasera debajo del botón de encendido.
 
 ## En el cuadro
 
