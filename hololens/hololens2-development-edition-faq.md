@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
+ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283861"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "11306659"
 ---
 # Preguntas frecuentes sobre HoloLens 2 Development Edition
 
@@ -27,11 +27,11 @@ ms.locfileid: "11283861"
 
 ### ¿Qué puedo obtener con HoloLens 2 Development Edition?
 
-La edición de desarrollo de HoloLens 2 incluye un HoloLens 2, 500 $ en créditos de Azure, una prueba de Unity Pro de 3 meses y una prueba de complemento de 3 meses de Pixelyz.
+HoloLens 2 Development Edition incluye un HoloLens 2, 500 $ en créditos de Azure, una prueba de Unity Pro de 3 meses y una versión de prueba de 3 meses de Complemento De Pixelyz.
 
 ### ¿Cuál es la diferencia entre HoloLens 2 y HoloLens 2 Development Edition?
 
-Solo puede usar HoloLens 2 Development Edition para la creación interna y las pruebas de aplicaciones empresariales que se usarán en conexión con HoloLens 2 (edición comercial) en una configuración de producción. Como parte de la compra de la edición de desarrollo, Microsoft puede, a su entera discreción, proporcionarle ciertos derechos identificados durante el proceso de desprotección, como el derecho a canjear ciertos créditos de descuento o acceso de prueba a determinados servicios o herramientas de Microsoft o de terceros durante un período limitado. [Más información](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+Solo puedes usar HoloLens 2 Development Edition para crear y probar aplicaciones empresariales internas que se usarán con HoloLens 2 (edición comercial) en una configuración de producción. Como parte de la compra de la edición de desarrollo, Microsoft puede, a su entera discreción, proporcionarle ciertos derechos identificados durante el proceso de desprotección. Estos derechos incluyen el derecho a canjear ciertos créditos de descuento o acceso de prueba a determinados servicios o herramientas de Microsoft o de terceros durante un período limitado. [Más información](hololens2-options.md#learn-about-the-development-edition)
 
 ### ¿Se puede usar cualquier edición de HoloLens 2 para desarrollar?
 
@@ -93,7 +93,7 @@ MRTK-Unreal es el primer componente de herramientas de experiencia del usuario q
 
 Sí.
 
-### ¿Puedo ejecutar aplicaciones publicadas (instalación de prueba o almacenamiento) en mi dispositivo HoloLens 2 Development Edition?
+### ¿Puedo ejecutar aplicaciones publicadas (de prueba o de almacenamiento) en mi dispositivo HoloLens 2 Development Edition?
 
 Si cumple los términos y condiciones de HoloLens 2 Development Edition, sí, puede ejecutar cualquier aplicación publicada en Developer Edition. No limitamos el uso de aplicaciones almacenadas o de instalación local para esta SKU.
 
@@ -127,7 +127,7 @@ Indicaciones para canjear
 
 1. Visite id.unity.com
 2. Inicia sesión con tu id. de Unity o crea una cuenta
-3. Selecciona &#39;canjear un código de producto&#39;
+3. Selecciona &#39;Canjear un código de producto&#39;
 4. Escribe el código del producto y selecciona &#39;canjear un código de producto&#39;
 
 Visite la documentación de HoloLens 2 Development Edition para [obtener más información](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
@@ -138,11 +138,11 @@ Sí, puedes crear aplicaciones con todas las versiones compatibles de Unity.
 
 ### ¿Cómo puedo ponerse en contacto con el soporte técnico de Unity?
 
-Para obtener ayuda con cualquier pregunta sobre tu id. de Unity, cuenta, organización y suscripción), visita support.unity3d.com.
+Para obtener ayuda con cualquier pregunta sobre tu id., cuenta, organización y suscripción de Unity, visita support.unity3d.com.
 
 ## Pixelyz
 
-### ¿Qué se incluye con la versión de prueba del complemento de Pixelyz?
+### ¿Qué se incluye con la versión de prueba del complemento De Pixelyz?
 
 Una prueba del complemento De Pixelyz de tres meses que permite el acceso a Pixelyz para crear activos listos para usar con mallas teseladas perfectas, recuento limitado de polígonos y UV automático. La versión de prueba relacionada del complemento de Pixelyz no tiene fecha límite para canjear.
 
@@ -180,7 +180,7 @@ El crédito de Azure de 500 $ expirará 90 días después de activar el código 
 
 ### ¿Qué puedo hacer con mis créditos de Azure?
 
-Con los créditos de Azure, puede empezar a crear con el conjunto de servicios en la nube&#39;microsoft. Los créditos de Azure incluidos con HoloLens 2 Development Edition son para permitir a los clientes empezar rápidamente a crear y probar aplicaciones de realidad mixta en Azure. Para obtener detalles completos sobre la creación en Azure, visite [recursos de Azure](https://azure.microsoft.com/en-us/resources/)
+Con sus créditos de Azure, puede empezar a crear con el conjunto de servicios en la nube de Microsoft&#39;cada vez mayor. Los créditos de Azure incluidos con HoloLens 2 Development Edition son para permitir a los clientes empezar rápidamente a crear y probar aplicaciones de realidad mixta en Azure. Para obtener detalles completos sobre la creación en Azure, visite [recursos de Azure](https://azure.microsoft.com/en-us/resources/)
 
 ### ¿Dónde puedo obtener más información sobre los servicios de realidad mixta de Azure?
 
