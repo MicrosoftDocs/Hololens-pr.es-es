@@ -135,20 +135,20 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 |   |   |
 | - | - |
 | Sistema operativo Windows Holographic | Con Windows Holographic, los usuarios de Windows 10 podrán usar algunas de sus aplicaciones y juegos en un entorno de realidad mixta a través de HoloLens 2.
-| Visor 3D | [El Visor 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) le permite ver fácilmente modelos y animaciones 3D en tiempo real.|
+| Visor 3D | El [Visor 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) le permite ver fácilmente modelos y animaciones 3D en tiempo real.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), su asistente de productividad personal, le ayuda a estar al día con lo más importante y ahorrar tiempo al encontrar lo que necesita.  |
 | Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) ayudará a los empleados a aprender nuevas habilidades más rápido en los dispositivos HoloLens. |
 | Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) permite a los técnicos colaborar y resolver problemas con colaboradores remotos mediante Microsoft Teams o Dynamics 365 Remote Assist.  |
-| Centro de opiniones | [El Centro de opiniones](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) le permite proporcionar comentarios sobre Windows y las aplicaciones compartiendo sus sugerencias o problemas.  |
+| Centro de opiniones | El [Centro de opiniones](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) le permite proporcionar comentarios sobre Windows y las aplicaciones compartiendo sus sugerencias o problemas.  |
 | Explorador de archivos | El Explorador de archivos proporciona una interfaz gráfica de usuario para obtener acceso a los sistemas de archivos. |
 | Correo y calendario | Las aplicaciones [Correo y calendario](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) le ayudarán a mantenerse al día con su correo electrónico, administrar su programación y comunicarse con sus contactos. |  
 | Microsoft Edge | Microsoft Edge le ofrece un rendimiento de primer nivel con más privacidad, más productividad y más valor mientras explora. |
-| Microsoft Store | La [Microsoft Store](https://www.microsoft.com) es su fuente de acceso para aplicaciones y juegos que funcionan con HoloLens.|
+| Microsoft Store | [Microsoft Store](https://www.microsoft.com) es su fuente de acceso para aplicaciones y juegos que funcionan con HoloLens.|
 | Películas y TV | [Películas y TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) le ofrece el entretenimiento más reciente en una aplicación sencilla, rápida y elegante. |
 | OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) le permite acceder y editar sus archivos desde todos los dispositivos en cualquier lugar.  |
 | Fotos| [Fotos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) le permite ver y editar fotos y vídeos, hacer películas y crear álbumes.  |
 | Configuración | La aplicación Configuración es el lugar donde personaliza el funcionamiento detallado de Windows Holographic.  |
-| Sugerencias | Las [Sugerencias](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) le permiten dominar cosas sorprendentes y menos conocidas que puede hacer en Windows Holographic. |
+| Sugerencias | [Sugerencias](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) le permite dominar cosas sorprendentes y menos conocidas que puede hacer en Windows Holographic. |
 
 ## Certificaciones de dispositivos
 
