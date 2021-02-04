@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2a7a9fe510c699571dc2e307f5def8c730097815
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
+ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306707"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11311757"
 ---
 # HoloLens 2: preguntas más frecuentes sobre Industrial Edition
 
-![Uso de Industrial Edition en una sala limpia](./images/industrial-edition.jpg)
+![Uso de Industrial Edition en una sala limpia](./images/industrial-sku-with-remote-assist.png)
 
 ## Ventajas de HoloLens 2 Industrial Edition
 
@@ -92,7 +92,7 @@ Las Industrial Edition tienen el mismo sistema operativo que todas las demás ed
 
 ### ¿Qué aplicaciones se pueden ejecutar en HoloLens 2 Industrial Edition?
 
-HoloLens 2 Industrial Edition admite aplicaciones propias y de terceros, con una selección de aplicaciones integradas preparadas para empresas. Las aplicaciones para empresas se pueden implementar en dispositivos mediante varios [métodos de implementación de aplicaciones](https://docs.microsoft.com/hololens/app-deploy-overview).
+HoloLens 2 Industrial Edition admite aplicaciones propias y de terceros, con una selección de aplicaciones integradas preparadas para empresas. Las aplicaciones de línea de negocio se pueden implementar en dispositivos que utilizan varios métodos [de implementación de aplicaciones.](https://docs.microsoft.com/hololens/app-deploy-overview)
 
 ### ¿Puedo actualizar de HoloLens 2 a HoloLens 2 Industrial Edition?
 
