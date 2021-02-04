@@ -14,34 +14,36 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283081"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312644"
 ---
-# Guía de implementación: HoloLens 2 conectado en la nube con asistencia remota: información general
+# Guía de implementación de HoloLens 2 conectado a la nube con Remote Assist: Información general
 
-Esta guía ayuda a los profesionales de TI a planear e implementar dispositivos De Microsoft HoloLens 2 en su organización con el objetivo general de que esos dispositivos estén conectados a la nube a su organización con el Asistente remoto de Dynamics 365 listo para usar. Ten en cuenta que esto servirá como modelo para implementaciones de prueba de concepto en tu organización en una variedad de casos de uso de HoloLens 2.
+Esta guía ayuda a los profesionales de TI a planear e implementar dispositivos De Microsoft HoloLens 2 en su organización con el objetivo general de que esos dispositivos estén conectados a la nube a su organización con el Asistente remoto de Dynamics 365 listo para usar. Tenga en cuenta que esto servirá como un modelo para implementaciones de prueba de concepto en su organización en una variedad de casos de uso de HoloLens 2.
 
-Durante la guía, se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales puedan usar de inmediato asistencia remota al configurar el dispositivo. Para ello, nos dirigiremos a las partes importantes de la infraestructura necesarias para estar configurados y en funcionamiento, logrando la implementación a escala con HoloLens 2.
+Durante la guía, se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales puedan usar de inmediato asistencia remota tras la configuración del dispositivo. Para ello, nos dirigiremos a las partes importantes de la infraestructura necesarias para estar configurados y en funcionamiento, logrando la implementación a escala con HoloLens 2.
+
+![Banner conectado a la nube](./images/cloud-connected-hololens-large.png)
 
 ## En esta guía
 
 Esta guía tiene el objetivo específico de configurar asistencia remota dentro de su organización en sus dispositivos HoloLens. Cubriremos las necesidades necesarias para lograr ese objetivo. Para mantener el foco en este objetivo, se seleccionarán previamente determinadas configuraciones y preparación para optimizar esta implementación o para reducir los elementos necesarios para configurar. Se le informará de estas opciones y podrá personalizar la implementación en función de sus necesidades empresariales.
 
-Esta es una configuración similar al escenario [A:](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)Implementar en dispositivos de conexión en la nube, que es una buena opción para muchas implementaciones de prueba de concepto, que incluirá:
+Se trata de una configuración similar al escenario [A:](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)Implementar en dispositivos de conexión en la nube, que es una buena opción para muchas implementaciones de prueba de concepto, que incluirán:
 
-- Wi-Fi las redes están completamente abiertas a Internet y a los servicios en la nube
-- Unión a Azure AD con inscripción automática de MDM: MDM (Intune) administrado
+- Wi-Fi las redes están completamente abiertas a internet y a los servicios en la nube
+- Unión a Azure AD con inscripción automática de MDM: mdm (Intune) administrado
 - Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
   - Se admiten uno o varios usuarios por dispositivo
 - Los distintos niveles de configuraciones de bloqueo de dispositivos se aplican en función de casos de uso específicos, desde Totalmente abierto a Quiosco de aplicación única
 
 ![Escenario conectado a la nube](./images/cloud-connected-guide-diagram.png)
 
-En esta guía no se aplicarán otras restricciones ni configuraciones de dispositivos, pero te animamos a explorar esas opciones después de finalizar.
+No se aplicarán otras restricciones o configuraciones de dispositivos en esta guía, pero te animamos a explorar esas opciones después de finalizar.
 
 ## Más información sobre asistencia remota
 
@@ -55,7 +57,7 @@ Preparar:
 
 > [!div class="checklist"]
 > - [Obtenga información sobre los aspectos básicos de la infraestructura para dispositivos HoloLens 2.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Obtenga más información sobre Azure AD y configure uno si no&#39;tiene.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Obtenga más información sobre Azure AD y configure una si no&#39;la tiene.](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [Obtenga información sobre la administración de identidades y cómo configurar mejor las cuentas de Azure AD.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [Obtén más información sobre MDM y configura intune si&#39;ya tienes uno listo.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Obtenga información sobre los requisitos de red de Asistencia remota.](hololens2-cloud-connected-prepare.md#network)
@@ -77,8 +79,8 @@ Implemente:
 Mantener:
 
 > [!div class="checklist"]
-> - [Cómo actualizar el Asistente remoto con la aplicación de Microsoft Store.](hololens2-cloud-connected-maintain.md#updates)
-> - [Elaboración de un plan de soporte técnico.](hololens2-cloud-connected-maintain.md#support-plan)
+> - [Cómo actualizar el asistente remoto con la aplicación de Microsoft Store.](hololens2-cloud-connected-maintain.md#updates)
+> - [Realizar un plan de soporte técnico.](hololens2-cloud-connected-maintain.md#support-plan)
 > - [Plan de desarrollo.](hololens2-cloud-connected-maintain.md#development-plan)
 
 ## Paso siguiente
