@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
-ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
+ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
+ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312655"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313557"
 ---
 # Información general sobre HoloLens 2
 
@@ -66,7 +66,7 @@ Infórmate sobre nuestra amplia [cartera de HoloLens 2.](https://www.microsoft.c
 
 ### **HoloLens 2 (solo dispositivo)**
 #### Más información sobre HoloLens 2
-El uso de los dispositivos HoloLens 2 en un entorno comercial puede ser una herramienta eficaz para tu empresa u organización. Todo dispositivo HoloLens 2 se puede usar para desarrollar aplicaciones de realidad mixta. 
+El uso de los dispositivos HoloLens 2 en un entorno comercial puede ser una herramienta eficaz para tu empresa u organización. Asimismo, un desarrollador puede usar cualquiera de las HoloLens 2 para crear aplicaciones de realidad mixta. 
 
 <br>
 
@@ -87,7 +87,7 @@ El uso de los dispositivos HoloLens 2 en un entorno comercial puede ser una herr
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Estos son los pasos a seguir con la edición de Microsoft Dynamics 365 Remote Assist y HoloLens 2
-Hemos creado una guía específica para ayudarte a implementar dispositivos HoloLens a escala. La guía incluye la configuración de un extremo a otro de Azure Active Directory para validar una llamada de Asistencia Remota. Echa un vistazo a nuestra [Guía de implementación: HoloLens 2 conectado a la nube con Remote Assist](hololens2-cloud-connected-overview.md) para obtener más información.
+Hemos creado una guía específica para ayudarte a implementar dispositivos HoloLens a escala. La guía incluye la configuración de un extremo a otro de Azure Active Directory para validar una llamada de asistencia remota. Echa un vistazo a nuestra [Guía de implementación: HoloLens 2 conectado a la nube con Remote Assist](hololens2-cloud-connected-overview.md) para obtener más información.
 
 | Punto de control  | Resultado                                |
 |-------------|----------------------------------------|
@@ -131,7 +131,7 @@ HoloLens 2 Development Edition incluye HoloLens 2, una prueba de Unity Pro de 3 
 |---|---|
 |  [Unity](https://unity.com/) | Una plataforma de desarrollo 3D en tiempo real.   |
 |  [Complemento de Pixyz para Unity](https://www.pixyz-software.com/plugin/) | Un puente entre la ingeniería &amp; los mundos CAD con el mundo de desarrollo.   |
-| [500 $ en crédito de Azure para los servicios de Azure](https://azure.microsoft.com/resources/) | Los créditos de Azure incluidos con HoloLens 2 Development Edition son para empezar rápidamente a crear y probar aplicaciones de realidad mixta en Azure. |
+| [500 $ en crédito de Azure para los servicios de Azure](https://azure.microsoft.com/resources/) | Los créditos de Azure incluidos con HoloLens 2 Development Edition sirven para empezar rápidamente a crear y probar aplicaciones de realidad mixta en Azure. |
 
 #### Canjear los créditos
 
