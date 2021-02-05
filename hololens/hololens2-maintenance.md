@@ -1,6 +1,6 @@
 ---
 title: Preguntas más frecuentes acerca de la limpieza de HoloLens 2
-description: Obtenga respuestas actualizadas para todas las preguntas más frecuentes para limpiar y mantener el dispositivo HoloLens 2.
+description: Obtenga respuestas actualizadas para todas las preguntas más frecuentes para limpiar y mantener su dispositivo HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,23 +15,27 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
+ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283091"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313799"
 ---
 # Preguntas más frecuentes acerca de la limpieza de HoloLens 2
 
 > [!IMPORTANT]  
-> Microsoft no puede tomar una determinación de la efectividad de un producto desenlazador determinado en la lucha contra las rencciones, como COVID-19. Consulte las instrucciones de su autoridad de salud pública local sobre cómo mantenerse a salvo de posibles infecciones.  
+> Microsoft no puede tomar una determinación de la efectividad de un producto desenlazador determinado en la lucha contra las represas, como COVID-19. Consulte las instrucciones de su autoridad de salud pública local sobre cómo mantenerse a salvo de posibles infecciones.  
 
 ## ¿Cuáles son las instrucciones generales de limpieza para dispositivos HoloLens 2?
 
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+## ¿Cuáles son las instrucciones generales de limpieza para dispositivos HoloLens 2?
+<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
+
 **Para limpiar el dispositivo**
 
-1. Quita cualquier pórreo mediante un tejido de microfibra suave y sin lint para limpiar la superficie del dispositivo con su mente.
+1. Quita cualquier pórmico con una microfibra de microfibra suave y sin lint para limpiar la superficie del dispositivo.
 1. Resalte ligeramente el tejido mediante el consumo de isopropyl "70%" médico y, a continuación, use el trapo suave para limpiar la superficie del dispositivo.
 
    ![Imagen que muestra cómo limpiar el visor](images/hololens-cleaning-visor.png)
@@ -53,10 +57,10 @@ No. Los limpiabos pueden ser fáciles de evitar para los protectores del visor. 
 
 ## ¿Puedo usar eliminaciones de limpieza para limpiar el dispositivo?
 
-Sí, si las toalladas no contienen ninguna retención. Puede usar eliminaciones de eliminación de problemas que no se puedan eliminar para borrar ligeramente [las superficies de HoloLens.](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)  
+Sí, si las toalladas no contienen ninguna retención. Puedes usar eliminaciones de limpieza que no se puedan silenciar para borrar ligeramente [las superficies de HoloLens.](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)  
 
 > [!CAUTION]  
-> Evita usar barridos de limpieza que contengan la limpieza para limpiar las superficies de HoloLens. Es aceptable usar eliminaciones de barrido en situaciones críticas, cuando no hay nada más disponible. Sin embargo, puede dañar el visor de HoloLens u otras superficies.
+> Evita usar limpiezas de limpieza que contengan la limpieza para limpiar las superficies de HoloLens. Es aceptable usar eliminaciones de barrido en situaciones críticas, cuando no hay nada más disponible. Sin embargo, puede dañar el visor de HoloLens u otras superficies.
 
 ## ¿Puedo usar el alcohol para limpiar el dispositivo?
 
@@ -82,7 +86,7 @@ Uvc con LED UVC, que funciona a 265nm en el nivel de intensidad de 0,5-0,6mW/cm 
 > 1. La almohadilla de la frente y los cierres de dispositivos se decolora.
 > 1. Los defectos aparecen en el protector anti reflectante (AR) en el visor y en las ventanas del sensor.
 > 1. Los defectos aparecen en los materiales base del visor y en las ventanas del sensor.
-> 1. El rendimiento de la pantalla disminuye.
+> 1. El rendimiento de la pantalla se degrada.
 
 ## ¿Se puede reemplazar la almohadilla trasera?
 
