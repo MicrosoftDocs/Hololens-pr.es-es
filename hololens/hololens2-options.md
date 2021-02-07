@@ -4,7 +4,7 @@ description: Obtén información sobre si cada edición de dispositivo HoloLens 
 keywords: Opciones de compra de HoloLens 2, opciones de HoloLens, Developer Edition
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
-ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
+ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
+ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314292"
 ---
 # Información general sobre HoloLens 2
 
@@ -106,6 +106,8 @@ HoloLens 2 Industrial Edition se ha mejorado y rediseñado con nuevos materiales
 
 Además del dispositivo actualizado, HoloLens 2 Industrial Edition incluye una garantía de 2 años y un programa de reemplazo rápido.
 
+![Uso de Industrial Edition en una sala limpia](./images/ie-small-pic.png)
+
 Revisa las [Preguntas más frecuentes sobre HoloLens 2 Industrial Edition.](hololens2-industrial-edition-faq.md)
 
 #### Limpieza y manejo de HoloLens 2
@@ -115,6 +117,8 @@ HoloLens 2 Industrial Edition se puede limpiar con una solución de 70 % alcohol
 
 #### Más información sobre Trimble XR10
 Trimble XR10 con HoloLens 2 es el primer dispositivo creado con el Programa de personalización de HoloLens de Microsoft e integra la tecnología informática espacial más reciente en una solución certificada para su uso con un casco de seguridad para trabajadores.
+
+![SKU de Trimble](./images/trimble-ed.png)
 
 Infórmese sobre [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
@@ -132,6 +136,8 @@ HoloLens 2 Development Edition incluye HoloLens 2, una prueba de Unity Pro de 3 
 |  [Unity](https://unity.com/) | Una plataforma de desarrollo 3D en tiempo real.   |
 |  [Complemento de Pixyz para Unity](https://www.pixyz-software.com/plugin/) | Un puente entre la ingeniería &amp; los mundos CAD con el mundo de desarrollo.   |
 | [500 $ en crédito de Azure para los servicios de Azure](https://azure.microsoft.com/resources/) | Los créditos de Azure incluidos con HoloLens 2 Development Edition sirven para empezar rápidamente a crear y probar aplicaciones de realidad mixta en Azure. |
+
+![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
 
 #### Canjear los créditos
 
