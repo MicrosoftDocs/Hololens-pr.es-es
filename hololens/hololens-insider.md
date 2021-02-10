@@ -16,16 +16,16 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 4573f3b2e88af36c397fd1735ec9c6a96b4c52d6
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11314011"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324803"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
-¡Bienvenido a las compilaciones más recientes de Insider Preview para HoloLens! Es fácil empezar y [proporcionar](hololens-insider.md#start-receiving-insider-builds) comentarios valiosos para nuestra próxima actualización principal del sistema operativo para HoloLens.
+Te damos la bienvenida a las compilaciones más recientes de Insider Preview para HoloLens. Es fácil empezar y [proporcionar comentarios](hololens-insider.md#start-receiving-insider-builds) valiosos para nuestra próxima actualización principal del sistema operativo para HoloLens.
 
 ## Notas de la versión de Windows Insider
 
@@ -39,7 +39,7 @@ Estamos encantados de empezar a usar nuevas características para los usuarios d
 | Nombre de la característica                                              | Descripción corta                                                                      | Disponible en la compilación |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [Nuevo Microsoft Edge](#introducing-the-new-microsoft-edge) | El nuevo Microsoft Edge basado en Chromium ya está disponible para HoloLens 2                         | 20279.1006 |
-| [WebXR y visor 360](#webxr-and-360-viewer)             | Probar experiencias web envolventes y reproducción de vídeo de 360                                           | 20289.1000 |
+| [WebXR y visor 360](#webxr-and-360-viewer)             | Probar experiencias web envolventes y reproducción de vídeo 360                                           | 20289.1000 |
 | [Aplicación Nueva configuración](#new-settings-app)                     | La aplicación Configuración heredada se está reemplazando por una versión actualizada con nuevas características y configuración | 20279.1006 |
 | [Selector de aplicaciones predeterminado](#default-app-picker)                 | Elegir qué aplicación debe iniciarse para cada tipo de archivo o vínculo                                      | 20279.1006 |
 | [Aplicación web de Office](#office-web-app)                         | Ahora se muestra un acceso directo a la aplicación web de Office en "Todas las aplicaciones"                                   | 20279.1006 |
@@ -47,7 +47,10 @@ Estamos encantados de empezar a usar nuevas características para los usuarios d
 | [Compatibilidad con micrófono externo USB-C](#usb-c-external-microphone-support) | Usa micrófonos USB-C para aplicaciones y/o asistencia remota.| 20279.1006 |
 | [Nuevos AUMID para nuevas aplicaciones en modo de pantalla completa](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs para nuevas aplicaciones de Configuración y Edge | 20279.1006 |
 | [Entrega de errores en el modo de pantalla completa mejorada](#kiosk-mode-behavior-changes-for-handling-of-failures) | El modo de pantalla completa busca el acceso asignado global antes del menú inicio vacío. | 20279.1006 |
-| [Configurar diagnósticos de reserva](#configuring-fallback-diagnostics-via-settings-app) | Configuración del comportamiento de diagnóstico de reserva en la aplicación Configuración | 20279.1006 |
+| [Configurar diagnósticos de reserva](#configuring-fallback-diagnostics-via-settings-app) | Establecer el comportamiento de diagnóstico de reserva en la aplicación Configuración | 20279.1006 |
+| [Compartir cosas con dispositivos cercanos](#share-things-with-nearby-devices) | Compartir archivos o direcciones URL de un HoloLens a un equipo | 20279.1006 |
+| [Nuevo solucionador de problemas de actualización del sistema operativo](#new-os-update-troubleshooter) | Nuevo solucionador de problemas en configuración para actualizaciones del sistema operativo | 20279.1006 |
+| [Mejoras y correcciones en la actualización](#improvements-and-fixes-in-the-update) | Correcciones adicionales en la actualización. | 20279.1006 |
 
 ### Presentación del nuevo Microsoft Edge
 
@@ -138,13 +141,13 @@ Hay un par de métodos disponibles para instalar los canales de Microsoft Edge I
   1. Después de instalar correctamente, encontrarás Microsoft Edge Beta, Dev **** o Canary como una entrada independiente en la lista Todas las aplicaciones del menú Inicio.
 
 > [!NOTE]
-> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para garantizar que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 estén obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se mantendrán por delante de la versión de Microsoft Edge en holoLens 2.
+> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para asegurarnos de que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 están obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se adelantarán a la versión de Microsoft Edge en holoLens 2.
 
 ### WebXR y visor 360
 
 *Agregado en la compilación 20289.1000 de Windows Insider*
 
-El nuevo Microsoft Edge incluye compatibilidad con WebXR, que es el nuevo estándar para crear experiencias web envolventes (reemplazando WebVR). Muchas experiencias web envolventes se diseñaron pensando en la realidad virtual (reemplazan el campo de vista por un entorno virtual), pero holoLens 2 también admite estas experiencias. El estándar WebXR también permite experiencias web envolventes de realidad aumentada y mixta que aprovechan tu entorno físico. A medida que los desarrolladores pasan más tiempo con WebXR, prevemos que las nuevas experiencias envolventes de realidad mixta y aumentada llegarán para que lo prueben los clientes de HoloLens 2.
+El nuevo Microsoft Edge incluye compatibilidad con WebXR, que es el nuevo estándar para crear experiencias web envolventes (reemplazando WebVR). Muchas experiencias web envolventes se diseñaron pensando en la realidad virtual (reemplazan el campo de vista por un entorno virtual), pero HoloLens 2 también admite estas experiencias. El estándar WebXR también permite experiencias web envolventes de realidad aumentada y mixta que aprovechan tu entorno físico. A medida que los desarrolladores pasan más tiempo con WebXR, prevemos que las nuevas experiencias envolventes de realidad mixta y aumentada llegarán para que lo prueben los clientes de HoloLens 2.
 
 La extensión visor 360 se basa en WebXR e se instala automáticamente junto con el nuevo Microsoft Edge en HoloLens 2. Esta extensión web le ofrece la posibilidad de inmersarse en vídeos de 360 grados. YouTube ofrece la mayor selección de 360 vídeos, por lo que te animamos a empezar allí.
 
@@ -183,11 +186,11 @@ La extensión visor 360 se basa en WebXR e se instala automáticamente junto con
 - Es posible que 360 vídeos de sitios web distintos de YouTube no funcionen como se esperaba.
 - Si los vídeos 360 no entran en la vista envolvente (o no aparece el botón de los auriculares de realidad mixta), prueba a actualizar la página.
 - Los títulos aún no están visibles en 360 Viewer en HoloLens 2.
-- Pausar un vídeo en el Visor 360 detiene la representación del vídeo (pero al seleccionar el botón reproducir correctamente se reanuda la reproducción).
+- Pausar un vídeo en 360 Viewer detiene la representación del vídeo (pero al seleccionar el botón reproducir correctamente se reanuda la reproducción).
 - El botón "siguiente vídeo" en el Visor 360 no funciona actualmente.
 - Puedes reproducir vídeos 2D en un modo envolvente de "teatro", pero la velocidad de fotogramas será inferior a 30 fps.
 
-#### Proporcionar comentarios sobre WebXR y 360 Viewer
+#### Proporcionar comentarios sobre WebXR y visor 360
 
 Comparta comentarios y errores con nuestro equipo a través de la **característica Enviar comentarios** en el nuevo Microsoft Edge.
 
@@ -201,7 +204,7 @@ Con esta versión, presentamos una nueva versión de la aplicación Configuraci�
 ![Página principal de la aplicación Nueva configuración](images/new-settings-app.png)
 
 **Nuevas características y configuración**
-- Búsqueda de configuración: busca la configuración en la página principal de Configuración con palabras clave o el nombre de la configuración.
+- Búsqueda de configuración: busque la configuración en la página principal de Configuración con palabras clave o el nombre de la configuración.
 - Sonido > sistema:
   - Dispositivos de audio de entrada y salida: elige de forma independiente los dispositivos de audio de entrada y salida (por ejemplo, escucha audio a través de auriculares Bluetooth o usa un micrófono USB-C para la entrada de audio). 
     > [!NOTE]
@@ -239,9 +242,9 @@ La aplicación web de Office se ha agregado a la lista "Todas las aplicaciones" 
 
 ### Deslizar el dedo para escribir
 
-A algunos clientes les resulta más rápido "escribir" en teclados virtuales deslizando el dedo por la forma de la palabra que pretenden escribir y estamos haciendo una vista previa de esta característica para el teclado holográfico. Puedes deslizar el dedo una palabra a la vez pasando la punta del dedo a través del plano del teclado holográfico, deslizando el dedo por la forma de la palabra y, a continuación, retirando la punta del dedo del plano del teclado. Puedes deslizar rápidamente las palabras de seguimiento sin necesidad de presionar la barra espaciadora quitando el dedo del teclado entre palabras. Sabrás que la característica funciona si ves una pista de deslizar el dedo después del movimiento del dedo en el teclado.
+A algunos clientes les resulta más rápido "escribir" en teclados virtuales deslizando el dedo por la forma de la palabra que pretenden escribir y estamos previsualizando esta característica para el teclado holográfico. Puedes deslizar el dedo una palabra a la vez pasando la punta del dedo a través del plano del teclado holográfico, deslizando el dedo por la forma de la palabra y, a continuación, retirando la punta del dedo del plano del teclado. Puedes deslizar rápidamente las palabras de seguimiento sin necesidad de presionar la barra espaciadora quitando el dedo del teclado entre palabras. Sabrás que la característica funciona si ves una pista de deslizar el dedo después del movimiento del dedo en el teclado.
 
-Ten en cuenta que esta característica puede ser difícil de usar y usar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
+Ten en cuenta que esta característica puede ser difícil de usar y dominar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
 
 ### Compatibilidad con micrófono externo USB-C
 
@@ -259,7 +262,7 @@ Abra la **aplicación Configuración** y seleccione **Sonido del**  ->  **sistem
 >
 > A continuación, use la lista desplegable para establecer el micrófono externo como **Predeterminado** o **Predeterminado de comunicaciones.** Elegir Predeterminado **significa** que el micrófono externo se usará en todas partes.
 >
-> Elegir Communications **Default** significa que el micrófono externo se usará en asistencia remota y otras aplicaciones de comunicaciones, pero la matriz de micrófonos holoLens puede seguir usándose para otras tareas.
+> Elegir **El** valor predeterminado de comunicaciones significa que el micrófono externo se usará en asistencia remota y otras aplicaciones de comunicaciones, pero la matriz de micrófonos de HoloLens puede seguir usándose para otras tareas.
 
 ![Administrar dispositivos de sonido](images/usbc-mic-2.png)
 
@@ -275,7 +278,7 @@ Desafortunadamente Bluetooth los micrófonos aún no se admiten actualmente en H
 
 Ten en cuenta que algunos micrófonos USB-C se informan incorrectamente como micrófono *y* altavoz. Esto es un problema con el micrófono y no con HoloLens. Al conectar uno de estos micrófonos a HoloLens, es posible que se pierda el sonido. Afortunadamente, hay una corrección simple.  
 
-En **Configuración**del sonido del sistema, establezca explícitamente los altavoces integrados (controlador de audio de característica  ->  ****  ->  **** **analógica)** como **dispositivo predeterminado.** HoloLens debe recordar esta configuración incluso si el micrófono se quita y se vuelve a conectar más adelante.
+En **Configuración**de sonido del sistema, establezca explícitamente los altavoces integrados (controlador de audio de característica  ->  ****  ->  **** **analógica)** como **dispositivo predeterminado.** HoloLens debe recordar esta configuración incluso si el micrófono se quita y se vuelve a conectar más adelante.
 
 ![Solución de problemas de micrófonos USB-C](images/usbc-mic-4.png)
 
@@ -294,7 +297,7 @@ Al modificar un quiosco para incluir las nuevas aplicaciones, te recomendamos ag
 
 ### Cambios en el comportamiento del modo de pantalla completa para controlar errores
 
-En las compilaciones anteriores, si un dispositivo tuviera una configuración de quiosco, que es una combinación de acceso asignado global y acceso asignado a un miembro del grupo de AAD, si la determinación de la pertenencia al grupo de AAD falla, el usuario vería["no](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)se muestra nada en el menú inicio".
+En compilaciones anteriores, si un dispositivo tuviera una configuración de quiosco, que es una combinación de acceso asignado global y acceso asignado a un miembro del grupo de AAD, si se hubiera fallado la determinación de la pertenencia al grupo de AAD, el usuario vería["no](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)se muestra nada en el menú inicio".
 
 A partir de la versión de Windows Insider, la experiencia de pantalla completa volverá a la configuración global de quiosco (si está presente) en caso de errores durante el modo de pantalla completa de grupo de AAD.
 
@@ -304,6 +307,20 @@ Ahora, en la aplicación Configuración, un usuario puede configurar el comporta
 
 > [!NOTE]
 > Si hay una directiva MDM configurada para el dispositivo, el usuario no podrá invalidar ese comportamiento.  
+
+### Compartir cosas con dispositivos cercanos
+
+Comparte cosas con dispositivos cercanos a Windows 10, incluidos los equipos y otros dispositivos HoloLens 2 que ejecutan HoloLens Insider compilaciones 20279.1006+. Puedes probarlo en **** Experiencias compartidas del sistema de configuración para compartir archivos o direcciones  ->  ****  ->  **** URL de un HoloLens a un equipo. Para obtener más información, lee más sobre cómo [compartir cosas con dispositivos cercanos en Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
+
+Esta característica se puede administrar [a través de Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
+
+### Nuevo solucionador de problemas de actualización del sistema operativo
+
+Además de los solucionadores de problemas anteriores de la aplicación Configuración, se ha agregado un nuevo solucionador de problemas con la adición de la nueva aplicación Configuración para actualizaciones del sistema operativo. Vaya a **Configuración**  ->  **de seguridad de actualización &amp; para**  ->  **solucionar**  ->  **problemas de Windows Update** y seleccione **Inicio.** Esto le permite recopilar seguimientos mientras reproduce el problema con las actualizaciones del sistema operativo para ayudar a solucionar mejor problemas con el departamento de TI o soporte técnico.
+
+### Mejoras y correcciones en la actualización:
+
+- [Los diagnósticos sin](hololens-diagnostic-logs.md#offline-diagnostics) conexión también incluirán información adicional del dispositivo para el número de serie y la versión del sistema operativo.
 
 
 
@@ -321,7 +338,7 @@ Ahora, en la aplicación Configuración, un usuario puede configurar el comporta
 
 En un dispositivo HoloLens **** 2, ve a Actualización de configuración & Seguridad del  >  ****  >  **Programa Windows Insider** y selecciona **Introducción.** Vincula la cuenta que usó para registrarte como Windows Insider.
 
-Windows Insider ahora se está trasladando a Canales. El **anillo** rápido se convertirá en **** el Canal **de desarrollo,** **** el anillo lento se convertirá en el canal **beta**y el anillo de vista previa de versión se convertirá en el canal de vista previa **de versión.** Este es el aspecto de esa asignación:
+Windows Insider ahora se está moviendo a Canales. El anillo rápido se convertirá en **** el Canal **de desarrollo,** **** el anillo lento se convertirá en el canal **beta**y el anillo **de** vista previa de versión se convertirá en el canal de vista previa **de versión.** Este es el aspecto de esa asignación:
 
 ![Explicación de los canales de Windows Insider](images/WindowsInsiderChannels.png)
 
@@ -332,7 +349,7 @@ A continuación, selecciona Desarrollo activo de **Windows,** elige si quieres r
 Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, ve a Configuración > Actualización & **Seguridad > Buscar** actualizaciones para obtener la compilación más reciente.
 
 ### Corrección de errores 0x80070490 actualización
-Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, prueba el siguiente trabajo a corto plazo. Implica mover el canal de Insider, tomar la actualización y, a continuación, volver a mover el canal de Insider.
+Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, prueba el siguiente trabajo a corto plazo. Implica mover el canal de Insider, seleccionar la actualización y, a continuación, volver a mover el canal de Insider.
 
 #### Fase uno: versión preliminar
 1.  Configuración, Actualización & seguridad, Programa Windows Insider, seleccione **Liberar canal de vista previa.**
@@ -343,8 +360,8 @@ Si se produce un error de actualización 0x80070490 al actualizar en el canal De
 2. Configuración, Actualización & seguridad, Windows Update, **Buscar actualizaciones.**
 
 ## Instrucciones de descarga e flash FFU
-Para probar con un ffu firmado de piloto, primero tienes que desbloquear el dispositivo en piloto antes de parpadear el ffu firmado del piloto.
-1. En el equipo:
+Para probar con un ffu firmado de piloto, primero tienes que desbloquear el dispositivo antes de parpadear el ffu firmado del piloto.
+1. En pc:
 
     1. Descargar ffu en el equipo desde [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
@@ -374,7 +391,7 @@ Si ya no quieres recibir compilaciones de Insider de Windows Holographic, puedes
 
 Para comprobar que HoloLens ejecuta una compilación de producción:
 
-1. Ve a **Configuración > del > acerca de**y busca el número de compilación.
+1. Ve a **Configuración > Información > sistema**y busca el número de compilación.
 
 1. [Vea las notas de la versión de los números de compilación de producción.](hololens-release-notes.md)
 

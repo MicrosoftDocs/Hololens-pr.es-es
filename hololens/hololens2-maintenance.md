@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
-ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
+ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319284"
+ms.locfileid: "11324792"
 ---
 # Preguntas más frecuentes acerca de la limpieza de HoloLens 2
 
 > [!IMPORTANT]  
 > Microsoft no puede tomar una determinación de la efectividad de un producto desenlazador determinado en la lucha contra las represas, como COVID-19. Consulte las instrucciones de su autoridad de salud pública local sobre cómo mantenerse a salvo de posibles infecciones.  
 
-## ¿Cuáles son las instrucciones generales de limpieza para dispositivos HoloLens 2?
+## Uso y cuidado de HoloLens 2
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
@@ -36,8 +36,12 @@ ms.locfileid: "11319284"
 **Para limpiar el dispositivo**
 
 1. Quita cualquier pórmico con una microfibra de microfibra suave y sin lint para limpiar la superficie del dispositivo.
-1. Resalte ligeramente el tejido mediante el consumo de isopropyl "70%" médico y, a continuación, use el trapo suave para limpiar la superficie del dispositivo.
-1. Deja que el dispositivo se seque completamente.
+
+   ![Limpiar mientras se mantiene en la almohadilla de la frente](images/hl2-cleaning.png)
+
+2. Resalte ligeramente el tejido mediante el consumo de isopropyl "70%" médico y, a continuación, use el trapo suave para limpiar la superficie del dispositivo.
+
+3. Deja que el dispositivo se seque completamente.
 
 **Para limpiar la almohadilla de la frente**
 
@@ -54,7 +58,7 @@ No. Los limpiabos pueden ser fáciles de evitar para los protectores del visor. 
 
 ## ¿Puedo usar eliminaciones de limpieza para limpiar el dispositivo?
 
-Sí, si las toalladas no contienen ninguna retención. Puedes usar eliminaciones de limpieza que no se puedan silenciar para borrar ligeramente [las superficies de HoloLens.](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)  
+Sí, si las toalladas no contienen ninguna retención. Puedes usar eliminaciones de limpieza que no se puedan silenciar para borrar ligeramente [las superficies de HoloLens.](#hololens-2-use-and-care)  
 
 > [!CAUTION]  
 > Evita usar limpiezas de limpieza que contengan la limpieza para limpiar las superficies de HoloLens. Es aceptable usar eliminaciones de barrido en situaciones críticas, cuando no hay nada más disponible. Sin embargo, puede dañar el visor de HoloLens u otras superficies.
@@ -71,11 +75,11 @@ Sí. La almohadilla de la frente se une magnéticamente al dispositivo. Para sep
 
 ## ¿Cómo puedo limpiar la almohadilla de la frente?
 
-Para limpiar la almohadilla de la frente, límpiala con un trapo que sea más fácil de limpiar con agua y un soap desenlazamiento suave. Deje que la almohadilla de la frente se seque completamente antes de usarla de nuevo.
+Para limpiar la almohadilla de la frente, límpiala con un trapo que se edícelo con agua y un soap desenlazamiento suave. Deje que la almohadilla de la frente se seque completamente antes de usarla de nuevo.
 
 ## ¿Puedo usar la luz uv (UV) para sanar el dispositivo?
 
-Uvc con LED UVC, que funciona a 265nm en el nivel de intensidad de 0,5-0,6mW/cm 2 y no emite el nivel de emisión, se puede usar para <sup> </sup> sanitizar HoloLens2. Siga las especificaciones del fabricante sobre el control y el tiempo de exposición.
+Uvc con LED UVC, que funciona a 265nm con un nivel de intensidad de 0,5-0,6 mW/cm 2 y no emite el nivel de emisión, se puede usar para <sup> </sup> sanitizar HoloLens2. Siga las especificaciones del fabricante sobre el control y el tiempo de exposición.
 
 > [!CAUTION]  
 > Los altos niveles de exposición de UV-A y UV-B pueden degradar la calidad de la pantalla del dispositivo y dañar el visor. La exposición excesiva a UV-A y UV-B tiene los siguientes efectos, en orden de la duración y la intensidad de la exposición:
@@ -83,7 +87,7 @@ Uvc con LED UVC, que funciona a 265nm en el nivel de intensidad de 0,5-0,6mW/cm 
 > 1. La almohadilla de la frente y los cierres de dispositivos se decolora.
 > 1. Los defectos aparecen en el protector anti reflectante (AR) en el visor y en las ventanas del sensor.
 > 1. Los defectos aparecen en los materiales base del visor y en las ventanas del sensor.
-> 1. El rendimiento de la pantalla se degrada.
+> 1. El rendimiento de la pantalla disminuye.
 
 ## ¿Se puede reemplazar la almohadilla trasera?
 
