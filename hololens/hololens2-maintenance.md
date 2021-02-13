@@ -15,21 +15,21 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
-ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
+ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
+ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11324792"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327384"
 ---
 # Preguntas más frecuentes acerca de la limpieza de HoloLens 2
 
 > [!IMPORTANT]  
-> Microsoft no puede tomar una determinación de la efectividad de un producto desenlazador determinado en la lucha contra las represas, como COVID-19. Consulte las instrucciones de su autoridad de salud pública local sobre cómo mantenerse a salvo de posibles infecciones.  
+> Microsoft no puede tomar una determinación de la efectividad de un producto desenlazador determinado en la lucha contra las rencciones, como COVID-19. Consulte las instrucciones de su autoridad de salud pública local sobre cómo mantenerse a salvo de posibles infecciones.  
 
 ## Uso y cuidado de HoloLens 2
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
@@ -45,7 +45,7 @@ ms.locfileid: "11324792"
 
 **Para limpiar la almohadilla de la frente**
 
-1. Usa agua y un soap desenlazado y desenlazamiento para limpiar un maní y, a continuación, usa el trapo de limpieza para limpiar la almohadilla de la frente.
+1. Use agua y un soap suave y desenlace para limpiar un maní y, a continuación, use el trapo de limpieza para limpiar la almohadilla de la frente.
 1. Deje que la almohadilla de la frente se seque completamente.
 
 ## ¿Puedo usar cualquier lente más limpia para limpiar el visor de HoloLens?
@@ -75,9 +75,9 @@ Sí. La almohadilla de la frente se une magnéticamente al dispositivo. Para sep
 
 ## ¿Cómo puedo limpiar la almohadilla de la frente?
 
-Para limpiar la almohadilla de la frente, límpiala con un trapo que se edícelo con agua y un soap desenlazamiento suave. Deje que la almohadilla de la frente se seque completamente antes de usarla de nuevo.
+Para limpiar la almohadilla de la frente, límpiala con un trapo que sea más fácil de limpiar con agua y un soap desenlazamiento suave. Deje que la almohadilla de la frente se seque completamente antes de usarla de nuevo.
 
-## ¿Puedo usar la luz uv (UV) para sanar el dispositivo?
+## ¿Puedo usar la luz uv (UV) para sanear el dispositivo?
 
 Uvc con LED UVC, que funciona a 265nm con un nivel de intensidad de 0,5-0,6 mW/cm 2 y no emite el nivel de emisión, se puede usar para <sup> </sup> sanitizar HoloLens2. Siga las especificaciones del fabricante sobre el control y el tiempo de exposición.
 
@@ -87,7 +87,7 @@ Uvc con LED UVC, que funciona a 265nm con un nivel de intensidad de 0,5-0,6 mW/c
 > 1. La almohadilla de la frente y los cierres de dispositivos se decolora.
 > 1. Los defectos aparecen en el protector anti reflectante (AR) en el visor y en las ventanas del sensor.
 > 1. Los defectos aparecen en los materiales base del visor y en las ventanas del sensor.
-> 1. El rendimiento de la pantalla disminuye.
+> 1. El rendimiento de la pantalla se degrada.
 
 ## ¿Se puede reemplazar la almohadilla trasera?
 
