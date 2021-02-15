@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
-ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
+ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11306928"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328114"
 ---
 # Hardware de HoloLens 2
 
@@ -29,8 +29,8 @@ Microsoft HoloLens 2 es un equipo holográfico sin ninguna restricción.  Perfec
 
 - **Visor**. Contiene las visualizaciones y los sensores de HoloLens. Puedes girar el visor hacia arriba mientras llevas puesto HoloLens.
 - **Banda de la cabeza**. Para ponerte tus HoloLens, usa la rueda de ajuste para expandir la banda de la cabeza. Con HoloLens colocado, aprieta la rueda de ajuste girando a la derecha, hasta que estés cómodo con la banda de la cabeza.
-- **Botones de brillo**. Al llevar HoloLens, los botones de brillo están en el lado izquierdo del visor.
-- **Botones de volumen**. Al llevar HoloLens, los botones de volumen están en el lado derecho del visor.
+- **Botones de brillo**. Al llevar HoloLens, los botones de brillo están en el lado izquierdo del visor cerca de la sien.
+- **Botones de volumen**. Al llevar HoloLens, los botones de volumen están en el lado derecho del visor cerca de la sien.
 - **Botón de inicio/apagado**. Al levar HoloLens, el botón de encendido se encuentra en el lado derecho de la cubierta exterior trasera.
 - **Puerto USB-C**. Al llevar HoloLens, el puerto USB-C se encuentra en el lado derecho de la cubierta exterior trasera debajo del botón de encendido.
 
@@ -74,7 +74,7 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 ![Sensores HoloLens 2](images/hololens2-front-view.png)
 
 > [!NOTE]
-> No cubra ninguno de los sensores que se llaman en la imagen. Las cámaras de seguimiento de la cabeza tienen un FOV muy ancho, no debería haber nada a su alrededor ni tampoco se deberían cubrir.
+> No cubra ninguno de los sensores que se indican en la imagen. Las cámaras de seguimiento de la cabeza tienen un FOV muy ancho, no debería haber nada a su alrededor ni tampoco se deberían cubrir.
 
 ### Audio y voz
 
@@ -135,7 +135,7 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 |   |   |
 | - | - |
 | Sistema operativo Windows Holographic | Con Windows Holographic, los usuarios de Windows 10 podrán usar algunas de sus aplicaciones y juegos en un entorno de realidad mixta a través de HoloLens 2.
-| Visor 3D | El [Visor 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) le permite ver fácilmente modelos y animaciones 3D en tiempo real.|
+| Visor 3D | [El Visor 3D](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) te permite ver fácilmente modelos y animaciones 3D en tiempo real.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), su asistente de productividad personal, le ayuda a estar al día con lo más importante y ahorrar tiempo al encontrar lo que necesita.  |
 | Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) ayudará a los empleados a aprender nuevas habilidades más rápido en los dispositivos HoloLens. |
 | Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) permite a los técnicos colaborar y resolver problemas con colaboradores remotos mediante Microsoft Teams o Dynamics 365 Remote Assist.  |
@@ -169,11 +169,11 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 |     Longitud de unidad                |     378,97 mm          |     14,920 pulgadas       |
 |     Ancho de unidad                 |     247,90 mm          |     9,760 pulgadas        |
 |     Profundidad de la unidad                 |     163,07 mm          |     6,420 pulgadas        |
-|     Peso unitario                |     2,878 kg           |     6,344 lbs           |
-|     Longitud del embalaje exterior    |     446,00 mm          |     17,559 pulgadas       |
+|     Peso unitario                |     2,878 kilos           |     6,344 lbs           |
+|     Longitud del embalaje exterior    |     446 mm          |     17,559 pulgadas       |
 |     Ancho del embalaje exterior     |     257,99 mm          |     10,157 pulgadas       |
 |     Profundidad del embalaje exterior     |     172,01 mm          |     6,772 pulgadas        |
-|     Peso del embalaje exterior    |     3,284 kg           |     7,240 lbs           |
+|     Peso del embalaje exterior    |     3,284 kilos           |     7,240 lbs           |
 
 > [!NOTE]
 > - Unidad: la caja negra, estilo minorista, en la cual se venden las HoloLens 2.
@@ -182,10 +182,10 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 ## Buscar el número de serie
 
 El número de serie de los dispositivos HoloLens 2 se encuentra impreso debajo del visor.
-1. Levante el visor del dispositivo.
-1. Mire cerca de la almohadilla de la frente.
-1. Puede encontrar el número de serie ubicado cerca de la parte que permite el movimiento del visor. 
 
+1. Levante el visor del dispositivo.
+1. Mira cerca de la almohadilla de la frente.
+1. Puede encontrar el número de serie ubicado cerca de la parte que permite el movimiento del visor.
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
