@@ -11,36 +11,37 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/2/2021
+ms.date: 2/16/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3d7c4b5347019682896bb695690190e633c80677
-ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
+ms.openlocfilehash: 885f9a841c5f59f2816667256de0856f8a1f2612
+ms.sourcegitcommit: ab35169529776f0682eeb8fa448c9d9e8f598513
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327404"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11340548"
 ---
 # Versión preliminar de Insider para Microsoft HoloLens
 
-¡Bienvenido a las compilaciones más recientes de Insider Preview para HoloLens! Es fácil empezar y [proporcionar comentarios](hololens-insider.md#start-receiving-insider-builds) valiosos para nuestra próxima actualización principal del sistema operativo para HoloLens.
+Te damos la bienvenida a las compilaciones más recientes de Insider Preview para HoloLens. Es fácil empezar y [proporcionar comentarios](hololens-insider.md#start-receiving-insider-builds) valiosos para nuestra próxima actualización principal del sistema operativo para HoloLens.
 
 ## Notas de la versión de Windows Insider
 
 Estamos encantados de empezar a usar nuevas características para los usuarios de Windows Insider de nuevo. Las nuevas compilaciones se actualizarán al Canal de desarrollo para obtener las actualizaciones más recientes. Seguiremos actualizando esta página a medida que agreguemos más características y actualizaciones a nuestras compilaciones de Windows Insider.  Prepárate para mezclar estas actualizaciones en tu realidad.
 
 > [!IMPORTANT]
-> Si anteriormente usaste la aplicación Configuración o la aplicación Microsoft Edge en un quiosco, hemos reemplazado estas aplicaciones por nuevas aplicaciones que usan un identificador de aplicación diferente. Te animamos encarecidamente a leer [los nuevos AUMID para las nuevas aplicaciones en el](#use-the-new-settings-and-edge-apps-in-kiosk-modes) modo de pantalla completa a continuación. Esto garantizará que sigas teniendo la aplicación Configuración en el quiosco o incluyas la nueva aplicación de Microsoft Edge.
+> Si anteriormente usaste la aplicación Configuración o la aplicación Microsoft Edge en un quiosco, hemos reemplazado estas aplicaciones por nuevas aplicaciones que usan un identificador de aplicación diferente. Te animamos encarecidamente a leer [los nuevos AUMID para las nuevas aplicaciones en el modo de pantalla completa a](#use-the-new-settings-and-edge-apps-in-kiosk-modes) continuación. Esto garantizará que sigas teniendo la aplicación Configuración en el quiosco o incluyas la nueva aplicación de Microsoft Edge.
 
 <br>
 
 | Nombre de la característica                                              | Descripción corta                                                                      | Disponible en la compilación |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [Nuevo Microsoft Edge](#introducing-the-new-microsoft-edge) | El nuevo Microsoft Edge basado en Chromium ya está disponible para HoloLens 2                         | 20279.1006 |
-| [WebXR y visor 360](#webxr-and-360-viewer)             | Probar experiencias web envolventes y reproducción de vídeo 360                                           | 20289.1000 |
+| [WebXR y visor 360](#webxr-and-360-viewer)             | Probar experiencias web envolventes y reproducción de vídeo de 360                                           | 20289.1000 |
 | [Aplicación Nueva configuración](#new-settings-app)                     | La aplicación Configuración heredada se está reemplazando por una versión actualizada con nuevas características y configuración | 20279.1006 |
+| [Calibración de color de pantalla](#display-color-calibration)   | Seleccionar un perfil de color alternativo para la pantalla de HoloLens 2                                | 20293.1000 |
 | [Selector de aplicaciones predeterminado](#default-app-picker)                 | Elegir qué aplicación debe iniciarse para cada tipo de archivo o vínculo                                      | 20279.1006 |
 | [Aplicación web de Office](#office-web-app)                         | Ahora se muestra un acceso directo a la aplicación web de Office en "Todas las aplicaciones"                                   | 20279.1006 |
 | [Deslizar el dedo para escribir](#swipe-to-type)                           | Usar la punta del dedo para "deslizar rápidamente" palabras en el teclado holográfico                        | 20279.1006 |
@@ -82,7 +83,7 @@ Estos son algunos recursos útiles para obtener más información sobre cómo ad
 - Documentación [completa de Microsoft Edge Enterprise](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
-> Debido al volumen de directivas de explorador admitidas por el nuevo Microsoft Edge, nuestro equipo no puede garantizar que cada nueva directiva funcione en HoloLens 2. Sin embargo, hemos probado y confirmado que el nuevo equivalente de Microsoft Edge de cada directiva heredada de Microsoft Edge admitida anteriormente en HoloLens 2 funciona según lo esperado. Consulta [la asignación](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) de directivas heredadas de Microsoft Edge a Microsoft Edge para encontrar el nuevo equivalente de Microsoft Edge de cada directiva de explorador de Microsoft Edge heredada que usaste con HoloLens 2.
+> Debido al volumen de directivas de explorador admitidas por el nuevo Microsoft Edge, nuestro equipo no puede garantizar que cada nueva directiva funcione en HoloLens 2. Sin embargo, hemos probado y confirmado que el nuevo equivalente de Microsoft Edge de cada directiva heredada de Microsoft Edge admitida anteriormente en HoloLens 2 funciona según lo esperado. Consulta [la asignación](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) de directivas de Microsoft Edge heredado a Microsoft Edge para encontrar el nuevo equivalente de Microsoft Edge de cada directiva de explorador de Microsoft Edge heredada que usaste con HoloLens 2.
 >
 > Hay al menos dos nuevas directivas de Microsoft Edge que sabemos *que no funcionarán* con HoloLens 2:
 > - EnterpriseModeSiteList
@@ -142,7 +143,7 @@ Hay un par de métodos disponibles para instalar los canales de Microsoft Edge I
   1. Después de instalar correctamente, encontrarás Microsoft Edge Beta, Dev o **** Canary como una entrada independiente en la lista Todas las aplicaciones del menú Inicio.
 
 > [!NOTE]
-> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para asegurarnos de que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 están obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se adelantarán a la versión de Microsoft Edge en holoLens 2.
+> Durante esta versión preliminar de Windows Insider para HoloLens 2, la versión de Microsoft Edge en el dispositivo puede ser superior a la disponible en algunos (o todos) los canales de Microsoft Edge Insider. Esto es para garantizar que las nuevas características y correcciones destinadas específicamente al explorador web en HoloLens 2 estén obteniendo acceso a nuestros usuarios de Windows Insider lo más rápido posible. Poco después del lanzamiento público de la próxima actualización de Windows, las compilaciones del canal de Microsoft Edge Insider superarán y se adelantarán a la versión de Microsoft Edge en holoLens 2.
 
 ### WebXR y visor 360
 
@@ -205,11 +206,11 @@ Con esta versión, presentamos una nueva versión de la aplicación Configuraci�
 ![Página principal de la aplicación Nueva configuración](images/new-settings-app.png)
 
 **Nuevas características y configuración**
-- Búsqueda de configuración: busca la configuración en la página principal de Configuración con palabras clave o el nombre de la configuración.
+- Búsqueda de configuración: busque la configuración en la página principal de Configuración con palabras clave o el nombre de la configuración.
 - Sonido > sistema:
-  - Dispositivos de audio de entrada y salida: elige de forma independiente los dispositivos de audio de entrada y salida (por ejemplo, escucha audio a través de auriculares Bluetooth o usa un micrófono USB-C para la entrada de audio). 
+  - Dispositivos de audio de entrada y salida: elige de forma independiente los dispositivos de audio de entrada y salida (por ejemplo, escucha audio a través de auriculares Bluetooth o usa un micrófono USB-C para la entrada de audio).
     > [!NOTE]
-    > Bluetooth HoloLens 2 no admite micrófonos.
+    > Bluetooth holoLens 2 no admite los micrófonos.
   - Volumen de la aplicación: ajusta de forma independiente el volumen de cada aplicación.
 - Sistema > power & suspensión: elige cuándo el dispositivo debe ir a suspensión después de un período de inactividad.
 - Sistema > batería: habilita manualmente el modo de ahorro de batería o establece un umbral de batería en el que el modo de ahorro de batería se activa automáticamente.
@@ -227,7 +228,51 @@ Con esta versión, presentamos una nueva versión de la aplicación Configuraci�
 - Visitar la página Notificaciones puede bloquear la aplicación Configuración (investigando).
 - La página Ethernet no aparece actualmente (se solucionará próximamente).
 - Ya no puedes cambiar el nombre de tu dispositivo con la aplicación Configuración (los administradores de TI pueden usar paquetes de aprovisionamiento o MDM para cambiar el nombre de los dispositivos).
-- Es posible que el uso de la batería para el nuevo Microsoft Edge no sea preciso, debido a su naturaleza como una aplicación de escritorio Win32 compatible con una capa de adaptador para UWP (no se prevé ninguna corrección pronto).
+- Es posible que el uso de la batería para el nuevo Microsoft Edge no sea preciso, debido a su naturaleza como una aplicación de escritorio Win32 compatible con una capa de adaptador para UWP (no se prevé una corrección pronto).
+
+### Calibración de color de pantalla
+
+*Agregado en la compilación 20293.1000 de Windows Insider*
+
+Con esta nueva configuración, puede seleccionar un perfil de color alternativo para la pantalla de HoloLens 2. Esto puede ayudar a que los colores parezcan más precisos, especialmente en niveles de brillo de pantalla inferiores. La calibración del color de pantalla se puede encontrar en la aplicación Configuración, en la página > calibración del sistema.
+
+#### Cómo usar la calibración de color de pantalla
+
+1. Inicia la **aplicación Configuración** y ve **a Calibración de > sistema.**
+1. En **Calibración de color de**pantalla, selecciona el botón Ejecutar **calibración de color de** pantalla.
+1. La experiencia de calibración del color de la pantalla se iniciará y te animará a asegurarte de que el visor está en la posición correcta.
+1. Después de continuar con los cuadros de diálogo de instrucciones, la pantalla se atenuará automáticamente al 30 % de brillo.
+    > [!TIP]
+    > Si tienes problemas para ver la escena atenuada en tu entorno, puedes ajustar manualmente el nivel de brillo de HoloLens 2 con los botones de brillo del lado izquierdo del dispositivo.
+1. Selecciona los botones 1 a 6 para probar al instante cada perfil de color y busca uno que se vea mejor a los ojos (esto normalmente significa el perfil que ayuda a que la escena aparezca más neutral, con el patrón de escala de grises y los tonos de máscara como se espera).
+
+    ![Mostrar escena de calibración de color](images/color-cal-ui.png)
+    
+1. Cuando esté satisfecho con el perfil seleccionado, seleccione el botón **& Salir**
+1. Si prefiere no realizar cambios, seleccione el botón **Cancelar & Salir** y los cambios se revertirán.
+
+> [!TIP]
+> Estas son algunas sugerencias útiles a tener en cuenta al usar la configuración de calibración de color de pantalla:
+> - Puedes volver a ejecutar la calibración del color de la pantalla desde Configuración siempre que quieras
+> - Si alguien del dispositivo ha usado previamente la configuración para cambiar los perfiles de color, la fecha y hora del cambio más reciente se reflejará en la página Configuración.
+> - Cuando vuelvas a ejecutar la calibración del color de la pantalla, se resaltará el perfil de color que se guardó anteriormente y el perfil 0 no aparecerá (ya que el perfil 0 representa el perfil de color original de la pantalla)
+> - Si desea volver al perfil de color original de la pantalla, puede hacerlo desde la página Configuración (vea cómo restablecer el perfil [de color)](#how-to-reset-color-profile)
+
+#### Cómo restablecer el perfil de color
+
+Si no estás satisfecho con el perfil de color personalizado guardado en holoLens 2, puedes restaurar el perfil de color original del dispositivo:
+1. Inicia la **aplicación Configuración** y ve **a Calibración de > sistema.**
+1. En **Calibración de color de**pantalla, seleccione el botón Restablecer perfil de **color** predeterminado.
+1. La pantalla se apagará durante varios segundos a medida que se restablezca. Te recomendamos que también reinicies el dispositivo *después* de que la pantalla vuelva a encenderse (consulta [los problemas conocidos).](#top-display-color-calibration-known-issues)
+
+#### Problemas conocidos de calibración de color de pantalla superior
+
+- En la página Configuración, la cadena de estado que indica cuándo se cambió el perfil de color por última vez estará des actualizada hasta que vuelva a cargar esa página de Configuración. 
+    - Solución alternativa: seleccione otra página configuración y, a continuación, vuelva a seleccionar la página Calibración.
+- El botón "Restablecer perfil de color predeterminado" abre un cuadro de diálogo que no tiene texto. Sin embargo, el botón "Restablecer" del cuadro de diálogo funciona según lo previsto.
+- Después de seleccionar el botón "Restablecer", es posible que la pantalla se vaya en blanco entre 5 y 10 segundos y que observes un comportamiento inesperado en la casa de realidad mixta. Reinicia el dispositivo después de usar el botón "Restablecer" (lo solucionaremos pronto para reiniciar automáticamente el dispositivo y actualizaremos el texto de configuración en consecuencia).
+- Si holoLens 2 se queda en reposo mientras se ejecuta la calibración del color de la pantalla, más adelante se reanudará en la casa de realidad mixta y el nivel de brillo de la pantalla seguirá atenuado.
+- Es posible que deba intentar presionar los botones de brillo del lado izquierdo del dispositivo hacia arriba/abajo unas cuantas veces antes de que funcionen según lo esperado.
 
 ### Selector de aplicaciones predeterminado
 
@@ -243,7 +288,7 @@ La aplicación web de Office se ha agregado a la lista "Todas las aplicaciones" 
 
 ### Deslizar el dedo para escribir
 
-A algunos clientes les resulta más rápido "escribir" en teclados virtuales deslizando el dedo por la forma de la palabra que pretenden escribir y estamos previsualizando esta característica para el teclado holográfico. Puedes deslizar el dedo una palabra a la vez pasando la punta del dedo a través del plano del teclado holográfico, deslizando el dedo por la forma de la palabra y, a continuación, retirando la punta del dedo del plano del teclado. Puedes deslizar el dedo para seguir las palabras sin necesidad de presionar la barra espaciadora quitando el dedo del teclado entre palabras. Sabrás que la característica funciona si ves una pista de deslizar el dedo después del movimiento del dedo en el teclado.
+A algunos clientes les resulta más rápido "escribir" en teclados virtuales deslizando el dedo por la forma de la palabra que pretenden escribir y estamos haciendo una vista previa de esta característica para el teclado holográfico. Puedes deslizar el dedo una palabra a la vez pasando la punta del dedo a través del plano del teclado holográfico, deslizando el dedo por la forma de la palabra y, a continuación, retirando la punta del dedo del plano del teclado. Puedes deslizar el dedo para seguir las palabras sin necesidad de presionar la barra espaciadora quitando el dedo del teclado entre palabras. Sabrás que la característica funciona si ves una pista de deslizar el dedo después del movimiento del dedo en el teclado.
 
 Ten en cuenta que esta característica puede ser difícil de usar y usar debido a la naturaleza de un teclado holográfico en el que no sientas resistencia contra el dedo (a diferencia de una pantalla de teléfono móvil). Estamos evaluando esta característica para la versión pública, por lo que sus comentarios son importantes; si encuentras la característica útil o tienes comentarios sobre la regeneración, háganoslo saber a través del Centro [de opiniones.](hololens-feedback.md)
 
@@ -279,7 +324,7 @@ Desafortunadamente Bluetooth los micrófonos aún no se admiten actualmente en H
 
 Ten en cuenta que algunos micrófonos USB-C se informan incorrectamente como micrófono *y* altavoz. Esto es un problema con el micrófono y no con HoloLens. Al conectar uno de estos micrófonos a HoloLens, es posible que se pierda el sonido. Afortunadamente, hay una corrección simple.  
 
-En **Configuración**del sonido del sistema, establezca explícitamente los altavoces integrados (controlador de audio de característica  ->  ****  ->  **** **analógica)** como **dispositivo predeterminado.** HoloLens debe recordar esta configuración incluso si el micrófono se quita y se vuelve a conectar más adelante.
+En **Configuración**de sonido del sistema, establezca explícitamente los altavoces integrados (controlador de audio de característica  ->  ****  ->  **** **analógica)** como **dispositivo predeterminado.** HoloLens debe recordar esta configuración incluso si el micrófono se quita y se vuelve a conectar más adelante.
 
 ![Solución de problemas de micrófonos USB-C](images/usbc-mic-4.png)
 
@@ -314,14 +359,14 @@ En las compilaciones de Windows Insider estamos ampliando la lista de URI de con
 | Página de configuración                                        | URI                                              |
 |------------------------------------------------------|--------------------------------------------------|
 | Características > aplicaciones & aplicaciones                               | `ms-settings:appsfeatures`                         |
-| Aplicaciones > aplicaciones & características > opciones avanzadas          | `ms-settings:appsfeatures-app`                     |
+| Características > aplicaciones & aplicaciones > opciones avanzadas          | `ms-settings:appsfeatures-app`                     |
 | Aplicaciones > mapas sin conexión                                  | `ms-settings:maps`                                 |
 | Aplicaciones > mapas sin conexión > descargar mapas                  | `ms-settings:maps-downloadmaps`                    |
 | Dispositivos > mouse                                      | `ms-settings:mouse`                                |
 | Dispositivos > USB                                        | `ms-settings:usb`                                  |
 | Modo & conexión a Internet > avión                   | `ms-settings:network-airplanemode`                 |
 | Privacidad > general                                    | `ms-settings:privacy-general`                      |
-| Personalización > privacidad & entrada de lápiz             | `ms-settings:privacy-speechtyping`                 |
+| Privacidad > entrada de & personalización de escritura             | `ms-settings:privacy-speechtyping`                 |
 | Movimiento de > privacidad                                     | `ms-settings:privacy-motion`                       |
 | Bordes de > privacidad                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
 | Capturas de > privacidad y aplicaciones                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
@@ -346,11 +391,11 @@ Anteriormente, los dos URI siguientes no llevarían a un usuario directamente a 
 
 ### Cambios en el comportamiento del modo de pantalla completa para controlar errores
 
-En las compilaciones anteriores, si un dispositivo tuviera una configuración de quiosco, que es una combinación de acceso asignado global y acceso asignado a un miembro del grupo de AAD, si la determinación de la pertenencia al grupo de AAD falla, el usuario vería["no](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)se muestra nada en el menú inicio".
+En compilaciones anteriores, si un dispositivo tuviera una configuración de quiosco, que es una combinación de acceso asignado global y acceso asignado a un miembro del grupo de AAD, si se hubiera fallado la determinación de la pertenencia al grupo de AAD, el usuario vería["no](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)se muestra nada en el menú inicio".
 
 A partir de la versión de Windows Insider, la experiencia de pantalla completa volverá a la configuración global de quiosco (si está presente) en caso de errores durante el modo de pantalla completa de grupo de AAD.
 
-### Configuración de diagnósticos de reserva a través de la aplicación Configuración
+### Configuración de diagnósticos de reserva mediante la aplicación Configuración
 
 Ahora, en la aplicación Configuración, un usuario puede configurar el comportamiento de diagnóstico [de reserva.](hololens-diagnostic-logs.md) En la aplicación Configuración, ve a la **página Solución**de problemas  ->  **** de privacidad para configurar esta opción.
 
@@ -365,7 +410,7 @@ Esta característica se puede administrar [a través de Connectivity/AllowConnec
 
 ### Nuevo solucionador de problemas de actualización del sistema operativo
 
-Además de los solucionadores de problemas anteriores de la aplicación Configuración, se ha agregado un nuevo solucionador de problemas con la adición de la nueva aplicación Configuración para actualizaciones del sistema operativo. Vaya a **Configuración**  ->  **de seguridad de actualización &amp; para**  ->  **solucionar**  ->  **problemas de Windows Update** y seleccione **Inicio.** Esto le permite recopilar seguimientos mientras reproduce el problema con las actualizaciones del sistema operativo para ayudar a solucionar mejor problemas con el departamento de TI o soporte técnico.
+Además de los solucionadores de problemas anteriores dentro de la aplicación Configuración, se ha agregado un nuevo solucionador de problemas con la adición de la nueva aplicación Configuración para actualizaciones del sistema operativo. Vaya a **Configuración**  ->  **de seguridad de actualización &amp; para**  ->  **solucionar**  ->  **problemas de Windows Update** y seleccione **Inicio.** Esto le permite recopilar seguimientos mientras reproduce el problema con las actualizaciones del sistema operativo para ayudar a solucionar mejor problemas con el departamento de TI o soporte técnico.
 
 ### Mejoras y correcciones en la actualización:
 
@@ -387,7 +432,7 @@ Además de los solucionadores de problemas anteriores de la aplicación Configur
 
 En un dispositivo HoloLens **** 2, ve a Actualización de configuración & Seguridad del  >  ****  >  **Programa Windows Insider** y selecciona **Introducción.** Vincula la cuenta que usó para registrarte como Windows Insider.
 
-Windows Insider ahora se está trasladando a Canales. El anillo rápido se convertirá en **** el Canal **de desarrollo,** **** el anillo lento se convertirá en el canal **beta**y el anillo **de** vista previa de versión se convertirá en el canal de vista previa **de versión.** Este es el aspecto de esa asignación:
+Windows Insider ahora se está moviendo a Canales. El anillo rápido se convertirá en **** el Canal **de desarrollo,** **** el anillo lento se convertirá en el canal **beta**y el anillo **de** vista previa de versión se convertirá en el canal de vista previa **de versión.** Este es el aspecto de esa asignación:
 
 ![Explicación de los canales de Windows Insider](images/WindowsInsiderChannels.png)
 
@@ -395,17 +440,17 @@ Para obtener más información, consulta [Introducción a los canales de Windows
 
 A continuación, selecciona Desarrollo activo de **Windows,** elige si quieres recibir compilaciones del Canal **de desarrollo** o **canal beta** y revisa los términos del programa.
 
-Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, ve a Configuración > Actualización & Seguridad > **Buscar** actualizaciones para obtener la compilación más reciente.
+Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, ve a Configuración > Actualización & **Seguridad > Buscar** actualizaciones para obtener la compilación más reciente.
 
 ### Actualización de errores 0x80070490 de trabajo
 Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, prueba el siguiente trabajo a corto plazo. Implica mover el canal de Insider, seleccionar la actualización y, a continuación, volver a mover el canal de Insider.
 
 #### Fase uno: versión preliminar
-1.  Configuración, Actualización & seguridad, Programa Windows Insider, selecciona **Liberar canal de vista previa.**
+1.  Configuración, Actualización & seguridad, Programa Windows Insider, seleccione **Liberar canal de vista previa.**
 2.  Configuración, Actualización & seguridad, Windows Update, **Buscar actualizaciones.** Después de la actualización, continúe con la fase dos.
 
 #### Fase dos: Canal de desarrollo
-1. Configuración, Actualizar & seguridad, Programa Windows Insider, selecciona **Canal de desarrollo.**
+1. Configuración, Actualización & seguridad, Programa Windows Insider, selecciona **Canal de desarrollo.**
 2. Configuración, Actualización & seguridad, Windows Update, **Buscar actualizaciones.**
 
 ## Instrucciones de descarga e flash FFU
@@ -433,10 +478,10 @@ Le damos la bienvenida y le animamos a que pruebe a desarrollar sus aplicaciones
 
 ## Dejar de recibir compilaciones de Insider
 
-Si ya no quieres recibir compilaciones de Insider de Windows Holographic, puedes optar por no [](hololens-recovery.md) participar cuando HoloLens ejecute una compilación de producción, o puedes recuperar el dispositivo con Advanced Recovery Companion para recuperar el dispositivo en una versión que no sea insider de Windows Holographic.
+Si ya no quieres recibir compilaciones de Insider de Windows Holographic, puedes optar por no [](hololens-recovery.md) participar cuando HoloLens ejecute una compilación de producción o puedes recuperar el dispositivo con advanced Recovery Companion para recuperar el dispositivo en una versión que no sea insider de Windows Holographic.
 
 > [!CAUTION]
-> Hay un problema conocido en el que los usuarios que no se inscriban en las compilaciones de Insider Preview después de reinstalar manualmente una nueva compilación de vista previa experimentarían una pantalla azul. Posteriormente, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se verían afectados o no, vea más información sobre [este problema conocido.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Hay un problema conocido en el que los usuarios que desconscriban las compilaciones de Insider Preview después de reinstalar manualmente una nueva compilación de vista previa experimentarían una pantalla azul. Posteriormente, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se verían afectados o no, vea más información sobre [este problema conocido.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
 Para comprobar que HoloLens ejecuta una compilación de producción:
 
