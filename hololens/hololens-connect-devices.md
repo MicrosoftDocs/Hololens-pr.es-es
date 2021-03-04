@@ -13,19 +13,19 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
-ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
+ms.openlocfilehash: 728bf8547315be96f879ff94a1290c1e2b3e7bf8
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "11302274"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385491"
 ---
-# Conectarse a dispositivos Bluetooth y USB-C
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Conectarse a dispositivos Bluetooth y USB-C
 
 > [!NOTE]
 > No se pueden usar Micrófonos externos. HoloLens 2 usa su de [matriz de micrófonos integrada](hololens2-hardware.md#audio-and-speech).
 
-## Emparejar dispositivos Bluetooth
+## <a name="pair-bluetooth-devices"></a>Emparejar dispositivos Bluetooth
 
 El HoloLens 2 soporta las siguientes clases de dispositivos Bluetooth:
 
@@ -37,12 +37,12 @@ El HoloLens (1ª generación) soporta las siguientes clases de dispositivos Blue
 
 - Mouse
 - Teclado
-- Mando HoloLens (1era generación)
+- [Mando HoloLens (1era generación)](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
 > Otros tipos de dispositivos Bluetooth, como altavoces, auriculares, teléfonos inteligentes y cartuchos de juegos, pueden aparecer en la lista como disponibles en la configuración de la HoloLens. Sin embargo, estos dispositivos no son compatibles con el HoloLens (1era generación). Para obtener más información, consulte la sección[Configuración de HoloLens, en la que se enumeran los dispositivos disponibles, pero éstos no funcionan](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
 
-### Emparejar un teclado o un ratón Bluetooth
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Emparejar un teclado o un ratón Bluetooth
 
 1. Encienda el teclado o el ratón y póngalo visible. Para aprender cómo hacer que el dispositivo sea visible, busque información sobre el dispositivo (o su documentación) o visite el sitio web del fabricante.
 
@@ -50,23 +50,9 @@ El HoloLens (1ª generación) soporta las siguientes clases de dispositivos Blue
 
 1. Seleccione **Dispositivos**, y asegúrese de que el Bluetooth esté activado.  
 
-1. Cuando vea el nombre del dispositivo, seleccione **Emparejar**, y luego sigue las instrucciones.
+1. Cuando vea el nombre del dispositivo, seleccione **Emparejar** y luego, siga las instrucciones.
 
-### HoloLens (1era generación): emparejar el mando
-
-1. Utilice el gesto de eclosión para ir a**Inicio**, y luego seleccione**Ajustes**.
-
-1. Seleccione **Dispositivos**, y asegúrese de que el Bluetooth esté activado.
-
-1. Use la punta de un bolígrafo para presionar y mantener el botón de emparejamiento del mando hasta que la luz de estado del mando parpadee en blanco. Asegúrese de mantener pulsado el botón hasta que la luz empiece a parpadear.  
-
-   El botón de apareamiento está en la parte inferior del mando, junto al bucle del dedo.
-
-   ![El botón de apareamiento está al lado del bucle del dedo](images/use-hololens-clicker-1.png)
-
-1. En la pantalla de apareamiento, seleccione**Comando** > **Emparejamiento**.
-
-## Desactivar Bluetooth
+## <a name="disable-bluetooth"></a>Desactivar el Bluetooth
 
 Este procedimiento desactiva los componentes de radiofrecuencia de la radio Bluetooth y desactiva todas las funciones de Bluetooth en el HoloLens de Microsoft.
 
@@ -74,7 +60,7 @@ Este procedimiento desactiva los componentes de radiofrecuencia de la radio Blue
 
 1. Deslice el interruptor de activación de **Bluetooth** a la posición **Desconectado**.
 
-## HoloLens 2: conectar dispositivos USB-C
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: conectar dispositivos USB-C
 
 El HoloLens 2 soporta las siguientes clases de dispositivos USB-C:
 
@@ -84,14 +70,12 @@ El HoloLens 2 soporta las siguientes clases de dispositivos USB-C:
 - Auriculares de audio digital USB-C (incluyendo adaptadores de auriculares más carga)
 - Ratón con cable
 - Teclado con cable
-- Combinación de concentradores de DP (USB A + carga de DP)
+- Concentradores de PD de combinación (USB A más carga de PD)
 
 > [!NOTE]
-> Algunos dispositivos móviles con conexiones USB-C se presentan al HoloLens como adaptadores de ethernet, y por lo tanto podrían ser utilizados en una configuración de atadura, comenzando con el Windows Holographic, versión 2004. No se admiten los módems USB LTE que requieran un controlador diferente, o bien la aplicación instalada para la configuración.
+> En respuesta a los comentarios de los clientes, hemos habilitado compatibilidad limitada para la conectividad a través de la red de telefonía móvil anclada directamente a HoloLens mediante USB-C. Consulte [Conectar a la red de telefonía móvil y 5G](hololens-cellular.md) para obtener más información.
 
-En respuesta a los comentarios de los clientes, hemos habilitado la compatibilidad limitada para la conectividad de telefonía móvil anclada directamente a HoloLens mediante USB-C.  La conectividad anclada solo funciona para dispositivos que sean compatibles con la implementación del controlador [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) genérico de Microsoft y que no requieran la instalación de controladores o aplicaciones adicionales.  Este dispositivo, cuando esté conectado, aparecerá automáticamente como una nueva conexión Ethernet en la interfaz de usuario de configuración de red de HoloLens 2. Consulte con el fabricante del dispositivo para obtener más información sobre si admite el controlador RNDIS genérico de Microsoft.
-
-### Concentradores USB-C
+### <a name="usb-c-hubs"></a>Concentradores USB-C
 
 Es posible que algunos usuarios deban conectarse a varios dispositivos a la vez. Para los usuarios que deseen previsualizar una función de Insider y [usar un micrófono USB-C](hololens-insider.md#usb-c-external-microphone-support) al tiempo que otro dispositivo conectado, los concentradores USB-C pueden adaptarse a las necesidades del cliente. Microsoft no ha probado estos dispositivos ni recomienda ninguna marca específica.
 
@@ -100,7 +84,7 @@ Es posible que algunos usuarios deban conectarse a varios dispositivos a la vez.
 - Los dispositivos conectados no deben requerir la instalación de un controlador.
 - El consumo de potencia total de todos los dispositivos conectados debe ser inferior a 4,5 vatios.
 
-## Conéctese a Miracast
+## <a name="connect-to-miracast"></a>Conéctese a Miracast
 
 Para utilizar Miracast, siga estos pasos:
 

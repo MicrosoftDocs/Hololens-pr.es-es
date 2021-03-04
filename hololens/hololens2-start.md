@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 31c2c9ed7b2a35c759a0e1d86b89a2f0ab75d965
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283881"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385607"
 ---
-# Configurar tu HoloLens 2
+# <a name="set-up-your-hololens-2"></a>Configurar tu HoloLens 2
 
 La primera vez que enciendas HoloLens, se te guiará a través de la configuración del dispositivo, iniciando sesión con una cuenta de usuario y calibrando HoloLens a tus ojos.  En esta sección explica la experiencia de configuración inicial de HoloLens 2.
 
 En la siguiente sección, aprenderás a trabajar con HoloLens y a interactuar con hologramas. Para ir directamente a ese artículo, consulta [Introducción a HoloLens 2](hololens2-basic-usage.md).
 
-## Antes de empezar
+## <a name="before-you-start"></a>Antes de empezar
 
 Antes de empezar, debes asegurarte de que cuentas con lo siguiente:
 
@@ -37,7 +37,7 @@ Antes de empezar, debes asegurarte de que cuentas con lo siguiente:
 
 **Los accesorios de comodidad opcionales** incluidos con tu HoloLens, que te ayudarán a obtener el ajuste más cómodo. [Más información sobre el ajuste y la comodidad](hololens2-setup.md#adjust-fit).
 
-## Configurar Windows
+## <a name="set-up-windows"></a>Configurar Windows
 
 La primera vez que inicies HoloLens 2, la primera tarea es configurar Windows Holographic.  Cuando inicies HoloLens, oirás música y verás un logotipo de Windows.
 
@@ -91,7 +91,10 @@ HoloLens 2 te guiará por los siguientes pasos:
 
 ¡Enhorabuena!  La configuración se ha completado y ya puedes usar HoloLens.
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
+
+1. Empieza a interactuar inmediatamente con Mixed Reality y recorre Windows 10 con tu HoloLens: consulta la aplicación de **Sugerencias** para ver tutoriales prácticos sobre cómo interactuar con las manos. Usa el gesto de iniciar para ir al Inicio o di "Ir a Inicio" y selecciona Sugerencias. 
+1. Haz clic a continuación para seguir leyendo más sobre cómo usar HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Introducción a HoloLens 2](hololens2-basic-usage.md)
