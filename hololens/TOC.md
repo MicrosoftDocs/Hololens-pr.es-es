@@ -41,6 +41,7 @@
 ### [Mejorar la calidad visual y la comodidad](hololens-calibration.md)
 ### [Mapa de espacios físicos con HoloLens](hololens-spaces.md) 
 ## [Cómo actualizar HoloLens](hololens-update-hololens.md)
+## [Microsoft Mesh (versión preliminar)](/mesh/overview)
 
 # Preparar
 ## [Implementar HoloLens en un entorno comercial](hololens-requirements.md)
@@ -93,7 +94,8 @@
 ### [Conectar HoloLens a una red](hololens-network.md)
 ### [Preparar certificados y perfiles de red para HoloLens 2](hololens-certificates-network.md)
 ### [Administrar los puntos de conexión para HoloLens](hololens-offline.md)
-### [Conectarse a dispositivos Bluetooth y USB-C](hololens-connect-devices.md)
+### [Conectar a dispositivos Bluetooth y USB-C](hololens-connect-devices.md)
+### [Conectar a redes de telefonía móviles y 5G](hololens-cellular.md)
 ## [Administrador de certificados](certificate-manager.md)
 
 # Implementar
