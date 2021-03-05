@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/23/2021
+ms.date: 3/4/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ac408f100fb6e421a0ed0c85563ed920f1a25a83
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
+ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385577"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11388777"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Versión preliminar de Insider para Microsoft HoloLens
 
@@ -155,10 +155,8 @@ Dado que el nuevo Microsoft Edge es una aplicación nativa de Win32 con una nuev
 - Sonido espacial desde una sola ventana del explorador
 - Actualización automática y manual del explorador
 - Guardar un PDF en el menú Imprimir (con la opción "Guardar en PDF")
-
-**Escenarios y características próximamente:**
 - Extensión WebXR y visor 360
-- Restauración de contenido para corregir la ventana al examinar varias ventanas colocadas en el entorno
+- Restauración de contenido para corregir la ventana, al examinar varias ventanas colocadas en el entorno
 
 **No se espera que los escenarios y las características funcionen:**
 - Sonido espacial de varias ventanas con secuencias de audio simultáneas
@@ -168,6 +166,9 @@ Dado que el nuevo Microsoft Edge es una aplicación nativa de Win32 con una nuev
 **Principales problemas conocidos del explorador:**
 - Al restablecer el dispositivo, se quitará el nuevo Microsoft Edge
 - La vista previa de lupa en el teclado holográfico muestra contenido incorrecto
+- El desplazamiento a veces puede tartamudear
+- Es posible que los vínculos web de la aplicación de Microsoft Store no inicien el explorador
+- El audio puede reproducirse desde la ventana del explorador incorrecta si ya has reproducdo audio desde otra ventana del explorador
 
 #### <a name="microsoft-edge-insider-channels"></a>Canales insider de Microsoft Edge
 
@@ -330,6 +331,7 @@ Si no estás conforme con el perfil de color personalizado guardado en holoLens 
     - Solución alternativa: seleccione otra página Configuración y, a continuación, vuelva a seleccionar la página Calibración.
 - Si hololens 2 se queda en reposo mientras se ejecuta la calibración del color de la pantalla, se reanudará más tarde en la casa de realidad mixta y el nivel de brillo de la pantalla seguirá atenuado.
 - Es posible que deba intentar presionar los botones de brillo del lado izquierdo del dispositivo hacia arriba o hacia abajo unas cuantas veces antes de que funcionen como se esperaba.
+- La localización no está completa para todos los mercados
 
 ### <a name="default-app-picker"></a>Selector de aplicaciones predeterminado
 
@@ -350,6 +352,9 @@ Para establecer el volumen de una aplicación individual, vaya a **Configuració
 ### <a name="office-web-app"></a>Aplicación web de Office
 
 La aplicación web de Office se ha agregado a la lista "Todas las aplicaciones" del menú Inicio. Esta aplicación web también puede anclarse a Inicio o desinstalarse. Dado que se trata de una aplicación web, su funcionalidad coincide exactamente con lo que experimentarías al visitar https://www.office.com . La funcionalidad de la aplicación web de Office solo está disponible cuando HoloLens 2 tiene una conexión a Internet activa.
+
+**Problema conocido**
+- Al restablecer el dispositivo, se quitará la aplicación web de Office
 
 ### <a name="swipe-to-type"></a>Deslizar el dedo para escribir
 
