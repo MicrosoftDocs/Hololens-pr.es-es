@@ -15,14 +15,14 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: dd99744dfe27f52bb4ec51ad9fa9af4bfd1f0e96
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f6e3dd8f7dc90cea158d000251973ec75dc76a90
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283331"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11393874"
 ---
-# Usar tu voz para funcionar con HoloLens
+# <a name="use-your-voice-to-operate-hololens"></a>Usar tu voz para funcionar con HoloLens
 
 Puedes usar tu voz para hacer casi cualquier cosa en HoloLens, como hacer una foto rápida o abrir una aplicación. Muchos comandos de voz están integrados en HoloLens, mientras que otros están disponibles a través de Cortana.
 
@@ -33,27 +33,27 @@ Este artículo te enseña cómo controlar HoloLens y tu mundo holográfico con t
 >  
 > Para verificar el idioma para mostrar de Windows, selecciona **Configuración** > **Hora e idioma** > **Idioma**.
 
-## Comandos de voz integrados
+## <a name="built-in-voice-commands"></a>Comandos de voz integrados
 
 Desplázate más rápidamente por HoloLens con estos comandos básicos. Para poder utilizarlos, es necesario habilitar la voz durante la primera ejecución del dispositivo o en**Configuraciones** > **Privacidad** > **Voz**. Siempre puede comprobar si la voz está activada mirando el estado en la parte superior del menú Inicio. Para obtener los mejores resultados de reconocimiento de voz, HoloLens 2 utiliza los servicios basados en la nube de Microsoft. Sin embargo, puede utilizar configuración para desactivar esta función. Para hacer esto, en Configuraciones, desactive**Reconocimiento de voz en línea**. Después de cambiar esta configuración, el HoloLens 2 sólo procesará los datos de voz localmente para reconocer los comandos y el dictado, y Cortana no estará disponible.
 
-### Comandos de voz generales
+### <a name="general-speech-commands"></a>Comandos de voz generales
 
 Usa estos comandos en Windows Mixed Reality para moverte con mayor rapidez. Algunos comandos usan el cursor de mirada, que usted activa al decir "seleccionar".
 
 > [!NOTE]
 > No se admiten los rayos de mano en HoloLens (1.ª generación).
 
-| Di esto | Para hacer esto |
+| Di esto | Para |
 | - | - |
-| "Seleccionar" | Di "seleccionar" para que aparezca el cursor de mirada. Luego, gire su cabeza para posicionar el cursor en la cosa que quiera seleccionar, y diga "seleccionar" nuevamente. |
-|Abrir el menú Inicio | "Ir a Inicio" |
-|Cerrar el menú Inicio | "Cerrar" |
-|Salir de una aplicación inmersiva | Di "Ir a Inicio" para que aparezca el menú de acciones rápidas y luego di "Casa de realidad mixta". |
-|Ocultar y mostrar haz de mano | "Ocultar haz de mano"/"Mostrar haz de mano" |
-|Ver los comandos de voz disponibles | "¿Qué puedo decir?" |
+| "Seleccionar" | Di "seleccionar" para que aparezca el cursor de mirada. Luego, gire la cabeza para posicionar el cursor en la cosa que quiera seleccionar, y diga "seleccionar" nuevamente. |
+| "Ir a Inicio" |  Abrir el menú Inicio |
+| "Cerrar"  | Cerrar el menú Inicio |
+| Diga "Ir a Inicio" para que aparezca el menú de acciones rápidas y luego diga "Ambiente principal".  | Salir de una aplicación inmersiva |
+| "Ocultar haz de mano"/"Mostrar haz de mano" | Ocultar y mostrar haz de mano |
+| "¿Qué puedo decir?"  | Ver los comandos de voz disponibles |
 
-A partir de la versión 19041.x de HoloLens 2, también puedes usar estos comandos:
+A partir de la versión 19041.x de HoloLens 2, también puede usar estos comandos:
 
 | Di esto | Para |
 | - | - |
@@ -66,7 +66,7 @@ A partir de la versión 19041.x de HoloLens 2, también puedes usar estos comand
 | "Graba un vídeo/Inicia la grabación/Inicia la grabación de vídeo" | Empezar a grabar un vídeo de realidad mixta | 
 | "Detén el vídeo/Detén la grabación/Detén la grabación de vídeo" | Detener la grabación de vídeo de realidad mixta actual si hay alguna en curso |
 
-### Comandos de holograma
+### <a name="hologram-commands"></a>Comandos de holograma
 
 Para usar estos comandos, mira fijamente a un objeto 3D, un holograma o una ventana de la aplicación.
 
@@ -79,13 +79,13 @@ Para usar estos comandos, mira fijamente a un objeto 3D, un holograma o una vent
 | "Cerrar" | Cerrarlo |
 | "Sígueme" / "Deja de seguirme" | Hacer que te siga al moverte |
 
-### Ver, decir
+### <a name="see-it-say-it"></a>Ver, decir
 
-Muchos botones y otros elementos de HoloLens también responden a tu voz, por ejemplo, **Seguirme** y **Cerrar** de la barra de aplicaciones o el botón **Atrás** de Edge. Para averiguar si un botón está habilitado para voz, apoye el **cursor de mirada**, **cursor táctil** o un **haz de mano** en él durante un momento. Si el botón está habilitado para voz, verá una sugerencia de voz.
+Muchos botones y otros elementos de HoloLens también responden a tu voz, por ejemplo, **Seguirme** y **Cerrar** de la barra de aplicaciones o el botón **Atrás** de Edge. Para averiguar si un botón está habilitado para voz, coloque el **cursor de la mirada**, el **cursor táctil** o un **haz de mano** en él durante un momento. Si el botón está habilitado para voz, verá una sugerencia de voz.
 
-### Modo de dictado
+### <a name="dictation-mode"></a>Modo de dictado
 
-¿Estás cansado de escribir? Cambia al modo de dictado en cualquier momento en que el teclado holográfico esté activo. Para empezar, selecciona el botón del micrófono o di "Iniciar dictado". Para dejar de dictar, selecciona el botón nuevamente o di "Termina dictado". Para eliminar lo que acabas de dictar, di "Eliminar eso". 
+¿Estás cansado de escribir? Cambie al modo de dictado en cualquier momento en que el teclado holográfico esté activo. Para empezar, seleccione el botón del micrófono o diga "Iniciar dictado". Para dejar de dictar, selecciona el botón nuevamente o di "Termina dictado". Para eliminar lo que acabas de dictar, di "Eliminar eso". 
 
 > [!NOTE]
 > Para usar el modo dictado, debes tener una conexión a Internet.
@@ -103,9 +103,9 @@ Estas son las palabras clave de puntuación que puedes usar:
 
 A veces es útil deletrear cosas como las direcciones de correo electrónico. Por ejemplo, para dictar ejemplo@outlook.com, deberás decir "E J E M P L O arroba outlook punto com".
 
-## Haz más con Cortana
+## <a name="do-more-with-cortana"></a>Haz más con Cortana
 
-Cortana puede ayudarte a realizar todo tipo de acciones en tu HoloLens, pero dependiendo de la versión de Windows Holographic que uses, las funcionalidades pueden ser diferentes. Puedes obtener más información sobre las funcionalidades actualizadas de la última versión de Cortana [aquí](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
+Cortana puede ayudarte a hacer todo tipo de cosas en HoloLens, pero según la versión de Windows Holographic que estés usando, las capacidades pueden ser diferentes. Puedes obtener más información sobre las funcionalidades actualizadas de la última versión de Cortana aquí: [Cortana en la próxima versión de Windows 10: centrada en tu productividad con seguridad y privacidad mejoradas](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
 
 ![Hola Cortana.](images/cortana-on-hololens.png)
 
@@ -138,7 +138,7 @@ Si usas la *versión 18362.x o una anterior*, también puedes usar estos comando
 
 Algunas características de Cortana a las que estás acostumbrado desde Windows en tu PC o teléfono (por ejemplo, avisos y notificaciones) no están admitidas en Microsoft HoloLens y la experiencia de Cortana puede variar de una región a otra.
 
-### Desactivar Cortana
+### <a name="turn-cortana-off"></a>Desactivar Cortana
 
 Cortana está activada la primera vez que usas HoloLens al habilitar la voz. Puedes desactivarla en la configuración de Cortana. En la lista **Todas las aplicaciones**, Seleccionar **Cortana** > **Configuración**. A continuación, desactívala. Cortana puede ofrecerte sugerencias, ideas, avisos, alertas y mucho más.
 
