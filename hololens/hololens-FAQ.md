@@ -18,20 +18,20 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51058ddcba10a285b91d7fffedccf19d052d4e04
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388771"
+ms.locfileid: "11393864"
 ---
 # <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>Preguntas frecuentes sobre los dispositivos HoloLens y los hologramas
 
 Este artículo responde algunas preguntas que puedes tener sobre cómo usar el HoloLens, incluyendo cómo colocar los hologramas, trabajar con los espacios y más.
 
-En cualquier momento que tenga problemas, asegúrese de que el HoloLens esté [cargado](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Pruebe [reiniciarlo](hololens-restart-recover.md) para ver si eso arregla las cosas. Y por favor use la aplicación de retroalimentación para enviarnos información sobre el tema. Encontrará la aplicación "Feedback" en el[** menú** de inicio](holographic-home.md).
+En cualquier momento que tenga problemas, asegúrese de que HoloLens [se carga](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Pruebe [reiniciarlo](hololens-restart-recover.md) para ver si eso arregla las cosas. Y por favor use la aplicación de retroalimentación para enviarnos información sobre el tema. Encontrará la aplicación "Feedback" en el[** menú** de inicio](holographic-home.md).
 
-Para obtener consejos sobre cómo usar su HoloLens, consulte[ las preguntas frecuentes sobre ajuste y comodidad de la HoloLens (1ª generación)](hololens1-fit-comfort-faq.md).
+Para obtener sugerencias sobre cómo usar HoloLens, consulte [HoloLens (1.ª generación) fit and comfort frequently asked questions](hololens1-fit-comfort-faq.md).
 
 En este artículo responden las siguientes preguntas y problemas:
 <a id="list"></a>
@@ -210,7 +210,7 @@ Puede emparejar otros dispositivos Bluetooth HID y GATT con su HoloLens. Sin emb
 
 ## <a name="im-having-problems-using-the-hololens-clicker"></a>Estoy teniendo problemas para usar el botón de presentaciones del HoloLens
 
-Usa el [control de presentaciones](hololens1-clicker.md) para seleccionar, desplazar, mover y cambiar el tamaño de los hologramas. Las aplicaciones individuales pueden admitir gestos adicionales de control de presentaciones.
+Usa el [control de presentaciones](hololens1-clicker.md) para seleccionar, desplazar, mover y cambiar el tamaño de los hologramas. Las aplicaciones individuales pueden admitir gestos de clic adicionales.
 
 Si tiene problemas para usar el control de presentaciones, asegúrese de que está cargado y emparejado con sus HoloLens. Si la batería está baja, la luz indicadora parpadea en color ámbar. Para verificar que el control de presentaciones está emparejado, vaya a**Configuración** > ** Dispositivos** y compruebe si aparece allí. Para más información, consulte [Emparejar el control de presentaciones](hololens1-clicker.md).
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388777"
+ms.locfileid: "11393884"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Versión preliminar de Insider para Microsoft HoloLens
 
@@ -283,8 +283,8 @@ Con esta versión, presentamos una nueva versión de la aplicación Configuraci�
 
 **Problemas conocidos**
 - Se quitarán las ventanas de configuración colocadas anteriormente (consulta la nota anterior).
-- La página Ethernet muestra un dispositivo Ethernet virtual ("UsbNcm") en todo momento (investigando). Este dispositivo Ethernet virtual también aparecerá en la página Red de configuración del dispositivo, pero puede omitirse (investigando).
-- Ya no puedes cambiar el nombre del dispositivo con la aplicación Configuración (los administradores de TI pueden usar paquetes de aprovisionamiento o MDM para cambiar el nombre de los dispositivos).
+- Ya no puedes cambiar el nombre del dispositivo con la aplicación Configuración. Los administradores de TI pueden cambiar el nombre de los dispositivos mediante la plantilla de nombre de dispositivo [Windows Autopilot para HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) o el nodo MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
+- La página Ethernet muestra un dispositivo Ethernet virtual ("UsbNcm") en todo momento.
 - Es posible que el uso de batería para el nuevo Microsoft Edge no sea preciso, debido a su naturaleza como una aplicación de escritorio de Win32 compatible con una capa de adaptador para UWP (no se prevé ninguna corrección próximamente).
 
 ### <a name="display-color-calibration"></a>Calibración de color para mostrar
