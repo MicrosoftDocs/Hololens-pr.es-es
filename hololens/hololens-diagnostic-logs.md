@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c8d9aa9fecff74a04e3f7cb395bffe5d239e18cf
-ms.sourcegitcommit: 7791e470fc2e03bdf51b19a816d7215018772860
+ms.openlocfilehash: 4a360e99a45b855957e36dd6ba31ede3da9631ba
+ms.sourcegitcommit: b5f1b7c197cb58b746efc3809c61cf7a2e8c08ef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387513"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11399812"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Recopilar y usar información de diagnóstico de dispositivos HoloLens
 
@@ -102,6 +102,10 @@ La información de diagnóstico permanece en estas ubicaciones hasta que el usua
 
 En un entorno de administración de dispositivos móviles (MDM), el administrador de TI puede usar el proveedor de servicios de configuración [diagnosticLog (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) para configurar las opciones de diagnóstico en dispositivos HoloLens inscritos. El administrador de TI puede configurar estas opciones para recopilar registros de dispositivos inscritos.
 
+Vea más:
+- [Recopilar diagnósticos de un dispositivo Windows](https://docs.microsoft.com/mem/intune/remote-actions/collect-diagnostics)
+- [Vista previa pública de Intune: diagnóstico de dispositivos de Windows 10](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+
 ### <a name="prerequisites"></a>Requisitos previos
 
 - El dispositivo está conectado a una red.
@@ -125,12 +129,12 @@ Esto funciona cuando el dispositivo aparece en el Explorador de archivos despué
 > [!NOTE]
 > La generación y administración de diagnósticos sin conexión se controla de forma diferente en función de la versión del sistema operativo. Anteriormente se controlaba mediante la configuración de telemetría, pero ahora se controla directamente a través de la directiva MDM. Si se deshabilita mediante la configuración o la directiva MDM, los registros de diagnóstico no se pueden recopilar con este mecanismo.
 
-Comportamiento anterior a [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+Comportamiento anterior a [Windows Holographic, versión 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
  - El diagnóstico sin conexión solo está habilitado cuando el usuario pasa por OOBE o el valor de directiva [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) se establece en Full (Basic es el valor predeterminado en HoloLens). 
 - Para deshabilitar el diagnóstico sin conexión, vaya a Configuración **de la aplicación > privacidad** y seleccione Básico **en** Datos **de diagnóstico**. En las compilaciones en las que el diagnóstico sin conexión depende de la configuración de telemetría, solo afecta si se recopilan o no registros. No afecta a los archivos que se recopilan.
 - Si el dispositivo está bloqueado, los registros no aparecerán.
 
-En crea [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) y versiones 2:
+En [compilaciones de Windows Holographic, versión 20H2](hololens-release-notes.md#windows-holographic-version-20h2) y versiones 2:
 - Cuando el diagnóstico de reserva esté habilitado, se controlará mediante una directiva MDM específica con la configuración [correspondiente MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
 - Si el dispositivo está bloqueado, los registros no aparecerán.
 
