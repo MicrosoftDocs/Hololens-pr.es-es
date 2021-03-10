@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393884"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400710"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Versión preliminar de Insider para Microsoft HoloLens
 
@@ -90,6 +90,10 @@ Si está usando [visibilidad](settings-uri-list.md) de configuración de página
 #### <a name="updates-for-your-wdac-policy"></a>Actualizaciones de la directiva WDAC
 
 Si anteriormente estaba bloqueando Microsoft Edge a través de WDAC, querrá actualizar la directiva WDAC. Revise [lo siguiente y](#using-wdac-to-block-new-microsoft-edge) use el código de ejemplo proporcionado.
+
+#### <a name="enable-new-endpoints-for-edge"></a>Habilitar nuevos puntos de conexión para Edge
+
+Si tienes una infraestructura que implica la configuración de puntos de conexión de red como proxy o firewall, habilita estos nuevos puntos de conexión [para la nueva aplicación de Microsoft Ege.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>Elementos recién configurables
 
@@ -202,6 +206,12 @@ Hay un par de métodos disponibles para instalar los canales insider de Microsof
 Para los administradores de TI que buscan actualizar su directiva [WDAC](windows-defender-application-control-wdac.md) para bloquear la nueva aplicación de Microsoft Edge, tendrás que agregar lo siguiente a la directiva.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
+
+#### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Administración de puntos de conexión para el nuevo Microsoft Edge
+
+Algunos entornos pueden tener restricciones de red para tener en cuenta como consideración. Para garantizar una experiencia fluida con el nuevo edge, habilite [estos puntos de conexión de Microsoft.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+
+Obtenga más información sobre los puntos de [conexión disponibles actualmente para HoloLens](hololens-offline.md).
 
 ### <a name="webxr-and-360-viewer"></a>WebXR y visor de 360
 

@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5613c69bda8bbf70722a050ac5ce4ebeab95d332
-ms.sourcegitcommit: 771e53feefbcc6bce18577515ad7d3f6a7f33840
+ms.openlocfilehash: 4042cce40bea2c3d52d6ffc5d2908f6fde7cf222
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399388"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400680"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscripción de HoloLens en la MDM
 
@@ -34,12 +34,15 @@ Puedes administrar varios dispositivos de Microsoft HoloLens simultáneamente co
  
 ## <a name="different-ways-to-enroll"></a>Distintas formas de inscribirse
 
-Según el tipo de identidad elegido durante la OOBE o después del inicio de sesión, hay diferentes métodos de inscripción. Para obtener más información sobre cada tipo de identidad en HoloLens, visite [esta página](hololens-identity.md).
+Según el tipo de identidad [elegido durante](hololens-identity.md) la OOBE o después del inicio de sesión, hay diferentes métodos de inscripción.
 
 - Si Identity es Azure AD, ya sea durante OOBE o **configuración app**Access Work o el  ->  **botón School**  ->  **Connect.**
-    - Para Azure AD, la inscripción automática de MDM solo se produce si Azure AD se ha configurado con direcciones URL de inscripción.
-- Si Identity es Azure AD y el dispositivo se ha registrado previamente con el servidor MDM de Intune con un perfil de configuración específico asignado, Azure AD-Join y la inscripción se producirán automáticamente durante OOBE.
+    - Para Azure AD, [la inscripción automática de MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) solo se produce si Azure AD se ha configurado con direcciones URL de inscripción. 
+     
+- Si Identity es Azure AD y el dispositivo se ha registrado previamente con el servidor MDM de Intune con un perfil de configuración específico asignado a él, se producirá la inscripción de Azure AD-Join [y MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) automática durante la OOBE.
     - También denominado [Flujo de Piloto automático](hololens2-autopilot.md) Disponible en [compilaciones 19041.1103+.](hololens-release-notes.md#windows-holographic-version-2004)
+    
+
 - Si Identity es MSA, usa **configuración App**  ->  **Access Work o el botón School**  ->  **Connect.**
     - También se denomina flujo Agregar cuenta de trabajo (AWA).
 - Si Identity es Usuario local, usa **Configuración App**Access Work  ->  **o School**Enroll solo en el vínculo de administración de  ->  **dispositivos.**
@@ -49,7 +52,7 @@ Una vez que el dispositivo esté inscrito en el servidor MDM, la aplicación Con
 
 ## <a name="auto-enrollment-in-mdm"></a>Inscripción automática en la MDM
 
-Si su organización usa Azure Active Directory (Azure AD) y una solución MDM que acepta un token de Azure AD para la autenticación (actualmente, solo se admite en Microsoft Intune y AirWatch), el administrador de TI puede configurar Azure AD para permitir automáticamente la inscripción de MDM después de que el usuario inicie sesión con su cuenta de Azure AD. [Aprende a configurar la inscripción de Azure AD.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Si su organización tiene una suscripción a [Azure Premium](https://azure.microsoft.com/overview/), usa Azure Active Directory (Azure AD) y una solución MDM que acepta un token de Azure AD para la autenticación (actualmente, solo se admite en Microsoft Intune y AirWatch), el administrador de TI puede configurar Azure AD para permitir automáticamente la inscripción de MDM después de que el usuario inicie sesión con su cuenta de Azure AD. [Aprende a configurar la inscripción de Azure AD.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 Cuando se habilita la inscripción automática, no es necesaria ninguna inscripción manual adicional. Si el usuario inicia sesión con una cuenta de Azure AD, el dispositivo se inscribe en la MDM después de completar la primera ejecución.
 
