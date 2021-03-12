@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
+ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400710"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "11406776"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Versión preliminar de Insider para Microsoft HoloLens
 
@@ -93,7 +93,7 @@ Si anteriormente estaba bloqueando Microsoft Edge a través de WDAC, querrá act
 
 #### <a name="enable-new-endpoints-for-edge"></a>Habilitar nuevos puntos de conexión para Edge
 
-Si tienes una infraestructura que implica la configuración de puntos de conexión de red como proxy o firewall, habilita estos nuevos puntos de conexión [para la nueva aplicación de Microsoft Ege.](#managing-endpoints-for-the-new-microsoft-edge)
+Si tienes una infraestructura que implica la configuración de puntos de conexión de red como proxy o firewall, habilita estos nuevos puntos de conexión [para la nueva aplicación de Microsoft Edge.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>Elementos recién configurables
 
