@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: b5b9568bab5afebe4ac3e9d57645c18837c71cb6
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284091"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408430"
 ---
-# Reiniciar, restablecer o recuperar HoloLens 2
+# <a name="restart-reset-or-recover-hololens-2"></a>Reiniciar, restablecer o recuperar HoloLens 2
 
-## Cargar el dispositivo
+## <a name="charge-the-device"></a>Cargar el dispositivo
 
-Antes de iniciar un procedimiento de resolución de problemas, asegúrese de que la carga de la batería de su dispositivo se sitúe entre el 20 y 40% de capacidad, si es posible. Utilice el cargador y los cables USB tipo C que vienen con el dispositivo HoloLens 2. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18W de potencia (9V a 2A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera. Si dichos accesorios no están disponibles, asegúrate de que el cargador disponible admita al menos 15 vatios de potencia.
+Antes de iniciar cualquier procedimiento de resolución de problemas, asegúrate de que tu dispositivo tenga entre 20% y 40% de batería disponible, si es posible. Utiliza el [cargador y los cables USB tipo C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) que vienen con el dispositivo HoloLens 2. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18W de potencia (9V a 2A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera. Si dichos accesorios no están disponibles, asegúrate de que el cargador disponible admita al menos 15 vatios de potencia.
 
 > [!NOTE]
 > Si es posible, evite usar un PC para cargar el dispositivo por USB, pues implica una carga lenta.
@@ -44,11 +44,11 @@ Si el dispositivo se enciende y funciona correctamente, hay tres formas de compr
 
 Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia del LED y la enumeración de dispositivos en el equipo host. A continuación, siga la [guía de solución de problemas](https://docs.microsoft.com/hololens/hololens-troubleshooting). Si el estado del dispositivo no coincide con ninguno de los estados enumerados en la guía de solución de problemas, realice el [procedimiento de restablecimiento completo](hololens-recovery.md#hard-reset-procedure) con el dispositivo conectado a la fuente de alimentación, en lugar de al equipo host. Espere al menos una hora para que el dispositivo se cargue.
 
-## Restablecer el dispositivo
+## <a name="reset-the-device"></a>Restablecer el dispositivo
 
 En determinadas circunstancias, puede que tenga que reiniciar manualmente el dispositivo sin utilizar la UI del software.
 
-### Procedimiento estándar
+### <a name="standard-procedure"></a>Procedimiento estándar
 
 1. Desenchufe el cable de tipo C para desconectar el dispositivo de la fuente de alimentación o del equipo host.
 
@@ -60,7 +60,7 @@ En determinadas circunstancias, puede que tenga que reiniciar manualmente el dis
 
    ![Administrador de dispositivos HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
-### Procedimiento para hacer un restablecimiento completo
+### <a name="hard-reset-procedure"></a>Procedimiento para hacer un restablecimiento completo
 
 Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimiento de restablecimiento completo:
 
@@ -73,7 +73,7 @@ Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimi
 
    ![Administrador de dispositivos 2 HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
-## Reprogramar el dispositivo
+## <a name="clean-reflash-the-device"></a>Reprogramar el dispositivo
 
 En situaciones extraordinarias, puede que tenga que reprogramar el dispositivo HoloLens 2. Tenga en cuenta que no se espera que restablecer el dispositivo afecte a los siguientes problemas:
 - [Mostrar uniformidad de color](hololens2-display.md)
@@ -93,7 +93,7 @@ Antes de iniciar el procedimiento de reprogramación, asegúrese de que la aplic
 
 ![Captura de pantalla de la reprogramación de HoloLens 2](images/ARC1.png)
 
-### Procedimiento normal
+### <a name="normal-procedure"></a>Procedimiento normal
 
 1. Mientras el dispositivo HoloLens está en funcionamiento, conéctelo al PC con Windows 10 en el que ha abierto previamente la aplicación Advanced Recovery Companion.
  
@@ -103,7 +103,7 @@ Antes de iniciar el procedimiento de reprogramación, asegúrese de que la aplic
 
 3. Seleccione el dispositivo HoloLens 2 en la interfaz de usuario de la aplicación Advanced Recovery Companion y siga las instrucciones para completar la reprogramación.
 
-### Procedimiento manual
+### <a name="manual-procedure"></a>Procedimiento manual
 
 Si el dispositivo HoloLens 2 no se inicia correctamente, puede que tenga que poner el dispositivo en modo de recuperación:
 
@@ -123,7 +123,7 @@ Si el dispositivo HoloLens 2 no se inicia correctamente, puede que tenga que pon
 
 6. Seleccione el dispositivo HoloLens 2 en la interfaz de usuario de la aplicación Advanced Recovery Companion y, a continuación, siga las instrucciones para completar la reprogramación.
 
-## Descargar ARC sin usar la App Store
+## <a name="download-arc-without-using-the-app-store"></a>Descargar ARC sin usar la App Store
 
 Si el entorno de TI impide el uso de la aplicación de la Tienda Windows o limita el acceso a la tienda comercial, el administrador de TI puede hacer que esta aplicación esté disponible a través de una ruta de acceso de implementación "sin conexión".
 
@@ -134,10 +134,10 @@ Si el entorno de TI impide el uso de la aplicación de la Tienda Windows o limit
 Siga estos pasos para habilitar la ruta de acceso de implementación:
 1. Vaya a la [Microsoft Store para Empresas](https://businessstore.microsoft.com) e inicie sesión con una identidad de Azure Active Directory.
 
-1. Vaya a **Administrar – Configuración**. Active **Mostrar las aplicaciones sin conexión** en la **Experiencia de compra**.
-1. Vaya a **tienda para mi grupo** y busque el [**_Asistente de recuperación avanzada_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
-1. Cambie el _*Tipo de licencia** a **_sin conexión_*_ y seleccione _*Administrar**.
-1. En **Descargar el paquete para uso sin conexión**, seleccione el segundo botón azul de **Descargar**. Asegúrese de que la extensión del archivo sea *.appxbundle*.
+1. Vaya a **Administrar – Configuración**. Active **Mostrar las aplicaciones sin conexión** en **Experiencia de compra**.
+1. Vaya a **comprar para mi grupo** y busque al [**_Compañero de recuperación avanzada_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+1. Cambie el **Tipo de licencia** a **_sin conexión_*_ y luego, seleccione _* Administrar**.
+1. En **Descargar el paquete para usar sin conexión**, seleccione el segundo botón azul para **Descargar**. Asegúrese de que la extensión del archivo sea *.appxbundle*.
 
     - En esta etapa, si el PC de escritorio tiene acceso a Internet, haz doble clic en el paquete para instalar la aplicación.
 
