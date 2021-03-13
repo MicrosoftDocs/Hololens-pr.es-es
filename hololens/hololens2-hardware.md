@@ -12,18 +12,18 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: e48e596f46aaad1b2fc79abd0fe60bd2f44bab6d
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400700"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408420"
 ---
 # <a name="hololens-2-hardware"></a>Hardware de HoloLens 2
 
 ![Vista lateral de HoloLens 2](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 es un equipo holográfico sin ninguna restricción.  Perfecciona el recorrido de cálculo holográfico Iniciado por HoloLens (1.ª generación) para ofrecer una experiencia más cómoda y envolvente con más opciones de colaboración en la realidad mixta.
+Microsoft HoloLens 2 es un equipo holográfico sin ninguna restricción.  Perfecciona el recorrido de cálculo holográfico Iniciado por HoloLens (1.ª generación) para ofrecer una experiencia más cómoda y envolvente con más opciones de colaboración en la realidad mixta. Se requiere una cuenta de usuario para usar HoloLens 2.
 
 ## <a name="hololens-components"></a>Componentes de HoloLens
 
@@ -165,9 +165,12 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 
 Microsoft HoloLens 2 incluye una [garantía ](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)limitada estándar. 
 
-La compra está sujeta a los [Términos de uso y venta de Microsoft Store](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). 
 
-Al comprar HoloLens 2, acepta el [contrato de licencia de software](https://www.microsoft.com/Useterms/).
+La compra está sujeta a los [Términos de uso y venta de Microsoft Store](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). Todas las ventas son finales. No se admiten devoluciones.
+
+Al comprar HoloLens 2 acepta el contrato [de licencia de software](https://www.microsoft.com/Useterms/).
+
+No está pensado para su uso por niños menores de 13 años.
 
 ## <a name="package-dimensions"></a>Dimensiones del paquete
 
