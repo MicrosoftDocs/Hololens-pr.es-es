@@ -8,23 +8,23 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f0ec62e55f15fda6d5a8304ea2bb77039d644b9e
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283931"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439066"
 ---
-# Configurar HoloLens (1.ª generación)
+# <a name="set-up-your-hololens-1st-gen"></a>Configurar HoloLens (1.ª generación)
 
 La primera vez que enciendas tu HoloLens, te guiará por la calibración de tu dispositivo, configurando el dispositivo e iniciando sesión.  Este artículo te guía por la experiencia de primer inicio y configuración de HoloLens (1.ª generación).
 
 En la siguiente sección, aprenderás a trabajar con HoloLens y a interactuar con hologramas. Para ir directamente a ese artículo, consulta [Introducción a HoloLens (1.ª generación)](hololens1-basic-usage.md).
 
-## Antes de empezar
+## <a name="before-you-start"></a>Antes de empezar
 
 Antes de empezar, debes asegurarte de que cuentas con lo siguiente:
 
@@ -41,7 +41,7 @@ Antes de empezar, debes asegurarte de que cuentas con lo siguiente:
 > - La primera vez que uses tus HoloLens, [Cortana](hololens-cortana.md) ya está activada y lista para guiarte (aunque no podrá responder a tus preguntas hasta que hayas configurado el dispositivo). Puedes desactivar Cortana en cualquier momento, en la configuración de Cortana.
 > - Para poder cambiar a la versión en chino o japonés de HoloLens, tendrás que descargar la compilación del idioma en un PC y, a continuación, instalarla en tu HoloLens. Para obtener más información, consulta [Instalar versiones localizadas de HoloLens (1.ª generación)](hololens1-install-localized.md).
 
-## Iniciar Hololens y configurar Windows
+## <a name="start-your-hololens-and-set-up-windows"></a>Iniciar Hololens y configurar Windows
 
 La primera vez que inicias tu HoloLens, la primera tarea es configurar Windows Holographic en tu dispositivo.
 
@@ -59,7 +59,7 @@ La primera vez que inicias tu HoloLens, la primera tarea es configurar Windows H
 
 1. El dispositivo configura tu zona horaria en función de la información que obtienes de la red Wi-Fi.
 
-## Calibración
+## <a name="calibration"></a>Calibración
 
 Después de que Cortana se presenta, el siguiente paso de la configuración es la calibración. Para obtener la mejor experiencia de HoloLens, debes completar el proceso de calibración durante la instalación.
 
@@ -71,9 +71,9 @@ Durante la calibración, HoloLens te pide que alinees el dedo con una serie de s
 
 *Pantalla de alineación de dedos de IPD en el segundo paso*
 
-¡Enhorabuena! La configuración ha finalizado y puedes empezar a usar HoloLens.
+Enhorabuena. La configuración ha finalizado y puedes empezar a usar HoloLens.
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
 > [Introducción a HoloLens (1.ª generación)](hololens1-basic-usage.md)

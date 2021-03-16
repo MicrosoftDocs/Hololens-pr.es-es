@@ -12,18 +12,18 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283921"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439046"
 ---
-# Reiniciar, restablecer o recuperar HoloLens (1.ª generación)
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>Reiniciar, restablecer o recuperar HoloLens (1.ª generación)
 
 Si tiene problemas con su HoloLens, puede probar a reiniciar, restablecer o incluso volver a flashearlo con el modo de recuperación del dispositivo. Este artículo le guiará por los pasos de recuperación recomendados.
 
@@ -32,9 +32,9 @@ Si desea recuperar un HoloLens 2, consulte [Recuperar un HoloLens 2](https://doc
 > [!NOTE]
 > Este artículo se centra en el dispositivo y el software de HoloLens. Si el holograma no se muestra correctamente, vea **[Consideraciones de entorno de HoloLens](hololens-environment-considerations.md)** para obtener información sobre los factores que mejoran la calidad del holograma.
 
-## Reiniciar
+## <a name="restart"></a>Reiniciar
 
-### Reinicie de manera segura con Cortana
+### <a name="do-a-safe-restart-by-using-cortana"></a>Reinicie de manera segura con Cortana
 
 El modo más seguro de reiniciar HoloLens es usando Cortana y, por lo general, es lo primero que puede probar a hacer cuando tenga un problema con HoloLens.
 
@@ -48,7 +48,7 @@ El modo más seguro de reiniciar HoloLens es usando Cortana y, por lo general, e
 2. Diga "Hey Cortana, reinicio" o "Hey Cortana, reiniciar".
 3. Cortana responderá y le pedirá confirmación. Espere a que se reproduzca un sonido después de la pregunta y, entonces, diga "sí". El dispositivo se reiniciará.
 
-### Usar el botón de encendido para reiniciar de manera segura
+### <a name="use-the-power-button-to-do-a-safe-restart"></a>Usar el botón de encendido para reiniciar de manera segura
 
 Si aún así no puede reiniciar el dispositivo, inténtelo con el botón **de encendido**:
 
@@ -59,14 +59,14 @@ Si aún así no puede reiniciar el dispositivo, inténtelo con el botón **de en
 1. Espere 1 minuto hasta que se apague por completo. El apagado puede estar en curso incluso después de que se apaguen las pantallas.
 2. Encienda el dispositivo de nuevo manteniendo pulsado el botón **de encendido** durante 1 segundo.
 
-### Reinicie de manera segura con el Portal de dispositivos Windows
+### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Reinicie de manera segura con el Portal de dispositivos Windows
 
 > [!NOTE]
 > Para este proceso, se tiene que configurar el HoloLens como un dispositivo de desarrollo. Obtenga más información en el [Portal de dispositivos Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
 
 Si no funcionó el procedimiento anterior, puede intentar reiniciar el dispositivo mediante el[Portal de dispositivos Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). En la esquina superior derecha, encontrará la opción para reiniciar o apagar el dispositivo.
 
-### Reiniciar de manera forzosa y no segura
+### <a name="do-an-unsafe-forced-restart"></a>Reiniciar de manera forzosa y no segura
 
 Si los métodos anteriores no reiniciaron su HoloLens, fuerce un reinicio. Este método equivale a quitar y volver a instalar la batería. Es peligroso porque podría dañar el dispositivo. Si eso sucede, tendrá que flashear su HoloLens.  
 
@@ -80,7 +80,7 @@ Si los métodos anteriores no reiniciaron su HoloLens, fuerce un reinicio. Este 
 1. Mantenga pulsado el botón **de encendido** durante 1 segundo.
 1. Si sigue teniendo problemas, pulse el botón **de encendido** durante 4 segundos, hasta que todos los indicadores de la batería se atenúen y la pantalla deje de mostrar hologramas. Espere 1 minuto, luego presione de nuevo el botón **de encendido** para encender el dispositivo.
 
-## Restaurar la configuración de fábrica
+## <a name="reset-to-factory-settings"></a>Restaurar la configuración de fábrica
 
 > [!NOTE]
 > La batería necesita al menos un 40% de carga para reiniciarse.
@@ -95,7 +95,7 @@ Si HoloLens sigue teniendo algún problema, pruebe a restablecerlo en estado de 
 1. Confirme el restablecimiento. El dispositivo se reiniciará y mostrará un conjunto de engranajes giratorios y una barra de progreso.
 1. Espere unos 30 minutos para que este proceso se complete. Cuando haya acabado, el dispositivo se reiniciará en la experiencia «listo para usar».
 
-## Reinstalar el sistema operativo
+## <a name="reinstall-the-operating-system"></a>Reinstalar el sistema operativo
 
 Si el dispositivo sigue teniendo algún problema después de reiniciar y restaurar, puede utilizar una herramienta de recuperación en su ordenador para reinstalar el sistema operativo y el firmware del HoloLens.  
 
@@ -107,7 +107,7 @@ El proceso de recuperación puede tardar un poco. Cuando termine, se instalará 
 
 Para usar la herramienta, necesita un ordenador con Windows 10, o posterior, con al menos 4 GB de espacio de almacenamiento libre. No puede ejecutar esta herramienta en una máquina virtual.
 
-### Recuperar el HoloLens
+### <a name="recover-your-hololens"></a>Recuperar el HoloLens
 
 1. Descargue e instale [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) en su ordenador.
 1. Utilice el cable Micro USB que viene con HoloLens (1 era generación) para conectarlo a su ordenador.
@@ -115,7 +115,7 @@ Para usar la herramienta, necesita un ordenador con Windows 10, o posterior, con
 
 Si no se detecta automáticamente el HoloLens (1 era generación), seleccione **Mi dispositivo no fue detectado**. Después, siga las instrucciones para poner el dispositivo en modo de recuperación.
 
-### Modo flasheo manual
+### <a name="manual-flashing-mode"></a>Modo flasheo manual
 
 Si no se detecta el dispositivo, siga estos pasos para ponerlo manualmente en modo flasheo:
 

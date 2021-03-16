@@ -7,20 +7,20 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 9/16/2019
 ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: af79e42477a3a317dde03a795c442fa31241600d
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11282981"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439016"
 ---
-# Instalar versiones localizadas de HoloLens (1.ª generación)
+# <a name="install-localized-versions-of-hololens-1st-gen"></a>Instalar versiones localizadas de HoloLens (1.ª generación)
 
 Para poder cambiar a la versión de HoloLens en chino o japonés de HoloLens, tendrás que usar la Windows Device Recovery Tool (WDRT) para descargar la compilación del idioma en un PC y, a continuación, instalarla en tu HoloLens.
 
