@@ -54,6 +54,12 @@
 #### [Conectado a la nube: Implementación](hololens2-cloud-connected-deploy.md)
 #### [Conectado a la nube: Mantenimiento](hololens2-cloud-connected-maintain.md)
 ### [Implementar HoloLens 2 en clientes externos con asistencia remota](hololens2-deployment-guide.md)
+### Implementación de HoloLens 2 conectada corporativamente con Dynamic 365 Guides
+#### [Conectado corporativo: introducción a la implementación](hololens2-corp-connected-overview.md)
+#### [Conectado corporativo: preparación](hololens2-corp-connected-prepare.md)
+#### [Conectado corporativo: configuración](hololens2-corp-connected-configure.md)
+#### [Conectado corporativo: implementación](hololens2-corp-connected-deploy.md)
+#### [Conectado corporativo: mantenimiento](hololens2-corp-connected-maintain.md)
 ### [Seguro para usarse sin conexión](hololens-common-scenarios-offline-secure.md)
 ## Seguridad
 ### [Visión general de la seguridad](security-overview.md)
