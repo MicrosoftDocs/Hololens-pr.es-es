@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
-ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
+ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
+ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "11406776"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470068"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Versión preliminar de Insider para Microsoft HoloLens
 
@@ -79,7 +79,7 @@ Ahora, los visitantes pueden iniciar sesión automáticamente en un quiosco. Est
 
 [**Entrega de errores en modo quiosco mejorado**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-Esta actualización ahora mantiene los dispositivos más controlados por el modo quiosco, lo que permite que vuelva a los distintos tipos de quioscos antes de simplemente presentar un quiosco vacío. Aunque esto no se puede administrar, esto puede ser algo para informar a su departamento de soporte técnico si está usando quioscos en una forma que esto se pueda aplicar a su configuración.
+Si no se determina correctamente la pertenencia a un grupo de AAD del usuario de AAD que ha iniciado sesión, la configuración global de quiosco se usa para el menú inicio (si está presente), de lo contrario, el usuario se presenta con el menú inicio vacío. Aunque el menú inicio vacío no es una configuración que se puede establecer directamente, este nuevo control puede ser algo para informar a su departamento de soporte técnico si está usando quioscos, ya que esto puede aplicarse a las configuraciones o puede que desee realizar nuevos ajustes en las configuraciones de acceso asignadas.
 
 #### <a name="updates-to-page-settings-visibility"></a>Actualizaciones de visibilidad de configuración de página
 
