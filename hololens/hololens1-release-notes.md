@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión de HoloLens 1 (gen)
-description: Obtén más información sobre las actualizaciones en cada nueva versión de HoloLens.
+title: Notas de la versión de HoloLens 1st (gen)
+description: Obtenga información sobre las actualizaciones de cada nueva versión de HoloLens.
 author: evmill
 ms.author: v-evmill
 manager: yannisle
@@ -13,78 +13,78 @@ audience: ITPro
 appliesto:
 - HoloLens 1
 ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.sourcegitcommit: 35e180e09e3938c25e4cac8e99885d7e57fa4dad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163107"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "108310280"
 ---
-# Notas de la versión de HoloLens 1 (gen)
+# <a name="hololens-1st-gen-release-notes"></a>Notas de la versión de HoloLens 1st (gen)
 
-## Servicio a largo plazo de HoloLens (1ª generación)
-HoloLens (1. ª gen) ha introducido el estado de servicio a largo plazo (LTS). Las actualizaciones futuras se centrarán en las correcciones de problemas y seguridad, a la vez que se mantiene la paridad de la característica Windows 10 Holographic, versión 1809 para HoloLens (1 ª generación).
+## <a name="hololens-1st-gen-long-term-servicing"></a>Mantenimiento a largo plazo de HoloLens (1ª generación)
+HoloLens (1.ª generación) ha entrado en el estado de mantenimiento a largo plazo (LTS). Las actualizaciones futuras se centrarán en las correcciones de problemas y seguridad, al tiempo que se mantiene la paridad de características con la versión 1809 de Windows 10 Holographic para HoloLens (1.ª generación).
 
-Para los desarrolladores, esto significa que las aplicaciones de HoloLens (1ª generación) no serán compatibles con la API de OpenXR.  Estos auriculares con micrófono siguen siendo compatibles con Unity 2019 LTS con el back-end de la API de WinRT para el ciclo de vida completo de Unity 2019 LTS a mediados de 2022.
+Para los desarrolladores, esto significa que las aplicaciones de HoloLens (1ª generación) no admitirán la API de OpenXR.  Estos cascos siguen siendo compatibles con Unity 2019 LTS con el back-end de la API de WinRT durante el ciclo de vida completo de Unity 2019 LTS hasta mediados de 2022.
 
-### Windows 10 Holographic, versión 1809
+### <a name="windows-10-holographic-version-1809"></a>Windows 10 Holographic, versión 1809
 
 > **Se aplica a:** HoloLens (1ª generación)
 
 | Característica | Detalles |
 |---|---|
-| **Menú acciones rápidas** | Cuando estés en una aplicación, el gesto de la floración abrirá un menú de acciones rápidas para proporcionarte acceso rápido a las características del sistema más usadas sin tener que salir de la aplicación. <br> Para obtener más información sobre el menú de acciones rápidas en el modo de pantalla completa, consulta [configurar HoloLens en el modo de pantalla](hololens-kiosk.md) completa.<br><br> |
-| **Detener captura de vídeo desde el menú Inicio o acciones rápidas** | Si inicia la captura de vídeo desde el menú Inicio o el menú acciones rápidas, podrá detener la grabación desde el mismo lugar. (No olvides que siempre puedes hacerlo con los comandos de voz). |
-| **Proyecto a un dispositivo habilitado para Miracast** | Proyecta tu contenido de HoloLens en un dispositivo Surface cercano o TV/monitor si usas el adaptador de pantalla de Microsoft.  En **Inicio**, seleccione **conectar**y, a continuación, seleccione el dispositivo al que desea proyectar. **Nota:** Puedes implementar HoloLens para usar la proyección Miracast sin habilitar el modo de desarrollador. |
-| **Notificaciones nuevas** | Visualiza y responde a notificaciones de notificaciones en HoloLens, tal como lo haces en un equipo de PC. Mira fijamente para responder o descartar (o si estás en una experiencia envolvente, usa el gesto de flores). |
-| **Superposiciones de HoloLens**<br>(selector de archivos, teclado, diálogos, etc.) | Ahora verás las superposiciones como el teclado, los diálogos, el selector de archivos, etc. cuando usas aplicaciones inmersivo. |
-| **Interfaz de usuario de superposición de comentarios visuales para cambio de volumen** | Cuando usas los botones subir o bajar el volumen de tu HoloLens, verás una pantalla del nivel de volumen. |
-| **Nueva interfaz de usuario para inicio de dispositivo** | Durante el proceso de inicio se agregó un indicador de carga para proporcionar comentarios visuales que el sistema está cargando. Reinicie el dispositivo para ver el nuevo indicador de carga, que se encuentra entre el mensaje "Hola" y el logotipo de inicio de Windows. |
-| **Uso compartido en proximidad** | Incorporación de la experiencia de uso compartido cercano de Windows, que le permite compartir una captura con un dispositivo Windows cercano. Cuando Capture una foto o un vídeo en HoloLens (o use el botón compartir desde una aplicación como Microsoft Edge), seleccione un dispositivo de Windows cercano con el que compartir. |
-| **Compartir desde Microsoft Edge** | El botón compartir ahora está disponible en Microsoft Edge Windows en HoloLens. En Microsoft Edge, seleccione **compartir**. Usa el selector de recursos compartidos de HoloLens para compartir contenido Web. |
+| **Menú Acciones rápidas** | Cuando esté en una aplicación, el gesto de Bloom abrirá ahora un menú Acciones rápidas para proporcionar acceso rápido a las características del sistema más usadas sin tener que salir de la aplicación. <br> Consulte [Configuración de HoloLens en pantalla completa](hololens-kiosk.md) para obtener información sobre el menú Acciones rápidas en pantalla completa.<br><br> |
+| **Detener la captura de vídeo desde el menú Inicio o acciones rápidas** | Si inicia la captura de vídeo desde el menú menú Inicio o acciones rápidas, podrá detener la grabación desde el mismo lugar. (No olvide que siempre puede hacerlo con comandos de voz). |
+| **Proyecto en un dispositivo habilitado para Miracast** | Proyecte el contenido de HoloLens en un dispositivo Surface o TV/Monitor cercanos si usa el adaptador de Microsoft Display.  En **Inicio,** seleccione **Conectar** y, a continuación, seleccione el dispositivo al que desea proyectar. **Nota:** Puede implementar HoloLens para usar la proyección miracast sin habilitar el modo de desarrollador. |
+| **Nuevas notificaciones** | Vea y responda a notificaciones del sistema en HoloLens, igual que en un equipo. Mire para responder a ellos o descartarlos (o si está en una experiencia inmersiva, use el gesto de Bloom). |
+| **Superposiciones de HoloLens**<br>(selector de archivos, teclado, diálogos, etc.) | Ahora verá superposiciones como el teclado, los diálogos, el selector de archivos, etc. al usar aplicaciones inmersivas. |
+| **Interfaz de usuario de superposición de comentarios visuales para el cambio de volumen** | Al usar los botones de subir y bajar volumen en HoloLens, verá una presentación visual del nivel de volumen. |
+| **Nueva interfaz de usuario para el arranque del dispositivo** | Se agregó un indicador de carga durante el proceso de arranque para proporcionar comentarios visuales sobre la carga del sistema. Reinicie el dispositivo para ver el nuevo indicador de carga, que se encuentra entre el mensaje "Hello" y el logotipo de arranque de Windows. |
+| **Uso compartido cercano** | Adición de la experiencia de uso compartido cercano de Windows, lo que le permite compartir una captura con un dispositivo Windows cercano. Al capturar una foto o vídeo en HoloLens (o usar el botón Compartir de una aplicación como Microsoft Edge), seleccione un dispositivo Windows cercano con el que compartir. |
+| **Compartir desde Microsoft Edge** | El botón Compartir ahora está disponible Microsoft Edge ventanas en HoloLens. En Microsoft Edge, seleccione **Compartir**. Use el selector de recursos compartidos de HoloLens para compartir contenido web. |
 
-#### Para clientes internacionales
+#### <a name="for-international-customers"></a>Para clientes internacionales
 
 | Característica | Detalles |
 | --- | --- |
-| Versiones localizadas de chino y japonés | Usa HoloLens con una interfaz de usuario localizada para chino simplificado o japonés, incluidos los comandos de teclado, dictado y voz localizados de pinyin.<br>[Más información sobre cómo instalar las versiones en chino y japonés de HoloLens.](hololens1-install-localized.md) |
-| Síntesis de voz (TTS) | La característica de síntesis de voz ahora es compatible con chino, Japonés e inglés. |
+| Compilaciones localizadas de chino y japonés | Use HoloLens con una interfaz de usuario localizada para chino simplificado o japonés, incluidos los comandos de teclado, dictado y voz de Pinyin localizados.<br>[Obtenga información sobre cómo instalar las versiones en chino y japonés de HoloLens.](hololens1-install-localized.md) |
+| Síntesis de voz (TTS) | La característica de síntesis de voz ahora admite chino, japonés e inglés. |
 
-#### Para administradores
+#### <a name="for-administrators"></a>Para administradores
 
 | Característica |  Detalles  |
 |---|----|
-| [Habilitar aprovisionamiento posterior a la instalación](hololens-provisioning.md) | Ahora puede aplicar un paquete de aprovisionamiento en tiempo de ejecución en cualquier momento con la **configuración**. |
-| Acceso asignado con grupos de Azure AD | Ahora puede usar grupos de Azure AD para la configuración de acceso asignado de Windows para configurar la configuración de quiosco de una sola o de varias aplicaciones. |
-| Cambiar el inicio de sesión con PIN en la pantalla de inicio de sesión | El inicio de sesión con PIN ahora está disponible para **otros usuarios**. |
-| Iniciar sesión con el proveedor de credenciales Web mediante contraseña | Ahora puede seleccionar la opción de inicio de sesión del globo para iniciar el inicio de sesión Web con la contraseña. En la pantalla de inicio de sesión, seleccione **Opciones de inicio de sesión** y seleccione la opción globo para iniciar el inicio de sesión en la Web. Escriba su nombre de usuario, si es necesario, y su contraseña. <br>**Nota:** Puede omitir cualquier opción de PIN o SmartCard cuando se le solicite durante el inicio de sesión Web. |
-| Leer la información de hardware del dispositivo a través de MDM para que se pueda realizar un seguimiento de los dispositivos por número de serie | Los administradores de TI pueden ver y realizar un seguimiento de HoloLens por número de serie de dispositivo en su consola de MDM. Para obtener más información, consulte la documentación de MDM. |
-| Establecer nombre de dispositivo HoloLens a través de MDM (cambiar el nombre) | Los administradores de TI pueden ver y cambiar el nombre de los dispositivos de HoloLens en la consola de MDM. Para obtener más información, consulte la documentación de MDM. |
+| [Habilitación del aprovisionamiento posterior a la instalación](hololens-provisioning.md) | Ahora puede aplicar un paquete de aprovisionamiento en tiempo de ejecución en cualquier momento mediante **Configuración**. |
+| Acceso asignado con Azure AD grupos | Ahora puede usar grupos de Azure AD configuración del acceso asignado a Windows para configurar la pantalla completa de una o varias aplicaciones. |
+| Cambio de perfil de inicio de sesión de PIN desde la pantalla de inicio de sesión | El inicio de sesión con PIN ahora está disponible para **Otro usuario.** |
+| Inicio de sesión con web Proveedor de credenciales con contraseña | Ahora puede seleccionar la opción de inicio de sesión de Globe para iniciar el inicio de sesión web con su contraseña. En la pantalla de inicio de sesión, seleccione **Opciones de inicio de sesión y** seleccione la opción Globo para iniciar el inicio de sesión web. Escriba su nombre de usuario si es necesario y, a continuación, la contraseña. <br>**Nota:** Puede optar por omitir cualquier opción de PIN o tarjeta inteligente cuando se le solicite durante el inicio de sesión web. |
+| Lee la información de hardware del dispositivo a través de MDM para que se pueda realizar el seguimiento de los dispositivos por número de serie. | Los administradores de TI pueden ver y realizar un seguimiento de HoloLens por número de serie del dispositivo en su consola MDM. Consulte la documentación de MDM para obtener instrucciones y disponibilidad de características. |
+| Establecer el nombre del dispositivo HoloLens mediante MDM (cambiar el nombre) | Los administradores de TI pueden ver y cambiar el nombre de los dispositivos HoloLens en su consola MDM. Consulte la documentación de MDM para obtener instrucciones y disponibilidad de características. |
 
-### Windows 10, versión 1803 para HoloLens
+### <a name="windows-10-version-1803-for-microsoft-hololens"></a>Windows 10, versión 1803 para Microsoft HoloLens
 
-> **Se aplica a:** HoloLens (1ª generación)
+> **Se aplica a:** HoloLens (1.ª generación)
 
-Windows 10, versión 1803, es la primera actualización de características de Windows Holographic para empresas desde su lanzamiento en Windows 10, versión 1607. Esta actualización introduce los cambios siguientes:
+Windows 10, versión 1803, es la primera actualización de características de Windows Holographic for Business desde su lanzamiento en Windows 10, versión 1607. Esta actualización presenta los siguientes cambios:
 
-- Anteriormente, solo puedes verificar que la licencia de actualización de la Suite comercial se haya aplicado a tu dispositivo HoloLens comprobando si VPN era una opción disponible en el dispositivo. Ahora, **Settings**  >  el**sistema** de configuración mostrará **Windows Holographic para empresas** después de que se aplique la licencia de actualización. [Obtenga información sobre cómo desbloquear características de Windows Holographic para empresas](hololens1-upgrade-enterprise.md).
+- Anteriormente, solo podía comprobar que la licencia de actualización de Commercial Suite se había aplicado al dispositivo HoloLens comprobando si vpn era una opción disponible en el dispositivo. Ahora, **el sistema**  >  **de** configuración mostrará **Windows Holographic for Business** después de aplicar la licencia de actualización. [Obtenga información sobre cómo desbloquear Windows Holographic for Business características](hololens1-upgrade-enterprise.md).
 
-- Puede ver el número de compilación del sistema operativo en las propiedades del dispositivo en la aplicación explorador de archivos y en la [herramienta de recuperación de dispositivos de Windows (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
-- Aprovisionar un dispositivo HoloLens ahora es más fácil con el nuevo Asistente para **aprovisionar dispositivos hololens** en la herramienta diseñador de configuración de Windows. En el asistente, puede configurar la experiencia de instalación y las conexiones de red, establecer el modo de desarrollador y obtener tokens de Azure AD en masa. [Más información sobre cómo usar el Asistente de aprovisionamiento simple para HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
+- Puede ver el número de compilación del sistema operativo en las propiedades del dispositivo en la aplicación Explorador de archivos y en la Herramienta de recuperación de dispositivos [de Windows (WDRT).](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq)
+- El aprovisionamiento de un dispositivo HoloLens ahora es más fácil con el nuevo Asistente **para aprovisionar dispositivos HoloLens** en la herramienta Diseñador de configuración de Windows. En el asistente, puede configurar la experiencia de configuración y las conexiones de red, establecer el modo de desarrollador y obtener tokens de Azure AD masivos. [Obtenga información sobre cómo usar el asistente de aprovisionamiento simple para HoloLens.](hololens-provisioning.md#provisioning-package-hololens-wizard)
 
-- Al crear una cuenta local en un paquete de aprovisionamiento, la contraseña ya no vence cada 42 días.
+- Cuando se crea una cuenta local en un paquete de aprovisionamiento, la contraseña ya no expira cada 42 días.
 
-- Puede [configurar HoloLens como una quiosco de aplicación única o de varias aplicaciones](hololens-kiosk.md). El modo quiosco de varias aplicaciones te permite configurar HoloLens para que solo ejecute las aplicaciones que especifiques e impide que los usuarios realicen cambios.
+- Puede configurar [HoloLens como un quiosco](hololens-kiosk.md)de una sola aplicación o de varias aplicaciones. El modo de pantalla completa con varias aplicaciones permite configurar HoloLens para ejecutar solo las aplicaciones que especifique e impide que los usuarios realicen cambios.
 
-- El protocolo de transferencia multimedia (MTP) está habilitado para que puedas conectar el dispositivo HoloLens a un equipo de USB y transferir archivos entre HoloLens y el equipo. También puede usar la aplicación explorador de archivos para mover y eliminar archivos en HoloLens.
+- El Protocolo de transferencia multimedia (MTP) está habilitado para que pueda conectar el dispositivo HoloLens a un equipo mediante USB y transferir archivos entre HoloLens y el equipo. También puede usar la aplicación Explorador de archivos para mover y eliminar archivos desde HoloLens.
 
-- Anteriormente, una vez que haya iniciado sesión en el dispositivo con una cuenta de Azure Active Directory (Azure AD), tendrá que **Agregar el acceso de trabajo** en **configuración** para obtener acceso a los recursos de la empresa. Ahora, inicia sesión con una cuenta de Azure AD y la inscripción se realiza automáticamente.
+- Anteriormente, después de haber iniciado sesión en el dispositivo con una cuenta de Azure Active Directory  (Azure AD),  tenía que agregar acceso de trabajo en Configuración para obtener acceso a los recursos corporativos. Ahora, inicie sesión con una cuenta Azure AD y la inscripción se realiza automáticamente.
 
-- Antes de iniciar sesión, puede elegir el icono de red debajo del campo de contraseña para elegir una red de Wi-Fi diferente a la que se conectará. También puede conectarse a una red de invitado, como un hotel, un centro de conferencias o una empresa.
+- Antes de iniciar sesión, puede elegir el icono de red debajo del campo de contraseña para elegir una red Wi-Fi a la que conectarse. También puede conectarse a una red de invitados, como en un hotel, un centro de conferencias o una empresa.
 
-- Ahora puedes compartir fácilmente [HoloLens con varias personas](hololens-multiple-users.md) que usen cuentas de Azure ad.
+- Ahora puede compartir [fácilmente HoloLens con varias personas mediante](hololens-multiple-users.md) Azure AD cuentas.
 
-- Cuando se produce un error en la configuración o el inicio de sesión, elija la nueva opción **recopilar información** para obtener registros de diagnóstico para la solución de problemas.
+- Cuando se produce un error en la instalación o el inicio de sesión, elija la **nueva opción Recopilar** información para obtener registros de diagnóstico para solucionar problemas.
 
-- Los usuarios individuales pueden sincronizar su correo electrónico corporativo sin inscribir su dispositivo en la administración de dispositivos móviles (MDM). Puede usar el dispositivo con una cuenta de Microsoft, descargar e instalar la aplicación correo, y agregar una cuenta de correo directamente.
+- Los usuarios individuales pueden sincronizar su correo electrónico corporativo sin inscribir su dispositivo en la administración de dispositivos móviles (MDM). Puede usar el dispositivo con una cuenta Microsoft, descargar e instalar la aplicación correo electrónico y agregar una cuenta de correo electrónico directamente.
 
-- Puede comprobar el estado de sincronización de MDM de un dispositivo en **configuración**  >  **cuentas**de la información del  >  **trabajo o de la escuela**  >  **Info**. En la sección **Estado de sincronización de dispositivos** , puede iniciar una sincronización, ver áreas administradas por MDM y crear y exportar un informe de diagnóstico avanzado.
+- Puede comprobar el estado de sincronización de MDM de un dispositivo en **Configuración**  >  **Cuentas**  >  **Access Work or School**  >  **Info**. En la **sección Estado de sincronización de** dispositivos, puede iniciar una sincronización, ver las áreas administradas por MDM y crear y exportar un informe de diagnóstico avanzado.

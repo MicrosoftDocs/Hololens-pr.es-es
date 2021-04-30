@@ -1,6 +1,6 @@
 ---
-title: Facilítanos tus comentarios
-description: Crea comentarios accionables para los desarrolladores de HoloLens y Windows Mixed Reality mediante el centro de opiniones.
+title: Envíenos sus comentarios.
+description: Cree comentarios acciones para HoloLens y Windows Mixed Reality desarrolladores mediante el Centro de opiniones.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -11,81 +11,81 @@ ms.custom:
 audience: ITPro
 ms.prod: hololens
 ms.topic: article
-keywords: Comentarios, error, problema, error, solución de problemas, ayuda
+keywords: feedback, bug, issue, error, troubleshoot, help
 manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
-ms.sourcegitcommit: e44f1f1ab708e5bd6c4c5b85ec449db2bc798be2
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "11237280"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108310192"
 ---
-# Comentarios para HoloLens
+# <a name="feedback-for-hololens"></a>Comentarios sobre HoloLens
 
-Use el centro de opiniones para contarnos qué características le encanta, qué características podría hacer sin él y cómo puede mejorar algo. El equipo de ingeniería usa el mismo mecanismo internamente para realizar un seguimiento de los errores y corregirlos, por lo que debes usar el centro de opiniones para informar de los errores que veas. ¡ Estamos escuchando!
+Use la Centro de opiniones para decirnos qué características le encantan, qué características podría hacer sin las que podría hacer y cómo podría ser mejor algo. El equipo de ingeniería usa el mismo mecanismo internamente para realizar un seguimiento de los errores y corregirlos, por lo que debe Centro de opiniones para notificar los errores que vea. Estamos escuchando.
 
-El centro de opiniones es una excelente manera de alertar al equipo de ingeniería de errores y de asegurarte de que las actualizaciones futuras sean más sanas y siempre libre de errores. Sin embargo, el centro de opiniones no proporciona una respuesta. Si necesitas ayuda inmediata, envíanos comentarios, ten en cuenta el resumen que proporcionaste para tus comentarios y, después, haz un seguimiento de la [compatibilidad con HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) : usa la característica **compartir** en el centro de opiniones para compartir un vínculo directo a la dirección URL. El centro de opiniones obtiene muchos datos diariamente, la dirección URL nos ayuda a identificar tus comentarios rápidamente.
+Centro de opiniones es una excelente manera de alertar al equipo de ingeniería sobre los errores y asegurarse de que las actualizaciones futuras sean más coherentes y estén libres de errores. Sin embargo, Centro de opiniones no proporciona una respuesta. Si necesita ayuda inmediata, envíe sus comentarios, tome nota del resumen que proporcionó para sus comentarios y, a continuación, haga un seguimiento del soporte técnico de [HoloLens:](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) use la característica Compartir en Centro de opiniones para compartir un vínculo directo a la dirección URL.  Centro de opiniones obtener una gran cantidad de datos diariamente: la dirección URL nos ayuda a identificar sus comentarios rápidamente.
 
 > [!NOTE]  
 >  
-> - Asegúrese de que tiene la versión actual del centro de opiniones. Para ello, seleccione **iniciar**  >  **Microsoft Store**y, a continuación, seleccione los puntos suspensivos (**...**). Después, seleccione **descargas y actualizaciones**  >  **obtener actualizaciones**.  
+> - Asegúrese de que tiene la versión actual de Centro de opiniones. Para ello, seleccione **Iniciar**  >  **Microsoft Store** y, a continuación, seleccione los puntos suspensivos (**...**). A continuación, **seleccione Descargas y actualizaciones** Obtener  >  **actualizaciones.**  
 >  
-> - Para proporcionar los mejores datos posibles para solucionar problemas, recomendamos encarecidamente que configure la telemetría de dispositivos en **opcional**. Puedes establecer este valor durante la experiencia de configuración rápida (OOBE) o mediante la aplicación configuración. Para hacerlo usando la configuración, seleccione **iniciar**  >  **configuración**  >  **privacidad**  >  **diagnóstico de la aplicación**  >  **en**.
+> - Para proporcionar los mejores datos posibles para corregir problemas, se recomienda encarecidamente establecer la telemetría del dispositivo en **Opcional.** Puede establecer este valor durante la configuración rápida (OOBE) o mediante la aplicación Configuración. Para ello mediante Configuración, seleccione Iniciar configuración  >    >  **Diagnósticos de**  >  **la aplicación de privacidad**  >  **en**.
 
-## Usar el centro de opiniones
+## <a name="use-the-feedback-hub"></a>Use el Centro de opiniones
 
-1. Use el gesto de **Inicio** para abrir el menú **Inicio** y, a continuación, seleccione **centro de opiniones**. La aplicación se abrirá en su entorno.
+1. Use el **gesto Iniciar** para abrir el **menú** Inicio y, a continuación, **seleccione Centro de opiniones**. La aplicación se abre en su entorno.
 
-   ![Aplicación de comentarios en el menú Inicio de HoloLens](./images/hololens2-feedbackhub-tile.png)
+   ![Aplicación de comentarios en HoloLens menú Inicio](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
-   > Si no ve **centro de opiniones**, seleccione **todas las aplicaciones** para ver la lista completa de aplicaciones en el dispositivo.
+   > Si no ve Centro de opiniones , **seleccione** **Todas** las aplicaciones para ver la lista completa de aplicaciones en el dispositivo.
 
-1. Para ver si otra persona ha introducido comentarios similares, escriba unas pocas palabras clave sobre el tema en el cuadro de búsqueda de **comentarios** .
-1. Si encuentra comentarios similares, selecciónelos, agregue la información adicional que tenga en el cuadro **escribir un comentario** y, a continuación, seleccione **voto**.
-1. Si no encuentra comentarios similares, seleccione **Agregar comentarios nuevos**.
+1. Para ver si otra persona ha dado comentarios similares, escriba algunas palabras clave sobre el tema en el cuadro de búsqueda **Comentarios.**
+1. Si encuentra comentarios similares, selecciónelo, agregue cualquier información adicional que tenga en el cuadro Escribir un comentario y, **a** continuación, **seleccioneVote**.
+1. Si no encuentra ningún comentario similar, seleccione **Agregar nuevos comentarios.**
 
-   ![Agregar comentarios nuevos](./images/hololens-feedback-1.png)
+   ![Agregar nuevo comentario](./images/hololens-feedback-1.png)
 
-1. Para **resumir sus comentarios**, escriba un breve resumen de sus comentarios. A continuación, agregue detalles en el cuadro **explicar en más detalles** . Cuanto más detalles proporcione, como por ejemplo cómo reproducir este problema y el efecto que tiene, más útil será su opinión. Cuando haya terminado, seleccione **siguiente**.
+1. En **Resumir sus comentarios,** escriba un breve resumen de sus comentarios. A continuación, agregue detalles en **el cuadro Explicar con más** detalle. Cuanto más detalles proporcione, como cómo reproducir este problema y el efecto que tiene, más útiles son sus comentarios. Cuando haya finalizado, seleccione **Siguiente**.
 
-1. Seleccione un tema de **elegir una categoría**y, a continuación, seleccione una subcategoría de **seleccionar una subcategoría**. En la tabla siguiente se describen las categorías que están disponibles en la categoría Windows Holographic.
+1. Seleccione un tema en **Elegir una categoría y, a** continuación, seleccione una subcategoría en Seleccionar una **subcategoría**. En la tabla siguiente se describen las categorías que están disponibles en la categoría Windows Holographic.
 
    > [!NOTE]  
-   > **Clientes comerciales**: para notificar un error relacionado con MDM, aprovisionamiento o cualquier otro aspecto de administración de dispositivos, seleccione la categoría de **Administración** de la empresa y la subcategoría del **dispositivo** .
+   > **Clientes comerciales:** para notificar un error relacionado con MDM, el aprovisionamiento o cualquier otro aspecto de administración de dispositivos, seleccione la categoría **Administración** empresarial y la **subcategoría** Dispositivo.
 
    |Categoría |Descripción |
    | --- | --- |
-   |Seguimiento de ojos |Comentarios sobre el seguimiento ocular, el inicio de sesión de iris o la calibración. |
-   |Precisión, estabilidad y confiabilidad de hologramas |Comentarios sobre cómo aparecen hologramas en el espacio. |
-   |Inicio, colocación, ajuste y salida de aplicaciones |Comentarios sobre cómo iniciar o detener aplicaciones 3D o 2D. |
+   |Seguimiento de los ojos |Comentarios sobre el seguimiento de los ojos, el inicio de sesión de iris o la calibración. |
+   |Precisión, estabilidad y confiabilidad del holograma |Comentarios sobre cómo aparecen los hologramas en el espacio. |
+   |Inicio, colocación, ajuste y salida de aplicaciones |Comentarios sobre cómo iniciar o detener aplicaciones 2D o 3D. |
    |Miracast |Comentarios sobre Miracast. |
-   |Espacios y persistencia |Comentarios sobre la forma en que HoloLens reconoce los espacios y conserva los hologramas en el espacio. |
-   |Menú Inicio y lista de todas las aplicaciones |Comentarios sobre el menú **Inicio** y la lista todas las aplicaciones. |
-   |Mapas de Surface |Comentarios sobre la asignación de superficie. |
-   |Toma de fotografías y vídeos |Comentarios sobre capturas de realidad mixta. |
-   |Reproducción de video holograma |Comentarios sobre la reproducción del holograma de vídeo. |
-   |Resto de problemas |Todos los demás problemas. |
+   |Espacios y persistencia |Comentarios sobre cómo HoloLens reconoce los espacios y conserva los hologramas en el espacio. |
+   |menú Inicio lista de todas las aplicaciones |Comentarios sobre el **menú Inicio** y la lista de todas las aplicaciones. |
+   |Asignación de superficie |Comentarios sobre la asignación de superficie. |
+   |Tomar imágenes y vídeos |Comentarios sobre las capturas de realidad mixta. |
+   |Reproducción de hologramas de vídeo |Comentarios sobre la reproducción de hologramas de vídeo. |
+   |Todos los demás problemas |Todos los demás problemas. |
 
-1. Es posible que se le solicite que busque comentarios similares. Si el problema se asemeja a los comentarios de otros usuarios, seleccione los comentarios. En caso contrario, seleccione **comentarios nuevos** y, después, haga clic en **siguiente**.
+1. Es posible que se le pida que busque comentarios similares. Si el problema se parece a los comentarios de otros usuarios, seleccione ese comentario. En caso contrario, **seleccione Nuevos comentarios** y, a continuación, seleccione **Siguiente.**
 
 1. Si se le solicita, seleccione la mejor descripción del problema.
 
-1. Adjunte los datos relevantes a sus comentarios o reproduzca el problema. Puede seleccionar cualquiera de las siguientes opciones:
+1. Adjunte los datos pertinentes a sus comentarios o reproduzca el problema. Puede seleccionar cualquiera de las siguientes opciones:
 
-   - **Adjuntar una captura de pantalla**. Seleccione esta opción para adjuntar una captura de pantalla que ilustre la situación que está describiendo.
-   - **Adjunte un archivo**. Seleccione esta opción para adjuntar archivos de datos. Si tiene archivos que son relevantes para su problema o que podrían ayudarnos a reproducir el problema, adjuntelos.
-   - **Recrea mi problema**. Seleccione esta opción si puede reproducir el problema usted mismo. Después de seleccionar **recrear mi problema**, siga estos pasos:  
+   - **Adjunte una captura de pantalla**. Seleccione esta opción para adjuntar una captura de pantalla que ilustra la situación que está describiendo.
+   - **Adjunte un archivo**. Seleccione esta opción para adjuntar archivos de datos. Si tiene archivos que son pertinentes para su problema o que podrían ayudarnos a reproducir el problema, adjuntelos.
+   - **Vuelva a crear mi problema.** Seleccione esta opción si puede reproducir el problema usted mismo. Después de seleccionar **Volver a crear mi problema,** siga estos pasos:  
 
-     1. Seleccione **incluir datos sobre** y asegúrese de que los tipos de datos más relevantes se muestran en la lista. En la mayoría de los casos, las selecciones predeterminadas se basan en la categoría y subcategoría que seleccionó para sus comentarios.  
-     1. Seleccione **iniciar grabación**.
+     1. Seleccione **Incluir datos sobre** y asegúrese de que aparecen los tipos de datos más relevantes. En la mayoría de los casos, las selecciones predeterminadas se basan en la categoría y subcategoría que seleccionó para sus comentarios.  
+     1. Seleccione **Iniciar grabación**.
 
-     1. Reproduzca el problema. No te preocupes si esto significa que tienes que introducir una aplicación envolvente. Cuando termine, volverá a la página Comentarios.
-     1. Seleccione **Detener grabación**. Después de la grabación, puede ver los datos adjuntos a sus comentarios para el equipo de ingeniería.
+     1. Reproduzca el problema. No se preocupe si esto significa que tiene que escribir una aplicación inmersiva. Volverá a la página de comentarios cuando haya terminado.
+     1. Seleccione **Detener grabación.** Después de que se detenga la grabación, puede ver los datos adjuntos a sus comentarios para el equipo de ingeniería.
 
-1. Asegúrate de tener una conexión a Internet activa para poder recibir tus comentarios. Seleccione **Enviar**y listo.
+1. Asegúrese de que tiene una conexión a Internet activa para que podamos recibir sus comentarios. Seleccione **Enviar** y ha terminado.
 
-1. Use el botón **compartir** para compartir la dirección URL abreviada con el soporte técnico de Microsoft o sus colegas.
+1. Use el **botón Compartir** para compartir la dirección URL abreviada con el soporte técnico de Microsoft o con sus compañeros.

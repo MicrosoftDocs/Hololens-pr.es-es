@@ -1,7 +1,7 @@
 ---
-title: 'Guía de implementación: implementación de HoloLens 2 conectada en la nube a escala con asistencia remota: preparar'
-description: Aprende a prepararte para inscribir dispositivos HoloLens a través de una red conectada a la nube mediante Azure Active Directory y la administración de identidades.
-keywords: HoloLens, administración, conectado a la nube, Asistencia remota, AAD, Azure AD, MDM, Administración de dispositivos móviles
+title: 'Guía de implementación: implementación de HoloLens 2 conexión a la nube a escala con Remote Assist- Preparación'
+description: Aprenda a prepararse para inscribir dispositivos HoloLens a través de una red conectada a la nube mediante Azure Active Directory y la administración de identidades.
+keywords: HoloLens, administración, conexión a la nube, Remote Assist, AAD, Azure AD, MDM, Mobile Administración de dispositivos
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -15,67 +15,67 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283871"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108310125"
 ---
-# Preparar: Guía conectada a la nube
+# <a name="prepare---cloud-connected-guide"></a>Preparación: Guía conectada a la nube
 
-Al final de este artículo habrás configurado Azure AD, MDM y más información sobre cómo usar las cuentas de Azure AD y los requisitos de red. Esta sección de la guía le ayudará a usted y a su organización a prepararse para implementar HoloLens 2 en la nube y usar Dynamics 365 Remote Assist. Se trata de la importancia de cada parte de la infraestructura, así como de vínculos a guías que le ayudarán a configurar esas piezas según sea necesario.
+Al final de este artículo, habrá configurado Azure AD, MDM y comprenderá más sobre el uso de Azure AD y los requisitos de red. Esta sección de la guía le ayudará a usted y a su organización a prepararse para implementar HoloLens 2 en la nube y usar Dynamics 365 Remote Assist. Se rebará la importancia de cada parte de la infraestructura, así como se proporcionan vínculos a guías que le ayudarán a configurar esas piezas según sea necesario.
 
-## Infrastructure Essentials
+## <a name="infrastructure-essentials"></a>Información esencial de la infraestructura
 
-Para escenarios de implementación personal y corporativa, un sistema MDM es la infraestructura esencial necesaria para implementar y administrar dispositivos Holográficos de Windows 10. Se recomienda una suscripción a Azure AD Premium como proveedor de identidades, que además es necesaria para que se admitan ciertas funcionalidades.
+En escenarios de implementación personal y corporativo, un sistema MDM es la infraestructura esencial necesaria para implementar y administrar Windows 10 Holographic dispositivos. Se recomienda una suscripción a Azure AD Premium como proveedor de identidades, que además es necesaria para que se admitan ciertas funcionalidades.
 
-### Azure Active Directory
+### <a name="azure-active-directory"></a>Azure Active Directory
 
-Azure AD es un servicio de directorio en la nube que proporciona administración de identidades y acceso. Las organizaciones que usan Microsoft Office 365 o Intune ya usan Azure AD, que tiene tres ediciones: gratuita, Premium P1 y Premium P2 (vea las ediciones de [Azure Active Directory).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Todas las ediciones admiten el registro de dispositivos de Azure AD, pero se requiere Premium P1 para habilitar la inscripción automática de MDM que usaremos en esta guía más adelante.
-
-> [!IMPORTANT]
-> Es esencial tener Azure Active Directory, ya que los dispositivos HoloLens no admiten la unión a AD local. Si aún no&#39;una configuración de Azure Active Directory, siga las instrucciones de este vínculo para empezar y crear un nuevo inquilino [en Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
-
-## Administración de identidades
-
-Los empleados solo pueden usar una cuenta para inicializar un dispositivo, por lo que es&#39;imperativo que la organización controle qué cuenta está habilitada en primer lugar. La cuenta elegida determinará quién controla el dispositivo e influirá en las funcionalidades de administración.
-
-En esta guía, hemos [](https://docs.microsoft.com/hololens/hololens-identity) elegido que para la identidad usada usaremos cuentas de Azure AD o cuentas de Azure Active Directory. Hay varias ventajas para las cuentas de Azure AD que nos gustaría usar, como:
-
-- Los empleados usan su cuenta de Azure AD para registrar el dispositivo en Azure AD e inscribirlo automáticamente en la solución MDM de la organización&#39;(Azure AD+MDM, requiere Azure AD Premium).
-- Las cuentas de Azure AD [admiten el inicio de sesión único.](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) Cuando un usuario inicia sesión en asistencia remota, se reconocerá su identidad del usuario que ha iniciado sesión en Azure AD y el usuario inicia sesión en la aplicación para una experiencia optimizada.
-- Las cuentas de Azure AD tienen opciones [de autenticación adicionales](https://docs.microsoft.com/hololens/hololens-identity) [a través de Windows Hello para empresas.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) Además de iris, los usuarios de inicio de sesión pueden iniciar sesión desde otro dispositivo o usar claves de seguridad FIDO.
-
-### Administración de dispositivos móviles
-
-Microsoft [Intune,](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)parte de Enterprise Mobility + Security, es un sistema MDM basado en la nube que administra los dispositivos conectados a su inquilino. Al igual que Office 365, Intune usa Azure AD para la administración de identidades, por lo que los empleados usan las mismas credenciales para inscribir dispositivos en Intune que usan para iniciar sesión en Office 365. Intune también admite dispositivos que ejecutan otros sistemas operativos, como iOS y Android, para proporcionar una solución MDM completa. Para los fines de esta guía,&#39;nos centraremos en el uso de Intune para habilitar una implementación en la nube a escala con HoloLens 2.
+Azure AD es un servicio de directorio en la nube que proporciona administración de identidades y acceso. Las organizaciones que usan Microsoft Office 365 o Intune ya usan Azure AD, que tiene tres ediciones: Gratis, Premium P1 y Premium P2 (consulte ediciones [Azure Active Directory).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Todas las ediciones admiten Azure AD registro de dispositivos, pero se requiere Premium P1 para habilitar la inscripción automática de MDM que usaremos en esta guía más adelante.
 
 > [!IMPORTANT]
-> Es esencial tener administración de dispositivos móviles. Si aún no&#39;la configuración, siga esta guía y [introducción a Intune.](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
+> Es esencial tener una aplicación Azure Active Directory dispositivos HoloLens no admiten la unión a AD local. Si aún no&#39;una Azure Active Directory siga las instrucciones de este vínculo para empezar a trabajar y crear un nuevo [inquilino en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+
+## <a name="identity-management"></a>Administración de identidades
+
+Los empleados solo pueden usar una cuenta para inicializar un dispositivo, por lo&#39;que la organización controle qué cuenta está habilitada en primer lugar. La cuenta elegida determinará quién controla el dispositivo e influirá en las funcionalidades de administración.
+
+En esta guía, hemos [](https://docs.microsoft.com/hololens/hololens-identity) elegido que, para la identidad usada, usaremos cuentas Azure AD o cuentas Azure Active Directory usuario. Hay varias ventajas para las Azure AD que nos gustaría usar, como:
+
+- Los empleados usan su cuenta de Azure AD para registrar el dispositivo en Azure AD e inscribirlo automáticamente en la solución MDM de la organización&#39;(Azure AD+MDM: requiere Azure AD Premium).
+- Azure AD admiten el [inicio de sesión único.](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) Cuando un usuario inicia sesión en Remote Assist, se reconocerá su identidad desde el usuario con sesión Azure AD y el usuario se inicia sesión en la aplicación para una experiencia simplificada.
+- Azure AD cuentas tienen opciones de [autenticación adicionales a](https://docs.microsoft.com/hololens/hololens-identity) través [Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Además de Iris, los usuarios de inicio de sesión pueden iniciar sesión desde otro dispositivo o usar claves de seguridad FIDO.
+
+### <a name="mobile-device-management"></a>Administración de dispositivos móviles
+
+Microsoft [Intune,](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)parte de la Enterprise Mobility + Security, es un sistema MDM basado en la nube que administra los dispositivos conectados al inquilino. Al igual que Office 365, Intune usa Azure AD para la administración de identidades, por lo que los empleados usan las mismas credenciales para inscribir dispositivos en Intune que usan para iniciar sesión en Office 365. Intune también admite dispositivos que ejecutan otros sistemas operativos, como iOS y Android, para proporcionar una solución MDM completa. Para los fines de esta guía,&#39;nos centraremos en el uso de Intune para habilitar una implementación en la nube a escala con HoloLens 2.
+
+> [!IMPORTANT]
+> Es esencial tener mobile Administración de dispositivos. Si aún no&#39;la configuración, siga esta guía e [Introducción a Intune.](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
 
 > [!NOTE]
-> Muchos sistemas MDM admiten Windows10, y la mayoría también admiten los escenarios de implementación de dispositivos personales y corporativos. Los proveedores de MDM que admiten Windows 10 Holographic actualmente incluyen: AirWatch, MobileIron y otros. La mayoría de los principales proveedores de sistemas MDM del sector ya admiten la integración con Azure AD. Puedes encontrar los proveedores de sistemas MDM que admiten Azure AD en [Azure Marketplace](https://azure.microsoft.com/marketplace/).
+> Muchos sistemas MDM admiten Windows 10, y la mayoría también admiten los escenarios de implementación de dispositivos personales y corporativos. Los proveedores de MDM que admiten Windows 10 Holographic actualmente incluyen: AirWatch, MobileIron y otros. La mayoría de los principales proveedores de sistemas MDM del sector ya admiten la integración con Azure AD. Puedes encontrar los proveedores de sistemas MDM que admiten Azure AD en [Azure Marketplace](https://azure.microsoft.com/marketplace/).
 
-## Red
+## <a name="network"></a>Red
 
-En esta configuración, anticipamos que los dispositivos HoloLens 2 se conectan a Internet desde cualquier red Wi-Fi abierta disponible. Dado que un usuario podría necesitar cambiar la conexión de red en función de la ubicación, debe aprender a conectar [dispositivos HoloLens a Wi-Fi.](https://docs.microsoft.com/hololens/hololens-network)
+En esta configuración, se prevé que HoloLens 2 dispositivos conectados a Internet desde cualquier red abierta Wi-Fi disponible. Dado que un usuario podría necesitar cambiar la conexión de red en función de la ubicación, debe aprender a conectar [dispositivos HoloLens a Wi-Fi.](https://docs.microsoft.com/hololens/hololens-network)
 
-Para dynamics 365 Remote Assist hay una variedad de condiciones de red, como ancho de banda, latencia, vibración y pérdida de paquetes, que pueden afectar a su experiencia de videollamada. Aunque las llamadas de audio y vídeo pueden ser posibles en entornos con ancho de banda reducido, es posible que experimente una degradación de las características. Al usar Dynamics 365 Remote Assist en HoloLens, estos son los requisitos de red a tener en cuenta:
+Por Dynamics 365 Remote Assist hay una variedad de condiciones de red, como ancho de banda, latencia, vibración y pérdida de paquetes, que pueden afectar a la experiencia de llamada de vídeo. Aunque es posible realizar llamadas de audio y vídeo en entornos con ancho de banda reducido, es posible que experimente una degradación de las características. Al usar Dynamics 365 Remote Assist en HoloLens, estos son los requisitos de red que debe tener en cuenta:
 
-**Mínimo:** 1,5 Mbps arriba/abajo es necesario para videollamadas de calidad HD punto a punto con resolución de HD 1080p a 30 fps.
+**Mínimo:** se requieren 1,5 Mbps de up/down para las llamadas de vídeo de calidad HD punto a punto con resolución de HD 1080p a 30 fps.
 
-**Óptimo:** Para videollamadas de calidad HD punto a punto con resolución de HD 1080p, debe esperarse un aumento/bajada de 4-5 Mbps.
+**Óptimo:** En el caso de las llamadas de vídeo de calidad HD punto a punto con resolución de HD 1080p, se deben esperar entre 4 y 5 Mbps.
 
 Más información:
 
 - [Requisitos de red](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)
 - [Recomendaciones de optimización de red](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#dynamics-365-remote-assist-hololens)
 
-### Opcional: Conectar HoloLens a VPN
+### <a name="optional-connect-your-hololens-to-vpn"></a>Opcional: Conexión de HoloLens a VPN
 
-Los dispositivos que se conectan a esta guía se conectarán a la red a través de una red en la nube externa. Puede ser que para acceder a los recursos de la empresa&#39;que necesites conectar los dispositivos a través de VPN. Hay varias formas de conectar los dispositivos a vpn, tanto donde el usuario final puede conectarse a través de la interfaz de usuario del dispositivo, como los dispositivos pueden administrarse y recibir el perfil de VPN desde un PPKG o MDM. La configuración de VPN&#39;no se trata en este artículo, por lo que si&#39;quieres obtener más información sobre los diferentes protocolos de VPN o formas de administrar VPN, visita estas guías para obtener información sobre [HoloLens](https://docs.microsoft.com/hololens/hololens-network#vpn) y VPN.
+Los dispositivos que se conectan a esta guía se conectarán a la red a través de y a la red en la nube externa. Puede ser que para acceder a los recursos de la&#39;necesite conectar los dispositivos a través de VPN. Hay varias maneras diferentes de conectar los dispositivos a vpn, tanto en las que el usuario final puede conectarse a través de la interfaz de usuario del dispositivo como en los dispositivos que se pueden administrar y recibir el perfil de VPN desde un PPKG o MDM. La configuración de VPN no se&#39;en este artículo, por lo que si&#39;desea obtener más información sobre los distintos protocolos VPN o las formas de administrar vpn, visite estas guías para obtener información sobre [HoloLens](https://docs.microsoft.com/hololens/hololens-network#vpn) y VPN.
 
-## Paso siguiente
+## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Implementación conectada a la nube: configurar](hololens2-cloud-connected-configure.md)
+> [Implementación conectada a la nube: configuración](hololens2-cloud-connected-configure.md)

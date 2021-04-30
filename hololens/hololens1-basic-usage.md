@@ -1,6 +1,6 @@
 ---
-title: Desplazamiento por HoloLens (1.ª generación)
-description: Empieza con un breve recorrido por la interfaz de HoloLens (1.ª generación), las características de seguimiento de manos y el uso de aplicaciones holográficas.
+title: Moverse por HoloLens (1ª generación)
+description: Empezar a trabajar con un breve paseo por la interfaz de HoloLens (1ª generación), las características de seguimiento de manos y el uso de aplicaciones holográficas.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 9/16/2019
 ms.reviewer: jarrettr
@@ -15,129 +15,129 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: a1ed1b900f255da9f8db66577f1e88f6bd6881e8
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439076"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108310164"
 ---
-# <a name="getting-around-hololens-1st-gen"></a>Desplazamiento por HoloLens (1.ª generación)
+# <a name="getting-around-hololens-1st-gen"></a>Moverse por HoloLens (1ª generación)
 
-¿Estás listo para entrar en el mundo de los hologramas? Aquí tienes información para empezar.
+¿Listo para entrar en el mundo de los hologramas? Esta es una información para empezar.
 
-Esta guía proporciona una introducción a la realidad mixta, gestos para interactuar con hologramas y una introducción a Windows Holographic.
+En esta guía se proporciona una introducción a la realidad mixta, gestos para interactuar con hologramas y una introducción a Windows Holographic.
 
-## <a name="discover-mixed-reality"></a>Descubrir la realidad mixta
+## <a name="discover-mixed-reality"></a>Detectar realidad mixta
 
-En HoloLens, los hologramas se fusionan con el entorno físico para tener el aspecto y el sonido como si fueran parte de tu mundo. Aunque los hologramas están a tu alrededor, aún puedes ver tu entorno, moverte libremente e interactuar con otras personas y objetos. Llamamos a esta experiencia "realidad mixta".
+En HoloLens, los hologramas se combinan con el entorno físico para que parezcan parte de su mundo. Incluso cuando los hologramas están a su alrededor, todavía puede ver su entorno, moverse libremente e interactuar con otras personas y objetos. Esta experiencia se llama "realidad mixta".
 
-El marco holográfico coloca los hologramas donde los ojos son más sensibles al detalle y las lentes transparentes dejan tu visión periférica despejada. Con el sonido espacial, puedes identificar un holograma incluso si se encuentra detrás de ti. Y como HoloLens memoriza y comprende tu entorno, puedes colocar hologramas en los objetos reales y alrededor de ellos, de la misma manera que tus aplicaciones y juegos. Por lo tanto, un personaje de un juego podría sentarse en tu sofá o los [robots del espacio podrían aparecer por tus paredes](https://www.microsoft.com/store/apps/9nblggh5fv3j).
+El marco holográfico coloca los hologramas en los que los ojos son más sensibles a los detalles, y las lentes de visión continua dejan la visión periférico sin problemas. Con el sonido espacial, puede identificar un holograma incluso si está detrás de usted. Y dado que HoloLens aprende y comprende su entorno, puede colocar hologramas en objetos reales y en torno a ellos, al mismo tiempo que sus aplicaciones y juegos. Por lo tanto, un carácter de un juego podría estar sentado en el pequeño o los robots espaciales podrían salir [de las paredes.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
-## <a name="use-hololens-with-your-hands"></a>Usar HoloLens con las manos
+## <a name="use-hololens-with-your-hands"></a>Uso de HoloLens con las manos
 
-El desplazamiento por HoloLens es muy similar al uso de un smartphone. Puedes usar las manos para manipular ventanas holográficas, menús y botones.  En lugar de apuntar, hacer clic o tocar, usarás la mirada, la [voz](hololens-cortana.md) y los gestos para seleccionar aplicaciones y hologramas, así como para desplazarte por HoloLens.
+Moverse por HoloLens es muy parecido al uso del teléfono inteligente. Puede usar las manos para manipular ventanas holográficas, menús y botones.  En lugar de apuntar, hacer clic o pulsar, [](hololens-cortana.md)usará la mirada, la voz y los gestos para seleccionar aplicaciones y hologramas y para moverse por HoloLens.
 
-Cuando conozcas estas interacciones básicas, desplazarte por HoloLens resultará muy fácil.
+Cuando conozca estas interacciones básicas, es muy fácil moverse por HoloLens.
 
-Te guiaremos a través de los conceptos básicos la primera vez que uses tu HoloLens. También encontrarás un tutorial de gestos en el menú **Inicio** (busca la aplicación Aprender los gestos).
+Le mostraremos los conceptos básicos la primera vez que use HoloLens. También encontrará un tutorial de gestos en el **menú** Inicio: busque la aplicación Gestos de aprendizaje.
 
-### <a name="the-hand-tracking-frame"></a>Marco de seguimiento de manos
+### <a name="the-hand-tracking-frame"></a>El marco de seguimiento de manos
 
-HoloLens tiene sensores que pueden ver unos metros a cada lado de donde te encuentres. Cuando uses las manos, tendrás que mantenerlas dentro de ese marco u HoloLens no las verá. Mientras te desplaces, el marco se moverá contigo.  
+HoloLens tiene sensores que pueden ver unos pocos pies a cualquier lado. Cuando use las manos, deberá mantenerlas dentro de ese marco o HoloLens no las verá. A medida que se mueve, el marco se mueve con usted.  
 
 ![Imagen que muestra el marco de seguimiento de manos de HoloLens](./images/hololens-2-gesture-frame.png)
 
-### <a name="open-the-start-menu-with-bloom"></a>Abrir el menú Inicio con eclosionar
+### <a name="open-the-start-menu-with-bloom"></a>Abrir el menú Inicio con Bloom
 
-Para abrir el menú **Inicio** :
+Para abrir el **menú** Inicio:
 
-1. Mantén la mano delante de ti para situarla en el marco de gestos.
-1. Eclosionar: junta todos los dedos y luego abre la mano.
-  ![Animación que muestra el gesto de eclosión](./images/hololens-bloom.gif)
+1. Mantenga la mano delante de usted para que se encuentra en el marco de gestos.
+1. Bloom: reúne todos los dedos y abre la mano.
+  ![Animación que muestra el gesto de Bloom](./images/hololens-bloom.gif)
 
-### <a name="select-holograms-with-gaze-and-air-tap"></a>Seleccionar hologramas con la mirada y pulsando en el aire
+### <a name="select-holograms-with-gaze-and-air-tap"></a>Selección de hologramas con mirada y pulsación en el aire
 
-Para seleccionar una aplicación u otro holograma, pulsa en ellos en el aire mientras miras directamente al holograma que estás seleccionando. Para ello, sigue estos pasos:
+Para seleccionar una aplicación u otro holograma, pulse en el aire mientras mira directamente el holograma que está seleccionando. Para ello, siga estos pasos:
 
-1. Mira al holograma que quieres seleccionar.
-1. Apunta el dedo índice hacia el techo.
-1. Pulsar en el aire: baja el dedo y luego elévalo rápidamente.
-   ![Animación del gesto de pulsación en el aire](./images/hololens-air-tap.gif)
+1. Mire el holograma que desea seleccionar.
+1. Apunte el dedo índice hacia arriba hacia el límite máximo.
+1. Pulsación en el aire: baja el dedo y, a continuación, lo eleva rápidamente.
+   ![Animación de gestos de pulsación en el aire](./images/hololens-air-tap.gif)
 
-### <a name="select-a-hologram-by-using-your-voice"></a>Seleccionar un holograma con la voz
+### <a name="select-a-hologram-by-using-your-voice"></a>Selección de un holograma mediante la voz
 
-1. El cursor de mirada es un punto que desplazas moviendo la cabeza. Puedes usarlo para el destino de los comandos de voz con precisión.
-1. Mira el holograma que deseas seleccionar.
-1. Para seleccionar el holograma, di "Seleccionar".
+1. El cursor de mirada es un punto que se mueve moviendo la cabeza. Puede usarlo para dirigirse a comandos de voz con precisión.
+1. Mire el holograma que desea seleccionar.
+1. Para seleccionar el holograma, diga "Seleccionar".
 
 ## <a name="holograms-and-apps"></a>Hologramas y aplicaciones
 
-Ahora es el momento de poner gestos a la prueba.
+Ahora es el momento de poner los gestos a prueba.
 
-Encontrarás las aplicaciones instaladas en el [menú Inicio](holographic-home.md); hay más aplicaciones para HoloLens (1.ª generación) en Microsoft Store.
+Encontrará las aplicaciones instaladas en [](holographic-home.md) la menú Inicio y hay más aplicaciones para HoloLens (primera generación) en el Microsoft Store.
 
-Abre el menú **Inicio** y selecciona una aplicación.
+Abra el **menú** Inicio y seleccione una aplicación.
 
-El uso de aplicaciones en HoloLens es algo diferente de en un PC: algunas aplicaciones usan una vista 2D y se parecen a otras aplicaciones Windows. Otras aplicaciones (aplicaciones inmersivas) usan una vista 3D y, cuando las inicias, se convierten en la única aplicación que ves.
+El uso de aplicaciones en HoloLens es un poco diferente de en un equipo: algunas aplicaciones usan una vista 2D y se parecen a otras aplicaciones de Windows. Otras aplicaciones (aplicaciones inmersivas) usan una vista 3D y, al iniciarlas, se convierten en la única aplicación que se ve.
 
-Cuando colocas una ventana de la aplicación o un iniciador de aplicaciones, estos permanecerán colocados hasta que los quites. Puedes mover o cambiar el tamaño de estos hologramas en tu casa de realidad mixta en cualquier momento.
+Cuando coloque una ventana de aplicación o un iniciador de aplicaciones, permanecerá hasta que la quite. Puede mover o cambiar el tamaño de estos hologramas en el ambiente principal en cualquier momento.
 
-## <a name="move-resize-and-rotate-apps"></a>Mover, cambiar el tamaño y girar aplicaciones
+## <a name="move-resize-and-rotate-apps"></a>Movimiento, cambio de tamaño y rotación de aplicaciones
 
-El movimiento y el cambio de tamaño de aplicaciones en HoloLens funcionan de forma un tanto diferente a como lo hacen en un PC. En lugar de arrastrar la aplicación, usarás la mirada, junto con un [gesto](https://support.microsoft.com/help/12644/hololens-use-gestures) o el [mando](hololens1-clicker.md). También puedes girar una ventana de aplicación en el espacio 3D.
-
-> [!TIP]
-> Reorganiza las aplicaciones con la voz: mira fijamente a una aplicación y di "Orientar hacia mí", "Más grande" o "Más pequeño". O bien, haz que Cortana mueva una aplicación por ti: di "Hola Cortana, mueve \**nombre de aplicación\** aquí".
-
-### <a name="move-an-app"></a>Mover una aplicación
-
-Mira a la aplicación (en la barra de título de una ventana de aplicación) y luego realiza una de las siguientes acciones.
-
-- Mantén pulsado para seleccionar la aplicación. Mueve la mano para colocar la aplicación y eleva el dedo para situarla.
-- Selecciona **Ajustar**, mantén pulsado y mueve la mano para colocar la aplicación. Levanta el dedo para colocarlo y, a continuación, selecciona **Listo**.
-- Selecciona **Ajustar**, haz clic y mantén presionado el mando y, a continuación, mueve la mano para colocar la aplicación. Suelta el mando y, a continuación, selecciona **Listo**.
+Mover y cambiar el tamaño de las aplicaciones en HoloLens funciona de forma un poco diferente a como lo hace en un equipo. En lugar de arrastrar la aplicación, usará la mirada, junto con un [gesto](https://support.microsoft.com/help/12644/hololens-use-gestures) o el [clicker](hololens1-clicker.md). También puede girar una ventana de la aplicación en un espacio 3D.
 
 > [!TIP]
-> Si sueltas aplicaciones al moverlas, asegúrate de mantener la mano en el marco de gesto, siguiéndola con la mirada.
+> Reorganizar las aplicaciones con la voz: mire una aplicación y diga "Orientar hacia mí", "Más grande" o "Más pequeña". O bien, haga que Cortana mueva una aplicación por usted: "Hola Cortana, mueva el nombre \* *de la \** aplicación aquí".
 
-### <a name="resize-an-app"></a>Cambiar el tamaño de una aplicación
+### <a name="move-an-app"></a>Movimiento de una aplicación
 
-Mira a la aplicación y después realiza una de las siguientes acciones.
+Mire la aplicación (en la barra de título de una ventana de la aplicación) y, a continuación, realice una de las siguientes acciones.
 
-- Mira a una esquina o un borde de una ventana de aplicación y mantén pulsado. Mueve la mano para cambiar el tamaño de la aplicación y levanta el dedo cuando hayas terminado.
-- Selecciona **Ajustar**. Mira a uno de los cuadrados azules de las esquinas de la aplicación, mantén pulsado y luego mueve la mano para cambiar el tamaño de la aplicación. Levanta el dedo para soltarlo y, a continuación, selecciona **Listo**.
-- Selecciona **Ajustar**. Mira a uno de los cuadrados azules de las esquinas de la aplicación, mantén pulsado el control y luego mueve la mano para cambiar el tamaño de la aplicación. Suelta el mando y después selecciona **Listo**.
+- Mantenga pulsado para seleccionar la aplicación. Mueva la mano para colocar la aplicación y suba el dedo para colocarla.
+- Seleccione **Ajustar,** mantenga pulsado y mueva la mano para colocar la aplicación. Suba el dedo para colocarlo y, a continuación, **seleccione Listo.**
+- Seleccione **Ajustar,** haga clic y mantenga presionado el botón de clic y mueva la mano para colocar la aplicación. Suelte el botón de clic y, a continuación, **seleccione Listo.**
 
 > [!TIP]
-> En el modo Ajustar, puedes mover o cambiar el tamaño de los hologramas.
+> Si coloca aplicaciones al moverlas, asegúrese de mantener la mano en el marco de gestos si la sigue con la mirada.
 
-### <a name="rotate-an-app"></a>Girar una aplicación
+### <a name="resize-an-app"></a>Cambio de tamaño de una aplicación
 
-Mira a la aplicación y mantén pulsado con ambas manos para seleccionarla. Gira la aplicación manteniendo una mano quieta y moviendo la otra mano en torno a ella. Cuando hayas terminado, levanta los dos dedos índice.
+Mire la aplicación y, a continuación, realice una de las acciones siguientes.
 
-### <a name="scroll-content-in-an-app-window"></a>Desplazar el contenido en una ventana de aplicación
+- Mire a una esquina o borde de una ventana de la aplicación y pulse y mantenga presionado. Mueva la mano para cambiar el tamaño de la aplicación y suba el dedo cuando haya terminado.
+- Seleccione **Ajustar**. Mire uno de los cuadrados azules en las esquinas de la aplicación, pulse y mantenga presionada la mano y mueva la mano para cambiar el tamaño de la aplicación. Suba el dedo para liberarlo y, a continuación, seleccione **Listo.**
+- Seleccione **Ajustar**. Mire uno de los cuadrados azules en las esquinas de la aplicación, haga clic y mantenga presionado el botón de clic y mueva la mano para cambiar el tamaño de la aplicación. Suelte el botón de clic y, a continuación, **seleccione Listo.**
 
-Mira el contenido de la ventana de aplicación. Mantén pulsado y, a continuación, mueve la mano ligeramente hacia arriba o hacia abajo para desplazarte por el contenido.
+> [!TIP]
+> En el modo Ajustar, puede mover o cambiar el tamaño de cualquier holograma.
 
-## <a name="meet-the-hololens-1st-gen-clicker"></a>Conoce el mando de HoloLens (1.ª generación)
+### <a name="rotate-an-app"></a>Rotación de una aplicación
 
-El [mando de HoloLens (1.ª generación)](hololens1-clicker.md) te ofrece otra manera de interactuar con hologramas. [Emparéjalo](hololens-connect-devices.md) con tu HoloLens y, a continuación, úsalo junto con la mirada para seleccionar, desplazarte y mucho más.
+Mire la aplicación y pulse y mantenga presionadas las dos manos para seleccionarla. Gira la aplicación manteniendo una mano estable y moviendo la otra mano alrededor de ella. Cuando haya terminado, eleve ambos dedos de índice.
+
+### <a name="scroll-content-in-an-app-window"></a>Desplazamiento del contenido en una ventana de la aplicación
+
+Mire el contenido de la ventana de la aplicación. Mantenga presionada la tecla y mueva la mano ligeramente hacia arriba o hacia abajo para desplazar el contenido.
+
+## <a name="meet-the-hololens-1st-gen-clicker"></a>Meet the HoloLens (1st gen) Clicker
+
+El [clic de HoloLens (1.ª generación)](hololens1-clicker.md) le ofrece otra manera de interactuar con hologramas. [Emparejáelo](hololens-connect-devices.md) con HoloLens y úselo junto con la mirada para seleccionar, desplazarse y mucho más.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-¡Enhorabuena! Ya estás listo para usar HoloLens (1.ª generación).
+Felicidades. está listo para usar HoloLens (1.ª generación).
 
-Ahora puedes configurar tu HoloLens (1.ª generación) para satisfacer tus necesidades específicas.
+Ahora puede configurar HoloLens (1ª generación) para satisfacer sus necesidades específicas.
 
-[Conectar dispositivos Bluetooth como el mouse y el teclado](hololens-connect-devices.md)
+[Conexión de dispositivos Bluetooth como mouse y teclado](hololens-connect-devices.md)
 
-[Más información sobre voz y Cortana](hololens-cortana.md)
+[Más información sobre Voice y Cortana](hololens-cortana.md)
 
-### <a name="help-i-dont-see-my-holograms"></a>¡Ayuda! No veo mis hologramas
+### <a name="help-i-dont-see-my-holograms"></a>Ayuda No veo mis hologramas
 
-Si no ves hologramas que has colocado mientras usabas HoloLens, estas son algunas cosas que puedes probar:
+Si no ve los hologramas que ha colocado al usar HoloLens, estos son algunos de los aspectos que debe probar:
 
-- Asegúrate de estar en la zona adecuada. Recuerda que los hologramas permanecen donde los dejaste.
-- Asegúrate de estar en una habitación bien iluminada sin mucha luz solar directa.
-- Espera. Cuando HoloLens tiene problemas para reconocer el espacio, los hologramas colocados anteriormente pueden tardar un minuto en volver a aparecer.
-- Si el problema continúa, es posible que desees borrar tus datos de almacenamiento de Hologramas en **Configuración** > **Sistema** > **Hologramas** y, a continuación, colocar hologramas de nuevo en la casa de realidad mixta.
+- Asegúrese de que está buscando en el área derecha recuerde que los hologramas permanecen &mdash; donde los dejó.
+- Asegúrese de que está en una sala bien iluminación sin muchos problemas directos.
+- Esperar. Cuando HoloLens tiene problemas para reconocer el espacio, los hologramas colocados previamente pueden tardar hasta un minuto en volver a aparecer.
+- Si el problema persiste, es posible que quiera borrar los datos de almacenamiento de hologramas en Configuración Hologramas del sistema y, a continuación, colocar los  >    >  hologramas en ambiente principal nuevo.

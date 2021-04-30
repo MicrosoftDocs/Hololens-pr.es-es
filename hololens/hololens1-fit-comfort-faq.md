@@ -1,6 +1,6 @@
 ---
-title: Preguntas más frecuentes sobre comodidad y ajuste de HoloLens (1.ª generación)
-description: Mantente al día de las respuestas a las preguntas más frecuentes sobre cómo adaptarse a tu dispositivo de realidad mixta HoloLens (1.º generación).
+title: Preguntas más frecuentes sobre ajuste y comodidad de HoloLens (1.ª generación)
+description: Manténgase al día con las respuestas a las preguntas más frecuentes sobre cómo ajustar su dispositivo de realidad mixta HoloLens (1.ª generación).
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -14,56 +14,56 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c596eac214b0134d04a5b34acded69ff973be3b4
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439026"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309058"
 ---
-# <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>Preguntas más frecuentes sobre comodidad y ajuste de HoloLens (1.ª generación)
+# <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>Preguntas más frecuentes sobre ajuste y comodidad de HoloLens (1.ª generación)
 
-Estas son algunas sugerencias sobre cómo sentirte cómodo y disfrutar de la mejor experiencia con tu HoloLens.
+Estas son algunas sugerencias sobre cómo mantenerse cómodo y tener la mejor experiencia con HoloLens.
 
-Para obtener instrucciones paso a paso y ver un vídeo acerca de cómo ponerte el dispositivo y ajustarlo, consulta [Obtener HoloLens (1.ª generación) listo para usar](hololens1-setup.md).
+Para obtener instrucciones paso a paso y un vídeo sobre cómo colocar y ajustar el dispositivo, consulte Get [your HoloLens (1st gen) ready to use (Preparar HoloLens (1.ª generación) para usar](hololens1-setup.md).
 
 > [!NOTE]
-> Las sugerencias sobre ajuste y comodidad de este tema solo se han pensado como orientación general y no reemplazan a ninguna legislación ni normativa, o tu buen criterio al usar HoloLens. Mantente protegido y diviértete
+> Las sugerencias de ajuste y confort de este tema están pensadas solo como instrucciones generales que no reemplazan ninguna ley ni normativa, ni su buen criterio al &mdash; usar HoloLens. Manténgase seguro y diviértase.
 
-Estas son algunas sugerencias sobre cómo sentirte cómodo y disfrutar de la mejor experiencia con tu HoloLens.
+Estas son algunas sugerencias sobre cómo mantenerse cómodo y tener la mejor experiencia con HoloLens.
 
-## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>Estoy incómodo cuando uso el dispositivo. ¿Qué debería hacer?
+## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>Tengo problemas al usar mi dispositivo. ¿Cuál debo hacer?
 
-Si te sientes incómodo, descansa hasta que te sientas mejor. Intenta sentarte en una habitación bien iluminada y relájate un poco. La próxima vez que uses tu HoloLens, intenta usarlo durante un período de tiempo más corto.
+Si experimenta molestias, tómese un respiro hasta que se sienta mejor. Pruebe a estar en una sala bien iluminación y relajándose un poco. La próxima vez que use HoloLens, intente usarlo durante un período de tiempo más corto al principio.
 
-Para más información, consulta [Salud y seguridad en HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661).
+Para obtener más información, [vea Health and safety on HoloLens (Estado y seguridad en HoloLens).](https://go.microsoft.com/fwlink/p/?LinkId=746661)
 
-## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>No veo el marco holográfico completo o mis hologramas están cortados
+## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>No puedo ver todo el marco holográfico o se cortan los hologramas.
 
-Para ver el borde superior del fotograma holográfico, mueve el dispositivo para colocártelo más arriba en la cabeza o inclina la banda de la cabeza ligeramente delante. Para ver el borde inferior, mueve el dispositivo para que quede más abajo en tu cabeza o inclina la banda de la cabeza ligeramente delante. Si el borde izquierdo o derecho del marco de la vista no está visible, asegúrate de que tienes centrado en la frente el visor de HoloLens.
+Para ver el borde superior del marco holográfico, mueva el dispositivo para que se sitirá más arriba en la cabeza, o bien anécdolo ligeramente delante. Para ver el borde inferior, mueva el dispositivo para que se sit sit en la parte inferior de la cabeza o en ángulo hacia abajo ligeramente delante. Si el borde izquierdo o derecho del marco de vista no está visible, asegúrese de que el visor de HoloLens está centrado en su casco.
 
-## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>Tengo que mirar hacia arriba o hacia abajo para ver hologramas
+## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>Necesito buscar o bajar para ver hologramas
 
-Intenta ajustar la posición del visor del dispositivo para que el marco holográfico coincida con la de tu mirada natural. A continuación se muestra cómo hacerlo:
+Intente ajustar la posición del visor del dispositivo para que el marco holográfico coincida con la mirada natural. A continuación, se indica cómo puede hacerlo.
 
-- **Si tengo que mirar hacia arriba para ver hologramas**. En primer lugar, mueve la parte posterior de la banda de la cabeza algo más arriba en tu cabeza. Luego, usa una mano para mantener la banda de la cabeza en su lugar y la otra para girar suavemente el visor, de modo que tengas una buena visión del marco holográfico.
-- **Si tengo que mirar hacia abajo para ver hologramas**. En primer lugar, mueve la parte posterior de la banda de la cabeza algo más abajo en tu cabeza. Después, coloca los pulgares debajo de los brazos del dispositivo y los dedos índice encima de la banda de la cabeza y aprieta ligeramente con los pulgares para girar el visor, de modo que tengas una buena visión del marco holográfico.
+- **Si necesita buscar para ver los hologramas**. En primer lugar, cambie la parte posterior de la banda de la cabeza un poco más arriba. A continuación, use una mano para mantener la banda de la cabeza en su lugar y la otra para girar el visor de forma que tenga una buena vista del marco holográfico.
+- **Si necesita mirar hacia abajo para ver los hologramas**. En primer lugar, cambie la parte posterior de la banda de la cabeza un poco más abajo en la cabeza. A continuación, coloque los dedos debajo de los dedos del dispositivo y de índice en la parte superior de la banda de la cabeza, y colóquelos con los dedos para girar el visor de modo que tenga una buena vista del marco holográfico.
 
-## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>El dispositivo se desliza hacia abajo cuando lo utilizo o necesito apretar demasiado fuerte la banda de la cabeza para que se mantenga fija.
+## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>El dispositivo se desliza hacia abajo cuando lo estoy usando o tengo que hacer que la banda de la cabeza sea demasiado estrecha para mantenerla segura.
 
-La correa puede ayudarte a mantener fijo tu HoloLens en la cabeza, en especial si te mueves mucho. La correa también te puede permitir aflojar algo la banda de la cabeza. [Aprende cómo se usa](hololens1-setup.md#adjust-fit).
+La sobrecarga puede ayudar a mantener holoLens seguro en la cabeza, especialmente si se mueve mucho. La cinta también puede permitir que afloje un poco la banda de la cabeza. [Obtenga información sobre cómo usarlo.](hololens1-setup.md#adjust-fit)
 
-También puedes probar con la colocación de la banda de la cabeza. Según el tamaño y la forma de tu cabeza, es posible que tengas que deslizarla hacia arriba o hacia abajo para cambiar su posición en la frente.
+También puede experimentar con el posicionamiento de la banda de la cabeza en función del tamaño y la forma de la cabeza; es posible que tenga que deslizarla hacia arriba o hacia abajo para cambiar su posición en &mdash; la cabeza.
 
-## <a name="my-hololens-feels-heavy-on-my-nose"></a>Siento que HoloLens pesa sobre la nariz
+## <a name="my-hololens-feels-heavy-on-my-nose"></a>My HoloLens feels heavy on my nose (Mi HoloLens me resulta pesado en la punta)
 
-Si HoloLens se ajusta correctamente, la almohadilla de la nariz debería pesar poco en la nariz. Si se nota pesada en la nariz, intenta girar el visor hacia arriba o ajustar el ángulo de la banda de la cabeza. También puedes deslizar el visor del dispositivo hacia arriba y agarra los laterales del dispositivo justo detrás del visor y tirar de él hacia adelante con suavidad.
+Si holoLens se ajusta correctamente, la almohadilla de la punta debe estar ligeramente sobre la punta. Si se siente pesado en la punta, pruebe a girar el visor hacia arriba o ajustar el ángulo de la banda de la cabeza. También puede deslizar el visor de dispositivos para agarrar los manos del dispositivo justo detrás del &mdash; visor y avanzar hacia delante.
 
-## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>¿Cómo puedo ajustar HoloLens para mis gafas?
+## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>¿Cómo puedo ajustar HoloLens para que se ajuste a mis gafas?
 
-El visor del dispositivo puede deslizarse hacia dentro y hacia afuera para integrar las gafas. Agarre los lados del dispositivo justo detrás del visor y tire hacia adelante con suavidad para ajustarlo.
+El visor del dispositivo puede deslizarse hacia dentro y hacia fuera para dar cabida a los ojos. Sujete los ángulos del dispositivo justo detrás del visor y descántese hacia delante para ajustarlo.
 
-## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>Se me cansan los brazos al usar gestos. ¿Qué puedo hacer?
+## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>Mi mano se cansa cuando uso gestos. ¿Qué puedo hacer?
 
-Al usar gestos, no es necesario extender los brazos lejos del cuerpo. Mantenlos más cerca de ti, donde te resulte más cómodo y te canses menos. [Obtener más información acerca de gestos](hololens1-basic-usage.md#use-hololens-with-your-hands).
+Al usar gestos, no es necesario extender el mano a mano lejos del cuerpo. Manténla más cerca de tu lado, donde sea más cómodo y se sienta menos cómodo. [Obtenga más información sobre los gestos](hololens1-basic-usage.md#use-hololens-with-your-hands).
 
-Y asegúrate de probar los [comandos de voz](hololens-cortana.md) y el [mando de HoloLens](hololens1-clicker.md).
+Y asegúrese de probar los comandos [de voz y](hololens-cortana.md) el botón de clic de [HoloLens](hololens1-clicker.md).

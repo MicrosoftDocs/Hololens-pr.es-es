@@ -1,6 +1,6 @@
 ---
-title: Preguntas más frecuentes acerca de la limpieza de HoloLens 2
-description: Obtenga respuestas actualizadas para todas las preguntas más frecuentes para limpiar y mantener su dispositivo HoloLens 2.
+title: HoloLens 2 de limpieza
+description: Obtenga respuestas actualizadas para todas las preguntas más frecuentes para limpiar y mantener el HoloLens 2 dispositivo.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -16,18 +16,18 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327384"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108310120"
 ---
-# Preguntas más frecuentes acerca de la limpieza de HoloLens 2
+# <a name="hololens-2-cleaning-faq"></a>HoloLens 2 de limpieza
 
 > [!IMPORTANT]  
-> Microsoft no puede tomar una determinación de la efectividad de un producto desenlazador determinado en la lucha contra las rencciones, como COVID-19. Consulte las instrucciones de su autoridad de salud pública local sobre cómo mantenerse a salvo de posibles infecciones.  
+> Microsoft no puede tomar una determinación de la eficacia de ningún producto como el de la covid-19. Consulte las instrucciones de la autoridad de salud pública local sobre cómo mantenerse a salvo de posibles virus.  
 
-## Uso y cuidado de HoloLens 2
+## <a name="hololens-2-use-and-care"></a>HoloLens 2 uso y cuidado
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
@@ -35,60 +35,60 @@ ms.locfileid: "11327384"
 
 **Para limpiar el dispositivo**
 
-1. Quita cualquier pórmico con una microfibra de microfibra suave y sin lint para limpiar la superficie del dispositivo.
+1. Quite cualquier resto de tierra mediante una microfibra sin lint para borrar rápidamente la superficie del dispositivo.
 
-   ![Limpiar mientras se mantiene en la almohadilla de la frente](images/hl2-cleaning.png)
+   ![Limpiar mientras se mantiene presionado desde el panel de la frente](images/hl2-cleaning.png)
 
-2. Resalte ligeramente el tejido mediante el consumo de isopropyl "70%" médico y, a continuación, use el trapo suave para limpiar la superficie del dispositivo.
+2. Para hidratar ligeramente la comida, use el "70 %" de alcohol isopropílico médico y, a continuación, use la infierente para borrar rápidamente la superficie del dispositivo.
 
-3. Deja que el dispositivo se seque completamente.
+3. Deje que el dispositivo se seque completamente.
 
-**Para limpiar la almohadilla de la frente**
+**Para limpiar el panel de la frente**
 
-1. Use agua y un soap suave y desenlace para limpiar un maní y, a continuación, use el trapo de limpieza para limpiar la almohadilla de la frente.
-1. Deje que la almohadilla de la frente se seque completamente.
+1. Use agua y un agua y un soap desenmascarado para limpiar una lona y, a continuación, use el acarreo para borrar la almohadilla de la frente.
+1. Deje que el panel de la frente seque completamente.
 
-## ¿Puedo usar cualquier lente más limpia para limpiar el visor de HoloLens?
+## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>¿Puedo usar cualquier limpiador de lentes para limpiar el visor de HoloLens?
 
-No. Los limpiabos pueden ser fáciles de evitar para los protectores del visor. Para limpiar el visor, siga estos pasos:  
+No. Los limpiadores de lentes pueden ser más fáciles de usar en el visor. Para limpiar el visor, siga estos pasos:  
 
-1. Quita cualquier pórmico con una microfibra sin lint para limpiar el visor con suavidad.
-1. Resalte ligeramente un trapo mediante el consumo de isopropyl "70%" médico y, a continuación, limpie ligeramente el visor.
+1. Quite cualquier resto de tierra mediante una microfibra sin lint para limpiar rápidamente el visor.
+1. Para hidratar ligeramente una lona, use el "70 %" médico isopropyl,y, a continuación, borre el visor.
 1. Deje que el visor se seque completamente.
 
-## ¿Puedo usar eliminaciones de limpieza para limpiar el dispositivo?
+## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>¿Puedo usar borrados de limpieza para limpiar el dispositivo?
 
-Sí, si las toalladas no contienen ninguna retención. Puedes usar eliminaciones de limpieza que no se puedan silenciar para borrar ligeramente [las superficies de HoloLens.](#hololens-2-use-and-care)  
-
-> [!CAUTION]  
-> Evita usar limpiezas de limpieza que contengan la limpieza para limpiar las superficies de HoloLens. Es aceptable usar eliminaciones de barrido en situaciones críticas, cuando no hay nada más disponible. Sin embargo, puede dañar el visor de HoloLens u otras superficies.
-
-## ¿Puedo usar el alcohol para limpiar el dispositivo?
-
-Sí. Puedes usar una solución de "70%" isopropyl y agua para limpiar las superficies duras del dispositivo, incluido el visor. Resalte ligeramente el tejido con una mezcla de agua y agua isopropyl y, a continuación, limpie la superficie del dispositivo con suavidad.
-
-## ¿Se puede reemplazar la almohadilla de la frente?
-
-Sí. La almohadilla de la frente se une magnéticamente al dispositivo. Para separarla, éjala ligeramente de la banda de la cabeza. Para reemplazarla, vuelva a colocarla en su sitio.
-
-![Quitar o reemplazar la almohadilla de la frente](images/hololens2-remove-browpad.png)
-
-## ¿Cómo puedo limpiar la almohadilla de la frente?
-
-Para limpiar la almohadilla de la frente, límpiala con un trapo que sea más fácil de limpiar con agua y un soap desenlazamiento suave. Deje que la almohadilla de la frente se seque completamente antes de usarla de nuevo.
-
-## ¿Puedo usar la luz uv (UV) para sanear el dispositivo?
-
-Uvc con LED UVC, que funciona a 265nm con un nivel de intensidad de 0,5-0,6 mW/cm 2 y no emite el nivel de emisión, se puede usar para <sup> </sup> sanitizar HoloLens2. Siga las especificaciones del fabricante sobre el control y el tiempo de exposición.
+Sí, si los borrados no contienen ningún resalte. Puede usar borrados de limpieza que no son fáciles de limpiar para borrar [las superficies de HoloLens.](#hololens-2-use-and-care)  
 
 > [!CAUTION]  
-> Los altos niveles de exposición de UV-A y UV-B pueden degradar la calidad de la pantalla del dispositivo y dañar el visor. La exposición excesiva a UV-A y UV-B tiene los siguientes efectos, en orden de la duración y la intensidad de la exposición:
+> Evite el uso de borrados de limpieza que contengan productos para limpiar las superficies de HoloLens. Es aceptable usar borrados de borrado en situaciones críticas, cuando no hay nada más disponible. Sin embargo, la insondencia puede dañar el visor de HoloLens u otras superficies.
+
+## <a name="can-i-use-alcohol-to-clean-the-device"></a>¿Puedo usar el alcohol para limpiar el dispositivo?
+
+Sí. Puede usar una solución de agua y alcohol isopropil "70 %" para limpiar las superficies duras del dispositivo, incluido el visor. Para limpiar ligeramente la comida, use una mezcla de agua y agua isopropyl y, a continuación, borre la superficie del dispositivo.
+
+## <a name="is-the-brow-pad-replaceable"></a>¿Se puede reemplazar el panel de la frente?
+
+Sí. El panel de la frente está conectado de forma magnético al dispositivo. Para desasoyéctela, lejos de la banda de la cabeza. Para reemplazarlo, vuelva a colocarlo.
+
+![Quitar o reemplazar el panel de la frente](images/hololens2-remove-browpad.png)
+
+## <a name="how-can-i-clean-the-brow-pad"></a>¿Cómo puedo limpiar el panel de la frente?
+
+Para limpiar el panel de la frente, límpialo con un desenlace que se compadece con agua y un soap desenmascarado. Deje que el panel de la frente seque completamente antes de usarlo de nuevo.
+
+## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>¿Puedo usar luz uv (UV) para sanear el dispositivo?
+
+La intensidad UVC mediante LED UVC, que funciona a 265 nm con un nivel de intensidad de 0,5-0,6 mW/cm<sup>2,</sup>y no emite celo, se puede usar para sanear HoloLens2. Siga las especificaciones del fabricante sobre el tiempo de control y exposición.
+
+> [!CAUTION]  
+> Los niveles altos de exposición UV-A y UV-B pueden degradar la calidad de la pantalla del dispositivo y dañar el visor. La exposición excesiva a uv-a y uv-b tiene los siguientes efectos, en orden de duración e intensidad de la exposición:
 >  
-> 1. La almohadilla de la frente y los cierres de dispositivos se decolora.
-> 1. Los defectos aparecen en el protector anti reflectante (AR) en el visor y en las ventanas del sensor.
+> 1. El panel de la frente y los cierres de dispositivos se desconcerta.
+> 1. Los defectos aparecen en el antirreflectante (AR) en el visor y en las ventanas del sensor.
 > 1. Los defectos aparecen en los materiales base del visor y en las ventanas del sensor.
-> 1. El rendimiento de la pantalla se degrada.
+> 1. Muestra las degradaciones de rendimiento.
 
-## ¿Se puede reemplazar la almohadilla trasera?
+## <a name="is-the-rear-pad-replaceable"></a>¿Se puede reemplazar el panel posterior?
 
 No.

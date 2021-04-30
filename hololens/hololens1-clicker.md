@@ -1,6 +1,6 @@
 ---
-title: Use el mando de HoloLens
-description: Este artículo describe cómo usar el mando HoloLens, incluyendo el apareamiento del mando, la carga y la recuperación.
+title: Uso del botón de clic de HoloLens
+description: En este artículo se describe cómo usar el clicker de HoloLens, incluidos el emparejamiento, la carga y la recuperación del clicker.
 ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
 ms.date: 09/16/2019
 manager: jarrettr
@@ -14,89 +14,89 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439056"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108310266"
 ---
-# <a name="use-the-hololens-1st-gen-clicker"></a>Usar el mando en HoloLens (1ª generación)
+# <a name="use-the-hololens-1st-gen-clicker"></a>Uso del clicker HoloLens (1.ª generación)
 
-El mando fue diseñado específicamente para el HoloLens (1 era generación) y le da otra forma de interactuar con los hologramas. Viene con los HoloLens (1 era generación), en una caja separada.
+El clicker se diseñó específicamente para HoloLens (1.ª generación) y ofrece otra manera de interactuar con hologramas. Viene con HoloLens (1.ª generación), en un cuadro independiente.
 
-Úselo en lugar de los gestos con la mano para seleccionar, desplazar, mover y cambiar el tamaño de las aplicaciones.
+Úselo en lugar de gestos de mano para seleccionar, desplazar, mover y cambiar el tamaño de las aplicaciones.
 
-## <a name="clicker-hardware-and-pairing"></a>El hardware del mando y apareamiento
+## <a name="clicker-hardware-and-pairing"></a>Emparejamiento y hardware del clicker
 
-El mando de HoloLens (1 era generación) tiene un lazo en el dedo para que sea más fácil de sujetar, y una luz indicadora.
+El clic de HoloLens (1.ª generación) tiene un bucle de dedo para que sea más fácil de mantener y una luz indicadora.
 
-![Mando de HoloLens](images/use-hololens-clicker-1.png)
+![The HoloLens Clicker](images/use-hololens-clicker-1.png)
 
-### <a name="clicker-indicator-lights"></a>Luces indicadoras del mando
+### <a name="clicker-indicator-lights"></a>Luces indicadoras de clicker
 
-Esto es lo que significan las luces del mando.
+Esto es lo que significan las luces del clicker.
 
-- ** Blanco parpadeante**. El mando está en modo de apareamiento.
-- ** Blanco parpadeando rápido**. Apareamiento completado.
-- **Blanco sólido**. El mando se está cargando.
-- **Ámbar parpadeante**. La batería está baja.
-- **Ámbar sólido**. El mando tuvo un error y tendrá que reiniciarlo. Mientras se presiona el botón de apareamiento, haga clic y manténgalo presionado durante 15 segundos.
+- **Blanco parpadeante.** El clicker está en modo de emparejamiento.
+- **Blanco de parpadeo rápido.** El emparejamiento se ha realizado correctamente.
+- **Blanco sólido.** El usuario que hace clic se está cobrando.
+- **Ámbar parpadeante.** La batería está baja.
+- **Ámbar sólido.** El clicker ha producido un error y tendrá que reiniciarlo. Al presionar el botón de emparejamiento, haga clic y mantenga presionado durante 15 segundos.
 
-### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>Aparee el mando con su HoloLens (1 era generación)
+### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>Emparejar el clicker con HoloLens (1ª generación)
 
-1. Utilice el gesto de eclosión para ir a **Inicio**, luego seleccione **Ajustes** > **Dispositivos** y verifique que el Bluetooth esté activado.
-1. En el mando, mantenga presionado el botón de apareamiento hasta que la luz de estado parpadee en blanco.
-1. En la pantalla de apareamiento, seleccione**Comando** > **Emparejamiento**.
+1. Use el gesto de Bloom para ir **a Inicio y,** a continuación, **seleccione**  >  **Dispositivos de configuración** y compruebe que Bluetooth está habilitado.
+1. En el clic, mantenga presionado el botón de emparejamiento hasta que la luz de estado parpadee en blanco.
+1. En la pantalla de emparejamiento, seleccione **Par de clicker.**  >  
 
-### <a name="charge-the-clicker"></a>Cargue el mando
+### <a name="charge-the-clicker"></a>Carga del clicker
 
-Cuando la batería del mando esté baja, el indicador de la batería parpadeará en ámbar. Enchufe el cable Micro USB en una fuente de alimentación USB para cargar el dispositivo.
+Cuando la batería del clicker está baja, el indicador de batería parpadeará en ámbar. Conecte el cable Micro USB a una fuente de alimentación USB para cargar el dispositivo.
 
-## <a name="use-the-clicker-with-hololens-1st-gen"></a>Use el mando con el HoloLens (1 era generación)
+## <a name="use-the-clicker-with-hololens-1st-gen"></a>Uso del clicker con HoloLens (1ª generación)
 
-### <a name="hold-the-clicker"></a>Mantenga el mando
+### <a name="hold-the-clicker"></a>Mantener presionado el botón de clic
 
-Para ponerlo en el mando, deslice el bucle sobre su dedo anular o medio de manera que el puerto Micro USB quede orientado hacia su muñeca. Apoye su pulgar en la hendidura.
+Para colocar en el clicker, deslice el bucle sobre el anillo o el dedo medio para que el puerto Micro USB se enrrima hacia la mano. Rest your thumb in the indentation( Rest your thumb in the indentation.
 
-![Cómo sostener el mando](images/use-hololens-clicker-2.png)
+![Cómo contener el clicker](images/use-hololens-clicker-2.png)
 
-### <a name="clicker-gestures"></a>Movimientos del mando
+### <a name="clicker-gestures"></a>Gestos del clicker
 
-Los movimientos del mando son pequeñas rotaciones de muñeca, no los grandes movimientos usados para los movimientos de mano de la HoloLens. Y HoloLens reconoce sus movimientos y clics incluso si el mando está fuera del[marco del movimiento](hololens1-basic-usage.md), así que puede mantener el mando en la posición que le resulte más cómoda.
+Los gestos del clicker son pequeñas rotaciones de rotación, no los movimientos más grandes que se usan para los gestos de mano de HoloLens. Y HoloLens reconoce sus gestos y clics incluso [](hololens1-basic-usage.md)si el clic está fuera del marco de gestos, por lo que puede mantener el clic en la posición más cómoda para usted.
 
-- **Seleccione**. Para seleccionar un holograma, botón u otro elemento, mírelo y haga clic.
+- **Seleccione**. Para seleccionar un holograma, un botón u otro elemento, ándalo y, a continuación, haga clic en él.
 
-- **Haga clic y mantenga**. Haga clic y mantenga el pulgar en el botón para hacer algunas de las mismas cosas que haría al mantener pulsado, como mover o cambiar el tamaño de un holograma.
+- **Haga clic y mantenga presionado**. Haga clic y mantenga presionado el dedo en el botón para hacer algunas de las mismas cosas que haría con pulsar y mantener presionado, como mover o cambiar el tamaño de un holograma.
 
-- **Desplazarte**. En la barra de aplicaciones, seleccione**Herramienta de desplazamiento**. Mantenga pulsado el botón y gire la palanca hacia arriba, hacia abajo, hacia la izquierda o hacia la derecha. Para desplazarse más rápido, mueva su mano más lejos del centro de la herramienta de desplazamiento.
+- **Desplácese** por . En la barra de la aplicación, seleccione **Herramienta de desplazamiento**. Haga clic y mantenga presionado y, a continuación, gire el botón de clic hacia arriba, hacia abajo, a la izquierda o a la derecha. Para desplazarse más rápido, mueva la mano más lejos del centro de la herramienta de desplazamiento.
 
-- **Zoom**. En la barra de aplicaciones, seleccione**Herramienta de zoom**. Mantenga pulsado el botón y gire la palanca hacia arriba para acercar o hacia abajo para alejar.
+- **Zoom**. En la barra de la aplicación, seleccione **Herramienta de zoom**. Haga clic y mantenga presionado y, a continuación, gire el botón de clic hacia arriba para acercar o reducir para alejar.
 
 > [!TIP]
-> Para acercar o alejar el zoom al usar Microsoft Edge, mire una página y haga doble clic.
+> Para acercar o alejar al usar Microsoft Edge, mire una página y haga doble clic.
 
-## <a name="restart-or-recover-the-clicker"></a>Reinicie o restaure el mando
+## <a name="restart-or-recover-the-clicker"></a>Reinicio o recuperación del clic
 
-Aquí tiene algunas cosas que puede probar si el mando del HoloLens no responde o no funciona bien.
+Estos son algunos aspectos que se pueden probar si el clicker de HoloLens no responde o no funciona bien.
 
-### <a name="restart-the-clicker"></a>Reiniciar el mando
+### <a name="restart-the-clicker"></a>Reiniciar el botón de clic
 
-Use la punta de un bolígrafo para presionar y mantener el botón de emparejamiento. Al mismo tiempo, haga clic y mantenga el mando durante 15 segundos. Si el mando ya estaba apareado con su HoloLens, seguirá apareado después de que se reinicie.
+Use la sugerencia de un lápiz para mantener presionado el botón de emparejamiento. Al mismo tiempo, haga clic y mantenga presionado el botón de clic durante 15 segundos. Si el clicker ya estaba emparejado con HoloLens, permanecerá emparejado después de reiniciarse.
 
-Si el mando no se enciende o no se reinicia, intente cargarlo usando el cargador HoloLens. Si la batería está muy baja, puede tardar unos minutos en encenderse la luz blanca del indicador.
+Si el clicker no se activa ni se reinicia, pruebe a cobrarlo mediante el cargador de HoloLens. Si la batería es muy baja, la luz indicadora blanca puede tardar unos minutos en activarse.
 
-### <a name="re-pair-the-clicker"></a>Aparear de nuevo el mando
+### <a name="re-pair-the-clicker"></a>Volver a emparejar el botón de clic
 
-Seleccione **Ajustes ** > **Dispositivos **y seleccione el mando. Seleccione**Eliminar**, espere unos segundos y vuelva a aparear el mando.
+Seleccione   >  **Dispositivos de configuración** y seleccione el botón de clic. Seleccione **Quitar**, espere unos segundos y, a continuación, vuelva a emparejar el botón de clic.
 
-### <a name="recover-the-clicker"></a>Restaurar el mando
+### <a name="recover-the-clicker"></a>Recuperación del clic
 
-Si al reiniciar y volver a aparear el mando no se soluciona el problema, la Herramienta de recuperación de dispositivos de Windows puede ayudarle a recuperarlo. El proceso de recuperación puede llevar algún tiempo, e instalará la última versión del software del mando. Para usar la herramienta, necesitará un ordenador con Windows 10 o posterior que tenga al menos 4 GB de espacio de almacenamiento libre.
+Si reiniciar y volver a emparejar el clicker no soluciona el problema, la Herramienta de recuperación de dispositivos Windows puede ayudarle a recuperarlo. El proceso de recuperación puede tardar algún tiempo e instalará la versión más reciente del software clicker. Para usar la herramienta, necesitará un equipo que ejecute Windows 10 o posterior que tenga al menos 4 GB de espacio de almacenamiento libre.
 
-Para restaurar el mando:
+Para recuperar el clicker:
 
-1. Descargue e instale [Windows Device Recovery Tool](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/)en su ordenador.
-1. Conecte el mando a su ordenador usando el cable Micro USB que viene con su HoloLens.
-1. Ejecute Windows Device Recovery Tool y siga las instrucciones.
+1. Descargue e instale la Herramienta [de recuperación de dispositivos Windows](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) en el equipo.
+1. Conecte el clicker al equipo mediante el cable Micro USB que se incluye con HoloLens.
+1. Ejecute la Herramienta de recuperación de dispositivos Windows y siga las instrucciones.
 
-Si el mando no se detecta automáticamente, seleccione**Mi dispositivo no fue detectado**y siga las instrucciones para poner su dispositivo en modo de recuperación.
+Si el clic no se detecta automáticamente, seleccione Mi dispositivo **no** se detectó y siga las instrucciones para poner el dispositivo en modo de recuperación.
