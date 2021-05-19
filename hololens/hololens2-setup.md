@@ -25,7 +25,7 @@ Los procedimientos siguientes te ayudarán a configurar un HoloLens 2 por primer
 
 ## Cargar tu HoloLens
 
-Conecta la fuente de alimentación al puerto de carga con el cable USB-C (incluido). Conecta la fuente de alimentación a una toma de corriente. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18W de potencia (9V a 2A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera.
+Conecta la fuente de alimentación al puerto de carga con el cable USB-C (incluido). Conecta la fuente de alimentación a una toma de corriente. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18 W de potencia (9 V a 2 A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera.
 
 La velocidad y la tasa de carga pueden variar en función del entorno en el que se ejecute el dispositivo.
 
@@ -68,8 +68,8 @@ Para encender HoloLens 2, presiona el botón de encendido.  Las luces LED situad
 | Para encender | Presionar un solo botón. | Las cinco luces se encienden y luego cambian para indicar el nivel de la batería. Después de cuatro segundos, se reproduce un sonido. |
 | Para suspensión | Presionar un solo botón. | Las cinco luces se encienden y van apagándose una a una. Después de apagar las luces, se reproduce un sonido y la pantalla muestra "Adiós". |
 | Para reactivar desde suspensión | Presionar un solo botón. | Las cinco luces se encienden y luego cambian para indicar el nivel de la batería. Un sonido se reproduce inmediatamente. |
-| Para desactivar | Presionar durante 5segundos. |  Las cinco luces se encienden y se van apagando gradualmente de una en una. Después de que se apaguen las luces, se reproduce un sonido y la pantalla muestra "Adiós". |
-| Para forzar el reinicio de Hololens si no responde | Mantener presionado durante 10segundos. | Las cinco luces se encienden y van apagándose una a una. Después de apagar las luces. |
+| Para desactivar | Presionar durante 5 segundos. |  Las cinco luces se encienden y se van apagando gradualmente de una en una. Después de que se apaguen las luces, se reproduce un sonido y la pantalla muestra "Adiós". |
+| Para forzar el reinicio de Hololens si no responde | Mantener presionado durante 10 segundos. | Las cinco luces se encienden y van apagándose una a una. Después de apagar las luces. |
 
 ## Referencia de comportamientos de HoloLens
 

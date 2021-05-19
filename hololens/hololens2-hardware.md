@@ -43,11 +43,11 @@ Microsoft HoloLens 2 es un equipo holográfico sin ninguna restricción.  Perfec
 
 ### <a name="power-supply-details"></a>Detalles de la fuente de alimentación
 
-La fuente de alimentación y el cable USB incluidos con el dispositivo son el mecanismo con el mejor soporte para la carga. La fuente de alimentación es un cargador de 18W.  Suministra 9V a 2A.
+La fuente de alimentación y el cable USB incluidos con el dispositivo son el mecanismo con el mejor soporte para la carga. La fuente de alimentación es un cargador de 18 W.  Suministra 9 V a 2 A.
 
 La velocidad y la tasa de carga pueden variar en función del entorno en el que se ejecute el dispositivo.
 
-Para mantener o potenciar el porcentaje de carga de la batería interno mientras el dispositivo está activado, debe estar conectado a un cargador de 15W.
+Para mantener o potenciar el porcentaje de carga de la batería interno mientras el dispositivo está activado, debe estar conectado a un cargador de 15 W.
 
 ## <a name="device-specifications"></a>Especificaciones del dispositivo
 
@@ -57,7 +57,7 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 | - | - |
 | Óptica | Lentes holográficas transparentes (guías de ondas) |
 | Resolución holográfica | Motores ligeros de 2k 3:2 |
-| Densidad holográfica | Radiantes >2,5k (puntos claros por radián) |
+| Densidad holográfica | Radiantes >2,5 k (puntos claros por radián) |
 | Representación basada en ojo | Optimización de visualización para posición de ojos 3D |
 
 ### <a name="sensors"></a>Sensores
@@ -88,8 +88,8 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 | - | - |
 | Sistema en chip | Plataforma de procesos Qualcomm Snapdragon 850 [detalles](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
 | Unidad de procesamiento holográfica | Unidad de procesamiento holográfica personalizada de segunda generación |
-| Memoria | DRAM de sistema LPDDR4x de 4GB |
-| Almacenamiento | UFS 2.1 de 64GB |
+| Memoria | DRAM de sistema LPDDR4x de 4 GB |
+| Almacenamiento | UFS 2.1 de 64 GB |
 | Wi-Fi | 802.11 AC 2x2 |
 | Bluetooth | 5.0 |
 | USB | USB de tipo C |
@@ -102,14 +102,14 @@ Para mantener o potenciar el porcentaje de carga de la batería interno mientras
 | Tecnología de la batería | [Baterías de litio](https://www.microsoft.com/download/details.aspx?id=43388) |
 | Comportamiento de carga | Totalmente funcional al cargar |
 | Tipo de refrigeración | Refrigerado de forma pasiva (sin ventiladores) |
-| Consumo de energía | Para mantener o potenciar el porcentaje de carga de la batería interno mientras el dispositivo está activado, debe estar conectado a un cargador de 15W. |
+| Consumo de energía | Para mantener o potenciar el porcentaje de carga de la batería interno mientras el dispositivo está activado, debe estar conectado a un cargador de 15 W. |
 
 ### <a name="fit"></a>Ajuste
 
 |   |   |
 | - | - |
 | Ajuste de tamaño | Tamaño único con banda ajustable.  Se adapta encima de las gafas |
-| Grosor | 566gramos |
+| Grosor | 566 gramos |
 
 ## <a name="device-capabilities"></a>Funcionalidades del dispositivo
 

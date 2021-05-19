@@ -215,7 +215,7 @@ El dispositivo registra su hash de hardware en un archivo CSV durante el proceso
 La página de estado de inscripción (ESP) muestra el estado de todo el proceso de configuración de dispositivos que se ejecuta cuando un usuario administrado por MDM inicia sesión en un dispositivo por primera vez. Asegúrate de que la configuración ESP es similar a la siguiente y comprueba que las tareas sean correctas.  
 
 > [!div class="mx-imgBorder"]
-> ![Configuración deESP](./images/hololens-ap-profile-settings.png)
+> ![Configuración de ESP](./images/hololens-ap-profile-settings.png)
 
 ### 7. Comprobar el estado del perfil de los dispositivos HoloLens
 

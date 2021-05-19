@@ -59,8 +59,8 @@ A partir de la versión 19041.x de HoloLens 2, también puede usar estos comando
 | - | - |
 | "Reiniciar dispositivo" | Ver un cuadro de diálogo para confirmar que quieres reiniciar el dispositivo; puedes decir "sí" para reiniciar |
 | "Apagar dispositivo" | Ver un cuadro de diálogo para confirmar que quieres desconectar el dispositivo; puedes decir "sí" para confirmar |
-| "Aumentar brillo/reducir brillo" | Aumentar o reducir el brillo de la pantalla un 10% |
-| "Subir/bajar volumen" | Aumentar o reducir el volumen un 10% |
+| "Aumentar brillo/reducir brillo" | Aumentar o reducir el brillo de la pantalla un 10 % |
+| "Subir/bajar volumen" | Aumentar o reducir el volumen un 10 % |
 | "¿Cuál es mi IP?" | Ver un cuadro de diálogo en el que se muestra la dirección IP actual del dispositivo en la red local |
 | "Haz una foto/Toma una foto" | Capturar una foto de realidad mixta de lo que estás viendo actualmente |
 | "Graba un vídeo/Inicia la grabación/Inicia la grabación de vídeo" | Empezar a grabar un vídeo de realidad mixta | 

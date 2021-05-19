@@ -41,9 +41,9 @@ Si dispones de un luxómetro, 500-1000 lux está bien para empezar.
 
 #### <a name="types-of-lighting"></a>Tipos de iluminación
 
-Los diferentes tipos de luz en un espacio también pueden influir en el seguimiento. Las bombillas pulsan con la electricidad de CA que pasa por ellas; si la frecuencia de CA es de 50Hz, la luz se pulsa a 50Hz. Un humano no puede ver este pulso. Sin embargo, la cámara de 30FPS de HoloLens ve estos cambios: algunos fotogramas estarán bien iluminados, algunos estarán mal iluminados y otros estarán sobreexpuestos a medida que la cámara intente compensar los pulsos de luz.  
+Los diferentes tipos de luz en un espacio también pueden influir en el seguimiento. Las bombillas pulsan con la electricidad de CA que pasa por ellas; si la frecuencia de CA es de 50 Hz, la luz se pulsa a 50 Hz. Un humano no puede ver este pulso. Sin embargo, la cámara de 30 FPS de HoloLens ve estos cambios: algunos fotogramas estarán bien iluminados, algunos estarán mal iluminados y otros estarán sobreexpuestos a medida que la cámara intente compensar los pulsos de luz.  
 
-En Estados Unidos, el estándar de frecuencia de electricidad es de 60Hz, de modo que los pulsos de las bombillas se armonizan con la velocidad de fotogramas de HoloLens: los pulsos de 60Hz se alinean con la velocidad de fotogramas de 30FPS de HoloLens. Sin embargo, muchos países tienen un estándar de frecuencia de CA de 50Hz, lo que significa que algunos fotogramas de HoloLens se tomarán durante los pulsos y otros no. En particular, se sabe que la iluminación fluorescente en Europa causa problemas.  
+En Estados Unidos, el estándar de frecuencia de electricidad es de 60 Hz, de modo que los pulsos de las bombillas se armonizan con la velocidad de fotogramas de HoloLens: los pulsos de 60 Hz se alinean con la velocidad de fotogramas de 30 FPS de HoloLens. Sin embargo, muchos países tienen un estándar de frecuencia de CA de 50 Hz, lo que significa que algunos fotogramas de HoloLens se tomarán durante los pulsos y otros no. En particular, se sabe que la iluminación fluorescente en Europa causa problemas.  
 
 Puedes probar varias cosas para resolver problemas de parpadeo. La temperatura, la antigüedad de la bombilla y los ciclos de calentamiento son causas habituales de parpadeo fluorescente y la sustitución de las bombillas puede resultar de utilidad. Puede resultar de utilidad apretar las bombillas y asegurarse de que los consumos de energía sean constantes.  
 
@@ -75,7 +75,7 @@ HoloLens puede adaptarse rápidamente a estos cambios, pero solo cuando esa áre
 
 De forma similar a cómo los seres humanos no pueden centrarse bien en los objetos cercanos a los ojos, HoloLens se esfuerza cuando los objetos están cerca de sus cámaras. Si un objeto se encuentra demasiado cerca para verse con ambas cámaras, o si un objeto bloquea una cámara, el dispositivo tendrá muchos más problemas con el seguimiento respecto al objeto.  
 
-Las cámaras no pueden ver más cerca de 15cm desde un objeto.
+Las cámaras no pueden ver más cerca de 15 cm desde un objeto.
 
 ### <a name="surfaces-in-a-space"></a>Superficies en un espacio
 

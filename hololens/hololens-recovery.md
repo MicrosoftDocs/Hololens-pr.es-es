@@ -25,7 +25,7 @@ ms.locfileid: "11408430"
 
 ## <a name="charge-the-device"></a>Cargar el dispositivo
 
-Antes de iniciar cualquier procedimiento de resolución de problemas, asegúrate de que tu dispositivo tenga entre 20% y 40% de batería disponible, si es posible. Utiliza el [cargador y los cables USB tipo C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) que vienen con el dispositivo HoloLens 2. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18W de potencia (9V a 2A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera. Si dichos accesorios no están disponibles, asegúrate de que el cargador disponible admita al menos 15 vatios de potencia.
+Antes de iniciar cualquier procedimiento de resolución de problemas, asegúrate de que tu dispositivo tenga entre 20% y 40% de batería disponible, si es posible. Utiliza el [cargador y los cables USB tipo C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) que vienen con el dispositivo HoloLens 2. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18 W de potencia (9 V a 2 A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera. Si dichos accesorios no están disponibles, asegúrate de que el cargador disponible admita al menos 15 vatios de potencia.
 
 > [!NOTE]
 > Si es posible, evite usar un PC para cargar el dispositivo por USB, pues implica una carga lenta.
@@ -33,7 +33,7 @@ Antes de iniciar cualquier procedimiento de resolución de problemas, asegúrate
 Si el dispositivo se enciende y funciona correctamente, hay tres formas de comprobar la carga de la batería:
 
 - Desde el menú principal de la interfaz de usuario del dispositivo HoloLens.
-- Observe el LED cerca del botón de encendido (si la carga de la batería está al 40%, debería ver al menos dos LED fijos).
+- Observe el LED cerca del botón de encendido (si la carga de la batería está al 40 %, debería ver al menos dos LED fijos).
     - Cuando se cargue el dispositivo, se iluminará el indicador de la batería para señalar el nivel de carga actual.  La última luz aparecerá y desaparecerá gradualmente para indicar la carga activa.
     - Cuando HoloLens está activado, el indicador de la batería muestra el nivel de la batería en cinco incrementos.
     - Cuando solo está encendida una de las cinco luces, significa que el nivel de batería se encuentra por debajo del 20 por ciento.
