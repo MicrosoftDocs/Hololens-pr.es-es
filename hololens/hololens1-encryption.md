@@ -1,6 +1,6 @@
 ---
 title: Cifrado de BitLocker de HoloLens
-description: Aprenda a habilitar el cifrado de dispositivos Bitlocker para proteger los archivos almacenados en los dispositivos de realidad mixta de HoloLens.
+description: Aprenda a habilitar el cifrado de dispositivos BitLocker para proteger los archivos almacenados en los dispositivos de realidad mixta de HoloLens.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,30 +11,32 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309068"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397286"
 ---
-# <a name="hololens-1st-gen-bitlocker-encryption"></a>Cifrado de BitLocker de HoloLens (1.ª generación)
+# <a name="hololens-1st-gen-bitlocker-encryption"></a>Cifrado de BitLocker de HoloLens (1ª generación)
 
 HoloLens (1.ª generación) y HoloLens 2 admiten el cifrado de dispositivos mediante BitLocker; sin embargo, BitLocker siempre está habilitado en HoloLens 2.
 
-Este artículo le ayudará a habilitar y administrar BitLocker en HoloLens (1.ª generación).
+Este artículo le ayudará a habilitar y administrar BitLocker en HoloLens (1ª generación).
 
-En HoloLens (1.ª generación), puede habilitar el cifrado de dispositivos BitLocker manualmente o mediante la administración de dispositivos móviles (MDM). Siga estas instrucciones para habilitar el cifrado [de dispositivos BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) para proteger los archivos y la información almacenada en HoloLens. El cifrado de dispositivos ayuda a proteger los datos mediante el método de cifrado AES-CBC 128, que es equivalente al método [EncryptionMethodByDriveType 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) en el proveedor de servicios de configuración (CSP) de BitLocker. El personal que tiene la clave de cifrado correcta (por ejemplo, una contraseña) puede descifrarla o realizar una recuperación de datos.
+En HoloLens (1ª generación) puede habilitar el cifrado de dispositivos BitLocker manualmente o mediante la administración de dispositivos móviles (MDM). Siga estas instrucciones para habilitar el cifrado [de dispositivos BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) para proteger los archivos y la información almacenada en HoloLens. El cifrado de dispositivos ayuda a proteger los datos mediante el método de cifrado AES-CBC 128, que es equivalente al método [EncryptionMethodByDriveType 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) en el proveedor de servicios de configuración (CSP) de BitLocker. El personal que tiene la clave de cifrado correcta (por ejemplo, una contraseña) puede descifrarla o realizar una recuperación de datos.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Habilitación del cifrado de dispositivos mediante MDM
 
-Puede usar el proveedor de Administración de dispositivos móviles (MDM) para aplicar una directiva que requiera cifrado de dispositivos. La directiva que se va a usar [es la configuración Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) en el CSP de directiva.
+Puede usar el proveedor de mobile Administración de dispositivos (MDM) para aplicar una directiva que requiera cifrado de dispositivos. La directiva que se va a usar [es la configuración Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) del CSP de directiva.
 
 [Consulte las instrucciones para habilitar el cifrado de dispositivos mediante Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 Para otras herramientas de MDM, consulte la documentación del proveedor de MDM para obtener instrucciones. Si el proveedor de MDM requiere un URI personalizado para el cifrado de dispositivos, use la siguiente configuración:
 
-- **Nombre:** un nombre de su elección
+- **Nombre:** nombre de su elección
 - **Descripción:** opcional
 - **OMA-URI:**`./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
 - **Tipo de datos**: entero
@@ -44,10 +46,10 @@ Para otras herramientas de MDM, consulte la documentación del proveedor de MDM 
 
 Los paquetes de aprovisionamiento son archivos creados por la herramienta Diseñador de configuración de Windows que aplican una configuración especificada a un dispositivo. 
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Creación de un paquete de aprovisionamiento que actualice la edición Windows Holographic y permita el cifrado
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Creación de un paquete de aprovisionamiento que actualiza la edición Windows Holographic y habilita el cifrado
 
 1. [Crea un paquete de aprovisionamiento para HoloLens.](hololens-provisioning.md)
-1. Vaya a **Configuración del entorno de ejecución**  >  **Directivas**  >  **de** seguridad y seleccione **RequerirDispositivoEncryption.**
+1. Vaya a **Configuración del entorno de ejecución**  >  **Directivas**  >  **seguridad** y **seleccione RequerirDispositivoEncryption.**
 
     ![Requerir configuración de cifrado de dispositivo configurada en Sí](images/device-encryption.png)
 
@@ -59,13 +61,13 @@ Los paquetes de aprovisionamiento son archivos creados por la herramienta Diseñ
 
 1. En el menú **Archivo**, haga clic en **Guardar**. 
 
-1. Lea la advertencia que explica que los archivos de proyecto pueden contener información confidencial y haga clic en **Aceptar.**
+1. Lea la advertencia que explica que los archivos de proyecto pueden contener información confidencial y haga clic **en Aceptar.**
 
     > [!IMPORTANT]
     > Al compilar un paquete de aprovisionamiento, puede incluir información confidencial en los archivos de proyecto y el archivo de paquete de aprovisionamiento (.ppkg). Aunque tienes la posibilidad de cifrar el archivo .ppkg, los archivos de proyecto no se cifran. Debe almacenar los archivos del proyecto en una ubicación segura y eliminar los archivos del proyecto cuando ya no los necesite.
 
 1. En el menú **Exportar**, haz clic en **Paquete de aprovisionamiento**.
-1. Cambie **Propietario a** **Administrador** de TI, que establecerá la precedencia de este paquete de aprovisionamiento mayor que los paquetes de aprovisionamiento aplicados a este dispositivo desde otros orígenes y, a continuación, **seleccione Siguiente.**
+1. Cambie **Propietario a** **Administrador** de TI, que establecerá la prioridad de este paquete de aprovisionamiento mayor que los paquetes de aprovisionamiento aplicados a este dispositivo desde otros orígenes y, a continuación, **seleccione Siguiente.**
 1. Establece un valor para **Versión del paquete**.
 
     > [!TIP]
@@ -93,10 +95,10 @@ Los paquetes de aprovisionamiento son archivos creados por la herramienta Diseñ
 > [!NOTE]
 > Si el dispositivo se compró antes de agosto de 2016, deberá iniciar sesión en el dispositivo con una cuenta Microsoft, obtener la actualización más reciente del sistema operativo y, a continuación, restablecer el sistema operativo para aplicar el paquete de aprovisionamiento.
 
-## <a name="verify-device-encryption"></a>Comprobación del cifrado de dispositivos
+## <a name="verify-device-encryption"></a>Comprobación del cifrado del dispositivo
 
 El cifrado es silencioso en HoloLens. Para comprobar el estado de cifrado del dispositivo:
 
-- En HoloLens, vaya a **Configuración**  >  **del sistema** acerca  >  **de**. **BitLocker** está **habilitado si** el dispositivo está cifrado. 
+- En HoloLens, vaya a **Configuración del**  >  **sistema acerca**  >  **de**. **BitLocker** está **habilitado si** el dispositivo está cifrado. 
 
     ![Acerca de la pantalla que muestra BitLocker habilitado](images/about-encryption.png)
