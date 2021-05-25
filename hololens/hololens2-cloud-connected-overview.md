@@ -14,24 +14,23 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 43fbcc3a841f6c3f15006f285188e55d22f10599
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309109"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397656"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guía de implementación: información general HoloLens 2 conexión a la nube con Remote Assist: información general
 
-Esta guía ayuda a los profesionales de TI a planear e implementar Microsoft HoloLens 2 dispositivos en su organización con el objetivo general de que esos dispositivos estén conectados Microsoft HoloLens la nube a su organización con Dynamics 365 Remote Assist listo para su uso. Tenga en cuenta que esto servirá como modelo para las implementaciones de prueba de concepto en su organización en una variedad de HoloLens 2 casos de uso.
+Esta guía ayuda a los profesionales de TI a planear e implementar Microsoft HoloLens 2 dispositivos en su organización con el objetivo general de que esos dispositivos estén conectados Microsoft HoloLens la nube Dynamics 365 Remote Assist su organización. Tenga en cuenta que esto servirá como modelo para las implementaciones de prueba de concepto en su organización en una variedad de HoloLens 2 casos de uso.
 
-Durante la guía se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar inmediatamente Remote Assist la configuración del dispositivo. Para ello, remos por los elementos importantes de infraestructura necesarios para configurarse y ejecutarse, lo que permite realizar la implementación a escala con HoloLens 2.
+Durante la guía se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar inmediatamente Remote Assist la configuración del dispositivo. Para ello, remos por los elementos importantes de la infraestructura necesarios para configurarse y ejecutarse, logrando la implementación a escala con HoloLens 2.
 
-![Banner conectado a la nube](./images/cloud-connected-hololens-large.png)
-
+[![Escenario conectado a la nube ](./images/deployment-guides-revised-scenario-a.png)](./images/deployment-guides-revised-scenario-a.png#lightbox)
 ## <a name="in-this-guide"></a>En esta guía
 
-Esta guía tiene el objetivo específico de configurar Remote Assist dentro de la organización en los dispositivos HoloLens. Se cubrirán las necesidades necesarias para lograr ese objetivo. Para mantener el foco en este objetivo, se seleccionarán previamente ciertas configuraciones y preparación con el fin de optimizar esta implementación o reducir los elementos necesarios para configurar. Se le informará de estas opciones y podrá personalizar la implementación en función de sus necesidades empresariales.
+Esta guía tiene el objetivo específico de configurar Remote Assist dentro de la organización en los dispositivos HoloLens. Se cubrirán las necesidades necesarias para lograr ese objetivo. Para mantener el foco en este objetivo, se seleccionarán previamente ciertas configuraciones y preparación para optimizar esta implementación o para reducir los elementos necesarios para configurar. Se le informará de estas opciones y podrá personalizar la implementación en función de sus necesidades empresariales.
 
 Se trata de una configuración similar a Escenario [A:](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)Implementación en dispositivos de conexión a la nube, que es una buena opción para muchas implementaciones de prueba de concepto, que incluirá:
 
@@ -39,9 +38,9 @@ Se trata de una configuración similar a Escenario [A:](https://docs.microsoft.c
 - Azure AD unirse a la inscripción automática de MDM: MDM (Intune) administrado
 - Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
   - Se admiten uno o varios usuarios por dispositivo.
-- Los distintos niveles de configuraciones de bloqueo de dispositivos se aplican en función de casos de uso específicos, desde Totalmente abierto a Pantalla completa de aplicación única
+- Los distintos niveles de configuraciones de bloqueo de dispositivos se aplican en función de casos de uso específicos, desde Totalmente abierto hasta Pantalla completa de aplicación única
 
-![Escenario conectado a la nube](./images/cloud-connected-guide-diagram.png)
+
 
 En esta guía no se aplicarán otras restricciones o configuraciones de dispositivos, pero le recomendamos que explore esas opciones después de finalizar.
 
@@ -80,7 +79,7 @@ Mantener:
 
 > [!div class="checklist"]
 > - [Actualización de Remote Assist mediante la Microsoft Store aplicación.](hololens2-cloud-connected-maintain.md#updates)
-> - [Realización de un plan de soporte técnico.](hololens2-cloud-connected-maintain.md#support-plan)
+> - [Crear un plan de soporte técnico.](hololens2-cloud-connected-maintain.md#support-plan)
 > - [Plan de desarrollo.](hololens2-cloud-connected-maintain.md#development-plan)
 
 ## <a name="next-step"></a>Paso siguiente

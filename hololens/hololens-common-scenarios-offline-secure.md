@@ -1,6 +1,6 @@
 ---
 title: 'Escenarios comunes: seguridad sin conexión HoloLens 2'
-description: Aprenda a configurar un escenario de implementación segura sin conexión y de implementación de aplicaciones con aprovisionamiento para dispositivos HoloLens.
+description: Aprenda a configurar un escenario de implementación de aplicaciones y una implementación segura sin conexión con el aprovisionamiento para dispositivos HoloLens.
 keywords: HoloLens, administración, sin conexión, seguro sin conexión
 ms.date: 9/25/2020
 manager: yannisle
@@ -14,33 +14,35 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eb084d3de222581fd2b97eaa1c1e2812310810c
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8828444a69d7e5d46293340ff771f97eb5eb01e6
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309128"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397886"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Escenarios comunes: seguridad sin conexión HoloLens 2
 
-## <a name="overview"></a>Introducción
+## <a name="overview"></a>Información general
 
 En esta guía se proporcionan instrucciones para aplicar un paquete de aprovisionamiento de ejemplo que bloqueará un HoloLens 2 para su uso en entornos seguros con las restricciones siguientes:
 
--   Deshabilite wi-fi.
+-   Deshabilite Wi-Fi.
 -   Deshabilite BlueTooth.
 -   Deshabilite micrófonos.
 -   Impide agregar o quitar paquetes de aprovisionamiento.
 -   Ningún usuario puede habilitar ninguno de los componentes restringidos anteriores.
 
+[![Escenario seguro sin conexión ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+
 ## <a name="prepare"></a>Preparación
 
-Windows 10 configuración de PC
-1. [Descargue el archivo HoloLens 2 sistema operativo más](https://aka.ms/hololens2download) reciente directamente en un equipo. 
+Windows 10 configuración del equipo
+1. [Descargue el archivo HoloLens 2 sistema operativo más reciente](https://aka.ms/hololens2download) directamente en un equipo. 
    1. La compatibilidad con esta configuración se incluye en la compilación 19041.1117 y posteriores.
-1. Descargar o instalar la herramienta Advanced Recovery Companion(ARC) [desde el Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) al equipo
-1. Descargue o instale la herramienta [del Diseñador de configuración de Windows (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) más reciente Microsoft Store en el equipo.
-1. [Descargue la OfflineSecureHL2_Sample con los archivos del proyecto para](https://aka.ms/HoloLensDocs-SecureOfflineSample) compilar el PPKG.
+1. Descargue o instale la herramienta Advanced Recovery Companion(ARC) [desde el Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) al equipo.
+1. Descargue o instale la herramienta más reciente del Diseñador de configuración de [Windows (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) Microsoft Store en el equipo.
+1. [Descargue la OfflineSecureHL2_Sample con los archivos del proyecto](https://aka.ms/HoloLensDocs-SecureOfflineSample) para compilar el archivo PPKG.
 1. Prepare la aplicación [de línea de negocio sin conexión para la implementación de PPKG.](app-deploy-provisioning-package.md) 
 
 
@@ -50,7 +52,7 @@ Compilación de un paquete de aprovisionamiento de configuración segura
 
 1. Inicie la herramienta WCD en el equipo.
 1. Seleccione **Archivo -> Abrir proyecto**.
-  1. Vaya a la ubicación de la carpeta guardada OfflineSecureHL2_Sample y seleccione: OfflineSecureHL2_Sample.icdproj.xml
+  1. Vaya a la ubicación de la carpeta de OfflineSecureHL2_Sample guardada anteriormente y seleccione: OfflineSecureHL2_Sample.icdproj.xml
 1. El proyecto debe abrirse y ahora debería tener una lista de personalizaciones disponibles:
 
    > [!div class="mx-imgBorder"]
@@ -58,15 +60,15 @@ Compilación de un paquete de aprovisionamiento de configuración segura
 
    Configuraciones establecidas en este paquete de aprovisionamiento:
    
-   |     Elemento                                                |     Parámetro                       |     Descripción                                                                                                                    |
+   |     Elemento                                                |     Configuración                       |     Descripción                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-   |     Cuentas y usuarios                                    |     Nombre de usuario local & contraseña    |     Para estos dispositivos sin conexión, todos los usuarios del dispositivo tendrán que establecer y compartir un único nombre de usuario y contraseña.          |
-   |     Primera experiencia/HoloLens/Skip Holobration       |     Verdadero                          |     Omite la calibración solo durante la configuración inicial del dispositivo.                                                                             |
+   |     Cuentas o usuarios                                    |     Nombre de usuario local & contraseña    |     Para estos dispositivos sin conexión, todos los usuarios del dispositivo deben establecer y compartir un único nombre de usuario y contraseña.          |
+   |     Primera experiencia/HoloLens/Skip Holobration       |     Verdadero                          |     Omite la calibración solo durante la configuración inicial del dispositivo                                                                             |
    |     Primera experiencia/HoloLens/SkipTraining          |     Verdadero                          |     Omite el entrenamiento del dispositivo durante la configuración inicial del dispositivo.                                                                              |
-   |     Primera experiencia/HoloLens/Wi-Fi                  |     Verdadero                          |     Omite la Wi-Fi durante la configuración inicial del dispositivo.                                                                                 |
-   |     Directivas/Conectividad/AllowBluetooth                |     No                            |     Deshabilita Bluetooth                                                                                                             |
-   |     Directivas/Experiencia/AllowCortana                    |     No                            |     Deshabilita Cortana (para eliminar posibles problemas, ya que los micrófonos están deshabilitados)                                          |
-   |     Policies/MixedReality/MicrophoneDisabled            |     Yes                           |     Deshabilita el micrófono                                                                                                            |
+   |     Primera experiencia/HoloLens/Wi-Fi                  |     Verdadero                          |     Omite la Wi-Fi durante la configuración inicial del dispositivo                                                                                 |
+   |     Policies/Connectivity/AllowBluetooth                |     No                            |     Deshabilita Bluetooth                                                                                                             |
+   |     Policies/Experience/AllowCortana                    |     No                            |     Deshabilita Cortana (para eliminar posibles problemas, ya que los micrófonos están deshabilitados)                                          |
+   |     Policies/MixedReality/MicrophoneDisabled            |     Sí                           |     Deshabilita el micrófono                                                                                                            |
    |     Policies/Privacy/LetAppsAccessLocation              |     Forzar denegación                    |     Impide que las aplicaciones intenten acceder a los datos de ubicación (para eliminar posibles problemas, ya que el seguimiento de ubicación está deshabilitado)    |
    |     Directivas/Privacidad/LetAppsAccessMicrophone            |     Forzar denegación                    |     Impide que las aplicaciones intenten acceder a los micrófonos (para eliminar posibles problemas, ya que los micrófonos están deshabilitados)           |
    |     Policies/Security/AllowAddProvisioningPackage       |     No                            |     Impide que alguien agregue paquetes de aprovisionamiento que puedan intentar invalidar las directivas bloqueadas.                         |
@@ -95,7 +97,7 @@ Compilación de un paquete de aprovisionamiento de configuración segura
 
    ![HoloLens 2 pantalla inicial de reflash limpia](images/ARC2.png)
 
-1. En la siguiente pantalla, seleccione **Selección manual del paquete.**
+1. En la siguiente pantalla, seleccione **Selección manual de paquetes.**
 
    ![HoloLens 2 de información de ARC](images/arc_device_info.png)
 
@@ -113,7 +115,7 @@ Compilación de un paquete de aprovisionamiento de configuración segura
 1. En la HoloLens 2, presione el siguiente botón combinado para ejecutar el paquete de aprovisionamiento: **Pulse** Bajar volumen y **Botón** de encendido al mismo tiempo.
 1. Se le pedirá que aplique el paquete de aprovisionamiento y seleccione **Confirmar.**
 1. Una vez completado el paquete de aprovisionamiento, seleccione **Aceptar.**
-1. A continuación, se le pedirá que inicie sesión en el dispositivo con la cuenta local y la contraseña compartidas.
+1. A continuación, se le pedirá que inicie sesión en el dispositivo con la cuenta local compartida y la contraseña.
 
 ## <a name="maintain"></a>Mantenimiento
 
