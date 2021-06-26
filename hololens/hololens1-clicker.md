@@ -1,6 +1,6 @@
 ---
-title: Uso del botón de clic de HoloLens
-description: En este artículo se describe cómo usar el clicker de HoloLens, incluidos el emparejamiento, la carga y la recuperación del clicker.
+title: Uso del clic de HoloLens
+description: En este artículo se describe cómo usar el clicker de HoloLens, incluido el emparejamiento, el cobro y la recuperación del clicker.
 ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
 ms.date: 09/16/2019
 manager: jarrettr
@@ -13,18 +13,18 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 83e5a746b6900c547778c71a0855426563458032
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108310266"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924067"
 ---
-# <a name="use-the-hololens-1st-gen-clicker"></a>Uso del clicker HoloLens (1.ª generación)
+# <a name="use-the-hololens-1st-gen-clicker"></a>Uso del mando en HoloLens (1.ª generación)
 
-El clicker se diseñó específicamente para HoloLens (1.ª generación) y ofrece otra manera de interactuar con hologramas. Viene con HoloLens (1.ª generación), en un cuadro independiente.
+El clicker se diseñó específicamente para HoloLens (1ª generación) y ofrece otra manera de interactuar con hologramas. Viene con HoloLens (1ª generación), en un cuadro independiente.
 
-Úselo en lugar de gestos de mano para seleccionar, desplazar, mover y cambiar el tamaño de las aplicaciones.
+Úselo en lugar de los gestos de la mano para seleccionar, desplazar, mover y cambiar el tamaño de las aplicaciones.
 
 ## <a name="clicker-hardware-and-pairing"></a>Emparejamiento y hardware del clicker
 
@@ -38,7 +38,7 @@ Esto es lo que significan las luces del clicker.
 
 - **Blanco parpadeante.** El clicker está en modo de emparejamiento.
 - **Blanco de parpadeo rápido.** El emparejamiento se ha realizado correctamente.
-- **Blanco sólido.** El usuario que hace clic se está cobrando.
+- **Blanco sólido.** El clicker se está cobrando.
 - **Ámbar parpadeante.** La batería está baja.
 - **Ámbar sólido.** El clicker ha producido un error y tendrá que reiniciarlo. Al presionar el botón de emparejamiento, haga clic y mantenga presionado durante 15 segundos.
 
@@ -56,7 +56,7 @@ Cuando la batería del clicker está baja, el indicador de batería parpadeará 
 
 ### <a name="hold-the-clicker"></a>Mantener presionado el botón de clic
 
-Para colocar en el clicker, deslice el bucle sobre el anillo o el dedo medio para que el puerto Micro USB se enrrima hacia la mano. Rest your thumb in the indentation( Rest your thumb in the indentation.
+Para colocar en el clicker, deslice el bucle sobre el anillo o el dedo medio para que el puerto Micro USB se enrrima hacia la mano. Rest your thumb in the indentation ./rest your thumb in the indentation (Rest your thumb in the indentation
 
 ![Cómo contener el clicker](images/use-hololens-clicker-2.png)
 
@@ -64,30 +64,39 @@ Para colocar en el clicker, deslice el bucle sobre el anillo o el dedo medio par
 
 Los gestos del clicker son pequeñas rotaciones de rotación, no los movimientos más grandes que se usan para los gestos de mano de HoloLens. Y HoloLens reconoce sus gestos y clics incluso [](hololens1-basic-usage.md)si el clic está fuera del marco de gestos, por lo que puede mantener el clic en la posición más cómoda para usted.
 
-- **Seleccione**. Para seleccionar un holograma, un botón u otro elemento, ándalo y, a continuación, haga clic en él.
+- **Seleccione**. Para seleccionar un holograma, un botón u otro elemento, mírelo y, a continuación, haga clic en él.
 
-- **Haga clic y mantenga presionado**. Haga clic y mantenga presionado el dedo en el botón para hacer algunas de las mismas cosas que haría con pulsar y mantener presionado, como mover o cambiar el tamaño de un holograma.
+- **Haga clic en y mantenga presionado**. Haga clic y mantenga presionado el dedo en el botón para hacer algunas de las mismas cosas que haría con pulsar y mantener presionado, como mover o cambiar el tamaño de un holograma.
 
-- **Desplácese** por . En la barra de la aplicación, seleccione **Herramienta de desplazamiento**. Haga clic y mantenga presionado y, a continuación, gire el botón de clic hacia arriba, hacia abajo, a la izquierda o a la derecha. Para desplazarse más rápido, mueva la mano más lejos del centro de la herramienta de desplazamiento.
+- **Desplácese por**. En la barra de la aplicación, seleccione **Herramienta de desplazamiento**. Haga clic y mantenga presionado y, a continuación, rote el botón de clic hacia arriba, hacia abajo, a la izquierda o a la derecha. Para desplazarse más rápido, mueva la mano más lejos del centro de la herramienta de desplazamiento.
 
-- **Zoom**. En la barra de la aplicación, seleccione **Herramienta de zoom**. Haga clic y mantenga presionado y, a continuación, gire el botón de clic hacia arriba para acercar o reducir para alejar.
+- **Zoom**. En la barra de la aplicación, seleccione **Herramienta zoom**. Haga clic y mantenga presionado y, a continuación, rote el botón de clic hacia arriba para acercar o bajar para alejar.
 
 > [!TIP]
 > Para acercar o alejar al usar Microsoft Edge, mire una página y haga doble clic.
 
-## <a name="restart-or-recover-the-clicker"></a>Reinicio o recuperación del clic
+## <a name="im-having-problems-using-the-hololens-clicker"></a>Tengo problemas al usar el clic de HoloLens
 
-Estos son algunos aspectos que se pueden probar si el clicker de HoloLens no responde o no funciona bien.
+Use el [clicker](hololens1-clicker.md) para seleccionar, desplazar, mover y cambiar el tamaño de los hologramas. Las aplicaciones individuales pueden admitir gestos de clic adicionales.
 
-### <a name="restart-the-clicker"></a>Reiniciar el botón de clic
+Si tiene problemas para usar el clicker, asegúrese de que se cobra y se empareja con HoloLens. Si la batería está baja, la luz del indicador parpadea en ámbar. Para comprobar que el botón de clic está emparejado, vaya a **Dispositivos** de configuración y vea  >   si aparece allí. Para obtener más información, vea [Emparejar el botón de clic.](hololens1-clicker.md)
 
-Use la sugerencia de un lápiz para mantener presionado el botón de emparejamiento. Al mismo tiempo, haga clic y mantenga presionado el botón de clic durante 15 segundos. Si el clicker ya estaba emparejado con HoloLens, permanecerá emparejado después de reiniciarse.
+Si el clic se cobra y empareja y sigue teniendo problemas, restablezcalo manteniendo presionado el botón principal y el botón de emparejamiento durante 15 segundos. A continuación, vuelva a emparejar el clicker con holoLens.
+
+Si restablecer el clicker no ayuda, consulta [Reiniciar o recuperar el clicker de HoloLens.](hololens1-clicker.md#restart-or-recover-the-clicker)
+## <a name="restart-or-recover-the-clicker"></a>Reiniciar o recuperar el clic
+
+Estos son algunos aspectos que se pueden probar si el clic de HoloLens no responde o no funciona bien.
+
+### <a name="restart-the-clicker"></a>Reiniciar el clicker
+
+Use la sugerencia de un lápiz para mantener presionado el botón de emparejamiento. Al mismo tiempo, haga clic y mantenga presionado el botón de clic durante 15 segundos. Si el clic ya estaba emparejado con HoloLens, permanecerá emparejado después de reiniciarse.
 
 Si el clicker no se activa ni se reinicia, pruebe a cobrarlo mediante el cargador de HoloLens. Si la batería es muy baja, la luz indicadora blanca puede tardar unos minutos en activarse.
 
 ### <a name="re-pair-the-clicker"></a>Volver a emparejar el botón de clic
 
-Seleccione   >  **Dispositivos de configuración** y seleccione el botón de clic. Seleccione **Quitar**, espere unos segundos y, a continuación, vuelva a emparejar el botón de clic.
+Seleccione **Configuración**  >  **Dispositivos** y seleccione el botón de clic. Seleccione **Quitar,** espere unos segundos y vuelva a emparejar el clic.
 
 ### <a name="recover-the-clicker"></a>Recuperación del clic
 
@@ -100,3 +109,4 @@ Para recuperar el clicker:
 1. Ejecute la Herramienta de recuperación de dispositivos Windows y siga las instrucciones.
 
 Si el clic no se detecta automáticamente, seleccione Mi dispositivo **no** se detectó y siga las instrucciones para poner el dispositivo en modo de recuperación.
+

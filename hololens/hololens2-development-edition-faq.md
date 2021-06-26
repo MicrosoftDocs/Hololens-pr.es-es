@@ -1,5 +1,5 @@
 ---
-title: preguntas más frecuentes HoloLens 2 Development Edition
+title: preguntas HoloLens 2 Development Edition
 description: Manténgase al día con las preguntas más frecuentes sobre el dispositivo de realidad mixta HoloLens 2 Development Edition.
 keywords: Opciones de compra de Hololens 2, opciones de HoloLens, Developer Edition
 author: evmill
@@ -14,20 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f7ee1849e51132f0e3d30585cfed6a89ecfee2a9
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a3e54bd586502207d24e28d7d2eeadd659b3e019
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397636"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924560"
 ---
-# <a name="hololens-2-development-edition-faq"></a>preguntas más frecuentes HoloLens 2 Development Edition
+# <a name="hololens-2-development-edition-faq"></a>Preguntas más frecuentes sobre HoloLens 2 Development Edition
 
 ## <a name="general-questions"></a>Preguntas generales
 
-### <a name="what-do-i-get-with-the-hololens-2-development-edition"></a>¿Qué puedo obtener con HoloLens 2 Development Edition?
+### <a name="what-do-i-get-with-the-hololens-2-development-edition"></a>¿Qué puedo obtener con la edición HoloLens 2 Development Edition?
 
-La edición HoloLens 2 Development Edition incluye un HoloLens 2, 500 USD en créditos de Azure, una evaluación de Unity Pro de 3 meses y una prueba del complemento Descréndoz de 3 meses.
+La edición de desarrollo de HoloLens 2 incluye un HoloLens 2, 500 USD en créditos de Azure, una evaluación de Unity Pro de 3 meses y una prueba del complemento DeTez de 3 meses.
 
 ### <a name="what-is-the-difference-between-hololens-2-and-hololens-2-development-edition"></a>¿Cuál es la diferencia entre HoloLens 2 y HoloLens 2 Development Edition?
 
@@ -49,15 +49,15 @@ No, no ofrecemos planes de transferencia de dispositivos. No hay capacidad de tr
 
 Unity Pro es una plataforma 3D en tiempo real para pequeñas y medianas empresas o estudios. Está diseñado para equipos con una combinación de aptitudes técnicas y no técnicas. [Más información](https://store.unity.com/products/unity-pro)
 
-### <a name="what-is-pixyz-plugin"></a>¿Qué es el complemento de Plug-in de Plug-in de Pixelyz?
+### <a name="what-is-pixyz-plugin"></a>¿Qué es el complemento de Pluginsyz?
 
-El complemento Desenlaz lee y convierte casi cualquier formato, lo optimiza y lo coloca en Unity, y lo pone en fases para proporcionar recursos listos para usarse para aplicaciones en tiempo real. [Más información](https://unity.com/products/pixyz)
+El complemento Dez lee y convierte casi cualquier formato, lo optimiza y lo coloca en Unity, y lo pone en fases para proporcionar recursos listos para usarse para aplicaciones en tiempo real. [Más información](https://unity.com/products/pixyz)
 
 ### <a name="is-financing-for-the-hololens-2-development-edition--available"></a>¿Está disponible la HoloLens 2 Development Edition?
 
-Sí, [ahora la HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) solo está disponible en el Estados Unidos. 
+Sí, [la promoción para HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) ahora solo está disponible en el Estados Unidos. 
 
-### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>¿Con quién debo comunicarme con preguntas sobre mis derechos HoloLens 2 Development Edition?
+### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>¿Con quién debo ponerse en contacto con preguntas sobre mis derechos HoloLens 2 Development Edition?
 
 Si tiene alguna pregunta relacionada con los derechos, póngase en contacto con su especialista en ventas al 866-425-4709, de lunes a viernes, de 6 a. m. a 6 p. m., hora del Pacífico.
 
@@ -77,9 +77,9 @@ HoloLens 2 Development Edition se vende exclusivamente en Microsoft Store.
 
 Todas las ventas son finales y no hay ningún reembolso disponible en HoloLens 2 Development Edition.
 
-### <a name="does-developer-edition-have-different-hardware-requirements-that-differ-from-the-hololens-2"></a>¿Developer Edition tiene requisitos de hardware diferentes que difieren de los HoloLens 2?
+### <a name="does-developer-edition-have-different-hardware-requirements-that-differ-from-the-hololens-2"></a>¿Developer Edition tiene requisitos de hardware diferentes de los HoloLens 2?
 
-No, este dispositivo es el mismo desde la perspectiva de los requisitos de hardware. La edición de desarrollo se puede implementar en la ayuda del desarrollo o las pruebas de aplicaciones en una configuración comercial. 
+No, este dispositivo es el mismo desde una perspectiva de requisitos de hardware. Development Edition se permite implementar en la ayuda del desarrollo o las pruebas de aplicaciones en una configuración comercial. 
 
 ### <a name="how-can-i-use-mixed-reality-toolkit--unity-for-developing-on-my-hololens-2-development-edition"></a>¿Cómo puedo usar Mixed Reality Toolkit – Unity para desarrollar en mi HoloLens 2 Development Edition?
 
@@ -128,7 +128,7 @@ Instrucciones para canjear
 1. Visite id.unity.com
 2. Inicie sesión con el identificador de Unity o cree una cuenta.
 3. Seleccione &#39;Canjear un código de producto&#39;
-4. Escriba el código de producto y seleccione &#39;Canje de un código de producto&#39;
+4. Escriba el código de producto y seleccione &#39;Canjear un código de producto&#39;
 
 Visite HoloLens 2 Development Edition para [obtener más información.](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
@@ -138,17 +138,17 @@ Sí, puede compilar aplicaciones con todas las versiones compatibles de Unity.
 
 ### <a name="how-do-i-contact-unity-support"></a>Cómo contacto con el soporte técnico de Unity?
 
-Para obtener ayuda con cualquier pregunta sobre los identificadores, las cuentas, las organizaciones y las suscripciones de Unity, visite support.unity3d.com.
+Para obtener ayuda con cualquier pregunta sobre el identificador, la cuenta, las organizaciones y las suscripciones de Unity, visite support.unity3d.com.
 
 ## <a name="pixyz"></a>Pixelyz
 
-### <a name="what-is-included-with-my-pixyz-plugin-trial"></a>¿Qué se incluye con mi versión de prueba del complemento de Pixelyz?
+### <a name="what-is-included-with-my-pixyz-plugin-trial"></a>¿Qué se incluye con mi versión de prueba del complemento Dez?
 
-Una versión de prueba del complemento de Three Calendar Que permite el acceso a Pixelyz para crear recursos listos para usar con mallas teseladas perfectas, recuento limitado de polígonos y UV automática. La versión de prueba relacionada del complemento de Pixelyz no tiene fecha límite para canjear.
+Una versión de prueba del complemento De Three-Calendar de Three-Calendar que permite el acceso aNdoz para crear recursos listos para usar con mallas teseladas perfectas, recuento limitado de polígonos y UV automática. La versión de prueba relacionada del complemento DeTez no tiene fecha límite para canjear.
 
-Esta oferta es para nuevos usuarios y no se acumula en las suscripciones establecidas de Pixelyz. El complemento de Pixelyz puede estar sujeto a términos adicionales que se realizarán en el canje. Revise las condiciones [de &amp; términos aplicables](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) y [la directiva de privacidad](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
+Esta oferta es para nuevos usuarios y no se apila en las suscripciones establecidas de Pixelyz. El complemento Dez puede estar sujeto a términos adicionales que se realizarán en el canje. Revise las condiciones [de &amp; los términos aplicables](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) y [la directiva de privacidad](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
-### <a name="how-can-i-redeem-my-pixyz-plugin-trial"></a>¿Cómo puedo canjear mi versión de prueba del complemento de Pixelyz?
+### <a name="how-can-i-redeem-my-pixyz-plugin-trial"></a>¿Cómo puedo canjear mi versión de prueba del complemento Dez?
 
 Instrucciones para canjear
 
@@ -161,16 +161,16 @@ Visite HoloLens 2 Development Edition para [obtener más información.](https://
 
 ### <a name="how-do-i-contact-pixyz-support"></a>Cómo ponerse en contacto con el soporte técnico de Ticketyz?
 
-Para obtener ayuda con cualquier pregunta sobre el identificador, la cuenta, las organizaciones y las suscripciones de Unity, visite support.unity3d.com
+Para obtener ayuda con cualquier pregunta sobre los identificadores, las cuentas, las organizaciones y las suscripciones de Unity, visite support.unity3d.com
 
-Para obtener soporte técnico específico deIendoz (después de canjear la evaluación), visite [Pixyz-software.com/support](http://pixyz-software.com/support)
+Para obtener soporte técnico específico de Pixelyz (después de canjear la evaluación), visite [Pixyz-software.com/support](http://pixyz-software.com/support)
 
 
 ## <a name="azure"></a>Azure
 
 ### <a name="how-can-i-redeem-my-500-azure-credit"></a>¿Cómo puedo canjear mi crédito de Azure de 500 USD?
 
-Para canjear los créditos de Azure de 500 USD, canjee el Pase para Azure de promoción y active la suscripción. [Más información](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+Para canjear los créditos de Azure de 500 USD, canjee su Pase para Azure de promoción y active la suscripción. [Más información](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 Revise el contrato Pase para Azure [suscripción y](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) los detalles de [la oferta.](https://azure.microsoft.com/en-us/offers/azure-pass/)
 
@@ -180,8 +180,8 @@ El crédito de Azure de 500 USD expirará 90 días después de activar el códig
 
 ### <a name="what-can-i-do-with-my-azure-credits"></a>¿Qué puedo hacer con mis créditos de Azure?
 
-Con los créditos de Azure, puede empezar a crear con microsoft&#39;cada vez mayor conjunto de servicios en la nube. Los créditos de Azure incluidos con HoloLens 2 Development Edition son para permitir que los clientes puedan empezar a crear y probar rápidamente aplicaciones de realidad mixta en Azure. Para obtener detalles completos de la creación en Azure, visite [Recursos de Azure.](https://azure.microsoft.com/en-us/resources/)
+Con los créditos de Azure, puede empezar a compilar con microsoft&#39;un conjunto de servicios en la nube en expansión. Los créditos de Azure incluidos con HoloLens 2 Development Edition son para permitir que los clientes puedan empezar a crear y probar rápidamente aplicaciones de realidad mixta en Azure. Para obtener detalles completos sobre la creación en Azure, visite [Recursos de Azure.](https://azure.microsoft.com/en-us/resources/)
 
 ### <a name="where-can-i-learn-more-about-azure-mixed-reality-services"></a>¿Dónde puedo obtener más información sobre los servicios de realidad mixta de Azure?
 
-Microsoft ofrece un conjunto de servicios de realidad mixta para permitir a los desarrolladores compilar y probar soluciones de realidad mixta. [Más información](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+Microsoft ofrece un conjunto de servicios de realidad mixta para permitir que los desarrolladores compilen y prueben soluciones de realidad mixta. [Más información](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
