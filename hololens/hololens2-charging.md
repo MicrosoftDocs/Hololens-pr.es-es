@@ -1,0 +1,74 @@
+---
+title: Batería y carga de HoloLens 2
+description: Cómo cargar HoloLens y usar baterías externas.
+ms.assetid: E0AB903E-454E-46F6-AB25-4DFA0A475B0C
+ms.prod: hololens
+ms.sitesec: library
+author: jbienzms
+ms.author: jbienz
+ms.topic: article
+ms.localizationpriority: high
+ms.date: 05/14/2021
+manager: evmill
+appliesto:
+- HoloLens 2
+ms.openlocfilehash: acbc3e52240f420d384fa372684966d7220d53c6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923591"
+---
+# <a name="hololens-2-battery-and-charging"></a><span data-ttu-id="88d57-103">Batería y carga de HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="88d57-103">HoloLens 2 Battery and Charging</span></span>
+
+<span data-ttu-id="88d57-104">En esta página se ofrecen detalles sobre la carga de HoloLens 2 y el uso de baterías externas.</span><span class="sxs-lookup"><span data-stu-id="88d57-104">This page offers details about charging HoloLens 2 and using external battery packs.</span></span>
+
+## <a name="charging-the-device"></a><span data-ttu-id="88d57-105">Carga del dispositivo</span><span class="sxs-lookup"><span data-stu-id="88d57-105">Charging the device</span></span>
+
+<span data-ttu-id="88d57-106">Use el [cable y cargador USB-C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) incluidos con HoloLens 2, ya que esa es la mejor manera de cargar el dispositivo.</span><span class="sxs-lookup"><span data-stu-id="88d57-106">Use the [charger and the USB Type-C cable](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) that came with the HoloLens 2 as that is the best way to charge your device.</span></span> <span data-ttu-id="88d57-107">El cargador incluido con HoloLens 2 proporciona hasta 9 V a 2 A (18 W).</span><span class="sxs-lookup"><span data-stu-id="88d57-107">The charger included with HoloLens 2 provides up to 9V @ 2A (18W).</span></span> <span data-ttu-id="88d57-108">Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden cargar la batería por completo en menos de 65 minutos cuando están en espera.</span><span class="sxs-lookup"><span data-stu-id="88d57-108">Along with the supplied wall charger, HoloLens 2 devices can charge the battery to full in less than 65 minutes when the device is in standby.</span></span> <span data-ttu-id="88d57-109">Si esos accesorios no están disponibles, asegúrese de que el cargador disponible admita al menos 15 W de potencia.</span><span class="sxs-lookup"><span data-stu-id="88d57-109">If those accessories aren't available, make sure the charger that's available can support at least 15W of power.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="88d57-110">Si es posible, evite usar un equipo para cargar el dispositivo por USB, ya que eso es lento.</span><span class="sxs-lookup"><span data-stu-id="88d57-110">If possible, avoid using a PC to charge the device over USB, which is slow.</span></span>
+
+## <a name="checking-the-battery-charge-level"></a><span data-ttu-id="88d57-111">Comprobación del nivel de carga de la batería</span><span class="sxs-lookup"><span data-stu-id="88d57-111">Checking the battery charge level</span></span>
+<span data-ttu-id="88d57-112">Si el dispositivo se ha encendido correctamente y está en funcionamiento, hay tres formas de comprobar el nivel de carga de la batería:</span><span class="sxs-lookup"><span data-stu-id="88d57-112">If the device is correctly booted and running, there are three ways to check the battery charge level:</span></span>
+
+- <span data-ttu-id="88d57-113">Desde el menú principal de la interfaz de usuario del dispositivo HoloLens.</span><span class="sxs-lookup"><span data-stu-id="88d57-113">From the main menu of the HoloLens device UI.</span></span>
+- <span data-ttu-id="88d57-114">Los LED situados junto al botón de encendido (para una carga de un 40 %, debería ver al menos dos LED fijos).</span><span class="sxs-lookup"><span data-stu-id="88d57-114">View the LED close to the power button (for a 40-percent charge, you should see at least two solid LEDs).</span></span>
+    - <span data-ttu-id="88d57-115">Cuando el dispositivo se está cargando, se ilumina el indicador de la batería para señalar el nivel de carga actual.</span><span class="sxs-lookup"><span data-stu-id="88d57-115">When the device is charging, the battery indicator lights up to indicate the current level of charge.</span></span>  <span data-ttu-id="88d57-116">La última luz parpadea para indicar que se está cargando.</span><span class="sxs-lookup"><span data-stu-id="88d57-116">The last light will fade in and out to indicate active charging.</span></span>
+    - <span data-ttu-id="88d57-117">Cuando HoloLens está encendido, el indicador de la batería muestra el nivel de esta en cinco incrementos.</span><span class="sxs-lookup"><span data-stu-id="88d57-117">When your HoloLens is on, the battery indicator displays the battery level in five increments.</span></span>
+    - <span data-ttu-id="88d57-118">Si solo hay encendida una de las cinco luces, el nivel de la batería está por debajo del 20 por ciento.</span><span class="sxs-lookup"><span data-stu-id="88d57-118">When only one of the five lights is on, the battery level is below 20 percent.</span></span>
+    - <span data-ttu-id="88d57-119">Si el nivel de la batería es demasiado bajo y se intenta encender el dispositivo, una luz parpadea brevemente y después se apaga.</span><span class="sxs-lookup"><span data-stu-id="88d57-119">If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.</span></span>
+- <span data-ttu-id="88d57-120">En el equipo host, abra **Explorador de archivos** y busque el dispositivo HoloLens 2 en el lado izquierdo, en **Este equipo**.</span><span class="sxs-lookup"><span data-stu-id="88d57-120">On your host PC, open **File Explorer** and look for your HoloLens 2 device on left side under **This PC**.</span></span> <span data-ttu-id="88d57-121">Haga clic con el botón derecho en el dispositivo y seleccione **Propiedades**.</span><span class="sxs-lookup"><span data-stu-id="88d57-121">Right-click the device, and select **Properties**.</span></span> <span data-ttu-id="88d57-122">Un cuadro de diálogo muestra el nivel de carga de la batería.</span><span class="sxs-lookup"><span data-stu-id="88d57-122">A dialog box will show the battery charge level.</span></span>
+
+   ![Una pantalla de propiedades de HoloLens 2 muestra el nivel de carga de la batería](images/ResetRecovery2.png)
+
+## <a name="alternative-charging-specifications"></a><span data-ttu-id="88d57-124">Especificaciones de carga alternativas</span><span class="sxs-lookup"><span data-stu-id="88d57-124">Alternative charging specifications</span></span>
+
+<span data-ttu-id="88d57-125">HoloLens 2 se puede cargar mediante fuentes de [suministro de energía USB](https://www.usb.org/usb-charger-pd) de hasta 27 vatios.</span><span class="sxs-lookup"><span data-stu-id="88d57-125">HoloLens 2 can be charged by [USB Power Delivery](https://www.usb.org/usb-charger-pd) sources up to 27 Watts.</span></span> <span data-ttu-id="88d57-126">Si la fuente puede suministrar al menos 10 vatios, el tiempo de funcionamiento de HoloLens se puede ampliar (es posible que de manera indefinida para algunas cargas de trabajo).</span><span class="sxs-lookup"><span data-stu-id="88d57-126">If the source is able supply at least 10 Watts, HoloLens operating time can be extended (potentially indefinitely for some workloads).</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="88d57-127">El uso de un cable de carga USB-A a USB-C limita la carga a 7,5 vatios.</span><span class="sxs-lookup"><span data-stu-id="88d57-127">Using a USB-A to USB-C charging cable will limit the charge to 7.5 Watts.</span></span> <span data-ttu-id="88d57-128">El tiempo de funcionamiento se amplía, pero no igual que si se usa USB-C a C.</span><span class="sxs-lookup"><span data-stu-id="88d57-128">Operating time will still be extended, but not as long as using USB-C to C.</span></span>
+
+<span data-ttu-id="88d57-129">Cuando HoloLens está en espera, 18 vatios bastan para alcanzar la tasa de carga máxima de la batería interna.</span><span class="sxs-lookup"><span data-stu-id="88d57-129">When HoloLens is in standby mode, 18 Watts is sufficient to reach the maximum charge rate for the internal battery.</span></span> <span data-ttu-id="88d57-130">Cuando HoloLens está en uso, la tasa de carga se puede reducir, ya que HoloLens da prioridad al funcionamiento sobre la carga.</span><span class="sxs-lookup"><span data-stu-id="88d57-130">When HoloLens is in use, the charge rate may be reduced since HoloLens prioritizes operating over charging.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="88d57-131">Se recomienda cargar HoloLens 2 a 5 V/1,5 A como mínimo.</span><span class="sxs-lookup"><span data-stu-id="88d57-131">It's recommended that HoloLens 2 be charged at 5V/1.5A minimum.</span></span> <span data-ttu-id="88d57-132">No se deben usar cargadores que no puedan suministrar al menos 5 V/1,5 A.</span><span class="sxs-lookup"><span data-stu-id="88d57-132">Chargers that can't supply at least 5V/1.5A should not be used.</span></span> 
+
+### <a name="external-battery-packs"></a><span data-ttu-id="88d57-133">Baterías externas</span><span class="sxs-lookup"><span data-stu-id="88d57-133">External Battery Packs</span></span>
+
+<span data-ttu-id="88d57-134">Las baterías que cumplen las especificaciones anteriores se pueden usar con HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="88d57-134">Battery packs that meet the specifications above can be used with HoloLens 2.</span></span> <span data-ttu-id="88d57-135">Sin embargo, tenga en cuenta que algunas baterías USB-C recargan y suministran energía a través del mismo puerto USB-C.</span><span class="sxs-lookup"><span data-stu-id="88d57-135">However, note that some USB-C battery packs recharge and provide power through the same USB-C port.</span></span> <span data-ttu-id="88d57-136">Es importante que estas baterías implementen [TRY.SRC](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20) para garantizar que carguen HoloLens en lugar de cargar de él.</span><span class="sxs-lookup"><span data-stu-id="88d57-136">It's important that these battery packs implement [TRY.SRC](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20) to ensure they charge HoloLens rather than charge from it.</span></span> 
+
+### <a name="managing-heat"></a><span data-ttu-id="88d57-137">Administración del calor</span><span class="sxs-lookup"><span data-stu-id="88d57-137">Managing Heat</span></span>
+
+<span data-ttu-id="88d57-138">Como ocurre con cualquier dispositivo, la carga de HoloLens genera calor.</span><span class="sxs-lookup"><span data-stu-id="88d57-138">As with any device, charging HoloLens generates heat.</span></span> <span data-ttu-id="88d57-139">Cuanto más rápida es la carga, más calor se genera.</span><span class="sxs-lookup"><span data-stu-id="88d57-139">The more rapid the charge, the more heat is generated.</span></span> <span data-ttu-id="88d57-140">Además, cargar una batería descargada genera más calor que hacerlo cuando la batería está prácticamente cargada.</span><span class="sxs-lookup"><span data-stu-id="88d57-140">Also, starting a charge at a lower battery level will generate more heat than starting a charge when the battery is mostly full.</span></span> <span data-ttu-id="88d57-141">Los clientes que necesitan usar HoloLens durante largos períodos de tiempo en entornos cálidos pueden usar las técnicas siguientes:</span><span class="sxs-lookup"><span data-stu-id="88d57-141">Customers who need to operate HoloLens for extended periods of time in hot environments can use the following techniques:</span></span>
+
+- <span data-ttu-id="88d57-142">Es aceptable conectar HoloLens 2 a una fuente de alimentación externa aunque la batería interna esté totalmente cargada.</span><span class="sxs-lookup"><span data-stu-id="88d57-142">It's OK to connect HoloLens 2 to an external power source even when the internal battery is fully charged.</span></span>
+- <span data-ttu-id="88d57-143">Cuando se agota una batería externa, HoloLens sigue funcionando con su batería interna.</span><span class="sxs-lookup"><span data-stu-id="88d57-143">When an external battery is depleted, HoloLens will continue operating on its internal battery.</span></span>    
+- <span data-ttu-id="88d57-144">Si el calor sigue siendo un problema después de seguir los pasos anteriores, considere la posibilidad de usar un cargador o una batería que limite la carga a 1,5 A.</span><span class="sxs-lookup"><span data-stu-id="88d57-144">If heat is still an issue after following steps above, consider using a charger or battery pack that limits charging to 1.5A.</span></span> <span data-ttu-id="88d57-145">Tenga en cuenta que esta opción no ofrece tanto tiempo de funcionamiento, ya que la batería interna sigue agotándose lentamente.</span><span class="sxs-lookup"><span data-stu-id="88d57-145">Note that this option won't provide as much operating time since the internal battery will still slowly deplete.</span></span>
+
+## <a name="troubleshooting"></a><span data-ttu-id="88d57-146">Solución de problemas</span><span class="sxs-lookup"><span data-stu-id="88d57-146">Troubleshooting</span></span>
+
+
+### <a name="hololens-charges-external-battery"></a><span data-ttu-id="88d57-147">HoloLens carga una batería externa</span><span class="sxs-lookup"><span data-stu-id="88d57-147">HoloLens Charges External Battery</span></span>
+<span data-ttu-id="88d57-148">Si HoloLens 2 carga una batería externa en lugar de cargarse, esto indica que la batería no implementa [TRY.SRC](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20).</span><span class="sxs-lookup"><span data-stu-id="88d57-148">If HoloLens 2 charges an external battery rather than being charged by it, this indicates that the battery doesn't implement [TRY.SRC](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20).</span></span> <span data-ttu-id="88d57-149">La manera recomendada de resolver este problema es cambiar a una batería más reciente, pero también puede intentar cambiar a un cable USB-A a USB-C.</span><span class="sxs-lookup"><span data-stu-id="88d57-149">Switching to a newer battery pack is the recommended way to solve this issue, but alternatively you can try switching to a USB-A to USB-C cable.</span></span> <span data-ttu-id="88d57-150">Tenga en cuenta que esto limita la tasa de carga a 7,5 vatios.</span><span class="sxs-lookup"><span data-stu-id="88d57-150">Keep in mind this will limit the charging rate to 7.5 watts.</span></span>
