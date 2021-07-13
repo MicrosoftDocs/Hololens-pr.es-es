@@ -1,6 +1,6 @@
 ---
-title: 'Windows Defender Application Control : WDAC'
-description: Información general sobre Windows Defender control de aplicaciones y cómo usarlo para administrar dispositivos de realidad mixta de HoloLens.
+title: 'Control de aplicaciones de Microsoft Defender: WDAC'
+description: Información general sobre Windows Defender application control y cómo usarlo para administrar HoloLens de realidad mixta.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -12,23 +12,23 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: a27a16913873c5245f734dbe084eb2b7ed007c20
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108310139"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639937"
 ---
-# <a name="windows-defender-application-control---wdac"></a>Windows Defender Application Control : WDAC
+# <a name="windows-defender-application-control---wdac"></a>Control de aplicaciones de Microsoft Defender: WDAC
 
-WDAC permite a un administrador de TI configurar sus dispositivos para bloquear el inicio de aplicaciones en los dispositivos. Esto es diferente de los métodos de restricción de dispositivos, como el modo de pantalla completa, donde el usuario se presenta con una interfaz de usuario que oculta las aplicaciones en el dispositivo, pero todavía se pueden iniciar. Mientras se implementa WDAC, las aplicaciones siguen estando visibles en la lista Todas las aplicaciones, pero WDAC impide que el usuario del dispositivo pueda iniciar esas aplicaciones y procesos.
+WDAC permite a un administrador de TI configurar sus dispositivos para bloquear el inicio de aplicaciones en los dispositivos. Esto es diferente de los métodos de restricción de dispositivos, como el modo de pantalla completa, donde se presenta al usuario una interfaz de usuario que oculta las aplicaciones en el dispositivo, pero todavía se pueden iniciar. Mientras se implementa WDAC, las aplicaciones siguen estando visibles en la lista Todas las aplicaciones, pero WDAC impide que el usuario del dispositivo pueda iniciar esas aplicaciones y procesos.
 
-Se puede asignar más de una directiva WDAC a un dispositivo. Si se establecen varias directivas WDAC en un sistema, las más restrictivas tienen efecto. 
+Un dispositivo puede tener asignada más de una directiva WDAC. Si hay varias directivas WDAC establecidas en un sistema, las más restrictivas tienen efecto. 
 
 > [!NOTE]
-> Cuando los usuarios finales intentan iniciar una aplicación bloqueada por WDAC, en HoloLens no recibirán una notificación sobre cómo no poder iniciar esa aplicación.
+> Cuando los usuarios finales intentan iniciar una aplicación bloqueada por WDAC, en HoloLens no recibirán una notificación sobre no poder iniciar esa aplicación.
 
-La siguiente es una guía para que los usuarios aprendan a usar [WDAC](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)y Windows PowerShell para permitir o bloquear aplicaciones en HoloLens 2 dispositivos con Microsoft Intune .
+La siguiente es una guía para que los usuarios aprendan a usar [WDAC](/mem/intune/configuration/custom-profile-hololens)y Windows PowerShell para permitir o bloquear aplicaciones en HoloLens 2 dispositivos con Microsoft Intune .
 
 Cuando los usuarios buscan aplicaciones instaladas en su equipo Windows 10 mediante el primer paso de ejemplo, es posible que deban realizar algunos intentos para restringir los resultados.
 
@@ -46,9 +46,9 @@ Get-AppxPackage -name *edge*
 
 ## <a name="package-family-names-for-apps-on-hololens"></a>Nombres de familia de paquetes para aplicaciones en HoloLens
 
-En la guía vinculada anteriormente, puede editar manualmente newPolicy.xml y agregar reglas para las aplicaciones que solo están instaladas en HoloLens con sus nombres de familia de paquetes. A veces hay aplicaciones que puede usar que no están en el equipo de escritorio que desea agregar a la directiva.
+En la guía vinculada anteriormente, puede editar manualmente newPolicy.xml y agregar reglas para aplicaciones que solo se instalan en HoloLens con sus nombres de familia de paquetes. A veces hay aplicaciones que puede usar que no están en el equipo de escritorio que desea agregar a la directiva.
 
-Esta es una lista de aplicaciones de uso frecuente In-Box aplicaciones para HoloLens 2 dispositivos.
+A continuación se muestra una lista de aplicaciones de In-Box para HoloLens 2 dispositivos.
 
 | Nombre de la aplicación                   | Nombre de familia del paquete                                |
 |----------------------------|----------------------------------------------------|
@@ -65,20 +65,20 @@ Esta es una lista de aplicaciones de uso frecuente In-Box aplicaciones para Holo
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | Películas y TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| Fotos                     | Microsoft.Windows.Photos_8wekyb3d8bbwe             |
+| Fotos                     | Microsoft. Windows. Photos_8wekyb3d8bbwe             |
 | Configuración                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Sugerencias                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1 - El bloqueo Instalador de aplicación bloqueará solo la aplicación Instalador de aplicación y no las aplicaciones instaladas desde otros orígenes, como la Microsoft Store o desde la solución MDM.
+- 1 - El bloqueo de Instalador de aplicación solo bloqueará la aplicación Instalador de aplicación y no las aplicaciones instaladas desde otros orígenes, como la Microsoft Store o desde la solución MDM.
 
 ### <a name="how-to-find-a-package-family-name"></a>Cómo buscar un nombre de familia de paquetes
 
 Si una aplicación no está en esta lista, un usuario puede usar Portal de dispositivos, conectado a un HoloLens 2 que ha instalado la aplicación que desea bloquearse, para determinar packageRelativeID y, a partir de ahí, obtener PackageFamilyName.
 
 1. Instale la aplicación en el HoloLens 2 dispositivo. 
-1. Abra Configuración -> actualizaciones & Seguridad -> Para desarrolladores,  habilite el modo Desarrollador y, a continuación, Portal **de dispositivos.** 
-    1. Puede encontrar más información sobre la [configuración y el uso del portal de dispositivos aquí.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
-1. Una Portal de dispositivos conexión, vaya a **Vistas y,** a continuación, **a Aplicaciones.** 
+1. Abra Configuración -> Actualizaciones & Seguridad -> Para desarrolladores y habilite  el modo desarrollador y, a continuación, **portal de dispositivos.** 
+    1. Obtenga más instrucciones sobre la configuración y [el uso del portal de dispositivos aquí.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. Una Portal de dispositivos conexión, vaya a **Vistas y,** a continuación, **Aplicaciones**. 
 1. En el panel Aplicaciones instaladas, use la lista desplegable para seleccionar la aplicación instalada. 
 1. Busque PackageRelativeID. 
 1. Copie los caracteres de la aplicación antes de !, estos caracteres serán packageFamilyName.
