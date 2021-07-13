@@ -1,23 +1,23 @@
 ---
 title: Instrucciones de contribución
-description: Obtenga información sobre cómo contribuir a los documentos de HoloLens en docs.microsoft.com plataforma mediante Markdown con tipo GitHub.
+description: Obtenga información sobre cómo contribuir a los documentos HoloLens en la plataforma docs.microsoft.com mediante GitHub markdown con GitHub de conexión.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108310092"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635677"
 ---
-# <a name="contributing-to-the-hololens-documentation"></a>Contribución a la documentación de HoloLens
+# <a name="contributing-to-the-hololens-documentation"></a>Contribución a la documentación HoloLens datos
 
-Le damos la bienvenida a la documentación [de HoloLens.](https://github.com/MicrosoftDocs/Hololens) Los artículos que cree o edite en este repositorio **serán visibles para el público.** 
+Bienvenido a la [documentación de HoloLens .](https://github.com/MicrosoftDocs/Hololens) Los artículos que cree o edite en este repositorio **serán visibles para el público.** 
 
-Los documentos de HoloLens se muestran en la plataforma docs.microsoft.com, que usa Markdown con estilo GitHub con características de Markdig. El contenido que edite en este repositorio se formatee en páginas con formato que se muestran en https://docs.microsoft.com/hololens . 
+HoloLens documentos se muestran en la plataforma docs.microsoft.com, que usa markdown con GitHub con características markdig. El contenido que edite en este repositorio se formatee en páginas con formato que se muestran en /hololens.
 
 En esta página se tratan los pasos básicos y las directrices para contribuir y vínculos a los conceptos básicos de Markdown. Gracias por su contribución.
 
@@ -26,44 +26,44 @@ En esta página se tratan los pasos básicos y las directrices para contribuir y
 | Nombre del repositorio | URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| Mixed Reality | [MicrosoftDocs/mixed-reality](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
 | VR Enthusiasts Guide | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
-## <a name="before-you-start"></a>Antes de comenzar
+## <a name="before-you-start"></a>Antes de empezar
 
-Si aún no tiene una, deberá crear [una cuenta de GitHub.](https://github.com/join)
+Si aún no tiene una, deberá crear una cuenta [de GitHub .](https://github.com/join)
 
 >[!NOTE]
->Si es un empleado de Microsoft, vincule su cuenta de GitHub a su alias de Microsoft en el [portal de código abierto de Microsoft](https://repos.opensource.microsoft.com/). Únase a **las organizaciones "Microsoft"** **y "MicrosoftDocs".**
+>Si es empleado de Microsoft, vincule su cuenta de GitHub a su alias de Microsoft en el [portal de código abierto de Microsoft](https://repos.opensource.microsoft.com/). Únase a **las organizaciones "Microsoft"** **y "MicrosoftDocs".**
 
-Al configurar la cuenta de GitHub, también se recomiendan estas precauciones de seguridad:
-- Cree una [contraseña segura para la cuenta de GitHub.](https://github.com/settings/admin)
+Al configurar la cuenta GitHub, también se recomiendan estas precauciones de seguridad:
+- Cree una [contraseña segura para la cuenta GitHub .](https://github.com/settings/admin)
 - Habilite [la autenticación en dos fases.](https://github.com/settings/two_factor_authentication/configure)
 - Guarde los [códigos de recuperación](https://github.com/settings/auth/recovery-codes) en un lugar seguro.
-- Actualice la [configuración del perfil público.](https://github.com/settings/profile)
+- Actualice la configuración [del perfil público.](https://github.com/settings/profile)
    - Establezca su nombre y considere la posibilidad de establecer *el correo electrónico público* en No mostrar mi dirección de correo *electrónico.*
    - Se recomienda cargar una imagen de perfil porque se muestra una miniatura en las páginas de documentos a las que contribuye.
-- Si tiene previsto usar la línea de comandos, considere la posibilidad de configurar [Git Administrador de credenciales para Windows.](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) De este modo, no tendrá que escribir la contraseña cada vez que realice una contribución.
+- Si tiene previsto usar la línea de comandos, considere la posibilidad de configurar [Git Administrador de credenciales para Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). De este modo, no tendrá que escribir la contraseña cada vez que realice una contribución.
 
-El sistema de publicación está vinculado a GitHub, por lo que estos pasos son importantes. Aparecerá como autor o colaborador de cada artículo mediante el alias de GitHub.
+El sistema de publicación está asociado a GitHub, por lo que estos pasos son importantes. Aparecerá como autor o colaborador de cada artículo mediante el alias GitHub usuario.
 
 ## <a name="editing-an-existing-article"></a>Edición de un artículo existente
 
-Use el siguiente flujo de trabajo para realizar actualizaciones en *un artículo existente* a través de GitHub en un explorador web:
+Use el flujo de trabajo siguiente para realizar actualizaciones en *un artículo existente* a través GitHub en un explorador web:
 
 1. Vaya al artículo que desea editar en la carpeta "mixed-reality-docs".
 
-2. Seleccione el botón Editar (icono de lápiz) en la parte superior derecha, que bifurcará automáticamente una rama descartable de la rama "maestra".
+2. Seleccione el botón Editar (icono de lápiz) de la parte superior derecha, que bifurcará automáticamente una rama descartable de la rama "maestra".
 
    ![Edite un artículo.](images/editpage.png)
    
 3. Edite el contenido del artículo según [los "Conceptos básicos de Markdown".](#markdown-basics)
 
-4. Actualice los metadatos en la parte superior de cada artículo:
+4. Actualice los metadatos de la parte superior de cada artículo:
 
-   * **title:** título de la página que aparece en la pestaña del explorador cuando se está visualizando el artículo. Los títulos de página se usan para SEO e indexación, por lo que no cambie el título a menos que sea necesario (aunque esto es menos crítico antes de que la documentación se haga pública).
+   * **title:** título de página que aparece en la pestaña del explorador cuando se está visualizando el artículo. Los títulos de página se usan para seO e indexación, por lo que no cambie el título a menos que sea necesario (aunque esto es menos crítico antes de que la documentación se haga pública).
    * **description:** escriba una breve descripción del contenido del artículo, lo que aumenta el SEO y la detección.
-   * **author**: si es el propietario principal de la página, agregue aquí el alias de GitHub.
+   * **author:** si es el propietario principal de la página, agregue el alias GitHub aquí.
    * **ms.author:** si es el propietario principal de la página, agregue el alias de Microsoft aquí (no necesita , solo @microsoft.com el alias).
    * **ms.date:** actualice la fecha si va a agregar contenido principal a la página, pero no para correcciones como aclaración, formato, gramática o ortografía.
    * **keywords:** las palabras clave ayudan en SEO (optimización del motor de búsqueda). Agregue palabras clave, separadas por una coma y un espacio, que sean específicas del artículo, pero sin signos de puntuación después de la última palabra clave de la lista. No es necesario agregar palabras clave globales que se apliquen a todos los artículos, ya que se administran en otro lugar. 
@@ -94,21 +94,21 @@ Para agregar una redirección a .openpublishing.redirection.js, agregue una entr
 
 - es `redirect_url` la dirección URL pública relativa del artículo anterior al nuevo. Asegúrese de que esta dirección URL **no contiene** o , ya que hace referencia a la dirección URL pública y no a la ruta de acceso `mixed-reality-docs` del `.md` repositorio. Se permite la vinculación a una sección dentro del `#section` nuevo artículo mediante . También puede usar una ruta de acceso absoluta a otro sitio aquí, si es necesario.
 
-- `redirect_document_id` indica si desea conservar el identificador del documento del archivo anterior. De manera predeterminada, es `false`. Use `true` si desea conservar el valor del atributo del artículo `ms.documentid` redirigido. Si conserva el identificador del documento, los datos, como las vistas de página y las clasificaciones, se transferirán al artículo de destino. Haga esto si el redireccionamiento es principalmente un cambio de nombre y no un puntero a otro artículo que solo cubre parte del mismo contenido.
+- `redirect_document_id` indica si desea conservar el identificador del documento del archivo anterior. De manera predeterminada, es `false`. Use `true` si desea conservar el valor del atributo del artículo `ms.documentid` redirigido. Si conserva el identificador del documento, los datos, como las vistas de página y las clasificaciones, se transferirán al artículo de destino. Haga esto si el redireccionamiento es principalmente un cambio de nombre y no un puntero a un artículo diferente que solo cubre parte del mismo contenido.
 
 Si agrega un redireccionamiento, asegúrese de eliminar también el archivo antiguo.
 
 ## <a name="creating-a-new-article"></a>Creación de un nuevo artículo
 
-Use el siguiente flujo de trabajo *para crear nuevos artículos en* el repositorio de documentación a través de GitHub en un explorador web:
+Use el flujo de trabajo siguiente *para crear nuevos artículos en* el repositorio de documentación a través GitHub en un explorador web:
 
-1. Cree una bifurcación fuera de la rama "maestra" de MicrosoftDocs/mixed-reality (con el botón **Bifurcar** de la parte superior derecha).
+1. Cree una bifurcación de la rama "maestra" de MicrosoftDocs/mixed-reality (con el botón **Bifurcar** de la parte superior derecha).
 
    ![Bifurcar la rama maestra.](images/forkbranch.png)
    
 2. En la carpeta "mixed-reality-docs", seleccione **Crear nuevo archivo** en la parte superior derecha.
 
-3. Cree un nombre de página para el artículo (use guiones en lugar de espacios y no use signos de puntuación ni apóstrofos) y anexe ".md".
+3. Cree un nombre de página para el artículo (use guiones en lugar de espacios y no use signos de puntuación ni apóstrofes) y anexe ".md".
 
    ![Asigne un nombre a la nueva página.](images/newpagetitle.png)
    
@@ -146,13 +146,13 @@ Use el siguiente flujo de trabajo *para crear nuevos artículos en* el repositor
 Los siguientes recursos le ayudarán a aprender a editar la documentación mediante el lenguaje Markdown:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/) (Conceptos básicos de Markdown)
-- [Recursos adicionales para escribir Markdown para docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Recursos adicionales para escribir Markdown para docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Adición de tablas
 
 Debido a la forma docs.microsoft.com tablas de estilos, no tendrán bordes ni estilos personalizados, aunque pruebe CSS en línea. Parecerá que funciona durante un breve período de tiempo, pero finalmente la plataforma quitará el estilo de la tabla. Por lo tanto, planee con antelación y mantenga las tablas sencillas. [Este es un sitio que facilita las tablas de Markdown.](https://www.tablesgenerator.com/markdown_tables)
 
-La [extensión Docs Markdown](https://docs.microsoft.com/teamblog/docs-extension) para Visual Studio Code también facilita la generación de tablas si usa Visual Studio Code [(consulte](#using-visual-studio-code) a continuación) para editar la documentación.
+La [extensión Docs Markdown](/teamblog/docs-extension) para Visual Studio Code también facilita la generación de tablas si usa Visual Studio Code [(consulte a continuación)](#using-visual-studio-code) para editar la documentación.
 
 ### <a name="adding-images"></a>Incorporación de imágenes
 
@@ -170,28 +170,28 @@ Deberá cargar las imágenes en la carpeta "mixed-reality-docs/images" del repos
 
 ## <a name="previewing-your-work"></a>Vista previa del trabajo
 
-Durante la edición en GitHub a  través de un explorador web, puede seleccionar la pestaña Vista previa cerca de la parte superior de la página para obtener una vista previa del trabajo antes de confirmar. 
+Al editar en GitHub a través de un  explorador web, puede seleccionar la pestaña Vista previa cerca de la parte superior de la página para obtener una vista previa del trabajo antes de confirmar. 
 
 >[!NOTE]
 >La vista previa de los cambios review.docs.microsoft.com solo está disponible para los empleados de Microsoft
 
-Empleados de Microsoft: una vez que sus contribuciones se hayan combinado en la rama "maestra", puede revisar el contenido antes de que se haga público en https://review.docs.microsoft.com/hololens?branch=master . Busque el artículo con la tabla de contenido de la columna izquierda.
+Empleados de Microsoft: una vez que sus contribuciones se hayan combinado en la rama "maestra", puede revisar el contenido antes de que se haga público en </hololens?branch=master>. Busque el artículo con la tabla de contenido de la columna izquierda.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Edición en el explorador frente a edición con un cliente de escritorio
 
 La edición en el explorador es la manera más fácil de realizar cambios rápidos; sin embargo, hay algunas desventajas:
 
-- No se le hace una revisión ortótrea.
+- No se obtiene la revisión ortótórquea.
 - No se obtiene ninguna vinculación inteligente a otros artículos (tiene que escribir manualmente el nombre de archivo del artículo).
 - Puede ser complicado cargar y hacer referencia a imágenes.
 
-Si prefiere no tratar estos problemas, use un cliente de escritorio [](#useful-extensions) como [Visual Studio Code](https://code.visualstudio.com/) con un par de extensiones útiles al contribuir.
+Si prefiere no tratar estos problemas, use un cliente de escritorio como [Visual Studio Code](https://code.visualstudio.com/) con un par de extensiones [útiles](#useful-extensions) al contribuir.
 
 ## <a name="using-visual-studio-code"></a>Uso de Visual Studio Code
 
 Por los motivos [mencionados anteriormente,](#editing-in-the-browser-vs-editing-with-a-desktop-client)puede que prefiera usar un cliente de escritorio para editar la documentación en lugar de un explorador web. Se recomienda usar [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Instalación
+### <a name="setup"></a>Configurar
 
 Siga estos pasos para configurar Visual Studio Code para trabajar con este repositorio:
 
@@ -209,10 +209,10 @@ Siga estos pasos para configurar Visual Studio Code para trabajar con este repos
 
 ### <a name="editing-documentation"></a>Edición de documentación
 
-Use el flujo de trabajo siguiente para realizar cambios en la documentación con Visual Studio Code:
+Use el siguiente flujo de trabajo para realizar cambios en la documentación con Visual Studio Code:
 
 >[!NOTE]
->Todas las instrucciones [](#creating-a-new-article) para [editar y](#editing-an-existing-article) crear [artículos,](#markdown-basics)y los aspectos básicos de la edición de Markdown , de arriba se aplican al Visual Studio Code también.
+>Todas las instrucciones para [editar](#editing-an-existing-article) [y](#creating-a-new-article) crear [artículos,](#markdown-basics)y los conceptos básicos de la edición de Markdown , de arriba, también se aplican al Visual Studio Code.
 
 1. Asegúrese de que la bifurcación clonada está actualizada con el repositorio oficial.
 
@@ -222,23 +222,23 @@ Use el flujo de trabajo siguiente para realizar cambios en la documentación con
       
    2. En Visual Studio Code, seleccione el botón sincronizar para sincronizar la bifurcación recién actualizada con el clon local.
       
-      ![Haga clic en la imagen del botón de sincronización.](images/sync-clone.png)
+      ![Haga clic en la imagen del botón sincronizar.](images/sync-clone.png)
       
 2. Cree o edite artículos en el repositorio clonado mediante Visual Studio Code.
 
    1. Edite uno o varios artículos (agregue imágenes a la carpeta "images" si es necesario).
    
-   2. **Guarde los** cambios en **el Explorador** de .
+   2. **Guarde** los cambios en el **Explorador** de .
       
       ![Elija "Guardar todo" en el Explorador](images/explorer-save.png)
       
-   3. **Confirme todos los** cambios en **el Control de código fuente** (escriba el mensaje de confirmación cuando se le solicite).
+   3. **Confirme todos los** cambios en **control de código fuente** (escriba el mensaje de confirmación cuando se le solicite).
    
       ![Elija "Confirmar todo" en control de código fuente](images/source-control-commit.png)
       
-   4. Seleccione el **botón** sincronizar para volver a sincronizar los cambios en el origen (la bifurcación en GitHub).
+   4. Seleccione el **botón** Sincronizar para volver a sincronizar los cambios en el origen (la bifurcación en GitHub).
       
-      ![Haga clic en el botón Sync (Sincronizar).](images/sync-back.png)
+      ![Haga clic en el botón sync (Sincronizar).](images/sync-back.png)
       
 3. En un explorador web, cree una solicitud de extracción para sincronizar nuevos cambios en la bifurcación con MicrosoftDocs/mixed-reality 'master' (asegúrese de que la flecha apunta de la manera correcta).
 

@@ -14,28 +14,27 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a44247b4afea747e4b75c974fcae344380909989
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 86d36275d5cf1296ca3e9fec90684a188a29f3f0
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923540"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635133"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guía de implementación: información general HoloLens 2 conexión a la nube con Remote Assist: información general
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guía de implementación: cloud connected HoloLens 2 with Remote Assist – Overview
 
-Esta guía ayudará a los profesionales de TI a planear e implementar Microsoft HoloLens 2 dispositivos con Remote Assist en su organización. Esto servirá como modelo para implementaciones de prueba de concepto en su organización en una variedad de HoloLens 2 casos de uso. La configuración es similar a [Escenario A: Implementación en dispositivos de conexión a la nube.](https://docs.microsoft.com/hololens/common-scenarios#scenario-a) 
+Esta guía ayudará a los profesionales de TI a planear e implementar Microsoft HoloLens 2 dispositivos con Remote Assist en su organización. Esto servirá como modelo para las implementaciones de prueba de concepto en su organización en una variedad de HoloLens 2 casos de uso. La configuración es similar a [Escenario A: Implementación en dispositivos de conexión a la nube.](https://docs.microsoft.com/hololens/common-scenarios#scenario-a) 
 
-Durante la guía, se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar inmediatamente Remote Assist la configuración del dispositivo. Para ello, remos por los elementos importantes de la infraestructura necesarios para configurarse y ejecutarse, logrando la implementación a escala con HoloLens 2. No se aplicarán otras restricciones o configuraciones de dispositivos en esta guía; sin embargo, le recomendamos que explore esas opciones después de finalizar.
+Durante la guía, se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar inmediatamente Remote Assist la configuración del dispositivo. Para ello, remos por los elementos importantes de la infraestructura necesarios para configurarse y ejecutarse, lo que permite realizar la implementación a escala con HoloLens 2. No se aplicarán otras restricciones o configuraciones de dispositivos en esta guía; sin embargo, le recomendamos que explore esas opciones después de finalizar.
 
 ## <a name="prerequisites"></a>Prerrequisitos
 
 La siguiente infraestructura debe estar en su lugar para implementar el HoloLens 2. Si no es así, la configuración de Azure e Intune se incluye en esta guía:
 
-- Wi-Fi
-    - Las redes suelen estar abiertas a internet y a los servicios en la nube
-- Azure Active Directory (Azure AD) Unirse a la inscripción automática de MDM[(Azure AD suscripción P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) necesaria)
-- MDM (Intune) administrado
-    - Una o varias aplicaciones se implementan a través de MDM.
+Se trata de una configuración similar a Escenario [A:](/hololens/common-scenarios#scenario-a)Implementación en dispositivos de conexión a la nube, que es una buena opción para muchas implementaciones de prueba de concepto, que incluirá:
+
+- Wi-Fi las redes están totalmente abiertas a Internet y a los servicios en la nube
+- Azure AD unirse a la inscripción automática de MDM: MDM (Intune) administrado
 - Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
     - Se admiten uno o varios usuarios por dispositivo.
 
@@ -44,7 +43,7 @@ La siguiente infraestructura debe estar en su lugar para implementar el HoloLens
 
 ## <a name="learn-about-remote-assist"></a>Más información sobre Remote Assist
 
-Remote Assist permite el mantenimiento y la reparación colaborativos, la inspección remota, así como el uso compartido de conocimientos y el entrenamiento. Al conectar a personas en distintos roles y ubicaciones, un Remote Assist puede conectarse con un colaborador remoto en Microsoft Teams. Pueden combinar vídeo, capturas de pantalla y anotaciones para resolver problemas en tiempo real incluso cuando&#39;están en la misma ubicación. Los colaboradores remotos pueden insertar imágenes de referencia, esquemas y otra información útil del espacio físico del técnico&#39;para que puedan hacer referencia al esquema mientras trabajan de forma rápida y sin manos en HoloLens.
+Remote Assist permite el mantenimiento y la reparación colaborativos, la inspección remota, así como el uso compartido de conocimientos y el entrenamiento. Al conectar a personas en distintos roles y ubicaciones, un Remote Assist puede conectarse con un colaborador remoto en Microsoft Teams. Pueden combinar vídeo, capturas de pantalla y anotaciones para resolver problemas en tiempo real incluso cuando&#39;están en la misma ubicación. Los colaboradores remotos pueden insertar imágenes de referencia, esquemas y otra información útil del espacio físico del técnico&#39;para que puedan hacer referencia al esquema mientras trabajan de forma rápida y sin manos HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -58,7 +57,7 @@ Remote Assist permite el mantenimiento y la reparación colaborativos, la inspec
 - Remote Assist licencia
 - Conectividad de red
 
-#### <a name="microsoft-teams-user"></a>Usuario de Microsoft Teams
+#### <a name="microsoft-teams-user"></a>Microsoft Teams usuario
 
 - Microsoft Teams o [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Conectividad de red
@@ -93,7 +92,7 @@ Implementación:
 Mantener:
 
 > [!div class="checklist"]
-> - [Actualización de Remote Assist con la Microsoft Store aplicación.](hololens2-cloud-connected-maintain.md#updates)
+> - [Cómo actualizar Remote Assist con la Microsoft Store aplicación.](hololens2-cloud-connected-maintain.md#updates)
 > - [Realización de un plan de soporte técnico.](hololens2-cloud-connected-maintain.md#support-plan)
 > - [Plan de desarrollo.](hololens2-cloud-connected-maintain.md#development-plan)
 

@@ -1,5 +1,5 @@
 ---
-title: Desbloqueo de Windows Holographic for Business características
+title: Desbloqueo de las características de Windows Holographic for Business
 description: Al actualizar a Windows Holographic for Business, HoloLens proporciona características adicionales diseñadas para empresas.
 ms.prod: hololens
 ms.sitesec: library
@@ -12,36 +12,36 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8d42c935e698f156aed894e4fa5012c9f04d8d49
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108310156"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635201"
 ---
-# <a name="unlock-windows-holographic-for-business-features"></a>Desbloqueo de Windows Holographic for Business características
+# <a name="unlock-windows-holographic-for-business-features"></a>Desbloqueo de las características de Windows Holographic for Business
 
 > [!IMPORTANT]
-> Esta página solo se aplica a HoloLens 1st Gen.
+> Esta página solo se aplica a HoloLens 1.ª generación.
 
-Microsoft HoloLens está disponible en *development Edition,* que ejecuta Windows Holographic (una edición de Windows 10 diseñada para HoloLens) y en [Commercial Suite](hololens-commercial-features.md), que proporciona características adicionales diseñadas para empresas.
+Microsoft HoloLens está disponible en *development Edition,* que ejecuta Windows Holographic (una edición de Windows 10 diseñada para HoloLens) y en [Commercial Suite,](hololens-commercial-features.md)que proporciona características adicionales diseñadas para empresas.
 
 Al comprar Commercial Suite, recibirá una licencia que actualiza Windows Holographic a Windows Holographic for Business. Puede aplicar esta licencia al dispositivo mediante el proveedor de administración de dispositivos móviles [(MDM)](#edition-upgrade-by-using-mdm) de la organización o un paquete [de aprovisionamiento](#edition-upgrade-by-using-a-provisioning-package).
 
 > [!TIP]
-> En Windows 10, versión 1803, puede comprobar que HoloLens se ha actualizado a la edición business seleccionando Settings  >  System (Sistema de **configuración).**
+> En Windows 10, versión 1803, puede comprobar que el HoloLens se ha actualizado a la edición business seleccionando **Configuración**  >  **System**.
 
 ## <a name="edition-upgrade-by-using-mdm"></a>Actualización de edición mediante MDM
 
 La licencia de empresa se puede aplicar mediante cualquier proveedor de MDM que admita el [proveedor de servicios de configuración (CSP) WindowsLicensing](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) (en inglés). La versión más reciente de la API de MDM de Microsoft será compatible con el CSP WindowsLicensing.
 
-Para obtener instrucciones paso a paso para actualizar HoloLens mediante Microsoft Intune, consulte Actualización de dispositivos que ejecutan [Windows Holographic a Windows Holographic for Business](https://docs.microsoft.com/intune/holographic-upgrade).
+Para obtener instrucciones paso a paso para actualizar HoloLens mediante Microsoft Intune, consulte Actualización de dispositivos que ejecutan Windows [Holographic a Windows Holographic for Business](/intune/holographic-upgrade).
 
  En otros proveedores de MDM, los pasos específicos para configurar e implementar la directiva pueden variar.
 
 ## <a name="edition-upgrade-by-using-a-provisioning-package"></a>Actualización de edición mediante un paquete de aprovisionamiento
 
-Los paquetes de aprovisionamiento son archivos creados por la herramienta Diseñador de configuración de Windows que aplican una configuración especificada a un dispositivo.
+Los paquetes de aprovisionamiento son archivos creados por Windows diseñador de configuración que aplican una configuración especificada a un dispositivo.
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Creación de un paquete de aprovisionamiento que actualice la edición de Windows Holographic
 
@@ -64,7 +64,7 @@ Los paquetes de aprovisionamiento son archivos creados por la herramienta Diseñ
 
 1. En el menú **Exportar**, selecciona **Paquete de aprovisionamiento**.
 
-1. Cambie **Propietario a** **Administrador** de TI, que establece la prioridad de este paquete de aprovisionamiento para que sea mayor que otras aplicadas a este dispositivo desde orígenes diferentes y, a continuación, **seleccione Siguiente.**
+1. Cambie **Propietario a** **Administrador** de TI, que establece la prioridad de este paquete de aprovisionamiento para que sea mayor que otras que se aplican a este dispositivo desde orígenes diferentes y, a continuación, **seleccione Siguiente.**
 
 1. Establece un valor para **Versión del paquete**.
 
@@ -73,7 +73,7 @@ Los paquetes de aprovisionamiento son archivos creados por la herramienta Diseñ
 
 1. En **Seleccionar detalles de seguridad para el paquete de aprovisionamiento,** seleccione **Siguiente.**
 
-1. Seleccione **Siguiente** para especificar la ubicación de salida a la que desea que vaya el paquete de aprovisionamiento una vez que se haya creado. De forma predeterminada, Windows ICD usa la carpeta de proyecto como ubicación de salida.
+1. Seleccione **Siguiente** para especificar la ubicación de salida en la que desea que el paquete de aprovisionamiento vaya una vez que se haya creado. De forma predeterminada, Windows ICD usa la carpeta de proyecto como ubicación de salida.
 
     Opcionalmente, puede seleccionar Examinar **para** cambiar la ubicación de salida predeterminada.
 
@@ -88,11 +88,11 @@ Los paquetes de aprovisionamiento son archivos creados por la herramienta Diseñ
 1. Con el cable USB, conecte el dispositivo a un equipo. Inicie el dispositivo, pero no continúe más allá de la **página** de ajuste de la experiencia de configuración inicial (la primera página con el cuadro azul). En el equipo, HoloLens se muestra como un dispositivo en Explorador de archivos.
 
     > [!NOTE]
-    > Si el dispositivo HoloLens ejecuta Windows 10, versión 1607 o anterior, abra Explorador de archivos presionando brevemente  y  liberando los botones Bajar volumen y Encendido simultáneamente en el dispositivo.
+    > Si el dispositivo HoloLens ejecuta Windows 10, versión 1607 o anterior, abra Explorador de archivos presionando brevemente y  liberando  los botones Bajar volumen y Encendido simultáneamente en el dispositivo.
 
 1. En el Explorador de archivos, arrastra y coloca el paquete de aprovisionamiento (.ppkg) en el almacenamiento del dispositivo.
 
-1. Mientras HoloLens sigue en la **página** de ajuste, presione  brevemente y suelte los botones **Bajar** volumen y Encendido simultáneamente de nuevo.
+1. Mientras HoloLens sigue en la página de ajuste, presione  brevemente  y suelte los botones Bajar volumen y Encendido simultáneamente de nuevo. 
 
 1. HoloLens le pregunta si confía en el paquete y le gustaría aplicarlo. Confirma que el paquete es de confianza.
 

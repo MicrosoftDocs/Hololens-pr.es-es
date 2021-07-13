@@ -1,0 +1,131 @@
+### YamlMime:FAQ
+metadata:
+  title: Preguntas de seguridad más frecuentes
+  description: Manténgase al día con las preguntas de seguridad más frecuentes y las respuestas sobre HoloLens de realidad mixta.
+  ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
+  author: pawinfie
+  ms.author: pawinfie
+  ms.date: 02/19/2020
+  keywords: hololens, Windows Mixed Reality, security
+  ms.prod: hololens
+  ms.sitesec: library
+  ms.topic: article
+  audience: ITPro
+  ms.localizationpriority: medium
+  ms.custom:
+  - CI 111456
+  - CSSTroubleshooting
+  manager: bradke
+  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637284"
+title: Preguntas más frecuentes sobre la seguridad de HoloLens (1.ª generación)
+summary: ''
+sections:
+- name: Omitido
+  questions:
+  - question: >
+      ¿Qué nivel de protección de HoloLens ofrece 1?
+    answer: >
+      * Consulte [cifrado de BitLocker de HoloLens (1ª generación)](hololens1-encryption.md)
+  - question: >
+      ¿Qué tipo de conexión inalámbrica se usa?
+    answer: >
+      * 802.11ac y Bluetooth 4.1 LE
+  - question: >
+      ¿Qué tipo de arquitectura se incorpora?  Por ejemplo: ¿apuntar a punto, malla o algo más?
+    answer: >
+      * Wi-Fi se puede usar en modo de infraestructura para comunicarse con otros puntos de acceso inalámbrico.
+
+      * Bluetooth se puede usar para hablar del mismo nivel entre varios HoloLens si la aplicación de los clientes lo admite o con otros Bluetooth dispositivos.
+  - question: >
+      ¿Qué es el identificador de FCC?
+    answer: >
+      * C3K1688
+  - question: >
+      ¿En qué intervalo de frecuencia y canales funciona el dispositivo y es configurable?
+    answer: >
+      * Wi-Fi: el intervalo de frecuencia no es configurable por el usuario y depende del país de uso. En la versión Wi-Fi usa canales de 2,4 GHz (1-11) y de 5 GHz (36-64, 100-165).
+
+      * Bluetooth: Bluetooth usa el intervalo estándar de 2,4-2,48 GHz.
+  - question: >
+      ¿Puede el dispositivo permitir o bloquear frecuencias específicas?
+    answer: >
+      * El usuario o el dispositivo no puede controlar esto.
+  - question: >
+      ¿Cuál es el nivel de energía para transmitir y recibir? ¿Es ajustable? ¿Cuál es el intervalo de operaciones?
+    answer: >
+      * Nuestros estándares de pruebas de emisión se pueden [encontrar aquí.](https://fccid.io/C3K1688) La gama de operaciones depende en gran medida del punto de acceso y el entorno, pero es aproximadamente equivalente a otros teléfonos, tabletas o equipos de alta calidad.
+  - question: >
+      ¿Cuál es el ciclo de servicio/duración del funcionamiento normal?
+    answer: >
+      * De 2 a 3 horas de uso activo y hasta dos semanas de tiempo de espera
+
+      * La duración de la batería no está disponible.
+  - question: >
+      ¿Qué es el comportamiento de transmisión y recepción cuando una herramienta no está dentro del intervalo?
+    answer: >
+      * HoloLens transmitir o recibir sigue el patrón estándar de Wi-Fi/Bluetooth estándar. En el borde de su intervalo, probablemente observará que la entrada se está desconectando por completo, pero después de volver al intervalo, debería volver a conectarse rápidamente.
+  - question: >
+      ¿Qué es la densidad de implementación por pie cuadrado?
+    answer: >
+      * Esto depende de la infraestructura de red.
+  - question: >
+      ¿Puede el dispositivo usar la infraestructura como cliente?
+    answer: >
+      * Sí
+  - question: >
+      ¿Qué protocolo se usa?
+    answer: >
+      * HoloLens no usa ningún protocolo propietario
+  - question: >
+      Frecuencia de actualización del sistema operativo: ¿cuál es la frecuencia de las actualizaciones del sistema operativo para hl?  ¿Hay una programación establecida?  Microsoft publica revisiones de seguridad según sea necesario, etc.
+    answer: >
+      * Microsoft proporciona actualizaciones del sistema operativo para HoloLens exactamente igual que se hace para Windows 10. Normalmente hay dos actualizaciones principales al año, una en la primavera y otra en caída. Como HoloLens es un Windows, el concepto de actualización es el mismo que con cualquier otro Windows dispositivo. Microsoft publica las revisiones de seguridad según sea necesario y sigue el mismo concepto que se hace en cualquier otro Windows dispositivo.
+  - question: >
+      Seguridad del sistema operativo: ¿qué opciones hay para mejorar el sistema operativo?  ¿Se pueden quitar o apagar aplicaciones o servicios innecesarios?
+    answer: >
+      * HoloLens se comporta como un smartphone. Es comparable a otros dispositivos Windows modernos. HoloLens pueden administrarse mediante Microsoft Intune u otras soluciones modernas de Administración de dispositivos, como MobileIron, Airwatch o Soti. Hay directivas que puede establecer en estos sistemas de administración para colocar directivas de seguridad en el dispositivo y para proteger el dispositivo. También existe la opción de eliminar las aplicaciones innecesarias si se desea.
+  - question: >
+      ¿Cómo se administrarán y actualizarán las aplicaciones de software? ¿Qué control tenemos para definir qué aplicaciones se cargan y el proceso de actualización de aplicaciones para las aplicaciones que se encuentran en Microsoft Store?
+    answer: >
+      * HoloLens las aplicaciones de software solo a través del Windows almacén. Solo se pueden instalar paquetes de aplicación de Appx, que se desarrollan para el uso de HoloLens. Puede verlo en el Microsoft Store con un pequeño logotipo junto a la aplicación que muestra el HoloLens dispositivo. Cualquier control que tenga sobre la administración de aplicaciones de Store también se aplica a HoloLens. Puede usar el concepto de la tienda oficial o la tienda para empresas. Las aplicaciones se pueden cargar en paralelo (proceso manual para cargar una aplicación en un dispositivo Windows) o se pueden administrar a través de una MDM para que las aplicaciones se extran automáticamente de la tienda cuando sea necesario.
+  - question: >
+      ¿Cuál es la frecuencia de las actualizaciones de aplicaciones en la tienda para HoloLens?
+    answer: >
+      * A medida que seguimos el mismo concepto de Microsoft Store y extraer aplicaciones desde allí, el ciclo de actualización viene determinado por el desarrollador de la aplicación. Todas las opciones de administración que tiene para controlar el mecanismo de actualización en el almacén también se aplican a HoloLens.
+  - question: >
+      ¿Hay una funcionalidad de arranque seguro para la HoloLens?
+    answer: >
+      * Sí
+  - question: >
+      ¿Existe la capacidad de deshabilitar o desconectar la compatibilidad con periféricos del dispositivo?
+    answer: >
+      * Sí
+  - question: >
+      ¿Existe la capacidad de controlar o deshabilitar el uso de puertos en el dispositivo?
+    answer: >
+      * El HoloLens solo contiene dos puertos (uno para auriculares y otro para cargar o conectarse a equipos). No hay capacidad para deshabilitar el puerto debido a motivos de funcionalidad y recuperación.
+  - question: >
+      Antivirus, detección de puntos de conexión, IPS, lista de permitidos de control de aplicaciones: cualquier capacidad para ejecutar antivirus, detección de puntos de conexión, IPS, lista de permitidos de control de aplicaciones, etc.
+    answer: >
+      * Windows Holographic for Business (conjunto comercial) admite Windows Defender Smart Screen. Si una empresa antivirus creara y publicara su aplicación en la plataforma universal Windows, se podría descargar en HoloLens. En la actualidad, ninguna compañía ha hecho esto por HoloLens.
+
+      * Permitir aplicaciones es posible mediante Microsoft Enterprise Store, donde solo puede elegir qué aplicaciones específicas se pueden descargar. Además, a través de MDM puede bloquear qué aplicaciones específicas se pueden ejecutar o incluso ver en el dispositivo.
+  - question: >
+      ¿Podemos poner en cuarentena el dispositivo de la red de producción hasta que actualicemos el dispositivo si ha estado sin conexión durante un largo período de tiempo?  Por ejemplo: El dispositivo ha estado sentado en un cajón sin alimentación durante un período (seis meses) y no ha recibido actualizaciones, revisiones, etc.  Cuando intenta entrar en la red, podemos marcarla y decir que debe actualizar en otra red antes de que se le reensalte para unirse a la red.
+    answer: >
+      * Esto es algo que se puede administrar en el nivel de infraestructura mediante una MDM o un servidor local. El dispositivo se puede marcar como no conforme si no cumple una versión de actualización especificada.
+  - question: >
+      ¿Microsoft incluye puertas traseras o acceso a los servicios que permiten a Microsoft conectarse al dispositivo para compartir pantallas o tener soporte remoto a su manera?
+    answer: >
+      * No
+  - question: >
+      Cuando se genera un certificado PKI para la comunicación de confianza, queremos que el certificado se genere en el dispositivo para que sepamos que solo está en ese dispositivo, es único para ese dispositivo y no se puede exportar ni usar para suplantar el dispositivo. ¿Esto es cierto en HoloLens? Si no es así, ¿hay una posible mitigación?
+    answer: >-
+      * Csr para SCEP se genera en el propio dispositivo. Intune y el conector SCEP local ayudan a proteger las propias solicitudes agregando y comprobando una cadena de desafío que se envía al cliente.
+
+      * Puesto HoloLens (1.ª generación y 2.ª generación) tienen un módulo TPM, estos certificados se almacenarían en el módulo TPM y no se pueden extraer. Además, incluso si se pudiera extraer, las cadenas de desafío no se pudieron comprobar en un dispositivo diferente, lo que hace que los certificados o la clave no se puedan usar en distintos dispositivos.
