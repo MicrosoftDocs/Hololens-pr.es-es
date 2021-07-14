@@ -1,7 +1,7 @@
 ---
 title: Preparar un nuevo HoloLens 2
-description: Aprende a configurar y ajustar el dispositivo HoloLens 2 por primera vez, incluidas las sugerencias de salud y seguridad y las guías de hardware.
-keywords: hololens, lights, fit, comfort, parts, luces, comodidad, partes, ajuste
+description: Obtenga información sobre cómo configurar y ajustar un dispositivo HoloLens 2 por primera vez, incluidas sugerencias sobre salud y seguridad y guías de hardware.
+keywords: hololens, luces, ajuste, comodidad, piezas
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
@@ -12,117 +12,117 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b17ad031cfd49ac7a7553765633bc948bafc01d
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 22b3dad817260175bccdb89faac0bbae7b210038
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11282911"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924441"
 ---
-# Obtener tu HoloLens 2 listo para usar
+# <a name="get-your-hololens-2-ready-to-use"></a>Preparación de HoloLens 2 para su uso
 
-Los procedimientos siguientes te ayudarán a configurar un HoloLens 2 por primera vez.
+Los siguientes procedimientos le ayudarán a configurar un HoloLens 2 por primera vez.
 
-## Cargar tu HoloLens
+## <a name="charge-your-hololens"></a>Cargar el HoloLens
 
-Conecta la fuente de alimentación al puerto de carga con el cable USB-C (incluido). Conecta la fuente de alimentación a una toma de corriente. La fuente de alimentación y el cable USB C a C incluidos con el dispositivo son la mejor forma de cargar tu HoloLens 2. El cargador suministra 18 W de potencia (9 V a 2 A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera.
+Conecte la fuente de alimentación al puerto de carga usando el cable USB-C (incluido). Conecte la fuente de alimentación a una toma de corriente. La fuente de alimentación y el cable de USB C a USB C que se incluyen con el dispositivo son la mejor forma de cargar el HoloLens 2. El cargador suministra 18 W de potencia (9 V a 2 A). Con el cargador de pared suministrado, los dispositivos HoloLens 2 pueden realizar una carga completa de la batería en menos de 65 minutos cuando el dispositivo está en modo de espera.
 
 La velocidad y la tasa de carga pueden variar en función del entorno en el que se ejecute el dispositivo.
 
-- Cuando se cargue el dispositivo, se iluminará el indicador de la batería para señalar el nivel de carga actual.  La última luz aparecerá y desaparecerá gradualmente para indicar la carga activa.
-- Cuando HoloLens está activado, el indicador de la batería muestra el nivel de la batería en incrementos.
-- Cuando solo está encendida una de las cinco luces, significa que el nivel de batería se encuentra por debajo del 20 por ciento.
-- Si el nivel de la batería es críticamente bajo e intentas activar el dispositivo, una luz parpadeará brevemente y después se apagará.
+- Cuando el dispositivo se está cargando, se ilumina el indicador de la batería para señalar el nivel de carga.  La última luz parpadea para indicar que se está cargando.
+- Cuando el HoloLens está activado, el indicador de la batería muestra el nivel de la batería en incrementos.
+- Si solo hay encendida una de las cinco luces, el nivel de la batería está por debajo del 20 por ciento.
+- Si el nivel de la batería es demasiado bajo y se intenta encender el dispositivo, una luz parpadeará brevemente y después se apagará.
 
-Si necesita más información, [aquí se encuentran todos los detalles sobre la carga de dispositivos](hololens-recovery.md#charge-the-device). 
+En caso necesario, [aquí](hololens2-charging.md#charging-the-device) puede consultar la información completa sobre cómo cargar dispositivos. 
 
-## Realizar ajuste
+## <a name="adjust-fit"></a>Regular el ajuste
 
-Coloca HoloLens 2 en tu cabeza. Si llevas puestas gafas, déjatelas puestas.  La almohadilla de la frente debe estar situada cómodamente sobre tu frente y la banda de atrás debe estar colocada en el parte central de atrás de la cabeza.
+Colóquese el HoloLens 2 en la cabeza. Si lleva gafas, no hace falta que se las quite.  Acomódese correctamente la almohadilla de la frente y colóquese la banda trasera en la parte central de la cabeza.
 
-Si es necesario, extiende la banda de la cabeza girando la rueda de ajuste y, a continuación, afloja la correa.
+Si es necesario, extienda la banda de la cabeza girando la rueda de regulación y, a continuación, afloje la correa.
 
-![Adaptación y ajustes de HoloLens 2](images/hololens2-fit.png)
+![Ajuste y regulación de HoloLens 2](images/hololens2-fit.png)
 
-### Colocar y quitar la correa
+### <a name="attach-and-detach-the-overhead-strap"></a>Fijar y quitar la correa
 
-No es necesaria la correa, pero puede hacer que sea más cómodo llevar puesto HoloLens 2 durante períodos prolongados de uso.
+Aunque no hace falta ponerse la correa, puede hacer que resulte más cómodo llevar el HoloLens 2 durante períodos prolongados de uso.
 
-Para quitar la parte delantera de la correa, desenganche la correa y colócala en el cierre retráctil de la almohadilla de la frente. Para volver a ponerla, tire del cierre y deslice la correa de nuevo hacia su posición.
+Para quitar la parte delantera de la correa, desenganche la correa y deslícela por el cierre retráctil de la almohadilla de la frente. Para volver a ponerla, tire del cierre y deslice de nuevo la correa por él.
 
-Para retirar la parte posterior de la correa, presiona el botón situado debajo de cada lengüeta de contacto y tira con suavidad. Para volver a colocarla, empuja de las lengüetas de contacto hacia atrás en las ranuras hasta que hagan clic.
+Para quitar la parte posterior de la correa, presione el botón situado debajo de cada lengüeta de contacto y tire con suavidad. Para volver a colocarla, presione las lengüetas de contacto hasta que se introduzcan de nuevo en las ranuras (sonará un clic).
 
-![Colocar o quitar la correa de la cabeza de HoloLens 2](images/hololens2-headstrap.png)
+![colocar o quitar la correa de la cabeza de HoloLens 2](images/hololens2-headstrap.png)
 
-## Encender HoloLens 2
+## <a name="turn-on-the-hololens-2"></a>Encender el HoloLens 2
 
-Para encender HoloLens 2, presiona el botón de encendido.  Las luces LED situadas debajo del botón de encendido muestran el nivel de la batería.
+Para encender el HoloLens 2, presione el botón de encendido.  Las luces LED situadas debajo del botón de encendido muestran el nivel de la batería.
 
 > [!NOTE]
-> Para encender HoloLens 2 por primera vez, después de desembalarlo, mantén presionado el botón de encendido durante un mínimo de 4 segundos para activarlo. La próxima vez que enciendas HoloLens 2, se iniciará después de presionar brevemente el botón de encendido.
+> Para encender el HoloLens 2 por primera vez, una vez desembalado, mantenga presionado el botón de encendido durante un mínimo de cuatro segundos. La próxima vez que encienda el HoloLens 2, se iniciará después de presionar brevemente el botón de encendido.
 
-### Acciones de botón de encendido para diferentes transiciones de energía
+### <a name="power-button-actions-for-different-power-transitions"></a>Acciones del botón de encendido para diferentes transiciones de energía
 
-| Para | Realiza esta acción | HoloLens 2 hará esto |
+| Para hacer esto | Ejecutar esta acción | HoloLens 2 hará esto |
 | - | - | - |
-| Para encender | Presionar un solo botón. | Las cinco luces se encienden y luego cambian para indicar el nivel de la batería. Después de cuatro segundos, se reproduce un sonido. |
-| Para suspensión | Presionar un solo botón. | Las cinco luces se encienden y van apagándose una a una. Después de apagar las luces, se reproduce un sonido y la pantalla muestra "Adiós". |
-| Para reactivar desde suspensión | Presionar un solo botón. | Las cinco luces se encienden y luego cambian para indicar el nivel de la batería. Un sonido se reproduce inmediatamente. |
-| Para desactivar | Presionar durante 5 segundos. |  Las cinco luces se encienden y se van apagando gradualmente de una en una. Después de que se apaguen las luces, se reproduce un sonido y la pantalla muestra "Adiós". |
-| Para forzar el reinicio de Hololens si no responde | Mantener presionado durante 10 segundos. | Las cinco luces se encienden y van apagándose una a una. Después de apagar las luces. |
+| Encender el dispositivo | Presionar una sola vez el botón. | Las cinco luces se encienden y luego cambian para indicar el nivel de la batería. Después de cuatro segundos, se reproduce un sonido. |
+| Suspender el dispositivo | Presionar una sola vez el botón. | Las cinco luces se encienden y van apagándose una a una. Una vez que se apagan las luces, se reproduce un sonido y se muestra "Adiós" en la pantalla. |
+| Reactivar un dispositivo suspendido | Presionar una sola vez el botón. | Las cinco luces se encienden y luego cambian para indicar el nivel de la batería. Se reproduce un sonido inmediatamente. |
+| Apagar el dispositivo | Mantener presionado el botón durante cinco segundos. |  Las cinco luces se encienden y van apagándose una a una. Una vez que se apagan las luces, se reproduce un sonido y se muestra "Adiós" en la pantalla. |
+| Forzar el reinicio del dispositivo si no responde | Mantener presionado el botón durante diez segundos. | Las cinco luces se encienden y van apagándose una a una. Una vez que se apagan las luces, |
 
-## Referencia de comportamientos de HoloLens
+## <a name="hololens-behavior-reference"></a>Referencia de comportamientos de HoloLens
 
-¿No estás seguro de qué significan los indicadores luminosos de tu HoloLens? ¿Quieres saber cómo se debe comportar HoloLens mientras se carga?  Aquí encontrarás ayuda.
+¿No sabe con certeza qué significan los indicadores luminosos del HoloLens? ¿Quiere saber cómo se debe comportar el HoloLens mientras se carga?  Aquí encontrarás ayuda.
 
-### Comportamiento de carga
-
-| Estado del dispositivo | Acción | HoloLens 2 lo hará |
-| - | - | - |
-| APAGADO | Cable USB enchufable | El dispositivo pasa a estar ENCENDIDO, con luces indicadoras que muestran el nivel de la batería y el dispositivo comienza a cargarse.
-| ENCENDIDO | Quitar cable USB | El dispositivo deja de cargarse
-| ENCENDIDO | Cable USB enchufable | El dispositivo comienza a cargarse
-| SUSPENSIÓN | Cable USB enchufable | El dispositivo comienza a cargarse
-| SUSPENSIÓN | Quitar cable USB | El dispositivo deja de cargarse
-| ENCENDIDO con cable USB enchufado | Apagar el dispositivo | El dispositivo cambia a ENCENDIDO con luces indicadoras que muestran el nivel de batería y el dispositivo empezará a cargarse |
-
-### Luces que indican el nivel de la batería
-
-| Número de luces | Nivel de la batería |
-| - | - |
-| Cuatro luces continuas, una luz que enciende y se apaga progresivamente | Entre 100% y 81% (totalmente cargado) |
-| Tres luces continuas, una luz que se enciende y se apaga progresivamente | Entre 80% y 61% |
-| Dos luces continuas, una luz que se enciende y se apaga progresivamente | Entre 60% y 41% |
-| Una luz continua, una luz que se enciende y se apaga progresivamente | Entre 40% y 21% |
-| Una luz que se enciende y se apaga progresivamente | Entre el 20 % y el 5 %, o menos (batería crítica) |
-
-### Comportamiento de suspensión
+### <a name="charging-behavior"></a>Comportamiento de carga
 
 | Estado del dispositivo | Acción | HoloLens 2 hará esto |
 | - | - | - |
-| ENCENDIDO | Presionar una vez el botón Inicio/Apagado | El dispositivo pasa a estar en SUSPENSIÓN y apaga todas las luces indicadoras |
-| ENCENDIDO | Sin movimiento durante 3 minutos | El dispositivo pasa a SUSPENSIÓN y desactiva todas las luces indicadoras |
-| SUSPENSIÓN | Presionar una vez el botón Inicio/Apagado | El dispositivo pasa a ENCENDIDO y enciende las luces indicadoras |
+| Apagado | Conectar el cable USB | El dispositivo pasa a estar ENCENDIDO; las luces indicadoras muestran el nivel de la batería y el dispositivo comienza a cargarse.
+| ACTIVAR | Quitar el cable USB | El dispositivo deja de cargarse.
+| ACTIVAR | Conectar el cable USB | El dispositivo comienza a cargarse.
+| SUSPENDIDO | Conectar el cable USB | El dispositivo comienza a cargarse.
+| SUSPENDIDO | Desconectar el cable USB | El dispositivo deja de cargarse.
+| ENCENDIDO con el cable USB conectado | Apagar el dispositivo | El dispositivo pasa a estar ENCENDIDO; las luces indicadoras muestran el nivel de la batería y el dispositivo comienza a cargarse. |
 
-### Luces para indicar problemas
+### <a name="lights-that-indicate-the-battery-level"></a>Luces que indican el nivel de la batería
 
-| Si haces esto | Las luces hacen esto | Significa esto |
+| Número de luces | Nivel de la batería |
+| - | - |
+| Cuatro luces fijas y otra que se va encendiendo y apagando | Entre un 100 y un 81 % (totalmente cargado) |
+| Tres luces fijas y otra que se va encendiendo y apagando | Entre un 80 y un 61 % |
+| Dos luces fijas y otra que se va encendiendo y apagando | Entre un 60 y un 41 % |
+| Una luz fija y otra que se va encendiendo y apagando | Entre un 40 y un 21 % |
+| Una luz que se va encendiendo y apagando | Entre un 20 y un 5 % o menos (nivel crítico) |
+
+### <a name="sleep-behavior"></a>Comportamiento de suspensión
+
+| Estado del dispositivo | Acción | HoloLens 2 hará esto |
 | - | - | - |
-| Presiona el botón de encendido. | Una luz parpadea cinco veces y, a continuación, se apaga. | La batería de HoloLens es muy baja. Carga tu HoloLens. |
-| Presiona el botón de encendido. | Las cinco luces parpadean cinco veces y luego se apagan. |  HoloLens no puede iniciarse correctamente y se encuentra en un estado de error. [Reinstala el sistema operativo](hololens-recovery.md) para recuperar el dispositivo. |
-| Presiona el botón de encendido. | Las luces 1.ª, 3.ª y 5.ª parpadean juntas de manera continua. |  Es posible que se haya producido un error de hardware en HoloLens. Contactar con el [soporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
+| ACTIVAR | Presionar una sola vez el botón de encendido | El dispositivo pasa a estar SUSPENDIDO y se apagan todas las luces indicadoras. |
+| ACTIVAR | Sin movimiento durante tres minutos | El dispositivo pasa a estar SUSPENDIDO y se apagan todas las luces indicadoras. |
+| SUSPENDIDO | Presionar una sola vez el botón de encendido | El dispositivo pasa a estar ENCENDIDO y se encienden las luces indicadoras. |
 
-## Seguridad y comodidad
+### <a name="lights-to-indicate-problems"></a>Luces para indicar problemas
 
-### Usar HoloLens en un entorno seguro
+| Si hace esto | Las luces hacen esto | Significa esto |
+| - | - | - |
+| Presionar el botón de encendido. | Una luz parpadea cinco veces y, a continuación, se apaga. | El nivel de la batería del HoloLens es crítico. Cargue el dispositivo. |
+| Presionar el botón de encendido. | Las cinco luces parpadean cinco veces y luego se apagan. |  HoloLens no puede iniciarse correctamente y se encuentra en un estado de error. [Vuelva a instalar el sistema operativo](hololens-recovery.md) para recuperar el dispositivo. |
+| Presionar el botón de encendido. | Las luces 1.ª, 3.ª y 5.ª parpadean juntas de manera continua. |  Es posible que se haya producido un error de hardware en el HoloLens. Póngase en contacto con el [soporte](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
-Usa tu HoloLens en un espacio seguro que no tenga obstrucciones y que no presente riesgos. No lo uses cuando necesites un campo de visión amplio y no puedas prestar toda tu atención, como cuando estés conduciendo un vehículo o realizando otras actividades potencialmente peligrosas.
+## <a name="safety-and-comfort"></a>Seguridad y comodidad
 
-### Mantente cómodo
+### <a name="use-hololens-in-safe-surroundings"></a>Use el HoloLens en un entorno seguro
 
-Mantén breves tus primeras sesiones con HoloLens y asegúrate de tomar descansos. Si te sientes incómodo, detenlo y descansa hasta que te sientas mejor. Esto puede incluir molestias temporales, como náuseas, mareo, confusión, desorientación, dolor de cabeza, fatiga, cansancio visual o sequedad visual.
+Use el HoloLens en un espacio seguro, sin obstrucciones ni posibilidad de tropezarse. No lo use cuando necesite un campo de visión amplio y no pueda prestar toda su atención, por ejemplo, conduciendo o realizando otras actividades potencialmente peligrosas.
 
-Consulta [Instrucciones y advertencias de seguridad del producto](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
+### <a name="stay-comfortable"></a>Mantenga la comodidad
+
+Asegúrese de que las primeras sesiones con el HoloLens no sean muy largas y haga pausas. Si experimenta molestias, deje de usarlo y descanse hasta que se sienta mejor. Por ejemplo, puede experimentar temporalmente náuseas, mareo, vértigo, desorientación, dolor de cabeza, cansancio y fatiga o sequedad ocular.
+
+Consulte las [instrucciones y advertencias de seguridad del producto](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
-> [Iniciar y configurar tu HoloLens 2](hololens2-start.md)
+> [Configuración de HoloLens 2](hololens2-start.md)

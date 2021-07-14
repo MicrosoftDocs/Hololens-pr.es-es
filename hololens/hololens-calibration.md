@@ -1,6 +1,6 @@
 ---
-title: Mejorar la calidad visual y la comodidad
-description: Aprende a calibrar la distancia interpupilar (IPD) para mejorar la calidad de tus elementos visuales en los dispositivos HoloLens.
+title: Mejora de la calidad visual y la comodidad
+description: Obtenga información sobre cómo calibrar la distancia interpupilar (IPD) para mejorar la calidad de sus objetos visuales en dispositivos HoloLens.
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
@@ -13,178 +13,150 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-keywords: calibración, comodidad, elementos visuales, calidad, ipd, HoloLens, Windows Mixed Reality, cascos VR
-ms.openlocfilehash: e975e2ccd978d4ec6b5331af0ae566af116711c5
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+keywords: calibración, comodidad, objetos visuales, calidad, ipd, HoloLens, Windows Mixed Reality, cascos de VR
+ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283551"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924152"
 ---
-# Mejorar la calidad visual y la comodidad
+# <a name="improve-visual-quality-and-comfort"></a>Mejora de la calidad visual y la comodidad
 
-HoloLens 2 y HoloLens (1.ª generación) funcionan mejor cuando se han calibrado a tu ojos en concreto.
+HoloLens 2 y HoloLens (1.ª generación) funcionan mejor cuando se han calibrado con sus ojos.
 
-Aunque ambos dispositivos necesitan calibrarse para lograr la mejor experiencia de visualización de hologramas, usan tecnologías y técnicas de calibración diferentes.  Saltar a la [calibración de HoloLens 2](#calibrating-your-hololens-2) o a la [calibración de HoloLens (1.ª generación)](#calibrating-your-hololens-1st-gen).
+Aunque ambos dispositivos necesitan calibrarse para ofrecer una experiencia óptima de visualización de hologramas, usan diferentes tecnologías y técnicas de calibración.  Vaya directamente a [Calibración de HoloLens 2](#calibrating-your-hololens-2) o [Calibración de HoloLens (1.ª generación)](#calibrating-your-hololens-1st-gen).
 
-## Calibrar HoloLens 2
+## <a name="calibrating-your-hololens-2"></a>Calibración de HoloLens 2
 
-HoloLens 2 usa la tecnología de seguimiento ocular para mejorar tu experiencia de visualización e interacción con el entorno virtual. La calibración de HoloLens 2 garantiza que pueda realizar un seguimiento exacto de tus ojos (y de los ojos de cualquier otra persona que use el dispositivo). También ayuda a la comodidad del usuario, a la alineación de los hologramas y al seguimiento con las manos. Tras la calibración, los hologramas aparecerán correctamente incluso a medida que el visor se desplace en tu cabeza.
+HoloLens 2 usa tecnología de seguimiento ocular para mejorar su experiencia al ver el entorno virtual e interactuar con este. La calibración de HoloLens 2 garantiza que pueda realizar un seguimiento exacto de sus ojos (y de los ojos de cualquier otra persona que use el dispositivo). También contribuye a la comodidad del usuario, a la alineación de los hologramas y al seguimiento de manos. Tras la calibración, los hologramas aparecerán correctamente aunque el visor se desplace por la cabeza.
 
-HoloLens 2 pide a un usuario que calibre el dispositivo en las siguientes circunstancias:
+HoloLens 2 pide al usuario que calibre el dispositivo en las siguientes circunstancias:
 
-- El usuario está usando el dispositivo por primera vez
-- El usuario optó previamente por el proceso de calibración
-- El proceso de calibración no se realizó correctamente la última vez que el usuario usó el dispositivo
-- El usuario ha eliminado sus perfiles de calibración
-- El dispositivo se quita y se vuelve a poner y cualquiera de las circunstancias anteriores se aplican 
+- El usuario está usando el dispositivo por primera vez.
+- El usuario ha optado previamente por no completar el proceso de calibración.
+- El proceso de calibración no se realizó correctamente la última vez que el usuario usó el dispositivo.
+- El usuario ha eliminado sus perfiles de calibración.
+- El usuario se quita el dispositivo y se lo vuelve a poner, y se da cualquiera de las circunstancias anteriores. 
 
 
-![Solicitud de calibración para ajustar a los ojos.](./images/07-et-adjust-for-your-eyes.png)
+![Mensaje de la calibración para ajustar el dispositivo a los ojos.](./images/07-et-adjust-for-your-eyes.png)
 
-Durante este proceso, veremos un conjunto de objetivos (gemas). Está bien si parpadea durante la calibración, pero trate de mantenerse enfocado en las gemas en lugar de otros objetos en la habitación.  Centrarse en las gemas permite a HoloLens memorizar la posición de tu ojo para representar tu mundo holográfico.
+Durante este proceso, verá un conjunto de objetivos (gemas). No pasa nada si parpadea durante la calibración, pero trate de centrarse en las gemas e ignorar otros objetos presentes en la habitación.  Si se centra en las gemas, HoloLens podrá reconocer la posición de sus ojos para representar su mundo holográfico.
 
-![Indicador de calibración que indica al usuario que mantenga la cabeza quieta y siga los puntos con los ojos.](./images/07-et-hold-head-still.png)
+![Mensaje de la calibración que indica al usuario que mantenga quieta la cabeza y siga los puntos con los ojos.](./images/07-et-hold-head-still.png)
 
-![Indicador de calibración con gemas.](./images/08-et-gems.png)
+![Mensaje de la calibración con gemas de ejemplo.](./images/08-et-gems.png)
 
-![Indicador de calibración que se ajusta.](./images/09-et-adjusting.png)
+![Mensaje de la calibración que indica que el ajuste está en curso.](./images/09-et-adjusting.png)
 
-Si la calibración se realizó correctamente, verás una pantalla de operación correcta.  De lo contrario, lee más información sobre [cómo diagnosticar errores de calibración](#troubleshooting-hololens-2-calibration).
+Si la calibración se ha realizado correctamente, aparecerá la pantalla correspondiente.  Si no es así, obtenga más información sobre el [diagnóstico de errores de calibración](hololens2-display.md#troubleshooting).
 
-![Indicador de calibración correcto.](./images/10-et-success.png)
+![Mensaje de la calibración que indica que la calibración se ha realizado correctamente.](./images/10-et-success.png)
 
-### Calibración al compartir un dispositivo o una sesión
+### <a name="calibration-when-sharing-a-device-or-session"></a>Calibración al compartir un dispositivo o una sesión
 
-Varios usuarios pueden compartir un dispositivo HoloLens 2, sin necesidad de que cada persona pase por la configuración del dispositivo. Cuando un nuevo usuario se pone el dispositivo en la cabeza por primera vez, el HoloLens 2 le pide automáticamente que calibre las imágenes. Cuando un usuario que ha calibrado anteriormente elementos visuales se coloca el dispositivo en la cabeza, la pantalla se ajusta perfectamente para lograr una buena calidad y una experiencia de visualización cómoda.  
+Varios usuarios pueden compartir un dispositivo HoloLens 2 sin necesidad de que cada persona complete la configuración del dispositivo. Cuando un nuevo usuario se pone el dispositivo en la cabeza por primera vez, el HoloLens 2 le pide automáticamente que calibre los objetos visuales. Cuando un usuario que ha calibrado anteriormente objetos visuales se coloca el dispositivo en la cabeza, la pantalla se ajusta perfectamente para ofrecer una experiencia de visualización cómoda y de calidad.  
 
-### Iniciar manualmente el proceso de calibración
+### <a name="manually-starting-the-calibration-process"></a>Inicio manual del proceso de calibración
 
-1. Usa el gesto Inicio para abrir el [menú **Inicio**](hololens2-basic-usage.md#start-gesture).
-1. Si la aplicación Configuración no está anclada a **Inicio**, selecciona **Todas las aplicaciones**.
-1. Selecciona **Configuración**y, a continuación, **Sistema** > **Calibración** > **Calibración ocular** > **Ejecutar calibración ocular**.
+1. Use el gesto de inicio para abrir el menú [**Inicio**](hololens2-basic-usage.md#start-gesture).
+1. Si la aplicación Configuración no está anclada a **Inicio**, seleccione **Todas las aplicaciones**.
+1. Seleccione **Configuración** y, a continuación, **Sistema** > **Calibración** > **Calibración de los ojos** > **Ejecutar calibración de los ojos**.
 
-   ![La aplicación Configuración, que muestra la opción Ejecutar calibración ocular](./images/C-Settings.Calibration.png)
+   ![Opción "Ejecutar calibración de ojos" en la aplicación Configuración](./images/C-Settings.Calibration.png)
 
-### Compatibilidad con posición ocular automática
+### <a name="auto-eye-position-support"></a>Compatibilidad con posicionamiento automático de los ojos
 
-En HoloLens 2, las posiciones oculares permiten un posicionamiento preciso del holograma, una experiencia de visualización cómoda y una mejor calidad de visualización. Las posiciones oculares se calculan internamente como parte del análisis del seguimiento ocular. Sin embargo, esto requiere que cada usuario realice la calibración del seguimiento ocular, incluso cuando la experiencia no requiera una entrada ocular.
+En HoloLens 2, las posiciones de los ojos permiten un posicionamiento preciso de los hologramas, una experiencia de visualización cómoda y una mejor calidad de visualización. Las posiciones de los ojos se calculan internamente como parte del análisis del seguimiento ocular. Sin embargo, para ello es necesario que cada usuario complete la calibración del seguimiento ocular, incluso en aquellos casos en los que la experiencia no requiera una entrada con la mirada.
 
-La **Posición ocular automática (AEP)** permite que estos escenarios tengan una forma sin interacción que calcule las posiciones de la vista para el usuario. La Posición ocular automática comienza a funcionar en segundo plano automáticamente desde el momento en el que el usuario se coloca el dispositivo. Si el usuario no ha calibrado el seguimiento ocular anteriormente, la Posición ocular automática comenzará a proporcionar las posiciones de ojo del usuario al sistema de visualización después de un tiempo de procesamiento de 20-30 segundos. Los datos de usuario no se conservan en el dispositivo y, por lo tanto, este proceso se repite si el usuario se desconecta y vuelve a ponerse el dispositivo o si el dispositivo se reinicia o se reactiva tras haberse suspendido.
+El **posicionamiento automático de los ojos** posibilita estos escenarios sin necesidad de interacción para calcular las posiciones de los ojos del usuario. El posicionamiento automático de los ojos empieza a funcionar en segundo plano inmediatamente después de que el usuario se coloque el dispositivo. Si el usuario no ha calibrado previamente el seguimiento ocular, el posicionamiento automático de los ojos comenzará a proporcionar las posiciones de los ojos del usuario al sistema de visualización transcurrido un tiempo de procesamiento de 20-30 segundos. Los datos de usuario no se conservan en el dispositivo, por lo que este proceso se repite si el usuario se quita el dispositivo y se lo vuelve a poner, o bien si el dispositivo se reinicia o reactiva tras haberse suspendido.
 
-Cuando un usuario no calibrado se coloca el dispositivo, la opción Posición ocular automática provoca algunos cambios en la conducta del sistema. En este contexto, un usuario no calibrado es alguien que no ha pasado por el proceso de calibración de seguimiento ocular en el dispositivo anteriormente.
+Cuando un usuario sin calibrar se coloca el dispositivo, la característica de posicionamiento automático de los ojos provoca algunos cambios en el comportamiento del sistema. En este contexto, un usuario sin calibrar es alguien que no ha completado anteriormente el proceso de calibración del seguimiento ocular en el dispositivo.
 
-| Aplicación activa | Comportamiento anterior | Comportamiento de Windows Holographic, versión 20H2 Update |
+| Aplicación activa | Comportamiento anterior | Comportamiento a partir de la versión 20H2 Update de Windows Holographic |
 |:-------------------|:-----------------|:-----------------------------------|
-| Aplicación no habilitada para la mirada o shell holográfica |Se muestra el cuadro de diálogo de solicitud de calibración de seguimiento ocular. | No se muestra ningún mensaje. |
-| Aplicación habilitada para la mirada | Se muestra el cuadro de diálogo de solicitud de calibración de seguimiento ocular. | El aviso de calibración de seguimiento ocular se muestra solo cuando la aplicación accede a la secuencia de mirada. |
+| Aplicación no habilitada para la mirada o shell de Holographic |Se muestra el cuadro de diálogo de solicitud de calibración del seguimiento ocular. | No se muestra ningún mensaje. |
+| Aplicación habilitada para la mirada | Se muestra el cuadro de diálogo de solicitud de calibración del seguimiento ocular. | La solicitud de calibración del seguimiento ocular solo se muestra cuando la aplicación accede a la secuencia de mirada. |
 
-Si el usuario pasa de una aplicación con la opción de mirada no habilitada a otra que tiene acceso a los datos de mirada, se mostrará el aviso de calibración. 
+Si el usuario pasa de una aplicación con la opción de mirada no habilitada a otra que tiene acceso a los datos de mirada, se mostrará la solicitud de calibración. 
 
-El resto del comportamiento del sistema será similar a cuando el usuario actual no tiene una calibración de seguimiento ocular activa. Por ejemplo, el gesto Inicio de una sola mano no estará habilitado. No se cambiará la experiencia de configuración rápida para la configuración inicial.
+Por lo demás, el sistema se comportará de un modo similar a cuando el usuario no tiene una calibración activa del seguimiento ocular. Por ejemplo, el gesto de inicio con una sola mano no estará habilitado. No se cambiará la experiencia inmediata de la configuración inicial.
 
-Para las experiencias que requieran datos oculares o un posicionamiento preciso de holograma, recomendamos a los usuarios no calibrados que realicen la calibración de seguimiento de ocular. Es accesible desde la solicitud de calibración de seguimiento ocular. También se puede iniciar la aplicación Configuración desde el menú Inicio y, a continuación, se selecciona **Sistema > Calibración > Calibración ocular > Ejecutar calibración ocular**.
+En el caso de experiencias que requieran datos de mirada o un posicionamiento preciso de hologramas, recomendamos a los usuarios sin calibrar que realicen la calibración del seguimiento ocular. Puede accederse a este proceso desde la solicitud de calibración del seguimiento ocular. También se puede iniciar la aplicación Configuración desde el menú "Inicio" y, a continuación, seleccionar **Sistema > Calibración > Calibración de los ojos > Ejecutar calibración de los ojos**.
 
-#### Solicitud de calibración diferida
+#### <a name="deferred-calibration-prompt"></a>Solicitud de calibración diferida
 
-Con la Posición ocular automática, el cuadro de diálogo de solicitud de calibración del seguimiento ocular se aplaza hasta que una aplicación solicite datos de mirada. Esto garantiza que no aparezca una solicitud al usuario cuando la aplicación activa no requiera la mirada. Si la aplicación necesita datos de mirada y el usuario actual no ha realizado la calibración, se mostrará al usuario una solicitud de calibración. Este comportamiento podría usarse para mostrar la solicitud de calibración del seguimiento ocular en un momento adecuado para la experiencia. Este método se recomienda por los siguientes motivos:
+Con el posicionamiento automático de los ojos, el cuadro de diálogo de solicitud de calibración del seguimiento ocular se aplaza hasta que una aplicación solicite datos de mirada. De este modo, se garantiza que no se muestre una solicitud al usuario cuando la aplicación activa no requiera la mirada. Si la aplicación necesita datos de mirada y el usuario actual no ha realizado la calibración, se le mostrará a este una solicitud de calibración. Este comportamiento podría usarse para mostrar la solicitud de calibración del seguimiento ocular en un momento adecuado para la experiencia. Este método se recomienda por los siguientes motivos:
 
 1.  El cuadro de diálogo de solicitud de calibración del seguimiento ocular proporciona al usuario los motivos por los que es necesario el seguimiento ocular.
-2.  Muestra al usuario una manera de rechazar la calibración ocular.
+2.  Muestra al usuario una manera de rechazar la calibración de los ojos.
 
-Si el usuario elige iniciar la calibración del seguimiento ocular, el foco debería volver a la aplicación original tras completar la calibración. 
+Si el usuario opta por iniciar la calibración del seguimiento ocular, el foco debería volver a la aplicación original tras completarse la calibración. 
 
-### Solución de problemas relacionados con la calibración de HoloLens 2
+### <a name="calibration-data-and-security"></a>Seguridad y datos de la calibración
 
-La calibración debería funcionar para la mayoría de los usuarios, pero hay casos en los que se produce un error en la calibración.
-  
-Entre los posibles motivos para un error de calibración se incluyen:
+La información de la calibración se almacena localmente en el dispositivo y no se asocia a información de la cuenta. No hay ningún registro de quién ha usado el dispositivo sin calibración. Por lo tanto, a los usuarios nuevos se les pedirá que calibren los objetos visuales cuando usen el dispositivo por primera vez. Lo mismo sucederá con los usuarios que hayan optado por no realizar la calibración anteriormente o si esta no se realizó correctamente.
 
-- El usuario se distrae y no sigue los objetivos de calibración
-- El visor del dispositivo está sucio o arañado, o el visor del dispositivo no está colocado correctamente
-- Gafas sucias o arañadas
-- Determinados tipos de gafas y lentes de contacto (lentes de contacto coloreadas, algunos lentes de contacto tóricas, gafas de bloqueo de infrarrojos, algunos gafas de alta graduación, gafas de sol o similares)
-- Maquillaje más pronunciado y algunas extensiones de pestañas
-- Pelo o monturas gruesas si impiden que el dispositivo te vea los ojos
-- Determinadas fisiologías oculares, afecciones de la vista o cirugías oculares, como ojos estrechos, pestañas largas, ambliopía, nistagmo, algunos casos de LASIK u otras cirugías oculares
+El dispositivo puede almacenar localmente hasta 50 perfiles de calibración. Cuando se alcanza esta cifra, el dispositivo borra automáticamente el perfil más antiguo no utilizado.
 
-Si la calibración no se ha realizado correctamente, prueba lo siguiente:
+La información de calibración se puede eliminar en cualquier momento del dispositivo en **Configuración** > **Privacidad** > **Seguimiento ocular**.  
 
-- Limpiar el visor del dispositivo
-- Limpiar tus gafas
-- Empujar el visor del dispositivo tan cerca de los ojos como sea posible.
-- Quitar los objetos del visor (por ejemplo, el pelo)
-- Encender una luz de la habitación o sacarlo de la luz solar directa
+### <a name="disable-calibration"></a>Deshabilitar la calibración
 
-Si has seguido todas las instrucciones y la calibración sigue fallando, puedes desactivar el aviso de calibración en Ajustes. Por favor, también haznoslo saber enviando tus comentarios al [Centro de comentarios](hololens-feedback.md).
+También puede deshabilitar la solicitud de calibración siguiendo estos pasos:
 
-Consulta también la información relacionada con [la resolución de problemas con el color o el brillo de imágenes.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
-
-El establecimiento de IPD no es aplicable para HoloLens 2, ya que el sistema calcula las posiciones del ojo. 
-
-### Seguridad y datos de calibración
-
-La información de calibración se almacena localmente en el dispositivo y no está asociada a ningún tipo de información de la cuenta. No hay ningún registro de quién ha usado el dispositivo sin calibración. Esto significa que a los usuarios nuevos se les pedirá que calibren los elementos visuales cuando usen el dispositivo por primera vez, así como los usuarios que hayan optado por no realizar la calibración anteriormente o si la calibración no se realizó correctamente.
-
-El dispositivo puede almacenar localmente hasta 50 perfiles de calibración. Cuando se alcanza este número, el dispositivo borra automáticamente el perfil más antiguo no utilizado.
-
-La información de calibración siempre puede eliminarse del dispositivo en **Configuración** > **Privacidad** > **Seguimiento ocular**.  
-
-### Deshabilitar calibración
-
-También puedes deshabilitar el aviso de calibración siguiendo estos pasos:
-
-1. Selecciona **Configuración** > **Sistema** > **Calibración**.
-1. Desactive la opción **Cuando otra persona use este HoloLens, pedir automáticamente la ejecución de la calibración ocular**.
+1. Seleccione **Configuración** > **Sistema** > **Calibración**.
+1. Desactive **Cuando una nueva persona use este HoloLens, pedir automáticamente que ejecute la calibración de los ojos**.
 
 > [!IMPORTANT]
-> Esta configuración puede afectar negativamente a la calidad y comodidad de la representación de los hologramas.  Cuando desactivas esta opción, las características que dependen del seguimiento ocular (como el desplazamiento de texto) ya no funcionan en las aplicaciones inmersivas.
+> Esta opción puede afectar negativamente a la calidad y comodidad de la representación de los hologramas.  Si desactiva esta opción, las características que dependan del seguimiento ocular (como el desplazamiento de texto) dejarán de funcionar en las aplicaciones envolventes.
 
-### Tecnología de seguimiento ocular de HoloLens 2
+### <a name="hololens-2-eye-tracking-technology"></a>Tecnología de seguimiento ocular de HoloLens 2
 
-El dispositivo usa su tecnología de seguimiento ocular para mejorar la calidad de la visualización y para garantizar que todos los hologramas están colocados de manera precisa y cómoda para verlos en 3D. Dado que usa los ojos como puntos de referencia, el dispositivo puede ajustarse para cada usuario y ajustar sus elementos visuales, ya que el casco cambia ligeramente durante el uso.  Todos los ajustes se producen sobre la marcha sin necesidad de ajustes manuales.
+El dispositivo usa su tecnología de seguimiento ocular para mejorar la calidad de la visualización y garantizar que todos los hologramas estén colocados de manera precisa y sean cómodos de ver en 3D. Al usar los ojos como puntos de referencia, el dispositivo puede regularse para cada usuario y ajustar sus objetos visuales, ya que el casco se mueve ligeramente durante el uso.  Todos los ajustes se producen sobre la marcha sin necesidad de intervención manual.
 > [!NOTE]
-> El establecimiento de IPD no es aplicable para Hololens 2, ya que el sistema calcula las posiciones del ojo.
+> El establecimiento de la IPD no es aplicable a HoloLens 2, ya que el sistema calcula las posiciones del ojo.
 
-Las aplicaciones de HoloLens usan seguimiento ocular para hacer un seguimiento de dónde miras en tiempo real. Esta es la capacidad principal que los desarrolladores pueden aprovechar para habilitar un nivel completamente nuevo de contexto, comprensión humana e interacciones dentro de la experiencia holográfica. Los desarrolladores no tienen que hacer nada para usar esta funcionalidad.
+Las aplicaciones de HoloLens usan seguimiento ocular para hacer un seguimiento de dónde miras en tiempo real. Esta es la principal capacidad que pueden usar los desarrolladores para habilitar un nivel completamente nuevo de contexto, comprensión humana e interacciones dentro de la experiencia de Holographic. Los desarrolladores no tienen que hacer nada para usar esta funcionalidad.
 
-## Calibración de tu HoloLens (1.ª generación)
+## <a name="calibrating-your-hololens-1st-gen"></a>Calibración de HoloLens (1.ª generación)
 
-HoloLens (1.ª generación) ajusta la visualización de hologramas según la [distancia interpupilar](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Si la IPD no es precisa, los hologramas pueden aparecer inestables o a una distancia incorrecta. Para mejorar la calidad de los elementos visuales, calibra el dispositivo para la distancia interpupilar (IPD).
+HoloLens (1.ª generación) ajusta la visualización de los hologramas según la [distancia interpupilar](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Si la IPD no es precisa, los hologramas pueden aparecer inestables o a una distancia incorrecta. Para mejorar la calidad de los objetos visuales, calibre el dispositivo de acuerdo con su distancia interpupilar (IPD).
 
-Cuando configuras tu dispositivo Hololens (1.ª generación), te pide que calibres los elementos visuales después de que Cortana se presenta. Se recomienda completar el paso de calibración durante esta fase de configuración. Sin embargo, puedes omitirlo esperando hasta que Cortana te pregunte y luego decir "Omitir".
+Al configurar su dispositivo HoloLens (1.ª generación), este le pide que calibre los objetos visuales después de presentarse Cortana. Se recomienda completar el paso de calibración durante esta fase de configuración. Sin embargo, puede omitirlo esperando a la solicitud de Cortana y respondiendo a esta con "Omitir".
 
-Durante el proceso de calibración, HoloLens te pide que alinees el dedo con una serie de seis objetivos por ojo. HoloLens usa este proceso para establecer la IPD correctamente para los ojos.
+Durante el proceso de calibración, HoloLens le pide que alinee el dedo con una serie de seis objetivos por ojo. HoloLens usa este proceso para establecer correctamente la IPD con relación a sus ojos.
 
-![Pantalla de alineación de dedos de IPD en el segundo paso](./images/ipd-finger-alignment-300px.jpg)
+![Pantalla de alineación de la IPD mediante el dedo en el segundo paso](./images/ipd-finger-alignment-300px.jpg)
 
-### Iniciar manualmente el proceso de calibración
+### <a name="manually-start-the-calibration-process"></a>Iniciar manualmente el proceso de calibración
 
-Si necesitas actualizar la calibración o si un nuevo usuario necesita ajustarla, puedes ejecutar manualmente la aplicación Calibración en cualquier momento. La aplicación Calibración se instala de forma predeterminada. Para obtener acceso a ella, usa el menú **Inicio** o la aplicación Configuración.
+Si necesitas actualizar la calibración o si un nuevo usuario necesita ajustarla, puede ejecutar manualmente la aplicación Calibración en cualquier momento. La aplicación Calibración se instala de forma predeterminada. Para acceder a ella, use el menú **Inicio** o la aplicación Configuración.
 
-Para usar el menú **Inicio** para ejecutar la aplicación Calibración, sigue estos pasos:
+Para ejecutar la aplicación Calibración usando el menú **Inicio**, siga estos pasos:
 
-1. Usa el gesto de la [eclosión](hololens1-basic-usage.md) para abrir el menú **Inicio**.
-1. Para ver todas las aplicaciones, selecciona **+**.
-1. Selecciona **Calibración**.
+1. Use el gesto de [eclosión](hololens1-basic-usage.md) para abrir el menú **Inicio**.
+1. Para ver todas las aplicaciones, seleccione **+** .
+1. Seleccione **Calibración**.
 
-![Acceso a la aplicación de calibración desde el shell](./images/calibration-shell.png)
+![Acceso a la aplicación Calibración desde el shell](./images/calibration-shell.png)
 
-![La aplicación de calibración se muestra como un cubo en vivo después de iniciarse](./images/calibration-livecube-200px.png)
+![Aplicación Calibración, mostrada como un objeto Live Cube después de iniciarse](./images/calibration-livecube-200px.png)
 
-Para usar la aplicación Configuración para que ejecute la aplicación Calibración, sigue estos pasos:
+Con el fin de usar la aplicación Configuración para ejecutar la aplicación Calibración, siga estos pasos:
 
-1. Usa el gesto de [eclosión](hololens1-basic-usage.md) para abrir el menú **Inicio**.
-1. Si **Configuración** no está anclada a **Inicio**, selecciona **+** para ver todas las aplicaciones.
-1. Selecciona **Configuración**.
-1. Selecciona **Sistema** > **Utilidades** > **Abrir calibración**.
+1. Use el gesto de [eclosión](hololens1-basic-usage.md) para abrir el menú **Inicio**.
+1. Si **Configuración** no está anclada a **Inicio**, seleccione **+** para ver todas las aplicaciones.
+1. Haga clic en **Configuración**.
+1. Seleccione **Sistema** > **Utilidades** > **Abrir calibración**.
 
-![Iniciar la aplicación de calibración desde la aplicación de configuración](./images/calibration-settings-500px.jpg)
+![Inicio de la aplicación Calibración desde la aplicación Configuración](./images/calibration-settings-500px.jpg)
 
-## Cascos envolventes
+## <a name="immersive-headsets"></a>Cascos envolventes
 
-Algunos cascos envolventes ofrecen la posibilidad de personalizar la configuración de IPD. Para cambiar la IPD para tu casco, abre la aplicación Configuración y selecciona **Realidad mixta** > **Visualización de los auriculares** y, a continuación, mueve el control deslizante. Verás los cambios en tiempo real en tu casco. Si conoces tu IPD, quizás de una visita al optometrista, también puedes introducirlo directamente.
+Algunos cascos envolventes ofrecen la posibilidad de personalizar la configuración de IPD. Para cambiar la IPD del casco, abra la aplicación Configuración y seleccione **Realidad mixta** > **Visualización del casco**; a continuación, mueva el control deslizante. Los cambios se mostrarán en tiempo real en el casco. Si conoce su IPD, quizás de una visita al optometrista, también puede indicarla directamente.
 
-También puedes ajustar esta configuración en tu PC seleccionando **Configuración** > **Realidad mixta** > **Visualización del casco**.
+También puede ajustar esta opción en su equipo seleccionando **Configuración** > **Realidad mixta** > **Visualización de casco**.
 
-Si tu casco no admite la personalización de IPD, esta configuración se deshabilitará.
+Si el casco no admite la personalización de la IPD, esta opción estará deshabilitada.
