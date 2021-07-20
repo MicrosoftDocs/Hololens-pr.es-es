@@ -2,6 +2,7 @@
 
 # Información general del dispositivo
 ## [Acerca de HoloLens 2](hololens2-hardware.md)
+## [¿Qué puede hacer HoloLens 2 por usted?](hololens-commercial-features.md)
 ## Descubrimiento de las ediciones de HoloLens 2
 ### [Comparación de las opciones de HoloLens 2](hololens2-options.md)
 ### [Device-only edition](hololens2-options-device-only.md)
@@ -9,7 +10,7 @@
 ### [Industrial edition](hololens2-options-industrial-edition.md)
 #### [Preguntas más frecuentes sobre HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
 ### [Development edition](hololens2-options-dev-edition.md)
-#### [Preguntas más frecuentes sobre HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
+#### [Preguntas más frecuentes sobre HoloLens 2 Development Edition](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 ### [Características comerciales](hololens-commercial-features.md)
 
@@ -114,7 +115,7 @@
 ## [Notas de la versión de HoloLens 2](hololens-release-notes.md)
 ## [Versión preliminar de Insider para Microsoft HoloLens](hololens-insider.md)
 ## [Idiomas admitidos](hololens2-language-support.md)
-## [Desarrollo con Microsoft Mesh (versión preliminar)](https://docs.microsoft.com/mesh/overview)
+## [Desarrollo con Microsoft Mesh (versión preliminar)](/mesh/overview)
 ## HoloLens (1.ª generación)
 ### Uso por primera vez
 #### [Acerca de HoloLens (1.ª generación)](hololens1-hardware.md)
@@ -130,7 +131,7 @@
 #### [Desbloqueo de las características de Windows Holographic for Business](hololens1-upgrade-enterprise.md)
 #### [Restablecimiento de HoloLens (1.ª generación)](hololens1-recovery.md)
 ### Seguridad de HoloLens (1.ª generación)
-#### [Preguntas más frecuentes sobre la seguridad de HoloLens (1.ª generación)](hololens1-faq-security.md)
+#### [Preguntas más frecuentes sobre la seguridad de HoloLens (1.ª generación)](hololens1-faq-security.yml)
 #### [Cifrado de BitLocker para HoloLens (1.ª generación)](hololens1-encryption.md)
 ### [Problemas conocidos y soluciones alternativas para HoloLens (1.ª generación)](hololens-known-issues.md)
 ### [Notas de la versión de HoloLens (1.ª generación)](hololens1-release-notes.md)
