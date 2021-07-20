@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: d2804742fdcf9d6562fce0c693552d4a9241398f
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924594"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635218"
 ---
 # <a name="getting-around-hololens-2"></a>Familiarización con HoloLens 2
 
@@ -111,7 +111,7 @@ Para **cerrar** el menú Inicio, realice el gesto Inicio con el menú Inicio abi
 > Para que el gesto Inicio funcione con una mano:
 >
 > 1. Debe aplicar la actualización de noviembre de 2019 (compilación 18363.1039) o posterior.
-> 1. Los ojos deben estar calibrados en el dispositivo para que el seguimiento de ojos funcione correctamente. Si no ve puntos alrededor del icono Inicio al mirarlo, los ojos no están [calibrados](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2) en el dispositivo.
+> 1. Los ojos deben estar calibrados en el dispositivo para que el seguimiento de ojos funcione correctamente. Si no ve puntos alrededor del icono Inicio al mirarlo, los ojos no están [calibrados](/hololens/hololens-calibration#calibrating-your-hololens-2) en el dispositivo.
 
 También puede realizar el gesto Inicio con una mano. Para ello, extienda la mano con la palma hacia usted y mire al **icono Inicio** de la cara interna de la muñeca. **Mientras mantiene el ojo sobre el icono**, acerque el dedo pulgar y el dedo índice.
 

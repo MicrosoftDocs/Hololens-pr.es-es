@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924186"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639104"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Conexión a dispositivos Bluetooth y USB-C
 
@@ -26,14 +26,14 @@ ms.locfileid: "112924186"
 
 El dispositivo HoloLens 2 es compatible con las siguientes clases de dispositivos Bluetooth:
 
-- [HID](https://docs.microsoft.com/windows-hardware/drivers/hid/):
+- [HID](/windows-hardware/drivers/hid/):
     - Mouse
     - Keyboard
 - Dispositivos de salida de audio (A2DP)
 
 HoloLens 2 es compatible con las siguientes API Bluetooth:
-- [Servidor](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server) y [cliente](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client) GATT
-- [RFCOMM](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
+- [Servidor](/windows/uwp/devices-sensors/gatt-server) y [cliente](/windows/uwp/devices-sensors/gatt-client) GATT
+- [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
 > Es posible que tenga que instalar las aplicaciones complementarias correspondientes de Microsoft Store para poder usar los dispositivos HID y GATT.
 
@@ -41,7 +41,7 @@ El dispositivo HoloLens (1.ª generación) es compatible con las siguientes clas
 
 - Mouse
 - Keyboard
-- [Mando HoloLens (1.ª generación)](https://docs.microsoft.com/hololens/hololens1-clicker)
+- [Mando HoloLens (1.ª generación)](hololens1-clicker.md)
 
 > [!NOTE]
 > Otros tipos de dispositivos Bluetooth, como altavoces, auriculares, teléfonos inteligentes y cartuchos de juegos, pueden aparecer en la lista como disponibles en la configuración del dispositivo HoloLens. Sin embargo, estos dispositivos no son compatibles con HoloLens (1.ª generación). Para obtener más información, consulte [Los dispositivos que aparecen como Configuración no funcionan](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work).

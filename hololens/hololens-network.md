@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 8564fb0483226a16722ada345de325577cda77d6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: c2a2fe1a20a4e9baa194b1037ccb6649d324b990
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923608"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640226"
 ---
 # <a name="connect-hololens-to-a-network"></a>Conexión de HoloLens a una red
 
@@ -54,9 +54,9 @@ Para confirmar que está conectado a una red Wi-Fi, compruebe el estado de la re
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>Conexión de HoloLens a la red Wi-Fi empresarial
 
-Los perfiles de Wi-Fi empresarial usan el protocolo de autenticación extensible (EAP) para autenticar las conexiones Wi-Fi. El perfil de Wi-Fi empresarial de HoloLens se puede configurar por medio de MDM o del paquete de aprovisionamiento creado por [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages).
+Los perfiles de Wi-Fi empresarial usan el protocolo de autenticación extensible (EAP) para autenticar las conexiones Wi-Fi. El perfil de Wi-Fi empresarial de HoloLens se puede configurar por medio de MDM o del paquete de aprovisionamiento creado por [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
 
-En el caso de los dispositivos administrados de Microsoft Intune, consulte las instrucciones de configuración en la información para [Intune](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
+En el caso de los dispositivos administrados de Microsoft Intune, consulte las instrucciones de configuración en la información para [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
 
 Para crear un paquete de aprovisionamiento de Wi-Fi en WCD, se requiere un archivo de perfil Wi-Fi en formato .xml preconfigurado. Este es un ejemplo de perfil de Wi-Fi para WPA2-Enterprise con autenticación EAP-TLS:
 
@@ -124,8 +124,8 @@ Según el tipo de EAP, es posible que deba aprovisionar el certificado de entida
 
 Recursos adicionales:
 
-- Esquema de perfil WLANv1: [[MS-GPWL]: Esquema de perfil de LAN inalámbrica v1 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
-- Esquema EAP-TLS: [[MS-GPWL]: Esquema TLS de Microsoft EAP | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+- Esquema de perfil WLANv1: [[MS-GPWL]: Esquema de perfil de LAN inalámbrica v1 | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- Esquema EAP-TLS: [[MS-GPWL]: Esquema TLS de Microsoft EAP | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 Consulte nuestra página de [solución de problemas](hololens2-enterprise-troubleshooting.md#) si tiene problemas para conectarse a la red Wi-Fi.
 
@@ -161,8 +161,8 @@ Hay tres formas de aprovisionar proxies:
           1. Haga clic en Aplicar.
         
  2. **MDM** 
-     1. Intune: siga estos [pasos](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) para configurar el proxy en Intune. Tendrá que desplazarse hasta la parte inferior de la sección.
-     1. Otras soluciones MDM de terceros: use un [CSP de Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp).
+     1. Intune: siga estos [pasos](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) para configurar el proxy en Intune. Tendrá que desplazarse hasta la parte inferior de la sección.
+     1. Otras soluciones MDM de terceros: use un [CSP de Wi-Fi](/windows/client-management/mdm/wifi-csp).
 
 3. **PPKG** 
     1. Abra Windows Configuration Designer.
@@ -175,12 +175,12 @@ Hay tres formas de aprovisionar proxies:
     1. Haga clic en Save and Exit (Guardar y salir).
     1. [Aplique](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) el paquete de aprovisionamiento al dispositivo HoloLens.
 
-Los [CSP](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) están detrás de muchas de las tareas y directivas de administración de Windows 10, tanto en Microsoft Intune como en proveedores de servicios de MDM que no son de Microsoft. También puede usar [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) para crear un [paquete de aprovisionamiento](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) y aplicarlo al dispositivo HoloLens 2.
+Los [CSP](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) están detrás de muchas de las tareas y directivas de administración de Windows 10, tanto en Microsoft Intune como en proveedores de servicios de MDM que no son de Microsoft. También puede usar [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) para crear un [paquete de aprovisionamiento](/windows/configuration/provisioning-packages/provisioning-packages) y aplicarlo al dispositivo HoloLens 2.
 Los CSP que se aplicarán con más probabilidad al dispositivo HoloLens 2 son los siguientes:
 
-- [CSP de Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp): proxy de Wi-Fi por perfil 
+- [CSP de Wi-Fi](/windows/client-management/mdm/wifi-csp): proxy de Wi-Fi por perfil 
 
-[Otros CSP admitidos en dispositivos HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+[Otros CSP admitidos en dispositivos HoloLens](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 
 
@@ -196,9 +196,9 @@ Protocolos VPN integrados compatibles:
 
 Si se usa un certificado para la autenticación del cliente de VPN integrado, el certificado de cliente necesario se debe agregar al almacén de certificados de usuario. Para averiguar si un complemento VPN de terceros es compatible con HoloLens 2, vaya a Store para localizar la aplicación VPN, compruebe si HoloLens se muestra como un dispositivo compatible y si en la página de requisitos del sistema se indica que la aplicación es compatible con la arquitectura de ARM o ARM64. HoloLens solo admite aplicaciones de la Plataforma universal de Windows para VPN de terceros.
 
- LA VPN se puede administrar mediante MDM por medio de [Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) y se puede establecer por medio de la [directiva Vpnv2-csp](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+ LA VPN se puede administrar mediante MDM por medio de [Settings/AllowVPN](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) y se puede establecer por medio de la [directiva Vpnv2-csp](/windows/client-management/mdm/vpnv2-csp).
 
-Obtenga más información sobre [cómo configurar VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) con [estas guías](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
+Obtenga más información sobre [cómo configurar VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) con [estas guías](/windows/security/identity-protection/vpn/vpn-guide).  
 
 ### <a name="vpn-via-ui"></a>VPN por medio de la interfaz de usuario
 
@@ -235,11 +235,11 @@ La opción de VPN no está habilita de forma predeterminada, pero puede habilita
 ### <a name="setting-up-vpn-via-intune"></a>Configuración de VPN por medio de Intune
 Solo tiene que seguir los documentos de Intune para comenzar. Cuando siga esos pasos, debe tener en cuenta los protocolos VPN integrados compatibles con los dispositivos HoloLens. 
 
-[Creación de perfiles de VPN para conectarse a servidores VPN en Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)
+[Creación de perfiles de VPN para conectarse a servidores VPN en Intune](/mem/intune/configuration/vpn-settings-configure)
 
-[Configuración de dispositivos con Windows 10 y Windows Holographic para agregar conexiones VPN mediante Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10)
+[Configuración de dispositivos con Windows 10 y Windows Holographic para agregar conexiones VPN mediante Intune](/mem/intune/configuration/vpn-settings-windows-10)
 
-Cuando haya terminado, recuerde [asignar el perfil](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
+Cuando haya terminado, recuerde [asignar el perfil](/mem/intune/configuration/device-profile-assign).
 
 ### <a name="vpn-via-3rd-party-mdm-solutions"></a>VPN por medio de soluciones MDM de terceros
 Ejemplo de conexión de VPN de terceros:

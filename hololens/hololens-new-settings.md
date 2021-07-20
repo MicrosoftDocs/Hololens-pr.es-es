@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: bf1a2080c15346843b9ea9b2d0dc93154e185107
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398939"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640175"
 ---
 # <a name="new-settings-app"></a>Nueva aplicación Configuración
 
@@ -47,7 +47,7 @@ Con [Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holo
 
 **Problemas conocidos**
 - Se quitarán las ventanas de Configuración colocadas anteriormente (consulte la nota anterior).
-- Ya no puede cambiar el nombre del dispositivo con la aplicación Configuración. Los administradores de TI pueden cambiar el nombre de los dispositivos mediante la plantilla de nombres de dispositivo [Windows Autopilot para HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) o el nodo Ext/Microsoft/DNSComputerName del [CSP DevDetail](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) de MDM.
+- Ya no puede cambiar el nombre del dispositivo con la aplicación Configuración. Los administradores de TI pueden cambiar el nombre de los dispositivos mediante la plantilla de nombres de dispositivo [Windows Autopilot para HoloLens 2](hololens2-autopilot.md) o el nodo Ext/Microsoft/DNSComputerName del [CSP DevDetail](/windows/client-management/mdm/devdetail-csp) de MDM.
 - La página Ethernet muestra un dispositivo Ethernet virtual ("UsbNcm") en todo momento.
 - Puede que la información sobre el uso de batería de la nueva versión de Microsoft Edge no sea precisa, debido a su naturaleza como una aplicación de escritorio Win32 compatible con un nivel de adaptador de UWP (no se prevé ninguna corrección en breve).
 

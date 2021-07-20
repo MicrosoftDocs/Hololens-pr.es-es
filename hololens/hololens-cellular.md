@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397496"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635847"
 ---
 # <a name="connect-to-cellular-and-5g"></a>Conexión a redes de telefonía móvil y 5G
 
@@ -44,7 +44,7 @@ El tethering USB-C puede ofrecer una latencia inferior para las cargas de trabaj
 
 Un número limitado de dispositivos que se presentan a sí mismos como adaptadores de ethernet pueden usarse con Windows Holographic versión 2004 y posteriores.
 
-Los dispositivos que no se presentan a sí mismos como adaptadores de ethernet deben admitir el controlador genérico de Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-). Sin embargo, solo un número limitado de esos dispositivos son compatibles con HoloLens 2. Consulte al fabricante del dispositivo para obtener más información sobre si es compatible con el controlador genérico de Microsoft RNDIS.
+Los dispositivos que no se presentan a sí mismos como adaptadores de ethernet deben admitir el controlador genérico de Microsoft [RNDIS](/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-). Sin embargo, solo un número limitado de esos dispositivos son compatibles con HoloLens 2. Consulte al fabricante del dispositivo para obtener más información sobre si es compatible con el controlador genérico de Microsoft RNDIS.
 
 No se admiten dispositivos que no sean compatibles con RNDIS o que necesiten instalar un controlador o una aplicación.
 

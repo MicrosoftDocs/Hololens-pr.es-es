@@ -2,7 +2,7 @@
 title: HoloLens 2 Development Edition
 description: Obtenga información sobre HoloLens 2 Development Edition y descubra qué hacer después de obtener su propio dispositivo.
 keywords: opciones de compra de HoloLens 2, opciones de HoloLens, Development Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924475"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639682"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -61,7 +61,7 @@ Obtenga más información sobre cómo [canjear su licencia de Pixyz](https://www
 
 ### <a name="azure"></a>Azure
 Estos son algunos [productos comunes de Azure para Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) por los que es posible que desee canjear su crédito de Azure.
-Cómo canjear créditos de Azure: para canjear su crédito de Azure de 500 $, canjee el código de promoción de Pase para Azure y active su suscripción. [Más información.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+Cómo canjear créditos de Azure: para canjear su crédito de Azure de 500 $, canjee el código de promoción de Pase para Azure y active su suscripción. [Más información.](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [Obtenga información sobre cómo Azure Spatial Anchors puede ayudarle a crear aplicaciones que asignen, compartan y conserven contenido 3D](https://azure.microsoft.com/services/spatial-anchors/).
 - [Obtenga información sobre cómo Azure Remote Rendering puede representar contenido 3D interactivo y de alta calidad y transmitirlo a sus dispositivos en tiempo real](https://azure.microsoft.com/services/remote-rendering/).
@@ -72,19 +72,19 @@ Elija el motor, descargue las herramientas y desempolve el teclado. Le damos la 
 
 |     Punto de control                              |     Resultado                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Empezar a diseñar y a crear prototipos](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Inicie su aventura en el diseño de aplicaciones de realidad mixta conociendo conceptos básicos, modelos de interacción y elementos de la experiencia del usuario.     |
-|     [Empezar a desarrollar para Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Elija el motor, descargue las herramientas, agregue los bloques de creación principales y empiece a crear hoy mismo.                                  |
-|     [Explorar Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services).            |     Cree experiencias envolventes atractivas con Azure Remote Rendering y Azure Spatial Anchors.                                 |
+|     [Empezar a diseñar y a crear prototipos](/windows/mixed-reality/design/design)         |     Inicie su aventura en el diseño de aplicaciones de realidad mixta conociendo conceptos básicos, modelos de interacción y elementos de la experiencia del usuario.     |
+|     [Empezar a desarrollar para Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Elija el motor, descargue las herramientas, agregue los bloques de creación principales y empiece a crear hoy mismo.                                  |
+|     [Explorar Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services).            |     Cree experiencias envolventes atractivas con Azure Remote Rendering y Azure Spatial Anchors.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Otros recursos para Developer Edition
 
-- [Preguntas frecuentes sobre HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
-- [Asegúrese de instalar las herramientas de desarrollo de HoloLens.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [Obtenga información sobre cómo desarrollar para HoloLens 2 con Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-- [Obtenga información sobre cómo combinar MRTK con Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [Preguntas frecuentes sobre HoloLens 2 Development Edition](hololens2-development-edition-faq.yml)
+- [Asegúrese de instalar las herramientas de desarrollo de HoloLens.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Obtenga información sobre cómo desarrollar para HoloLens 2 con Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Obtenga información sobre cómo combinar MRTK con Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started).
 - [Obtenga información sobre cómo implementar las aplicaciones creadas](app-deploy-overview.md).
-- [Explore todas las posibilidades de Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
-- [Obtenga información sobre cómo desarrollar para HoloLens 2 con Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa).
+- [Explore todas las posibilidades de Mixed Reality](/windows/mixed-reality/).
+- [Obtenga información sobre cómo desarrollar para HoloLens 2 con Unity](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa).
 - [Póngase en contacto con otros desarrolladores en nuestro canal HoloDevelopers de Slack](https://holodevelopersslack.azurewebsites.net/).
 
 ## <a name="next-steps"></a>Pasos siguientes

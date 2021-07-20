@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: aefb414deb68376ea45e792f21a929fac7cf3969
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 41978c626328903cf480a3315d56841f187bc123
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398933"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640192"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Presentación de la nueva versión de Microsoft Edge
 
@@ -42,13 +42,13 @@ La nueva versión de Microsoft Edge ofrece a los administradores de TI un conjun
 
 Estos son algunos recursos útiles para obtener más información sobre cómo administrar la configuración de directivas para la nueva versión de Microsoft Edge:
 
-- [Configurar la directiva de Microsoft Edge con Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [Asignación de directivas de Microsoft Edge (versión anterior) a Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Asignación de directivas de Google Chrome a Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
-- [Documentación completa de Microsoft Edge Enterprise](https://docs.microsoft.com/deployedge/)
+- [Configurar la directiva de Microsoft Edge con Microsoft Intune](/deployedge/configure-edge-with-intune)
+- [Asignación de directivas de Microsoft Edge (versión anterior) a Microsoft Edge](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Asignación de directivas de Google Chrome a Microsoft Edge](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- [Documentación completa de Microsoft Edge Enterprise](/deployedge/)
 
 > [!IMPORTANT]
-> Debido al volumen de directivas de explorador compatibles con la nueva versión de Microsoft Edge, nuestro equipo no puede garantizar que cada nueva directiva funcione en HoloLens 2. Sin embargo, hemos probado y confirmado que el equivalente en la nueva versión de Microsoft Edge de cada directiva de la versión anterior de Microsoft Edge admitida anteriormente en HoloLens 2 funciona según lo previsto. Consulte [Asignación de directivas de Microsoft Edge (versión anterior) a Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) para encontrar el equivalente en la nueva versión de Microsoft Edge de cada directiva de explorador de la versión anterior de Microsoft Edge que se usaba con HoloLens 2.
+> Debido al volumen de directivas de explorador compatibles con la nueva versión de Microsoft Edge, nuestro equipo no puede garantizar que cada nueva directiva funcione en HoloLens 2. Sin embargo, hemos probado y confirmado que el equivalente en la nueva versión de Microsoft Edge de cada directiva de la versión anterior de Microsoft Edge admitida anteriormente en HoloLens 2 funciona según lo previsto. Consulte [Asignación de directivas de Microsoft Edge (versión anterior) a Microsoft Edge](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) para encontrar el equivalente en la nueva versión de Microsoft Edge de cada directiva de explorador de la versión anterior de Microsoft Edge que se usaba con HoloLens 2.
 >
 > Hay al menos dos directivas de la nueva versión de Microsoft Edge que sabemos que *no* funcionarán con HoloLens 2:
 > - EnterpriseModeSiteList
@@ -99,12 +99,12 @@ Hay un par de métodos disponibles para instalar Microsoft Edge Insider Channels
   1. Seleccione el botón **Instalar**.
   1. Después de la instalación correcta, encontrará Microsoft Edge Beta, Dev o Canary como entradas independientes en la lista **Todas las aplicaciones** del menú Inicio.
 
-**Instalación desde el equipo con el Portal de dispositivos Windows (requiere que el [modo de desarrollador](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) esté habilitado en HoloLens 2)**
+**Instalación desde el equipo con el Portal de dispositivos Windows (requiere que el [modo de desarrollador](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) esté habilitado en HoloLens 2)**
   1. En su PC, visite la [página de descarga de Edge Insider](https://www.microsoftedgeinsider.com/download).
   1. Seleccione el **botón de flecha desplegable** situado junto al botón "Descargar para Windows 10" del canal de Edge Insider que desee instalar.
   1. Seleccione **HoloLens 2** en el menú desplegable.
   1. Guarde el archivo .msix en la carpeta "Descargas" del equipo (u otra carpeta que pueda encontrar fácilmente).
-  1. Use el [Portal de dispositivos de Windows ](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) del equipo para instalar el archivo .msix descargado en su HoloLens 2.
+  1. Use el [Portal de dispositivos de Windows ](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) del equipo para instalar el archivo .msix descargado en su HoloLens 2.
   1. Después de la instalación correcta, encontrará Microsoft Edge Beta, Dev o Canary como entradas independientes en la lista **Todas las aplicaciones** del menú Inicio.
 
 ## <a name="using-wdac-to-block-new-microsoft-edge"></a>Uso de WDAC para bloquear la nueva versión de Microsoft Edge
@@ -115,7 +115,7 @@ Los administradores de TI que quieran actualizar la [directiva WDAC](windows-def
 
 ## <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Administración de puntos de conexión para la nueva versión de Microsoft Edge
 
-Algunos entornos pueden tener restricciones de red que deberán tenerse en cuenta. Para garantizar una experiencia sin problemas con la nueva versión de Edge, [habilite estos puntos de conexión de Microsoft](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints).
+Algunos entornos pueden tener restricciones de red que deberán tenerse en cuenta. Para garantizar una experiencia sin problemas con la nueva versión de Edge, [habilite estos puntos de conexión de Microsoft](/deployedge/microsoft-edge-security-endpoints).
 
 Obtenga más información sobre los [puntos de conexión disponibles actualmente para HoloLens](hololens-offline.md).
 
