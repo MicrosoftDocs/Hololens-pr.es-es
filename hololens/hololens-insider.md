@@ -1,6 +1,6 @@
 ---
 title: Insider Preview para Microsoft HoloLens
-description: Obtenga información sobre cómo empezar a trabajar con compilaciones de Insider y proporcionar comentarios valiosos para nuestra próxima actualización de sistema operativo principal para HoloLens.
+description: Obtenga información sobre cómo empezar a trabajar con compilaciones de Insider y proporcionar comentarios valiosos para nuestra próxima actualización del sistema operativo principal para HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
+ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659206"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114693703"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview para Microsoft HoloLens
 
@@ -33,12 +33,13 @@ Nos complace empezar a usar nuevas características para Windows Insiders. Las n
 
 | Característica                 | Descripción                | Usuario o escenario | Compilación introducida |
 |-------------------------|----------------------------|--------------|------------------|
-| [Cambios de CSP para informes HoloLens detalles](#csp-changes-for-reporting-hololens-details) | Nuevos CSP para para consultar datos | Administradores de TI    | 20348.1403                 |
+| [Cambios de CSP para los informes HoloLens detalles](#csp-changes-for-reporting-hololens-details) | Nuevos CSP para para consultar datos | Administradores de TI    | 20348.1403                 |
 | [Directiva de inicio de sesión automático controlada por CSP](#auto-login-policy-controlled-by-csp) | Se usa para iniciar sesión automáticamente en una cuenta | Administradores de TI | 20348.1405 |
 | [Compatibilidad con archivos PFX para el Administrador de certificados](#pfx-file-support-for-certificate-manager) | Agregar certificados PFX a través de Configuración interfaz de usuario | Usuario final | 20348.1405 |
 | [Ver el informe de diagnóstico avanzado en Configuración en HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Visualización de registros de diagnóstico de MDM en el dispositivo | Solución de problemas | 20348.1405 |
 | [Notificaciones de diagnóstico sin conexión](#offline-diagnostics-notifications) | Comentarios de resalte para la recopilación de registros | Solución de problemas | 20348.1405 |
 | [Use solo aplicaciones de la tienda privada solo para Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configuración de la aplicación de la tienda para mostrar solo las aplicaciones de la organización | Administración de TI | 20348.1408 |
+| [Correcciones y mejoras](hololens-insider.md#fixes-and-improvements) | Correcciones y mejoras para HoloLens. | Todo | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Cambios de CSP para los informes HoloLens detalles
 
@@ -89,7 +90,7 @@ El OMA-URI del nuevo valor de `./Device/Vendor/MSFT/Policy/Config/MixedReality/A
 
 - El usuario con la misma dirección de correo electrónico tendrá habilitado el inicio de sesión automático.
 
-En un dispositivo donde se configura esta directiva, el usuario especificado en la directiva tendrá que iniciar sesión al menos una vez. Los reinicios posteriores del dispositivo después del primer inicio de sesión harán que el usuario especificado inicie sesión automáticamente. Solo se admite un usuario de inicio de sesión automático. Una vez habilitado, el usuario que ha iniciado sesión automáticamente no podrá cerrar sesión manualmente. Para iniciar sesión como un usuario diferente, la directiva debe deshabilitarse primero.
+En un dispositivo donde se configura esta directiva, el usuario especificado en la directiva tendrá que iniciar sesión al menos una vez. Los reinicios posteriores del dispositivo después del primer inicio de sesión harán que el usuario especificado inicie sesión automáticamente. Solo se admite un usuario de inicio de sesión automático. Una vez habilitado, el usuario que ha iniciado sesión automáticamente no podrá cerrar sesión manualmente. Para iniciar sesión como un usuario diferente, primero se debe deshabilitar la directiva.
 
 > [!NOTE]
 > - Algunos eventos, como las actualizaciones principales del sistema operativo, pueden requerir que el usuario especificado vuelva a iniciar sesión en el dispositivo para reanudar el comportamiento de inicio de sesión automático. 
@@ -102,16 +103,16 @@ Los usuarios pueden importar el certificado .pfx, con clave privada, al almacén
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Ver el informe de diagnóstico avanzado en Configuración en HoloLens
 
-Para los dispositivos administrados al solucionar problemas de comportamiento, confirmar que se aplica una configuración de directiva esperada es un paso importante. Antes de esta nueva característica, esto se tenía que hacer fuera del dispositivo a través de MDM o cerca del dispositivo después de exportar los registros de diagnóstico de MDM recopilados a través de Configuración Accounts Access work or school (Acceso a cuentas de Configuración trabajo o escuela), y seleccione Export your management logs and viewed on **a** nearby PC (Exportar los registros de administración y verlos en un equipo  ->    >  cercano). 
+En el caso de los dispositivos administrados al solucionar problemas de comportamiento, confirmar que se aplica una configuración de directiva esperada es un paso importante. Antes de esta nueva característica, esto se tenía que hacer fuera del dispositivo a través de MDM o cerca del dispositivo después de exportar los registros de diagnóstico de MDM recopilados a través de Configuración Accounts Access work or school (Acceso a cuentas de **Configuración** trabajo o escuela), y seleccionar Exportar los registros de administración y verlos en un equipo  ->    >  cercano. 
 
-Ahora los diagnósticos de MDM se pueden ver en el dispositivo mediante el explorador Edge. Para ver más fácilmente el informe de diagnóstico de MDM, vaya a la página Acceso profesional o educativo y seleccione **Ver informe de diagnóstico avanzado**. Esto generará y abrirá el informe en una nueva ventana perimetral.
+Ahora los diagnósticos de MDM se pueden ver en el dispositivo mediante el explorador Edge. Para ver más fácilmente el informe de diagnóstico de MDM, vaya a la página Acceso profesional o educativo y seleccione **Ver informe de diagnóstico avanzado**. Esto generará y abrirá el informe en una nueva ventana de Edge.
 
 ![Vea el informe de diagnóstico avanzado en Configuración aplicación.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>Notificaciones de diagnóstico sin conexión
 
 Se trata de una actualización de una característica existente denominada [Diagnósticos sin conexión.](hololens-diagnostic-logs.md#offline-diagnostics) Anteriormente, no había ningún indicador claro para los usuarios de que habían desencadenado la recopilación de diagnóstico o que se había completado.
-Ahora se han agregado Windows compilaciones de Insider, hay dos formas de comentarios sobre el diagnóstico sin conexión. La primera de las notificaciones del sistema se muestra para cuando se inicia y se completa la recopilación. Se mostrarán cuando el usuario haya iniciado sesión y tenga objetos visuales.
+Ahora agregados en Windows compilaciones de Insider, hay dos formas de comentarios sobre el diagnóstico sin conexión. La primera de las notificaciones del sistema se muestra para cuando se inicia y se completa la recopilación. Se mostrarán cuando el usuario haya iniciado sesión y tenga objetos visuales.
 
 ![Notificación del sistema para recopilar registros.](./images/logcollection1.jpg)
 
@@ -123,7 +124,7 @@ Esta nueva característica se habilitará cuando se actualice el dispositivo y n
 
 Esperamos que con esta adición más reciente de comentarios sobre el lenguaje sea más fácil recopilar datos de diagnóstico y poder solucionar los problemas más rápidamente.
 
-### <a name="use-only-private-store-apps-for-microsoft-store"></a>Use solo aplicaciones de la tienda privada para Microsoft Store
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>Usar solo aplicaciones de la tienda privada para Microsoft Store
 
 La directiva RequirePrivateStoreOnly se ha habilitado para HoloLens. Esta directiva permite configurar Microsoft Store aplicación para mostrar solo el almacén privado configurado para su organización. Limitación del acceso solo a las aplicaciones que ha puesto a disposición.
 
@@ -132,76 +133,76 @@ Más información sobre [ApplicationManagement/RequirePrivateStoreOnly](http://w
 ### <a name="fixes-and-improvements"></a>Correcciones y mejoras:
 
 - Se ha [corregido un problema conocido Portal de dispositivos donde no había ningún mensaje que descargara archivos bloqueados.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Se ha corregido un problema conocido para Portal de dispositivos con los tiempos de espera de [carga y descarga de archivos.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
-- Soluciona problemas relacionados con la información de las propiedades de cumplimiento de HoloLens dispositivos; puede ser necesario reiniciar para que se desencadene la generación de informes correcta en las compilaciones de Insider.  
+- Se ha corregido un problema conocido para Portal de dispositivos con tiempos de espera de carga y descarga [de archivos.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- Soluciona los problemas relacionados con la presentación de informes de propiedades de cumplimiento HoloLens dispositivos; puede ser necesario reiniciar para que se desencadene la generación de informes correcta en las compilaciones de Insider.  
 - Se ha actualizado la versión de Remote Assist que se instala en flashes nuevos.
 
 
 ## <a name="start-receiving-insider-builds"></a>Empezar a recibir compilaciones de Insider
 
 > [!NOTE]
-> Si no se ha actualizado recientemente, reinicie el dispositivo para actualizar el estado y obtener la compilación más reciente.
+> Si no ha actualizado recientemente, reinicie el dispositivo para actualizar el estado y obtener la compilación más reciente.
 > - El comando de voz "Reiniciar dispositivo" funciona bien. 
 > - También puede elegir el botón reiniciar en Configuración/Windows Programa Insider.
 >
-> Hemos tenido un error en el back-end que es posible que haya encontrado y esto le permitirá volver a realizar el seguimiento.
+> Hemos tenido un error en el back-end que puede haber encontrado y esto le permitirá volver a realizar el seguimiento.
 
-En un HoloLens 2, vaya **a Configuración**  >  **Update & Security** Windows Programa Insider y  >   seleccione **Introducción.** Vincule la cuenta que usó para registrarse como Windows Insider.
+En un dispositivo HoloLens 2, vaya **a Configuración** Update & Security Windows Programa Insider y  >    >   seleccione **Introducción.** Vincule la cuenta que usó para registrarse como Windows Insider.
 
-Windows insider se está moviendo a Canales. El **anillo** rápido se convertirá en  el canal **de desarrollo,** el  anillo lento se convertirá en el **Canal beta** y el anillo versión preliminar se convertirá en el canal de versión preliminar de la **versión .** Este es el aspecto de esa asignación:
+Windows insider ahora se mueve a Canales. El **anillo** rápido se convertirá en  el canal **de** desarrollo, el  anillo lento se convertirá en el **Canal beta** y el anillo versión preliminar se convertirá en el canal de versión preliminar **de versión** preliminar. Este es el aspecto de esa asignación:
 
-![Windows Explicación de los canales de Insider](images/WindowsInsiderChannels.png)
+![Windows Explicación de Los canales de Insider](images/WindowsInsiderChannels.png)
 
-Para obtener más información, vea Introducing Windows Insider Channels (Introducción [a los canales de Insider)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) Windows Blogs.
-A continuación, seleccione Desarrollo **activo de Windows**, elija si desea recibir canal **de** desarrollo o Canal beta **compilaciones** y revise los términos del programa.
-Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, vaya a Configuración > **Update & Security > Check for updates** to get the latest build (Buscar actualizaciones para obtener la compilación más reciente).
+Para obtener más información, vea [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) (Introducción a los canales de Insider) Windows blogs.
+A continuación, seleccione Desarrollo activo **de Windows**, elija si desea recibir canal **de** desarrollo o Canal beta **compilaciones** y revise los términos del programa.
+Seleccione **Confirmar > Reiniciar ahora** para finalizar. Una vez reiniciado el dispositivo, vaya a Configuración > **Update & Security > Buscar** actualizaciones para obtener la compilación más reciente.
 
-### <a name="update-error-0x80070490-work-around"></a>Actualización de la 0x80070490 de errores
+### <a name="update-error-0x80070490-work-around"></a>Actualización de errores 0x80070490 de trabajo
 
-Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, pruebe el siguiente trabajo a corto plazo. Implica mover el canal insider, seleccionar la actualización y, a continuación, volver a mover el canal insider.
+Si se produce un error de actualización 0x80070490 al actualizar en el canal Dev o Beta, pruebe el siguiente trabajo a corto plazo. Implica mover el canal insider, seleccionar la actualización y, a continuación, volver a mover el canal de Insider.
 
-#### <a name="stage-one---release-preview"></a>Fase 1: versión preliminar
+#### <a name="stage-one---release-preview"></a>Fase uno: versión preliminar
 
-1.  Configuración, Actualizar & Seguridad, Windows Programa Insider, seleccione Release **Preview Channel (Canal de versión preliminar de versión preliminar).**
+1.  Configuración, Actualizar & seguridad, Windows Programa Insider, seleccione Release Preview Channel ( **Canal de versión preliminar de versión preliminar).**
 
 2.  Configuración, Update & Security, Windows Update, **Check for updates**. Después de la actualización, continúe con la fase dos.
 
 #### <a name="stage-two---dev-channel"></a>Fase dos: Canal de desarrollo
 
-1. Configuración, Actualizar & Seguridad, Windows Programa Insider, seleccione Canal **de desarrollo.**
+1. Configuración, Actualizar & seguridad, Windows Programa Insider, seleccione Canal **de desarrollo.**
 
 2. Configuración, Update & Security, Windows Update, **Check for updates**.
 
 ## <a name="ffu-download-and-flash-directions"></a>Instrucciones de descarga y flash de FFU
 
-Para probar con un vuelo firmado ffu, primero debe desbloquear el dispositivo en vuelo antes de parpadear el vuelo firmado ffu.
+Para realizar pruebas con un ffu firmado por un vuelo, primero debe desbloquear el dispositivo en vuelo antes de que se abra el ffu firmado por el vuelo.
 
 1. En pc:
     1. Descargue ffu en el equipo desde [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
     1. Instale ARC (Advanced Recovery Companion) desde la Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
     
-1. En HoloLens: desbloqueo de vuelo: abra **Configuración** Update & Security Windows Programa Insider y, a continuación, regístrese  >    >   y reinicie el dispositivo.
+1. En HoloLens- Desbloqueo de vuelos: abra **Configuración** Update & Security Windows Programa Insider y, a continuación, regístrese  >    >   y reinicie el dispositivo.
 
-1. Flash FFU: ahora puede flashear el vuelo firmado con FFU mediante ARC.
+1. Flash FFU: ahora puede flashear el vuelo firmado por FFU mediante ARC.
 
 ### <a name="provide-feedback-and-report-issues"></a>Proporcionar comentarios e informar de problemas
 
-Use la [aplicación Centro de opiniones en](hololens-feedback.md) su HoloLens para proporcionar comentarios e informar de problemas. El Centro de opiniones garantiza que se incluye toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver rápidamente el problema.  Los problemas con la versión en chino y japonés HoloLens deben informarse de la misma manera.
+Use la [aplicación Centro de opiniones en](hololens-feedback.md) su HoloLens para proporcionar comentarios y notificar problemas. El Centro de opiniones garantiza que se incluye toda la información de diagnóstico necesaria para ayudar a nuestros ingenieros a depurar y resolver rápidamente el problema.  Los problemas con la versión en chino y japonés HoloLens deben notificase de la misma manera.
 
 > [!NOTE]
-> Asegúrese de aceptar el mensaje que le pregunta si desea Centro de opiniones acceso a la carpeta Documentos **(seleccione Sí cuando** se le solicite).
+> Asegúrese de aceptar el mensaje que le pregunta si desea Centro de opiniones acceder a la carpeta Documentos (seleccione **Sí** cuando se le solicite).
 
 ## <a name="note-for-developers"></a>Nota para desarrolladores
 
-Le recomendamos que pruebe a desarrollar sus aplicaciones mediante las compilaciones de Insider de HoloLens.  Consulte la documentación [HoloLens developer para](https://developer.microsoft.com/windows/mixed-reality/development) empezar. Esas mismas instrucciones funcionan con las compilaciones de Insider de HoloLens.  Puede usar las mismas compilaciones de Unity y Visual Studio que ya usa para el HoloLens desarrollo.
+Le recomendamos que pruebe a desarrollar sus aplicaciones mediante compilaciones insider de HoloLens.  Consulte la documentación [HoloLens developer para](https://developer.microsoft.com/windows/mixed-reality/development) comenzar. Esas mismas instrucciones funcionan con compilaciones de Insider de HoloLens.  Puede usar las mismas compilaciones de Unity Visual Studio que ya usa para el HoloLens desarrollo.
 
 ## <a name="stop-receiving-insider-builds"></a>Dejar de recibir compilaciones de Insider
 
-Si ya no quiere recibir compilaciones de Insider de Windows Holographic, puede optar por no recibir cuando [](hololens-recovery.md) HoloLens ejecuta una compilación de producción o puede recuperar el dispositivo mediante advanced recovery Companion para recuperar el dispositivo en una versión que no sea insider de Windows Holographic.
+Si ya no quiere recibir compilaciones de Insider de Windows Holographic, puede optar por no recibir cuando [](hololens-recovery.md) HoloLens ejecuta una compilación de producción, o bien puede recuperar el dispositivo mediante advanced recovery Companion para recuperar el dispositivo en una versión que no sea Insider de Windows Holographic.
 
 > [!CAUTION]
-> Hay un problema conocido en el que los usuarios que no se inscriban en las compilaciones de Insider Preview después de volver a instalar manualmente una nueva compilación de versión preliminar experimentarían una pantalla azul. Después, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se vería afectado o no, consulte más información sobre [este problema conocido.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Hay un problema conocido en el que los usuarios que desascriban las compilaciones de Insider Preview después de volver a instalar manualmente una nueva compilación de versión preliminar experimentarían una pantalla azul. Después, deben recuperar manualmente su dispositivo. Para obtener información completa sobre si se vería afectado o no, consulte más información sobre [este problema conocido.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
 Para comprobar que el HoloLens está ejecutando una compilación de producción:
 
@@ -209,7 +210,7 @@ Para comprobar que el HoloLens está ejecutando una compilación de producción:
 
 1. [Consulte las notas de la versión de los números de compilación de producción.](hololens-release-notes.md)
 
-Para no participar en las compilaciones de Insider:
+Para rechazar las compilaciones de Insider:
 
 1. En un HoloLens una compilación de producción, vaya a **Configuración > Update & Security > Windows Programa Insider** y seleccione Stop Insider builds (Detener compilaciones de **Insider).**
 
