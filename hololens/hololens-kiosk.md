@@ -17,23 +17,23 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9d9e521f3e337b3a48a60c19e52bfeb3186507af
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640362"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659597"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configuración de HoloLens como un quiosco multimedia
 
-Puede configurar un dispositivo HoloLens para que funcione como un dispositivo de propósito fijo, también denominado quiosco, configurando el dispositivo para que se ejecute en modo de pantalla completa. El modo de pantalla completa limita las aplicaciones (o usuarios) que están disponibles en el dispositivo. El modo de pantalla completa es una característica práctica que puede usar para dedicar un dispositivo HoloLens a aplicaciones empresariales, o para usar el dispositivo HoloLens en una demostración de aplicación.
+Puede configurar un dispositivo HoloLens para que funcione como un dispositivo de propósito fijo, también denominado quiosco, configurando el dispositivo para que se ejecute en pantalla completa. El modo de pantalla completa limita las aplicaciones (o usuarios) que están disponibles en el dispositivo. El modo de pantalla completa es una característica práctica que puede usar para dedicar un dispositivo HoloLens a aplicaciones empresariales o para usar el dispositivo HoloLens en una demostración de aplicación.
 
-En este artículo se proporciona información sobre los aspectos de la configuración de quiosco que son específicos de HoloLens dispositivos. Para obtener información general sobre los distintos tipos de quioscos basados en Windows y cómo configurarlos, consulte Configuración de quioscos y [signos digitales](/windows/configuration/kiosk-methods)en Windows de escritorio.  
+En este artículo se proporciona información sobre aspectos de la configuración de quiosco que son específicos de HoloLens dispositivos. Para obtener información general sobre los distintos tipos de quioscos basados en Windows y cómo configurarlos, consulte Configuración de quioscos y [signos digitales](/windows/configuration/kiosk-methods)en Windows de escritorio.  
 
 > [!IMPORTANT]  
 > El modo de pantalla completa determina qué aplicaciones están disponibles cuando un usuario inicia sesión en el dispositivo. Sin embargo, el modo de pantalla completa no es un método de seguridad. No detiene que una aplicación "permitida" abra otra aplicación que no está permitida. Para impedir que se abran aplicaciones o procesos, use Windows Defender CSP de Control de aplicaciones [(WDAC)](/windows/client-management/mdm/applicationcontrol-csp) para crear las directivas adecuadas.
 >
-> Obtenga más información sobre la servicios Microsoft proporcionar a los usuarios un nivel avanzado de seguridad que HoloLens 2 usa, obtenga más información sobre separación y aislamiento de estado: protecciones [de Defender.](security-state-separation-isolation.md#defender-protections) O bien, aprenda a [usar WDAC y Windows PowerShell para permitir](/mem/intune/configuration/custom-profile-hololens)o bloquear aplicaciones en HoloLens 2 dispositivos con Microsoft Intune .
+> Obtenga más información sobre la servicios Microsoft proporcionar a los usuarios un nivel avanzado de seguridad que HoloLens 2 usa, lea más sobre separación y aislamiento de estado: protección [de Defender.](security-state-separation-isolation.md#defender-protections) O bien, aprenda a [usar WDAC y Windows PowerShell para permitir](/mem/intune/configuration/custom-profile-hololens)o bloquear aplicaciones en HoloLens 2 dispositivos con Microsoft Intune .
 
 Puede usar el modo de pantalla completa en una configuración de aplicación única o de varias aplicaciones, y puede usar uno de los tres procesos para configurar e implementar la configuración de quiosco.
 
@@ -44,7 +44,7 @@ Puede usar el modo de pantalla completa en una configuración de aplicación ún
 
 Al planear el quiosco, deberá poder responder a las siguientes preguntas. Estas son algunas decisiones que se deben tener en cuenta al leer esta página y algunas consideraciones para estas preguntas.
 1. **Quién va a usar la pantalla completa y qué [tipo](hololens-identity.md) de cuentas usarán?** Se trata de una decisión que probablemente ya haya tomado y que no se debe ajustar por el bien del quiosco, pero afectará a cómo se asigna el quiosco más adelante.
-1. **¿Necesita tener quioscos diferentes por usuario o grupo o un quiosco no habilitado para algunos?** Si es así, querrá crear el quiosco a través de XML. 
+1. **¿Necesita tener quioscos distintos por usuario o grupo o un quiosco no habilitado para algunos?** Si es así, querrá crear la pantalla completa a través de XML. 
 1. **¿Cuántas aplicaciones habrá en el quiosco?** Si tiene más de una aplicación, necesitará un quiosco de varias aplicaciones. 
 1. **¿Qué aplicaciones estarán en el quiosco?** Use nuestra lista de AUMIDs a continuación para agregar cualquier In-Box aplicaciones, además de las suyas propias.
 1. **¿Cómo planea implementar el quiosco?** Si va a inscribir el dispositivo en MDM, se recomienda usar MDM para implementar la pantalla completa. Si no usa MDM, la implementación con el paquete de aprovisionamiento está disponible.  
@@ -82,7 +82,7 @@ En la tabla siguiente se enumeran las características de soporte técnico del u
 
 | &nbsp; |Tipos de usuario admitidos | Inicio de sesión automático | Varios niveles de acceso |
 | --- | --- | --- | --- |
-|Quiosco de una sola aplicación |Cuenta de servicio administrada (MSA) en Azure Active Directory (Azure AD) o cuenta local |Sí |No |
+|Quiosco de una sola aplicación | Cuenta Microsoft (MSA) en Azure Active Directory (Azure AD) o cuenta local |Sí |No |
 |Pantalla completa con varias operaciones |Cuenta de Azure AD |No |Sí |
 
 Para obtener ejemplos de cómo usar estas funcionalidades, consulte la tabla siguiente.
@@ -90,18 +90,18 @@ Para obtener ejemplos de cómo usar estas funcionalidades, consulte la tabla sig
 |Use una pantalla completa de una sola aplicación para: |Use una pantalla completa con varias aplicaciones para: |
 | --- | --- |
 |Un dispositivo que solo ejecuta una guía de Dynamics 365 para nuevos empleados. |Un dispositivo que ejecuta guías y asistencia remota para una variedad de empleados. |
-|Un dispositivo que ejecuta solo una aplicación personalizada. |Un dispositivo que funciona como quiosco para la mayoría de los usuarios (que ejecuta solo una aplicación personalizada), pero que funciona como un dispositivo estándar para un grupo específico de usuarios. |
+|Un dispositivo que ejecuta solo una aplicación personalizada. |Un dispositivo que funciona como pantalla completa para la mayoría de los usuarios (que ejecuta solo una aplicación personalizada), pero que funciona como un dispositivo estándar para un grupo específico de usuarios. |
 
 ### <a name="plan-kiosk-apps"></a>Planeación de aplicaciones de quiosco
 
 Para obtener información general sobre cómo elegir aplicaciones de quiosco, consulte Directrices para elegir una aplicación para el acceso asignado [(modo de pantalla completa).](/windows/configuration/guidelines-for-assigned-access-app)
 
-Si usa la aplicación Windows Portal de dispositivos configurar un quiosco de una sola aplicación, seleccione la aplicación durante el proceso de configuración.  
+Si usa la aplicación Windows Portal de dispositivos configurar una pantalla completa de una sola aplicación, seleccione la aplicación durante el proceso de instalación.  
 
 Si usa un sistema Administración de dispositivos móvil (MDM) o un paquete de aprovisionamiento para configurar el modo de pantalla completa, use el proveedor de servicios de configuración [(CSP) AssignedAccess](/windows/client-management/mdm/assignedaccess-csp) para especificar aplicaciones. El CSP usa los id. de modelo de usuario [de aplicación (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) para identificar las aplicaciones. En la tabla siguiente se enumeran los AUMID de algunas aplicaciones que se pueden usar en una pantalla completa con varias aplicaciones.
 
 > [!IMPORTANT]
-> El modo de pantalla completa determina qué aplicaciones están disponibles cuando un usuario inicia sesión en el dispositivo. Sin embargo, el modo de pantalla completa no es un método de seguridad. No detiene que una aplicación "permitida" abra otra aplicación que no está permitida. Dado que no se restringe este comportamiento, las aplicaciones todavía se pueden iniciar desde Edge, el Explorador de archivos y Microsoft Store aplicaciones. Si hay aplicaciones específicas que no desea iniciar desde un quiosco, use Windows Defender CSP de Control de aplicaciones [(WDAC)](/windows/client-management/mdm/applicationcontrol-csp) para crear las directivas adecuadas. 
+> El modo de pantalla completa determina qué aplicaciones están disponibles cuando un usuario inicia sesión en el dispositivo. Sin embargo, el modo de pantalla completa no es un método de seguridad. No detiene que una aplicación "permitida" abra otra aplicación que no está permitida. Dado que no se restringe este comportamiento, las aplicaciones todavía se pueden iniciar desde Edge, el Explorador de archivos y Microsoft Store aplicaciones. Si hay aplicaciones específicas que no desea iniciar desde una pantalla completa, use Windows Defender CSP de Control de aplicaciones [(WDAC)](/windows/client-management/mdm/applicationcontrol-csp) para crear las directivas adecuadas. 
 > 
 > Además, el Mixed Reality inicio no se puede establecer como una aplicación de quiosco.
 
@@ -119,7 +119,7 @@ Si usa un sistema Administración de dispositivos móvil (MDM) o un paquete de a
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft.RemoteAssist |
 |Centro de &nbsp; comentarios |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! App |
 |Explorador de archivos |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Correo |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
+|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
 |Datos Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
 |Nuevo Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
@@ -131,8 +131,8 @@ Si usa un sistema Administración de dispositivos móvil (MDM) o un paquete de a
 |Nuevo Configuración |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! Aplicación |
 |Sugerencias |Microsoft.HoloLensTips \_ 8wekyb3d8bbwe \! HoloLensTips |
 
-> <sup>1 Para</sup> habilitar la captura de fotos o vídeos, debe habilitar la aplicación Cámara como una aplicación de quiosco.  
-> <sup>2</sup> Al habilitar la aplicación Cámara, tenga en cuenta las condiciones siguientes:
+> <sup>1 Para</sup> habilitar la captura de fotos o vídeos, debe habilitar la aplicación Cámara como una aplicación de pantalla completa.  
+> <sup>2</sup> Cuando habilite la aplicación Cámara, tenga en cuenta las condiciones siguientes:
 > - El menú Acciones rápidas incluye los botones Foto y Vídeo.  
 > - También debe habilitar una aplicación (como Fotos, Mail o OneDrive) que pueda interactuar con o recuperar imágenes.  
 >  
@@ -141,7 +141,7 @@ Si usa un sistema Administración de dispositivos móvil (MDM) o un paquete de a
 
 ### <a name="plan-kiosk-profiles-for-users-or-groups"></a>Planeación de perfiles de quiosco para usuarios o grupos
 
-Al crear el archivo xml o usar la interfaz de usuario de Intune para configurar un quiosco, deberá tener en cuenta quién será el usuario del quiosco. Una configuración de quiosco se puede limitar a una cuenta individual o a Azure AD grupos. 
+Al crear el archivo XML o usar la interfaz de usuario de Intune para configurar un quiosco, deberá tener en cuenta quién será el usuario del quiosco. Una configuración de quiosco se puede limitar a una cuenta individual o a Azure AD grupos. 
 
 Normalmente, los quioscos están habilitados para un usuario o un grupo de usuarios. Sin embargo, si planea escribir su propia pantalla completa XML, es posible que quiera tener en cuenta el acceso asignado global, en el que la pantalla completa se aplica en el nivel de dispositivo independientemente de la identidad. Si esto le preocupa, lea [más sobre los quioscos de acceso asignado global.](hololens-global-assigned-access-kiosk.md)
 
@@ -154,7 +154,7 @@ Normalmente, los quioscos están habilitados para un usuario o un grupo de usuar
 #### <a name="if-you-are-creating-a-kiosk-in-intune"></a>Si va a crear una pantalla completa en Intune.
 -   Cada dispositivo solo puede recibir un único perfil de quiosco; de lo contrario, creará un conflicto y no recibirá ninguna configuración de quiosco. 
     -   Otros tipos de perfiles y directivas, como las restricciones de dispositivos que no están relacionadas con el perfil de configuración de quiosco, no entra en conflicto con el perfil de configuración de quiosco.
--   La pantalla completa se habilitará para todos los usuarios que forman parte del tipo de inicio de sesión usuario, que se establecerá con un usuario o un grupo Azure AD usuario. 
+-   La pantalla completa se habilitará para todos los usuarios que forman parte del tipo de inicio de sesión Usuario, que se establecerá con un usuario o Azure AD usuario. 
 -   Una vez establecida la configuración de quiosco y el tipo de inicio de sesión de usuario **(los** usuarios que pueden iniciar sesión en la pantalla completa) y las aplicaciones seleccionadas, la configuración del dispositivo todavía debe asignarse a un grupo. Los grupos asignados determinan qué dispositivos reciben la configuración del dispositivo de quiosco, pero no interactúa con si la pantalla completa está habilitada o no. 
     - Para obtener una explicación completa de los efectos de asignar perfiles de configuración en Intune, consulte [Asignación](/intune/configuration/device-profile-assign)de perfiles de usuario y dispositivo en Microsoft Intune .
 
@@ -210,10 +210,10 @@ Para obtener más información sobre cómo inscribir los dispositivos, vea Inscr
 1. Seleccione **Microsoft Intune**  >  Device configuration - Profiles Create profile (Configuración **del dispositivo: perfiles**  >  **Crear perfil).**
 1. Escriba un nombre de perfil.
 1. Seleccione **Platform**  >  **Windows 10 y versiones posteriores** y, a continuación, seleccione Profile type Device restrictions **(Restricciones** de  > **dispositivos del tipo de perfil).**
-1. Seleccione **Configurar**  >  **quiosco** y, a continuación, seleccione una de las opciones siguientes:
+1. Seleccione **Configurar**  >  **quiosco** y, a continuación, seleccione una de las siguientes opciones:
    - Para crear un quiosco de una sola aplicación, seleccione **Quiosco** de pantalla completa con  >  **una sola aplicación.**
-   - Para crear un quiosco con varias aplicaciones, seleccione **Quiosco**  >  **de pantalla completa con varias aplicaciones.**
-1. Para empezar a configurar la pantalla completa, seleccione **Agregar.**
+   - Para crear una pantalla completa con varias aplicaciones, seleccione **Quiosco**  >  **de pantalla completa con varias aplicaciones.**
+1. Para empezar a configurar la pantalla completa, seleccione **Agregar**.
 
 Los pasos siguientes varían en función del tipo de quiosco que desee. Para obtener más información, seleccione una de las siguientes opciones:  
 
@@ -227,7 +227,7 @@ Para obtener más información sobre cómo crear un perfil de configuración de 
 En esta sección se resume la configuración que requiere una pantalla completa de una sola aplicación. Para más información, consulte los artículos siguientes:
 
 - Para obtener información sobre cómo configurar un perfil de configuración de quiosco en Intune, vea [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
-- Para obtener más información sobre la configuración disponible para quioscos de una sola aplicación en Intune, consulte Pantalla completa [con una sola aplicación completa.](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
+- Para obtener más información sobre la configuración disponible para quioscos de una sola aplicación en Intune, consulte Pantalla completa con una [sola aplicación completa.](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
 - Para otros servicios MDM, consulte la documentación del proveedor para obtener instrucciones. Si tiene que usar una configuración XML personalizada para configurar una pantalla completa en el servicio MDM, cree un archivo XML que defina la [configuración de quiosco.](#ppkioskconfig)
 
 1. Seleccione **User logon type** Local user account (Tipo de inicio de sesión de usuario local cuenta de usuario local) y, a continuación, escriba el nombre de usuario de la cuenta local (dispositivo) o la cuenta Microsoft  >  (MSA) que puede iniciar sesión en la pantalla completa.
@@ -250,7 +250,7 @@ En esta sección se resume la configuración que requiere una pantalla completa 
 >[!NOTE]  
 > El modo S no se admite en Windows Holographic for Business.
 
-1. Seleccione **Tipo de inicio de** sesión de Azure AD usuario o grupo o Tipo de inicio de sesión de usuario HoloLens visitante y, a continuación, agregue uno o varios grupos de usuarios o  >     >  cuentas.  
+1. Seleccione **Tipo de inicio de** sesión Azure AD usuario o grupo o Tipo de inicio de sesión de usuario HoloLens visitante y, a continuación, agregue uno o varios grupos de usuarios o  >     >  cuentas.  
 
    Solo los usuarios que pertenecen a los grupos o cuentas que especifique en Tipo de inicio de sesión **de usuario** pueden usar la experiencia de quiosco.
 
@@ -274,7 +274,7 @@ Durante la OOBE, siga estos pasos:
 1. Inscriba el dispositivo. Asegúrese de que el dispositivo se agrega al grupo al que está asignado el perfil de configuración de quiosco.
 1. Espere a que finalice OOBE, a que la aplicación de la tienda se descargue e instale y a que se apliquen directivas. A continuación, reinicie el dispositivo.
 
-La próxima vez que inicie sesión en el dispositivo, la aplicación de quiosco se iniciará automáticamente.
+La próxima vez que inicie sesión en el dispositivo, la aplicación de pantalla completa se iniciará automáticamente.
 
 Si no ve la configuración de quiosco en este momento, [compruebe el estado de asignación](/intune/configuration/device-profile-monitor).
 
@@ -289,15 +289,15 @@ Durante la OOBE, siga estos pasos:
 
 1. Inicie sesión con la cuenta que pertenece al grupo Tipo **de inicio de sesión de** usuario.
 1. Inscriba el dispositivo.
-1. Espere a que las aplicaciones que forman parte del perfil de configuración de quiosco se descarguen e instalen. Además, espere a que se apliquen directivas.  
-1. Una vez que finalice la OOBE, puede instalar aplicaciones adicionales desde Microsoft Store o mediante la instalación local. [Aplicaciones necesarias](/mem/intune/apps/apps-deploy#assign-an-app) para el grupo al que pertenece el dispositivo para instalarse automáticamente.
+1. Espere a que las aplicaciones que forman parte del perfil de configuración de quiosco se descarguen e instalen. Además, espere a que se apliquen las directivas.  
+1. Una vez que finalice la OOBE, puede instalar aplicaciones adicionales desde Microsoft Store o mediante la instalación de instalación local. [Aplicaciones necesarias](/mem/intune/apps/apps-deploy#assign-an-app) para el grupo al que pertenece el dispositivo para instalarse automáticamente.
 1. Una vez finalizada la instalación, reinicie el dispositivo.
 
 La próxima vez que inicie sesión en el dispositivo mediante una cuenta que pertenezca al tipo de inicio de sesión usuario **,** la aplicación de pantalla completa se iniciará automáticamente.
 
-Si no ve la configuración de quiosco en este momento, [compruebe el estado de asignación](/intune/configuration/device-profile-monitor).
+Si no ve la configuración de pantalla completa en este momento, [compruebe el estado de asignación](/intune/configuration/device-profile-monitor).
 
-## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Uso de un paquete de aprovisionamiento para configurar una pantalla completa de aplicación única o de varias aplicaciones
+## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Uso de un paquete de aprovisionamiento para configurar una pantalla completa de una o varias aplicaciones
 
 Para configurar el modo de pantalla completa mediante un paquete de aprovisionamiento, siga estos pasos.
 
@@ -307,7 +307,7 @@ Para configurar el modo de pantalla completa mediante un paquete de aprovisionam
 
 ### <a name="provisioning-package-step-1-ndash-create-a-kiosk-configuration-xml-file"></a><a id="ppkioskconfig"></a>Paquete de aprovisionamiento, paso &ndash; 1: Creación de un archivo XML de configuración de quiosco
 
-Siga las instrucciones generales para crear un archivo XML de configuración [de quiosco para Windows escritorio](/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file), excepto lo siguiente:
+Siga las instrucciones generales para crear un archivo XML de configuración de quiosco para [Windows escritorio,](/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)excepto lo siguiente:
 
 - No incluya aplicaciones de Windows clásicas (Win32). HoloLens no admite estas aplicaciones.
 - Use el marcador [de posición Start layout XML](#start-layout-for-hololens) para HoloLens.
@@ -315,7 +315,7 @@ Siga las instrucciones generales para crear un archivo XML de configuración [de
 
 #### <a name="optional-add-guest-access-to-the-kiosk-configuration"></a><a id="ppkioskguest"></a>Opcional: Agregar acceso de invitado a la configuración de quiosco
 
-En la [ **sección Configs** (Configuraciones) del archivo XML](/windows/configuration/lock-down-windows-10-to-specific-apps#configs), puede configurar un grupo especial denominado **Visitor** para permitir que los invitados usen el quiosco. Cuando la pantalla completa está configurada para admitir el grupo especial **Visitante,** se agrega una opción **"Invitado"** a la página de inicio de sesión. La **cuenta** de invitado no requiere una contraseña y los datos asociados a la cuenta se eliminan cuando la cuenta cierra la sesión.
+En la [ **sección Configs** (Configuraciones) del](/windows/configuration/lock-down-windows-10-to-specific-apps#configs)archivo XML , puede configurar un grupo especial denominado **Visitor** para permitir que los invitados usen el quiosco. Cuando la pantalla completa está configurada para admitir el grupo especial **Visitante,** se agrega una opción **"Invitado"** a la página de inicio de sesión. La **cuenta** de invitado no requiere una contraseña y los datos asociados a la cuenta se eliminan cuando la cuenta cierra la sesión.
 
 Para habilitar la **cuenta de** invitado, agregue el siguiente fragmento de código al XML de configuración de quiosco:
 
@@ -330,19 +330,19 @@ Para habilitar la **cuenta de** invitado, agregue el siguiente fragmento de cód
 #### <a name="enable-visitor-autologon"></a>Habilitación del inicio de sesión automático del visitante
 
 En las [compilaciones Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holographic-version-21h1) y versiones adelante:
-- Las configuraciones AAD y Non-ADD admiten que las cuentas de visitante se habiliten para el inicio de sesión automático en los modos de quiosco.
+- Las configuraciones de AAD y no ADD admiten que las cuentas de visitante se habiliten para el inicio de sesión automático en los modos de quiosco.
 
 ##### <a name="non-aad-configuration"></a>Configuración que no es de AAD
 
 1. Cree un paquete de aprovisionamiento que:
-    1. Configura los valores de Runtime/AssignedAccess para permitir las cuentas de visitante.
-    1. Opcionalmente, inscribe el dispositivo en MDM (Configuración del entorno de ejecución/Área de trabajo/Inscripciones) para que se pueda administrar más adelante.
+    1. Configura los valores de Runtime/AssignedAccess para permitir cuentas de visitante.
+    1. Opcionalmente, inscribe el dispositivo en MDM (configuración en tiempo de ejecución/Área de trabajo/Inscripciones) para que se pueda administrar más adelante.
     1. No crear una cuenta local
 2. [Aplique el paquete de aprovisionamiento](hololens-provisioning.md).
 
 ##### <a name="aad-configuration"></a>Configuración de AAD
 
-Los dispositivos unidos a AAD configurados para el modo de pantalla completa pueden iniciar sesión en una cuenta de visitante con un solo clic en la pantalla de inicio de sesión. Una vez que haya iniciado sesión en la cuenta de visitante, el dispositivo no volverá a solicitar el inicio de sesión hasta que el visitante haya iniciado sesión explícitamente desde el menú Inicio o se reinicie el dispositivo.
+Los dispositivos unidos a AAD configurados para el modo de pantalla completa pueden iniciar sesión en una cuenta de visitante con un solo botón pulsando en la pantalla de inicio de sesión. Una vez que haya iniciado sesión en la cuenta de visitante, el dispositivo no volverá a solicitar el inicio de sesión hasta que el visitante haya iniciado sesión explícitamente desde el menú Inicio o se reinicie el dispositivo.
 
 El inicio de sesión automático del visitante se puede administrar a través [de la directiva OMA-URI personalizada:](/mem/intune/configuration/custom-settings-windows-10)
 
@@ -351,11 +351,11 @@ El inicio de sesión automático del visitante se puede administrar a través [d
 
 | Directiva |Descripción |Configurations 
 | --------------------------- | ------------- | -------------------- |
-| MixedReality/VisitorAutoLogon | Permite que un visitante inicie sesión automáticamente en una pantalla completa. | 1 (Sí), 0 (No, valor predeterminado). |
+| MixedReality/VisitorAutoLogon | Permite que un visitante inicie sesión automáticamente en un quiosco. | 1 (Sí), 0 (No, valor predeterminado). |
 
 #### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Diseño de inicio de marcador de posición para HoloLens
 
-Si usa un paquete [de aprovisionamiento para](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) configurar una pantalla completa con varias aplicaciones, el procedimiento requiere un diseño de inicio. La personalización del diseño de inicio no se admite en Windows Holographic for Business. Por lo tanto, tendrá que usar un marcador de posición Diseño de inicio.
+Si usa un paquete [de aprovisionamiento](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) para configurar una pantalla completa con varias aplicaciones, el procedimiento requiere un diseño De inicio. La personalización del diseño de inicio no se admite Windows Holographic for Business. Por lo tanto, tendrá que usar un diseño de inicio de marcador de posición.
 
 > [!NOTE]  
 > Dado que un quiosco de una sola aplicación inicia la aplicación de pantalla completa cuando un usuario inicia sesión, no usa un menú Inicio y no tiene que tener un diseño De inicio.
@@ -385,9 +385,9 @@ Para el diseño De inicio, agregue la siguiente **sección StartLayout** al arch
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ```
 
-#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>Archivo de diseño de inicio de marcador de posición para MDM (Intune y otros)
+#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>Archivo de diseño De inicio de marcador de posición para MDM (Intune y otros)
 
-Guarde el ejemplo siguiente como un archivo XML. Puede usar este archivo al configurar la pantalla completa con varias aplicaciones en Microsoft Intune (o en otro servicio MDM que proporciona un perfil de quiosco).
+Guarde el ejemplo siguiente como un archivo XML. Puede usar este archivo al configurar la pantalla completa de varias aplicaciones en Microsoft Intune (o en otro servicio MDM que proporciona un perfil de pantalla completa).
 
 > [!NOTE]
 > Si tiene que usar una configuración personalizada y una configuración XML completa para configurar una pantalla completa en el servicio MDM, use las instrucciones de diseño De [inicio para un paquete de aprovisionamiento.](#start-layout-for-hololens)
@@ -408,9 +408,9 @@ Guarde el ejemplo siguiente como un archivo XML. Puede usar este archivo al conf
  </LayoutModificationTemplate>
 ```
 
-### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. paquete, paso 2: &ndash; Adición del archivo XML de configuración de quiosco a un paquete de aprovisionamiento
+### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. package, step 2 Add the kiosk configuration XML file to a provisioning package (Agregar el archivo XML de configuración &ndash; de quiosco a un paquete de aprovisionamiento)
 
-1. Abra [Windows Diseñador de configuración de](https://www.microsoft.com/store/apps/9nblggh4tx22).
+1. Abra [Windows Diseñador de configuración de .](https://www.microsoft.com/store/apps/9nblggh4tx22)
 1. Seleccione **Aprovisionamiento avanzado,** escriba un nombre para el proyecto y, a continuación, **seleccione Siguiente.**
 1. Seleccione **Windows 10 Holographic** y, a continuación, **seleccione Siguiente.**
 1. Seleccione **Finalizar**. Se abrirá el área de trabajo para el paquete.
@@ -419,21 +419,21 @@ Guarde el ejemplo siguiente como un archivo XML. Puede usar este archivo al conf
 
    ![Captura de pantalla del campo MultiAppAssignedAccessSettings en Windows Configuration Designer](./images/multiappassignedaccesssettings.png)
 
-1. **Opcional**. (Si desea aplicar el paquete de aprovisionamiento después de la configuración inicial del dispositivo y ya hay un usuario administrador disponible en el dispositivo de quiosco, omita este paso). Seleccione **Configuración en tiempo de ejecución** &gt; **Cuentas** &gt; **Usuarios** y, a continuación, cree una cuenta de usuario. Proporcione un nombre de usuario y una contraseña y, a continuación, **seleccione UserGroup**  >  **Administrators (Administradores de grupos de usuarios).**  
+1. **Opcional**. (Si desea aplicar el paquete de aprovisionamiento después de la configuración inicial del dispositivo y ya hay un usuario administrador disponible en el dispositivo de pantalla completa, omita este paso). Seleccione **Configuración del entorno de ejecución** &gt; **Cuentas** &gt; **Usuarios** y, a continuación, cree una cuenta de usuario. Proporcione un nombre de usuario y una contraseña y, a continuación, **seleccione UserGroup**  >  **Administrators (Administradores de grupo de usuarios).**  
   
      Con esta cuenta, puede ver el estado de aprovisionamiento y los registros.  
-1. **Opcional**. (Si ya tiene una cuenta que no es de administrador en el dispositivo de quiosco, omita este paso). Seleccione **Configuración en tiempo de ejecución** &gt; **Cuentas** &gt; **Usuarios** y, a continuación, cree una cuenta de usuario local. Asegúrese de que el nombre de usuario es el mismo que para la cuenta que especifique en el XML de configuración. Seleccione **UserGroup** Standard Users  >  (Usuarios estándar **de UserGroup).**
+1. **Opcional**. (Si ya tiene una cuenta que no es de administrador en el dispositivo de pantalla completa, omita este paso). Seleccione **Configuración del entorno de ejecución** &gt;  &gt; **Usuarios** y, a continuación, cree una cuenta de usuario local. Asegúrese de que el nombre de usuario es el mismo que para la cuenta que especifique en el XML de configuración. Seleccione **UserGroup** Standard Users  >  **(Usuarios estándar de UserGroup).**
 1. Seleccione **Archivo** > **Guardar**.
-1. Seleccione **Exportar paquete** de  >  **aprovisionamiento** y, a continuación, seleccione Administrador **de** TI  >  **propietario.** Esto establece la prioridad de este paquete de aprovisionamiento mayor que los paquetes de aprovisionamiento que se aplican a este dispositivo desde otros orígenes.
+1. Seleccione **Export**  >  **Provisioning package (Exportar paquete de** aprovisionamiento) y, a **continuación, seleccione Owner** IT Admin  >  **(Administrador de TI propietario).** Esto establece la prioridad de este paquete de aprovisionamiento mayor que los paquetes de aprovisionamiento que se aplican a este dispositivo desde otros orígenes.
 1. Seleccione **Siguiente**.
-1. En la **página Seguridad del paquete de** aprovisionamiento, seleccione una opción de seguridad.
+1. En la página **Seguridad del paquete de** aprovisionamiento, seleccione una opción de seguridad.
    > [!IMPORTANT]  
-   > Si selecciona Habilitar **firma de paquetes**, también tendrá que seleccionar un certificado válido para usarlo para firmar el paquete. Para ello, seleccione **Examinar** y seleccione el certificado que desea usar para firmar el paquete.
+   > Si selecciona Habilitar **firma de paquetes,** también tendrá que seleccionar un certificado válido que se usará para firmar el paquete. Para ello, seleccione **Examinar** y seleccione el certificado que desea usar para firmar el paquete.
    
    > [!CAUTION]  
-   > No seleccione Habilitar **cifrado de paquetes.** En HoloLens dispositivos, esta configuración hace que se produce un error en el aprovisionamiento.
+   > No seleccione Habilitar **cifrado de paquetes.** En HoloLens dispositivos, esta configuración provoca un error en el aprovisionamiento.
 1. Seleccione **Siguiente**.
-1. Especifique la ubicación de salida a la que desea que vaya el paquete de aprovisionamiento cuando se haya creado. De forma predeterminada, Windows Configuration Designer usa la carpeta del proyecto como ubicación de salida. Si desea cambiar la ubicación de salida, seleccione **Examinar.** Cuando haya terminado, seleccione **Siguiente**.
+1. Especifique la ubicación de salida a la que desea que vaya el paquete de aprovisionamiento cuando se cree. De forma predeterminada, Windows Diseñador de configuración de usa la carpeta del proyecto como ubicación de salida. Si desea cambiar la ubicación de salida, seleccione **Examinar.** Cuando haya terminado, seleccione **Siguiente**.
 1. Seleccione **Compilar** para empezar a compilar el paquete. El paquete de aprovisionamiento no tarda mucho tiempo en compilarse. La página de compilación muestra la información del proyecto y la barra de progreso indica el estado de compilación.
 
 ### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>Paquete de aprovisionamiento, paso 3 &ndash; Aplicar el paquete de aprovisionamiento a HoloLens
@@ -442,21 +442,21 @@ El artículo "Configurar HoloLens mediante un paquete de aprovisionamiento" prop
 
 - Inicialmente, puede aplicar [un paquete de aprovisionamiento a HoloLens durante la instalación de](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- También puede aplicar [un paquete de aprovisionamiento a HoloLens después de configurar](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
+- También puede aplicar un [paquete de aprovisionamiento a HoloLens después de la instalación de](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
-## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Use el Windows Portal de dispositivos para configurar un quiosco de una sola aplicación
+## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Use el Windows Portal de dispositivos para configurar un quiosco de aplicación única
 
 Para configurar el modo de pantalla completa mediante el Windows Portal de dispositivos, siga estos pasos.
 
 1. [Configure el dispositivo HoloLens para usar el Windows Portal de dispositivos](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). Device Portal es un servidor web en el dispositivo HoloLens al que puedes conectarte desde un navegador web del equipo.
 
     > [!CAUTION]
-    > Al configurar el HoloLens usar el Portal de dispositivos, tendrá que habilitar el modo de desarrollador en el dispositivo. El modo de desarrollador en un dispositivo que Windows Holographic for Business permite realizar una carga lateral de las aplicaciones. Sin embargo, esta configuración crea un riesgo de que un usuario pueda instalar aplicaciones que no hayan sido certificadas por el Microsoft Store. Los administradores pueden bloquear la capacidad de habilitar el modo de desarrollador mediante la configuración **ApplicationManagement/AllowDeveloper Unlock** en el [CSP de directiva.](/windows/client-management/mdm/policy-configuration-service-provider) [Obtén más información sobre el modo de desarrollador.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    > Al configurar el HoloLens para usar el Portal de dispositivos, debe habilitar el modo de desarrollador en el dispositivo. El modo de desarrollador en un dispositivo que Windows Holographic for Business permite realizar la carga lateral de las aplicaciones. Sin embargo, esta configuración crea un riesgo de que un usuario pueda instalar aplicaciones que no han sido certificadas por el Microsoft Store. Los administradores pueden bloquear la capacidad de habilitar el modo de desarrollador mediante el uso de la configuración **ApplicationManagement/AllowDeveloper Unlock** en [el CSP de directiva](/windows/client-management/mdm/policy-configuration-service-provider). [Obtén más información sobre el modo de desarrollador.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
-1. En un equipo, conéctese al HoloLens mediante [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) o [USB.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)
+1. En un equipo, conéctese al HoloLens mediante [Wi-Fi o](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) [USB.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)
 
 1. Realice una de las siguientes acciones:
-   - Si se va a conectar a la Windows Portal de dispositivos por primera vez, [cree un nombre de usuario y una contraseña.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
+   - Si se va a conectar al Windows Portal de dispositivos por primera vez, [cree un nombre de usuario y una contraseña.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
    - Escriba el nombre de usuario y la contraseña que ha configurado anteriormente.
 
     > [!TIP]
@@ -464,13 +464,13 @@ Para configurar el modo de pantalla completa mediante el Windows Portal de dispo
 
 1. En la Windows Portal de dispositivos, seleccione **Pantalla completa.**
 
-1. Seleccione **Habilitar pantalla completa,** seleccione una aplicación que se ejecutará cuando se inicie el dispositivo y, a continuación, **seleccione Guardar.**
+1. Seleccione **Habilitar pantalla completa,** seleccione una aplicación para ejecutarla cuando se inicie el dispositivo y, a continuación, **seleccione Guardar.**
 
     ![Pantalla completa](images/kiosk.png)
 1. Reinicie HoloLens. Si todavía tiene abierta la Portal de dispositivos, puede seleccionar **Reiniciar** en la parte superior de la página.
 
 > [!NOTE]
-> El modo de pantalla completa se puede establecer a través de la API REST de Portal de dispositivos si se realiza una operación POST en /api/holographic/kioskmode/settings con un parámetro de cadena de consulta necesario ("kioskModeEnabled&quot; con un valor de &quot;true&quot; o &quot;false") y un parámetro opcional ("startupApp" con un valor de un nombre de paquete). Tenga en cuenta que Portal de dispositivos está diseñado para desarrolladores y no debe habilitarse en dispositivos que no son de desarrollador. La API REST está sujeta a cambios en futuras actualizaciones o versiones.
+> El modo de pantalla completa se puede establecer a través de la API REST de Portal de dispositivos mediante la realización de una operación POST en /api/holographic/kioskmode/settings con un parámetro de cadena de consulta necesario ("kioskModeEnabled&quot; con un valor de &quot;true&quot; o &quot;false") y un parámetro opcional ("startupApp" con un valor de un nombre de paquete). Tenga en cuenta que la Portal de dispositivos está pensada solo para desarrolladores y no debe habilitarse en dispositivos que no son de desarrollador. La API REST está sujeta a cambios en futuras actualizaciones o versiones.
 
 ## <a name="more-information"></a>Más información
 
@@ -479,14 +479,14 @@ Para configurar el modo de pantalla completa mediante el Windows Portal de dispo
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
 ### <a name="global-assigned-access--kiosk-mode"></a>Acceso asignado global: modo de pantalla completa
-- Se ha reducido la administración de identidades para quiosco, al habilitar el nuevo método de quiosco que aplica el modo de pantalla completa en el nivel del sistema.
+- Administración de identidades reducida para Quiosco, al habilitar el nuevo método de quiosco que aplica el modo de quiosco en el nivel del sistema.
 
-Esta nueva característica permite a un administrador de TI configurar un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. Consulte la documentación HoloLens pantalla completa [de acceso asignado global](hololens-global-assigned-access-kiosk.md) para obtener más detalles sobre esta nueva característica.
+Esta nueva característica permite a un administrador de TI configurar un dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo. Consulte la documentación [HoloLens pantalla completa de acceso asignado global](hololens-global-assigned-access-kiosk.md) para obtener más detalles sobre esta nueva característica.
 
-### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Inicio automático de una aplicación en pantalla completa con varias aplicaciones 
-- Experiencia centrada en el inicio automático de aplicaciones, lo que aumenta aún más la interfaz de usuario y las selecciones de aplicaciones elegidas para las experiencias de pantalla completa.
+### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Inicio automático de una aplicación en pantalla completa de varias aplicaciones 
+- Experiencia centrada con el inicio automático de aplicaciones, lo que aumenta aún más la interfaz de usuario y las selecciones de aplicaciones elegidas para las experiencias de pantalla completa.
 
-Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para el inicio automático mediante el atributo resaltado a continuación en la configuración de acceso asignado. 
+Solo se aplica al modo de pantalla completa de varias aplicaciones y solo se puede designar una aplicación para el inicio automático mediante el atributo resaltado a continuación en Configuración de acceso asignado. 
 
 La aplicación se inicia automáticamente cuando el usuario inicia sesión. 
 
@@ -498,53 +498,53 @@ La aplicación se inicia automáticamente cuando el usuario inicia sesión.
 
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Cambios de comportamiento del modo de pantalla completa para el control de errores
-Al encontrar errores en la aplicación del modo de pantalla completa, aparece el comportamiento siguiente:
+Al encontrar errores al aplicar el modo de pantalla completa, aparece el comportamiento siguiente:
 
 - Antes de Windows Holographic, la versión 20H2 - HoloLens mostrará todas las aplicaciones del menú Inicio.
-- Windows Holographic, versión 20H2: si un dispositivo tiene una configuración de pantalla completa que es una combinación de acceso asignado global y acceso asignado a miembros del grupo de AAD, si se produce un error en la determinación de la pertenencia al grupo de AAD, el usuario verá el menú "No se muestra nada en el inicio".
+- Windows Holographic, versión 20H2: si un dispositivo tiene una configuración de pantalla completa que es una combinación de acceso asignado global y acceso asignado a miembros del grupo de AAD, si se produce un error en la determinación de la pertenencia al grupo de AAD, el usuario verá el menú "no se muestra nada en el inicio".
 
-![Imagen de lo que ahora se ve en pantalla completa cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
+![Imagen del modo de pantalla completa ahora cuando se produce un error.](images/hololens-kiosk-failure-behavior.png )
 
 
-- A partir [Windows Holographic, versión 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)el modo quiosco busca acceso asignado global antes de mostrar un menú de inicio vacío. La experiencia de quiosco se reservará a una configuración global de quiosco (si está presente) en caso de errores durante el modo de quiosco de grupo de AAD.
+- A partir [Windows holographic, versión 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)el modo de pantalla completa busca acceso asignado global antes de mostrar un menú de inicio vacío. La experiencia de quiosco se reservará a una configuración de quiosco global (si existe) en caso de errores durante el modo de pantalla completa del grupo de AAD.
 
 ### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>Pertenencia a Azure AD grupo de almacenamiento en caché para quiosco sin conexión
 
 - Modo de quiosco más seguro mediante la eliminación de las aplicaciones disponibles en los errores de pantalla completa.
-- Quioscos sin conexión habilitados para usarse Azure AD grupos durante un máximo de 60 días.
+- Se ha habilitado quioscos sin conexión que se usarán Azure AD grupos durante un máximo de 60 días.
 
-Esta directiva controla durante cuántos días se puede usar Azure AD caché de pertenencia a grupos para las configuraciones de acceso asignado que tienen como destino Azure AD grupos de usuarios que han iniciado sesión. Una vez que este valor de directiva se establece en un valor mayor que 0, solo se usa la memoria caché; de lo contrario, no.  
+Esta directiva controla durante cuántos días se puede usar Azure AD caché de pertenencia Azure AD grupos para las configuraciones de acceso asignado destinadas Azure AD grupos para el usuario que ha iniciado sesión. Una vez que este valor de directiva se establece en un valor mayor que 0, solo se usa la memoria caché en caso contrario.  
 
-Nombre: AADGroupMembershipCacheValidityInDays VALOR DE URI: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+Nombre: valor de URI AADGroupMembershipCacheValidityInDays: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
 Mín. - 0 días  
 Máximo: 60 días 
 
 Pasos para usar esta directiva correctamente: 
-1. Cree un perfil de configuración de dispositivo para la pantalla completa Azure AD grupos y asígnelo a HoloLens dispositivos. 
+1. Cree un perfil de configuración de dispositivo para quiosco que Azure AD grupos y asígnelo a HoloLens dispositivos. 
 1. Cree una configuración de dispositivo personalizada basada en uri de OMA que establece este valor de directiva en el número deseado de días (> 0) y asígnelo a HoloLens dispositivos. 
     1. El valor uri debe especificarse en el cuadro de texto OMA-URI como ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. El valor puede estar entre mínimo y máximo permitido.
 1. Inscriba HoloLens dispositivos y compruebe que ambas configuraciones se aplican al dispositivo. 
-1. Permita Azure AD inicio de sesión del usuario 1 cuando Internet esté disponible, una vez que el usuario inicie sesión y Azure AD la pertenencia Azure AD un grupo se confirme correctamente, se creará la memoria caché. 
+1. Deje Azure AD inicio de sesión del usuario 1 cuando Internet esté disponible, una vez que el usuario inicie sesión y Azure AD grupo se confirme correctamente, se creará la memoria caché. 
 1. Ahora Azure AD usuario 1 puede desconectar HoloLens y usarlo para el modo de pantalla completa siempre que el valor de directiva permita X número de días. 
-1. Los pasos 4 y 5 se pueden repetir para cualquier otro usuario de Azure AD N. La clave aquí es que cualquier usuario de Azure AD debe iniciar sesión en el dispositivo mediante Internet, por lo que al menos una vez podemos determinar Azure AD que son miembros de un grupo al que está destinada la configuración de quiosco. 
+1. Los pasos 4 y 5 se pueden repetir para cualquier otro usuario de Azure AD N. Aquí, la clave es que cualquier usuario de Azure AD debe iniciar sesión en el dispositivo mediante Internet, por lo que al menos una vez podemos determinar que son miembros de un grupo Azure AD al que está destinada la configuración de quiosco. 
  
 > [!NOTE]
-> Hasta que se realice el paso 4 para un Azure AD usuario experimentará un comportamiento de error mencionado en entornos "desconectados". 
+> Hasta que se realice el paso 4 para Azure AD usuario experimentará un comportamiento de error mencionado en entornos "desconectados". 
 
 
 ## <a name="xml-kiosk-code-samples-for-hololens"></a>Ejemplos de código de quiosco XML para HoloLens
 
 ### <a name="multiple-app-kiosk-mode-targeting-an-azure-ad-group"></a>Modo de pantalla completa de varias aplicaciones que tiene como destino Azure AD grupo. 
-Esta pantalla completa implementa un quiosco que, para los usuarios del grupo Azure AD, tendrá habilitado un quiosco que incluye las tres aplicaciones: Configuración, Remote Assist y Centro de opiniones. Para modificar este ejemplo para que se utilice inmediatamente, asegúrese de cambiar el GUID resaltado a continuación para que coincida con un Azure AD grupo propio. 
+Esta pantalla completa implementa un quiosco que para los usuarios del grupo Azure AD tendrá habilitado un quiosco que incluye las tres aplicaciones: Configuración, Remote Assist y Centro de opiniones. Para modificar este ejemplo para que se utilice inmediatamente, asegúrese de cambiar el GUID resaltado a continuación para que coincida con un Azure AD grupo propio. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
 ### <a name="multiple-app-kiosk-mode-targeting-azure-ad-account"></a>Modo de pantalla completa de varias aplicaciones Azure AD cuenta.
-Esta pantalla completa implementa un quiosco para un solo usuario, tendrá un quiosco habilitado que incluye las tres aplicaciones: Configuración, Remote Assist y Centro de opiniones. Para modificar este ejemplo para que se utilice inmediatamente, asegúrese de cambiar la cuenta resaltada a continuación para que coincida con una Azure AD cuenta propia. 
+Este quiosco implementa una pantalla completa para un solo usuario, tendrá habilitado un quiosco que incluye las tres aplicaciones: Configuración, Remote Assist y Centro de opiniones. Para modificar este ejemplo para que se utilice inmediatamente, asegúrese de cambiar la cuenta resaltada a continuación para que coincida con Azure AD cuenta propia. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

@@ -1,35 +1,35 @@
 ---
 title: Instrucciones de contribución
-description: Obtenga información sobre cómo contribuir a los documentos HoloLens en la plataforma docs.microsoft.com mediante GitHub markdown con GitHub de conexión.
+description: Obtenga información sobre cómo contribuir a los documentos HoloLens en la plataforma docs.microsoft.com mediante GitHub markdown con un estilo único.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635677"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659121"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Contribución a la documentación HoloLens datos
 
-Bienvenido a la [documentación de HoloLens .](https://github.com/MicrosoftDocs/Hololens) Los artículos que cree o edite en este repositorio **serán visibles para el público.** 
+Le damos la [bienvenida a la HoloLens !](https://github.com/MicrosoftDocs/Hololens) Todos los artículos que cree o edite en este repositorio **serán visibles para el público.** 
 
-HoloLens documentos se muestran en la plataforma docs.microsoft.com, que usa markdown con GitHub con características markdig. El contenido que edite en este repositorio se formatee en páginas con formato que se muestran en /hololens.
+HoloLens documentos se muestran en la plataforma docs.microsoft.com, que usa GitHub markdown con características de Markdig. El contenido que edite en este repositorio se formatee en páginas con formato que se muestran en /hololens.
 
 En esta página se tratan los pasos básicos y las directrices para contribuir y vínculos a los conceptos básicos de Markdown. Gracias por su contribución.
 
 ## <a name="available-repos"></a>Repositorios disponibles
 
-| Nombre del repositorio | URL |
+| Nombre del repositorio | Dirección URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 | Mixed Reality | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
-| VR Enthusiasts Guide | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| Guía de los entusiastas de VR | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
-## <a name="before-you-start"></a>Antes de empezar
+## <a name="before-you-start"></a>Antes de comenzar
 
 Si aún no tiene una, deberá crear una cuenta [de GitHub .](https://github.com/join)
 
@@ -37,10 +37,10 @@ Si aún no tiene una, deberá crear una cuenta [de GitHub .](https://github.com/
 >Si es empleado de Microsoft, vincule su cuenta de GitHub a su alias de Microsoft en el [portal de código abierto de Microsoft](https://repos.opensource.microsoft.com/). Únase a **las organizaciones "Microsoft"** **y "MicrosoftDocs".**
 
 Al configurar la cuenta GitHub, también se recomiendan estas precauciones de seguridad:
-- Cree una [contraseña segura para la cuenta GitHub .](https://github.com/settings/admin)
+- Cree una [contraseña segura para la cuenta de GitHub .](https://github.com/settings/admin)
 - Habilite [la autenticación en dos fases.](https://github.com/settings/two_factor_authentication/configure)
 - Guarde los [códigos de recuperación](https://github.com/settings/auth/recovery-codes) en un lugar seguro.
-- Actualice la configuración [del perfil público.](https://github.com/settings/profile)
+- Actualice la [configuración del perfil público.](https://github.com/settings/profile)
    - Establezca su nombre y considere la posibilidad de establecer *el correo electrónico público* en No mostrar mi dirección de correo *electrónico.*
    - Se recomienda cargar una imagen de perfil porque se muestra una miniatura en las páginas de documentos a las que contribuye.
 - Si tiene previsto usar la línea de comandos, considere la posibilidad de configurar [Git Administrador de credenciales para Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). De este modo, no tendrá que escribir la contraseña cada vez que realice una contribución.
@@ -49,34 +49,39 @@ El sistema de publicación está asociado a GitHub, por lo que estos pasos son i
 
 ## <a name="editing-an-existing-article"></a>Edición de un artículo existente
 
-Use el flujo de trabajo siguiente para realizar actualizaciones en *un artículo existente* a través GitHub en un explorador web:
+Use el siguiente flujo de trabajo para realizar actualizaciones en *un artículo existente* a través GitHub en un explorador web:
 
 1. Vaya al artículo que desea editar en la carpeta "mixed-reality-docs".
 
-2. Seleccione el botón Editar (icono de lápiz) de la parte superior derecha, que bifurcará automáticamente una rama descartable de la rama "maestra".
+2. Seleccione el botón Editar (icono de lápiz) en la parte superior derecha.
 
    ![Edite un artículo.](images/editpage.png)
+
+   Esto bifurcará automáticamente una rama descartable de la rama predeterminada, _master_.
+
+   > [!NOTE]
+   > Este artículo contiene referencias a _master_, un término que Microsoft ya no usa. Cuando se elimine el término del software, se eliminará también de este artículo.
    
-3. Edite el contenido del artículo según [los "Conceptos básicos de Markdown".](#markdown-basics)
+3. Edite el contenido del artículo según los [conceptos básicos de Markdown.](#markdown-basics)
 
-4. Actualice los metadatos de la parte superior de cada artículo:
+4. Actualice los metadatos en la parte superior de cada artículo:
 
-   * **title:** título de página que aparece en la pestaña del explorador cuando se está visualizando el artículo. Los títulos de página se usan para seO e indexación, por lo que no cambie el título a menos que sea necesario (aunque esto es menos crítico antes de que la documentación se haga pública).
+   * **title:** título de la página que aparece en la pestaña del explorador cuando se está visualizando el artículo. Los títulos de página se usan para SEO e indexación, por lo que no cambie el título a menos que sea necesario (aunque esto es menos crítico antes de que la documentación se haga pública).
    * **description:** escriba una breve descripción del contenido del artículo, lo que aumenta el SEO y la detección.
-   * **author:** si es el propietario principal de la página, agregue el alias GitHub aquí.
+   * **author**: si es el propietario principal de la página, agregue el alias GitHub aquí.
    * **ms.author:** si es el propietario principal de la página, agregue el alias de Microsoft aquí (no necesita , solo @microsoft.com el alias).
    * **ms.date:** actualice la fecha si va a agregar contenido principal a la página, pero no para correcciones como aclaración, formato, gramática o ortografía.
    * **keywords:** las palabras clave ayudan en SEO (optimización del motor de búsqueda). Agregue palabras clave, separadas por una coma y un espacio, que sean específicas del artículo, pero sin signos de puntuación después de la última palabra clave de la lista. No es necesario agregar palabras clave globales que se apliquen a todos los artículos, ya que se administran en otro lugar. 
    
 5. Cuando haya completado las modificaciones del artículo, desplácese hacia abajo y seleccione **Propose file change (Proponer cambio de archivo).**
 
-6. En la página siguiente, seleccione **Crear solicitud de extracción** para combinar la rama creada automáticamente en "master".
+6. En la página siguiente, seleccione **Crear solicitud de extracción** para combinar la rama creada automáticamente en la rama predeterminada, _master_.
 
 7. Repita los pasos anteriores para el siguiente artículo que desea editar.
 
-## <a name="renaming-or-deleting-an-existing-article"></a>Cambio de nombre o eliminación de un artículo existente
+## <a name="renaming-or-deleting-an-existing-article"></a>Cambiar el nombre o eliminar un artículo existente
 
-Si el cambio cambiará el nombre o eliminará un artículo existente, asegúrese de agregar un redireccionamiento. De este modo, cualquier persona con un vínculo al artículo existente terminará en el lugar correcto. Los redireccionamientos se administran .openpublishing.redirection.jsen el archivo en la raíz del repositorio.
+Si el cambio cambiará el nombre o eliminará un artículo existente, asegúrese de agregar una redirección. De este modo, cualquier persona con un vínculo al artículo existente seguirá en el lugar correcto. Las redirecciones se administran mediante .openpublishing.redirection.jsen el archivo en la raíz del repositorio.
 
 Para agregar una redirección a .openpublishing.redirection.js, agregue una entrada a la `redirections` matriz:
 
@@ -90,25 +95,28 @@ Para agregar una redirección a .openpublishing.redirection.js, agregue una entr
         },
 ```
 
-- es la ruta de acceso relativa del repositorio `source_path` al artículo anterior que va a quitar. Asegúrese de que la ruta de acceso comienza `mixed-reality-docs` por y termina con `.md` .
+- es la ruta de acceso relativa del repositorio `source_path` al artículo anterior que va a quitar. Asegúrese de que la ruta de acceso `mixed-reality-docs` comienza por y termina con `.md` .
 
-- es `redirect_url` la dirección URL pública relativa del artículo anterior al nuevo. Asegúrese de que esta dirección URL **no contiene** o , ya que hace referencia a la dirección URL pública y no a la ruta de acceso `mixed-reality-docs` del `.md` repositorio. Se permite la vinculación a una sección dentro del `#section` nuevo artículo mediante . También puede usar una ruta de acceso absoluta a otro sitio aquí, si es necesario.
+- es `redirect_url` la dirección URL pública relativa del artículo anterior al nuevo. Asegúrese de que esta dirección URL **no contiene** o , ya que hace referencia a la dirección URL pública y no a la ruta de acceso `mixed-reality-docs` del `.md` repositorio. Se permite la vinculación a una sección del nuevo artículo `#section` mediante . También puede usar una ruta de acceso absoluta a otro sitio aquí, si es necesario.
 
-- `redirect_document_id` indica si desea conservar el identificador del documento del archivo anterior. De manera predeterminada, es `false`. Use `true` si desea conservar el valor del atributo del artículo `ms.documentid` redirigido. Si conserva el identificador del documento, los datos, como las vistas de página y las clasificaciones, se transferirán al artículo de destino. Haga esto si el redireccionamiento es principalmente un cambio de nombre y no un puntero a un artículo diferente que solo cubre parte del mismo contenido.
+- `redirect_document_id` indica si desea conservar el identificador del documento del archivo anterior. El valor predeterminado es `false`. Use `true` si desea conservar el valor del atributo del artículo `ms.documentid` redirigido. Si conserva el identificador del documento, los datos, como las vistas de página y las clasificaciones, se transferirán al artículo de destino. Use esta solución si el redireccionamiento es principalmente un cambio de nombre y no un puntero a un artículo diferente que solo cubre parte del mismo contenido.
 
 Si agrega un redireccionamiento, asegúrese de eliminar también el archivo antiguo.
 
 ## <a name="creating-a-new-article"></a>Creación de un nuevo artículo
 
-Use el flujo de trabajo siguiente *para crear nuevos artículos en* el repositorio de documentación a través GitHub en un explorador web:
+Use el siguiente flujo de trabajo *para crear nuevos artículos en* el repositorio de documentación a través GitHub en un explorador web:
 
-1. Cree una bifurcación de la rama "maestra" de MicrosoftDocs/mixed-reality (con el botón **Bifurcar** de la parte superior derecha).
+1. Cree una bifurcación fuera de la rama predeterminada, _maestra_, de MicrosoftDocs/mixed-reality mediante el botón **Bifurcar** de la parte superior derecha.
 
-   ![Bifurcar la rama maestra.](images/forkbranch.png)
+   ![Bifurcar la rama predeterminada, denominada actualmente "master".](images/forkbranch.png)
+
+   > [!NOTE]
+   > Este artículo contiene referencias a _master_, un término que Microsoft ya no usa. Cuando se elimine el término del software, se eliminará también de este artículo.
    
 2. En la carpeta "mixed-reality-docs", seleccione **Crear nuevo archivo** en la parte superior derecha.
 
-3. Cree un nombre de página para el artículo (use guiones en lugar de espacios y no use signos de puntuación ni apóstrofes) y anexe ".md".
+3. Cree un nombre de página para el artículo (use guiones en lugar de espacios y no use signos de puntuación ni apóstrofos) y anexe ".md".
 
    ![Asigne un nombre a la nueva página.](images/newpagetitle.png)
    
@@ -129,15 +137,15 @@ Use el flujo de trabajo siguiente *para crear nuevos artículos en* el repositor
    ---
    ```
 
-5. Rellene los campos de metadatos pertinentes según las instrucciones de la [sección anterior.](#editing-an-existing-article)
+5. Rellene los campos de metadatos pertinentes como se describió anteriormente en [Edición de un artículo existente.](#editing-an-existing-article)
 
-6. Escribir contenido del artículo con [los conceptos básicos de Markdown.](#markdown-basics)
+6. Escriba contenido del artículo mediante los [conceptos básicos de Markdown.](#markdown-basics)
 
 7. Agregue una `## See also` sección en la parte inferior del artículo con vínculos a otros artículos pertinentes.
 
 8. Cuando termine, seleccione **Commit new file (Confirmar nuevo archivo).**
 
-9. Seleccione **Nueva** solicitud de extracción y combine la rama "maestra" de la bifurcación en MicrosoftDocs/mixed-reality "master" (asegúrese de que la flecha apunta de la manera correcta).
+9. Seleccione **Nueva** solicitud de extracción  y combine la rama maestra de la bifurcación en MicrosoftDocs/maestro de _realidad_ mixta (asegúrese de que la flecha apunta al destino correcto).
 
    ![Creación de una solicitud de extracción desde la bifurcación en MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
@@ -148,15 +156,15 @@ Los siguientes recursos le ayudarán a aprender a editar la documentación media
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/) (Conceptos básicos de Markdown)
 - [Recursos adicionales para escribir Markdown para docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
-### <a name="adding-tables"></a>Adición de tablas
+### <a name="adding-tables"></a>Agregar tablas
 
-Debido a la forma docs.microsoft.com tablas de estilos, no tendrán bordes ni estilos personalizados, aunque pruebe CSS en línea. Parecerá que funciona durante un breve período de tiempo, pero finalmente la plataforma quitará el estilo de la tabla. Por lo tanto, planee con antelación y mantenga las tablas sencillas. [Este es un sitio que facilita las tablas de Markdown.](https://www.tablesgenerator.com/markdown_tables)
+Debido a la forma docs.microsoft.com tablas de estilos, no tendrán bordes ni estilos personalizados, incluso si se prueba CSS en línea. Parecerá que funciona durante un breve período de tiempo, pero finalmente la plataforma quitará el estilo de la tabla. Por lo tanto, planee con antelación y mantenga las tablas sencillas. Este es un sitio que facilita las tablas de Markdown: [Generador de tablas]]( https://www.tablesgenerator.com/markdown_tables) .
 
-La [extensión Docs Markdown](/teamblog/docs-extension) para Visual Studio Code también facilita la generación de tablas si usa Visual Studio Code [(consulte a continuación)](#using-visual-studio-code) para editar la documentación.
+La [extensión Docs Markdown para Visual Studio Code](/teamblog/docs-extension) también facilita la generación de tablas si usa Visual Studio Code (consulte a continuación) para editar la documentación. [](#using-visual-studio-code)
 
 ### <a name="adding-images"></a>Incorporación de imágenes
 
-Deberá cargar las imágenes en la carpeta "mixed-reality-docs/images" del repositorio y, a continuación, hacer referencia a ellas correctamente en el artículo. Las imágenes se mostrarán automáticamente a tamaño completo, lo que significa que las imágenes grandes rellenarán todo el ancho del artículo. Se recomienda dimensionar previamente las imágenes antes de cargarlas. El ancho recomendado es de entre 600 y 700 píxeles, aunque debe ajustar el tamaño hacia arriba o hacia abajo si es una captura de pantalla densa o una fracción de una captura de pantalla, respectivamente.
+Deberá cargar las imágenes en la carpeta "mixed-reality-docs/images" del repositorio y, a continuación, hacer referencia a ellas correctamente en el artículo. Las imágenes se mostrarán automáticamente a tamaño completo, lo que significa que las imágenes grandes rellenarán todo el ancho del artículo. Se recomienda hacer un tamaño previo de las imágenes antes de cargarlas. El ancho recomendado es de entre 600 y 700 píxeles, aunque debe cambiar de tamaño si es una captura de pantalla densa o una fracción de una captura de pantalla, respectivamente.
 
 >[!IMPORTANT]
 >Solo puede cargar imágenes en el repositorio bifurcado antes de la combinación. Por lo tanto, si planea agregar imágenes a un artículo, deberá usar Visual Studio Code para agregar primero las imágenes [a](#using-visual-studio-code) la carpeta "images" de la bifurcación o asegúrese de que ha hecho lo siguiente en un explorador web:
@@ -164,7 +172,7 @@ Deberá cargar las imágenes en la carpeta "mixed-reality-docs/images" del repos
 >1. Se ha bifurcado el repositorio MicrosoftDocs/mixed-reality.
 >2. Editó el artículo en la bifurcación.
 >3. Ha cargado las imágenes a las que hace referencia en el artículo en la carpeta "mixed-reality-docs/images" de la bifurcación.
->4. Ha creado **una solicitud de** extracción para combinar la bifurcación en la rama "maestra" de MicrosoftDocs/mixed-reality.
+>4. Ha creado **una solicitud de extracción** para combinar la bifurcación en la rama maestra MicrosoftDocs/mixed-reality. 
 >
 >Para obtener información sobre cómo configurar su propio repositorio bifurcado, siga las instrucciones para [crear un nuevo artículo](#creating-a-new-article).
 
@@ -175,7 +183,7 @@ Al editar en GitHub a través de un  explorador web, puede seleccionar la pesta�
 >[!NOTE]
 >La vista previa de los cambios review.docs.microsoft.com solo está disponible para los empleados de Microsoft
 
-Empleados de Microsoft: una vez que sus contribuciones se hayan combinado en la rama "maestra", puede revisar el contenido antes de que se haga público en </hololens?branch=master>. Busque el artículo con la tabla de contenido de la columna izquierda.
+Empleados de Microsoft: cuando sus contribuciones se hayan combinado en la rama _predeterminada,_ master , puede revisar el contenido antes de que se haga público en </hololens?branch=master>. Busque el artículo mediante la tabla de contenido de la columna izquierda.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Edición en el explorador frente a edición con un cliente de escritorio
 
@@ -191,7 +199,7 @@ Si prefiere no tratar estos problemas, use un cliente de escritorio como [Visual
 
 Por los motivos [mencionados anteriormente,](#editing-in-the-browser-vs-editing-with-a-desktop-client)puede que prefiera usar un cliente de escritorio para editar la documentación en lugar de un explorador web. Se recomienda usar [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Configurar
+### <a name="setup"></a>Instalación
 
 Siga estos pasos para configurar Visual Studio Code para trabajar con este repositorio:
 
@@ -216,7 +224,7 @@ Use el siguiente flujo de trabajo para realizar cambios en la documentación con
 
 1. Asegúrese de que la bifurcación clonada está actualizada con el repositorio oficial.
 
-   1. En un explorador web, cree una solicitud de extracción para sincronizar los cambios recientes de otros colaboradores de MicrosoftDocs/mixed-reality 'master' con la bifurcación (asegúrese de que la flecha apunta a la derecha).
+   1. En un explorador web, cree una solicitud de extracción para sincronizar los cambios recientes de otros colaboradores de la rama predeterminada de MicrosoftDocs/mixed-reality, _master_, con la bifurcación (asegúrese de que la flecha apunta al destino correcto).
       
       ![Sincronización de cambios de MicrosoftDocs/mixed-reality a la bifurcación](images/sync-repos.png)
       
@@ -240,7 +248,7 @@ Use el siguiente flujo de trabajo para realizar cambios en la documentación con
       
       ![Haga clic en el botón sync (Sincronizar).](images/sync-back.png)
       
-3. En un explorador web, cree una solicitud de extracción para sincronizar nuevos cambios en la bifurcación con MicrosoftDocs/mixed-reality 'master' (asegúrese de que la flecha apunta de la manera correcta).
+3. En un explorador web, cree una solicitud de extracción para sincronizar nuevos cambios en la bifurcación con MicrosoftDocs/maestro de _realidad_ mixta (asegúrese de que la flecha apunta al destino correcto).
 
    ![Creación de una solicitud de extracción desde la bifurcación en MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
