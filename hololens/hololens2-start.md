@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d087037e94bcaed2cd79d9cff77ed3039919a09
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923918"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636803"
 ---
 # <a name="set-up-your-hololens-2"></a>Configuración de HoloLens 2
 
@@ -42,6 +42,14 @@ Antes de empezar, debe asegurarse de que cuenta con lo siguiente:
 La primera vez que inicie HoloLens 2, lo primero que hará será configurar Windows Holographic.  Cuando inicie el dispositivo HoloLens, oirá música y verá un logotipo de Windows.
 
 ![Primera pantalla durante el primer arranque](images/01-magic-moment.png)
+
+Verá un colibrí volando por el entorno.
+
+![Colibrí volando](images/hummingbird-1.png)
+
+Sígalo con la mano.
+
+![Primer plano de colibrí volando](images/hummingbird-2.png)
 
 HoloLens 2 le guiará por los siguientes pasos:
 
@@ -88,6 +96,7 @@ HoloLens 2 le guiará por los siguientes pasos:
 
 1. Inicie sesión con su cuenta de usuario. Deberá elegir entre **Es propiedad de mi trabajo o escuela** y **Es mío**.
 
+    ![Establecimiento del usuario](images/13-device-owner.png)
     - Si eliges **Es propiedad de mi trabajo o escuela**, iniciarás sesión con una cuenta de Azure AD. Si su organización usa Azure AD Premium y ha configurado la inscripción automática de MDM, HoloLens se inscribe automáticamente en MDM. Si la organización no usa Azure AD Premium, la inscripción automática de MDM no está disponible. En ese caso, debe [inscribir manualmente el dispositivo HoloLens en la administración de dispositivos](hololens-enroll-mdm.md#different-ways-to-enroll).
 
         1. Escriba la información de la cuenta de la organización.
@@ -100,8 +109,7 @@ HoloLens 2 le guiará por los siguientes pasos:
         1. Escriba la información de su cuenta de Microsoft.
         2. Especifique la contraseña. Si tu cuenta de Microsoft requiere una [comprobación de dos pasos (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/) (vínculo en inglés), completa el proceso de comprobación.
 
-    ![Establecimiento del usuario](images/13-device-owner.png)
-
+        
 1. Configure el inicio de sesión de Iris: para ello, seleccione **Siguiente**. Pasará por una experiencia similar a la de calibración de los ojos. Seleccione **Listo** cuando se complete el escaneo. También puede seleccionar **Omitir** para saltar este paso.
     
     ![Configuración de Iris](images/setup-iris.png) ![ Finalización de la configuración de Iris](images/iris-setup-complete.png) 
@@ -137,7 +145,7 @@ Enhorabuena.  La configuración se ha completado y ya puede usar el dispositivo 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-1. Empiece a interactuar inmediatamente con Mixed Reality y a recorrer Windows 10 con HoloLens: eche un vistazo a la aplicación **Recomendaciones** para ver tutoriales prácticos sobre cómo interactuar con las manos. Use el gesto Inicio para ir a Inicio o diga "Ir a Inicio" y seleccione Recomendaciones.
+1. Empiece a interactuar inmediatamente con Mixed Reality y a explorar Windows 10 en su HoloLens: eche un vistazo a la aplicación **Recomendaciones** para ver tutoriales prácticos sobre cómo interactuar con las manos. Use el gesto Inicio para ir a Inicio o diga "Ir a Inicio" y seleccione "Recomendaciones".
 
 1. Haga clic a continuación para seguir leyendo sobre cómo usar HoloLens 2.
 

@@ -1,6 +1,6 @@
 ---
 title: Acceso asignado global
-description: Introducción a nuestra guía sobre el uso de OMA-URI para quioscos de acceso asignado global con Intune y el diseñador de configuraciones de Windows.
+description: Introducción a nuestra guía sobre el uso de OMA-URI para las pantallas completas de acceso asignado global con Intune y el Diseñador de configuración de Windows.
 author: evmill
 ms.author: v-evmill
 ms.date: 9/21/2020
@@ -13,21 +13,21 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b86d88c7487043c6fcb057f03f353a57e44ef781
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: d89c630da76060fe6c2a049e5fa162e88779bb99
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283181"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640430"
 ---
-# Acceso asignado global: quiosco
+# <a name="global-assigned-access--kiosk"></a>Acceso asignado global: pantalla completa
 
-Esta característica configura el dispositivo HoloLens 2 para varias aplicaciones en modo de pantalla completa, que es aplicable a nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo.
+Esta característica configura el dispositivo HoloLens 2 para el modo de pantalla completa de varias aplicaciones, que es aplicable en el nivel del sistema, no tiene afinidad con ninguna identidad en el sistema y se aplica a todos los usuarios que inician sesión en el dispositivo.
 
 > [!NOTE]
-> Actualmente, esta característica solo está disponible en las compilaciones de Windows Insider. Si deseas probar esta característica antes de que esté disponible de forma generalizada en las versiones de HoloLens, infórmate sobre las compilaciones de [Windows Insider](hololens-insider.md).
+> Actualmente, esta característica solo está disponible en las compilaciones de Windows Insider. Si deseas probar esta característica antes de que esté disponible de forma generalizada en las versiones de HoloLens, obtén más información sobre las compilaciones de [Windows Insider](hololens-insider.md).
 
-## ¿Cómo se usa el acceso asignado global en Intune?
+## <a name="how-to-use-global-assigned-access-in-intune"></a>¿Cómo se usa el acceso asignado global en Intune?
 
 > [!NOTE]
 > Tenga en cuenta las áreas marcadas con "<!-". Estas áreas requieren que realice modificaciones en función de sus preferencias.
@@ -37,21 +37,21 @@ Esta característica configura el dispositivo HoloLens 2 para varias aplicacione
     Valor URI: ./Device/Vendor/MSFT/AssignedAccess/Configuration
 
     > [!div class="mx-imgBorder"]
-    > ![Acceso asignado global OMA-URI en Intune](images/global-assigned-access-omauri.png)
+    > ![OMA-URI de acceso asignado global en Intune](images/global-assigned-access-omauri.png)
 
 2. Para obtener un valor, actualice y pegue el siguiente contenido:
 
     :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
-## ¿Cómo se usa el Acceso asignado global en el Diseñador de configuración de Windows?
+## <a name="how-to-use-global-assigned-access-in-windows-configuration-designer"></a>¿Cómo se usa el acceso asignado global en el Diseñador de configuración de Windows?
 
-1. Actualice y guarde el blob XML indicado anteriormente como archivo XML. 
+1. Actualice y guarde el blob XML indicado anteriormente como un archivo XML. 
 
-2. Siga los pasos que se indican en [Usar un paquete de aprovisionamiento para configurar un quiosco de aplicación única o de varias aplicaciones](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk), en concreto en la sección "Paquete de aprovisionamiento, paso 2: agregue el archivo XML de configuración de quiosco a un paquete de aprovisionamiento" y use el archivo XML que guardó en el paso anterior.
+2. Siga los pasos descritos en [Uso de un paquete de aprovisionamiento para configurar una pantalla completa de una o varias aplicaciones](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk), en concreto la sección "Paquete de aprovisionamiento, paso 2: Adición del archivo XML de configuración de pantalla completa a un paquete de aprovisionamiento" y use el archivo XML que guardó en el paso anterior.
 
-## ¿Puedo crear una configuración en la que "global" se aplique a todos los usuarios y una configuración aparte que se aplique a 1 cuenta de Azure AD o grupo de Azure AD? 
+## <a name="can-i-create-a-configuration-where-global-applies-to-everyone-and-separate-configuration-applies-to-1-azure-ad-account-or-azure-ad-group"></a>¿Puedo crear una configuración en la que "global" se aplique a todos los usuarios y una configuración aparte se aplique a una cuenta de Azure AD o un grupo de Azure AD? 
 
-Sí, consulte el ejemplo de BLOB XML a continuación. El perfil de acceso asignado global se aplica en Hololens cuando no se encuentra uno específico para el usuario que ha iniciado sesión, por lo que es la configuración predeterminada del modo de pantalla completa para el usuario que ha iniciado sesión.
+Sí, consulte el ejemplo de blob XML a continuación. El perfil de acceso asignado global se aplica en HoloLens cuando no se encuentra uno específico para el usuario que ha iniciado sesión, por lo que es la configuración predeterminada del modo de pantalla completa para el usuario que ha iniciado sesión.
 Este es un ejemplo de blob XML que se usará:
 
 > [!NOTE]
@@ -59,18 +59,18 @@ Este es un ejemplo de blob XML que se usará:
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
-## Exclusión de DeviceOwners de un perfil de acceso asignado global
+## <a name="excluding-deviceowners-from-global-assigned-access-profile"></a>Exclusión de DeviceOwners del perfil de acceso asignado global
 
-Esta característica permite que los usuarios considerados como "[Propietario del dispositivo](security-adminless-os.md)" estén excluidos del acceso asignado global. Para aprovechar esta característica, en el blob XML para la configuración de un quiosco de varias aplicaciones, asegúrese de que se agregan las líneas resaltadas:
+Esta característica permite que un usuario que se considera "[Propietario del dispositivo](security-adminless-os.md)" en HoloLens se excluya del acceso asignado global. Para aprovechar esta característica, en el blob XML para la configuración de pantalla completa de varias aplicaciones, asegúrese de que se agregan las líneas resaltadas:
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
 
-## Ejemplos adicionales de Acceso global asignado
+## <a name="additional-global-assigned-access-examples"></a>Ejemplos adicionales de acceso asignado global
 
-Este es el ejemplo de un quiosco de Acceso global asignado en el que, cuando un usuario inicie sesión, tendrá un quiosco de varias aplicaciones con la aplicación Configuración, el Centro de opiniones y Microsoft Edge.
+Este es un ejemplo de pantalla completa de acceso asignado global en que, al iniciar sesión un usuario, tendrá una pantalla completa de varias aplicaciones con la aplicación Configuración, el Centro de opiniones y Microsoft Edge.
 
 :::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
 
-Este es el ejemplo de un quiosco de Acceso global asignado que excluye al propietario del dispositivo. Cuando cualquier otro usuario de Azure AD inicie sesión, tendrá un quiosco de varias aplicaciones con la aplicación Configuración, el Centro de opiniones y Microsoft Edge. Este quiosco también incluye la configuración de un quiosco secundario para una Cuenta de visitante, a la cual se puede acceder desde la pantalla de bloqueo. Cuando un usuario inicia sesión en la Cuenta de visitante, tendrá un quiosco de varias aplicaciones que solo tendrá la aplicación del Centro de opiniones.
+Este es un ejemplo de pantalla completa de acceso asignado global que excluye al propietario del dispositivo. Cuando otro usuario de Azure AD inicie sesión, tendrá una pantalla completa de varias aplicaciones con la aplicación Configuración, el Centro de opiniones y Microsoft Edge. Esta pantalla completa también incluye la configuración de una pantalla completa secundaria para una cuenta de visitante, en la que puede iniciar sesión cualquier usuario en la pantalla de bloqueo. Si un usuario inicia sesión en la cuenta de visitante, tendrá un quiosco de varias aplicaciones que solo incluirá la aplicación Centro de opiniones.
 
 :::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::

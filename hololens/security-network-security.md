@@ -1,5 +1,5 @@
 ---
-title: Seguridad de red
+title: Seguridad de las redes
 description: seguridad de red
 author: evmill
 ms.author: v-evmill
@@ -13,23 +13,23 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f1e5304408a9a9543eb0703ad7321725484eef01
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 416a4f7b9e3cf2e52b79fb29f50424a9c573a18a
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009428"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640498"
 ---
-# Seguridad de red
+# <a name="network-security"></a>Seguridad de las redes
 
-## Protocolos de red
+## <a name="network-protocols"></a>Protocolos de red
 
-El antiguo NetBIOS (Sistema básico de entrada y salida de red) era ampliamente usado en escenarios de LAN, generalmente para ofrecer resolución de nombres para un equipo y carpetas compartidas. Sin embargo, con el tiempo, se demostró que NetBIOS es susceptible de sufrir múltiples ataques y su relevancia se ha reducido para favorecer a otros protocolos más seguros. Para quitar este problema de vulnerabilidad, HoloLens 2 ha eliminado el código relacionado con NetBIOS del sistema operativo.
+El antiguo NetBIOS (sistema básico de entrada y salida de red) era ampliamente usado en escenarios de LAN, generalmente para ofrecer resolución de nombres para un equipo y carpetas compartidas. Sin embargo, con el tiempo, se demostró que NetBIOS era susceptible de sufrir múltiples ataques y su relevancia se redujo para favorecer a otros protocolos más seguros. Para eliminar este problema de vulnerabilidad, HoloLens 2 ha eliminado el código relacionado con NetBIOS del sistema operativo.
 
-Los protocolos de seguridad de la capa de transporte (TLS) están evolucionando constantemente. Para estar al día con las distintas vulneraciones de seguridad que se han descubierto en esta área, el sector informático se ha graduado a versiones más nuevas y efectivas. Dado que el tiempo necesario para que todas las implementaciones de servidor adopten las nuevas versiones del protocolo TLS, se puede implementar un mecanismo de reserva que permite que el cliente y los servidores con distintas versiones de protocolo predeterminadas aún puedan comunicarse durante el período de transición.
+Los protocolos de seguridad de la capa de transporte (TLS) están evolucionando constantemente. Para estar al día con las distintas vulnerabilidades de seguridad que se han descubierto en esta área, el sector informático ha cambiado a versiones más nuevas y efectivas. Dado que el tiempo necesario para que todas las implementaciones de servidor adopten las nuevas versiones del protocolo TLS, se puede implementar un mecanismo de reserva que permita que el cliente y los servidores con distintas versiones de protocolo predeterminadas aún puedan comunicarse durante el período de transición.
 
-## Conectividad segura 
+## <a name="secure-connectivity"></a>Conectividad segura 
 
-El Firewall de Windows Defender ofrece funciones fundamentales para asegurar la conectividad de dispositivos. Con HoloLens 2, el firewall siempre está habilitado y no hay ninguna manera de deshabilitarlo mediante programación o por medio de la interfaz de usuario.
+Firewall de Windows Defender ofrece funcionalidad crítica para garantizar la conectividad de los dispositivos. Con HoloLens 2, el firewall siempre está habilitado y no hay ninguna manera de deshabilitarlo mediante programación ni a través de la interfaz de usuario.
 
-El acceso remoto y la privacidad de la conexión para clientes móviles pueden asegurarse a través de la [plataforma de complemento de VPN para UWP](https://docs.microsoft.com/uwp/api/Windows.Networking.Vpn?view=winrt-19041). Los proveedores de VPN de terceros pueden crear sus propios complementos mediante las API de WinRT, que se ejecutarán en el espacio aislado de AppContainer, lo que elimina la complejidad y los problemas que suelen asociarse con la escritura de controladores de nivel de sistema.
+El acceso remoto y la privacidad de la conexión para clientes móviles pueden garantizarse a través de la [plataforma de complementos VPN de UWP](/uwp/api/Windows.Networking.Vpn?view=winrt-19041). Los proveedores de VPN de terceros pueden crear sus propios complementos mediante las API de WinRT, que se ejecutarán en el espacio aislado de AppContainer, lo que elimina la complejidad y los problemas que suelen asociarse con la escritura de controladores de nivel de sistema.

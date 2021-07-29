@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: calibración, comodidad, objetos visuales, calidad, ipd, HoloLens, Windows Mixed Reality, cascos de VR
-ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924152"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635983"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Mejora de la calidad visual y la comodidad
 
@@ -60,7 +60,7 @@ Varios usuarios pueden compartir un dispositivo HoloLens 2 sin necesidad de que 
 
 ### <a name="manually-starting-the-calibration-process"></a>Inicio manual del proceso de calibración
 
-1. Use el gesto de inicio para abrir el menú [**Inicio**](hololens2-basic-usage.md#start-gesture).
+1. Use el gesto de inicio para abrir el [**menú Inicio**](hololens2-basic-usage.md#start-gesture).
 1. Si la aplicación Configuración no está anclada a **Inicio**, seleccione **Todas las aplicaciones**.
 1. Seleccione **Configuración** y, a continuación, **Sistema** > **Calibración** > **Calibración de los ojos** > **Ejecutar calibración de los ojos**.
 
@@ -109,8 +109,11 @@ También puede deshabilitar la solicitud de calibración siguiendo estos pasos:
 1. Seleccione **Configuración** > **Sistema** > **Calibración**.
 1. Desactive **Cuando una nueva persona use este HoloLens, pedir automáticamente que ejecute la calibración de los ojos**.
 
-> [!IMPORTANT]
-> Esta opción puede afectar negativamente a la calidad y comodidad de la representación de los hologramas.  Si desactiva esta opción, las características que dependan del seguimiento ocular (como el desplazamiento de texto) dejarán de funcionar en las aplicaciones envolventes.
+   > [!IMPORTANT]
+   > Esta opción puede afectar negativamente a la calidad y comodidad de la representación de los hologramas.  Si desactiva esta opción, las características que dependan del seguimiento ocular (como el desplazamiento de texto) dejarán de funcionar en las aplicaciones envolventes.
+
+> [!NOTE]
+> El conmutador de Configuración se ha quitado a partir de Windows Holographic, versión 20H2, con el inicio de la [compatibilidad con el posicionamiento automático de los ojos](hololens-release-notes.md#auto-eye-position-support). La solicitud de calibración solo aparecerá automáticamente si un usuario sin calibrar usa una aplicación habilitada para el seguimiento de los ojos.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>Tecnología de seguimiento ocular de HoloLens 2
 
@@ -140,9 +143,9 @@ Para ejecutar la aplicación Calibración usando el menú **Inicio**, siga estos
 1. Para ver todas las aplicaciones, seleccione **+** .
 1. Seleccione **Calibración**.
 
-![Acceso a la aplicación Calibración desde el shell](./images/calibration-shell.png)
+   ![Acceso a la aplicación Calibración desde el shell](./images/calibration-shell.png)
 
-![Aplicación Calibración, mostrada como un objeto Live Cube después de iniciarse](./images/calibration-livecube-200px.png)
+   ![Aplicación Calibración, mostrada como un objeto Live Cube después de iniciarse](./images/calibration-livecube-200px.png)
 
 Con el fin de usar la aplicación Configuración para ejecutar la aplicación Calibración, siga estos pasos:
 
@@ -151,7 +154,7 @@ Con el fin de usar la aplicación Configuración para ejecutar la aplicación Ca
 1. Haga clic en **Configuración**.
 1. Seleccione **Sistema** > **Utilidades** > **Abrir calibración**.
 
-![Inicio de la aplicación Calibración desde la aplicación Configuración](./images/calibration-settings-500px.jpg)
+   ![Inicio de la aplicación Calibración desde la aplicación Configuración](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Cascos envolventes
 
