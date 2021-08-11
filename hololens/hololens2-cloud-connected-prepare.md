@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f6c2e514024a171661b182a310145e26280e114a1cff65ef5b03b16feae8371a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660163"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Preparación: Guía conectada a la nube
 
@@ -43,7 +43,7 @@ Los empleados solo pueden usar una cuenta para inicializar un dispositivo, por l
 En esta guía hemos elegido [](/hololens/hololens-identity) que, para la identidad usada, usaremos Azure AD cuentas o Azure Active Directory cuentas. Hay varias ventajas para las Azure AD que nos gustaría usar, como:
 
 - Los empleados usan su cuenta de Azure AD para registrar el dispositivo en Azure AD e inscribirlo automáticamente en la solución MDM de la organización&#39;(Azure AD+MDM: requiere Azure AD Premium).
-- Azure AD admiten el [inicio de sesión único.](/azure/active-directory/manage-apps/what-is-single-sign-on) Cuando un usuario inicia sesión en Remote Assist, se reconocerá su identidad desde el usuario con sesión Azure AD y el usuario se inicia sesión en la aplicación para una experiencia simplificada.
+- Azure AD admiten [el inicio de sesión único.](/azure/active-directory/manage-apps/what-is-single-sign-on) Cuando un usuario inicia sesión en Remote Assist, se reconocerá su identidad desde el usuario con sesión Azure AD y el usuario se inicia sesión en la aplicación para una experiencia simplificada.
 - Azure AD cuentas tienen opciones de [autenticación adicionales](/hololens/hololens-identity) [a través de Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). Además de Iris, los usuarios de inicio de sesión pueden iniciar sesión desde otro dispositivo o usar claves de seguridad FIDO.
 
 ### <a name="mobile-device-management"></a>Administración de dispositivos móviles
@@ -60,7 +60,7 @@ Microsoft [Intune,](/mem/intune/fundamentals/what-is-intune)parte de la Enterpri
 
 En esta configuración, se prevé que HoloLens 2 dispositivos que se conectan a Internet desde cualquier red abierta Wi-Fi disponible. Dado que un usuario podría necesitar cambiar la conexión de red en función de la ubicación, debe aprender a conectar HoloLens [dispositivos a Wi-Fi.](/hololens/hololens-network)
 
-Por Dynamics 365 Remote Assist hay una variedad de condiciones de red, como ancho de banda, latencia, vibración y pérdida de paquetes, que pueden afectar a la experiencia de videollamada. Aunque las llamadas de audio y vídeo pueden ser posibles en entornos con ancho de banda reducido, es posible que experimente una degradación de las características. Al usar Dynamics 365 Remote Assist en HoloLens estos son los requisitos de red que debe tener en cuenta:
+Por Dynamics 365 Remote Assist hay una variedad de condiciones de red, como ancho de banda, latencia, vibración y pérdida de paquetes, que pueden afectar a la experiencia de videollamada. Aunque es posible realizar llamadas de audio y vídeo en entornos con ancho de banda reducido, es posible que experimente una degradación de las características. Al usar Dynamics 365 Remote Assist en HoloLens estos son los requisitos de red que debe tener en cuenta:
 
 **Mínimo:** se requieren 1,5 Mbps de subida y bajada para las llamadas de vídeo de calidad HD punto a punto con resolución de HD 1080p a 30 fps.
 
@@ -73,7 +73,7 @@ Más información:
 
 ### <a name="optional-connect-your-hololens-to-vpn"></a>Opcional: Conectar la HoloLens a VPN
 
-Los dispositivos que se conectan en esta guía se conectarán a la red a través de y la red en la nube externa. Puede ser que para acceder a los recursos de la&#39;necesitará conectar los dispositivos a través de VPN. Hay varias maneras diferentes de conectar los dispositivos a VPN, tanto donde el usuario final puede conectarse mediante la interfaz de usuario del dispositivo como los dispositivos se pueden administrar y recibir el perfil de VPN desde un PPKG o MDM. En este artículo no se explica cómo configurar vpn&#39;, por lo que si&#39;desea obtener más información sobre los distintos protocolos VPN o formas de administrar VPN, visite estas guías para obtener información sobre HoloLens y [VPN.](/hololens/hololens-network#vpn)
+Los dispositivos que se conectan en esta guía se conectarán a la red a través de y la red en la nube externa. Puede ser que para acceder a los recursos de la&#39;necesite conectar los dispositivos a través de VPN. Hay varias maneras diferentes de conectar los dispositivos a VPN, tanto donde el usuario final puede conectarse mediante la interfaz de usuario del dispositivo como los dispositivos se pueden administrar y recibir el perfil de VPN desde un PPKG o MDM. En este artículo no se explica cómo configurar vpn&#39;, por lo que si&#39;desea obtener más información sobre los distintos protocolos VPN o formas de administrar VPN, visite estas guías para obtener información sobre [HoloLens y VPN.](/hololens/hololens-network#vpn)
 
 ## <a name="next-step"></a>Paso siguiente
 

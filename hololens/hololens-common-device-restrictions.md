@@ -13,19 +13,19 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 769cacc1803af9d9e9bf1079f8cd5671f194c3bc
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6a09766a06fff912aae20dc07974b723d812bd370562a33297552dc0d2f7f12c
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664284"
 ---
 # <a name="common-device-restrictions"></a>Restricciones comunes de dispositivos 
 
 Esta guía ayuda a los profesionales de TI a comprender las opciones de administración más usadas disponibles para Windows 10 Holographic sistema operativo en la empresa. Consulta la documentación del sistema MDM para comprender cómo habilita estas directivas el proveedor de MDM. No todos los sistemas MDM admiten todas las configuraciones descritas en esta guía. Algunos admiten las directivas personalizadas a través de archivos XML OMA-URI. Consulta [Soporte de Microsoft Intune para directivas personalizadas](/mem/intune/configuration/custom-settings-windows-10). Las convenciones de nomenclatura también pueden variar entre distintos proveedores de MDM.
 
 ## <a name="prevent-changing-of-settings"></a>Impedir la modificación de la configuración
-Generalmente, se permite a los empleados cambiar determinadas opciones de configuración de los dispositivos personales que es posible que desees bloquear en los dispositivos corporativos. Los empleados pueden ajustar interactivamente determinadas configuraciones del HoloLens a través de la interfaz de usuario de configuración. Con el sistema MDM, puedes limitar lo que los usuarios pueden cambiar. A continuación se enumeran los valores de MDM usados Windows 10 Holographic admiten para configurar restricciones de configuración:
+Generalmente, se permite a los empleados cambiar determinadas opciones de configuración de los dispositivos personales que es posible que desees bloquear en los dispositivos corporativos. Los empleados pueden ajustar interactivamente ciertas configuraciones del HoloLens a través de la interfaz de usuario de configuración. Con el sistema MDM, puedes limitar lo que los usuarios pueden cambiar. A continuación se enumeran las opciones de MDM que se usan Windows 10 Holographic admiten para configurar restricciones de configuración:
 -   [Permitir VPN:](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) Permite al usuario cambiar la configuración de VPN.
 -   [Permitir configuración de Wi-Fi manual:](/windows/client-management/mdm/policy-csp-wifi#wifi-allowmanualwificonfiguration) Permite a los usuarios realizar conexiones Wi-Fi fuera de las redes aprovisionadas por MDM.
 -   [Permitir la anulación manual de la inscripción de MDM](/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment) Si los usuarios pueden eliminar la cuenta del área de trabajo (es decir, anuló la inscripción del dispositivo del sistema MDM).
@@ -38,7 +38,7 @@ Para obtener más información sobre las opciones de directiva, HoloLens los [CS
 
 ## <a name="hardware-restrictions"></a>Restricciones de hardware
 Windows 10 Holographic dispositivos usan tecnología de última generación que incluye características de hardware populares, como cámaras, micrófonos, altavoces, interfaces USB, interfaces Bluetooth y Wi-Fi. Puedes usar restricciones de hardware para controlar la disponibilidad de estas funciones.
-A continuación se enumeran las opciones de MDM que se Windows 10 Holographic admiten para configurar restricciones de hardware:
+A continuación se enumeran los valores de MDM usados Windows 10 Holographic admiten para configurar restricciones de hardware:
 
 > [!NOTE]
 > Algunas de estas restricciones de hardware afectan a la conectividad y ayudan en la protección de datos.

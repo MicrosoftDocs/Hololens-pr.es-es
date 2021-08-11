@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 43162389eae82bc09135c62acd40d71048d14db1
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664361"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planeamiento de la implementación de HoloLens 2 en un entorno comercial
 
@@ -33,9 +33,9 @@ Los siguientes pasos y vídeo pueden ayudarle a guiarse por el proceso de adopci
 | &nbsp; | &nbsp; |
 |--|--|
 | ![Paso 1](images/1green.png)| <br/> **[Escenarios comunes de implementación:](hololens-requirements.md)** comprenda los escenarios de implementación y explore los componentes principales necesarios para implementar HoloLens 2 dispositivos. |
-| ![Paso 2](images/2green.png)| <br/> **[Preparar:](#prepare)** familiarícese con los aspectos básicos de la infraestructura necesarios para HoloLens 2. |
+| ![Paso 2](images/2green.png)| <br/> **[Preparar:](#prepare)** familiarícese con los aspectos básicos de la infraestructura necesarios para HoloLens 2. |
 | ![Paso 3](images/3green.png) | <br/> **[Configurar](#configure)**: aprenda a configurar los componentes esenciales para una implementación basada en la nube. |
-| ![Paso 4](images/4green.png) | <br/> **[Implementar:](#deploy)** descubra cómo implementar los dispositivos y distribuir las aplicaciones de forma segura y eficaz. |
+| ![Paso 4](images/4green.png) | <br/> **[Implementar:](#deploy)** descubra cómo implementar los dispositivos y distribuir las aplicaciones de forma segura y eficaz. |
 | ![Paso 5](images/5green.png) | <br/> **[Mantener:](#maintain)** descubra lo que se necesita para mantener correctamente el estado de los dispositivos HoloLens 2 y garantizar el cumplimiento de la directiva corporativa. |
 
 <br/>
@@ -74,7 +74,7 @@ Distribuya los HoloLens 2 y valide su configuración.
 
 ## <a name="maintain"></a>Mantenimiento
 
-Use Windows Update for Business junto con el sistema MDM o el Microsoft Store para mantener actualizada la flota de HoloLens 2 aplicaciones y aplicaciones.
+Use Windows Update for Business junto con el sistema MDM o el Microsoft Store para mantener actualizada la flota HoloLens 2 aplicaciones y aplicaciones.
 
 | Componente | Descripción |
 |-----------|------------|

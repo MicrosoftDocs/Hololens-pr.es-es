@@ -7,18 +7,18 @@ description: Mixed Reality de soporte técnico para clientes de pequeñas y gran
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658766"
 ---
-# <a name="what-are-the-mixed-reality-support-and-help-options"></a>¿Cuáles son las Mixed Reality soporte técnico y las opciones de ayuda?
+# <a name="what-are-the-mixed-reality-support-and-help-options"></a>¿Cuáles son las Mixed Reality de soporte técnico y ayuda?
 
 ¿Desea desbloquear el desarrollo de la aplicación o tiene un problema con el casco HoloLens 2 o Windows Mixed Reality casco? Es posible que use un servicio de realidad mixta de Azure y tenga una pregunta técnica. 
 
-Aquí encontrará las opciones de soporte técnico para las siguientes opciones, lo que garantiza que se conecte al lugar correcto. También se incluyen los recursos de la comunidad y las opciones de contenido de autoservicio para que explore:
+Aquí encontrará las opciones de soporte técnico para las siguientes opciones, lo que garantiza que se conecte al lugar correcto. También se cubren los recursos de la comunidad y las opciones de contenido de autoservicio para que explore:
 
 - [Community de ayuda para desarrolladores](#community-help-options)
 - [Obtenga ayuda con el uso y la configuración del HoloLens 2 dispositivo](#help-with-technical-support-for-your-hololens-2)
@@ -71,7 +71,7 @@ Si envía una nueva pregunta a Stack Overflow, use una o varias de las siguiente
 
 - Obtenga HoloLens 2 de programación de la comunidad en [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - Más información sobre Ayuda y soporte técnico y estado del servicio de los [servicios de realidad mixta de Azure](#azure-mixed-reality-services-support)
-- Cree una solicitud de soporte técnico para la programación HoloLens 2 casco inmersivo en el soporte [técnico de mr.](https://aka.ms/mrsupport) 
+- Creación de una solicitud de soporte técnico para HoloLens 2 programación de cascos envolventes en el soporte [técnico de MR](https://aka.ms/mrsupport) 
 - Cree una solicitud de soporte técnico para problemas HoloLens 2 dispositivos, incluidos el hardware, la configuración & uso [en HoloLens 2 de dispositivos](https://aka.ms/hlsupport) 
 
 
@@ -86,7 +86,7 @@ Si envía una nueva pregunta a Stack Overflow, use una o varias de las siguiente
 >Use uno de los números de teléfono empresariales de soporte comercial siguientes para ayudar a completar la compra. 
 
 >[!Note]
->Si va a llamar al soporte técnico de un mercado que no aparece a continuación, dirija su llamada a nuestro número de departamento de empresa de EE. UU.
+>Si va a llamar al soporte técnico de un mercado que no aparece a continuación, dirija la llamada a nuestro número de departamento de empresa de EE. UU.
 
 | Mercados | Número del escritorio empresarial | Horario |
 |-----------------|-------------------|-----------------------|
@@ -106,21 +106,21 @@ Si envía una nueva pregunta a Stack Overflow, use una o varias de las siguiente
 | Finlandia | +358 800526136 |    De lunes a viernes, de 09 a. m. a 6 p. m. |
 | Portugal |    +351 800600087 |    De lunes a viernes, de 09 a. m. a 6 p. m. |
 | US |  866-425-4709 |  De lunes a viernes, de 6 a. m. a 6 p. m., pst |
-| Canadá |  877-345-2661 |  De lunes a viernes, de 6 a. m. a 6 p. m., pst |
-| China |   400-805-6783 |  De lunes a viernes, de 9:00 a 18:00 |
-| Japón |   0120-03-5241 |  De lunes a viernes, de 9 a. m. a 5:30 p. m. |
+| Canadá |  877-345-2661 |  Lun to Fri, 6AM to 6PM, PST |
+| China |   400-805-6783 |  Lunes a viernes, de 9:00 a 18:00 |
+| Japón |   0120-03-5241 |  Lunes a viernes, de 9 a. m. a 5:30 p. m. |
 | Australia |   1800-217-709 |  De lunes a viernes, de 8:00 a 20:00 |
 | Singapur |   1800 622-1816 | De lunes a viernes, de 8:30 a. m. a 5:30 p. m. |
 | Nueva Zelanda | 0800 471 640 |  De lunes a viernes, de 8:00 a 18:00 |
 
 >[!IMPORTANT]
->Si necesita una factura de IVA completa, debe ponerse en contacto directamente con el equipo de la Tienda de soporte técnico comercial y no comprar un dispositivo en línea. Todas las compras realizadas en línea solo recibirán una factura de IVA simplificada que no se puede editar más adelante.
+>Si necesita una factura de IVA completa, debe ponerse en contacto directamente con el equipo de la Tienda de soporte técnico comercial y no comprar un dispositivo en línea. Todas las compras realizadas en línea solo recibirán una factura de IVA simplificada que no se podrá editar más adelante.
 
-## <a name="azure-mixed-reality-services-support"></a>Compatibilidad con servicios de realidad mixta de Azure
+## <a name="azure-mixed-reality-services-support"></a>Compatibilidad con los servicios de realidad mixta de Azure
 
 ### <a name="open-an-azure-portal-technical-support-ticket"></a>Apertura de una Azure Portal de soporte técnico
 
-Para abrir una vale de soporte técnico en la Azure Portal de Azure Spatial Anchors, Azure Object Anchors o Azure Remote Rendering:
+Para abrir una vale de soporte técnico en la Azure Portal para Azure Spatial Anchors, Azure Object Anchors o Azure Remote Rendering:
 
 1. Con [Azure Portal](https://azure.microsoft.com/account/) abierto, seleccione el icono de ayuda en la barra de menús superior y, luego, seleccione **Ayuda y soporte técnico**.
 
@@ -145,7 +145,7 @@ Para abrir una vale de soporte técnico en la Azure Portal de Azure Spatial Anch
 
 ### <a name="provide-documentation-content-feedback"></a>Proporcionar comentarios sobre el contenido de la documentación
 
-En la parte inferior de cada artículo de contenido, hay una oportunidad de abrir un problema de GitHub y proporcionar comentarios sobre el contenido en cualquier repositorio de documentación de realidad mixta. 
+En la parte inferior de cada artículo de contenido, hay una oportunidad de abrir un problema GitHub y proporcionar comentarios sobre el contenido en cualquier repositorio de documentación de realidad mixta. 
 
 ### <a name="provide-product-feedback"></a>Proporcionar comentarios sobre el producto
 
@@ -161,8 +161,8 @@ Para proporcionar comentarios, compartir una idea o sugerencias para los servici
 
 ### <a name="faqs--troubleshooting"></a>Preguntas más frecuentes & solución de problemas
 
-- HoloLens 2, consulte la página [HoloLens solución de problemas](../hololens/hololens-troubleshooting.md)
+- HoloLens 2, consulte la página [HoloLens solución de problemas.](../hololens/hololens-troubleshooting.md)
 - Windows Mixed Reality, consulte la página [de preguntas más frecuentes.](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-- Azure Remote Rendering, consulte la página [de preguntas más frecuentes.](/azure/remote-rendering/resources/troubleshoot)
-- Azure Spatial Anchors, consulte la página [de preguntas más frecuentes.](/azure/spatial-anchors/spatial-anchor-faq)
-- Azure Object Anchors, consulte la página [de preguntas más frecuentes.](/azure/object-anchors/faq)
+- Azure Remote Rendering, consulte la página [de preguntas más](/azure/remote-rendering/resources/troubleshoot) frecuentes.
+- Azure Spatial Anchors, consulte la página [de preguntas más](/azure/spatial-anchors/spatial-anchor-faq) frecuentes
+- Azure Object Anchors, consulte la página [de preguntas más](/azure/object-anchors/faq) frecuentes.

@@ -6,24 +6,24 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665145"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Contribución a la documentación HoloLens datos
 
 Le damos la [bienvenida a la HoloLens !](https://github.com/MicrosoftDocs/Hololens) Todos los artículos que cree o edite en este repositorio **serán visibles para el público.** 
 
-HoloLens documentos se muestran en la plataforma docs.microsoft.com, que usa GitHub markdown con características de Markdig. El contenido que edite en este repositorio se formatee en páginas con formato que se muestran en /hololens.
+HoloLens documentos se muestran en la plataforma docs.microsoft.com, que usa markdown con GitHub con características de Markdig. El contenido que edite en este repositorio se formatee en páginas con formato que se muestran en /hololens.
 
 En esta página se tratan los pasos básicos y las directrices para contribuir y vínculos a los conceptos básicos de Markdown. Gracias por su contribución.
 
 ## <a name="available-repos"></a>Repositorios disponibles
 
-| Nombre del repositorio | Dirección URL |
+| Nombre del repositorio | URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 | Mixed Reality | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
@@ -41,7 +41,7 @@ Al configurar la cuenta GitHub, también se recomiendan estas precauciones de se
 - Habilite [la autenticación en dos fases.](https://github.com/settings/two_factor_authentication/configure)
 - Guarde los [códigos de recuperación](https://github.com/settings/auth/recovery-codes) en un lugar seguro.
 - Actualice la [configuración del perfil público.](https://github.com/settings/profile)
-   - Establezca su nombre y considere la posibilidad de establecer *el correo electrónico público* en No mostrar mi dirección de correo *electrónico.*
+   - Establezca su nombre y considere la posibilidad de establecer el correo *electrónico público* en No mostrar mi dirección de *correo electrónico.*
    - Se recomienda cargar una imagen de perfil porque se muestra una miniatura en las páginas de documentos a las que contribuye.
 - Si tiene previsto usar la línea de comandos, considere la posibilidad de configurar [Git Administrador de credenciales para Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). De este modo, no tendrá que escribir la contraseña cada vez que realice una contribución.
 
@@ -79,7 +79,7 @@ Use el siguiente flujo de trabajo para realizar actualizaciones en *un artículo
 
 7. Repita los pasos anteriores para el siguiente artículo que desea editar.
 
-## <a name="renaming-or-deleting-an-existing-article"></a>Cambiar el nombre o eliminar un artículo existente
+## <a name="renaming-or-deleting-an-existing-article"></a>Cambio de nombre o eliminación de un artículo existente
 
 Si el cambio cambiará el nombre o eliminará un artículo existente, asegúrese de agregar una redirección. De este modo, cualquier persona con un vínculo al artículo existente seguirá en el lugar correcto. Las redirecciones se administran mediante .openpublishing.redirection.jsen el archivo en la raíz del repositorio.
 
@@ -95,7 +95,7 @@ Para agregar una redirección a .openpublishing.redirection.js, agregue una entr
         },
 ```
 
-- es la ruta de acceso relativa del repositorio `source_path` al artículo anterior que va a quitar. Asegúrese de que la ruta de acceso `mixed-reality-docs` comienza por y termina con `.md` .
+- es la ruta de acceso relativa del repositorio `source_path` al artículo anterior que va a quitar. Asegúrese de que la ruta de acceso comienza `mixed-reality-docs` por y termina con `.md` .
 
 - es `redirect_url` la dirección URL pública relativa del artículo anterior al nuevo. Asegúrese de que esta dirección URL **no contiene** o , ya que hace referencia a la dirección URL pública y no a la ruta de acceso `mixed-reality-docs` del `.md` repositorio. Se permite la vinculación a una sección del nuevo artículo `#section` mediante . También puede usar una ruta de acceso absoluta a otro sitio aquí, si es necesario.
 
@@ -139,7 +139,7 @@ Use el siguiente flujo de trabajo *para crear nuevos artículos en* el repositor
 
 5. Rellene los campos de metadatos pertinentes como se describió anteriormente en [Edición de un artículo existente.](#editing-an-existing-article)
 
-6. Escriba contenido del artículo mediante los [conceptos básicos de Markdown.](#markdown-basics)
+6. Escriba contenido del artículo mediante los [conceptos básicos de Markdown](#markdown-basics).
 
 7. Agregue una `## See also` sección en la parte inferior del artículo con vínculos a otros artículos pertinentes.
 
@@ -164,10 +164,10 @@ La [extensión Docs Markdown para Visual Studio Code](/teamblog/docs-extension) 
 
 ### <a name="adding-images"></a>Incorporación de imágenes
 
-Deberá cargar las imágenes en la carpeta "mixed-reality-docs/images" del repositorio y, a continuación, hacer referencia a ellas correctamente en el artículo. Las imágenes se mostrarán automáticamente a tamaño completo, lo que significa que las imágenes grandes rellenarán todo el ancho del artículo. Se recomienda hacer un tamaño previo de las imágenes antes de cargarlas. El ancho recomendado es de entre 600 y 700 píxeles, aunque debe cambiar de tamaño si es una captura de pantalla densa o una fracción de una captura de pantalla, respectivamente.
+Deberá cargar las imágenes en la carpeta "mixed-reality-docs/images" del repositorio y, a continuación, hacer referencia a ellas correctamente en el artículo. Las imágenes se mostrarán automáticamente a tamaño completo, lo que significa que las imágenes grandes rellenarán todo el ancho del artículo. Se recomienda realizar un tamaño previo de las imágenes antes de cargarlas. El ancho recomendado es de entre 600 y 700 píxeles, aunque debe cambiar de tamaño si es una captura de pantalla densa o una fracción de una captura de pantalla, respectivamente.
 
 >[!IMPORTANT]
->Solo puede cargar imágenes en el repositorio bifurcado antes de la combinación. Por lo tanto, si planea agregar imágenes a un artículo, deberá usar Visual Studio Code para agregar primero las imágenes [a](#using-visual-studio-code) la carpeta "images" de la bifurcación o asegúrese de que ha hecho lo siguiente en un explorador web:
+>Solo puede cargar imágenes en el repositorio bifurcado antes de combinarlas. Por lo tanto, si planea agregar imágenes a un artículo, deberá usar Visual Studio Code para agregar primero las imágenes [a](#using-visual-studio-code) la carpeta "images" de la bifurcación o asegúrese de que ha hecho lo siguiente en un explorador web:
 >
 >1. Se ha bifurcado el repositorio MicrosoftDocs/mixed-reality.
 >2. Editó el artículo en la bifurcación.
@@ -193,13 +193,13 @@ La edición en el explorador es la manera más fácil de realizar cambios rápid
 - No se obtiene ninguna vinculación inteligente a otros artículos (tiene que escribir manualmente el nombre de archivo del artículo).
 - Puede ser complicado cargar y hacer referencia a imágenes.
 
-Si prefiere no tratar estos problemas, use un cliente de escritorio como [Visual Studio Code](https://code.visualstudio.com/) con un par de extensiones [útiles](#useful-extensions) al contribuir.
+Si prefiere no tratar estos problemas, use un cliente de escritorio [](#useful-extensions) como [Visual Studio Code](https://code.visualstudio.com/) con un par de extensiones útiles al contribuir.
 
 ## <a name="using-visual-studio-code"></a>Uso de Visual Studio Code
 
 Por los motivos [mencionados anteriormente,](#editing-in-the-browser-vs-editing-with-a-desktop-client)puede que prefiera usar un cliente de escritorio para editar la documentación en lugar de un explorador web. Se recomienda usar [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Instalación
+### <a name="setup"></a>Configurar
 
 Siga estos pasos para configurar Visual Studio Code para trabajar con este repositorio:
 
@@ -230,7 +230,7 @@ Use el siguiente flujo de trabajo para realizar cambios en la documentación con
       
    2. En Visual Studio Code, seleccione el botón sincronizar para sincronizar la bifurcación recién actualizada con el clon local.
       
-      ![Haga clic en la imagen del botón sincronizar.](images/sync-clone.png)
+      ![Haga clic en la imagen del botón de sincronización.](images/sync-clone.png)
       
 2. Cree o edite artículos en el repositorio clonado mediante Visual Studio Code.
 

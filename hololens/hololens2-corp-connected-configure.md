@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660191"
 ---
 # <a name="configure---corporate-connected-guide"></a>Configuración: Guía de conexión corporativa
 
@@ -57,10 +57,10 @@ Para implementar certificados y perfiles mediante Microsoft Endpoint Manager, si
     > [!CAUTION]
     > **Los perfiles de certificado sin una fecha de expiración no se implementarán.**
 
-2. Cree un perfil para cada certificado SCEP o PKCS (vea Crear un perfil de certificado SCEP o Crear un perfil de certificado [PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato DD/MM/YYYY.
+2. Cree un perfil para cada certificado SCEP o PKCS (consulte cómo [crear un perfil de certificado SCEP o crear un perfil de certificado PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración con el formato DD/MM/AAAA.
 
     > [!CAUTION]
-    > **Los perfiles de certificado sin una fecha de expiración no se implementarán.**
+    > **No se implementará ningún perfil de certificado digital sin una fecha de expiración.**
 
     > [!Note]
     > Como el HoloLens 2 se considera para muchos un dispositivo compartido, es decir, varios usuarios por dispositivo, se recomienda implementar certificados de dispositivo en lugar de certificados de usuario para la autenticación de Wi-Fi siempre que sea posible.
@@ -75,10 +75,10 @@ Para implementar certificados y perfiles mediante Microsoft Endpoint Manager, si
     Para obtener más información sobre los archivos PAC, vea [Archivo de configuración automática de proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file), aunque tenga en cuenta que este sitio no pertenece a Microsoft.
  
     > [!Note]
-    > Se recomienda asignar el perfil de Wi-Fi a grupos de dispositivos en lugar de a grupos de usuarios siempre que sea posible.
+    > Se recomienda que el perfil de Wi-Fi se asigne a grupos de dispositivos, en lugar de hacerlo a grupos de usuarios, siempre que sea posible.
      
     > [!Tip]
-    > También puede exportar un perfil de Wi-Fi trabajo desde un equipo Windows 10 en la red corporativa. Esta exportación crea un archivo XML con toda la configuración actual. A continuación, importe este archivo en Intune y úselo como perfil de Wi-Fi para los HoloLens 2 dispositivos. Vea [Exportación e importación de la configuración de Wi-Fi para dispositivos Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > También puede exportar un perfil Wi-Fi de trabajo desde un equipo con Windows 10 en su red corporativa. Esta exportación crea un archivo XML con toda la configuración actual. Después puede importar este archivo en Intune y usarlo como perfil de Wi-Fi para sus dispositivos HoloLens 2. Vea [Exportación e importación de la configuración de Wi-Fi para dispositivos Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 1.  [Asigne](/mem/intune/configuration/device-profile-assign) los perfiles de dispositivo al HoloLens de dispositivos.
 
@@ -102,7 +102,7 @@ Si sigue desarrollando sus aplicaciones o aún no tiene ninguna, puede usar una 
 Si prefiere usar su propia aplicación o está interesado en el desarrollo de aplicaciones para Mixed Reality, no dude en revisar nuestra documentación de Mixed Reality [desarrollador.](/windows/mixed-reality/design/design)
 
 > [!NOTE]
-> Los requisitos del sistema HoloLens dispositivos se basan en la arquitectura de la compilación de la aplicación. HoloLens 2 dispositivos usan la arquitectura arm. Al compilar las aplicaciones en Visual Studio, asegúrese de que ha seleccionado la arquitectura correcta para el dispositivo e incluya las dependencias necesarias.
+> Los requisitos del sistema para los dispositivos HoloLens se basan en la arquitectura de la compilación de la aplicación. HoloLens 2 dispositivos usan la arquitectura arm. Al compilar las aplicaciones en Visual Studio, asegúrese de que ha seleccionado la arquitectura correcta para el dispositivo e incluya las dependencias necesarias.
 
 > [!IMPORTANT]
 > Al implementar aplicaciones lob, es importante cargar también el certificado en Intune y asignarlo al mismo grupo que está pensado para usar la aplicación o no se instalará correctamente.
@@ -117,7 +117,7 @@ Si prefiere usar su propia aplicación o está interesado en el desarrollo de ap
 
 4. Seleccione el archivo de paquete de aplicación, este es el archivo APPXBUNDLE o, en nuestro caso, la aplicación es el Centro de ejemplos de _MRTK \_ 2.4.2.0 \_ \_ arm Master.appxbundle_.
 
-5. Se le notificará si faltan dependencias. En este caso, es necesario cargar _Microsoft.VCLibs.ARM.14.00.appx_. Bájelo en **Seleccionar un archivo.**
+5. Se le notificará si faltan dependencias. En este caso, es necesario cargar _Microsoft.VCLibs.ARM.14.00.appx_. Bájelo en **Select a file (Seleccionar un archivo).**
 
 6. Seleccione Aceptar.
 
@@ -137,7 +137,7 @@ Para poder usar Dynamics 365 Guides, deberá realizar cierta preparación. Hay t
 
 Para que alguien use guías, deberá usar una cuenta de Azure AD, que hemos configurado anteriormente en esta guía.
 
-También deberá asignar una licencia Dynamics 365 Guides al usuario que ha creado. Lo hará desde el [Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal/Home). Asigne también la licencia a la cuenta principal de Azure.
+También tendrá que asignar Dynamics 365 Guides licencia al usuario que ha creado. Lo hará desde el [Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal/Home). Asigne también la licencia a la cuenta principal de Azure.
 
 Siga [esta breve guía con](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) imágenes para obtener instrucciones paso a paso sobre cómo aplicar licencias de aplicación.
 
@@ -154,29 +154,29 @@ En esta guía para [crear un entorno de Microsoft Dataverse:](/dynamics365/mixed
 
 Querrá aumentar el tamaño máximo de archivo de los elementos del inverso de datos. Aumentar el tamaño máximo de archivo le permitirá cargar modelos 3D o archivos de vídeo más grandes que usará más adelante en las guías. Siga una breve guía [para cambiar el tamaño máximo del archivo de carga.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
 
-Por último, deberá instalar y configurar [la solución](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). En la [Centro de administración de Power Platform](https://admin.powerplatform.microsoft.com/environments), seleccione **Recursos** \& gt;  **Aplicaciones de Dynamics 365,** **seleccione Dynamics 365 Guides** en la lista y, a continuación, **seleccione Instalar**.  
+Por último, deberá instalar [y configurar la solución](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). En la [Centro de administración de Power Platform](https://admin.powerplatform.microsoft.com/environments), seleccione **Recursos** \& gt;  **Aplicaciones de Dynamics 365,** **seleccione Dynamics 365 Guides** en la lista y, a continuación, **seleccione Instalar**.  
 
 Debe agregar [un rol de seguridad Guides](/dynamics365/mixed-reality/guides/assign-role) antes de poder usar las aplicaciones.
 
 ### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Crear una guía de prueba en el equipo a través de la creación
 
-Al crear guías, siempre se iniciará en el equipo. Crear los pasos, seleccionar modelos y cómo delimitar la guía. A continuación, se colocará el contenido de la guía más adelante en el modo de creación en HoloLens dispositivo. Para los fines de esta guía, se recomienda crear una guía de prueba corta con pasos y modelos mínimos.
+Al crear guías, siempre se iniciará en el equipo. Crear los pasos, seleccionar modelos y cómo delimitar la guía. A continuación, se colocará el contenido de la guía más adelante en modo de creación en el HoloLens dispositivo. Para los fines de esta guía, se recomienda crear una guía de prueba breve con pasos y modelos mínimos.
 
-Si desea empezar a aprender sobre la creación de guías, comience aquí con la introducción [a la creación.](/dynamics365/mixed-reality/guides/authoring-overview) O bien, para obtener información general de un seguimiento rápido, vea este breve vídeo.
+Si desea empezar a aprender sobre la creación de guías, comience aquí con la introducción [a la creación.](/dynamics365/mixed-reality/guides/authoring-overview) O bien, para obtener información general de seguimiento rápido, vea este breve vídeo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="optional-kiosk-mode"></a>Opcional: modo de pantalla completa
+## <a name="optional-kiosk-mode"></a>Opcional: pantalla completa
 
-El modo de pantalla completa es un modo que permite a un administrador de TI configurar la interfaz de usuario del menú inicio para mostrar solo una aplicación o una selección de aplicaciones. También se puede aplicar un quiosco a usuarios, grupos o usuarios específicos en el nivel de dispositivo. y, en algunos casos, excluir a determinados usuarios de la pantalla completa, lo que les permite tener acceso al menú inicio normal.
+El modo de pantalla completa es un modo que permite a un administrador de TI configurar la interfaz de usuario del menú inicio para mostrar solo una aplicación o una selección de aplicaciones. También se puede aplicar un quiosco a usuarios, grupos o en el nivel de dispositivo específicos. y, en algunos casos, excluir determinados usuarios del quiosco de pantalla completa, lo que les sigue permitiendo el acceso al menú inicio normal.
 
-El modo de pantalla completa tiene muchas variables diferentes, tanto en el ámbito como en las configuraciones que se pueden establecer, así como los métodos para implementar la pantalla completa en el HoloLens. Debido a todas estas variables, el modo quiosco se deja como _opcional_ para esta guía y no se vuelve a visitar. Si cree que tiene una necesidad empresarial de restringir las aplicaciones disponibles [a](/hololens/hololens-kiosk)los usuarios o desea obtener más información, no dude en aprender a configurar HoloLens como un quiosco.
+El modo de pantalla completa tiene muchas variables diferentes, tanto en el ámbito como en las configuraciones que se pueden establecer, así como los métodos de implementación del quiosco en el HoloLens. Debido a todas estas variables, el modo quiosco se deja como _opcional_ para esta guía y no se vuelve a visitar. Si cree que tiene una necesidad empresarial de restringir las aplicaciones disponibles a los usuarios o desea obtener más información, no dude en aprender [a](/hololens/hololens-kiosk)configurar HoloLens como quiosco.
 
 ## <a name="optional-wdac"></a>Opcional: WDAC
 
 WDAC permite a un administrador de TI configurar sus dispositivos para bloquear el inicio de aplicaciones en los dispositivos. Esto es diferente de los métodos de restricción de dispositivos, como el modo de pantalla completa, donde se presenta al usuario una interfaz de usuario que oculta las aplicaciones en el dispositivo, pero todavía se pueden iniciar. Mientras se implementa WDAC, las aplicaciones siguen estando visibles en la lista Todas las aplicaciones, pero WDAC impide que el usuario del dispositivo pueda iniciar esas aplicaciones y procesos.
 
-Para obtener más información, consulte Uso de WDAC Windows PowerShell para permitir o bloquear aplicaciones en HoloLens 2 [dispositivos con Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
+Para obtener más información, consulte [Use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
 
 [Control de aplicaciones de Microsoft Defender: WDAC](/hololens/windows-defender-application-control-wdac)
 

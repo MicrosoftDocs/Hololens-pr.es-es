@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663256"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>Uso de Microsoft's Endpoint Manager Intune para administrar HoloLens dispositivos
 
@@ -33,7 +33,7 @@ Más información: Clasificar [dispositivos en grupos](/mem/intune/enrollment/de
 ### <a name="device-configuration-profiles"></a>Perfiles de configuración de dispositivos
 Intune incluye opciones y características que se pueden habilitar o deshabilitar en distintos dispositivos dentro de la organización. Estos valores de configuración y características se administran mediante perfiles. Por ejemplo, puede crear un perfil que habilite Cortana o que use Microsoft Defender Smart Screen en los dispositivos con Windows Holographic for Business.
 En los perfiles, puede usar OMA-URI para personalizar algunas opciones, crear restricciones de dispositivos y configurar una red privada virtual (VPN) y Wi-Fi.
-[Introducción a los perfiles de configuración](/mem/intune/configuration/device-profiles)y la introducción [al perfil](/mem/intune/configuration/device-profile-create).
+[Introducción a los perfiles de configuración](/mem/intune/configuration/device-profiles)y a la [introducción al perfil](/mem/intune/configuration/device-profile-create).
 
 ## <a name="examples-of-what-can-be-managed-and-configured"></a>Ejemplos de lo que se puede administrar y configurar
 
@@ -44,7 +44,7 @@ La [configuración de Wi-Fi](/mem/intune/configuration/wi-fi-settings-configure)
 Obtenga más información [sobre cómo configurar la red para HoloLens](hololens-commercial-infrastructure.md)
 
 ### <a name="certificates"></a>Certificados
-Los certificados ayudan a mejorar la seguridad al proporcionar autenticación de cuenta, Wi-Fi, cifrado VPN y cifrado SSL de contenido web. Aunque los administradores pueden administrar certificados en dispositivos manualmente a través de paquetes de aprovisionamiento, es un procedimiento recomendado usar el sistema MDM para administrar esos certificados a lo largo de todo su ciclo de vida, desde la inscripción hasta la renovación y revocación. El sistema MDM puede implementar automáticamente estos certificados en los almacenes de certificados de los dispositivos después de inscribir el dispositivo (siempre y cuando el sistema MDM admita los estándares de criptografía de clave pública (Protocolo de inscripción de certificados simple) o estándares de criptografía de #12 clave pública (PKCS #12)). MDM también puede consultar y eliminar certificados de cliente inscritos o desencadenar una nueva solicitud de inscripción antes de que el certificado actual haya expirado. 
+Los certificados ayudan a mejorar la seguridad al proporcionar autenticación de cuenta, Wi-Fi, cifrado VPN y cifrado SSL de contenido web. Aunque los administradores pueden administrar certificados en dispositivos manualmente a través de paquetes de aprovisionamiento, es un procedimiento recomendado usar el sistema MDM para administrar esos certificados a lo largo de todo su ciclo de vida, desde la inscripción hasta la renovación y revocación. El sistema MDM puede implementar automáticamente estos certificados en los almacenes de certificados de los dispositivos después de inscribir el dispositivo (siempre que el sistema MDM admita los estándares de criptografía de clave pública (Protocolo de inscripción de certificados simple) o public key cryptography standards #12 (PKCS #12)). MDM también puede consultar y eliminar certificados de cliente inscritos o desencadenar una nueva solicitud de inscripción antes de que el certificado actual haya expirado. 
 
 ### <a name="proxy"></a>Proxy
 La mayoría de las redes de intranet corporativas aprovechan un proxy para administrar el tráfico interno. Con HoloLens 2 puede configurar un servidor proxy para conexiones Ethernet Wi-Fi conexión. Esta configuración no se aplica a las conexiones VPN. Para más información sobre la configuración de proxy Windows 10, consulte [CSP de NetworkProxy.](/windows/client-management/mdm/networkproxy-csp)
@@ -60,7 +60,7 @@ Con Intune, puede agregar aplicaciones a los dispositivos con Windows Holographi
 -   [Microsoft Store para Empresas]( app-deploy-store-business.md)
 
 Obtenga más información sobre la administración de aplicaciones a través de Intune.
--   [Adición de aplicaciones a Intune](/mem/intune/apps/apps-add)
+-   [Agregar aplicaciones a Intune](/mem/intune/apps/apps-add)
 -   [Agregar aplicaciones de Microsoft Store](/mem/intune/apps/store-apps-windows)
 -   [Agregar aplicaciones que cree](/mem/intune/apps/lob-apps-windows)
 - [Asignar aplicaciones a grupos](/mem/intune/apps/apps-deploy)

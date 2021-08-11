@@ -16,12 +16,12 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637284"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115662650"
 title: Preguntas más frecuentes sobre la seguridad de HoloLens (1.ª generación)
 summary: ''
 sections:
@@ -30,7 +30,7 @@ sections:
   - question: >
       ¿Qué nivel de protección de HoloLens ofrece 1?
     answer: >
-      * Consulte [cifrado de BitLocker de HoloLens (1ª generación)](hololens1-encryption.md)
+      * Consulte [cifrado HoloLens BitLocker (1ª generación)](hololens1-encryption.md)
   - question: >
       ¿Qué tipo de conexión inalámbrica se usa?
     answer: >
@@ -48,7 +48,7 @@ sections:
   - question: >
       ¿En qué intervalo de frecuencia y canales funciona el dispositivo y es configurable?
     answer: >
-      * Wi-Fi: el intervalo de frecuencia no es configurable por el usuario y depende del país de uso. En la versión Wi-Fi usa canales de 2,4 GHz (1-11) y de 5 GHz (36-64, 100-165).
+      * Wi-Fi: el intervalo de frecuencia no es configurable por el usuario y depende del país de uso. En estados Wi-Fi usa canales de 2,4 GHz (1-11) y de 5 GHz (36-64, 100-165).
 
       * Bluetooth: Bluetooth usa el intervalo estándar de 2,4-2,48 GHz.
   - question: >
@@ -58,11 +58,11 @@ sections:
   - question: >
       ¿Cuál es el nivel de energía para transmitir y recibir? ¿Es ajustable? ¿Cuál es el intervalo de operaciones?
     answer: >
-      * Nuestros estándares de pruebas de emisión se pueden [encontrar aquí.](https://fccid.io/C3K1688) La gama de operaciones depende en gran medida del punto de acceso y el entorno, pero es aproximadamente equivalente a otros teléfonos, tabletas o equipos de alta calidad.
+      * Nuestros estándares de pruebas de emisión se pueden [encontrar aquí.](https://fccid.io/C3K1688) La gama de operaciones depende en gran medida del punto de acceso y del entorno, pero es aproximadamente equivalente a otros teléfonos, tabletas o equipos de alta calidad.
   - question: >
       ¿Cuál es el ciclo de servicio/duración del funcionamiento normal?
     answer: >
-      * De 2 a 3 horas de uso activo y hasta dos semanas de tiempo de espera
+      * 2-3 horas de uso activo y hasta dos semanas de tiempo de espera
 
       * La duración de la batería no está disponible.
   - question: >
@@ -76,7 +76,7 @@ sections:
   - question: >
       ¿Puede el dispositivo usar la infraestructura como cliente?
     answer: >
-      * Sí
+      * Yes
   - question: >
       ¿Qué protocolo se usa?
     answer: >
@@ -84,15 +84,15 @@ sections:
   - question: >
       Frecuencia de actualización del sistema operativo: ¿cuál es la frecuencia de las actualizaciones del sistema operativo para hl?  ¿Hay una programación establecida?  Microsoft publica revisiones de seguridad según sea necesario, etc.
     answer: >
-      * Microsoft proporciona actualizaciones del sistema operativo para HoloLens exactamente igual que se hace para Windows 10. Normalmente hay dos actualizaciones principales al año, una en la primavera y otra en caída. Como HoloLens es un Windows, el concepto de actualización es el mismo que con cualquier otro Windows dispositivo. Microsoft publica las revisiones de seguridad según sea necesario y sigue el mismo concepto que se hace en cualquier otro Windows dispositivo.
+      * Microsoft proporciona actualizaciones del sistema operativo para HoloLens exactamente igual que se hace para Windows 10. Normalmente hay dos actualizaciones principales al año, una en la primavera y otra en caída. Como HoloLens es un Windows, el concepto de actualización es el mismo que con cualquier otro Windows dispositivo. Microsoft publica las revisiones de seguridad según sea necesario y sigue el mismo concepto que en cualquier otro Windows dispositivo.
   - question: >
-      Seguridad del sistema operativo: ¿qué opciones hay para mejorar el sistema operativo?  ¿Se pueden quitar o apagar aplicaciones o servicios innecesarios?
+      Seguridad del sistema operativo: ¿qué opciones hay para mejorar el sistema operativo?  ¿Se pueden quitar o apagar servicios o aplicaciones innecesarios?
     answer: >
       * HoloLens se comporta como un smartphone. Es comparable a otros dispositivos Windows modernos. HoloLens pueden administrarse mediante Microsoft Intune u otras soluciones modernas de Administración de dispositivos, como MobileIron, Airwatch o Soti. Hay directivas que puede establecer en estos sistemas de administración para colocar directivas de seguridad en el dispositivo y para proteger el dispositivo. También existe la opción de eliminar las aplicaciones innecesarias si se desea.
   - question: >
       ¿Cómo se administrarán y actualizarán las aplicaciones de software? ¿Qué control tenemos para definir qué aplicaciones se cargan y el proceso de actualización de aplicaciones para las aplicaciones que se encuentran en Microsoft Store?
     answer: >
-      * HoloLens las aplicaciones de software solo a través del Windows almacén. Solo se pueden instalar paquetes de aplicación de Appx, que se desarrollan para el uso de HoloLens. Puede verlo en el Microsoft Store con un pequeño logotipo junto a la aplicación que muestra el HoloLens dispositivo. Cualquier control que tenga sobre la administración de aplicaciones de Store también se aplica a HoloLens. Puede usar el concepto de la tienda oficial o la tienda para empresas. Las aplicaciones se pueden cargar en paralelo (proceso manual para cargar una aplicación en un dispositivo Windows) o se pueden administrar a través de una MDM para que las aplicaciones se extran automáticamente de la tienda cuando sea necesario.
+      * HoloLens las aplicaciones de software solo a través del Windows almacén. Solo se pueden instalar paquetes de aplicación de Appx, que se desarrollan para el uso de HoloLens. Puede ver esto en el Microsoft Store con un pequeño logotipo junto a la aplicación que muestra el HoloLens dispositivo. Cualquier control que tenga sobre la administración de aplicaciones de Store también se aplica a HoloLens. Puede usar el concepto de la tienda oficial o la tienda para empresas. Las aplicaciones se pueden cargar en paralelo (proceso manual para cargar una aplicación en un dispositivo Windows) o se pueden administrar a través de una MDM para que las aplicaciones se extran automáticamente de la tienda cuando sea necesario.
   - question: >
       ¿Cuál es la frecuencia de las actualizaciones de aplicaciones en la tienda para HoloLens?
     answer: >
@@ -100,11 +100,11 @@ sections:
   - question: >
       ¿Hay una funcionalidad de arranque seguro para la HoloLens?
     answer: >
-      * Sí
+      * Yes
   - question: >
-      ¿Existe la capacidad de deshabilitar o desconectar la compatibilidad con periféricos del dispositivo?
+      ¿Existe la posibilidad de deshabilitar o desconectar la compatibilidad con periféricos del dispositivo?
     answer: >
-      * Sí
+      * Yes
   - question: >
       ¿Existe la capacidad de controlar o deshabilitar el uso de puertos en el dispositivo?
     answer: >
@@ -112,7 +112,7 @@ sections:
   - question: >
       Antivirus, detección de puntos de conexión, IPS, lista de permitidos de control de aplicaciones: cualquier capacidad para ejecutar antivirus, detección de puntos de conexión, IPS, lista de permitidos de control de aplicaciones, etc.
     answer: >
-      * Windows Holographic for Business (conjunto comercial) admite Windows Defender Smart Screen. Si una empresa antivirus creara y publicara su aplicación en la plataforma universal Windows, se podría descargar en HoloLens. En la actualidad, ninguna compañía ha hecho esto por HoloLens.
+      * Windows Holographic for Business (conjunto comercial) admite Windows Defender Smart Screen. Si una empresa antivirus creara y publicara su aplicación en La plataforma Windows universal, se podría descargar en HoloLens. En la actualidad, ninguna compañía ha hecho esto por HoloLens.
 
       * Permitir aplicaciones es posible mediante Microsoft Enterprise Store, donde solo puede elegir qué aplicaciones específicas se pueden descargar. Además, a través de MDM puede bloquear qué aplicaciones específicas se pueden ejecutar o incluso ver en el dispositivo.
   - question: >
@@ -120,7 +120,7 @@ sections:
     answer: >
       * Esto es algo que se puede administrar en el nivel de infraestructura mediante una MDM o un servidor local. El dispositivo se puede marcar como no conforme si no cumple una versión de actualización especificada.
   - question: >
-      ¿Microsoft incluye puertas traseras o acceso a los servicios que permiten a Microsoft conectarse al dispositivo para compartir pantallas o tener soporte remoto a su manera?
+      ¿Microsoft incluye puertas traseras o acceso a servicios que permiten a Microsoft conectarse al dispositivo para el uso compartido de pantalla o el soporte remoto a su manera?
     answer: >
       * No
   - question: >

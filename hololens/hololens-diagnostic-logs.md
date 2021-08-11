@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 96fe9492da035747a22123ee1cd0c1481cd821a4f2e549b6414a21810ec268d6
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665308"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Recopilación y uso de la información de diagnóstico de dispositivos HoloLens
 
@@ -35,11 +35,11 @@ HoloLens usuarios y administradores pueden elegir entre cuatro métodos diferent
 - Diagnósticos sin conexión
 
 > [!IMPORTANT]  
-> Los registros de diagnóstico de dispositivos contienen información de identificación personal (PII), como qué procesos o aplicaciones inicia el usuario durante las operaciones típicas. Cuando varios usuarios comparten un dispositivo HoloLens (por ejemplo, los usuarios inician sesión en el mismo dispositivo mediante diferentes cuentas de Microsoft Azure Active Directory (Azure AD), los registros de diagnóstico pueden contener información de PII que se aplica a varios usuarios. Para obtener más información, vea [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+> Los registros de diagnóstico de dispositivos contienen información de identificación personal (PII), como qué procesos o aplicaciones inicia el usuario durante las operaciones típicas. Cuando varios usuarios comparten un dispositivo HoloLens (por ejemplo, los usuarios inician sesión en el mismo dispositivo con diferentes cuentas de Microsoft Azure Active Directory (Azure AD), los registros de diagnóstico pueden contener información de PII que se aplica a varios usuarios. Para obtener más información, vea [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 En la tabla siguiente se comparan distintos métodos de colección. Los nombres de método se vinculan a información más detallada en las secciones que siguen a la tabla.
 
-|Método |Prerrequisitos |Ubicaciones de datos |Acceso y uso de datos |Retención de datos |
+|Método |Requisitos previos |Ubicaciones de datos |Acceso y uso de datos |Retención de datos |
 | --- | --- | --- | --- | --- |
 |[Centro de opiniones](#feedback-hub) |Red e conexión a Internet<br /><br />Centro de opiniones aplicación<br /><br />Permiso para cargar archivos en la nube de Microsoft |Servicios en la nube de Microsoft<br /><br />HoloLens dispositivo (opcional) |El usuario solicita asistencia, acepta los términos de uso y carga los datos.<br /><br />Los empleados de Microsoft ven los datos de forma coherente con los términos de uso. |Los datos en la nube se conservan durante el período definido por la privacidad de próxima generación (NGP). A continuación, los datos se eliminan automáticamente.<br /><br />Los datos del dispositivo pueden ser eliminados en cualquier momento por un usuario que tenga permisos **de** administrador o **propietario** del dispositivo. |
 |[Configuración Solucionador](#settings-troubleshooter) |Aplicación Configuración |Dispositivo HoloLens<br /><br />Equipo conectado (opcional) |El usuario almacena los datos y solo el usuario accede a los datos (a menos que el usuario comparta específicamente los datos con otro usuario). |Los datos se conservan en el dispositivo hasta que el usuario los elimina.* |
@@ -53,16 +53,16 @@ En la tabla siguiente se comparan distintos métodos de colección. Los nombres 
 Un HoloLens usuario puede usar la aplicación de escritorio microsoft Centro de opiniones para enviar información de diagnóstico a Soporte técnico de Microsoft. Para obtener más información e instrucciones completas, vea [Enviarnos comentarios.](hololens-feedback.md)  
 
 > [!NOTE]  
-> **Usuarios comerciales o empresariales:** Si usa la aplicación Centro de opiniones para notificar un problema relacionado con MDM, el aprovisionamiento o cualquier otro aspecto de administración de dispositivos, cambie la categoría de aplicación a Enterprise **categoría** Dispositivo de  >  **administración**.
+> **Usuarios comerciales o empresariales:** Si usa la aplicación Centro de opiniones para notificar un problema relacionado con MDM, el aprovisionamiento o cualquier otro aspecto de administración de dispositivos, cambie la categoría de la aplicación a Enterprise **categoría** Dispositivo de  >  **administración**.
 
 >[!IMPORTANT]
-> Para proporcionar los mejores datos posibles para corregir problemas, se recomienda encarecidamente establecer la telemetría del dispositivo en **Opcional.** Puede establecer este valor durante la configuración rápida (OOBE) o mediante la **aplicación Configuración** configuración. Para ello mediante el uso de Configuración, seleccione **Start > Configuración > Privacy > App Diagnostics > On**(Iniciar > Configuración > diagnósticos de > aplicación de > en ).
-### <a name="prerequisites"></a>Prerrequisitos
+> Para proporcionar los mejores datos posibles para corregir problemas, se recomienda encarecidamente establecer la telemetría del dispositivo en **Opcional.** Puede establecer este valor durante la experiencia rápida (OOBE) o mediante la aplicación **Configuración** configuración. Para ello mediante el uso de Configuración, seleccione **Start > Configuración > Privacy > App Diagnostics > On**(Iniciar > Configuración > diagnósticos de > aplicación de > en ).
+### <a name="prerequisites"></a>Requisitos previos
 
 - El dispositivo está conectado a una red.
-- La Centro de opiniones aplicación está disponible en el equipo de escritorio del usuario y el usuario puede cargar archivos en la nube de Microsoft.
+- La Centro de opiniones está disponible en el equipo de escritorio del usuario y el usuario puede cargar archivos en la nube de Microsoft.
 
-### <a name="data-locations-access-and-retention"></a>Ubicaciones de datos, acceso y retención
+### <a name="data-locations-access-and-retention"></a>Ubicaciones, acceso y retención de datos
 
 Al aceptar los términos de uso del Centro de opiniones, el usuario da su consentimiento explícitamente para el almacenamiento y el uso de los datos (tal como se define en ese contrato).
 
@@ -73,7 +73,7 @@ El Centro de opiniones proporciona dos lugares para que el usuario almacene info
    > [!NOTE]  
    > Estos requisitos se aplican a los datos de todas Centro de opiniones categorías.
 
-- **El HoloLens .** Al presentar un informe en Centro de opiniones, el usuario puede seleccionar Guardar una copia local de diagnósticos y datos **adjuntos creados al proporcionar comentarios.** Si el usuario selecciona esta opción, el Centro de opiniones almacena una copia de la información de diagnóstico en el HoloLens dispositivo. Esta información sigue siendo accesible para el usuario (o cualquier persona que use esa cuenta para iniciar sesión en HoloLens). Para eliminar esta información, un usuario debe tener permisos **de** propietario del dispositivo **o** administrador en el dispositivo. Un usuario que tenga los permisos adecuados puede iniciar sesión en el Centro de opiniones, seleccionar Configuración Ver registros de diagnóstico y  >  eliminar la información.
+- **El HoloLens .** Al presentar un informe en Centro de opiniones, el usuario puede seleccionar Guardar una copia local de diagnósticos y datos **adjuntos creados al proporcionar comentarios.** Si el usuario selecciona esta opción, el Centro de opiniones almacena una copia de la información de diagnóstico en el HoloLens dispositivo. Esta información sigue siendo accesible para el usuario (o cualquier persona que use esa cuenta para iniciar sesión en HoloLens). Para eliminar esta información, un usuario  debe tener permisos **de** administrador o propietario del dispositivo en el dispositivo. Un usuario que tenga los permisos adecuados puede iniciar sesión en el Centro de opiniones, seleccionar Configuración Ver registros de diagnóstico y  >  eliminar la información.
 
 ## <a name="settings-troubleshooter"></a>Configuración Solucionador
 
@@ -90,12 +90,12 @@ Un usuario también puede configurar el comportamiento de los diagnósticos de r
 
 ### <a name="os-update-troubleshooter"></a>Solucionador de problemas de actualización del sistema operativo
 En las [compilaciones Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holographic-version-21h1) y versiones adelante:
-- Además de los solucionadores de problemas anteriores dentro de la aplicación Configuración, se ha agregado un nuevo solucionador de problemas con la adición de la nueva aplicación Configuración para actualizaciones del sistema operativo. Vaya a **Configuración -> Update & Security -> Troubleshoot -> Windows Update** y seleccione **Iniciar**. Esto le permite recopilar seguimientos mientras reproduce el problema con las actualizaciones del sistema operativo para ayudar a solucionar mejor problemas con el equipo de TI o el soporte técnico.
-### <a name="prerequisites"></a>Prerrequisitos
+- Además de los solucionadores de problemas anteriores dentro de la aplicación Configuración, se ha agregado un nuevo solucionador de problemas con la adición de la nueva aplicación Configuración para actualizaciones del sistema operativo. Vaya a **Configuración -> Update & Security -> Troubleshoot -> Windows Update** y seleccione **Iniciar**. Esto le permite recopilar seguimientos mientras reproduce el problema con las actualizaciones del sistema operativo para ayudar a solucionar mejor los problemas con el departamento de TI o soporte técnico.
+### <a name="prerequisites"></a>Requisitos previos
 
 - La **Configuración** está instalada en el dispositivo y está disponible para el usuario.
 
-### <a name="data-locations-access-and-retention"></a>Ubicaciones de datos, acceso y retención
+### <a name="data-locations-access-and-retention"></a>Ubicaciones, acceso y retención de datos
 
 Dado que el usuario inicia la recopilación de datos, el usuario da su consentimiento implícitamente al almacenamiento de la información de diagnóstico. Solo el usuario, o cualquier persona con la que el usuario comparta los datos, puede acceder a los datos.
 
@@ -114,14 +114,14 @@ En un entorno de Mobile Administración de dispositivos (MDM), el administrador 
 
 Más información:
 - [Recopilación de diagnósticos desde un dispositivo Windows](/mem/intune/remote-actions/collect-diagnostics)
-- [Versión preliminar pública de Intune: Windows 10 diagnósticos de dispositivos](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+- [Versión preliminar pública de Intune: Windows 10 diagnóstico de dispositivos](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 - El dispositivo está conectado a una red.
 - El dispositivo está inscrito en un entorno MDM que admite diagnosticLog CSP.
 
-### <a name="data-locations-access-and-retention"></a>Ubicaciones, acceso y retención de datos
+### <a name="data-locations-access-and-retention"></a>Ubicaciones de datos, acceso y retención
 
 Dado que el dispositivo forma parte del entorno administrado, el usuario da su consentimiento implícitamente al acceso administrativo a la información de diagnóstico.
 
@@ -154,7 +154,7 @@ Vea este vídeo para conocer más.
 
 Siga estos pasos para recopilar diagnósticos:
 1.  Conectar el dispositivo con un cable USB al equipo.
-2.  En Explorador de archivos en el equipo, vaya a **"This PC \<hololens-device> \Internal Storage" (Este equipo \Storage).**
+2.  En Explorador de archivos en el equipo, vaya a **"This PC \<hololens-device> \Internal Storage" (Este equipo Storage).**
 3.  Si la **carpeta Storage** interno no aparece, el dispositivo está esperando a que un usuario inicie sesión. Inicie sesión o encienda el dispositivo manteniendo presionado el botón DE ENCENDIDO durante 10 segundos.
 4.  Presione y suelte inmediatamente los **botones De encendido** y bajada de volumen juntos.
 5.  Espere un minuto para que el dispositivo prepare los archivos ZIP. (Un archivo temporal denominado HololensDiagnostics.temp puede ser visible mientras el dispositivo genera los archivos ZIP. No acceda a ese archivo ni guárdelo. Cuando finalice el proceso, se reemplazará por los archivos ZIP).

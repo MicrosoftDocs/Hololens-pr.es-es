@@ -1,5 +1,5 @@
 ---
-title: 'Guía de implementación: aplicaciones conectadas HoloLens 2 con Dynamics 365 Guides - Mantener'
+title: 'Guía de implementación: aplicaciones conectadas HoloLens 2 empresa con Dynamics 365 Guides - Mantener'
 description: Obtenga información sobre cómo mantener HoloLens 2 a través de una red conectada corporativa con Dynamics 365 Guides.
 keywords: HoloLens, administración, con conexión corporativa, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Administración de dispositivos
 author: joyjaz
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2649e370e98747562591c031b8ae262674c831e071f4ef228557dda66d2dc768
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660278"
 ---
 # <a name="maintain---corporate-connected-guide"></a>Mantener: Guía de conexión corporativa
 
@@ -50,7 +50,7 @@ Vea más: [Implementación de aplicaciones de Intune para HoloLens](/hololens/ap
 
 Con el dispositivo inscrito correctamente, ahora está preparado para implementar más aplicaciones de LOB en los dispositivos. Mientras dure esta guía, usamos una aplicación de ejemplo, pero es más probable que quiera usar aplicaciones personalizadas creadas para las necesidades de su organización.
 
-Si ya tiene una aplicación de LOB, está listo para [implementar la aplicación a través de MDM](/hololens/app-deploy-intune). Si prefiere un método diferente, revise la introducción a la implementación de aplicaciones para [HoloLens 2](/hololens/app-deploy-overview) para obtener más métodos de implementación de la aplicación lob en los dispositivos.
+Si ya tiene una aplicación de LOB, está listo para [implementar la aplicación a través de MDM](/hololens/app-deploy-intune). Si prefiere un método diferente, revise la introducción a la implementación de aplicaciones de [HoloLens 2](/hololens/app-deploy-overview) para obtener más métodos de implementación de la aplicación lob en los dispositivos.
 
 Si aún no ha creado su propia aplicación de LOB o todavía está en proceso de [](/windows/mixed-reality/design/design) creación, revise nuestros documentos de desarrollo de realidad mixta para empezar a diseñar y crear prototipos, u aprender los conceptos básicos para empezar a trabajar con el desarrollo de realidad [mixta.](/windows/mixed-reality/discover/get-started-with-mr)
 
@@ -71,11 +71,11 @@ En muchos casos, los dispositivos pueden tener restricciones de conectividad, co
 
 Hay otras restricciones de dispositivos más complejas que puede usar. Como:
 
-- Limitar las páginas que se pueden ver en la aplicación de Configuración mediante [SettingsPageVisibility](/hololens/settings-uri-list), lo que permite a los usuarios acceder solo a la configuración que necesitan ajustar, como cambiar su conexión Wi-Fi.
+- Limitar las páginas que se pueden ver en la aplicación Configuración mediante [SettingsPageVisibility](/hololens/settings-uri-list), lo que permite a los usuarios acceder solo a la configuración que necesitan ajustar, como cambiar su conexión Wi-Fi usuario.
 - Use [el modo de pantalla](/hololens/hololens-kiosk) completa para limitar la interfaz de usuario que se presenta a los usuarios en un dispositivo. Puede establecer Quioscos para mostrar una sola aplicación o varias aplicaciones con una página de inicio personalizada. Los quioscos también pueden presentar experiencias diferentes a distintos usuarios.
 - [Windows Application Control (WDAC) para](/hololens/windows-defender-application-control-wdac) evitar que aplicaciones o procesos específicos se inicien por completo.
 
-Si desea obtener información sobre métodos adicionales de administración de dispositivos o restricciones de dispositivos, siga el paso siguiente y lea nuestra información [general Administración de dispositivos dispositivos.](/hololens/hololens-csp-policy-overview)
+Si desea obtener información sobre métodos adicionales de administración de dispositivos o restricciones de dispositivos, siga el paso siguiente y lea nuestra información [general Administración de dispositivos de dispositivos.](/hololens/hololens-csp-policy-overview)
 
 
 

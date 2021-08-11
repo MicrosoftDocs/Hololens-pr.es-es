@@ -1,6 +1,6 @@
 ---
 title: HoloLens Cifrado de BitLocker
-description: Obtenga información sobre cómo habilitar el cifrado de dispositivos BitLocker para proteger los archivos almacenados en HoloLens de realidad mixta.
+description: Obtenga información sobre cómo habilitar el cifrado de dispositivos BitLocker para proteger los archivos almacenados en HoloLens dispositivos de realidad mixta.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662752"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>Cifrado de BitLocker para HoloLens (1.ª generación)
 
@@ -36,7 +36,7 @@ Puede usar el proveedor de Administración de dispositivos móviles (MDM) para a
 
 Para otras herramientas de MDM, consulte la documentación del proveedor de MDM para obtener instrucciones. Si el proveedor de MDM requiere un URI personalizado para el cifrado de dispositivos, use la siguiente configuración:
 
-- **Nombre:** nombre de su elección
+- **Nombre:** un nombre de su elección
 - **Descripción:** opcional
 - **OMA-URI:**`./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
 - **Tipo de datos**: entero
@@ -78,7 +78,7 @@ Los paquetes de aprovisionamiento son archivos creados por la Windows diseñador
 
     También puedes hacer clic en Examinar para cambiar la ubicación de salida predeterminada.
 
-1. Haga clic en **Next**.
+1. Haga clic en **Siguiente**.
 1. Haz clic en **Compilar** para comenzar a compilar el paquete. La información del proyecto se muestra en la página de compilación y la barra de progreso indica el estado de la compilación.
 1. Cuando la compilación se haya completado, haz clic en **Finalizar**.
 
@@ -99,6 +99,6 @@ Los paquetes de aprovisionamiento son archivos creados por la Windows diseñador
 
 El cifrado es silencioso en HoloLens. Para comprobar el estado de cifrado del dispositivo:
 
-- En HoloLens, vaya **a** Configuración  >  **Sistema**  >  **acerca de**. **BitLocker** está **habilitado si** el dispositivo está cifrado. 
+- En HoloLens, vaya **a Configuración**  >  **System**  >  **About**. **BitLocker** está **habilitado** si el dispositivo está cifrado. 
 
     ![Acerca de la pantalla que muestra BitLocker habilitado](images/about-encryption.png)

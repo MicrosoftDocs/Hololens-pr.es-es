@@ -1,6 +1,6 @@
 ---
 title: Insider Preview para Microsoft HoloLens
-description: Obtenga información sobre cómo empezar a trabajar con compilaciones de Insider y proporcionar comentarios valiosos para nuestra próxima actualización de sistema operativo principal para HoloLens.
+description: Obtenga información sobre cómo empezar a trabajar con las compilaciones de Insider y proporcionar comentarios valiosos sobre nuestra próxima actualización principal del sistema operativo para HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,37 +16,37 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664053"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview para Microsoft HoloLens
 
-Le damos la bienvenida a las últimas compilaciones de Insider Preview para HoloLens. Es fácil empezar a trabajar [y proporcionar](hololens-insider.md#start-receiving-insider-builds) comentarios valiosos para nuestra próxima actualización importante del sistema operativo para HoloLens.
+Le damos la bienvenida a las últimas compilaciones de Insider Preview para HoloLens. Es fácil empezar a trabajar [y proporcionar](hololens-insider.md#start-receiving-insider-builds) comentarios valiosos para nuestra próxima actualización del sistema operativo principal para HoloLens.
 
 ## <a name="windows-insider-release-notes"></a>Windows Notas de la versión de Insider
 
-Nos complace empezar a usar nuevas características para Windows Insiders. Las nuevas compilaciones pasarán a los canales de desarrollo y beta para las actualizaciones más recientes. Seguiremos actualizando esta página a medida que agreguemos más características y actualizaciones a nuestras compilaciones Windows Insider. Prepárese para mezclar estas actualizaciones en su realidad.
+Nos complace empezar a usar nuevas características para Windows Insider. Las nuevas compilaciones se actualizarán a los canales de desarrollo y beta para las actualizaciones más recientes. Seguiremos actualizando esta página a medida que agreguemos más características y actualizaciones a nuestras compilaciones Windows Insider. Prepárese para mezclar estas actualizaciones en su realidad.
 
 | Característica                 | Descripción                | Usuario o escenario | Compilación introducida |
 |-------------------------|----------------------------|--------------|------------------|
-| [Cambios de CSP para los informes HoloLens detalles](#csp-changes-for-reporting-hololens-details) | Nuevos CSP para para consultar datos | Administradores de TI    | 20348.1403                 |
+| [Cambios de CSP para informes HoloLens detalles](#csp-changes-for-reporting-hololens-details) | Nuevos CSP para para consultar datos | Administradores de TI    | 20348.1403                 |
 | [Directiva de inicio de sesión automático controlada por CSP](#auto-login-policy-controlled-by-csp) | Se usa para iniciar sesión automáticamente en una cuenta | Administradores de TI | 20348.1405 |
-| [Compatibilidad con archivos PFX para el Administrador de certificados](#pfx-file-support-for-certificate-manager) | Adición de certificados PFX a través de Configuración interfaz de usuario | Usuario final | 20348.1405 |
-| [Ver el informe de diagnóstico avanzado en Configuración en HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Visualización de registros de diagnóstico de MDM en el dispositivo | Solución de problemas | 20348.1405 |
-| [Notificaciones de diagnóstico sin conexión](#offline-diagnostics-notifications) | Comentarios de reos para la recopilación de registros | Solución de problemas | 20348.1405 |
+| [Compatibilidad con archivos PFX para el Administrador de certificados](#pfx-file-support-for-certificate-manager) | Agregar certificados PFX a través de Configuración interfaz de usuario | Usuario final | 20348.1405 |
+| [Ver el informe de diagnóstico avanzado en Configuración en HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Visualización de los registros de diagnóstico de MDM en el dispositivo | Solución de problemas | 20348.1405 |
+| [Notificaciones de diagnóstico sin conexión](#offline-diagnostics-notifications) | Comentarios sobre la recopilación de registros | Solución de problemas | 20348.1405 |
 | [Use solo aplicaciones de la tienda privada solo para Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Configuración de la aplicación de la tienda para mostrar solo las aplicaciones de la organización | Administración de TI | 20348.1408 |
-| [Mejoras en la recopilación de registros de almacenamiento bajo](#low-storage-log-collection-improvements) | Mejoras en los escenarios de recopilación de registros en situaciones de almacenamiento bajo. | Administración de TI | 20348.1412 |
+| [Mejoras en la recopilación de registros de almacenamiento bajo](#low-storage-log-collection-improvements) | Mejoras en los escenarios de recopilación de registros durante situaciones de almacenamiento bajo. | Administración de TI | 20348.1412 |
 | [Correcciones y mejoras](hololens-insider.md#fixes-and-improvements) | Correcciones y mejoras para HoloLens. | Todo | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>Cambios de CSP para informes HoloLens detalles
 
 - Introducido en la Windows Insider, 20348.1403
 
-Los siguientes CSP se han actualizado con nuevas formas de informar de la información de los HoloLens dispositivos.
+Los siguientes CSP se han actualizado con nuevas formas de notificar información de los HoloLens dispositivos.
 
 #### <a name="devdetail-csp---free-storage"></a>CSP de DevDetail: Storage
 
@@ -59,9 +59,9 @@ Csp de DevDetail ahora también notifica espacio de almacenamiento libre en Holo
 Csp de DeviceStatus ahora también notifica SSID y BSSID de Wi-Fi red con la HoloLens está conectada activamente. A continuación se incluyen los nodos específicos que contienen esta información.
 
 - ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*dirección mac del Wi-Fi /SSID*
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*dirección mac de Wi-Fi adaptador*/BSSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*dirección mac del Wi-Fi /BSSID*
 
-Ejemplo de blob syncml (para proveedores de MDM) para consultar NetworkIdentifiers
+Blob syncml de ejemplo (para proveedores de MDM) para consultar NetworkIdentifiers
 
 ```xml
 <SyncML>
@@ -83,45 +83,45 @@ Ejemplo de blob syncml (para proveedores de MDM) para consultar NetworkIdentifie
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Directiva de inicio de sesión automático controlada por CSP
 
-Esta nueva directiva AutoLogonUser controla si un usuario iniciará sesión automáticamente. Algunos clientes quieren configurar dispositivos que están vinculados a una identidad, pero no quieren ninguna experiencia de inicio de sesión. Imagine seleccionar un dispositivo y usar asistencia remota inmediatamente. O bien, tener la ventaja de poder distribuir rápidamente HoloLens dispositivos y permitir a sus usuarios finales acelerar el inicio de sesión.
+Esta nueva directiva AutoLogonUser controla si un usuario iniciará sesión automáticamente. Algunos clientes quieren configurar dispositivos que están vinculados a una identidad, pero no quieren ninguna experiencia de inicio de sesión. Imagine seleccionar un dispositivo y usar asistencia remota inmediatamente. O bien, tener la ventaja de poder distribuir rápidamente HoloLens dispositivos y permitir a los usuarios finales acelerar el inicio de sesión.
 
 Cuando la directiva se establece en un valor no vacío, especifica la dirección de correo electrónico del usuario de inicio de sesión automático. El usuario especificado debe iniciar sesión en el dispositivo al menos una vez para habilitar el inicio de sesión automático.
 
-El OMA-URI del nuevo valor de `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser` cadena de directiva
+OMA-URI del nuevo valor de cadena `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser` de directiva
 
 - El usuario con la misma dirección de correo electrónico tendrá habilitado el inicio de sesión automático.
 
-En un dispositivo donde se configura esta directiva, el usuario especificado en la directiva tendrá que iniciar sesión al menos una vez. Los reinicios posteriores del dispositivo después del primer inicio de sesión harán que el usuario especificado inicie sesión automáticamente. Solo se admite un usuario de inicio de sesión automático. Una vez habilitado, el usuario que ha iniciado sesión automáticamente no podrá cerrar sesión manualmente. Para iniciar sesión como un usuario diferente, la directiva debe deshabilitarse primero.
+En un dispositivo donde se configura esta directiva, el usuario especificado en la directiva tendrá que iniciar sesión al menos una vez. Los reinicios posteriores del dispositivo después del primer inicio de sesión harán que el usuario especificado inicie sesión automáticamente. Solo se admite un único usuario de inicio de sesión automático. Una vez habilitado, el usuario que ha iniciado sesión automáticamente no podrá cerrar sesión manualmente. Para iniciar sesión como un usuario diferente, primero se debe deshabilitar la directiva.
 
 > [!NOTE]
 > - Algunos eventos, como las actualizaciones principales del sistema operativo, pueden requerir que el usuario especificado vuelva a iniciar sesión en el dispositivo para reanudar el comportamiento de inicio de sesión automático. 
-> - El inicio de sesión automático solo es compatible con usuarios de MSA y AAD.
+> - El inicio de sesión automático solo se admite para los usuarios de MSA y AAD.
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>Compatibilidad con archivos PFX para el Administrador de certificados
 
-Se introdujo en Windows Insider 20348.1405. Hemos agregado compatibilidad con el Administrador [de](certificate-manager.md) certificados para usar ahora certificados .pfx. Cuando los usuarios navegan a **Configuración** actualizar & certificados de seguridad y seleccionan Instalar un certificado, la interfaz de usuario ahora admite el archivo de certificado  >    >  .pfx. 
-Los usuarios pueden importar el certificado .pfx, con clave privada, al almacén de usuarios o al almacén de máquinas.
+Se introdujo en Windows Insider 20348.1405. Hemos agregado compatibilidad con el Administrador de certificados [para](certificate-manager.md) usar ahora certificados .pfx. Cuando los usuarios navegan a **Configuración** actualizar & certificados de seguridad y seleccionan Instalar un certificado, la interfaz de usuario  >    >  ahora admite el archivo de certificado .pfx. 
+Los usuarios pueden importar el certificado .pfx, con clave privada, al almacén de usuarios o al almacén del equipo.
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Ver el informe de diagnóstico avanzado en Configuración en HoloLens
 
-En el caso de los dispositivos administrados al solucionar problemas de comportamiento, confirmar que se aplica una configuración de directiva esperada es un paso importante. Antes de esta nueva característica, esto se tenía que hacer fuera del dispositivo a través de MDM o cerca del dispositivo después de exportar los registros de diagnóstico de MDM recopilados a través de Configuración Accounts Access work or school (Acceso a cuentas de Configuración trabajo o escuela), y seleccione Export your management logs and viewed on **a** nearby PC (Exportar los registros de administración y verlos en un equipo  ->    >  cercano). 
+Para los dispositivos administrados al solucionar problemas de comportamiento, confirmar que se aplica una configuración de directiva esperada es un paso importante. Antes de esta nueva característica, esto se tenía que hacer fuera del dispositivo a través de MDM o cerca del dispositivo después de exportar los registros de diagnóstico de MDM recopilados a través de Configuración Accounts Access work or school (Acceso a cuentas de **Configuración** trabajo o escuela), y seleccionar Exportar los registros de administración y verlos en un equipo  ->    >  cercano. 
 
-Ahora los diagnósticos de MDM se pueden ver en el dispositivo mediante el explorador Edge. Para ver más fácilmente el informe de diagnóstico de MDM, vaya a la página Acceso profesional o educativo y seleccione **Ver informe de diagnóstico avanzado**. Esto generará y abrirá el informe en una nueva ventana de Edge.
+Ahora los diagnósticos de MDM se pueden ver en el dispositivo mediante el explorador Edge. Para ver más fácilmente el informe de diagnóstico de MDM, vaya a la página Acceso profesional o educativo y seleccione **Ver informe de diagnóstico avanzado.** Esto generará y abrirá el informe en una nueva ventana perimetral.
 
 ![Vea el informe de diagnóstico avanzado en Configuración aplicación.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>Notificaciones de diagnóstico sin conexión
 
-Se trata de una actualización de una característica existente denominada [Diagnósticos sin conexión.](hololens-diagnostic-logs.md#offline-diagnostics) Anteriormente, no había ningún indicador claro para los usuarios de que habían desencadenado la recopilación de diagnóstico o que se había completado.
-Ahora agregados en Windows compilaciones de Insider, hay dos formas de comentarios sobre el diagnóstico sin conexión. El primero es notificaciones del sistema que se muestran para cuando se inicia y se completa la recopilación. Se mostrarán cuando el usuario haya iniciado sesión y tenga objetos visuales.
+Se trata de una actualización de una característica existente denominada [Diagnósticos sin conexión.](hololens-diagnostic-logs.md#offline-diagnostics) Anteriormente, no había ningún indicador claro para los usuarios de que hubieran desencadenado la recopilación de diagnósticos o que se hubiera completado.
+Ahora se han agregado Windows compilaciones de Insider, hay dos formas de comentarios sobre el diagnóstico sin conexión. La primera de las notificaciones del sistema se muestra para cuando se inicia y se completa la recopilación. Se mostrarán cuando el usuario haya iniciado sesión y tenga objetos visuales.
 
 ![Notificación del sistema para recopilar registros.](./images/logcollection1.jpg)
 
 ![Notificación del sistema cuando se completa la recopilación de registros.](./images/logcollection2.jpg)
  
-Dado que los usuarios a menudo usan diagnósticos sin conexión como mecanismo de recopilación de registros de reserva para cuando no tienen acceso a una pantalla, no pueden iniciar sesión o todavía están en la OOBE, también habrá una indicación de audio que se reproducirá cuando se recopilibrán los registros. Este sonido se reproducirá además de la notificación del sistema.
+Dado que los usuarios suelen usar diagnósticos sin conexión como mecanismo de recopilación de registros de reserva cuando no tienen acceso a una pantalla, no pueden iniciar sesión o siguen en la OOBE, también habrá una indicación de audio reproducida cuando se recopilibrán los registros. Este sonido se reproducirá además de la notificación del sistema.
 
-Esta nueva característica se habilitará cuando el dispositivo se actualice y no es necesario habilitarla ni administrarla. En cualquier caso de que no se puedan mostrar ni escuchar estos nuevos comentarios, se seguirá generando diagnóstico sin conexión.
+Esta nueva característica se habilitará cuando el dispositivo se actualice y no es necesario habilitarla ni administrarla. En caso de que no se puedan mostrar ni escuchar estos nuevos comentarios, se seguirá generando Diagnósticos sin conexión.
 
 Esperamos que con esta adición más reciente de comentarios sobre el lenguaje sea más fácil recopilar datos de diagnóstico y poder solucionar los problemas más rápidamente.
 

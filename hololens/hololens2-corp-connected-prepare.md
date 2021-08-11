@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88e7d0614cf95f32eaa0434724eddbcb5b8cf863
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636986"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660075"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Preparación: Guía de conexión corporativa
 ## <a name="infrastructure-essentials"></a>Información esencial de la infraestructura
@@ -31,7 +31,7 @@ En escenarios de implementación personal y corporativo, un sistema de mobile Ad
 ## <a name="azure-active-directory"></a>Azure Active Directory
 Azure AD es un servicio de directorio en la nube que proporciona administración de identidades y acceso. Las organizaciones que usan Microsoft Office 365 o Intune ya usan Azure AD, que tiene tres ediciones: Gratis, Premium P1 y Premium P2 (consulte [Azure Active Directory ediciones](https://azure.microsoft.com/documentation/articles/active-directory-editions)). Todas las ediciones admiten Azure AD registro de dispositivos, pero Premium P1 es necesario para habilitar la inscripción automática de MDM que usaremos en esta guía más adelante.
 > [!Important]
-> Es esencial tener una Azure AD ya HoloLens dispositivos no admiten la unión a AD local. Si aún no tiene una Azure AD, siga las instrucciones para empezar a trabajar y Crear un nuevo [inquilino en Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> Es esencial tener una Azure AD, ya HoloLens dispositivos no admiten la unión a AD local. Si aún no tiene una Azure AD, siga las instrucciones para empezar a trabajar y Crear un nuevo [inquilino en Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Administración de identidades
 En esta guía, la [identidad usada](/hololens/hololens-identity) se usará Azure AD cuentas. Hay varias ventajas para las Azure AD, como:
@@ -77,7 +77,7 @@ También debe publicar la dirección URL de NDES externa a la red corporativa me
 
 Si la red aún no admite SCEP o no está seguro de si la red está configurada correctamente para SCEP con Intune, consulte Configuración de la infraestructura para admitir SCEP con [Intune.](/mem/intune/protect/certificates-scep-configure)
 
-Si la infraestructura ya admite SCEP, [](/mem/configmgr/protect/deploy-use/create-certificate-profiles) deberá crear un perfil para cada certificado SCEP que HoloLens 2 usará. [](/mem/intune/protect/certificates-profile-scep) Si tiene problemas con SCEP, use Solución de problemas de uso de perfiles de certificado [SCEP](/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles)para aprovisionar certificados con Microsoft Intune .
+Si la infraestructura ya admite SCEP, [](/mem/configmgr/protect/deploy-use/create-certificate-profiles) deberá crear un perfil para cada certificado SCEP que HoloLens 2 va [a](/mem/intune/protect/certificates-profile-scep) usar. Si tiene problemas con SCEP, use Solución de problemas de uso de perfiles de certificado [SCEP](/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles)para aprovisionar certificados con Microsoft Intune .
 
 ## <a name="pkcs"></a>PKCS
 Intune también admite el uso de certificados de par de claves públicas y privadas (PKCS). Referencia [Use certificados de clave pública y privada en Microsoft Intune](/mem/intune/protect/certificates-pfx-configure) para obtener más información.

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637020"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660131"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Guía de implementación: Información general HoloLens 2 con Dynamics 365 Guides corporativo
 
@@ -27,7 +27,7 @@ Esta guía ayudará a los profesionales de TI a planear e implementar Microsoft 
 
 En esta guía, se explica cómo inscribir los dispositivos en la administración de dispositivos existente, aplicar licencias según sea necesario y validar que los usuarios finales pueden trabajar con una guía de Dynamics 365, así como usar aplicaciones de línea de negocio personalizadas, después de configurar el dispositivo. 
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 La siguiente infraestructura ya debe estar en su lugar:
 - Wi-Fi
@@ -41,12 +41,12 @@ La siguiente infraestructura ya debe estar en su lugar:
     - Configuración de proxy
 - Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
     - Se admiten uno o varios usuarios por dispositivo.
-- Distintos niveles de configuraciones de bloqueo de dispositivos aplicadas en función de casos de uso específicos, desde Totalmente abierto hasta Quiosco de aplicación única.
+- Distintos niveles de configuraciones de bloqueo de dispositivos aplicadas en función de casos de uso específicos, desde Totalmente abierto hasta Pantalla completa de aplicación única.
 
 ## <a name="guides-licensing-and-requirements"></a>[Guías de licencias y requisitos](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 
 - Cuenta de Azure AD
-- Dynamics 365 Guides aplicaciones PC y HoloLens
+- Dynamics 365 Guides aplicaciones pc y HoloLens
 - Dynamics 365 Guides suscripción
     - Microsoft Dataverse (incluido)
     - Power Apps (incluido)

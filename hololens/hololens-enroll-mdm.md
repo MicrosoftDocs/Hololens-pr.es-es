@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6c279664fa6051fab2f5e2e8f61e70b55704ae7c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3c17ad2397d87660cb2013604029864f9c36abdbf520710c4fe5952e3440e3a5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664234"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Inscripción de HoloLens en la MDM
 
@@ -40,7 +40,7 @@ En función del tipo de [identidad elegido](hololens-identity.md) durante la OOB
     - Por Azure AD, [la inscripción automática de MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) solo se produce si Azure AD se ha configurado con direcciones URL de inscripción.
      
 - Si identity es Azure AD y el dispositivo se ha registrado previamente con el servidor MDM de Intune con un perfil de configuración específico asignado, azure AD-Join y la inscripción automática de [MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) se producirán durante la configuración automática.
-    - También se [denomina Flujo de Autopilot](hololens2-autopilot.md) disponible [en las compilaciones 19041.1103+](hololens-release-notes.md#windows-holographic-version-2004).
+    - También se [denomina Flujo de Autopilot](hololens2-autopilot.md) disponible en [las compilaciones 19041.1103+](hololens-release-notes.md#windows-holographic-version-2004).
     
 
 - Si Identity es MSA, use Configuración **App**  ->  **Access Work o School**  ->  **Conectar** botón.

@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635235"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661801"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Reinicio, restablecimiento o recuperación HoloLens (1ª generación)
 
@@ -52,7 +52,7 @@ La manera más segura de reiniciar el HoloLens es mediante Cortana, que suele se
 
 Si todavía no puede reiniciar el dispositivo, intente reiniciarlo con el **botón de** encendido:
 
-1. Mantenga presionado el **botón de** encendido durante 5 segundos. Después de 1 segundo, los cinco LED se encienden y, a continuación, se apagan lentamente uno por uno de derecha a izquierda. Después de 5 segundos, todos los LED estarán apagados, lo que indica un apagado correcto.
+1. Mantenga presionado el **botón de** encendido durante 5 segundos. Después de 1 segundo, los cinco LED se encienden y, a continuación, se apagan lentamente uno por uno de derecha a izquierda. Después de 5 segundos, todos los LED estarán desactivados, lo que indica un apagado correcto.
       
    > [!IMPORTANT]
    > Deje de presionar el botón inmediatamente después de que se apaguen todos los LED.
@@ -68,7 +68,7 @@ Si el procedimiento anterior no funcionaba, intente reiniciar el dispositivo med
 
 ### <a name="do-an-unsafe-forced-restart"></a>Realizar un reinicio forzado no seguro
 
-Si los métodos anteriores no reiniciaron la HoloLens, fuerce un reinicio. Este método equivale a quitar y volver a instalar la batería. Es peligroso porque podría dejar el dispositivo en estado dañado. Si esto sucede, tendrá que flashear el HoloLens.  
+Si los métodos anteriores no reiniciaron la HoloLens, fuerce un reinicio. Este método equivale a quitar y reinstalar la batería. Es peligroso porque podría dejar el dispositivo en estado dañado. Si esto sucede, tendrá que flashear el HoloLens.  
 
 > [!WARNING]
 > Se trata de un método potencialmente perjudicial y solo se debe usar si los métodos mencionados anteriormente no funcionaban.
@@ -90,16 +90,16 @@ En algunos casos, es posible que quiera volver a una versión anterior del softw
 Para volver a una versión anterior de HoloLens 1, siga estos pasos:
 
 1. Asegúrese de que no tiene teléfonos ni dispositivos Windows conectados al equipo.
-1. En el equipo, descargue la Windows [Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379)
-1. Descargue el paquete [de HoloLens de recuperación de la actualización de aniversario.](https://aka.ms/hololensrecovery)
-1. Cuando finalicen las descargas, abra el **Explorador de archivos**  >  **Descargas.** Haga clic con el botón derecho en la carpeta comprimida que acaba de descargar y seleccione **Extraer todo**  >  **extraer** para descomprimirla.
+1. En el equipo, descargue la [Windows Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379)
+1. Descargue el [paquete de recuperación de la actualización de aniversario de HoloLens](https://aka.ms/hololensrecovery).
+1. Cuando finalicen las descargas, abra el **Explorador de archivos**  >  **Descargas.** Haga clic con el botón derecho en la carpeta comprimida que acaba de descargar y seleccione **Extraer**  >  **todo extraer** para descomprimirla.
 1. Conectar el HoloLens al equipo mediante el cable micro USB con el que se incluye. (Incluso si ha estado usando otros cables para conectar el HoloLens, este funciona mejor).
-1. WDRT detectará automáticamente el HoloLens. Seleccione el **icono Microsoft HoloLens.**
+1. WDRT detectará automáticamente el HoloLens. Seleccione el icono **Microsoft HoloLens**.
 1. En la siguiente pantalla, seleccione **Selección manual** del paquete y elija el archivo de instalación incluido en la carpeta que descomprimió en el paso 4. (Busque un archivo con la extensión .ffu).
 1. Seleccione **Instalar software** y siga las instrucciones.
 
 > [!NOTE]
-> Si WDRT no detecta el HoloLens, intente reiniciar el equipo. Si eso no funciona, seleccione Mi dispositivo no se detectó, **seleccione** Microsoft HoloLens y, a continuación, siga las instrucciones.
+> Si WDRT no detecta el HoloLens, intente reiniciar el equipo. En caso de no funcionar, seleccione **No se ha detectado mi dispositivo** y **Microsoft HoloLens**; a continuación, siga las instrucciones.
 
 ## <a name="reset-to-factory-settings"></a>Restablecimiento de la configuración de fábrica
 
@@ -130,7 +130,7 @@ Para usar la herramienta, necesita un equipo que ejecute Windows 10 o posterior 
 
 ### <a name="recover-your-hololens"></a>Recuperación de HoloLens
 
-1. Descargue e instale la [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) en el equipo.
+1. Descargue e instale la [herramienta Windows Recuperación de dispositivos](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) en el equipo.
 1. Conectar el HoloLens (1.ª generación) al equipo mediante el cable Micro USB que se incluye con la HoloLens.
 1. Abra la Windows Device Recovery Tool y siga las instrucciones.
 

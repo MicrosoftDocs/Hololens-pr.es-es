@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6407517bca9efd02fdaf45a78cba7a215ec05670
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660206"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Implementación: Guía de conexión corporativa
 
@@ -39,7 +39,7 @@ Si el dispositivo no está actualmente en un estado de configuración de fábric
 
 2. Conectar a una red Wi-Fi que no requiera certificados para unirse a la red Wi-Fi. Esto permitirá que el dispositivo descargue el certificado para que se utilice en el equipo de la Wi-Fi después de la configuración inicial.
 
-3. El mensaje crítico será cuando se le pregunte **si Quién posee este HoloLens?** Seleccione **My work or school owns it (Mi** trabajo o escuela es el propietario) y escriba sus Azure AD de cuenta.
+3. El mensaje crítico será cuando se le pregunte **si Quién posee este HoloLens?** Seleccione **My work or school owns it (Mi** trabajo o escuela es el propietario) y escriba sus credenciales Azure AD cuenta.
 
 4. Cuando la inscripción se realiza correctamente, se le pedirá que configure un PIN. Este PIN es único para este dispositivo para este usuario. También se le pedirán exámenes de Iris, datos de voz y configuración de telemetría y, por último, podrá obtener información sobre cómo abrir el menú Inicio y completar OOBE.
 
@@ -81,13 +81,13 @@ Abra el menú Inicio y seleccione **Todas las aplicaciones.** Dependiendo del n�
 
 Para validar la instalación de la aplicación en el dispositivo, puede hacerlo a través de **acceso a** cuentas de Configuración profesionales o educativas; seleccione la cuenta y luego el botón Información y desplácese hacia abajo para ver diferentes configuraciones y aplicaciones aplicadas al dispositivo desde  ->    ->  MDM. 
 
-Para validar la instalación desde Intune, vaya a la página de estado de instalación aplicaciones -> del portal de [MEM](https://endpoint.microsoft.com/#home)  ->     -> *TheNameOfYourApp*  ->  **Device.**
+Para validar la instalación desde [](https://endpoint.microsoft.com/#home)Intune, vaya a la página de estado de instalación aplicaciones -> de mem. Todas las  ->   aplicaciones   -> *TheNameOfYourApp*  ->  **Device.**
 
 Vea más: [Implementación de aplicaciones de Intune para HoloLens](/hololens/app-deploy-intune)
 
 ## <a name="validate-dynamics-365-guides"></a>Validar Dynamics 365 Guides
 
-Hay modos para la aplicación Guides en HoloLens, creación y funcionamiento. Tendrá que terminar de crear una guía antes de operarla.
+Hay modos para la aplicación Guides en HoloLens, creación y funcionamiento. Deberá terminar de crear una guía antes de operarla.
 
 ### <a name="authoring-the-guide"></a>Creación de la guía
 

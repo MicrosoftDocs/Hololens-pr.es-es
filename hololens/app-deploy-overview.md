@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 019700c7e35f31c234c9fe69870cae54b3364b631253c37a17d8eaa0fe3053bd
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665240"
 ---
 # <a name="app-management-overview"></a>Administración de aplicaciones: Información general
 
@@ -34,10 +34,10 @@ Una solución MDM permite a los responsables de la toma de decisiones de TI y a 
 
 La Administración de dispositivos móvil (MDM) es aplicable a:
 
-* MDM implementado + Portal de empresa
+* MDM implementada + Portal de empresa
 * Aplicaciones de línea de negocio (no públicas)
 * Instalación manual de aplicaciones disponibles mediante Portal de empresa
-* Inserción de administración a través de la directiva MDM
+* Inserción de administrador a través de la directiva MDM
 * Actualización automática a través de MDM
 
 ## <a name="microsoft-store-for-business"></a>Microsoft Store para Empresas

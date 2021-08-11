@@ -1,5 +1,5 @@
 ---
-title: Información general de cloud connected HoloLens 2 con Remote Assist
+title: Información general sobre las aplicaciones conectadas HoloLens 2 la nube con Remote Assist
 description: Aprenda a inscribir dispositivos HoloLens 2 a través de una red conectada a la nube mediante Dynamics 365 Remote Assist.
 keywords: HoloLens, administración, conexión a la nube, Remote Assist, AAD, Azure AD, MDM, Mobile Administración de dispositivos
 author: evmill
@@ -14,20 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660311"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guía de implementación: información general HoloLens 2 conexión a la nube Remote Assist: información general
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guía de implementación: información general HoloLens 2 conexión Remote Assist la nube
 
 Esta guía ayudará a los profesionales de TI a planear e implementar Microsoft HoloLens 2 dispositivos con Remote Assist en su organización. Esto servirá como modelo para las implementaciones de prueba de concepto en su organización en varios casos HoloLens 2 uso. La configuración es similar a [Escenario A: Implementación en dispositivos de conexión a la nube.](common-scenarios.md#scenario-a) 
 
-Durante la guía, se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar inmediatamente Remote Assist tras la configuración del dispositivo. Para ello, se retendrán en cuenta los elementos importantes de infraestructura necesarios para configurarse y ejecutarse, con lo que se consigue la implementación a escala con HoloLens 2. No se aplicarán otras restricciones o configuraciones de dispositivos en esta guía; sin embargo, le recomendamos que explore esas opciones después de finalizar.
+Durante la guía, se explica cómo inscribir los dispositivos en la administración de dispositivos, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar inmediatamente Remote Assist tras la configuración del dispositivo. Para ello, remos por los elementos importantes de infraestructura necesarios para configurarse y ejecutarse, con lo que se consigue la implementación a escala con HoloLens 2. No se aplicarán otras restricciones o configuraciones de dispositivos en esta guía; sin embargo, le recomendamos que explore esas opciones después de finalizar.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 La siguiente infraestructura debe estar en su lugar para implementar el HoloLens 2. Si no es así, la configuración de Azure e Intune se incluye en esta guía:
 
@@ -49,20 +49,20 @@ Remote Assist permite el mantenimiento y la reparación colaborativos, la inspec
 
 ### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist licencias y requisitos
 
-- Azure AD cuenta (necesaria para comprar la suscripción y asignar licencias)
-- [Remote Assist suscripción](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o Remote Assist [prueba)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- Cuenta de Azure AD (necesaria para comprar la suscripción y asignar licencias)
+- [Suscripción a Remote Assist](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o [prueba de Remote Assist](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
-#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist usuario
+#### <a name="dynamics-365-remote-assist-user"></a>Usuario de Dynamics 365 Remote Assist
 
-- Remote Assist licencia
+- Licencia de Remote Assist
 - Conectividad de red
 
-#### <a name="microsoft-teams-user"></a>Microsoft Teams usuario
+#### <a name="microsoft-teams-user"></a>Usuario de Microsoft Teams
 
-- Microsoft Teams o [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- Microsoft Teams o [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Conectividad de red
 
-Si planea implementar este escenario [entre](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)inquilinos, puede que necesite una licencia de Information Barriers. Para determinar si se requiere una licencia de Barrera de información, consulte Vendors and customers use full Dynamics 365 Remote Assist capabilities (Proveedores y clientes [usan Dynamics 365 Remote Assist funcionalidades).](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)
+Si planea implementar este [escenario entre inquilinos](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants), puede que necesite una licencia de Barreras a la información. Para determinar si se requiere una licencia de Barrera de información, consulte Vendors and customers use full Dynamics 365 Remote Assist capabilities (Proveedores y clientes usan [funcionalidades Dynamics 365 Remote Assist información).](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)
 
 ## <a name="in-this-guide-you-will"></a>Esta guía le permitirá:
 
@@ -70,7 +70,7 @@ Preparación:
 
 > [!div class="checklist"]
 > - [Obtenga información sobre los aspectos básicos de la infraestructura HoloLens 2 dispositivos.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Obtenga más información Azure AD configurar una si&#39;no la tiene.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Obtenga más información Azure AD configurar una si no&#39;la tiene.](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [Obtenga información sobre la administración de identidades y cómo configurar mejor Azure AD cuentas.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [Obtenga más información sobre MDM y configure con Intune si&#39;ya tiene uno listo.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Obtenga información sobre los requisitos de red de Remote Assist.](hololens2-cloud-connected-prepare.md#network)
