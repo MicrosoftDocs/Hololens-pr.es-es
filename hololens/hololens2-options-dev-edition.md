@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658870"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -90,7 +90,7 @@ Elija el motor, descargue las herramientas y desempolve el teclado. Le damos la 
 ## <a name="next-steps"></a>Pasos siguientes
 
 1. Empiece a interactuar inmediatamente con Mixed Reality y a explorar Windows 10 en su HoloLens: eche un vistazo a la aplicación **Recomendaciones** para ver tutoriales prácticos sobre cómo interactuar con las manos. Use el gesto Inicio para ir a Inicio o diga "Ir a Inicio" y seleccione "Recomendaciones".
-1. Haga clic a continuación para obtener más información sobre cómo usar HoloLens 2.
+1. Haga clic a continuación para seguir leyendo sobre cómo usar HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Introducción a HoloLens 2](hololens2-basic-usage.md)

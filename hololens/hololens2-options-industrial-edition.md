@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 7d9af1fb7d2c87b13cee926c3172ed2ce5411d9da73ab4b880efb1bd837ca3e5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659035"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -45,7 +45,7 @@ HoloLens 2 Industrial Edition se puede limpiar con una solución de alcohol isop
 ## <a name="next-steps"></a>Pasos siguientes
 
 1. Empiece a interactuar inmediatamente con Mixed Reality y a explorar Windows 10 en su HoloLens: eche un vistazo a la aplicación **Recomendaciones** para ver tutoriales prácticos sobre cómo interactuar con las manos. Use el gesto Inicio para ir a Inicio o diga "Ir a Inicio" y seleccione "Recomendaciones".
-1. Haga clic a continuación para obtener más información sobre cómo usar HoloLens 2.
+1. Haga clic a continuación para seguir leyendo sobre cómo usar HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Introducción a HoloLens 2](hololens2-basic-usage.md)
