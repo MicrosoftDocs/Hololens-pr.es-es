@@ -34,6 +34,7 @@
 #### [Mejora de la calidad visual y la comodidad](hololens-calibration.md)
 #### [Mapa de espacios físicos con HoloLens](hololens-spaces.md)
 #### [Consideraciones sobre el entorno de HoloLens](hololens-environment-considerations.md)
+#### [Plataformas móviles](hololens2-moving-platform.md)
 ### Conexión de HoloLens 2
 #### [Conexión de HoloLens a una red](hololens-network.md)
 #### [Conexión a dispositivos Bluetooth y USB-C](hololens-connect-devices.md)
