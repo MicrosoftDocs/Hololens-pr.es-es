@@ -75,7 +75,7 @@
 ### [Encriptación y protección de datos](security-encryption-data-protection.md)
 ### [Seguridad de las redes](security-network-security.md)
 ### [Ingeniería de seguridad ](security-engineering.md)
-### [Declaración de privacidad de HoloLens 2](hololens2-compliance.md)
+### [Privacidad y protección de datos de HoloLens 2](hololens2-privacy.md)
 ## Administración del dispositivo
 ### [Uso de MDM para administrar dispositivos HoloLens](hololens-mdm-configure.md)
 ## Inscripción de dispositivos
