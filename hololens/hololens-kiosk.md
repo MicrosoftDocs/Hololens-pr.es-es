@@ -17,49 +17,49 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daab30a8ea5200ca145b6b0234b8bd060b8cec5f
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 28c431397385c06fb94de410a0763e24e18e4509
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859227"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979379"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configuración de HoloLens como un quiosco multimedia
 
 ## <a name="what-is-kiosk-mode"></a>¿Qué es el modo quiosco?
 
-El modo de pantalla completa es una característica en la que puede controlar qué aplicaciones se muestran en el menú inicio cuando un usuario inicia sesión HoloLens. Hay dos escenarios admitidos:
+El modo de pantalla completa es una característica en la que puede controlar qué aplicaciones se muestran en el menú Inicio cuando un usuario inicia sesión en HoloLens. Hay dos escenarios admitidos:
 
 1. **Modo de pantalla completa de una** sola aplicación: no se muestra ningún menú inicio y se inicia automáticamente una sola aplicación cuando el usuario inicia sesión. <br> *En el ejemplo* se usa : un dispositivo que solo se ejecuta Dynamics 365 Guides aplicación.
-2. **Modo de pantalla completa de** varias aplicaciones: menú Inicio muestra solo las aplicaciones que se especificaron en la configuración de quiosco cuando un usuario inicia sesión. Se puede elegir que una aplicación se inicie automáticamente si lo desea. <br> *Ejemplo de uso:* un dispositivo que muestra solo la aplicación store, Centro de opiniones y Configuración aplicación en el menú inicio.
+2. **Modo de pantalla completa de** varias aplicaciones: menú Inicio muestra solo las aplicaciones que se especificaron en la configuración de quiosco cuando un usuario inicia sesión. Se puede elegir que una aplicación se inicie automáticamente si lo desea. <br> *En el ejemplo* se usa : un dispositivo que muestra solo la aplicación store, Centro de opiniones y Configuración en el menú Inicio.
 
     <img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
 
 ## <a name="description-of-kiosk-mode-experience-when-a-user-signs-in"></a>Descripción de la experiencia en pantalla completa cuando un usuario inicia sesión
 
-En la tabla siguiente se enumeran las funcionalidades de características en los diferentes modos de quiosco.
+En la tabla siguiente se enumeran las funcionalidades de características en los distintos modos de quiosco.
 
 | &nbsp; |Menú Inicio |Menú Acciones rápidas |Cámara y vídeo |Miracast |Cortana |Comandos de voz integrados |
 | --- | --- | --- | --- | --- | --- | --- |
-|Quiosco de una sola aplicación |Disabled |Disabled |Disabled |Disabled   |Disabled |Habilitado* |
+|Quiosco de aplicación única |Disabled |Disabled |Disabled |Disabled   |Disabled |Habilitado* |
 |Pantalla completa con varias operaciones |habilitado |Habilitado*  |Disponible*  |Disponible* |Disponible*   |Habilitado*  |
 
-Para obtener más información sobre cómo habilitar las características deshabilitadas o cómo interactúan los comandos de voz con las características deshabilitadas y Cortana consulte HoloLens [AUMIDs for apps (AUMIDs para aplicaciones).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
+\*Para obtener más información sobre cómo habilitar las características deshabilitadas o cómo interactúan los comandos de voz con las características deshabilitadas y Cortana consulte HoloLens [AUMIDs for apps (AUMIDs para aplicaciones).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>Consideraciones generales clave antes de configurar el modo de pantalla completa
 
-1. Determine el tipo de cuenta de usuario que inicia sesión en Hololens en su entorno: HoloLens admite cuentas de Azure Active Directory (AAD), cuentas Microsoft (MSA) y cuentas locales. Además, también se admiten cuentas creadas temporalmente denominadas invitados o visitantes (solo para dispositivos de unión a AAD). Obtenga más información en [Administración de la identidad de usuario e inicio de](hololens-identity.md)sesión para HoloLens .
-2. Determinación de los destinos de la experiencia del modo de pantalla completa: tanto si es todo el mundo, un solo usuario, determinados usuarios o usuarios que son miembros de grupos de AAD, etc.
+1. Determine el tipo de cuenta de usuario que inicia sesión en HoloLens en su entorno: HoloLens admite cuentas de Azure Active Directory (AAD), cuentas Microsoft (MSA) y cuentas locales. Además, también se admiten cuentas creadas temporalmente denominadas invitados o visitantes (solo para dispositivos de unión a AAD). Obtenga más información en [Administración de identidades de usuario e inicio de](hololens-identity.md)sesión para HoloLens .
+2. Determinar los destinos de la experiencia del modo de pantalla completa: tanto si es todo el mundo, un solo usuario, determinados usuarios o usuarios que son miembros de grupos de AAD, etc.
 3. Para el modo de pantalla completa de varias aplicaciones, determine las aplicaciones que se mostrarán en el menú Inicio. Para cada aplicación, se necesita su identificador de modelo de [usuario de aplicación (AUMID).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
 4. Determine si el modo de pantalla completa se aplicará a HoloLens a través de paquetes de aprovisionamiento en tiempo de ejecución o de Administración de dispositivos móvil (MDM).
 
 ## <a name="security-considerations"></a>Consideraciones sobre la seguridad
 
-El modo de pantalla completa no debe considerarse como un método de seguridad, sino como un medio para controlar la experiencia de inicio en el inicio de sesión del usuario. Puede combinar la experiencia del modo de pantalla completa con las opciones que se mencionan a continuación si hay necesidades específicas relacionadas con la seguridad:
+El modo de pantalla completa no debe considerarse como un método de seguridad, sino como un medio para controlar la experiencia de inicio en el inicio de sesión del usuario. Puede combinar la experiencia en pantalla completa con las opciones que se mencionan a continuación si hay necesidades específicas relacionadas con la seguridad:
 
-- Si Configuración aplicación está configurada para mostrarse en pantalla completa y desea controlar qué páginas se muestran en Configuración aplicación, consulte Visibilidad de Configuración [página.](settings-uri-list.md)
-- Si desea controlar el acceso a determinadas funcionalidades de hardware, por ejemplo, cámara, Bluetooth, etc., para determinadas aplicaciones, etc., consulte Directivas en CSP de directiva compatible con [HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2). Puede revisar nuestras [restricciones de dispositivos comunes](hololens-common-device-restrictions.md) para obtener ideas.
-- El modo de pantalla completa no bloquea que una aplicación (configurada como parte de la experiencia de quiosco) inicie otras aplicaciones. Si desea bloquear completamente el inicio de determinadas aplicaciones o procesos en HoloLens, consulte Uso de Windows Defender Application Control en dispositivos HoloLens 2 [en Microsoft Intune: Azure](/mem/intune/configuration/custom-profile-hololens)
+- Cuando Configuración aplicación esté configurada para mostrarse en pantalla completa y quiera controlar qué páginas se muestran en la aplicación Configuración, consulte Visibilidad de Configuración [página.](settings-uri-list.md)
+- Si desea controlar el acceso a determinadas funcionalidades de hardware, por ejemplo, cámara, Bluetooth, etc., para determinadas aplicaciones, etc., consulte Directivas en CSP de directiva compatibles con [HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2). Puede revisar las ideas sobre [las restricciones comunes de dispositivos.](hololens-common-device-restrictions.md)
+- El modo de pantalla completa no bloquea que una aplicación (configurada como parte de la experiencia de pantalla completa) inicie otras aplicaciones. Si desea bloquear completamente el inicio de determinadas aplicaciones o procesos en HoloLens, consulte Uso de Windows Defender Application Control en dispositivos HoloLens 2 [en Microsoft Intune- Azure](/mem/intune/configuration/custom-profile-hololens)
 
 ## <a name="key-technical-considerations-for-kiosk-mode-for-hololens"></a>Consideraciones técnicas clave para el modo de pantalla completa para HoloLens
 
@@ -69,7 +69,9 @@ Solo se aplica si planea usar paquetes de aprovisionamiento en tiempo de ejecuci
 - Una configuración de acceso asignada hace referencia a un perfil y a los usuarios de destino de ese perfil, por ejemplo, un usuario específico, un grupo o visitante de AAD, etc. Puede definir varias configuraciones en la misma estructura XML en función de la complejidad de los escenarios de uso (consulte la sección escenarios admitidos a continuación).
 - Para más información, consulte [CSP de AssignedAccess.](/windows/client-management/mdm/assignedaccess-csp)
 
-## <a name="supported-scenarios-for-kiosk-mode-based-on-identity-type"></a>Escenarios admitidos para el modo de pantalla completa en función del tipo de identidad
+## <a name="supported-scenarios-for-kiosk-mode-based-on-identity-type"></a>Escenarios admitidos para el modo de quiosco en función del tipo de identidad
+
+Consulte [los vínculos de](hololens-kiosk-reference.md#kiosk-xml-code-samples) referencia para obtener ejemplos basados en su escenario y actualizar según sea necesario antes de pegar la copia.
 
 > [!NOTE]
 > Use XML solo si no usa la interfaz de usuario de Intune para crear la configuración de quiosco.
@@ -78,18 +80,18 @@ Solo se aplica si planea usar paquetes de aprovisionamiento en tiempo de ejecuci
 
 | **Experiencia de quiosco deseado** | **Configuración recomendada de quiosco** | **Formas de configurar**  | **Comentarios:** |
 | --- | --- | --- | --- |
-| Todos los usuarios que inician sesión obtienen experiencia de quiosco. | [Configuración del perfil de acceso asignado global de varias aplicaciones](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | El acceso asignado global requiere [20H2 y compilaciones más recientes](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Todos los usuarios que inician sesión obtienen experiencia de quiosco. | [Configuración del perfil de acceso asignado global de varias aplicaciones](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | El acceso global asignado requiere [20H2 y compilaciones más recientes](hololens-release-notes.md#windows-holographic-version-20h2) |
 | El usuario específico que inicia sesión obtiene la experiencia de quiosco.  | [Configure un perfil de acceso asignado a una o varias aplicaciones (según sea necesario) especificando el nombre del usuario específico.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Consulte las opciones admitidas a continuación.](#steps-in-configuring-kiosk-mode-for-hololens) | Para el modo de pantalla completa de una sola aplicación, solo se admite la cuenta de usuario local o la cuenta de MSA HoloLens. <br> Para el modo de pantalla completa de varias aplicaciones, solo se admite la cuenta de MSA o la cuenta de AAD HoloLens. |
 
 ### <a name="for-users-who-sign-in-as-aad-account"></a>Para los usuarios que inician sesión como cuenta de AAD
 
 | **Experiencia de quiosco deseado** | **Configuración recomendada de quiosco** | **Formas de configurar** | **Comentarios:** |
 | --- | --- | --- | --- |
-| Todos los usuarios que inician sesión obtienen experiencia de quiosco. | [Configuración del perfil de acceso asignado global de varias aplicaciones](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | El acceso asignado global requiere [20H2 y compilaciones más recientes](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Todos los usuarios que inician sesión obtienen experiencia de quiosco, excepto determinados usuarios. | Configure el perfil de acceso asignado global de varias [aplicaciones excluyendo determinados usuarios (que deben ser propietarios de dispositivos).](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | El acceso asignado global requiere [20H2 y compilaciones más recientes](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Cada usuario de AAD obtiene una experiencia de quiosco independiente específica para ese usuario. | [Configure la configuración de acceso asignado para cada usuario que especifique su nombre de cuenta de AAD.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| Los usuarios de diferentes grupos de AAD experimentan el modo de pantalla completa que es solo para su grupo. | [Configure la configuración de acceso asignada para cada grupo de AAD deseado.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • Cuando un usuario inicia sesión y HoloLens está conectado a Internet, si se encuentra que ese usuario es miembro del grupo de AAD para el que existe la configuración de quiosco, el usuario puede experimentar pantalla completa para ese grupo de AAD. <br> • [Si no hay internet disponible cuando el usuario inicia sesión,](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) el usuario experimentará HoloLens comportamiento del modo de error. <br> • Si no se garantiza la disponibilidad de Internet cuando es necesario usar el usuario que inicia sesión y el quiosco basado en grupos de AAD, considere la posibilidad de usar [AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
-| Los usuarios que necesitan usar HoloLens con fines temporales obtienen experiencia de quiosco. | [Configuración de la configuración de acceso asignado para los visitantes](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: aplicación única](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • La cuenta de usuario temporal se crea automáticamente HoloLens inicio de sesión y se quita cuando el usuario temporal cierra la sesión. <br> • Considere la posibilidad de [habilitar la directiva de inicio de sesión automático del visitante.](#how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience) |
+| Todos los usuarios que inician sesión obtienen experiencia de quiosco. | [Configuración del perfil de acceso asignado global de varias aplicaciones](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | El acceso global asignado requiere [20H2 y compilaciones más recientes](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Todos los usuarios que inician sesión obtienen experiencia de quiosco, excepto determinados usuarios. | Configure el perfil de acceso asignado global de varias [aplicaciones mediante la exclusión de determinados usuarios (que deben ser propietarios de dispositivos).](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | El acceso global asignado requiere [20H2 y compilaciones más recientes](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Cada usuario de AAD obtiene una experiencia de pantalla completa independiente específica para ese usuario. | [Configure la configuración de acceso asignado para cada usuario que especifique su nombre de cuenta de AAD.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
+| Los usuarios de distintos grupos de AAD experimentan el modo de pantalla completa que es solo para su grupo. | [Configure la configuración de acceso asignado para cada grupo de AAD deseado.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: varias aplicaciones](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • Cuando un usuario inicia sesión y HoloLens está conectado a Internet, si se encuentra que ese usuario es miembro del grupo de AAD para el que existe la configuración de quiosco, el usuario obtiene la experiencia de pantalla completa para ese grupo de AAD. <br> • Si no hay internet disponible cuando el usuario inicia sesión, el usuario experimentará HoloLens [comportamiento de modo de error.](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • Si no se garantiza la disponibilidad de Internet cuando es necesario usar el usuario que inicia sesión y el quiosco basado en grupos de AAD, considere la posibilidad de usar [AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
+| Los usuarios que necesitan usar HoloLens con fines temporales obtienen experiencia de quiosco. | [Configuración de la configuración de acceso asignado para los visitantes](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune plantilla personalizada](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Aprovisionamiento en tiempo de ejecución: aplicación única](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • La cuenta de usuario temporal se crea automáticamente HoloLens inicio de sesión y se quita cuando el usuario temporal cierra la sesión. <br> • Considere la posibilidad de [habilitar la directiva de inicio de sesión automático del visitante.](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience) |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>Pasos para configurar el modo de pantalla completa para HoloLens
 
@@ -110,19 +112,19 @@ Estas son las siguientes maneras de configurar, seleccione la pestaña que coinc
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-### <a name="how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience"></a>¿Cómo pueden las cuentas de visitante iniciar sesión automáticamente en la experiencia de quiosco?
+### <a name="how-can-visitor-accounts-automatically-logon-to-kiosk-experience"></a>¿Cómo pueden las cuentas de visitante iniciar sesión automáticamente en la experiencia de quiosco?
 
-En las [compilaciones Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holographic-version-21h1) y adelante:
+En las [compilaciones Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holographic-version-21h1) y versiones posterior:
 
 - Las configuraciones AAD y Non-ADD admiten que las cuentas de visitante se habiliten automáticamente para los modos de quiosco.
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
-### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>¿Se admite la experiencia de quiosco en Hololens (1.ª generación)?
+### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>¿Se admite la experiencia de quiosco en HoloLens (1.ª generación)?
 
 El modo de pantalla completa solo está disponible si el dispositivo tiene Windows Holographic for Business. Todos HoloLens 2 dispositivos se envían Windows Holographic for Business y no hay ninguna otra edición. Cada HoloLens 2 dispositivo puede ejecutar el modo quiosco de forma automática.
 
-HoloLens dispositivos (1.ª generación) deben actualizarse tanto en términos de compilación del sistema operativo como de edición del sistema operativo. A continuación se proporciona más información sobre cómo actualizar HoloLens (1.ª generación) [a Windows Holographic for Business](hololens1-upgrade-enterprise.md) edición. Para actualizar un dispositivo HoloLens (1.ª generación) para usar el modo de pantalla completa, primero debe asegurarse de que el dispositivo se ejecuta Windows 10, versión 1803 o una versión posterior. Si ha usado la herramienta de recuperación de dispositivos de Windows para recuperar el dispositivo HoloLens (1.ª generación) en su compilación predeterminada, o si ha instalado las actualizaciones más recientes, el dispositivo está listo para configurarse.
+HoloLens dispositivos (1.ª generación) deben actualizarse tanto en términos de compilación del sistema operativo como de edición del sistema operativo. A continuación se proporciona más información sobre cómo actualizar HoloLens (1.ª generación) [a Windows Holographic for Business](hololens1-upgrade-enterprise.md) edición. Para actualizar un dispositivo HoloLens (1.ª generación) para que use el modo de pantalla completa, primero debe asegurarse de que el dispositivo se ejecuta Windows 10, versión 1803 o una versión posterior. Si ha usado la herramienta de recuperación de dispositivos de Windows para recuperar el dispositivo HoloLens (1.ª generación) en su compilación predeterminada, o si ha instalado las actualizaciones más recientes, el dispositivo está listo para configurarse.
 
 ### <a name="how-to-use-device-portal-to-configure-kiosk-in-non-production-environments"></a>¿Cómo usar el portal de dispositivos para configurar quiosco en entornos que no son de producción?
 
@@ -135,7 +137,7 @@ El modo de pantalla completa se puede establecer a través de la API REST de Por
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problema: ¿No se muestran aplicaciones en el menú Inicio en pantalla completa?
+### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problema: no se muestra ninguna aplicación en el menú Inicio en pantalla completa
 
 **Síntomas**
 
