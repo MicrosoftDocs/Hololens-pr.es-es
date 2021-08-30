@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664560"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189127"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Escenarios comunes: seguridad sin conexión HoloLens 2
 
@@ -27,13 +27,13 @@ ms.locfileid: "115664560"
 
 En esta guía se proporcionan instrucciones para aplicar un paquete de aprovisionamiento de ejemplo que bloqueará un HoloLens 2 para su uso en entornos seguros con las restricciones siguientes:
 
--   Deshabilite wi-fi.
+-   Deshabilite Wi-Fi.
 -   Deshabilite BlueTooth.
 -   Deshabilite micrófonos.
 -   Impide agregar o quitar paquetes de aprovisionamiento.
 -   Ningún usuario puede habilitar ninguno de los componentes restringidos anteriores.
 
-[![Escenario de seguridad sin conexión ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Escenario seguro sin conexión. ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## <a name="prepare"></a>Preparación
 
@@ -52,29 +52,29 @@ Compilación de un paquete de aprovisionamiento de configuración segura
 
 1. Inicie la herramienta WCD en el equipo.
 1. Seleccione **Archivo -> Abrir proyecto**.
-  1. Vaya a la ubicación de la carpeta de OfflineSecureHL2_Sample guardada anteriormente y seleccione: OfflineSecureHL2_Sample.icdproj.xml
+  1. Vaya a la ubicación de la carpeta OfflineSecureHL2_Sample guardada anteriormente y seleccione: OfflineSecureHL2_Sample.icdproj.xml
 1. El proyecto debe abrirse y ahora debería tener una lista de personalizaciones disponibles:
 
    > [!div class="mx-imgBorder"]
-   > ![Captura de pantalla del paquete de configuración abierto en WCD](images/offline-secure-sample-wcd.png)
+   > ![Captura de pantalla del paquete de configuración abierto en WCD.](images/offline-secure-sample-wcd.png)
 
    Configuraciones establecidas en este paquete de aprovisionamiento:
    
-   |     Elemento                                                |     Setting                       |     Descripción                                                                                                                    |
+   |     Elemento                                                |     Configuración                       |     Descripción                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     Cuentas o usuarios                                    |     Nombre de usuario local & contraseña    |     Para estos dispositivos sin conexión, todos los usuarios del dispositivo tendrán que establecer y compartir un único nombre de usuario y contraseña.          |
    |     Primera experiencia/HoloLens/Skip Yabration       |     True                          |     Omite la calibración solo durante la configuración inicial del dispositivo                                                                             |
    |     Primera experiencia/HoloLens/SkipTraining          |     True                          |     Omite el entrenamiento del dispositivo durante la configuración inicial del dispositivo.                                                                              |
-   |     Primera experiencia/HoloLens/Wi-Fi                  |     True                          |     Omite la Wi-Fi durante la configuración inicial del dispositivo.                                                                                 |
+   |     Primera experiencia/HoloLens/Wi-Fi                  |     True                          |     Omite la configuración Wi-Fi durante la configuración inicial del dispositivo.                                                                                 |
    |     Policies/Connectivity/AllowBluetooth                |     No                            |     Deshabilita Bluetooth                                                                                                             |
    |     Policies/Experience/AllowCortana                    |     No                            |     Deshabilita la Cortana (para eliminar posibles problemas, ya que los micrófonos están deshabilitados)                                          |
-   |     Policies/MixedReality/MicrophoneDisabled            |     Yes                           |     Deshabilita micrófono                                                                                                            |
+   |     Policies/MixedReality/MicrophoneDisabled            |     Sí                           |     Deshabilita el micrófono                                                                                                            |
    |     Policies/Privacy/LetAppsAccessLocation              |     Forzar denegación                    |     Impide que las aplicaciones intenten acceder a los datos de ubicación (para eliminar posibles problemas, ya que el seguimiento de ubicación está deshabilitado)    |
    |     Directivas/Privacidad/LetAppsAccessMicrophone            |     Forzar denegación                    |     Impide que las aplicaciones intenten acceder a los micrófonos (para eliminar posibles problemas, ya que los micrófonos están deshabilitados)           |
    |     Policies/Security/AllowAddProvisioningPackage       |     No                            |     Impide que alguien agregue paquetes de aprovisionamiento que puedan intentar invalidar las directivas bloqueadas.                         |
    |     Policies/Security/AllowRemoveProvisioningPackage    |     No                            |     Impide que alguien quite este paquete de aprovisionamiento bloqueado.                                                           |
    |     Policies/System/AllowLocation                       |     No                            |     Impide que el dispositivo intente realizar un seguimiento de los datos de ubicación.                                                                        |
-   |     Directivas/Wi-Fi/AllowWiFi                             |     No                            |     Deshabilita Wi-Fi                                                                                                                 |
+   |     Policies/WiFi/AllowWiFi                             |     No                            |     Deshabilita Wi-Fi                                                                                                                 |
 
 1. En Runtime Configuración, seleccione **Accounts/Users/UserName: Holo /Password (Cuentas/Usuarios/NombreDeUsuario: Holo/Contraseña).**
 
@@ -90,24 +90,24 @@ Compilación de un paquete de aprovisionamiento de configuración segura
    > [!div class="mx-imgBorder"]
    > ![Captura de pantalla del botón Exportar para este paquete en WCD.](images/offline-secure-sample-wcd-export.png)
 
-## <a name="deploy"></a>Implementar
+## <a name="deploy"></a>Implementación
 
 1. Conectar hl2 al equipo Windows 10 a través de un cable USB.
 1. Inicie la herramienta ARC y seleccione **HoloLens 2**
 
-   ![Pantalla inicial de la nueva instalación de la imagen de HoloLens 2](images/ARC2.png)
+   ![HoloLens 2 pantalla inicial de reflash limpia.](images/ARC2.png)
 
-1. En la siguiente pantalla, seleccione **Selección manual de paquetes.**
+1. En la siguiente pantalla, seleccione **Selección manual del paquete.**
 
-   ![HoloLens 2 Pantalla de información de ARC](images/arc_device_info.png)
+   ![HoloLens 2 Pantalla de información de ARC.](images/arc_device_info.png)
 
 1. Vaya al archivo .ffu descargado anteriormente y seleccione **Abrir.**
 1. En la página Advertencia, seleccione **Continuar.**
 
-   ![HoloLens 2 Pantalla de advertencia de ARC](images/arc_warning.png)
+   ![HoloLens 2 Pantalla de advertencia de ARC.](images/arc_warning.png)
 
 1. Espere a que la herramienta ARC complete la instalación HoloLens 2 sistema operativo.
-1. Una vez que el dispositivo complete la instalación y arranque la copia de seguridad, desde el equipo vaya a Explorador de archivos y copie el archivo PPKG guardado anteriormente en la carpeta del dispositivo.
+1. Una vez que el dispositivo complete la instalación y arranque la copia de seguridad, desde el equipo vaya a Explorador de archivos y copie el archivo PPKG guardado previamente en la carpeta del dispositivo.
 
    > [!div class="mx-imgBorder"]
    > ![Archivo PPKG en pc en Explorador de archivos ventana.](images/offline-secure-file-explorer.png)

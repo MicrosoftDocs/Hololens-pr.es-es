@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664429"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859007"
 ---
 # <a name="configure-your-network-for-hololens"></a>Configuración de la red para HoloLens
 
@@ -180,7 +180,7 @@ Puede encontrar instrucciones para actualizar a Commercial Suite en la documenta
 
 ![Imagen que muestra la configuración del modo de pantalla completa en Intune](images/aad-kioskmode.png)
 
-En el caso de otros servicios de MDM, consulte la documentación de su proveedor para obtener instrucciones. Consulte las instrucciones de [pantalla completa de HoloLens](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) si necesita usar una configuración personalizada y una configuración XML completa para configurar una pantalla completa en el servicio de MDM.
+En el caso de otros servicios de MDM, consulte la documentación de su proveedor para obtener instrucciones. Consulte las instrucciones de [pantalla completa de HoloLens](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) si necesita usar una configuración personalizada y una configuración XML completa para configurar una pantalla completa en el servicio de MDM.
 
 ## <a name="certificates-and-authentication"></a>Certificados y autenticación
 

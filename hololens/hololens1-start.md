@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9e09ba1a022428b098392464e5cd2abf84911bd6a86d8e699036b8fc4f91470a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661868"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189875"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>Configuración de HoloLens (1.ª generación)
 
@@ -39,11 +39,11 @@ Antes de empezar, debe asegurarse de que cuenta con lo siguiente:
 > [!NOTE]
 >  
 > - La primera vez que use su HoloLens, Cortana ya está listo para guiarle (aunque no podrá responder [a](hololens-cortana.md) sus preguntas hasta después de configurar el dispositivo). Puede desactivar la Cortana en cualquier momento en Cortana configuración de la aplicación.
-> - Para cambiar a la versión en chino o japonés de HoloLens, deberá descargar la compilación del idioma en un equipo y, a continuación, instalarla en el HoloLens. Para obtener más información, vea Instalar versiones [localizadas de HoloLens (1.ª generación).](hololens1-install-localized.md)
+> - Para cambiar a la versión en chino o japonés de HoloLens, deberá descargar la compilación del idioma en un equipo y, a continuación, instalarla en el HoloLens. Para obtener más información, vea [Instalar versiones localizadas de HoloLens (1.ª generación).](hololens1-install-localized.md)
 
 ## <a name="start-your-hololens-and-set-up-windows"></a>Inicie Hololens y configure Windows
 
-La primera vez que inicie el HoloLens, la primera tarea consiste en configurar Windows Holographic en el dispositivo.
+La primera vez que inicie la HoloLens, la primera tarea consiste en configurar Windows Holographic en el dispositivo.
 
 1. Conectar a Internet (HoloLens le guía para seleccionar Wi-Fi red).
 
@@ -53,7 +53,7 @@ La primera vez que inicie el HoloLens, la primera tarea consiste en configurar W
         1. Acepte la declaración de privacidad.
         1. Inicie sesión con sus credenciales de Azure AD. Esto puede redirigirte a la página de inicio de sesión de tu organización.
         1. Continúe configurando el dispositivo.
-    - Al elegir **Soy el propietario,** inicia sesión con una cuenta Microsoft. Una vez completada la configuración, puede [inscribir el dispositivo HoloLens en la administración de dispositivos manualmente](hololens-enroll-mdm.md#different-ways-to-enroll).
+    - Al elegir **I own it (Soy el propietario),** inicia sesión con una cuenta Microsoft. Una vez completada la configuración, puede [inscribir el dispositivo HoloLens en la administración de dispositivos manualmente](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Escriba la información de su cuenta de Microsoft.
         1. Especifique la contraseña. Si tu cuenta de Microsoft requiere una [comprobación de dos pasos (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/) (vínculo en inglés), completa el proceso de comprobación.
 
@@ -67,7 +67,7 @@ HoloLens (1.ª generación) usa la distancia entre los alumnos (IPD o [distancia
 
 Durante la calibración, HoloLens le pide que alinee el dedo con una serie de seis destinos por ojo. HoloLens este proceso para establecer el IPD correcto para los ojos. Si la calibración debe actualizarse o ajustarse para un nuevo usuario, el nuevo usuario puede ejecutar la aplicación Calibración fuera de la instalación.
 
-![Pantalla de alineación de la IPD mediante el dedo en el segundo paso](./images/ipd-finger-alignment-300px.jpg)
+![Pantalla de alineación de dedo IPD en el segundo paso.](./images/ipd-finger-alignment-300px.jpg)
 
 *Pantalla de alineación de la IPD mediante el dedo en el segundo paso*
 

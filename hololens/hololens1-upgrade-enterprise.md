@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661889"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189195"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Desbloqueo de las características de Windows Holographic for Business
 
@@ -46,9 +46,9 @@ Los paquetes de aprovisionamiento son archivos creados por la Windows diseñador
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Creación de un paquete de aprovisionamiento que actualice la edición de Windows Holographic
 
 1. [Crea un paquete de aprovisionamiento para HoloLens.](hololens-provisioning.md)
-1. Vaya a **Configuración del entorno de** ejecución  >  **EditionUpgrade** y seleccione **EdiciónUpgradeWithLicense.**
+1. Vaya a **Configuración del entorno de** ejecución  >  **EdiciónActulta** y seleccione **EdiciónUpgradeWithLicense.**
 
-    ![Actualización de la edición con la configuración de la licencia seleccionada](images/icd1.png)
+    ![Actualice la edición con la configuración de licencia seleccionada.](images/icd1.png)
 
 1. Busque el archivo de licencia XML que se proporcionó al adquirir el conjunto de aplicaciones comerciales.
 
@@ -57,10 +57,10 @@ Los paquetes de aprovisionamiento son archivos creados por la Windows diseñador
 
 1. En el menú **Archivo**, seleccione **Guardar**. 
 
-1. Lea la advertencia de que los archivos del proyecto pueden contener información confidencial y haga clic **en Aceptar.**
+1. Lea la advertencia de que los archivos de proyecto pueden contener información confidencial y haga clic **en Aceptar.**
 
     > [!IMPORTANT]
-    > Al compilar un paquete de aprovisionamiento, puede incluir información confidencial en los archivos de proyecto y el archivo de paquete de aprovisionamiento (.ppkg). Aunque tienes la posibilidad de cifrar el archivo .ppkg, los archivos de proyecto no se cifran. Debe almacenar los archivos del proyecto en una ubicación segura y eliminar los archivos del proyecto cuando ya no los necesite.
+    > Al compilar un paquete de aprovisionamiento, puede incluir información confidencial en los archivos del proyecto y el archivo de paquete de aprovisionamiento (.ppkg). Aunque tienes la posibilidad de cifrar el archivo .ppkg, los archivos de proyecto no se cifran. Debe almacenar los archivos del proyecto en una ubicación segura y eliminar los archivos del proyecto cuando ya no los necesite.
 
 1. En el menú **Exportar**, selecciona **Paquete de aprovisionamiento**.
 
@@ -73,11 +73,11 @@ Los paquetes de aprovisionamiento son archivos creados por la Windows diseñador
 
 1. En **Seleccionar detalles de seguridad para el paquete de aprovisionamiento,** seleccione **Siguiente.**
 
-1. Seleccione **Siguiente** para especificar la ubicación de salida a la que desea que vaya el paquete de aprovisionamiento una vez que se haya creado. De forma predeterminada, Windows ICD usa la carpeta de proyecto como ubicación de salida.
+1. Seleccione **Siguiente** para especificar la ubicación de salida a la que desea que vaya el paquete de aprovisionamiento una vez creado. De forma predeterminada, Windows ICD usa la carpeta de proyecto como ubicación de salida.
 
     Opcionalmente, puede seleccionar Examinar **para** cambiar la ubicación de salida predeterminada.
 
-1. Seleccione **Siguiente**.
+1. Seleccione **Next** (Siguiente).
 
 1. Seleccione **Compilar** para empezar a compilar el paquete. La página de compilación muestra la información del proyecto y la barra de progreso indica el estado de compilación.
 
@@ -92,7 +92,7 @@ Los paquetes de aprovisionamiento son archivos creados por la Windows diseñador
 
 1. En el Explorador de archivos, arrastra y coloca el paquete de aprovisionamiento (.ppkg) en el almacenamiento del dispositivo.
 
-1. Mientras HoloLens está todavía en la **página** de ajuste,  presione  brevemente y suelte los botones Bajar volumen y Encendido simultáneamente de nuevo.
+1. Mientras HoloLens sigue en la página de ajuste, presione  brevemente  y suelte los botones Bajar volumen y Encendido simultáneamente de nuevo. 
 
 1. HoloLens le pregunta si confía en el paquete y le gustaría aplicarlo. Confirma que el paquete es de confianza.
 

@@ -1,5 +1,5 @@
 ---
-title: Administración de aplicaciones personalizadas para HoloLens (1.ª generación)
+title: Administración de aplicaciones personalizadas HoloLens (1.ª generación)
 description: Obtenga información sobre cómo instalar, desinstalar y cargar aplicaciones holográficas personalizadas en HoloLens dispositivos mediante Portal de dispositivos y Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 12/10/2020
@@ -16,14 +16,14 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664964"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188855"
 ---
-# <a name="manage-custom-apps-for-hololens-1st-gen"></a>Administración de aplicaciones personalizadas para HoloLens (1.ª generación)
+# <a name="manage-custom-apps-for-hololens-1st-gen"></a>Administración de aplicaciones personalizadas HoloLens (1.ª generación)
 
 HoloLens admite muchas aplicaciones existentes de la Microsoft Store, así como nuevas aplicaciones creadas específicamente para HoloLens. Este artículo se centra en aplicaciones holográficas personalizadas.  
 
@@ -43,7 +43,7 @@ Puede instalar sus propias aplicaciones en HoloLens mediante el Portal de dispos
 
 ### <a name="installing-an-application-package-with-the-device-portal"></a>Instalación de un paquete de aplicación con el Portal de dispositivos
 
-1. Establezca una conexión [desde](/windows/mixed-reality/using-the-windows-device-portal) Portal de dispositivos al destino HoloLens.
+1. Establezca una conexión desde [Portal de dispositivos](/windows/mixed-reality/using-the-windows-device-portal) al destino HoloLens.
 
 1. En el panel de navegación izquierdo, vaya a la **página** Aplicaciones.
 
@@ -55,7 +55,7 @@ Puede instalar sus propias aplicaciones en HoloLens mediante el Portal de dispos
 1. Seleccione **Ir**.
 
    > [!div class="mx-imgBorder"]
-   > ![Instale el formulario de la aplicación Windows Portal de dispositivos en Microsoft HoloLens](images/deviceportal-appmanager.jpg)
+   > ![Instale el formulario de aplicación Windows Portal de dispositivos en Microsoft HoloLens.](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>Implementación desde Microsoft Visual Studio 2015
 
@@ -71,9 +71,9 @@ Puede instalar sus propias aplicaciones en HoloLens mediante el Portal de dispos
    
 1. Compile la solución.
 
-1. Para implementar la aplicación desde el equipo de desarrollo en el equipo HoloLens, seleccione **Equipo remoto.** Si ya tiene una compilación existente en el HoloLens, seleccione **Sí** para instalar esta versión más reciente.  
+1. Para implementar la aplicación desde el equipo de desarrollo en la HoloLens, seleccione **Equipo remoto.** Si ya tiene una compilación existente en el HoloLens, seleccione **Sí** para instalar esta versión más reciente.  
 
-   ![Implementación remota de la máquina para que las aplicaciones Microsoft HoloLens en Visual Studio](images/vs2015-remotedeployment.jpg)  
+   ![Implementación de máquina remota para que las aplicaciones Microsoft HoloLens en Visual Studio.](images/vs2015-remotedeployment.jpg)  
    
 1. La aplicación se instalará e iniciará automáticamente en el HoloLens.
 

@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664361"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188906"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planeamiento de la implementación de HoloLens 2 en un entorno comercial
 
@@ -32,11 +32,11 @@ Los siguientes pasos y vídeo pueden ayudarle a guiarse por el proceso de adopci
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Paso 1](images/1green.png)| <br/> **[Escenarios comunes de implementación:](hololens-requirements.md)** comprenda los escenarios de implementación y explore los componentes principales necesarios para implementar HoloLens 2 dispositivos. |
-| ![Paso 2](images/2green.png)| <br/> **[Preparar:](#prepare)** familiarícese con los aspectos básicos de la infraestructura necesarios para HoloLens 2. |
-| ![Paso 3](images/3green.png) | <br/> **[Configurar](#configure)**: aprenda a configurar los componentes esenciales para una implementación basada en la nube. |
-| ![Paso 4](images/4green.png) | <br/> **[Implementar:](#deploy)** descubra cómo implementar los dispositivos y distribuir las aplicaciones de forma segura y eficaz. |
-| ![Paso 5](images/5green.png) | <br/> **[Mantener:](#maintain)** descubra lo que se necesita para mantener correctamente el estado de los dispositivos HoloLens 2 y garantizar el cumplimiento de la directiva corporativa. |
+| ![Paso 1.](images/1green.png)| <br/> **[Escenarios comunes de implementación:](hololens-requirements.md)** comprenda los escenarios de implementación y explore los componentes principales necesarios para implementar HoloLens 2 dispositivos. |
+| ![Paso 2.](images/2green.png)| <br/> **[Preparar:](#prepare)** familiarícese con los aspectos esenciales de la infraestructura necesarios para HoloLens 2. |
+| ![Paso 3.](images/3green.png) | <br/> **[Configurar](#configure)**: aprenda a configurar los componentes esenciales para una implementación basada en la nube. |
+| ![Paso 4.](images/4green.png) | <br/> **[Implementar:](#deploy)** descubra cómo implementar los dispositivos y distribuir las aplicaciones de forma segura y eficaz. |
+| ![Paso 5.](images/5green.png) | <br/> **[Mantener:](#maintain)** descubra lo que se necesita para mantener correctamente el estado de los dispositivos HoloLens 2 y garantizar el cumplimiento de la directiva corporativa. |
 
 <br/>
 
@@ -62,7 +62,7 @@ Use Intune y Autopilot como soluciones poco táctiles para inscribir y configura
 | [Licencias de aplicación](hololens2-cloud-connected-configure.md#application-licenses)| Se puede aplicar a usuarios, grupos de usuarios o grupos de dispositivos  |
 | [Usuarios y grupos de Azure](hololens2-cloud-connected-configure.md#azure-users-and-groups) | Ayuda a asignar configuraciones y licencias para el HoloLens 2  |
 
-## <a name="deploy"></a>Implementar
+## <a name="deploy"></a>Implementación
 
 Distribuya los HoloLens 2 y valide su configuración. 
 
