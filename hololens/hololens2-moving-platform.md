@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
-ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
+ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122610149"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989214"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modo de plataformas móviles en plataformas móviles con movimiento dinámico bajo
 
@@ -27,6 +27,8 @@ En la **compilación 20348.1411 de Insider**, hemos agregado compatibilidad bet
 
 > [!NOTE]
 > Actualmente, esta característica solo está disponible para [usuarios de Windows Insider](hololens-insider.md).
+
+![Ejemplo de plataforma móvil.](./images/mpm-compare.gif)
 
 En este artículo se describe:
 
