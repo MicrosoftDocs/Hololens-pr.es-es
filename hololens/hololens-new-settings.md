@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 4187ae99a25fc6dd3f407410da27568d4b2b6865934b0c615680f295ec7977be
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bcde697b5887573826a3a1a61e8c3707b4d0337a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663033"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189671"
 ---
 # <a name="new-settings-app"></a>Nueva aplicación Configuración
 
@@ -23,7 +23,7 @@ Con [Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holo
 > [!NOTE]
 > Dado que la nueva aplicación Configuración es distinta de su versión anterior, las ventanas de Configuración que se colocaron anteriormente en el entorno se quitarán tras la actualización.
 
-![Página principal de la nueva aplicación Configuración](images/new-settings-app.png)
+![Página principal de la nueva aplicación Configuración.](images/new-settings-app.png)
 
 **Nuevas características y opciones**
 - Búsqueda de opciones: puede buscar opciones en la página principal de Configuración mediante palabras clave o el nombre de la opción.

@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c510738595e234b30395aafa309d42bd33affb7889a3174f2e708ba1aac56626
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664910"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189178"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Uso del menú Inicio y el ambiente principal
 
@@ -91,7 +91,7 @@ Si una aplicación inmersiva se encuentra en un estado interrumpido y necesita r
 
 Con [Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holographic-version-21h1), al activar un hipervínculo o abrir un tipo de archivo con más de una aplicación instalada que lo admita, verá que se abre una nueva ventana en la que se le pedirá que seleccione qué aplicación instalada debe controlar el tipo de archivo o vínculo. En esta ventana, también puede elegir que la aplicación seleccionada controle el tipo de archivo o vínculo "Una vez" o "Siempre".
 
-![Ventana del selector de aplicaciones](images/default-app-picker.png)
+![Ventana del selector de aplicaciones.](images/default-app-picker.png)
 
 Si elige "Siempre" pero más adelante quiere cambiar la aplicación que controla un tipo de archivo o vínculo determinado, puede restablecer los valores predeterminados guardados en **Configuración > Aplicaciones**. Desplácese hasta la parte inferior de la página y seleccione el botón **Borrar** en "Default apps for file types" (Aplicaciones predeterminadas para tipos de archivos) o "Default apps for link types" (Aplicaciones predeterminadas para tipos de vínculos). A diferencia de la configuración similar en equipos de escritorio, no se pueden restablecer los valores predeterminados de un tipo de archivo individual.
 

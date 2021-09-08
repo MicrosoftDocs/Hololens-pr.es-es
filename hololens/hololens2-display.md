@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659952"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190368"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>Solución de problemas de pantalla de HoloLens 2
 
@@ -46,7 +46,7 @@ Realice los pasos siguientes para garantizar la óptima calidad visual de los ho
     > Si tiene problemas para ver la escena atenuada en el entorno, puede ajustar manualmente el nivel de brillo de HoloLens 2 mediante los botones de brillo del lado izquierdo del dispositivo.
 1. Seleccione los botones 1 a 6 para probar al instante cada perfil de color; busque el que sea mejor para su vista (suele ser el perfil que ayuda a que la escena parezca más neutra, con el patrón de escala de grises y los tonos de la máscara con el aspecto esperado).
 
-    ![Escena de calibración de color de la pantalla](images/color-cal-ui.png)
+    ![Escena de calibración de color de la pantalla.](images/color-cal-ui.png)
     
 6. Cuando esté satisfecho con el perfil seleccionado, seleccione el botón **Guardar y salir**.
 1. Si prefiere no realizar cambios, seleccione el botón **Cancelar y salir** para que se reviertan los cambios.
@@ -79,7 +79,7 @@ Si no está satisfecho con el perfil de color personalizado guardado en HoloLens
 
 A veces, en la pantalla de HoloLens 2 se muestran diferentes patrones en las esquinas inferiores izquierda y derecha. A continuación se muestran algunos ejemplos (GIF animados). Este patrón es parte del funcionamiento normal del dispositivo HoloLens 2 para calibrar la pantalla para una experiencia óptima.
 
-![Patrón bifásico](./images/DAT-Biphase-Fiducial.gif) ![Patrón GEO](./images/DAT-GEO-Fiducial.gif)
+![Patrón bifásico.](./images/DAT-Biphase-Fiducial.gif) ![Patrón GEO](./images/DAT-GEO-Fiducial.gif)
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>¿Por qué no puedo hacer una fotografía precisa de la pantalla de HoloLens 2?
 

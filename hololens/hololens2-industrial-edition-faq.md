@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1363920182107137ce3441990e429e71f7533923e066cdeaa8f9c105e453c757
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0ac7228e4af807d709d218942c50a9b110a419c1
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659859"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189501"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2: Preguntas más frecuentes sobre Industrial Edition
 
-![Uso de Industrial Edition en una sala limpia](./images/industrial-sku-with-remote-assist.png)
+![Uso de Industrial Edition en una sala limpia.](./images/industrial-sku-with-remote-assist.png)
 
 ## <a name="hololens-2-industrial-edition-benefits"></a>Ventajas de HoloLens 2 Industrial Edition
 

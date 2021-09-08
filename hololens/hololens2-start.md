@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659409"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189773"
 ---
 # <a name="set-up-your-hololens-2"></a>Configuración de HoloLens 2
 
@@ -82,7 +82,7 @@ Aparecerá un botón con el logotipo de Microsoft. Presione el botón y HoloLens
 
      El dispositivo HoloLens establece la zona horaria automáticamente en función de la información obtenida de la red Wi-Fi. Una vez finalizada la instalación, puede cambiar la zona horaria con la aplicación Configuración.
 
-    ![Conexión a Wi-Fi](images/11-network.png)
+    ![Conexión a Wi-Fi.](images/11-network.png)
 
     > [!NOTE] 
     > Si avanza más allá del paso de Wi-Fi y más tarde necesita cambiar a una red diferente mientras está todavía en el proceso de configuración, puede presionar a la vez los botones de **bajar volumen** y **encendido** para volver a este paso, si ejecuta una versión de sistema operativo de octubre de 2019 o posterior. En versiones anteriores, es posible que debe [restablecer el dispositivo](hololens-recovery.md) o reiniciarlo en una ubicación en la que la red Wi-Fi no esté disponible para impedir que se conecte a ella automáticamente.
@@ -91,15 +91,15 @@ Aparecerá un botón con el logotipo de Microsoft. Presione el botón y HoloLens
 
 1. HoloLens 2 buscará y aplicará un perfil de Autopilot si existe. No se necesita ninguna acción en esta pantalla.
  
-    ![Búsqueda del perfil de Autopilot](images/autopilot-profile-search.png) 
+    ![Búsqueda del perfil de Autopilot.](images/autopilot-profile-search.png) 
 
 1. Haga clic en **Aceptar** en la pantalla de licencias.
 
-    ![Contrato de licencia de Windows](images/windows-license-agreement.png)
+    ![Contrato de licencia de Windows.](images/windows-license-agreement.png)
 
 1. Inicie sesión con su cuenta de usuario. Deberá elegir entre **Es propiedad de mi trabajo o escuela** y **Es mío**.
 
-    ![Establecimiento del usuario](images/13-device-owner.png)
+    ![Establecer usuario.](images/13-device-owner.png)
     - Si eliges **Es propiedad de mi trabajo o escuela**, iniciarás sesión con una cuenta de Azure AD. Si su organización usa Azure AD Premium y ha configurado la inscripción automática de MDM, HoloLens se inscribe automáticamente en MDM. Si la organización no usa Azure AD Premium, la inscripción automática de MDM no está disponible. En ese caso, debe [inscribir manualmente el dispositivo HoloLens en la administración de dispositivos](hololens-enroll-mdm.md#different-ways-to-enroll).
 
         1. Escriba la información de la cuenta de la organización.
@@ -123,11 +123,11 @@ Aparecerá un botón con el logotipo de Microsoft. Presione el botón y HoloLens
   
 1. Configurará un PIN para iniciar sesión en el dispositivo. Este PIN es específico del dispositivo. 
 
-    ![Configuración de Windows Hello](images/setup-windows-hello.png)
+    ![Configuración de Windows Hello.](images/setup-windows-hello.png)
 
-    ![Configuración de PIN de Windows Hello](images/windows-hello-pin.png)
+    ![Configuración de PIN de Windows Hello.](images/windows-hello-pin.png)
 
-    ![Configuración de Windows Hello correcta](images/windows-hello-successful.png) 
+    ![Configuración de Windows Hello correcta.](images/windows-hello-successful.png) 
 
     
 1. Seleccione si desea habilitar la voz en HoloLens 2.

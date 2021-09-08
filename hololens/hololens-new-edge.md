@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663245"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189705"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Presentación de la nueva versión de Microsoft Edge
 
-![Animación del cambio del logotipo de la versión anterior de Microsoft Edge al logotipo de la nueva versión](images/new-edge.gif)
+![Animación del cambio del logotipo de la versión anterior de Microsoft Edge al logotipo de la nueva versión.](images/new-edge.gif)
 
 La nueva versión de Microsoft Edge [adopta el proyecto Chromium de código abierto](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) con el fin de conseguir una mejor compatibilidad para los clientes y una menor fragmentación de la web para los desarrolladores web.
 
@@ -27,11 +27,11 @@ Con [Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holo
 > [!IMPORTANT]
 > Esta nueva versión de Microsoft Edge reemplaza automáticamente a la versión anterior, que ya no se [admite](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) en los nuevos lanzamientos.
 
-![Captura de pantalla de la nueva versión de Microsoft Edge](images/new-edge-ui.png)
+![Captura de pantalla de la nueva versión de Microsoft Edge.](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>Inicio de la nueva versión de Microsoft Edge
 
-La nueva versión de Microsoft Edge ![icono de la nueva versión de Microsoft Edge](images/new_edge_logo.png) (representada por un icono de espiral azul y verde) se ancla al menú Inicio y se inicia automáticamente al activar un vínculo web.
+La nueva versión de Microsoft Edge ![Icono de la nueva versión de Microsoft Edge.](images/new_edge_logo.png) (representada por un icono de espiral azul y verde) se ancla al menú Inicio y se inicia automáticamente al activar un vínculo web.
 
 > [!NOTE]
 > La primera vez que inicie la nueva versión de Microsoft Edge en su HoloLens 2, se importarán la configuración y los datos de la versión anterior.
@@ -139,7 +139,7 @@ La extensión 360 Viewer se basa en WebXR y se instala automáticamente junto c
 1. Vaya a un sitio web compatible con WebXR.
 1. Seleccione el botón **Enter VR** (Entrar en VR) en el sitio web. La ubicación y la representación visual de este botón pueden variar según el sitio web, pero puede tener un aspecto similar al siguiente:
 
-    ![Ejemplo del botón para entrar a VR](images/75px-enter-vr.png)
+    ![Ejemplo del botón para entrar a VR.](images/75px-enter-vr.png)
 
 1. La primera vez que intente iniciar una experiencia de WebXR en un dominio específico, el explorador pedirá su consentimiento para acceder a una vista inmersiva; seleccione **Permitir**.
 1. Use [gestos de HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame) para manipular la experiencia.
@@ -156,7 +156,7 @@ La extensión 360 Viewer se basa en WebXR y se instala automáticamente junto c
 1. Vaya a un vídeo en 360 grados en YouTube.
 1. En el fotograma de vídeo, seleccione el botón de casco de realidad mixta:
 
-    ![Botón para activar 360 Viewer](images/enter-360-viewer.jpg)
+    ![Botón para activar 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. La primera vez que intente iniciar 360 Viewer en un dominio específico, el explorador pedirá su consentimiento para acceder a una vista inmersiva. seleccione **Permitir**.
 1. [Pulse en el aire](hololens2-basic-usage.md#select-using-air-tap) para abrir los controles de reproducción. Use los [haces de mano y pulse en el aire](hololens2-basic-usage.md#select-using-air-tap) para reproducir o pausar, avanzar o retroceder, activar o desactivar subtítulos, o detener la experiencia (y salir de la vista inmersiva). Los controles de reproducción desaparecerán después de unos segundos de inactividad.

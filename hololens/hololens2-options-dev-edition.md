@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658870"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190351"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -38,7 +38,7 @@ HoloLens 2 Development Edition incluye HoloLens 2, una prueba de Unity Pro de 3 
 |  [Complemento de Pixyz para Unity](https://www.pixyz-software.com/plugin/) | Puente para conectar los mundos de la ingeniería y el CAD con el del desarrollo.   |
 | [500 $ en crédito de Azure para servicios de Azure](https://azure.microsoft.com/resources/) | Los créditos de Azure incluidos con HoloLens 2 Development Edition sirven para empezar rápidamente a crear y probar aplicaciones de realidad mixta en Azure. |
 
-![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
+![Edición de desarrollo de HoloLens 2.](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>Canjear los créditos
 

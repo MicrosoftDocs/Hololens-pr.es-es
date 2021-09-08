@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665593"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189535"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Inscripción Enterprise de dispositivos HoloLens en un entorno Wi-Fi restringido de direcciones MAC
 
@@ -126,7 +126,7 @@ Se aplicarán los requisitos previos adicionales que se indican a continuación:
 
 6. La dirección MAC Wi-Fi estará visible en el Portal de Intune.
 
-   ![Dirección MAC a través de Intune](images/mac-address-intune.jpg)
+   ![Dirección MAC a través de Intune.](images/mac-address-intune.jpg)
 
 7. El técnico agregará esta dirección MAC como un dispositivo permitido.
 
@@ -155,7 +155,7 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 Devolverá el nombre y la dirección MAC de todos los dispositivos HoloLens que se hayan inscrito en los últimos 30 días.
 
-![Dirección MAC a través de PowerShell](images/mac-address-powershell.jpg)
+![Dirección MAC a través de PowerShell.](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>Proceso
 

@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665631"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190436"
 ---
 # <a name="page-settings-visibility"></a>Visibilidad de la configuración de páginas
 
@@ -74,7 +74,7 @@ Para obtener información completa sobre cómo crear y aplicar un paquete de apr
 
 Independientemente del método elegido, su dispositivo ya debería recibir los cambios. Por su parte, los usuarios se encontrarán con la siguiente aplicación Configuración.
 
-![Captura de pantalla de la modificación de las horas activas en la aplicación Configuración](images/hololens-page-visibility-list.jpg)
+![Captura de pantalla de la modificación de las horas activas en la aplicación Configuración.](images/hololens-page-visibility-list.jpg)
 
 Para configurar las páginas de la aplicación Configuración con el fin de mostrar u ocultar su propia selección de páginas, eche un vistazo a los URI de configuración disponibles en HoloLens.
 

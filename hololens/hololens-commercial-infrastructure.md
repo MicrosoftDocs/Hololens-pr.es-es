@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859007"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189076"
 ---
 # <a name="configure-your-network-for-hololens"></a>Configuración de la red para HoloLens
 
@@ -95,9 +95,9 @@ Si necesita asignar licencias, siga estas [indicaciones](/azure/active-directory
 **Inicie sesión en Azure Portal como administrador.**  > **Azure Active Directory** > **Dispositivos** > **Configuración del dispositivo** >
 **Establezca Los usuarios pueden inscribir dispositivos en Azure AD en *Todos***
 
-    1. **Opción 2:** Conceder a los usuarios o grupos seleccionados permiso para unir dispositivos a Azure AD **Inicie sesión en Azure Portal como administrador** > **Azure Active Directory** > **Dispositivos** > **Configuración del dispositivo** Establezca Los usuarios pueden inscribir dispositivos en Azure AD en  >
+    1. **Opción 2:** Conceder a los usuarios o grupos seleccionados permiso para unir dispositivos a Azure AD **Inicie sesión en Azure Portal como administrador** > **Azure Active Directory** > **Dispositivos** > **Configuración del dispositivo** Establezca Los usuarios pueden inscribir dispositivos en Azure AD en  >
 ***Seleccionados***
-![Imagen que muestra Configurar dispositivos unidos a Azure AD](images/azure-ad-image.png)
+![Imagen que muestra Configurar dispositivos unidos a Azure AD.](images/azure-ad-image.png)
 
     1. **Opción 3:** Puede impedir a todos los usuarios que unan sus dispositivos al dominio. Esto quiere decir que todos Ios dispositivos tendrán que inscribirse de forma manual.
 
@@ -178,7 +178,7 @@ Puede encontrar instrucciones para actualizar a Commercial Suite en la documenta
 > [!NOTE]
 > Puede configurar diferentes usuarios para tener distintas experiencias en el modo de pantalla completa con "Azure AD" como "Tipo de inicio de sesión de usuario". Sin embargo, esta opción solo está disponible en el modo de pantalla completa de varias aplicaciones. El modo de pantalla completa de varias aplicaciones funcionará con una sola aplicación y también con varias aplicaciones.
 
-![Imagen que muestra la configuración del modo de pantalla completa en Intune](images/aad-kioskmode.png)
+![Imagen que muestra la configuración del modo de pantalla completa en Intune.](images/aad-kioskmode.png)
 
 En el caso de otros servicios de MDM, consulte la documentación de su proveedor para obtener instrucciones. Consulte las instrucciones de [pantalla completa de HoloLens](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) si necesita usar una configuración personalizada y una configuración XML completa para configurar una pantalla completa en el servicio de MDM.
 

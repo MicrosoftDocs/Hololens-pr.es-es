@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658971"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190419"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Preparación de HoloLens 2 para su uso
 
@@ -42,7 +42,7 @@ Colóquese el HoloLens 2 en la cabeza. Si lleva gafas, no hace falta que se las 
 
 Si es necesario, extienda la banda de la cabeza girando la rueda de regulación y, a continuación, afloje la correa.
 
-![Ajuste y regulación de HoloLens 2](images/hololens2-fit.png)
+![Ajuste y regulación de HoloLens 2.](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>Fijar y quitar la correa
 
@@ -52,7 +52,7 @@ Para quitar la parte delantera de la correa, desenganche la correa y deslícela 
 
 Para quitar la parte posterior de la correa, presione el botón situado debajo de cada lengüeta de contacto y tire con suavidad. Para volver a colocarla, presione las lengüetas de contacto hasta que se introduzcan de nuevo en las ranuras (sonará un clic).
 
-![colocar o quitar la correa de la cabeza de HoloLens 2](images/hololens2-headstrap.png)
+![Colocar o quitar la correa de la cabeza de HoloLens 2.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>Encender el HoloLens 2
 

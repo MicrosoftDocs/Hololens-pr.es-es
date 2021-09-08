@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663089"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189110"
 ---
 # <a name="connect-hololens-to-a-network"></a>Conexión de HoloLens a una red
 
@@ -39,7 +39,7 @@ En los dispositivos HoloLens 2, un usuario también puede usar un [adaptador de
 1. Seleccione una red y, a continuación, **Conectar**.
 1. Si se le pide una contraseña de red, escríbala y, a continuación, seleccione **Siguiente**.
 
-![Configuración de Wi-Fi de HoloLens](./images/hololens-2-wifi-settings.jpg)
+![Configuración de Wi-Fi de HoloLens.](./images/hololens-2-wifi-settings.jpg)
 
 Para confirmar que está conectado a una red Wi-Fi, compruebe el estado de la red en el menú **Inicio**:
 
@@ -211,7 +211,7 @@ La opción de VPN no está habilita de forma predeterminada, pero puede habilita
 1. Opcionalmente, puede agregar un nombre de usuario y contraseña.
 1. Aplique la configuración de VPN. 
 
-![Configuración de VPN de HoloLens](./images/vpn-settings-ui.jpg)
+![Configuración de VPN de HoloLens.](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>Configuración de una VPN mediante el paquete de aprovisionamiento
 
@@ -354,7 +354,7 @@ Ejemplo de VPN de IKEv2 nativa:
 1. Seleccione **Red e Internet**.
 1. Desplácese hasta debajo de la lista de redes Wi-Fi disponibles y seleccione **Propiedades de hardware**.
 
-    ![Propiedades de hardware en la configuración de Wi-Fi](./images/wifi-hololens-hwdetails.jpg)
+    ![Propiedades de hardware en la configuración de Wi-Fi.](./images/wifi-hololens-hwdetails.jpg)
 
    La dirección IP aparece junto a la **dirección IPv4**.
 

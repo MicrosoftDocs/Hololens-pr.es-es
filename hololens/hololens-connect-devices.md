@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664291"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189093"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Conexión a dispositivos Bluetooth y USB-C
 
@@ -93,7 +93,7 @@ Los usuarios pueden seleccionar micrófonos externos conectados a USB-C mediante
 
 Abra la aplicación **Configuración** y seleccione **Sistema** > **Sonido**.
 
-![Configuración de sonido](images/usbc-mic-1.jpg)
+![Configuración de Sonido.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > Para usar micrófonos externos con **Remote Assist**, los usuarios tendrán que hacer clic en el hipervínculo "Manage sound devices" (Administrar dispositivos de sonido).
@@ -102,11 +102,11 @@ Abra la aplicación **Configuración** y seleccione **Sistema** > **Sonido**.
 >
 > Si elige **Communications Default** (Predeterminado de comunicaciones), el micrófono externo se usará en Remote Assist y en otras aplicaciones de comunicaciones, pero en las demás tareas se podrá seguir usando la matriz de micrófonos de HoloLens.
 
-![Administrar dispositivos de sonido](images/usbc-mic-2.png)
+![Administrar dispositivos de sonido.](images/usbc-mic-2.png)
 
 <br>
 
-![Establecer el valor predeterminado del micrófono](images/usbc-mic-3.jpg)
+![Establecer el valor predeterminado del micrófono.](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>¿Se admiten los micrófonos Bluetooth?
 

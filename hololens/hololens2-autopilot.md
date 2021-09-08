@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
-ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
+ms.openlocfilehash: 4782b5d4d3c51038f7810c57d2144758ce0dc1ac
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122782814"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190198"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para HoloLens 2
 
@@ -202,7 +202,7 @@ Hay dos formas de recuperar el hash de hardware.
      > Si usa una plantilla de nombre de dispositivo, el proceso OOBE reinicia el dispositivo una vez más después de aplicar el nombre del dispositivo y antes de que una el dispositivo a Azure AD. Este reinicio permite que el nuevo nombre surta efecto.  
 
    > [!div class="mx-imgBorder"]
-   > ![Configura las opciones de OOBE](./images/hololens-ap-profile-oobe.png)
+   > ![Configurar las opciones de OOBE.](./images/hololens-ap-profile-oobe.png)
 
 1. Una vez configuradas las opciones, seleccione **Siguiente**.
 1. En la página **Etiquetas de ámbito**, también puede agregar las etiquetas de ámbito que quiera aplicar a este perfil. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida). Cuando termine, seleccione **Siguiente**.
@@ -218,14 +218,14 @@ Hay dos formas de recuperar el hash de hardware.
 1. En la página **Revisar y crear**, revise la configuración y seleccione **Crear** para crear el perfil.  
 
    > [!div class="mx-imgBorder"]
-   > ![Revisar y crear](./images/hololens-ap-profile-summ.png)
+   > ![Revisar y crear.](./images/hololens-ap-profile-summ.png)
 
 ### <a name="7-verify-the-esp-configuration"></a>7. Compruebe la configuración de ESP
 
 En la página de estado de inscripción (ESP) se muestra el estado de todo el proceso de configuración de dispositivos que se ejecuta cuando un usuario administrado de MDM inicia sesión en un dispositivo por primera vez. Asegúrese de que la configuración de ESP sea similar a la siguiente y compruebe que las tareas sean correctas.  
 
 > [!div class="mx-imgBorder"]
-> ![Configuración de ESP](./images/hololens-ap-profile-settings.png)
+> ![Configuración de ESP.](./images/hololens-ap-profile-settings.png)
 
 ### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. Compruebe el estado del perfil de los dispositivos HoloLens
 
@@ -263,9 +263,9 @@ Una vez que complete las instrucciones anteriores, sus usuarios de HoloLens 2 te
 
    Deje que HoloLens 2 detecte la conectividad de red y complete la OOBE automáticamente. Es posible que el dispositivo se reinicie durante la OOBE. Las pantallas de la OOBE deben tener un aspecto similar al siguiente.
 
-   ![Paso 1 de la OOBE](./images/autopilot-welcome.jpg)
-   ![Paso 2 de la OOBE](./images/autopilot-step-complete.jpg)
-   ![Paso 3 de la OOBE](./images/autopilot-device-setup.jpg)
+   ![Paso 1 de OOBE.](./images/autopilot-welcome.jpg)
+   ![Paso 2 de OOBE.](./images/autopilot-step-complete.jpg)
+   ![Paso 3 de OOBE.](./images/autopilot-device-setup.jpg)
 
 1. Al final de OOBE, puede iniciar sesión en el dispositivo con su nombre de usuario y contraseña.
 
@@ -290,7 +290,7 @@ Si el nodo RequireNetworkInOOBE de TenantLockdown CSP se establece con un valor 
 El valor OMA-URI debe ser "./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE".
 
    > [!div class="mx-imgBorder"]
-   > ![Configuración de un bloqueo de inquilinos mediante OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Configuración de un bloqueo de inquilinos mediante OMA-URI.](images/hololens-tenant-lockdown.png)
 
 1. Cree un grupo de dispositivos y asígnele el perfil de configuración de dispositivos.
 
@@ -306,7 +306,7 @@ Compruebe en el portal de Intune que la configuración de dispositivos se haya a
 El valor OMA-URI debe ser "./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE".
 
    > [!div class="mx-imgBorder"]
-   > ![Captura de pantalla en la que RequireNetworkInOOBE se establece en "false" mediante OMA-URI en Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Captura de pantalla en la que RequireNetworkInOOBE se establece en "false" mediante OMA-URI en Intune.](images/hololens-tenant-lockdown-false.png)
 
 1. Cree un grupo de dispositivos y asígnele el perfil de configuración de dispositivos. 
 

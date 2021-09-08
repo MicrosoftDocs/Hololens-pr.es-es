@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: calibración, comodidad, objetos visuales, calidad, ipd, HoloLens, Windows Mixed Reality, cascos de VR
-ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664799"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189212"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Mejora de la calidad visual y la comodidad
 
@@ -64,7 +64,7 @@ Varios usuarios pueden compartir un dispositivo HoloLens 2 sin necesidad de que 
 1. Si la aplicación Configuración no está anclada a **Inicio**, seleccione **Todas las aplicaciones**.
 1. Seleccione **Configuración** y, a continuación, **Sistema** > **Calibración** > **Calibración de los ojos** > **Ejecutar calibración de los ojos**.
 
-   ![Opción "Ejecutar calibración de ojos" en la aplicación Configuración](./images/C-Settings.Calibration.png)
+   ![Opción Ejecutar calibración de ojos en la aplicación Configuración.](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>Compatibilidad con posicionamiento automático de los ojos
 
@@ -131,7 +131,7 @@ Al configurar su dispositivo HoloLens (1.ª generación), este le pide que calib
 
 Durante el proceso de calibración, HoloLens le pide que alinee el dedo con una serie de seis objetivos por ojo. HoloLens usa este proceso para establecer correctamente la IPD con relación a sus ojos.
 
-![Pantalla de alineación de la IPD mediante el dedo en el segundo paso](./images/ipd-finger-alignment-300px.jpg)
+![Pantalla de alineación de la IPD mediante el dedo en el segundo paso.](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>Iniciar manualmente el proceso de calibración
 
@@ -143,9 +143,9 @@ Para ejecutar la aplicación Calibración usando el menú **Inicio**, siga estos
 1. Para ver todas las aplicaciones, seleccione **+** .
 1. Seleccione **Calibración**.
 
-   ![Acceso a la aplicación Calibración desde el shell](./images/calibration-shell.png)
+   ![Acceso a la aplicación Calibración desde el shell.](./images/calibration-shell.png)
 
-   ![Aplicación Calibración, mostrada como un objeto Live Cube después de iniciarse](./images/calibration-livecube-200px.png)
+   ![Aplicación Calibración, que aparece como un objeto Live Cube después de iniciarse.](./images/calibration-livecube-200px.png)
 
 Con el fin de usar la aplicación Configuración para ejecutar la aplicación Calibración, siga estos pasos:
 
@@ -154,7 +154,7 @@ Con el fin de usar la aplicación Configuración para ejecutar la aplicación Ca
 1. Haga clic en **Configuración**.
 1. Seleccione **Sistema** > **Utilidades** > **Abrir calibración**.
 
-   ![Inicio de la aplicación Calibración desde la aplicación Configuración](./images/calibration-settings-500px.jpg)
+   ![Inicio de la aplicación Calibración desde la aplicación Configuración.](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Cascos envolventes
 

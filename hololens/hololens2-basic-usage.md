@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661962"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189892"
 ---
 # <a name="getting-around-hololens-2"></a>Familiarización con HoloLens 2
 
@@ -47,7 +47,7 @@ Una vez que se conocen estas interacciones básicas, desplazarse por HoloLens re
 
 HoloLens tiene sensores que pueden ver unos metros a cada lado de donde se encuentre. Cuando use las manos, tiene que mantenerlas dentro de ese marco para que HoloLens las vea. Pero el marco se mueve con usted mientras se desplaza.  
 
-![Imagen que muestra el marco de seguimiento de manos de HoloLens](./images/hololens-2-gesture-frame.png)
+![Imagen que muestra el marco de seguimiento de manos de HoloLens.](./images/hololens-2-gesture-frame.png)
 
 ## <a name="touch-holograms-near-you"></a>Toque de hologramas cercanos
 
@@ -74,7 +74,7 @@ Para seleccionar algo con un **haz de mano**, siga estos pasos:
 1. Apunte el dedo índice hacia el techo.
 1. Para realizar el gesto de **pulsación en el aire**, acerque el pulgar y el índice y luego sepárelos rápidamente.
 
-   ![Animación del gesto de pulsación en el aire](./images/hololens-air-tap.gif)
+   ![Animación del gesto de pulsación en el aire.](./images/hololens-air-tap.gif)
 
 ### <a name="grab-using-air-tap-and-hold"></a>Agarre con mantener pulsado en el aire
 
@@ -101,7 +101,7 @@ El gesto Inicio abre el **menú Inicio**.  Para realizar el gesto Inicio, extien
 > - Si tiene problemas para leer el texto más pequeño del menú Inicio, acérquese a él una vez que se abra.
 > - Si la mano está ligeramente fuera del lado del marco, es posible que aún pueda ver el menú Inicio si pulsa en la cara interna de la muñeca, aunque no vea el icono.
 
-![Imagen que muestra el icono Inicio y el gesto Inicio](./images/hololens-2-start-gesture.png)
+![Imagen que muestra el icono Inicio y el gesto Inicio.](./images/hololens-2-start-gesture.png)
 
 Para **cerrar** el menú Inicio, realice el gesto Inicio con el menú Inicio abierto.  También puede mirar al menú Inicio y decir "Cerrar".
 
@@ -115,7 +115,7 @@ Para **cerrar** el menú Inicio, realice el gesto Inicio con el menú Inicio abi
 
 También puede realizar el gesto Inicio con una mano. Para ello, extienda la mano con la palma hacia usted y mire al **icono Inicio** de la cara interna de la muñeca. **Mientras mantiene el ojo sobre el icono**, acerque el dedo pulgar y el dedo índice.
 
-![Imagen que muestra el icono Inicio y el gesto Inicio con una mano](./images/hololens-2-start-alternative.png)
+![Imagen que muestra el icono Inicio y el gesto Inicio con una mano.](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>Menú Inicio, ambiente principal y aplicaciones
 
