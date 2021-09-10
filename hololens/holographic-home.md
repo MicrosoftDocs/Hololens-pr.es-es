@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189178"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427689"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Uso del menú Inicio y el ambiente principal
 
