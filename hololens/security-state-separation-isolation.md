@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 18c30b4edd649c088f71e479a401c8b286ddfd592f57a5659c3c15b3ec9c854f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0487ea49c706c753f4dfca7da7daa499d1715e9f
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665376"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427171"
 ---
 # <a name="state-separation-and-isolation"></a>Separación y aislamiento de estado
 

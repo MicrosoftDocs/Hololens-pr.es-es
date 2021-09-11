@@ -15,11 +15,11 @@ appliesto:
 - HoloLens 2
 keywords: calibración, comodidad, objetos visuales, calidad, ipd, HoloLens, Windows Mixed Reality, cascos de VR
 ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189212"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427857"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Mejora de la calidad visual y la comodidad
 

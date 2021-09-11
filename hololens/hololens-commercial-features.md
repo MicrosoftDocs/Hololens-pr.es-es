@@ -18,11 +18,11 @@ appliesto:
 - HoloLens 2
 keywords: HoloLens 2, comercial, características, mdm, administración de dispositivos móviles, modo de pantalla completa, aplicaciones, identidad, Bitlocker, iris, Windows Hello, Con tecnología de Azure, Autopilot, realidad mixta, WDAC
 ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 58b124ba1722b2dff31d93723dd269df0f8319c4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "123483243"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427661"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>Funcionalidades y soluciones de HoloLens 2
 
