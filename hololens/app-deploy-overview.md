@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 019700c7e35f31c234c9fe69870cae54b3364b631253c37a17d8eaa0fe3053bd
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665240"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033065"
 ---
 # <a name="app-management-overview"></a>Administración de aplicaciones: Información general
 
@@ -27,7 +27,7 @@ Puede implementar aplicaciones en cuatro rutas de acceso diferentes: **Mobile Ad
 
 ## <a name="mobile-device-management-mdm"></a>Administración de dispositivos móviles (MDM)
 
-Una solución MDM permite a los responsables de la toma de decisiones de TI y a los administradores instalar automáticamente (insertar) de forma privada sus aplicaciones de línea de negocio interna o comprar aplicaciones a través de la tienda para un grupo de usuarios. HoloLens dispositivos funcionan mejor con Microsoft Endpoint Manager (Intune) para la [administración de aplicaciones.](app-deploy-intune.md) Intune también ofrece a los usuarios un control más preciso sobre las aplicaciones administradas por IT a través Portal de empresa experiencia descargable.
+Una solución MDM permite a los responsables de la toma de decisiones de TI y a los administradores instalar automáticamente (insertar) de forma privada sus aplicaciones de línea de negocio interna o comprar aplicaciones a través de la tienda para un grupo de usuarios. HoloLens dispositivos funcionan mejor con Microsoft Endpoint Manager (Intune) para la [administración de aplicaciones.](app-deploy-intune.md) Intune también ofrece a los usuarios un control más preciso sobre las aplicaciones administradas por EL A través Portal de empresa experiencia descargable.
 
 > [!NOTE]
 > Las instrucciones siguientes son para los usuarios que desean administrar sus aplicaciones con Intune. Microsoft recomienda usar Intune para la administración de aplicaciones y dispositivos.
@@ -36,26 +36,26 @@ La Administración de dispositivos móvil (MDM) es aplicable a:
 
 * MDM implementada + Portal de empresa
 * Aplicaciones de línea de negocio (no públicas)
-* Instalación manual de aplicaciones disponibles mediante Portal de empresa
-* Inserción de administrador a través de la directiva MDM
+* Instalación manual de aplicaciones disponibles a través de Portal de empresa
+* Inserción de administración a través de la directiva MDM
 * Actualización automática a través de MDM
 
 ## <a name="microsoft-store-for-business"></a>Microsoft Store para Empresas
 
 El [Microsoft Store para Empresas](app-deploy-store-business.md) proporciona a los responsables de la toma de decisiones de TI y a los administradores de las empresas para buscar, adquirir, administrar y distribuir aplicaciones gratuitas y de pago. Los administradores de TI pueden administrar Microsoft Store aplicaciones y aplicaciones de línea de negocio privadas en un inventario, además de asignar y reutilizar licencias según sea necesario. Para obtener más información, visite [Requisitos previos para usar el Microsoft Store para Empresas](/microsoft-store/prerequisites-microsoft-store-for-business).
 
-El Microsoft Store para Empresas es aplicable a:
+La Microsoft Store para Empresas es aplicable a:
 
 * Aplicaciones públicas o de línea de negocio
 * Instalación automática de aplicaciones necesarias a través de la asociación mdm
 * El usuario descarga aplicaciones manualmente
 * Actualización automática
 
-## <a name="microsoft-store-apps"></a>Aplicaciones de Microsoft Store
+## <a name="microsoft-store-apps"></a>Aplicaciones de Microsoft Store
 
 El Microsoft Store proporciona a los responsables de la toma de decisiones de TI y a los administradores de las empresas para buscar, adquirir, administrar y distribuir aplicaciones públicas.
 
-Esta Microsoft Store es aplicable a:
+Este Microsoft Store es aplicable a:
 
 * Solo aplicaciones públicas
 * El usuario descarga aplicaciones manualmente

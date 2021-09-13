@@ -17,15 +17,15 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033102"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Administración de aplicaciones personalizadas HoloLens (1.ª generación)
 
-HoloLens admite muchas aplicaciones existentes de la Microsoft Store, así como nuevas aplicaciones creadas específicamente para HoloLens. Este artículo se centra en aplicaciones holográficas personalizadas.  
+HoloLens admite muchas aplicaciones existentes del Microsoft Store, así como nuevas aplicaciones creadas específicamente para HoloLens. Este artículo se centra en aplicaciones holográficas personalizadas.  
 
 Para obtener más información sobre las aplicaciones de la tienda, vea [Administrar aplicaciones con la tienda](holographic-store-apps.md).
 
@@ -43,14 +43,14 @@ Puede instalar sus propias aplicaciones en HoloLens mediante el Portal de dispos
 
 ### <a name="installing-an-application-package-with-the-device-portal"></a>Instalación de un paquete de aplicación con el Portal de dispositivos
 
-1. Establezca una conexión desde [Portal de dispositivos](/windows/mixed-reality/using-the-windows-device-portal) al destino HoloLens.
+1. Establezca una conexión de [Portal de dispositivos](/windows/mixed-reality/using-the-windows-device-portal) al destino HoloLens.
 
 1. En el panel de navegación izquierdo, vaya a la **página** Aplicaciones.
 
 1. En **Paquete de aplicación,** vaya al archivo .appx asociado a la aplicación.
 
    > [!IMPORTANT]
-   > Asegúrese de hacer referencia a los archivos de certificado y dependencia asociados.
+   > Asegúrese de hacer referencia a cualquier dependencia asociada y archivos de certificado.
 
 1. Seleccione **Ir**.
 
@@ -66,7 +66,7 @@ Puede instalar sus propias aplicaciones en HoloLens mediante el Portal de dispos
 1. Seleccione la siguiente configuración de compilación: **Master/x86/Remote Machine**.
 
 1. Al seleccionar Equipo **remoto:**
-   - Asegúrese de que la dirección apunta a la Wi-Fi IP de la HoloLens.
+   - Asegúrese de que la dirección apunta a la Wi-Fi IP del HoloLens.
    - Establezca la autenticación **en Universal (protocolo sin cifrar).**
    
 1. Compile la solución.

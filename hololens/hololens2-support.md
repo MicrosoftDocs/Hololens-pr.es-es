@@ -8,11 +8,11 @@ ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
 ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033289"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>¿Cuáles son las Mixed Reality de soporte técnico y ayuda?
 
@@ -21,7 +21,7 @@ ms.locfileid: "123190453"
 Aquí encontrará las opciones de soporte técnico para las siguientes opciones, lo que garantiza que se conecte al lugar correcto. También se incluyen los recursos de la comunidad y las opciones de contenido de autoservicio para explorar:
 
 - [Community de ayuda para desarrolladores](#community-help-options)
-- [Obtenga ayuda con el uso y la configuración del HoloLens 2 dispositivo.](#help-with-technical-support-for-your-hololens-2)
+- [Obtener ayuda con el uso y la configuración del HoloLens 2 dispositivo](#help-with-technical-support-for-your-hololens-2)
 - [Obtener ayuda con la compra de un HoloLens 2 dispositivo](#help-with-commercial-store-support-for-your-hololens-2)
 - [Obtener ayuda con la programación de un HoloLens 2 o un casco envolvente](#help-with-technical-support-for-your-hololens-2) 
 - [Obtener ayuda con los servicios de realidad mixta de Azure](#azure-mixed-reality-services-support)
@@ -71,15 +71,15 @@ Si envía una nueva pregunta a Stack Overflow, use una o varias de las siguiente
 
 - Obtenga HoloLens 2 de programación de la comunidad en [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - Más información sobre Ayuda y soporte técnico y estado del servicio de los [servicios de realidad mixta de Azure](#azure-mixed-reality-services-support)
-- Creación de una solicitud de soporte técnico para HoloLens 2 programación de cascos envolventes en el [soporte técnico de MR](https://aka.ms/mrsupport) 
-- Cree una solicitud de soporte técnico para HoloLens 2 problemas de dispositivos, incluido el hardware, la configuración & uso en [HoloLens 2 soporte técnico para dispositivos.](https://aka.ms/hlsupport) 
+- Cree una solicitud de soporte técnico para la programación HoloLens 2 cascos envolventes o en soporte [técnico de mr.](https://aka.ms/mrsupport) 
+- Cree una solicitud de soporte técnico para HoloLens 2 problemas de dispositivos, incluido el hardware, la configuración & uso en [HoloLens 2 soporte técnico de dispositivos.](https://aka.ms/hlsupport) 
 
 
 ### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Ayuda con el soporte técnico de la tienda comercial para HoloLens 2
 
 - [Comprar HoloLens 2](https://www.microsoft.com/hololens/buy) esta opción para obtener más información sobre HoloLens 2 precios y opciones
 - Consulte a continuación la lista de números de oficina para hablar con nuestros compañeros de soporte técnico de la tienda comercial si necesita ayuda a través del soporte telefónico.
-- Para las compras fuera del Microsoft Store, [](hololens2-purchase.md) haga referencia a esta lista de distribuidores HoloLens 2 y países en los que HoloLens 2 está disponible.
+- Para las compras fuera del Microsoft Store, haga referencia a esta lista de revendedores HoloLens 2 y países en los que HoloLens 2 está disponible. [](hololens2-purchase.md)
 
 ### <a name="commercial-store-support-numbers"></a>Números de soporte técnico de la tienda comercial
 >[!Note]
@@ -116,11 +116,11 @@ Si envía una nueva pregunta a Stack Overflow, use una o varias de las siguiente
 >[!IMPORTANT]
 >Si necesita una factura de IVA completa, debe ponerse en contacto directamente con el equipo de la Tienda de soporte técnico comercial y no comprar un dispositivo en línea. Todas las compras realizadas en línea solo recibirán una factura de IVA simplificada que no se puede editar más adelante.
 
-## <a name="azure-mixed-reality-services-support"></a>Compatibilidad con los servicios de realidad mixta de Azure
+## <a name="azure-mixed-reality-services-support"></a>Compatibilidad con servicios de realidad mixta de Azure
 
-### <a name="open-an-azure-portal-technical-support-ticket"></a>Apertura de una Azure Portal técnico de soporte técnico
+### <a name="open-an-azure-portal-technical-support-ticket"></a>Apertura de una Azure Portal de soporte técnico
 
-Para abrir una vale de soporte técnico en la Azure Portal de Azure Spatial Anchors, Azure Object Anchors o Azure Remote Rendering:
+Para abrir una vale de soporte técnico en el Azure Portal de Azure Spatial Anchors, Azure Object Anchors o Azure Remote Rendering:
 
 1. Con [Azure Portal](https://azure.microsoft.com/account/) abierto, seleccione el icono de ayuda en la barra de menús superior y, luego, seleccione **Ayuda y soporte técnico**.
 
@@ -135,7 +135,7 @@ Para abrir una vale de soporte técnico en la Azure Portal de Azure Spatial Anch
     + Tipo de problema: Requisitos previos técnicos
     + Servicio: Azure Spatial Anchors, Azure Remote Rendering o Azure Object Anchors
 
-    ![Azure Portal de vales de soporte técnico.](../hololens/images/azure-help-support3.png)
+    ![Azure Portal campos de vale de soporte técnico.](../hololens/images/azure-help-support3.png)
 
     1. Haga **clic en Siguiente:** Soluciones en la parte inferior de la página para agregar más detalles para obtener más información sobre el problema.
 
@@ -150,7 +150,7 @@ En la parte inferior de cada artículo de contenido, hay una oportunidad de abri
 ### <a name="provide-product-feedback"></a>Proporcionar comentarios sobre el producto
 
 >[!Note]
->Proporcionar comentarios es una excelente manera de que su voz se escuche, pero los comentarios no son una manera de recibir una respuesta. Centro de opiniones se pueden combinar con otras opciones de soporte técnico.
+>Proporcionar comentarios es una excelente manera de hacer que su voz se escuche, pero los comentarios no son una manera de recibir una respuesta. Centro de opiniones se pueden combinar con otras opciones de soporte técnico.
 
 Para proporcionar comentarios, compartir una idea o sugerencias para los servicios de realidad mixta de Microsoft, o votar las ideas que otros han enviado, visite: 
 

@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033424"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Guía de implementación: Información general HoloLens 2 conexión corporativa Dynamics 365 Guides : información general
 
@@ -27,7 +27,7 @@ Esta guía ayudará a los profesionales de TI a planear e implementar Microsoft 
 
 En esta guía, se explica cómo inscribir los dispositivos en la administración de dispositivos existente, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar una guía de Dynamics 365, así como usar aplicaciones de línea de negocio personalizadas, después de configurar el dispositivo. 
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 La siguiente infraestructura ya debe estar en su lugar:
 - Wi-Fi
@@ -46,7 +46,7 @@ La siguiente infraestructura ya debe estar en su lugar:
 ## <a name="guides-licensing-and-requirements"></a>[Guías de licencias y requisitos](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 
 - Cuenta de Azure AD
-- Dynamics 365 Guides aplicaciones pc y HoloLens
+- Dynamics 365 Guides aplicaciones PC y HoloLens
 - Dynamics 365 Guides suscripción
     - Microsoft Dataverse (incluido)
     - Power Apps (incluido)
@@ -55,7 +55,7 @@ La siguiente infraestructura ya debe estar en su lugar:
 
 [![Diagrama de red conectada corp, fase 1. ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![Diagrama de red conectada corporativa, fase 2. ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![Diagrama de red conectada corp, fase 2. ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ## <a name="in-this-guide-you-will"></a>Esta guía le permitirá:
 ### <a name="prepare"></a>Preparación
@@ -76,8 +76,8 @@ La siguiente infraestructura ya debe estar en su lugar:
 >- [Upload y asignar paquetes de aplicaciones de línea de negocio (LOB).](hololens2-corp-connected-configure.md#app-deployment)
 >- [Configuración Dynamics 365 Guides.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [Configuración del modo de pantalla completa (opcional).](hololens2-corp-connected-configure.md#optional-kiosk-mode)
->- [Configuración de WDAC (opcional).](hololens2-corp-connected-configure.md#optional-wdac)
-### <a name="deploy"></a>Implementación
+>- [Cómo configurar WDAC (opcional).](hololens2-corp-connected-configure.md#optional-wdac)
+### <a name="deploy"></a>Implementar
 > [!div class="checklist"]
 >-  [Valide la inscripción a través del dispositivo y MDM.](hololens2-corp-connected-deploy.md#enrollment-validation)
 >-  [Valide Wi-Fi certificados.](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
@@ -87,7 +87,7 @@ La siguiente infraestructura ya debe estar en su lugar:
 > [!div class="checklist"]
 >- [Actualizar HoloLens 2.](hololens2-corp-connected-maintain.md#update-hololens)
 >- [Cómo actualizar guías (almacenar aplicaciones).](hololens2-corp-connected-maintain.md#how-to-update-dynamics-365-guides-and-other-store-apps)
->- [Actualización de aplicaciones de LOB.](hololens2-corp-connected-maintain.md#how-to-update-lob-apps) 
+>- [Actualización de aplicaciones lob.](hololens2-corp-connected-maintain.md#how-to-update-lob-apps) 
 >- [Plan de desarrollo.](hololens2-corp-connected-maintain.md#development-plan) 
 >- [Realización de un plan de soporte técnico.](hololens2-corp-connected-maintain.md#support-plan)
 >- [Opciones de administración de dispositivos.](hololens2-corp-connected-maintain.md#device-management)

@@ -15,11 +15,11 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189297"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033086"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Problemas conocidos de HoloLens (1.ª generación)
 
@@ -27,7 +27,7 @@ Esta es la lista actual de problemas conocidos para HoloLens dispositivos. Compr
 
 >[!NOTE]
 > - Si detecta un problema que no está bloqueando, notimente en el dispositivo HoloLens a través [de Centro de opiniones](hololens-feedback.md).
-> - Si el problema al que se enfrenta le está bloqueando, además de presentar comentarios, [envíe una solicitud de soporte técnico](https://aka.ms/hlsupport).
+> - Si el problema al que se enfrenta le está bloqueando, además de presentar comentarios, [envíe una solicitud de soporte técnico.](https://aka.ms/hlsupport)
 
 
 - [Problemas conocidos de todas las HoloLens generaciones](#known-issues-for-all-hololens-generations)
@@ -50,11 +50,11 @@ Esta es la lista actual de problemas conocidos para HoloLens dispositivos. Compr
 
 ### <a name="onedrive-camera-upload"></a>OneDrive de la cámara
 
-La OneDrive aplicación para HoloLens no admite la carga automática de cámaras para cuentas de trabajo o educativas.
+La OneDrive aplicación para HoloLens no admite la carga automática de cámara para cuentas de trabajo o educativas.
 
 Soluciones alternativas:
 
-- Si es viable para su empresa, la carga automática de la cámara se admite en las cuentas Microsoft del consumidor. Puede iniciar sesión en su cuenta Microsoft además de la cuenta profesional o educativa (la aplicación OneDrive admite el inicio de sesión dual). Desde el perfil de la cuenta Microsoft OneDrive puede habilitar la carga automática del lanzamiento de la cámara en segundo plano.
+- Si es viable para su empresa, la carga automática de la cámara se admite en las cuentas microsoft de consumidor. Puede iniciar sesión en su cuenta Microsoft además de la cuenta profesional o educativa (la aplicación OneDrive admite el inicio de sesión dual). Desde el perfil de la cuenta Microsoft OneDrive puede habilitar la carga automática de la cámara en segundo plano.
 
 - Si no puede usar de forma segura una cuenta Microsoft de consumidor para cargar las fotos automáticamente, puede cargar manualmente las fotos en su cuenta de trabajo o educativa desde la OneDrive aplicación. Para ello, asegúrese de que ha iniciado sesión en su cuenta de trabajo o educativa en la OneDrive aplicación. Seleccione el **+** botón y elija **Upload**. Para buscar las fotos o vídeos que desea cargar, vaya a **Imágenes > Camera Roll**. Seleccione las fotos o vídeos que desea cargar y, a continuación, seleccione el **botón** Abrir.
 
@@ -96,9 +96,9 @@ Nuestro equipo está trabajando actualmente en una corrección. Mientras tanto, 
 
 1. Vaya a C:\Archivos de programa (x86)\Windows Kits\10\bin\10.0.18362.0\x86 y cambie el filtro a Todos los **archivos ( \* . \* )**.
 
-1. Seleccione tanto SirepClient.dll como SshClient.dll y Seleccione **Agregar**.
+1. Seleccione SirepClient.dll y SshClient.dll y Seleccione **Agregar.**
 
-1. Busque y seleccione ambos archivos en Explorador de soluciones (deben estar en la parte inferior de la  lista de archivos) y cambie **Copiar** al directorio de salida en la ventana Propiedades a Copiar **siempre.**
+1. Busque y seleccione ambos archivos en Explorador de soluciones (deben estar en la parte inferior de la  lista de archivos) y cambie **Copiar** al directorio de salida en la ventana Propiedades a **Copiar siempre.**
 
 1. En la parte superior del archivo, agregue lo siguiente a la lista existente `using` de instrucciones:
 
@@ -123,18 +123,18 @@ Nuestro equipo está trabajando actualmente en una corrección. Mientras tanto, 
 
 1. Abra una ventana del símbolo del sistema y cd en la carpeta que contiene el archivo .exe compilado (por ejemplo, C:\MyProjects\HoloLensDeploymentFix\bin\Debug).
 
-1. Ejecute el ejecutable y proporcione la dirección IP del dispositivo como argumento de línea de comandos. (Si está conectado mediante USB, puede usar 127.0.0.1; de lo contrario, use la dirección IP del Wi-Fi del dispositivo).  Por ejemplo, "HoloLensDeploymentFix 127.0.0.1".
+1. Ejecute el archivo ejecutable y proporcione la dirección IP del dispositivo como argumento de línea de comandos. (Si está conectado mediante USB, puede usar 127.0.0.1; de lo contrario, use la dirección IP Wi-Fi del dispositivo).  Por ejemplo, "HoloLensDeploymentFix 127.0.0.1".
 
 1. Una vez que la herramienta ha salido sin ningún mensaje (esto solo debería tardar unos segundos), ahora podrá implementar y depurar desde Visual Studio 2017 o posterior.  No es necesario seguir utilizando la herramienta.
 
-Proporcionaremos más actualizaciones a medida que estén disponibles.
+Se proporcionarán más actualizaciones a medida que estén disponibles.
 
 ### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problemas al iniciar Microsoft Store aplicaciones y aplicaciones en HoloLens
 
 > [!NOTE]
 > Última actualización: 4/2 @ 10 a. m.: problema resuelto.
 
-Puede experimentar problemas al intentar iniciar el Microsoft Store y las aplicaciones en HoloLens. Hemos determinado que el problema se produce cuando las actualizaciones de aplicaciones en segundo plano implementan una versión más reciente de los paquetes de marco en secuencias específicas mientras una o varias de sus aplicaciones dependientes se siguen ejecutando. En este caso, una actualización automática de la aplicación entregó una nueva versión de .NET Native Framework (versión 10.0.25531 a 10.0.27413) que hizo que las aplicaciones que se ejecutan no se actualicen correctamente para todas las aplicaciones en ejecución que consumen la versión anterior del marco.  El flujo para la actualización del marco es el siguiente:
+Puede experimentar problemas al intentar iniciar el Microsoft Store aplicaciones en HoloLens. Hemos determinado que el problema se produce cuando las actualizaciones de aplicaciones en segundo plano implementan una versión más reciente de los paquetes de marco en secuencias específicas mientras una o varias de sus aplicaciones dependientes todavía se están ejecutando. En este caso, una actualización automática de la aplicación entregó una nueva versión de .NET Native Framework (de la versión 10.0.25531 a la 10.0.27413) hizo que las aplicaciones que se ejecutan no se actualicen correctamente para todas las aplicaciones en ejecución que consumen la versión anterior del marco.  El flujo para la actualización del marco es el siguiente:
 
 1. El nuevo paquete de marco se descarga de la tienda e se instala.
 
@@ -144,11 +144,11 @@ Si se interrumpe el paso 2 antes de la finalización, las aplicaciones para las 
 
 Algunos usuarios han informado de que el cierre de aplicaciones con problemas e inicio de otras aplicaciones como Centro de opiniones, Visor 3D o Fotos resuelve el problema para ellas; sin embargo, esto no funciona el 100 % del tiempo.
 
-La raíz ha provocado que este problema no se haya debido a la propia actualización, sino a un error en el sistema operativo que ha provocado que la actualización del marco de trabajo de .NET Native se controle incorrectamente. Nos complace anunciar que hemos identificado una corrección y que hemos publicado una actualización (versión del sistema operativo 17763.380) que contiene la corrección.  
+La raíz ha provocado que este problema no se deba a la propia actualización, sino a un error en el sistema operativo que provocó que la actualización del marco de trabajo de .NET Native se controlara incorrectamente. Nos complace anunciar que hemos identificado una corrección y hemos publicado una actualización (versión del sistema operativo 17763.380) que contiene la corrección.  
 
 Para ver si el dispositivo puede realizar la actualización:
 
-1. Vaya a la Configuración y abra **Actualizar & Seguridad.**
+1. Vaya a la Configuración y abra **Update & Security**.
 
 1. Seleccione **Buscar actualizaciones.**
 
@@ -156,7 +156,7 @@ Para ver si el dispositivo puede realizar la actualización:
 
 1. Tras actualizar a esta versión del sistema operativo, las aplicaciones deben funcionar según lo previsto.
 
-Además, como hacemos con cada versión HoloLens del sistema operativo, hemos publicado la imagen de FFU en el Centro [de descarga de Microsoft](https://aka.ms/hololensdownload/10.0.17763.380).
+Además, como hacemos con todas las HoloLens del sistema operativo, hemos publicado la imagen de FFU en el Centro [de descarga de Microsoft](https://aka.ms/hololensdownload/10.0.17763.380).
 
 Si no desea realizar la actualización, hemos publicado una nueva versión de la aplicación Microsoft Store UWP a partir del 29/3. Después de tener la versión actualizada de Store:
 
@@ -166,7 +166,7 @@ Si no desea realizar la actualización, hemos publicado una nueva versión de la
 1. Si todavía no se puede iniciar, mantenga presionado el icono de la aplicación rota y seleccione Desinstalar.
 1. Vuelva a instalar estas aplicaciones desde la tienda.
 
-Si el dispositivo sigue sin poder cargar aplicaciones, puede realizar la instalación local de una versión de .NET Native Framework y Runtime a través del Centro de descarga siguiendo estos pasos:
+Si el dispositivo sigue sin poder cargar aplicaciones, puede realizar la instalación local de una versión de .NET Native Framework y runtime a través del Centro de descarga siguiendo estos pasos:
 
 1. Descargue este [archivo ZIP desde](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) el Centro de descarga de Microsoft. La descomprimir producirá dos archivos.  Microsoft .NET.Native.Runtime.1.7.appx y Microsoft .NET.Native.Framework.1.7.appx.
 
@@ -174,15 +174,15 @@ Si el dispositivo sigue sin poder cargar aplicaciones, puede realizar la instala
 
 1. A continuación, quiere entrar en el Windows Portal de dispositivos. Nuestra recomendación es hacerlo a través de USB y lo haría escribiendo http://127.0.0.1:10080 en el explorador.
 
-1. Una vez que haya Windows Portal de dispositivos, necesitamos que "cargue lateralmente" los dos archivos que descargó. Para ello, debe bajar la barra lateral izquierda  hasta llegar a la sección Aplicaciones y seleccionar **Aplicaciones.**
+1. Una vez que haya Windows Portal de dispositivos, necesitamos que "cargue lateralmente" los dos archivos que descargó. Para ello, debe bajar la barra lateral izquierda hasta llegar a la sección **Aplicaciones** y seleccionar **Aplicaciones.**
 
-1. A continuación, verá una pantalla similar a la siguiente.  Quiere ir a la sección que indica **Instalar** aplicación y ir a donde descomprimió esos dos archivos APPX. Solo puede realizar una de cada vez, por lo que después de seleccionar la primera, haga clic en "Ir" en la sección Implementar. A continuación, haga esto para el segundo archivo APPX.
+1. A continuación, verá una pantalla similar a la siguiente.  Quiere ir a la sección que indica **Instalar** aplicación y ir a donde descomprimió esos dos archivos APPX. Solo puede hacer una a la vez, por lo que después de seleccionar la primera, haga clic en "Ir" en la sección Implementar. A continuación, haga esto para el segundo archivo APPX.
 
-   ![Windows Portal de dispositivos instalar Side-Loaded aplicación.](images/20190322-DevicePortal.png)
+   ![Windows Portal de dispositivos para instalar Side-Loaded aplicación.](images/20190322-DevicePortal.png)
 
 1. En este momento creemos que las aplicaciones deben empezar a funcionar de nuevo y que también puede acceder a la Tienda.
 
-1. En algunos casos, es necesario ejecutar el paso adicional de iniciar la aplicación Visor 3D antes de que se inicien las aplicaciones afectadas.
+1. En algunos casos, es necesario ejecutar el paso adicional de inicio de Visor 3D aplicación antes de que se inicien las aplicaciones afectadas.
 
 Agradecemos su paciencia a medida que hemos pasado por el proceso para resolver este problema y esperamos seguir trabajando con nuestra comunidad para crear experiencias de Mixed Reality correctas.
 
@@ -194,17 +194,17 @@ Agradecemos su paciencia a medida que hemos pasado por el proceso para resolver 
 
 - Consulte [Instalación de las herramientas](/windows/mixed-reality/install-the-tools) para obtener la versión más actualizada de Visual Studio que se recomienda para HoloLens desarrollo.
 
-- Al implementar una aplicación desde Visual Studio a su HoloLens, es posible que vea el error: La operación solicitada no se puede realizar en un archivo con una sección asignada por el **usuario abierta. (Excepción de HRESULT: 0x800704C8)**. Si esto sucede, inténtelo de nuevo y, por lo general, la implementación se realizará correctamente.
+- Al implementar una aplicación de Visual Studio a su HoloLens, es posible que vea el error: La operación solicitada no se puede realizar en un archivo con una sección asignada por el **usuario abierta. (Excepción de HRESULT: 0x800704C8)**. Si esto sucede, inténtelo de nuevo y la implementación generalmente se realizará correctamente.
 
 ### <a name="api"></a>API
 
-- Si la aplicación establece [el](/windows/mixed-reality/focus-point-in-unity) punto de enfoque detrás del usuario o lo normal en camera.forward, los hologramas no aparecerán en Captura de realidad mixta o vídeos. Hasta que este error se corrigió en [](/windows/mixed-reality/focus-point-in-unity) Windows, si las aplicaciones establecen activamente el punto de enfoque, deben asegurarse de que el plano normal se establece frente a la cámara hacia delante (por ejemplo, normal = -camera.forward).
+- Si la aplicación establece el punto [de](/windows/mixed-reality/focus-point-in-unity) enfoque detrás del usuario o lo normal en camera.forward, los hologramas no aparecerán en Captura de realidad mixta fotos o vídeos. Hasta que este error se corrigió en Windows, si las aplicaciones establecen activamente el punto de enfoque, deben asegurarse de que el plano normal se establece en el avance de la cámara opuesto (por ejemplo, normal = -camera.forward). [](/windows/mixed-reality/focus-point-in-unity)
 
 ### <a name="xbox-wireless-controller"></a>Controlador inalámbrico de Xbox
 
-- El controlador inalámbrico S de Xbox debe actualizarse para poder usarse con HoloLens. Asegúrese de que está [actualizado antes](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) de intentar emparejar el controlador con un HoloLens.
+- El controlador inalámbrico S de Xbox debe actualizarse para poder usarse con HoloLens. Asegúrese de que [está actualizado antes](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) de intentar emparejar el controlador con un HoloLens.
 
 - Si reinicia el HoloLens mientras el controlador inalámbrico de Xbox está conectado, el controlador no se volverá a conectar automáticamente a HoloLens. La luz del botón Guía parpadeará lentamente hasta que el controlador se apague después de 3 minutos. Para volver a conectar el controlador inmediatamente, apague el controlador manteniendo presionado el botón Guía hasta que se apague la luz. Cuando vuelva a encender el controlador, se volverá a conectar a HoloLens.
 
-- Si el HoloLens entra en espera mientras el controlador inalámbrico de Xbox está conectado, cualquier entrada en el controlador reactivará el HoloLens. Puede evitarlo apagando el controlador cuando haya terminado de usarlo.
+- Si el HoloLens entra en espera mientras el controlador inalámbrico de Xbox está conectado, cualquier entrada en el controlador reactivará el HoloLens. Para evitarlo, apague el controlador cuando haya terminado de usarlo.
 

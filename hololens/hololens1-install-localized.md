@@ -1,5 +1,5 @@
 ---
-title: Instalación de versiones localizadas de HoloLens
+title: Instalar versiones localizadas de HoloLens
 description: Obtenga información sobre cómo instalar las versiones localizadas de HoloLens (1.ª generación), incluidas las versiones china y japonesa.
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -13,16 +13,16 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: fe29e4ed611f86764f0db576b1a8794fa0ceec3047cadd26f502209faadea8b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033676"
 ---
 # <a name="install-localized-versions-of-hololens-1st-gen"></a>Instalación de versiones localizadas de HoloLens (1ª generación)
 
-Para cambiar a la versión en chino o japonés de HoloLens, deberá usar la herramienta de recuperación de dispositivos de Windows (WDRT) para descargar la compilación del idioma en un equipo y, a continuación, instalarla en el HoloLens.
+Para cambiar a la versión en chino o japonés de HoloLens, deberá usar la herramienta de recuperación de dispositivos (WDRT) de Windows para descargar la compilación del idioma en un equipo y, a continuación, instalarla en el HoloLens.
 
 > [!IMPORTANT]
 > El uso de WDRT para instalar las compilaciones en chino o japonés de HoloLens elimina los datos existentes, como los archivos personales y la configuración, de la HoloLens. 
@@ -34,11 +34,11 @@ Para cambiar a la versión en chino o japonés de HoloLens, deberá usar la herr
 1. Después de que la herramienta detecte automáticamente el HoloLens, seleccione el icono Microsoft HoloLens aplicación.
 1. En la siguiente pantalla, seleccione **Selección** manual del paquete y seleccione el archivo de instalación que reside en la carpeta que   descomprimió en el paso 4. (Busque un archivo que tenga la extensión ".ffu"). 
 1. Seleccione **Instalar software** y siga las instrucciones. 
-1. Una vez que se instala la compilación, HoloLens el programa de instalación se inicia automáticamente. Coloque en el dispositivo y siga las instrucciones de configuración. 
+1. Una vez instalada la compilación, HoloLens se inicia automáticamente. Coloque el dispositivo y siga las instrucciones de configuración. 
 
-Cuando haya terminado con el programa de instalación, vaya **a** Configuración Update & Security Windows Programa Insider y compruebe que está configurado para recibir las compilaciones de versión preliminar  >    >  más recientes. Al igual que las compilaciones de la versión preliminar en inglés, Windows Programa Insider mantiene actualizadas las versiones en chino y japonés de HoloLens con las compilaciones de versión preliminar más recientes.
+Cuando haya terminado con el programa de instalación, vaya **a** Configuración Update & Security Windows Programa Insider y compruebe que está configurado para recibir las compilaciones de versión  >    >  preliminar más recientes. Al igual que las compilaciones de la versión preliminar en inglés, Windows Programa Insider mantiene actualizadas las versiones en chino y japonés de HoloLens con las compilaciones de versión preliminar más recientes.
 
 > [!NOTE]
 >  
 > - No se puede usar la aplicación Configuración para cambiar el idioma del sistema entre inglés, japonés y chino. El flashing de una nueva compilación es la única manera admitida de cambiar el idioma del sistema del dispositivo.
-> - Aunque puede usar el teclado Pinyin en pantalla para escribir texto chino simplificado o japonés, en este momento no se admite el uso de un teclado de hardware Bluetooth para escribir texto chino simplificado o japonés.  Sin embargo, en chino o japonés HoloLens, puede seguir usando un teclado Bluetooth para escribir en inglés (para alternar un teclado de hardware para escribir en inglés, presione la tecla ~).
+> - Aunque puede usar el teclado Pinyin en pantalla para escribir texto en chino simplificado o japonés, en este momento no se admite el uso de un teclado de hardware Bluetooth para escribir texto chino simplificado o japonés.  Sin embargo, en chino o japonés HoloLens, puede seguir usando un teclado Bluetooth para escribir en inglés (para alternar un teclado de hardware para escribir en inglés, presione la tecla ~).

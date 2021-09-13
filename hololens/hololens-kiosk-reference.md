@@ -14,13 +14,13 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122863950"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033209"
 ---
-# <a name="hololens-kiosk-reference-information"></a>HoloLens Información de referencia de quiosco
+# <a name="hololens-kiosk-reference-information"></a>Información de referencia de pantalla completa de HoloLens
 
 Esta página contiene información útil para configurar el modo HoloLens pantalla completa del dispositivo. Estas referencias incluyen AUMIDs para aplicaciones de bandeja de entrada y localización de las de , y varios ejemplos XML para el modo de pantalla completa, que están a solo unas cuantas ediciones de estar listas para usarse en varios escenarios diferentes. Para obtener información sobre cómo configurar un quiosco, lea [la página Configurar un quiosco.](hololens-kiosk.md)
 
@@ -28,7 +28,7 @@ Esta página contiene información útil para configurar el modo HoloLens pantal
 
 Para obtener información general sobre cómo elegir aplicaciones de quiosco, consulte Directrices para elegir una aplicación para el acceso asignado [(modo de pantalla completa).](/windows/configuration/guidelines-for-assigned-access-app)
 
-Si usa un sistema mobile Administración de dispositivos (MDM) o un paquete de aprovisionamiento para configurar el modo de pantalla completa, use el proveedor de servicios de configuración [(CSP) AssignedAccess](/windows/client-management/mdm/assignedaccess-csp) para especificar aplicaciones. El CSP usa los id. de modelo de usuario [de aplicación (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) para identificar las aplicaciones. En la tabla siguiente se enumeran los AUMID de algunas aplicaciones que se pueden usar en una pantalla completa con varias aplicaciones.
+Si usa un sistema Administración de dispositivos móvil (MDM) o un paquete de aprovisionamiento para configurar el modo de pantalla completa, use el proveedor de servicios de configuración [(CSP) AssignedAccess](/windows/client-management/mdm/assignedaccess-csp) para especificar aplicaciones. El CSP usa los id. de modelo de usuario [de aplicación (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) para identificar las aplicaciones. En la tabla siguiente se enumeran los AUMID de algunas aplicaciones que se pueden usar en una pantalla completa con varias aplicaciones.
 
 <a id="aumids"></a>
 
@@ -45,14 +45,14 @@ Si usa un sistema mobile Administración de dispositivos (MDM) o un paquete de a
 |Centro de &nbsp; comentarios |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! App |
 |Explorador de archivos |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
 |Correo |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
-|Antiguo Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
+|Datos Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
 |Nuevo Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast<sup>4</sup> | &nbsp; |
 |Películas y TV |Microsoft.ZuneVideo \_ 8wekyb3d8bbwe \! Microsoft.ZuneVideo |
 |OneDrive |microsoft.microsoftskydrive \_ 8wekyb3d8bbwe \! App |
 |Fotos |Microsoft. Windows. \_Fotos 8wekyb3d8bbwe \! App |
-|Datos Configuración |HolographicSystemSettings_cw5n1h2txyewy! Aplicación |
+|Antiguo Configuración |HolographicSystemSettings_cw5n1h2txyewy! Aplicación |
 |Nuevo Configuración |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! Aplicación |
 |Sugerencias |Microsoft.HoloLensTips \_ 8wekyb3d8bbwe \! HoloLensTips |
 

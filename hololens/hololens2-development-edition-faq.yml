@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: HoloLens 2 Preguntas más frecuentes sobre la edición de desarrollo
+  title: Preguntas frecuentes sobre HoloLens 2 Development Edition
   description: Manténgase al día con las preguntas más frecuentes sobre el dispositivo de realidad mixta HoloLens 2 Development Edition.
   keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
   author: evmill
@@ -16,11 +16,11 @@ metadata:
   appliesto:
   - HoloLens 2
   ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
-  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/20/2021
-  ms.locfileid: "122610257"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126033393"
 title: Preguntas más frecuentes sobre HoloLens 2 Development Edition
 summary: ''
 sections:
@@ -29,17 +29,17 @@ sections:
   - question: >
       ¿Qué puedo obtener con HoloLens 2 Development Edition?
     answer: >
-      La edición HoloLens 2 Development Edition incluye una versión de HoloLens 2, 500 USD en créditos de Azure, una evaluación de Unity Pro de 3 meses y una evaluación del complemento Dez de 3 meses.
+      La edición de desarrollo de HoloLens 2 incluye una versión de HoloLens 2, 500 USD en créditos de Azure, una evaluación de Unity Pro de 3 meses y una evaluación del complemento Dez de 3 meses.
   - question: >
       ¿Cuál es la diferencia entre HoloLens 2 y HoloLens 2 Development Edition?
     answer: >
       Solo puede usar HoloLens 2 Development Edition para compilar y probar aplicaciones empresariales internas que se usarán con el HoloLens 2 (edición comercial) en una configuración de producción. Como parte de la compra de Development Edition, Microsoft puede, a su entera discreción, proporcionarle determinados derechos identificados durante el proceso de finalización de la compra. Estos derechos incluyen el derecho a canjear determinados créditos de descuento o acceso de prueba a determinados servicios o herramientas de Microsoft o de terceros durante un período limitado. [Más información](hololens2-options-dev-edition.md)
   - question: >
-      ¿Se puede usar cualquier edición HoloLens 2 para desarrollar?
+      ¿Se puede usar HoloLens 2 edición de para desarrollar?
     answer: >
       Sí. Cualquier edición de HoloLens 2 se puede usar para desarrollar aplicaciones.
   - question: >
-      ¿Cómo y recibiré mis 500 USD en créditos de Azure, la versión de prueba Pro de Unity de 3 meses y la evaluación del complemento Dez de 3 meses?
+      ¿Cómo y recibiré mis 500 USD en créditos de Azure, la versión de prueba de Unity Pro de 3 meses y la evaluación del complemento Dez de 3 meses?
     answer: >
       Los créditos de descuento o el acceso de prueba se incluirán con HoloLens 2 Development Edition.
   - question: >
@@ -49,7 +49,7 @@ sections:
   - question: >
       ¿Qué es Unity Pro?
     answer: >
-      Unity Pro es una plataforma 3D en tiempo real para empresas o estudios pequeños o medianos. Está diseñado para equipos con una combinación de aptitudes técnicas y no técnicas. [Más información](https://store.unity.com/products/unity-pro)
+      Unity Pro es una plataforma 3D en tiempo real para pequeñas empresas o estudios de tamaño medio. Está diseñado para equipos con una combinación de aptitudes técnicas y no técnicas. [Más información](https://store.unity.com/products/unity-pro)
   - question: >
       ¿Qué es el complemento de Pluginsyz?
     answer: >
@@ -66,7 +66,7 @@ sections:
   - question: "¿Puedo mostrar mi dispositivo HoloLens 2 Development Edition a mis clientes? \n"
     answer: >
       Sí, este dispositivo está pensado para usarse para crear prototipos y probar soluciones de realidad mixta.
-  - question: "¿Dónde puedo comprar la HoloLens 2 Development Edition? \n"
+  - question: "¿Dónde puedo comprar la edición HoloLens 2 Development Edition? \n"
     answer: "HoloLens 2 Development Edition se vende exclusivamente en Microsoft Store.  \n"
   - question: "¿Puedo devolver mi HoloLens 2 Development Edition?  \n"
     answer: >
@@ -101,7 +101,7 @@ sections:
   - question: >
       ¿Dónde puedo obtener más información sobre el diseño de Mixed Reality soluciones?
     answer: >
-      Visite la introducción a Mixed Reality de diseño. [Más información](/windows/mixed-reality/design/design)
+      Visite la documentación de introducción Mixed Reality diseño. [Más información](/windows/mixed-reality/design/design)
   - question: >
       ¿Dónde puedo obtener soporte técnico para HoloLens Developer Edition?
     answer: >
@@ -111,7 +111,7 @@ sections:
   - question: >
       ¿Qué se incluye con mi prueba de Unity?
     answer: >
-      Una evaluación de unity Pro durante tres meses permite el acceso a la solución completa de Unity&#39;para que los profesionales creen, operen y moneticen. La versión de Pro de Unity relacionada no tiene fecha límite para canjear.
+      Una versión de prueba de Pro de Unity de tres meses permite el acceso a la solución completa de Unity&#39;para que los profesionales creen, operen y moneticen. La versión de Pro de Unity relacionada no tiene fecha límite para canjear.
 
 
       Esta oferta es para nuevos usuarios y no se aplica a las suscripciones de Unity Pro establecidas. La Pro de Unity puede estar sujeta a términos adicionales que estarán disponibles en el canje. Revise las condiciones [de &amp; los términos aplicables](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) y [la directiva de privacidad](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
@@ -165,18 +165,18 @@ sections:
 
       Visite HoloLens 2 Development Edition para [obtener más información.](hololens2-options.md?tabs=device)
   - question: >
-      Cómo ponerse en contacto con el servicio de soporte técnico de Ticketyz?
+      Cómo ponerse en contacto con el soporte técnico de Noz?
     answer: >
       Para obtener ayuda con cualquier pregunta sobre el identificador, la cuenta, las organizaciones y las suscripciones de Unity, visite support.unity3d.com
 
 
-      Para obtener soporte técnico específico de Pixelyz (después de canjear la evaluación), visite [Pixyz-software.com/support](http://pixyz-software.com/support)
+      Para obtener soporte técnico específico deIendoz (después de canjear la evaluación), visite [Pixyz-software.com/support](http://pixyz-software.com/support)
 - name: Azure
   questions:
   - question: >
       ¿Cómo puedo canjear mi crédito de Azure de 500 USD?
     answer: >
-      Para canjear los créditos de Azure de 500 USD, canjee Pase para Azure código de promoción y active la suscripción. [Más información](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Para canjear sus créditos de Azure de 500 USD, canjee su Pase para Azure de promoción y active su suscripción. [Más información](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
       Revise el contrato Pase para Azure [suscripción y](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) los detalles de [la oferta.](https://azure.microsoft.com/en-us/offers/azure-pass/)
@@ -187,7 +187,7 @@ sections:
   - question: >
       ¿Qué puedo hacer con mis créditos de Azure?
     answer: >
-      Con los créditos de Azure, puede empezar a compilar con Microsoft&#39;cada vez mayor conjunto de servicios en la nube. Los créditos de Azure incluidos con HoloLens 2 Development Edition permiten a los clientes empezar a crear y probar rápidamente aplicaciones de realidad mixta en Azure. Para obtener detalles completos sobre la creación en Azure, visite [Recursos de Azure.](https://azure.microsoft.com/en-us/resources/)
+      Con los créditos de Azure, puede empezar a crear con microsoft&#39;cada vez mayor conjunto de servicios en la nube. Los créditos de Azure incluidos con HoloLens 2 Development Edition son para permitir que los clientes puedan empezar a crear y probar rápidamente aplicaciones de realidad mixta en Azure. Para obtener detalles completos sobre la creación en Azure, visite [Recursos de Azure.](https://azure.microsoft.com/en-us/resources/)
   - question: >
       ¿Dónde puedo obtener más información sobre los servicios de realidad mixta de Azure?
-    answer: Microsoft ofrece un conjunto de servicios de realidad mixta para permitir que los desarrolladores compilen y prueben soluciones de realidad mixta. [Más información](/windows/mixed-reality/develop/mixed-reality-cloud-services)
+    answer: Microsoft ofrece un conjunto de servicios de realidad mixta para permitir a los desarrolladores compilar y probar soluciones de realidad mixta. [Más información](/windows/mixed-reality/develop/mixed-reality-cloud-services)

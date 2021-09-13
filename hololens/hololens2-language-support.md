@@ -17,12 +17,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32f4cce668b2f8a483dbef3f4b41a0ceb8267dcc202f2be9d32ecec4061d0c21
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659577"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033358"
 ---
 # <a name="supported-languages-for-hololens-2"></a>Idiomas admitidos para HoloLens 2
 
@@ -54,27 +54,27 @@ Algunas características de HoloLens 2 usar el Windows idioma para mostrar. El W
 
 ## <a name="change-the-language-or-keyboard-layout"></a>Cambiar el idioma o el diseño del teclado
 
-El proceso de instalación configura el HoloLens para una región y un idioma específicos. Puede cambiar esta configuración mediante la sección **Time & language de** **Configuración**.
+El proceso de instalación configura el HoloLens para una región y un idioma específicos. Puede cambiar esta configuración mediante la sección **Time & language** de **Configuración**.
 
 > [!NOTE]  
 > El idioma de voz y dictado depende (y es el mismo que) del Windows idioma para mostrar.
 
 ### <a name="to-change-the-windows-display-language"></a>Para cambiar el idioma Windows pantalla
 
-1. Abra el **menú** Inicio y, a continuación, **seleccione Configuración** hora  >  **e idioma.**  >  
+1. Abra el **menú** Inicio y, a continuación, **seleccione Configuración** idioma  >  **y hora.**  >  
 2. Seleccione **Windows idioma para mostrar** y, a continuación, seleccione un idioma.  
 
 Si el idioma admitido que está buscando no está en el menú, siga estos pasos:  
 
 1. En **Idiomas preferidos,** **seleccione Agregar un idioma.**
 2. Busque y agregue el idioma.
-3. Vuelva a **seleccionar Windows idioma para** mostrar y, a continuación, seleccione el idioma que agregó en el paso anterior.
+3. Seleccione el **Windows idioma para** mostrar de nuevo y, a continuación, seleccione el idioma que agregó en el paso anterior.
 
 ### <a name="to-change-the-keyboard-layout"></a>Para cambiar la distribución del teclado
 
-Para agregar o quitar un diseño de teclado, abra el **menú** Inicio y, a continuación, **seleccione** Configuración  >  **tiempo & idioma**  >  **teclado**.
+Para agregar o quitar un diseño de teclado, abra el **menú** Inicio y, a continuación, **seleccione** Configuración tiempo &  >  **idioma teclado**  >  .
 
-Si el HoloLens tiene más de un diseño de teclado, use la **tecla Diseño** para cambiar entre ellos. La **tecla** Diseño está en la esquina inferior derecha del teclado en pantalla.
+Si el HoloLens tiene más de un diseño de teclado, use la tecla **Diseño** para cambiar entre ellos. La **tecla** Diseño está en la esquina inferior derecha del teclado en pantalla.
 
 > [!NOTE]  
 > El teclado en pantalla puede usar el Editor de métodos de entrada (IME) para escribir caracteres en idiomas, como el japonés. Sin embargo, HoloLens no admite teclados Bluetooth externos que usan IME.

@@ -14,35 +14,35 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6999157c6f5a396812df26f748c771581b61d63709918abb2ae45063810ef8
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: eb96f1cdc799551297c0373268e8cc8f35c6bd06
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033550"
 ---
-# <a name="configure---cloud-connected-guide"></a>Configuración: Guía conectada a la nube
+# <a name="configure---cloud-connected-guide"></a>Configurar: Guía conectada a la nube
 
 En esta sección de la guía, veremos&#39;cómo configurar la inscripción automática para el inquilino y cómo aplicar licencias para Intune y Remote Assist.
 
 ## <a name="azure-users-and-groups"></a>Usuarios y grupos de Azure
 
-Azure e Intune mediante esa extensión usan usuarios y grupos para ayudar a asignar configuraciones y licencias. Para validar este flujo de implementación y poder realizar una llamada Remote Assist de un usuario a otro,&#39;necesitará dos cuentas de usuario.
+Azure e Intune mediante esa extensión usan usuarios y grupos para ayudar a asignar configuraciones y licencias. Para validar este flujo de implementación y poder realizar una llamada Remote Assist de un usuario&#39;a otro, necesitará dos cuentas de usuario.
 
-Podemos crear un único grupo de usuarios con el fin de asignar licencias. Podemos unir ambos usuarios al mismo grupo y aplicar una licencia para Intune Remote Assist a ese grupo.
+Podemos crear un único grupo de usuarios con el fin de asignar licencias. Podemos unir ambos usuarios al mismo grupo y aplicar una licencia para Intune y Remote Assist a ese grupo.
 
-Si aún no&#39;acceso a dos cuentas de Azure AD de un grupo de usuarios que puede usar; Estas son las guías de inicio rápido para:
+Si aún no&#39;acceso a dos cuentas de Azure AD en un grupo de usuarios que puede usar; Estas son las guías de inicio rápido para:
 
 - [Creación de un usuario](/mem/intune/fundamentals/quickstart-create-user)
 - [Creación de un grupo](/mem/intune/fundamentals/quickstart-create-group)
 - [Agregar usuarios a un grupo:](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) agregar usuarios creados para crear un grupo
-- [Configurar Azure AD para permitir que un grupo de usuarios](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) se una a dispositivos: asegúrese de que el nuevo grupo de usuarios tenga permiso para inscribir dispositivos para Azure AD
+- [Configurar Azure AD para permitir que un grupo de usuarios](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) se una a dispositivos: asegúrese de que el nuevo grupo de usuarios tiene permiso para inscribir dispositivos para Azure AD
 
 ## <a name="auto-enrollment-on-hololens-2"></a>Inscripción automática en HoloLens 2
 
 Para tener una experiencia fluida y sin problemas, la configuración de Azure Active Directory Join (AADJ) y la inscripción automática en Intune para dispositivos HoloLens 2 es la mejor opción. Esto permitirá a los usuarios introducir sus credenciales de inicio de sesión de la organización durante la OOBE y registrarse automáticamente con Azure AD e inscribir el dispositivo en MDM.
 
-Mediante el [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), podemos seleccionar servicios y navegar por algunas páginas hasta que podamos seleccionar Obtener una Premium evaluación. Es posible que observe que hay Azure Active Directory Premium 1 y 2, para la inscripción automática P1 es suficiente. Podemos seleccionar Intune, seleccionar el ámbito de usuario para la inscripción automática y seleccionar el grupo que se creó anteriormente.
+Mediante el [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home), podemos seleccionar servicios y navegar por algunas páginas hasta que podamos seleccionar Obtener una Premium prueba. Es posible que observe que hay Azure Active Directory Premium 1 y 2, para la inscripción automática P1 es suficiente. Podemos seleccionar Intune, seleccionar el ámbito de usuario para la inscripción automática y seleccionar el grupo que se creó anteriormente.
 
 Para obtener todos los detalles y los pasos, lea la guía [sobre cómo habilitar la inscripción automática para Intune.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
@@ -53,7 +53,7 @@ Una licencia de aplicación permite a un usuario instalar aplicaciones adquirida
 Los requisitos de las licencias pueden ser diferentes en función de si el usuario realizará la llamada Remote Assist desde un dispositivo o será un colaborador remoto de Microsoft Teams. De forma predeterminada, Remote Assist y Teams casillas de verificación están marcadas. Para los fines de esta guía, se recomienda dejar activadas las casillas predeterminadas.
 
 1. Obtenga más información sobre los [distintos requisitos de licencias y productos por rol.](/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role) Hay varios tipos diferentes de licencias Remote Assist, así que asegúrese de obtener las correctas para sus necesidades.
-2. Deberá&#39;adquirir la [licencia](/dynamics365/mixed-reality/remote-assist/buy-remote-assist).
+2. Deberá&#39;adquirir [la licencia](/dynamics365/mixed-reality/remote-assist/buy-remote-assist).
 3. [Aplique sus licencias](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) al grupo.
 
 ## <a name="next-step"></a>Paso siguiente

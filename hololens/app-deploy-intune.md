@@ -17,25 +17,25 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033054"
 ---
 # <a name="intune--company-portal"></a>Intune y Portal de empresa
 
 Con Mobile Administración de dispositivos (MDM), puede usar sus propias aplicaciones personalizadas a través de [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) para implementarla directamente en los dispositivos HoloLens dispositivos. Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Intune se incluye en el conjunto de programas de [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) de Microsoft y permite a los usuarios ser productivos manteniendo protegidos los datos de la organización. Para más información sobre Intune, lea [¿Qué es Intune?](/mem/intune/fundamentals/what-is-intune)
 
-## <a name="setup"></a>Configurar
+## <a name="setup"></a>Configuración
 
-1. Upload una aplicación a una línea de negocio o cargue una aplicación personalizada en el inquilino de Intune. Consulte también: Administración [Enterprise aplicaciones.](/windows/client-management/mdm/enterprise-app-management)
+1. Upload una aplicación a una línea de negocio o cargue una aplicación personalizada en el inquilino de Intune. Consulte también: Enterprise [administración de aplicaciones.](/windows/client-management/mdm/enterprise-app-management)
 
 2. [Asigne la aplicación a un grupo](/mem/intune/apps/apps-deploy). En función del tipo de asignación que elija, la aplicación se puede entregar automáticamente o disponible para que se pueda retirar fácilmente si tiene una selección de aplicaciones.
 
 > [!NOTE]
-> Al compilar el paquete appx, asegúrese de incluir la arquitectura de los dispositivos en los que va a realizar la implementación. HoloLens 2 arm64 y HoloLens (1ª generación) es x86. Puede incluir ambos en un único paquete appx si planea tener un entorno de dispositivos mixtos.
+> Al compilar la agrupación appx, asegúrese de incluir la arquitectura de los dispositivos en los que va a realizar la implementación. HoloLens 2 es ARM64 y HoloLens (1ª generación) es x86. Puede incluir ambos en un único paquete appx si planea tener un entorno de dispositivos mixtos.
 
 ## <a name="assignment-types"></a>Tipos de asignación
 
@@ -52,9 +52,9 @@ Siga estos pasos para obtener automáticamente las aplicaciones:
 2. Una vez que el dispositivo haya completado la inscripción, debe recibir la aplicación en el dispositivo.
 3. Si no ve la aplicación inmediatamente, vaya **a Configuración** Accounts Work or School your account Info (Cuentas de trabajo o escuela) y desplácese hacia abajo para ver información sobre el estado de  >    >    >   la aplicación instalada.
 
-Cómo llegar a las aplicaciones a través de la Portal de empresa:
+Cómo llegar a las aplicaciones a través del Portal de empresa:
 
-1. Abra el **menú Inicio** y seleccione **Microsoft Store**.
+1. Abra el **menú Inicio y** seleccione **Microsoft Store**.
 2. Busque **Portal de empresa** y descargue la aplicación.
 3. Inicie sesión en su cuenta.
 4. Seleccione la aplicación que desea recibir y descárárelo.

@@ -15,17 +15,17 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033496"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Implementación: Guía de conexión corporativa
 
-Una parte importante de cada implementación es asegurarse de que la implementación esté configurada correctamente antes de probarla usted mismo para garantizar una experiencia sin problemas para el usuario final.
+Una parte importante de cada implementación es asegurarse de que la implementación está configurada correctamente antes de probarla usted mismo para garantizar una experiencia sin problemas para el usuario final.
 
-Dado que estamos implementando el certificado de Wi-Fi a través de MDM, será necesario configurar inicialmente HoloLens e inscribir dispositivos en una red Wi-Fi abierta o en una red que no requiera el certificado. Una vez que el HoloLens haya finalizado la OOBE y la inscripción, el dispositivo recibirá el certificado de red y el LOB configurados previamente y podremos validar que el dispositivo recibió ambos.
+Dado que estamos implementando el certificado Wi-Fi a través de MDM, será necesario configurar inicialmente HoloLens e inscribir dispositivos en una red Wi-Fi abierta o en una red que no requiera el certificado. Una vez que el HoloLens haya finalizado la OOBE y la inscripción, el dispositivo recibirá el certificado de red y el LOB configurados previamente y podremos validar que el dispositivo recibió ambos.
 
 Después, podrá confirmar que puede crear y usar una guía de prueba.
 
@@ -33,19 +33,19 @@ Después, podrá confirmar que puede crear y usar una guía de prueba.
 
 Ahora que todo está configurado correctamente para la Azure AD y la inscripción de MDM, el resto debería ser ahora un complemento. Necesitará una conexión de Wi-Fi y el dispositivo HoloLens y una de las cuentas de usuario Azure AD configuradas previamente.
 
-Si el dispositivo no está actualmente en un estado de configuración de fábrica, ahora sería un buen momento para volver a [actualizar el dispositivo.](/hololens/hololens-recovery#clean-reflash-the-device)
+Si el dispositivo no está actualmente en un estado de configuración de fábrica, sería un buen momento para volver a [actualizar el dispositivo.](/hololens/hololens-recovery#clean-reflash-the-device)
 
 1. Una vez que el dispositivo esté en la configuración rápida, deberá empezar a interactuar y seguir las indicaciones.
 
 2. Conectar a una red Wi-Fi que no requiere certificados para unirse a la red Wi-Fi. Esto permitirá que el dispositivo descargue el certificado que se usará en el equipo de Wi-Fi después de la configuración inicial.
 
-3. El mensaje crítico será cuando se le pregunte **si Quién posee este HoloLens?** Seleccione **My work or school own it (Mi** trabajo o escuela es el propietario) y escriba sus credenciales Azure AD cuenta.
+3. El mensaje crítico será cuando se le **pregunte si Quién posee este HoloLens?** Seleccione **My work or school own it (Mi** trabajo o escuela es el propietario) y escriba las credenciales Azure AD cuenta.
 
 4. Cuando la inscripción se realiza correctamente, se le pedirá que configure un PIN. Este PIN es único para este dispositivo para este usuario. También se le pedirán exámenes de Iris, datos de voz y configuración de telemetría y, por último, podrá aprender a abrir el menú Inicio y completar la configuración rápida.
 
-5. Una vez que haya empezado a Mixed Reality inicio, abra menú Inicio con el **gesto Iniciar** que acaba de aprender.
+5. Una vez que haya Mixed Reality inicio, abra el menú Inicio con el **gesto Iniciar** que acaba de aprender.
 
-6. Seleccione la **Configuración** y seleccione **Sistema.** La primera parte de la información que verá es el nombre del dispositivo, que para el dispositivo HoloLens 2 será HOLOLENS, seguido de una cadena &quot; &quot; de seis caracteres.
+6. Seleccione la **Configuración** y seleccione **Sistema.** La primera parte de la información que verá es el nombre del dispositivo, que para el dispositivo HoloLens 2 será HOLOLENS, seguido de una &quot; &quot; cadena de seis caracteres.
 
 7. Tome nota de este nombre.
 
@@ -53,23 +53,23 @@ Si el dispositivo no está actualmente en un estado de configuración de fábric
 
 8. Compruebe que el dispositivo se ha unido correctamente a Azure AD. Hay dos maneras:
 
-    1.  La Configuración aplicación. En **Configuración** seleccione **Cuentas Acceder** a trabajo  ->  **o escuela.** En esta pantalla, puede comprobar que se ha inscrito correctamente; para ello, vea Conectado a &quot; nameofAAD&#39;de Azure AD. Conectado por *yourusername@nameofAAD.onmicrosoft.com* . Esto comprobará que el dispositivo está unido a la organización&#39;de Azure AD.
+    1.  La Configuración aplicación. En **Configuración** seleccione **Cuentas Acceder** a trabajo o  ->  **escuela.** En esta pantalla, puede comprobar que está inscrito correctamente; para ello, vea Conectado a &quot; nameofAAD&#39;de Azure AD. Conectado por *yourusername@nameofAAD.onmicrosoft.com* . Esto comprobará que el dispositivo está unido a la organización&#39;de Azure AD.
 
     1. [Azure Portal](https://portal.azure.com/#home) Vaya a **Azure Active Directory**  ->  **Dispositivos todos** los  ->  **dispositivos** y busque el nombre del dispositivo. En Tipo de combinación, se mostrará como "Azure AD unido".
         ![Compruebe el tipo de combinación en Azure AD.](./images/hololens2-devices-all-devices.png)
 
 9. Compruebe que el dispositivo está inscrito con MDM. Hay dos maneras:
 
-    1. En **Configuración**, seleccione **Cuentas Acceder** a trabajo o  ->  **escuela.** En esta pantalla, puede comprobar que se ha inscrito correctamente; para ello, vea Conectado a &quot; nameofAAD&#39;de Azure AD. Conectado por *yourusername@nameofAAD.onmicrosoft.com* . En esta cuenta de Acceso a trabajo o escuela, seleccione &quot; Conectado a nameofAAD&#39;de Azure AD. Conectado por yourusername@nameofAAD.onmicrosoft.com &quot; y seleccione el **botón** Información.
+    1. En **Configuración**, seleccione **Cuentas Acceso** a trabajo o  ->  **escuela.** En esta pantalla, puede comprobar que está inscrito correctamente; para ello, vea Conectado a &quot; nameofAAD&#39;de Azure AD. Conectado por *yourusername@nameofAAD.onmicrosoft.com* . En esta cuenta de access work o school, seleccione &quot; Conectado a nameofAAD&#39;de Azure AD. Conectado por yourusername@nameofAAD.onmicrosoft.com &quot; y seleccione el **botón** Información.
 
-    1. [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#home). Inicie sesión y seleccione **Dispositivos y, a** **continuación, Todos los dispositivos.** Desde aquí, puede buscar en el HoloLens de&#39;nombre. Debería poder ver la lista de HoloLens en Intune.
+    1. [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#home). Inicie sesión y seleccione **Dispositivos y, a** **continuación, Todos los dispositivos.** Desde aquí, puede buscar el nombre HoloLens dispositivo&#39;dispositivo. Debería poder ver la lista de HoloLens en Intune.
 
         ![Compruebe que Intune administra en Azure AD.](./images/hololens2-devices-all-devices2.png)
 
 
 ## <a name="wi-fi-certificate-validation"></a>Wi-Fi validación de certificados
 
-Por ahora, el dispositivo debería haber recibido el Wi-Fi certificado. La validación más sencilla que puede hacer es intentar conectarse a la conexión Wi-Fi para la que&#39;ha recibido el certificado. Abra la aplicación **Configuración,** vaya a **Red &amp; Wi-Fi** de Internet  ->   y seleccione la conexión Wi-Fi. Una vez conectado, abra la aplicación Microsoft Edge y confirme que puede navegar a un sitio web.
+Por ahora, el dispositivo debería haber recibido el Wi-Fi certificado. La validación más sencilla que puede hacer es intentar conectarse a la conexión Wi-Fi para la que&#39;ha recibido el certificado. Abra la aplicación **Configuración,** vaya a **Red &amp; Wi-Fi** de Internet y  ->   seleccione la conexión Wi-Fi. Una vez conectado, abra la aplicación Microsoft Edge y confirme que puede navegar a un sitio web.
 
 Para confirmar que ha recibido el certificado en el dispositivo, puede usar el Administrador [de certificados](/hololens/certificate-manager).
 
@@ -77,7 +77,7 @@ Para confirmar que ha recibido el certificado en el dispositivo, puede usar el A
 
 Para ver el progreso de la instalación de una aplicación administrada, puede ver si la aplicación está instalada o comprobar Configuración. Al configurar una aplicación de LOB como una instalación necesaria para nuestro grupo, después de inscribir el HoloLens con un usuario del grupo asignado, la aplicación se descargará automáticamente en el HoloLens.
 
-Abra el menú Inicio y seleccione **Todas las aplicaciones.** Dependiendo del número de aplicaciones que tenga,  puede que tenga que usar los botones de página arriba o **abajo.**
+Abra el menú Inicio y seleccione **Todas las aplicaciones.** En función del número de aplicaciones que tenga, puede que tenga que usar los botones de página arriba **o abajo.** 
 
 Para validar la instalación de la aplicación en el dispositivo, puede hacerlo a través de **acceso a** cuentas de Configuración profesionales o educativas; seleccione la cuenta y luego el botón Información y desplácese hacia abajo para ver diferentes configuraciones y aplicaciones aplicadas al dispositivo desde  ->    ->  MDM. 
 
@@ -91,7 +91,7 @@ Hay modos para la aplicación Guides en HoloLens, creación y funcionamiento. De
 
 ### <a name="authoring-the-guide"></a>Creación de la guía
 
-No es necesario hacer mucho para esta validación rápida. Solo tiene que seleccionar la guía que preparó en el equipo. Deberá delimitar la [guía,](/dynamics365/mixed-reality/guides/hololens-app-anchor)para una validación rápida, puede usar un delimitador holográfico. Después, debe colocar [los pasos y los modelos](/dynamics365/mixed-reality/guides/hololens-app-orientation).
+No es necesario hacer mucho para esta validación rápida. Solo tiene que seleccionar la guía que preparó en el equipo. Deberá delimitar la [guía;](/dynamics365/mixed-reality/guides/hololens-app-anchor)para una validación rápida, puede usar un delimitador holográfico. Después, debe colocar [los pasos y los modelos](/dynamics365/mixed-reality/guides/hololens-app-orientation).
 
 >[!NOTE]
 > Necesitará el rol **de creación para iniciar** sesión en el equipo y crear en el HoloLens. El rol Operador es de solo lectura y no tiene acceso a la aplicación de PC.
@@ -114,4 +114,4 @@ Para obtener instrucciones más detalladas sobre cómo usar una guía, consulte 
 
 ## <a name="next-step"></a>Paso siguiente 
 > [!div class="nextstepaction"]
-> [Implementación conectada corporativa: mantener](hololens2-corp-connected-maintain.md)
+> [Implementación conectada corporativa: mantenimiento](hololens2-corp-connected-maintain.md)
