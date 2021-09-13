@@ -14,11 +14,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034593"
 ---
 # <a name="hololens-2-fit-and-comfort-frequently-asked-questions"></a>Preguntas más frecuentes sobre la comodidad y el ajuste de HoloLens 2
 

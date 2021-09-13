@@ -11,11 +11,11 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: marco holográfico, campo de visión, calibración, espacios, entorno, procedimientos, HoloLens, realidad mixta, cascos de realidad mixta
 ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034520"
 ---
 # <a name="hololens-environment-considerations"></a>Consideraciones sobre el entorno de HoloLens
 
