@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032953"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817283"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Recopilación y uso de la información de diagnóstico de dispositivos HoloLens
 
@@ -53,10 +53,11 @@ En la tabla siguiente se comparan distintos métodos de colección. Los nombres 
 Un HoloLens usuario puede usar la aplicación de escritorio de Microsoft Centro de opiniones para enviar información de diagnóstico a Soporte técnico de Microsoft. Para obtener más información e instrucciones completas, consulte [Enviarnos comentarios.](hololens-feedback.md)  
 
 > [!NOTE]  
-> **Usuarios comerciales o empresariales:** Si usa la aplicación Centro de opiniones para notificar un problema relacionado con MDM, el aprovisionamiento o cualquier otro aspecto de administración de dispositivos, cambie la categoría de la aplicación a Enterprise categoría Dispositivo  >  **de administración**.
+> **Usuarios comerciales o empresariales:** Si usa la aplicación Centro de opiniones para notificar un problema relacionado con MDM, el aprovisionamiento o cualquier otro aspecto de administración de dispositivos, cambie la categoría de la aplicación a Enterprise categoría Dispositivo de  >  **administración**.
 
 >[!IMPORTANT]
-> Para proporcionar los mejores datos posibles para corregir problemas, se recomienda encarecidamente establecer la telemetría del dispositivo en **Opcional.** Puede establecer este valor durante la configuración rápida (OOBE) o mediante la **aplicación Configuración** configuración. Para ello mediante el uso de Configuración, seleccione **Start > Configuración > Privacy > App Diagnostics > On (Iniciar**> Configuración > diagnósticos de > en ).
+> Para proporcionar los mejores datos posibles para corregir problemas, se recomienda encarecidamente establecer la telemetría del dispositivo en **Opcional.** Puede establecer este valor durante la configuración rápida (OOBE) o mediante Configuración **aplicación.** Para ello mediante el uso de Configuración, seleccione **Start > Configuración > Privacy > App Diagnostics > On (Iniciar**> Configuración > diagnósticos de > en ).
+
 ### <a name="prerequisites"></a>Requisitos previos
 
 - El dispositivo está conectado a una red.
@@ -64,7 +65,7 @@ Un HoloLens usuario puede usar la aplicación de escritorio de Microsoft Centro 
 
 ### <a name="data-locations-access-and-retention"></a>Ubicaciones, acceso y retención de datos
 
-Al aceptar los términos de uso del Centro de opiniones, el usuario da su consentimiento explícitamente para el almacenamiento y el uso de los datos (tal y como se define en ese contrato).
+Al aceptar los términos de uso del Centro de opiniones, el usuario da su consentimiento explícitamente al almacenamiento y el uso de los datos (tal y como se define en ese contrato).
 
 El Centro de opiniones proporciona dos lugares para que el usuario almacene información de diagnóstico:
 
@@ -77,7 +78,7 @@ El Centro de opiniones proporciona dos lugares para que el usuario almacene info
 
 ## <a name="settings-troubleshooter"></a>Configuración Solucionador
 
-Un HoloLens usuario puede usar la **Configuración** en el dispositivo para solucionar problemas y recopilar información de diagnóstico. Para ello, realice los pasos siguientes:
+Un HoloLens usuario puede usar la **aplicación Configuración** en el dispositivo para solucionar problemas y recopilar información de diagnóstico. Para ello, realice los pasos siguientes:
 
 1. Abra la aplicación Configuración y seleccione Actualizar & **solución de problemas**  >  **de** seguridad.
 1. Seleccione el área adecuada y seleccione **Iniciar.**
@@ -91,6 +92,7 @@ Un usuario también puede configurar el comportamiento de los diagnósticos de r
 ### <a name="os-update-troubleshooter"></a>Solucionador de problemas de actualización del sistema operativo
 En las [compilaciones Windows Holographic, versión 21H1](hololens-release-notes.md#windows-holographic-version-21h1) y versiones adelante:
 - Además de los solucionadores de problemas anteriores dentro de la aplicación Configuración, se ha agregado un nuevo solucionador de problemas con la adición de la nueva aplicación Configuración para las actualizaciones del sistema operativo. Vaya a **Configuración -> Update & Security -> Troubleshoot -> Windows Update** y seleccione **Iniciar**. Esto le permite recopilar seguimientos mientras reproduce el problema con las actualizaciones del sistema operativo para ayudar a solucionar mejor los problemas con el equipo de TI o el soporte técnico.
+
 ### <a name="prerequisites"></a>Requisitos previos
 
 - La **Configuración** está instalada en el dispositivo y está disponible para el usuario.
@@ -104,35 +106,39 @@ La información de diagnóstico se almacena en el dispositivo. Si el dispositivo
 > Este archivo \\ \<*HoloLens device name*> \\ .etl Storage \\ de documentos internos del \\ \<*ddmmyyhhmmss*> equipo
 
 > [!NOTE]  
-> En esta ruta de acceso y nombre de archivo, representa el nombre del HoloLens y representa la fecha y hora en \<*HoloLens device name*> \<*ddmmyyhhmmss*> que se creó el archivo.
+> En esta ruta de acceso y nombre de archivo, representa el nombre del dispositivo HoloLens y representa la fecha y hora en \<*HoloLens device name*> \<*ddmmyyhhmmss*> que se creó el archivo.
 
 La información de diagnóstico permanece en estas ubicaciones hasta que el usuario la elimina.
 
+### <a name="view-diagnostic-report"></a>Vista del informe de diagnóstico
+
+Para ver los diagnósticos de MDM en HoloLens 2, seleccione el icono de Wi-Fi, vaya a **Configuración** Accounts Access work or school (Acceso a cuentas de Configuración profesionales o educativas) y seleccione Export your management logs (Exportar los registros  ->    >   **de administración).** HoloLens los archivos de registro a su cuenta y muestra su ubicación en el equipo de escritorio.
+
 ## <a name="diagnosticlog-csp"></a>DiagnosticLog CSP
 
-En un entorno de Mobile Administración de dispositivos (MDM), el administrador de TI puede usar el proveedor de servicios de configuración [diagnosticLog (CSP)](/windows/client-management/mdm/diagnosticlog-csp) para configurar las opciones de diagnóstico en los dispositivos HoloLens inscritos. El administrador de TI puede configurar estas opciones para recopilar registros de dispositivos inscritos.
+En un entorno de Administración de dispositivos móvil (MDM), el administrador de TI puede usar el proveedor de servicios de configuración [diagnosticLog (CSP)](/windows/client-management/mdm/diagnosticlog-csp) para configurar los valores de diagnóstico en los dispositivos HoloLens inscritos. El administrador de TI puede configurar estas opciones para recopilar registros de dispositivos inscritos.
 
 Más información:
 - [Recopilación de diagnósticos desde un dispositivo Windows](/mem/intune/remote-actions/collect-diagnostics)
-- [Versión preliminar pública de Intune: Windows 10 diagnóstico de dispositivos](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+- [Versión preliminar pública de Intune: Windows 10 diagnósticos de dispositivos](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 - El dispositivo está conectado a una red.
 - El dispositivo está inscrito en un entorno MDM que admite diagnosticLog CSP.
 
-### <a name="data-locations-access-and-retention"></a>Ubicaciones, acceso y retención de datos
+### <a name="data-locations-access-and-retention"></a>Ubicaciones de datos, acceso y retención
 
 Dado que el dispositivo forma parte del entorno administrado, el usuario da su consentimiento implícitamente al acceso administrativo a la información de diagnóstico.
 
 El administrador de TI usa diagnosticLog CSP para configurar las directivas de almacenamiento, retención y acceso de datos, incluidas las directivas que rigen lo siguiente:
 
-- Infraestructura en la nube que almacena la información de diagnóstico.
+- La infraestructura en la nube que almacena la información de diagnóstico.
 - Período de retención de la información de diagnóstico.
 - Permisos que controlan el acceso a la información de diagnóstico.
 
 ## <a name="offline-diagnostics"></a>Diagnósticos sin conexión
-En situaciones en las que el dispositivo no puede recopilar diagnósticos a través de Centro de opiniones o el solucionador de problemas de Configuración, puede recopilar diagnósticos manualmente. Un escenario en el que esto es necesario es cuando el dispositivo no se puede conectar a Wi-Fi o no se puede acceder a otros métodos mencionados anteriormente. Los diagnósticos recopilan volcados de memoria y registros del dispositivo que ayudan a un ingeniero de soporte técnico de Microsoft a aislar los problemas.
+En situaciones en las que el dispositivo no puede recopilar diagnósticos mediante Centro de opiniones o el solucionador de problemas de Configuración, puede recopilar diagnósticos manualmente. Un escenario en el que esto es necesario es cuando el dispositivo no se puede conectar a Wi-Fi o no se puede acceder a otros métodos mencionados anteriormente. Los diagnósticos recopilan volcados de memoria y registros del dispositivo que ayudan a un ingeniero de soporte técnico de Microsoft a aislar los problemas.
 
 Esto funciona cuando el dispositivo aparece en Explorador de archivos después de conectarlo a un equipo a través de un cable USB.
 
@@ -140,11 +146,11 @@ Esto funciona cuando el dispositivo aparece en Explorador de archivos después d
 > La generación y administración de diagnósticos sin conexión se controla de forma diferente en función de la versión del sistema operativo. Anteriormente se controlaba mediante la configuración de telemetría, pero ahora se controla directamente a través de la directiva MDM. Si se deshabilita mediante la configuración o la directiva MDM, los registros de diagnóstico no se pueden recopilar mediante este mecanismo.
 
 Comportamiento anterior a [Windows Holographic, versión 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
- - El diagnóstico sin conexión solo está habilitado cuando el usuario está pasando por OOBE o el valor de directiva [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) está establecido en Completo (El valor predeterminado es básico en HoloLens). 
-- Para deshabilitar el diagnóstico sin conexión, vaya a la **Configuración app > Privacy** (Privacidad de la aplicación) y seleccione Basic **(Básico) en** Diagnostic Data **(Datos de diagnóstico).** En las compilaciones en las que el diagnóstico sin conexión depende de la configuración de telemetría, solo afecta a si se recopilan registros o no. No afecta a los archivos que se recopilan.
+ - El diagnóstico sin conexión solo se habilita cuando el usuario está pasando por OOBE o el valor de la directiva [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) está establecido en Completo (Básico es el valor predeterminado en HoloLens). 
+- Para deshabilitar el diagnóstico sin conexión, vaya a la Configuración App > Privacy (Privacidad de App **>)** y **seleccione Basic (Básico) en** Datos de **diagnóstico.** En las compilaciones en las que el diagnóstico sin conexión depende de la configuración de telemetría, solo afecta a si se recopilan registros o no. No afecta a los archivos que se recopilan.
 - Si el dispositivo está bloqueado, los registros no aparecerán.
 
-En compilaciones [Windows Holographic, versión 20H2](hololens-release-notes.md#windows-holographic-version-20h2) y 2.0 en adelante:
+En las [compilaciones Windows Holographic, versión 20H2](hololens-release-notes.md#windows-holographic-version-20h2) y adelante:
 - Cuando el diagnóstico de reserva está habilitado, se controlará mediante una directiva MDM específica con la configuración [correspondiente MixedReality/FallbackDiagnostics.](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
 - Si el dispositivo está bloqueado, los registros no aparecerán.
 
@@ -153,13 +159,20 @@ Vea este vídeo para conocer más.
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 Siga estos pasos para recopilar diagnósticos:
+
 1.  Conectar el dispositivo con un cable USB al equipo.
-2.  En Explorador de archivos en el equipo, vaya a **"This PC \<hololens-device> \Internal Storage" (Este equipo \Storage).**
-3.  Si la **carpeta Storage** interno no aparece, el dispositivo está esperando a que un usuario inicie sesión. Inicie sesión o encienda el dispositivo manteniendo presionado el botón DE ENCENDIDO durante 10 segundos.
-4.  Presione y suelte inmediatamente los **botones De encendido** y bajada de volumen juntos.
+
+2.  En Explorador de archivos en el equipo, vaya a **"This PC \<hololens-device> \Internal Storage" (Este equipo \Internal Storage).**
+
+3.  Si la **carpeta Storage** interna no aparece, el dispositivo está esperando a que un usuario inicie sesión. Inicie sesión o encienda el dispositivo manteniendo presionado el botón DE ENCENDIDO durante 10 segundos.
+
+4.  Presione y suelte inmediatamente los botones **De encendido y volumen** abajo juntos.
+
 5.  Espere un minuto para que el dispositivo prepare los archivos ZIP. (Un archivo temporal denominado HololensDiagnostics.temp puede ser visible mientras el dispositivo genera los archivos ZIP. No acceda a ese archivo ni guárdelo. Cuando finalice el proceso, se reemplazará por los archivos ZIP).
+
 6.  Actualice el Explorador de archivos y vaya a la **carpeta "\Documents".**
+
 7.  Copie los archivos ZIP de diagnóstico y compártolos con el equipo de soporte técnico de Microsoft.
 
-> [!NOTE]
-> Algunos de los archivos ZIP de diagnóstico pueden contener PII.
+    > [!NOTE]
+    > Algunos de los archivos ZIP de diagnóstico pueden contener PII.
