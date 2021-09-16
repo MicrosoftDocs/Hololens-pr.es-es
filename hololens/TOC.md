@@ -76,8 +76,6 @@
 ### [Seguridad de las redes](security-network-security.md)
 ### [Ingeniería de seguridad ](security-engineering.md)
 ### [Privacidad y protección de datos de HoloLens 2](hololens2-privacy.md)
-## Administración del dispositivo
-### [Uso de MDM para administrar dispositivos HoloLens](hololens-mdm-configure.md)
 ## Inscripción de dispositivos
 ### [Inscripción de HoloLens en la MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot para HoloLens 2](hololens2-autopilot.md) 
@@ -90,6 +88,7 @@
 ### [Instalador de aplicación](app-deploy-app-installer.md)
 ## Directivas (CPS)
 ### [Configuración de CSP e introducción a la administración de dispositivos](hololens-csp-policy-overview.md)
+### [Uso de MDM para administrar dispositivos HoloLens](hololens-mdm-configure.md)
 ### [Configuración de HoloLens mediante paquetes de aprovisionamiento](hololens-provisioning.md)
 ### [Restricciones comunes de dispositivos](hololens-common-device-restrictions.md)
 ### [Configuración de HoloLens como un quiosco multimedia](hololens-kiosk.md)
