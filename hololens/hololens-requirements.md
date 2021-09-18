@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 4b8975d8eb362212eaf91966f4efa0bc22236327
+ms.sourcegitcommit: 3f21b692be2f1b7f9c382f2b735b4c10339d4a78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033825"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127934075"
 ---
 # <a name="common-deployment-scenarios"></a>Escenarios de implementación comunes
 
@@ -25,7 +25,7 @@ ms.locfileid: "126033825"
 
 Averiguar cómo implementar un nuevo dispositivo puede ser un problema al probarlo por primera vez. En este caso, compartimos diferentes maneras de implementar y administrar Microsoft HoloLens 2 dispositivos dentro de la organización.
 
-Quiere soluciones implementadas a escala. Queremos que llegue allí. En primer lugar, vamos a hablar sobre los pasos para implementar dispositivos, por lo tanto, hologramas, para lograr valor para el escenario de realidad mixta de destino, ya sea que use D365 Remote Assist, Guides o una aplicación habilitada para el servicio de realidad mixta de Azure que haya creado.
+Quiere soluciones implementadas a escala. Queremos que llegue allí. En primer lugar, vamos a hablar sobre los pasos para implementar dispositivos, por lo tanto, hologramas, para lograr valor para el escenario de realidad mixta de destino. Tanto si usa D365 Remote Assist, Guides o una aplicación habilitada para el servicio de realidad mixta de Azure que ha creado: nuestros escenarios comunes de implementación le guiarán en su recorrido.
 
 Puede ser un responsable de la toma de decisiones empresariales, profesional de TI o un equipo de innovación que HoloLens dentro de su organización. A medida que se compila desde una prueba de concepto a una implementación a escala, nuestras guías de implementación tienen sentido HoloLens dentro de la infraestructura de TI, independientemente de lo grande o pequeño que sea. Los siguientes escenarios de implementación son los más comunes:
 
@@ -51,7 +51,7 @@ Considere este modelo de implementación para:
 ### <a name="basic-common-configurations"></a>Configuraciones comunes básicas
 
 * Wi-Fi las redes están totalmente abiertas a Internet y a los servicios en la nube
-* Azure AD unirse a la inscripción automática de Administración de dispositivos móviles (MDM): MDM (Intune) administrado
+* Azure AD unirse a Mobile Administración de dispositivos (MDM) Auto Enrollment--MDM (Intune) Managed
 * Los usuarios inician sesión con su propia cuenta corporativa (Azure AD)
   * Se admiten uno o varios usuarios por dispositivo.
 * Los distintos niveles de configuraciones de bloqueo de dispositivos se aplican en función de casos de uso específicos, desde Totalmente abierto hasta Quiosco de aplicación única.
@@ -99,7 +99,7 @@ Considere este modelo de implementación para:
 ### <a name="common-challenges"></a>Desafíos comunes
 
 * HoloLens 2 no admite la unión a AD local o System Center Configuration Manager (SCCM). Solo Azure AD unirse a MDM. En la actualidad, muchas empresas todavía implementan equipos Windows 10 en este escenario como dispositivos unidos a AD locales, administrados por SCCM y es posible que no tengan la infraestructura implementada o configurada para administrar dispositivos Windows 10 internos a través de soluciones MDM basadas en la nube.
-* Como HoloLens 2 es un primer dispositivo en la nube, se basa en gran medida en los servicios conectados a Internet y en la nube para la autenticación de usuarios, las actualizaciones del sistema operativo, la administración de MDM, y así sucesivamente. Al conectarse a una red corporativa, lo más probable es que sea necesario ajustar las reglas de proxy o firewall para habilitar el acceso a HoloLens 2 y a las aplicaciones que se ejecutan en ella.
+* Como HoloLens 2 es un dispositivo en primer lugar en la nube, se basa en gran medida en los servicios conectados a Internet y en la nube para la autenticación de usuarios, las actualizaciones del sistema operativo, la administración de MDM, y así sucesivamente. Al conectarse a una red corporativa, es probable que las reglas de proxy o firewall deban ajustarse para habilitar el acceso a HoloLens 2 y a las aplicaciones que se ejecutan en ella.
 * La Wi-Fi corporativa normalmente requiere certificados para autenticar el dispositivo o el usuario en la red. La infraestructura o la configuración necesarias para implementar certificados en Windows 10 dispositivos a través de MDM puede ser difícil de configurar.
 
 La guía conectada corporativa correspondiente indica cómo inscribir HoloLens 2 en la administración de dispositivos existente, aplicar licencias según sea necesario y validar que los usuarios finales pueden usar una guía de Dynamics 365, así como usar aplicaciones de línea de negocio personalizadas, después de configurar el dispositivo.
