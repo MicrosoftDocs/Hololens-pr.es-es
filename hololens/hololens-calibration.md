@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: calibración, comodidad, objetos visuales, calidad, ipd, HoloLens, Windows Mixed Reality, cascos de VR
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034491"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833563"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Mejora de la calidad visual y la comodidad
 
@@ -38,7 +38,6 @@ HoloLens 2 pide al usuario que calibre el dispositivo en las siguientes circunst
 - El proceso de calibración no se realizó correctamente la última vez que el usuario usó el dispositivo.
 - El usuario ha eliminado sus perfiles de calibración.
 - El usuario se quita el dispositivo y se lo vuelve a poner, y se da cualquiera de las circunstancias anteriores. 
-
 
 ![Mensaje de la calibración para ajustar el dispositivo a los ojos.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -104,16 +103,23 @@ La información de calibración se puede eliminar en cualquier momento del dispo
 
 ### <a name="disable-calibration"></a>Deshabilitar la calibración
 
-También puede deshabilitar la solicitud de calibración siguiendo estos pasos:
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>Comportamiento de calibración de los ojos en las compilaciones de HoloLens 2 20H2 y más recientes
+
+A partir de Windows Holographic, versión 20H2, con el inicio de la [compatibilidad con el posicionamiento automático de los ojos](hololens-release-notes.md#auto-eye-position-support), no es necesario deshabilitar la calibración. La solicitud de calibración solo aparece automáticamente si se usa una aplicación habilitada para el seguimiento de los ojos.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>Deshabilitación de la calibración de los ojos en compilaciones anteriores de HoloLens 2
+
+Puede girar un conmutador de configuración en el casco para deshabilitar la calibración, pero es posible que el estado del conmutador no sea fácil de determinar. Se quitó y se reemplazó por la [compatibilidad con el posicionamiento automático de los ojos](hololens-release-notes.md#auto-eye-position-support), que aplaza la calibración al tiempo que proporciona corrección de color y posicionamiento de hologramas.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>Deshabilitación de la calibración de los ojos en HoloLens (1.ª generación)
+
+Para la [calibración de HoloLens (1.ª generación)](#calibrating-your-hololens-1st-gen), puede deshabilitar la solicitud de calibración de los ojos siguiendo estos pasos:
 
 1. Seleccione **Configuración** > **Sistema** > **Calibración**.
 1. Desactive **Cuando una nueva persona use este HoloLens, pedir automáticamente que ejecute la calibración de los ojos**.
 
    > [!IMPORTANT]
    > Esta opción puede afectar negativamente a la calidad y comodidad de la representación de los hologramas.  Si desactiva esta opción, las características que dependan del seguimiento ocular (como el desplazamiento de texto) dejarán de funcionar en las aplicaciones envolventes.
-
-> [!NOTE]
-> El conmutador de Configuración se ha quitado a partir de Windows Holographic, versión 20H2, con el inicio de la [compatibilidad con el posicionamiento automático de los ojos](hololens-release-notes.md#auto-eye-position-support). La solicitud de calibración solo aparecerá automáticamente si un usuario sin calibrar usa una aplicación habilitada para el seguimiento de los ojos.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>Tecnología de seguimiento ocular de HoloLens 2
 
