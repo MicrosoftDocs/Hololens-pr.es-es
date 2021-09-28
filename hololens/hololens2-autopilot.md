@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: sekerawa
-ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833580"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128346781"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot para HoloLens 2
 
@@ -26,7 +26,7 @@ ms.locfileid: "127833580"
 
 Para realizar la implementación a escala, se recomienda empezar a usar Windows Autopilot. Se considera "casi automático", ya que simplifica considerablemente la configuración de HoloLens para el personal de TI y los usuarios finales. 
 
-A un nivel alto, un administrador de TI normalmente creará configuraciones listas para empresas y registrará los dispositivos HoloLens 2 en los portales de MDM. Cuando los dispositivos HoloLens 2 se inician con la configuración rápida (OOBE) y se conectan con Internet, las configuraciones listas para empresas de dispositivos HoloLens 2 registrados se descargan y aplican automáticamente para que el dispositivo esté listo para la empresa sin la intervención del usuario.
+A un nivel alto, un administrador de TI normalmente creará configuraciones listas para empresas y registrará los dispositivos HoloLens 2 en los portales de MDM. Cuando los dispositivos HoloLens 2 se inician con la configuración rápida (OOBE) y se conectan con Internet, las configuraciones listas para empresas del dispositivo HoloLens 2 registrado se descargan y aplican automáticamente para que el dispositivo esté listo para la empresa sin la intervención del usuario.
 
 Para obtener más información, consulte el artículo [Información general de Windows Autopilot | Microsoft Docs](/mem/autopilot/windows-autopilot).
 
@@ -244,7 +244,7 @@ Una vez que complete las instrucciones anteriores, sus usuarios de HoloLens 2 te
 
 1. La experiencia de Autopilot requiere acceso a Internet. Use una de las siguientes opciones para proporcionar acceso a Internet:
 
-    - Conecte el dispositivo a una red Wi-Fi en la OOBE y, a continuación, deje que detecte la experiencia de Autopilot automáticamente. Este es el único momento en que tendrá que interactuar con la OOBE hasta que la experiencia de Autopilot se complete por sí sola. De forma predeterminada, HoloLens 2 espera 10 segundos para detectar Autopilot después de detectar la conexión a Internet. Si transcurridos diez segundos no detecta ningún perfil de Autopilot, la OOBE mostrará el CLUF. Si se da este caso, reinicie el dispositivo para intentar detectar de nuevo Autopilot. Tenga también presente que la OOBE solo puede esperar indefinidamente para detectar Autopilot si se ha definido la directiva TenantLockdown en el dispositivo.
+    - Conecte el dispositivo a una red Wi-Fi en la OOBE y, a continuación, deje que detecte la experiencia de Autopilot automáticamente. Este es el único momento en que tendrá que interactuar con la OOBE hasta que la experiencia de Autopilot se complete por sí sola.
 
     - Conecte el dispositivo con Ethernet usando adaptadores de USB-C a Ethernet para disfrutar de conectividad a Internet por cable y deje que HoloLens 2 complete automáticamente la experiencia de Autopilot.
 
@@ -268,7 +268,7 @@ Una vez que complete las instrucciones anteriores, sus usuarios de HoloLens 2 te
 
 1. Al final de OOBE, puede iniciar sesión en el dispositivo con su nombre de usuario y contraseña.
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## <a name="tenant-lockdown-csp-and-autopilot"></a>TenantLockdown CSP y Autopilot
 
@@ -318,7 +318,13 @@ La OOBE esperará indefinidamente a que se descargue el perfil de Autopilot y se
 
 ![Vista en el dispositivo cuando se aplica en este la directiva.](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>Limitaciones y problemas conocidos
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>¿Por qué no he visto la experiencia de Autopilot aunque el perfil de Autopilot esté asignado en Intune?
+
+De manera predeterminada, HoloLens 2 espera 15 segundos para detectar Autopilot después de detectar la conexión a Internet. Si no se detecta ningún perfil de Autopilot en 15 segundos, significa que Autopilot no se ha detectado correctamente y verá la página de CLUF.
+
+Reinicie el dispositivo e inténtelo de nuevo. Para obtener más información, vea [Problemas conocidos y limitaciones](hololens2-autopilot.md#known-issues-and-limitations) o [Solución de problemas](hololens2-autopilot.md#troubleshooting).
+
+## <a name="known-issues-and-limitations"></a>Limitaciones y problemas conocidos
 
 - Estamos investigando un problema por el que la instalación de aplicaciones basadas en el contexto del dispositivo en MEM no se aplica a HoloLens. [Obtenga más información sobre el contexto del dispositivo y las instalaciones de contexto del usuario.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - Al configurar Autopilot a través de Wi-Fi, es posible que haya una instancia en la que no se descargue el perfil de Autopilot cuando se establezca por primera vez la conexión a Internet. En este caso, se mostrará el Contrato de licencia de usuario final (CLUF), y el usuario tendrá la opción de continuar con la experiencia de configuración ajena a Autopilot. Para volver a intentar la configuración con Autopilot, suspenda el dispositivo y después enciéndalo, o bien reinícielo y vuelva a intentarlo.
