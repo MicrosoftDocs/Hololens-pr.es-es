@@ -2,9 +2,9 @@
 title: Envíenos sus comentarios.
 description: Cree comentarios que puedan HoloLens y Windows Mixed Reality desarrolladores mediante el Centro de opiniones.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/17/2020
+author: evmill
+ms.author: v-evmill
+ms.date: 9/28/2021
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -12,41 +12,43 @@ audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: comentarios, errores, problemas, errores, solución de problemas, ayuda
-manager: jarrettr
+manager: ranjibb
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 40619e6d891ddd56d26be227df11aae758f880ae
+ms.sourcegitcommit: 0b42c241c44c98e94dc9043bd5891d26776bc745
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033262"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129191216"
 ---
 # <a name="feedback-for-hololens"></a>Comentarios sobre HoloLens
 
-Use el Centro de opiniones para decirnos qué características le encantan, qué características podría hacer sin y cómo podría ser mejor algo. El equipo de ingeniería usa internamente el mismo mecanismo para realizar un seguimiento de los errores y corregirlos, por lo que debe Centro de opiniones informe de los errores que vea. Estamos escuchando.
+Use el Centro de opiniones para decirnos qué características le encantan, qué características podría hacer sin ella y cómo podría ser mejor algo. El equipo de ingeniería usa internamente el mismo mecanismo para realizar un seguimiento y corregir errores, por lo que debe Centro de opiniones informe de los errores que vea. Estamos escuchando.
 
-Centro de opiniones es una excelente manera de alertar al equipo de ingeniería sobre errores y asegurarse de que las actualizaciones futuras sean más fáciles y estén libres de errores de forma más coherente. Sin embargo, Centro de opiniones no proporciona una respuesta. Si necesita ayuda inmediata, envíe sus comentarios, tome nota del resumen que proporcionó para sus comentarios y,  a continuación, realice un seguimiento del soporte técnico de [HoloLens:](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) use la característica Compartir en Centro de opiniones para compartir un vínculo directo a la dirección URL. Centro de opiniones una gran cantidad de datos diariamente: la dirección URL nos ayuda a identificar sus comentarios rápidamente.
+Centro de opiniones es una excelente manera de alertar al equipo de ingeniería sobre errores y asegurarse de que las actualizaciones futuras sean más fáciles y estén libres de errores de forma más coherente. Sin embargo, Centro de opiniones no proporciona una respuesta. Si necesita ayuda inmediata, envíe sus comentarios, tome nota del resumen que proporcionó para sus comentarios y,  a continuación, realice un seguimiento del soporte técnico de [HoloLens:](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) use la característica Compartir de Centro de opiniones para compartir un vínculo directo a la dirección URL. Centro de opiniones una gran cantidad de datos diariamente: la dirección URL nos ayuda a identificar sus comentarios rápidamente.
 
-> [!NOTE]  
->  
-> - Asegúrese de que tiene la versión actual de Centro de opiniones. Para ello, seleccione **Iniciar**  >  **Microsoft Store** y, a continuación, seleccione los puntos suspensivos (**...**). A continuación, **seleccione Descargas y actualizaciones** Obtener  >  **actualizaciones.**  
->  
-> - Para proporcionar los mejores datos posibles para corregir problemas, se recomienda encarecidamente establecer la telemetría del dispositivo en **Opcional.** Puede establecer este valor durante la experiencia rápida (OOBE) o mediante la aplicación Configuración configuración. Para ello mediante el uso de Configuración, seleccione **Start**  >  **Configuración**  >  **Privacy**  >  **App Diagnostics** On (Iniciar diagnósticos  >  de la aplicación de privacidad en ).
+> [!NOTE]
+> Asegúrese de que tiene la versión actual de Centro de opiniones. Para ello, seleccione **Iniciar**  >  **Microsoft Store** y, a continuación, seleccione los puntos suspensivos (**...**). A continuación, **seleccione Descargas y actualizaciones** Obtener  >  **actualizaciones.** Obtenga más información [sobre cómo actualizar las aplicaciones de la tienda.](holographic-store-apps.md#update-apps)
+
+> [!IMPORTANT]
+> Para proporcionar los mejores datos posibles para corregir problemas, se recomienda encarecidamente establecer la telemetría del dispositivo en **Opcional.** Si no se habilita esta telemetría adicional, el error o los comentarios podrían ser inaccionables.
+>
+> Puede establecer este valor durante la experiencia rápida (OOBE) o mediante la aplicación Configuración configuración. Para ello mediante el uso de Configuración, seleccione Iniciar Configuración diagnósticos de privacidad & comentarios Datos  >    >    >    >  **de diagnóstico**  >  **opcionales en**.
 
 ## <a name="use-the-feedback-hub"></a>Use el Centro de opiniones
 
 1. Use el **gesto** Iniciar para abrir el **menú** Inicio y, a continuación, **seleccione Centro de opiniones**. La aplicación se abre en su entorno.
 
-   ![Aplicación de comentarios en HoloLens menú Inicio.](./images/hololens2-feedbackhub-tile.png)
+   ![Aplicación de comentarios sobre HoloLens menú Inicio.](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Si no ve el **Centro de opiniones**, seleccione Todas las **aplicaciones** para ver la lista completa de aplicaciones en el dispositivo.
 
 1. Para ver si otra persona ha dado comentarios similares, escriba algunas palabras clave sobre el tema en el cuadro de búsqueda **Comentarios.**
 1. Si encuentra comentarios similares, selecciónelo, agregue cualquier información adicional que tenga en el cuadro Escribir un comentario y, **a** continuación, **seleccioneVote**.
-1. Si no encuentra ningún comentario similar, seleccione **Agregar nuevos comentarios.**
+1. Si no encuentra comentarios similares, seleccione **Agregar nuevos comentarios.**
 
    ![Agregue nuevos comentarios.](./images/hololens-feedback-1.png)
 
@@ -65,7 +67,7 @@ Centro de opiniones es una excelente manera de alertar al equipo de ingeniería 
    |Miracast |Comentarios sobre Miracast. |
    |Espacios y persistencia |Comentarios sobre cómo HoloLens reconoce espacios y conserva hologramas en el espacio. |
    |menú Inicio lista de todas las aplicaciones |Comentarios sobre el **menú Inicio** y la lista de todas las aplicaciones. |
-   |Asignación de superficie |Comentarios sobre la asignación de superficie. |
+   |Asignación de superficie |Comentarios sobre la asignación de superficies. |
    |Tomar imágenes y vídeos |Comentarios sobre las capturas de realidad mixta. |
    |Reproducción de hologramas de vídeo |Comentarios sobre la reproducción de hologramas de vídeo. |
    |Todos los demás problemas |Todos los demás problemas. |
