@@ -1,25 +1,25 @@
 ---
 title: Familiarización con HoloLens (1.ª generación)
-description: Comenzar con un breve paseo por la interfaz HoloLens (1.ª generación), las características de seguimiento de las manos y el uso de aplicaciones holográficas.
+description: Empezar a trabajar con un breve paseo por la interfaz HoloLens (1.ª generación), las características de seguimiento de las manos y el uso de aplicaciones holográficas.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
-ms.date: 9/16/2019
-ms.reviewer: jarrettr
-manager: jarrettr
+ms.date: 8/9/2021
+ms.reviewer: sean-kerawala
+manager: sean-kerawala
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
-ms.author: v-miegge
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3723a30499c0237f19d85b48109b40ca643c6bdb
+ms.sourcegitcommit: be1393d24a98381e37bd1f56183c1f381f87cbd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033802"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129600753"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Familiarización con HoloLens (1.ª generación)
 
@@ -29,7 +29,7 @@ En esta guía se proporciona una introducción a la realidad mixta, gestos para 
 
 ## <a name="discover-mixed-reality"></a>Descubrimiento de la realidad mixta
 
-Al HoloLens, los hologramas se combinan con el entorno físico para que parezcan parte de su mundo. Incluso cuando los hologramas están a su alrededor, todavía puede ver su entorno, moverse libremente e interactuar con otras personas y objetos. Esta experiencia se llama "realidad mixta".
+En HoloLens, los hologramas se combinan con su entorno físico para que parezcan parte de su mundo. Incluso cuando los hologramas están a su alrededor, todavía puede ver su entorno, moverse libremente e interactuar con otras personas y objetos. Esta experiencia se llama "realidad mixta".
 
 El marco holográfico coloca los hologramas en los que los ojos son más sensibles a los detalles, y las lentes de visión continua dejan la visión periférico sin ocultar. Con el sonido espacial, puede identificar un holograma incluso si está detrás de usted. Además, HoloLens aprender y comprender el entorno, puede colocar hologramas en objetos reales y en torno a ellos, al mismo tiempo que sus aplicaciones y juegos. Por lo tanto, un carácter de un juego podría estar sentado en el pequeño o los robots espaciales podrían salir [de las paredes.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
@@ -57,7 +57,7 @@ Para abrir el **menú** Inicio:
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Selección de hologramas con mirada y pulsación en el aire
 
-Para seleccionar una aplicación u otro holograma, pulse en el aire mientras mira directamente el holograma que está seleccionando. Para ello, realice los pasos siguientes:
+Para seleccionar una aplicación u otro holograma, pulse en el aire mientras mira directamente el holograma que está seleccionando. Siga estos pasos:
 
 1. Mire el holograma que desea seleccionar.
 1. Apunte el dedo índice hacia el techo.
@@ -87,7 +87,7 @@ Cuando coloque una ventana de aplicación o un iniciador de aplicaciones, perman
 Mover y cambiar el tamaño de las aplicaciones HoloLens funciona de forma un poco diferente a como lo hace en un equipo. En lugar de arrastrar la aplicación, usará la mirada, junto con un [gesto](https://support.microsoft.com/help/12644/hololens-use-gestures) o el [clicker](hololens1-clicker.md). También puede girar una ventana de la aplicación en un espacio 3D.
 
 > [!TIP]
-> Reorganizar las aplicaciones con la voz: mire una aplicación y diga "Orientar hacia mí", "Más grande" o "Más pequeña". O bien, Cortana una aplicación para usted: diga "Hola Cortana, mueva el nombre \* *de la \** aplicación aquí".
+> Reorganizar las aplicaciones con la voz: mire una aplicación y diga "Orientar hacia mí", "Más grande" o "Más pequeña". O bien, Cortana que mueva una aplicación por usted: diga "Hola Cortana, mueva el nombre \* *de la \** aplicación aquí".
 
 ### <a name="move-an-app"></a>Movimiento de una aplicación
 
@@ -119,25 +119,54 @@ Mire la aplicación y pulse y mantenga presionadas las dos manos para selecciona
 
 Mire el contenido de la ventana de la aplicación. Mantenga presionada la tecla y mueva la mano ligeramente hacia arriba o hacia abajo para desplazar el contenido.
 
-## <a name="meet-the-hololens-1st-gen-clicker"></a>Meet the HoloLens (1st gen) Clicker (Meet the HoloLens (1st gen) Clicker
+## <a name="share-your-hololens-with-multiple-people"></a>Uso compartido de HoloLens con varias personas
 
-El [HoloLens (1.ª generación)](hololens1-clicker.md) proporciona otra manera de interactuar con hologramas. [Emparejáelo](hololens-connect-devices.md) con HoloLens y úselo junto con la mirada para seleccionar, desplazarse y mucho más.
+Es habitual compartir una HoloLens con muchas personas o hacer que muchas personas compartan un conjunto de HoloLens dispositivos.  
+
+### <a name="share-with-multiple-people-each-using-their-own-account"></a>Compartir con varias personas, cada una con su propia cuenta
+
+**Requisito** previo: HoloLens (1.ª generación) debe [actualizarse a Windows Holographic for Business](hololens-upgrade-enterprise.md).
+
+Cuando usan sus propias Azure Active Directory (Azure AD), varios usuarios pueden mantener su propia configuración de usuario y sus propios datos de usuario en el dispositivo.
+
+Para asegurarse de que varias personas pueden usar sus propias cuentas en su HoloLens, siga estos pasos:
+
+1. Al configurar el dispositivo, seleccione **Mi** trabajo o escuela es el propietario e inicie sesión con una cuenta Azure AD usuario.
+1. Una vez que termine la instalación, asegúrese de que la configuración de la cuenta **(Configuración**  >  **)** incluya **Otros usuarios.**
+
+Para usar HoloLens, cada usuario debe seguir estos pasos:
+
+1. Si otro usuario ha estado usando el dispositivo, presione el botón de encendido una vez para pasar a modo de espera. A continuación, vuelva a presionar el botón de encendido para volver a la pantalla de bloqueo.
+
+1. Use sus Azure AD de cuenta para iniciar sesión en el dispositivo. Si es la primera vez que usa el dispositivo, [](hololens-calibration.md) deberá calibrar el HoloLens a sus propios ojos.
+
+Para ver una lista de los usuarios del dispositivo o quitar un usuario del dispositivo, vaya a Configuración  >  **Cuentas de** otros  >  **usuarios.**
+
+### <a name="share-with-multiple-people-all-using-the-same-account"></a>Compartir con varias personas, todas con la misma cuenta
+
+Varios usuarios también pueden compartir un HoloLens mientras se usa una sola cuenta de usuario.
+
+Los usuarios que compartan una misma cuenta tendrán que volver a crear HoloLens en **Configuración**.  Obtenga más información sobre la [calibración.](hololens-calibration.md)
+
+## <a name="meet-the-hololens-1st-gen-clicker"></a>Meet the HoloLens (1st gen) Clicker (Meet the HoloLens (1st gen) Clicker (Meet the HoloLens (1st gen) Clicker
+
+El [HoloLens (1.ª generación)](hololens1-clicker.md) le ofrece otra manera de interactuar con hologramas. [Emparejá](hololens-connect-devices.md) con el HoloLens y úselo junto con la mirada para seleccionar, desplazarse y mucho más.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Felicidades. está listo para usar HoloLens (1.ª generación).
 
-Ahora puede configurar la HoloLens (1ª generación) para satisfacer sus necesidades específicas.
+Ahora puede configurar sus HoloLens (1.ª generación) para satisfacer sus necesidades específicas.
 
 [Conectar dispositivos Bluetooth como mouse y teclado](hololens-connect-devices.md)
 
-[Más información sobre Voz y Cortana](hololens-cortana.md)
+[Más información sobre Voice y Cortana](hololens-cortana.md)
 
 ### <a name="help-i-dont-see-my-holograms"></a>Ayuda No veo mis hologramas
 
-Si no ve los hologramas que ha colocado al usar HoloLens, estos son algunos aspectos que debe probar:
+Si no ve los hologramas que ha colocado al usar HoloLens, estos son algunos de los aspectos que debe probar:
 
 - Asegúrese de que está buscando en el área derecha recuerde que los hologramas permanecen &mdash; donde los dejó.
-- Asegúrese de que está en una sala bien iluminación sin muchos problemas directos.
-- Esperar. Cuando HoloLens problemas para reconocer el espacio, los hologramas colocados previamente pueden tardar hasta un minuto en volver a aparecer.
-- Si el problema persiste, es posible que quiera borrar los datos de almacenamiento de Hologramas en **Configuración** System Hologramas y, a continuación, colocar los  >    >  hologramas en ambiente principal de nuevo.
+- Asegúrese de que está en una sala bien iluminación sin mucha luz directa.
+- Esperar. Cuando HoloLens tiene problemas para reconocer el espacio, los hologramas colocados anteriormente pueden tardar hasta un minuto en volver a aparecer.
+- Si el problema persiste, es posible que quiera borrar los datos de almacenamiento de Hologramas en Configuración System Hologramas y, **a** continuación, colocar los  >    >  hologramas en ambiente principal de nuevo.
