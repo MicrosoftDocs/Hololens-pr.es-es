@@ -5,7 +5,7 @@ keywords: plataformas móviles, movimiento dinámico, hololens, modo de platafor
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
-ms.date: 8/10/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,19 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 7c636cd97e31c74d4976e71ec3f41ac5afe5bdcc
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034562"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924428"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modo de plataformas móviles en plataformas móviles con movimiento dinámico bajo
 
-En la **compilación 20348.1411 de Insider**, hemos agregado compatibilidad beta para el seguimiento de plataformas móviles con movimiento dinámico bajo en HoloLens 2. Después de instalar la compilación y habilitar el modo de plataformas móviles, podrá usar su HoloLens 2 en entornos anteriormente inaccesibles, como grandes navíos y grandes buques. Actualmente, la característica está destinada a habilitar únicamente estas plataformas móviles específicas, aunque nada le impide intentar usar la característica en otros entornos. Esta característica se centra primero en agregar compatibilidad con estos entornos.
-
-> [!NOTE]
-> Actualmente, esta característica solo está disponible para [usuarios de Windows Insider](hololens-insider.md).
+En la [versión 21H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-21h2), hemos agregado compatibilidad beta para el seguimiento de plataformas móviles con movimiento dinámico bajo en HoloLens 2. Después de instalar la compilación y habilitar el modo de plataformas móviles, podrá usar su HoloLens 2 en entornos anteriormente inaccesibles, como grandes navíos y grandes buques. Actualmente, la característica está destinada a habilitar únicamente estas plataformas móviles específicas, aunque nada le impide intentar usar la característica en otros entornos. Esta característica se centra primero en agregar compatibilidad con estos entornos.
 
 ![Ejemplo de plataforma móvil.](./images/mpm-compare.gif)
 
@@ -39,8 +36,8 @@ En este artículo se describe:
 
 HoloLens debe poder hacer un seguimiento de la posición de la cabeza con [6 grados de libertad](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (traslación y rotación de los ejes X, Y, Z) para mostrar hologramas estables. Para ello, HoloLens realiza un seguimiento de dos fragmentos de información similares de dos orígenes independientes:
 
-1. Cámaras de luz visible, que realiza un seguimiento del entorno, por ejemplo, la sala física en la que se usa HoloLens.
-1. Unidad de medida inercial (IMU), que consta de un acelerómetro, un giroscopio y un magnetómetro que realizan un seguimiento del movimiento de la cabeza y la orientación con respecto a la Tierra.
+1. **Cámaras de luz visible.** Estas cámaras hacen un seguimiento del entorno, por ejemplo, la sala física en la que se usa HoloLens.
+1. **Unidad de medición inercial (IMU).** La IMU consta de un acelerómetro, un giroscopio y un magnetómetro que hacen un seguimiento del movimiento de la cabeza y la orientación con respecto a la Tierra.
 
 La información de estos dos orígenes se combina para realizar un seguimiento de la posición de la cabeza con una baja latencia y una frecuencia lo suficientemente alta para representar hologramas uniformes.
 
@@ -62,10 +59,7 @@ Aunque el modo de plataformas móviles se desarrolló para controlar de forma in
 
 La compatibilidad beta con el modo de plataformas móviles solo requiere algunos requisitos previos:
 
-1. Para instalar la compilación 20348.1411 o posterior, [instale la imagen de la compilación más reciente de Insider a través de ARC](hololens-insider.md#ffu-download-and-flash-directions) o [inscriba y actualice el dispositivo](hololens-insider.md#start-receiving-insider-builds).
-
-   > [!NOTE]
-   > Esta compilación solo está disponible actualmente en el [Canal de desarrolladores de Insider](hololens-insider.md#start-receiving-insider-builds).
+1. Para instalar la [versión 21H2 de Windows Holographic](hololens-release-notes.md#windows-holographic-version-21h2) o una posterior, actualice o instale la imagen de la [última versión](https://aka.ms/hololens2download) [a través de ARC](hololens-recovery.md#clean-reflash-the-device).
 
 2. Habilite el [modo de desarrollador y el Portal de dispositivos](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
@@ -93,7 +87,7 @@ Si no puede ver la opción del modo de plataformas móviles en el Portal de disp
 
 ## <a name="reporting-issues"></a>Problemas de informes
 
-Como se mencionó anteriormente, esta es una característica beta disponible solo en modo de desarrollador, lo que significa que puede encontrar problemas. Si esto sucede, para que podamos investigar y mejorar el producto:
+Como se mencionó anteriormente, esta es una característica beta disponible solo en modo de desarrollador, lo que significa que puede encontrar problemas. Si ocurriera, haga lo siguiente para que podamos investigarlo y mejorar el producto:
 
 1. Informe del problema a través del [Centro de opiniones](hololens-feedback.md) en la categoría **Hologram accuracy, stability, and reliability** (Precisión, estabilidad y confiabilidad del holograma) e incluya:
     1. una descripción del problema, incluido el comportamiento esperado y el comportamiento experimentado;

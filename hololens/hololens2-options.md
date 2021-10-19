@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034544"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949027"
 ---
 # <a name="compare-hololens-2-options"></a>Comparación de las opciones de HoloLens 2
 
@@ -39,6 +39,7 @@ Tanto si es un [profesional de TI](https://www.microsoft.com/hololens/apps) que 
 | **Salida de audio con cancelación de ruido**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **Derechos de desarrollador <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **Programa de reemplazo rápido <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **Clasificación de la protección de entrada (IP50, protegido contra el polvo)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **Derechos de uso comercial**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**Garantía**](hololens2-hardware.md#warranty-information)                                             |   1 año   |             1 año            |             2 años            |                      2 años                      |            1 año <sup>3</sup>            |             1 año             |
 | **Límite de compra de dispositivos**                                |    None    |              None             |              None             |                       None                       |             None             |       Uno por transacción      |

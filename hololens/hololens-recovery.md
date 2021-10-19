@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034646"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034253"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Reinicio, restablecimiento o recuperación de HoloLens 2
 
@@ -45,13 +45,19 @@ Si el dispositivo se ha encendido correctamente y está en funcionamiento, hay t
 
    ![Una pantalla de propiedades de HoloLens 2 muestra el nivel de carga de la batería.](images/ResetRecovery2.png)
 
-Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia del LED y la enumeración de dispositivos en el equipo host. A continuación, siga la [guía de solución de problemas](hololens-troubleshooting.md). Si el estado del dispositivo no coincide con ninguno de los estados indicados en la guía de solución de problemas, realice el [procedimiento de restablecimiento completo](hololens-recovery.md#hard-reset-procedure) con el dispositivo conectado a la fuente de alimentación, en lugar de al equipo host. Espere al menos una hora para que el dispositivo se cargue.
+Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia del LED y la enumeración de dispositivos en el equipo host. A continuación, siga la [guía de solución de problemas](hololens-troubleshooting.md). Si el estado del dispositivo no coincide con ninguno de los estados indicados en la guía de solución de problemas, realice el [procedimiento de restablecimiento completo](hololens-recovery.md#hard-restart-procedure) con el dispositivo conectado a la fuente de alimentación, en lugar de al equipo host. Espere al menos una hora para que el dispositivo se cargue.
 
-## <a name="reset-the-device"></a>Restablecer el dispositivo
+> [!NOTE]
+> Para empezar, definamos los términos.\
+> "Reiniciar" simplemente significa apagar y encender el dispositivo.\
+> "Restablecer" significa restaurar el dispositivo a los valores predeterminados a través de la interfaz de usuario de configuración para volver a instalar la imagen actual.\
+> "Reprogramar" significa que el dispositivo está conectado a un equipo y que se va a instalar una nueva imagen (puede ser otra diferente).
 
-En determinadas circunstancias, puede que tenga que reiniciar manualmente el dispositivo sin utilizar la interfaz de usuario del software.
+## <a name="restart-the-device"></a>Reinicie el dispositivo.
 
-### <a name="standard-procedure"></a>Procedimiento estándar
+En determinadas circunstancias, puede que tenga que reiniciar manualmente el dispositivo sin utilizar la interfaz de usuario del software. Esto puede ayudarlo a resolver un problema que se produce sin tener que restablecer ni reprogramar el dispositivo.
+
+### <a name="standard-restart-procedure"></a>Procedimiento de reinicio estándar
 
 1. Desenchufe el cable de tipo C para desconectar el dispositivo de la fuente de alimentación o del equipo host.
 
@@ -63,7 +69,7 @@ En determinadas circunstancias, puede que tenga que reiniciar manualmente el dis
 
    ![Administrador de dispositivos para la recuperación de un dispositivo Microsoft HoloLens 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>Procedimiento de restablecimiento completo
+### <a name="hard-restart-procedure"></a>Procedimiento de reinicio completo
 
 Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimiento de restablecimiento completo:
 
@@ -92,13 +98,13 @@ Hay dos formas de volver a instalar la imagen del dispositivo. En ambas, antes d
 >[!WARNING]
 >Si vuelve a instalar la imagen del dispositivo, se eliminarán todos los datos personales, las aplicaciones y la configuración, incluida la información para restablecer el TPM.
 
-De manera predeterminada, Advanced Recovery Companion está configurado para descargar la compilación de la versión de actualización de características más reciente; para más información sobre la versión de actualización de características más reciente, consulte las [notas de la versión de HoloLens 2](hololens-release-notes.md). Para obtener el paquete en formato Full Flash Update (FFU) de HoloLens 2 más reciente y volver a instalar la imagen del dispositivo por medio de Advanced Recovery Companion, descargue la imagen de actualización mensual de HoloLens 2 más reciente: [https://aka.ms/hololens2download](https://aka.ms/hololens2download). Esta versión es la compilación más reciente disponible con carácter general.
+De manera predeterminada, Advanced Recovery Companion está configurado para descargar la versión de actualización de características más reciente. Para obtener información sobre la versión de actualización de características, consulte las [notas de la versión de HoloLens 2](hololens-release-notes.md). Para obtener el paquete en formato Full Flash Update (FFU) de HoloLens 2 más reciente y volver a instalar la imagen del dispositivo por medio de Advanced Recovery Companion, descargue la imagen de actualización mensual de HoloLens 2 más reciente: [https://aka.ms/hololens2download](https://aka.ms/hololens2download). Esta versión es la compilación más reciente disponible con carácter general.
 
 Antes de iniciar el procedimiento de instalación de la imagen, asegúrese de que la aplicación esté instalada y en ejecución en su PC con Windows 10 y de que esté lista para detectar el dispositivo. Asegúrese también de que el dispositivo HoloLens está cargado al 40 % como mínimo.
 
 ![Captura de pantalla de nueva instalación de la imagen de HoloLens 2.](images/ARC1.png)
 
-### <a name="normal-procedure"></a>Procedimiento normal
+### <a name="normal-flashing-procedure"></a>Procedimiento de instalación de imagen normal
 
 1. Con el dispositivo HoloLens está en funcionamiento, conéctelo al PC con Windows 10 en el que ha abierto previamente la aplicación Advanced Recovery Companion.
 
@@ -108,7 +114,7 @@ Antes de iniciar el procedimiento de instalación de la imagen, asegúrese de qu
 
 1. Seleccione el dispositivo HoloLens 2 en la interfaz de usuario de la aplicación Advanced Recovery Companion y siga las instrucciones para completar la instalación de la imagen.
 
-### <a name="manual-procedure"></a>Procedimiento manual
+### <a name="manual-flashing-mode-procedure"></a>Procedimiento del modo de instalación de imagen manual
 
 Es posible que tenga que poner el dispositivo en modo de recuperación si:
 
@@ -146,7 +152,7 @@ Es posible que tenga que poner el dispositivo en modo de recuperación si:
 
 1. Si ARC no detecta el dispositivo, asegúrese de que puede conectarse a él desde el Explorador de archivos en el equipo. Si no puede:
 
-    1. Es posible que el dispositivo tenga directivas USB que deshabiliten esa conexión. Si es así, pruebe el [procedimiento manual](hololens-recovery.md#manual-procedure) para instalar la imagen.
+    1. Es posible que el dispositivo tenga directivas USB que deshabiliten esa conexión. Si es así, pruebe el [procedimiento manual](hololens-recovery.md#manual-flashing-mode-procedure) para instalar la imagen.
     2. Si no hay directivas, pruebe con otro cable USB.
 
 1. Compruebe que el dispositivo no muestra un [patrón de LED 1-3-5](hololens2-setup.md#lights-to-indicate-problems).
