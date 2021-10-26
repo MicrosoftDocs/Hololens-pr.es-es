@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034503"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151666"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Preparación de certificados y perfiles de red para HoloLens 2
 
@@ -27,7 +27,7 @@ Uno de los requisitos comunes de los clientes que utilizan HoloLens 2 es la aut
 Dado que los dispositivos HoloLens 2 suelen vincularse a Azure Active Directory (Azure AD) y se administran mediante Intune u otro proveedor de MDM, necesitará implementar estos certificados con una infraestructura de certificados del protocolo de inscripción de certificados simple (SCEP) o de estándar de criptografía de clave pública (PKCS) que se integre con su solución MDM. 
 
 >[!NOTE]
-> Si no tiene un proveedor de MDM, puede implementar certificados por medio de un [paquete de aprovisionamiento](hololens-provisioning.md#steps-for-creating-provisioning-packages) en [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) o mediante el [Administrador de certificados](certificate-manager.md). Para ello, vaya a **Configuración > Update & Security (Actualización y seguridad) > Administrador de certificados**.
+> Si no tiene un proveedor de MDM, puede implementar certificados por medio de un [paquete de aprovisionamiento](hololens-provisioning.md#create-the-provisioning-package) en [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) o mediante el [Administrador de certificados](certificate-manager.md). Para ello, vaya a **Configuración > Update & Security (Actualización y seguridad) > Administrador de certificados**.
 
 ## <a name="certificate-requirements"></a>Requisitos de certificados
 Los certificados raíz son necesarios para implementar certificados a través de una infraestructura SCEP o PKCS. Otras aplicaciones y otros servicios de su organización también pueden requerir la implementación de certificados raíz en los dispositivos HoloLens 2. 

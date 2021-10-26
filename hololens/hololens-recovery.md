@@ -1,13 +1,13 @@
 ---
-title: Reinicio, restablecimiento o recuperación de HoloLens
+title: Reinicio, restablecimiento o recuperación de HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Cómo usar Advanced Recovery Companion para instalar una imagen en HoloLens 2.
 keywords: procedimientos, reiniciar, restablecer, recuperar, restablecimiento completo, restablecimiento parcial, reinicio, HoloLens, apagado, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034253"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151665"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Reinicio, restablecimiento o recuperación de HoloLens 2
 
@@ -45,7 +45,7 @@ Si el dispositivo se ha encendido correctamente y está en funcionamiento, hay t
 
    ![Una pantalla de propiedades de HoloLens 2 muestra el nivel de carga de la batería.](images/ResetRecovery2.png)
 
-Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia del LED y la enumeración de dispositivos en el equipo host. A continuación, siga la [guía de solución de problemas](hololens-troubleshooting.md). Si el estado del dispositivo no coincide con ninguno de los estados indicados en la guía de solución de problemas, realice el [procedimiento de restablecimiento completo](hololens-recovery.md#hard-restart-procedure) con el dispositivo conectado a la fuente de alimentación, en lugar de al equipo host. Espere al menos una hora para que el dispositivo se cargue.
+Si el dispositivo no puede arrancar en el menú de inicio, observe la apariencia del LED y la enumeración de dispositivos en el equipo host. A continuación, siga la [guía de solución de problemas](hololens-troubleshooting.md). Si el estado del dispositivo no coincide con ninguno de los estados indicados en la guía de solución de problemas, realice el [procedimiento de reinicio completo](hololens-recovery.md#hard-restart-procedure) con el dispositivo conectado a la fuente de alimentación, en lugar de al equipo host. Espere al menos una hora para que el dispositivo se cargue.
 
 > [!NOTE]
 > Para empezar, definamos los términos.\
@@ -71,7 +71,7 @@ En determinadas circunstancias, puede que tenga que reiniciar manualmente el dis
 
 ### <a name="hard-restart-procedure"></a>Procedimiento de reinicio completo
 
-Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimiento de restablecimiento completo:
+Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimiento de reinicio completo:
 
 1. Desenchufe el cable de tipo C para desconectar el dispositivo de la fuente de alimentación o del equipo host.
 
@@ -82,6 +82,14 @@ Si el procedimiento de reinicio estándar no ha funcionado, utilice el procedimi
 1. Abra Administrador de dispositivos (en Windows 10, presione la tecla **Windows**, luego la tecla **X** y, a continuación, seleccione **Administrador de dispositivos**). Asegúrese de que el dispositivo aparece correctamente en la lista como *Microsoft HoloLens*, tal y como se muestra en la imagen siguiente:
 
    ![Administrador de dispositivos 2 para la recuperación de un dispositivo Microsoft HoloLens 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>Restablecer el dispositivo
+
+Puede restablecer el dispositivo directamente desde el casco. Seleccione **Configuración** y, a continuación, seleccione **Actualización y seguridad > Restablecer y recuperación > Restablecer este dispositivo**.
+
+   ![Restablecimiento del casco HoloLens.](images/headset-reset-recovery.png)
+
+Al restablecerlo de esta manera, se eliminarán todas las cuentas de usuario y se borrarán todos los datos.
 
 ## <a name="clean-reflash-the-device"></a>Nueva instalación de la imagen del dispositivo
 
